@@ -1,0 +1,4283 @@
+ 驱动器 D 中的卷是 软件
+ 卷的序列号是 9855-DDFF
+
+ D:\CRACK8~1.0\crack8 的目录
+
+2010-03-13  16:14    <DIR>          .
+2010-03-13  16:14    <DIR>          ..
+2010-03-13  16:14                 0 crack8.txt
+2009-09-10  11:45               341 desktop.ini
+2009-08-28  23:59             4,406 OD.ico
+2009-09-10  01:32    <DIR>          PE工具
+2009-08-30  06:02    <DIR>          内存修改
+2009-09-10  11:59    <DIR>          函数查询
+2009-09-10  08:31    <DIR>          加壳工具
+2010-01-17  05:18    <DIR>          反编译工具
+2009-09-10  01:24    <DIR>          手工脱壳
+2009-08-29  22:59    <DIR>          查壳工具
+2009-09-10  11:55    <DIR>          破解辅助
+2009-09-10  12:49    <DIR>          编缉工具
+2009-10-13  20:03    <DIR>          脱壳机
+2009-10-30  15:14    <DIR>          调试工具
+2010-01-17  05:01    <DIR>          资源工具
+               3 个文件          4,747 字节
+
+ D:\CRACK8~1.0\crack8\PE工具 的目录
+
+2009-09-10  01:32    <DIR>          .
+2009-09-10  01:32    <DIR>          ..
+2009-09-10  01:32    <DIR>          OC偏移量转换器
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\PE工具\OC偏移量转换器 的目录
+
+2009-09-10  01:32    <DIR>          .
+2009-09-10  01:32    <DIR>          ..
+2005-01-12  23:00             3,072 CCLdll.dll
+2005-01-16  20:03            19,456 偏移量转换器OC.exe
+               2 个文件         22,528 字节
+
+ D:\CRACK8~1.0\crack8\内存修改 的目录
+
+2009-08-30  06:02    <DIR>          .
+2009-08-30  06:02    <DIR>          ..
+2009-08-29  14:23               343 desktop.ini
+2003-02-16  23:33            25,214 see.ICO
+2009-08-30  06:03    <DIR>          金山游侠V绿化版
+               2 个文件         25,557 字节
+
+ D:\CRACK8~1.0\crack8\内存修改\金山游侠V绿化版 的目录
+
+2009-08-30  06:03    <DIR>          .
+2009-08-30  06:03    <DIR>          ..
+2004-07-05  10:19           180,224 IJL11.DLL
+2008-11-16  03:14               831 KnightV.ini
+2004-07-05  10:10            73,728 KPic10.dll
+2003-06-19  20:25           741,376 KSKnight.dll
+2003-06-20  00:21           774,144 金山游侠V绿化版.exe
+               5 个文件      1,770,303 字节
+
+ D:\CRACK8~1.0\crack8\函数查询 的目录
+
+2009-09-10  11:59    <DIR>          .
+2009-09-10  11:59    <DIR>          ..
+2009-08-29  00:49    <DIR>          Asm
+2009-08-29  13:41               344 desktop.ini
+2009-08-29  13:40           161,862 find.ico
+2009-09-10  11:23    <DIR>          函数查询1.1.2
+               2 个文件        162,206 字节
+
+ D:\CRACK8~1.0\crack8\函数查询\Asm 的目录
+
+2009-08-29  00:49    <DIR>          .
+2009-08-29  00:49    <DIR>          ..
+2009-08-29  00:46           598,016 AsmFun.dll
+2007-12-28  13:42                19 config.ini
+2006-06-30  08:44         1,058,304 汇编查询1.3.exe
+               3 个文件      1,656,339 字节
+
+ D:\CRACK8~1.0\crack8\函数查询\函数查询1.1.2 的目录
+
+2009-09-10  11:23    <DIR>          .
+2009-09-10  11:23    <DIR>          ..
+2008-06-22  18:36           876,544 data.sat
+2008-06-30  10:44             1,362 Readme.txt
+2008-06-30  10:59           828,102 函数查询1.1.2.exe
+               3 个文件      1,706,008 字节
+
+ D:\CRACK8~1.0\crack8\加壳工具 的目录
+
+2009-09-10  08:31    <DIR>          .
+2009-09-10  08:31    <DIR>          ..
+2010-01-17  05:10    <DIR>          ASProtect SKE 2.3 Beta
+2009-08-29  13:37               349 desktop.ini
+2006-06-08  21:08           307,200 MaskPE2无壳版.exe
+2006-06-01  09:59           645,664 Nspack3.7注册版.exe
+2007-08-03  11:16           196,880 PolyCryptPE.exe
+2008-06-21  13:29    <DIR>          RLPack 1.19 X黑客版
+2009-09-10  08:31    <DIR>          VMProtect 1.8
+2009-08-29  13:36             2,238 WinUpackR.ico
+               5 个文件      1,152,331 字节
+
+ D:\CRACK8~1.0\crack8\加壳工具\ASProtect SKE 2.3 Beta 的目录
+
+2010-01-17  05:10    <DIR>          .
+2010-01-17  05:10    <DIR>          ..
+2006-08-20  17:24         1,389,604 ASProtect.exe
+2010-01-17  05:10               123 ASProtect.ini
+2010-01-17  05:10             3,526 ASProtect1.aspr2
+2006-05-14  22:00           138,240 aspr_ide.dll
+2006-05-14  22:00           179,712 keygen.dll
+               5 个文件      1,711,205 字节
+
+ D:\CRACK8~1.0\crack8\加壳工具\RLPack 1.19 X黑客版 的目录
+
+2008-06-21  13:29    <DIR>          .
+2008-06-21  13:29    <DIR>          ..
+2007-01-07  17:56            39,951 lzma.dll
+2007-07-31  12:04            83,968 RLPack.exe
+               2 个文件        123,919 字节
+
+ D:\CRACK8~1.0\crack8\加壳工具\VMProtect 1.8 的目录
+
+2009-09-10  08:31    <DIR>          .
+2009-09-10  08:31    <DIR>          ..
+2009-04-14  16:15            23,731 iatpatch.txt
+2009-04-14  04:30            97,792 nooby.dll
+2009-05-16  13:00         2,802,176 VMProtect 1.8.By.Nooby.eXe
+2008-11-18  23:52               257 VMProtect.key
+               4 个文件      2,923,956 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具 的目录
+
+2010-01-17  05:18    <DIR>          .
+2010-01-17  05:18    <DIR>          ..
+2009-08-29  23:00    <DIR>          C32Asm
+2009-08-29  13:18             2,238 C32Asm.ico
+2009-08-29  00:43    <DIR>          DeDeDark3.5
+2009-08-29  13:19               346 desktop.ini
+2009-08-29  23:31    <DIR>          Flash Decompiler V2.59
+2009-09-02  13:30    <DIR>          VB Decompiler7.0
+2006-05-12  21:49           435,712 VBExplorer.exe
+2010-01-17  05:18    <DIR>          W32DasmV10.0
+2005-02-17  11:01         1,551,887 硕思闪客精灵2005破解版.exe
+               4 个文件      1,990,183 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\C32Asm 的目录
+
+2009-08-29  23:00    <DIR>          .
+2009-08-29  23:00    <DIR>          ..
+2008-07-17  20:02               466 AnalysisReport.txt
+2003-10-24  12:03           964,096 C32asm.dll
+2004-01-20  21:57           686,080 C32Asm.exe
+2009-08-29  22:59             3,541 C32ASM.INI
+2004-01-17  22:03             1,363 history.txt
+2009-08-29  23:00    <DIR>          KeyWord
+2009-08-29  23:00    <DIR>          LANGUAGE
+2009-08-29  23:00    <DIR>          PeSave
+2009-08-29  23:00    <DIR>          Symbol
+               5 个文件      1,655,546 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\C32Asm\KeyWord 的目录
+
+2009-08-29  23:00    <DIR>          .
+2009-08-29  23:00    <DIR>          ..
+2003-06-18  13:44            23,614 变态高亮.xml
+2003-06-18  13:44            23,897 特别高亮call.xml
+2003-06-18  13:44            26,447 特别高亮jmp.xml
+2003-06-18  13:44            22,404 缺省高亮.xml
+               4 个文件         96,362 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\C32Asm\LANGUAGE 的目录
+
+2009-08-29  23:00    <DIR>          .
+2009-08-29  23:00    <DIR>          ..
+2004-01-17  21:30            26,983 ChineseGb.ini
+2004-01-17  21:30            30,709 English.ini
+               2 个文件         57,692 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\C32Asm\PeSave 的目录
+
+2009-08-29  23:00    <DIR>          .
+2009-08-29  23:00    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\C32Asm\Symbol 的目录
+
+2009-08-29  23:00    <DIR>          .
+2009-08-29  23:00    <DIR>          ..
+2003-06-07  19:08               891 KERNEL32.ini
+2003-06-10  07:23           343,480 mfc42.ini
+2003-06-10  10:30           309,187 mfc70.ini
+               3 个文件        653,558 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\DeDeDark3.5 的目录
+
+2009-08-29  00:43    <DIR>          .
+2009-08-29  00:43    <DIR>          ..
+1995-07-19  17:52            82,552 Api.lst
+1999-07-22  07:22            78,362 Classes.lst
+2009-08-28  23:21               449 DarkDe4.fls
+2009-08-28  23:21               711 DarkDe4.ini
+2005-03-15  10:46    <DIR>          DSF
+2005-03-15  10:46    <DIR>          Dumps
+2005-03-15  10:46    <DIR>          LANGRES
+2005-03-15  10:46    <DIR>          Projects
+2003-12-25  21:00             1,874 Readme.txt
+2000-06-27  13:27             3,449 SU.LST
+2004-01-02  20:13         2,217,984 看雪DarkDe4.exe
+2009-08-29  00:43                 0 看雪DarkDe4.fls
+2009-08-29  00:43               198 看雪DarkDe4.ini
+               9 个文件      2,385,579 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\DeDeDark3.5\DSF 的目录
+
+2005-03-15  10:46    <DIR>          .
+2005-03-15  10:46    <DIR>          ..
+2002-08-15  00:12           189,480 CLX.dsf
+2002-02-19  19:40             9,653 d2.doi
+2002-02-19  19:41            17,363 d3.doi
+2002-11-29  15:04            44,589 d4.doi
+2002-12-05  00:21            55,573 D5.DOI
+2002-08-18  13:01            47,426 d6.doi
+2001-09-20  13:31            18,742 d6clx.doi
+2002-12-05  00:28            43,556 D7.DOI
+2003-01-29  00:32           129,536 dasm_plgin.dll
+2003-01-29  00:32             6,058 dede.sdk.v1.1.rar
+2002-02-19  19:42             7,114 DeDe_SDK.pas
+2002-02-19  19:42             7,276 DeDe_SDK.rtf
+2002-08-13  05:52            45,210 KOL.dsf
+2002-02-19  19:43               173 TObject_VCL4.ini
+2002-12-05  00:52           181,349 VCL2.dsf
+2002-12-05  00:45           250,682 vcl3.dsf
+2002-12-02  01:00           364,597 VCL4.dsf
+2002-12-04  23:03           514,189 vcl5.dsf
+2002-12-05  01:33           880,934 VCL6.dsf
+2002-12-05  01:33               100 Vcl6.log
+2002-12-01  23:55           886,479 Vcl6_.dsf
+2002-12-03  23:50           907,474 VCL7.dsf
+              22 个文件      4,607,553 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\DeDeDark3.5\Dumps 的目录
+
+2005-03-15  10:46    <DIR>          .
+2005-03-15  10:46    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\DeDeDark3.5\LANGRES 的目录
+
+2005-03-15  10:46    <DIR>          .
+2005-03-15  10:46    <DIR>          ..
+2003-01-29  00:32            11,810 ChineseGB.ini
+2003-12-25  10:21            13,506 DIY_ENG.ini
+               2 个文件         25,316 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\DeDeDark3.5\Projects 的目录
+
+2005-03-15  10:46    <DIR>          .
+2005-03-15  10:46    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\Flash Decompiler V2.59 的目录
+
+2009-08-29  23:31    <DIR>          .
+2009-08-29  23:31    <DIR>          ..
+2009-08-29  23:30             4,569 FDec.ini
+2005-09-23  15:50         2,772,992 Flash Decompiler V2.59.exe
+2005-01-30  20:07           106,496 iebt.dll
+2004-11-12  14:22           258,048 lame_enc.dll
+2009-08-29  23:31    <DIR>          Lang
+2003-08-20  21:12           139,264 mp3enc.dll
+2005-06-26  18:11         1,413,120 oneframe.dll
+               6 个文件      4,694,489 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\Flash Decompiler V2.59\Lang 的目录
+
+2009-08-29  23:31    <DIR>          .
+2009-08-29  23:31    <DIR>          ..
+2005-08-05  13:27            25,247 Bulgarian.lng
+2005-06-02  17:49            23,028 Chinese.lng
+2005-06-02  17:49            25,901 Czech.lng
+2005-06-02  17:49            25,080 Danish.lng
+2005-06-02  17:49            25,192 Dutch.lng
+2005-06-02  17:49            24,433 English.lng
+2005-07-06  14:34            28,198 French.lng
+2005-06-02  17:50            25,211 German.lng
+2005-06-02  17:49            26,445 Greek.lng
+2005-06-02  17:49            26,101 Italiano.lng
+2005-06-02  17:49            23,089 Portuguese Brazil.lng
+2005-06-02  17:50            25,393 Spanish.lng
+2005-06-02  17:49            25,012 Swedish.lng
+2005-09-11  23:28            24,756 Turkish.lng
+              14 个文件        353,086 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2009-09-02  13:30    <DIR>          colors
+2004-02-17  14:43           139,776 comctl.dll
+2008-02-27  02:43            66,560 DisAsmDll.dll
+2008-08-07  18:59            23,552 Force.dll
+2009-09-02  13:30    <DIR>          plugins
+2009-09-02  13:30    <DIR>          plugins sdk
+2008-10-24  19:23           519,680 QUnpack.dll
+2008-10-14  21:25             5,632 QUnpack32.sys
+2008-01-23  00:13            67,072 RAEdit.dll
+2005-08-06  19:20               664 replace.ini
+2000-05-21  23:00           203,976 RICHTX32.OCX
+2007-04-25  09:05            57,344 um.dll
+2008-03-02  02:56         2,929,500 vb decompiler.dat
+2008-12-19  01:52         2,204,861 VB Decompiler7.0看雪.exe
+2008-12-18  01:08            14,628 whatsnew.txt
+              12 个文件      6,233,245 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\colors 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2006-03-05  16:53               197 help.ini
+2006-03-05  17:03               224 hiew.ini
+               2 个文件            421 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2009-09-02  13:30    <DIR>          CreateMap
+2008-10-28  02:05            44,544 CreateMap.dll
+2008-11-14  03:22            22,016 frxview.dat
+2008-10-17  20:30             4,608 FRXView.dll
+2007-11-05  16:42           180,224 LangeFree.dll
+2007-12-28  15:10            21,504 Priority.dll
+2007-11-01  11:05            66,048 ShowRef.dll
+               6 个文件        338,944 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins\CreateMap 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2008-10-28  02:05            44,544 CreateMap.dll
+               1 个文件         44,544 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins sdk 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2009-09-02  13:30    <DIR>          asm
+2009-09-02  13:30    <DIR>          delphi
+2009-09-02  13:30    <DIR>          vc
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins sdk\asm 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2009-09-02  13:30    <DIR>          fasm
+2009-09-02  13:30    <DIR>          masm
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins sdk\asm\fasm 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2008-05-23  14:44             7,643 DecompilerPlugin.ASM
+2008-03-01  21:27             4,608 DecompilerPlugin.DLL
+2008-02-16  21:16             1,909 readme.txt
+               3 个文件         14,160 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins sdk\asm\masm 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2009-09-02  13:30    <DIR>          AsmPDK
+2006-10-02  00:49             1,946 Build.bat
+2009-09-02  13:30    <DIR>          Res
+2006-10-02  00:45             2,148 SaveRTF.asm
+2006-10-02  00:45             5,632 SaveRTF.dll
+2006-01-22  17:41             4,836 SaveRTF_En.rtf
+2006-01-19  03:24             6,576 SaveRTF_Ru.rtf
+2006-10-02  00:40             3,329 VBDM_SaveRTF.asm
+2006-01-18  23:44                74 VBDM_SaveRTF.def
+2006-10-02  00:37               747 VBDM_SaveRTF.inc
+2006-01-20  14:38             2,929 VBDM_SaveRTF.rap
+2006-01-20  11:29                74 VBDM_SaveRTF.rc
+2006-01-23  17:28             1,704 VBDM_SaveRTF.res
+2006-10-02  00:48               632 VBDM_SaveRTF.wap
+              12 个文件         30,627 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins sdk\asm\masm\AsmPDK 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2006-10-02  00:14             4,129 VBDecMod.asm
+2008-05-23  14:46             2,426 VBDecMod.inc
+               2 个文件          6,555 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins sdk\asm\masm\Res 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2006-01-18  23:41               766 TxtDoc.ico
+2006-01-20  11:29                74 VBDM_SaveRTFRes.rc
+2006-01-20  11:46               703 VBDM_SaveRTFVer.rc
+               3 个文件          1,543 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins sdk\delphi 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2008-05-23  14:47             5,390 DelphiPlugin.dpr
+2005-10-20  23:55               876 DelphiPlugin.res
+2005-12-21  19:34               841 Main.dfm
+2005-12-21  19:35               636 Main.pas
+               4 个文件          7,743 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\VB Decompiler7.0\plugins sdk\vc 的目录
+
+2009-09-02  13:30    <DIR>          .
+2009-09-02  13:30    <DIR>          ..
+2006-04-07  18:16               685 resource.h
+2006-04-09  17:59             5,225 VBDecC.c
+2006-04-07  18:27             5,731 VBDecC.dsp
+2006-04-02  21:40               535 VBDecC.dsw
+2006-04-07  18:16             2,518 VBDecMod.rc
+2008-05-23  14:52             7,573 VBDecPDK.h
+               6 个文件         22,267 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\W32DasmV10.0 的目录
+
+2010-01-17  05:18    <DIR>          .
+2010-01-17  05:18    <DIR>          ..
+1996-08-09  01:30            15,872 Psapi.dll
+2002-12-17  19:25           411,648 W32Dasm.exe
+2002-12-17  19:24            25,088 W32PATCH.dll
+2010-01-17  05:18    <DIR>          wpjfiles
+               3 个文件        452,608 字节
+
+ D:\CRACK8~1.0\crack8\反编译工具\W32DasmV10.0\wpjfiles 的目录
+
+2010-01-17  05:18    <DIR>          .
+2010-01-17  05:18    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳 的目录
+
+2009-09-10  01:24    <DIR>          .
+2009-09-10  01:24    <DIR>          ..
+2009-08-29  13:38               346 desktop.ini
+2009-09-10  01:24    <DIR>          FixResDemo最终版
+2009-08-28  23:27    <DIR>          ImpREC FINAL 1.7七彩版
+2009-08-29  13:37             2,238 LordPE.ico
+2009-08-28  23:47    <DIR>          LordPE豪华版
+2009-08-29  01:18    <DIR>          Overlay 最终版
+2007-09-12  08:57           270,336 Resource Binder 2.6.exe
+2009-09-10  01:05               150 Resource Binder.ini
+               4 个文件        273,070 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\FixResDemo最终版 的目录
+
+2009-09-10  01:24    <DIR>          .
+2009-09-10  01:24    <DIR>          ..
+2007-01-01  00:00            48,594 DT_FixRes.dll
+2007-01-01  00:00           204,145 FixResDemo.exe
+2007-01-01  00:00             5,920 Readme_CN.txt
+               3 个文件        258,659 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2009-08-28  23:27    <DIR>          Documentation
+2008-02-22  18:21            16,686 History.txt
+2008-02-23  20:54           539,660 ImpREC FINAL 1.7 七彩版.exe
+2009-08-29  00:43               422 ImpREC.ini
+2009-08-28  23:27    <DIR>          Plugin
+2009-08-28  23:27    <DIR>          Plugin Source
+2006-11-02  19:46            12,288 psapi.dll
+               4 个文件        569,056 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Documentation 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2002-04-17  06:51             3,340 Loader.txt
+2003-07-25  05:08               914 News.txt
+2003-07-25  04:45            16,966 ReadMe.txt
+2002-04-25  16:23             4,237 Tips.txt
+               4 个文件         25,457 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2004-06-13  04:20             3,072 ACProtect #1.dll
+2004-05-19  20:31            14,848 ACProtect #2.dll
+2007-01-18  17:24             1,556 ACProtect #3.dll
+2007-01-18  17:22             1,556 Alex Protector.dll
+2002-11-08  19:55             4,096 Armadillo 2.6.dll
+2002-09-17  09:02             6,144 ASProtect 1.22.dll
+2003-11-21  11:15             2,560 ASProtect 1.23 rc4.dll
+2007-03-11  01:06             6,144 ASProtect 1.2x Emul API #1.dll
+2007-03-11  01:06            10,240 ASProtect 1.2x Emul API #2.dll
+2002-10-09  01:50            18,432 ASProtect 1.2x.dll
+2003-01-06  18:09             7,168 ASProtect 1.3.dll
+2003-08-23  00:17            17,920 ASProtect 2.xx.dll
+2006-03-28  00:34             2,560 CoolCrypt.dll
+2007-01-18  17:25             1,556 Cryptocrack's PE Protector.dll
+2007-04-06  13:35             3,106 Excalibur.dll
+2006-01-01  07:11             8,192 ExeCryptor.dll
+2006-02-13  02:35             2,560 EXEStealth275.dll
+2007-03-13  13:04             2,560 Expressor 1.5.x.dll
+2005-09-23  16:04            10,752 ExtOverlay.dll
+1985-01-01  02:36             2,560 GoatsPEMutilator16.dll
+2006-05-29  22:27               443 HowTo.txt
+2003-01-01  23:20            28,672 Krypton 0.4 - 0.5 #1.dll
+2007-03-11  01:06            10,752 Krypton 0.4 - 0.5 #2.dll
+2004-05-03  02:32             1,556 Krypton 0.5.dll
+2006-11-17  00:34             2,560 Morphine.dll
+2007-01-20  12:42             3,072 NTKrnl Protector 0.1.x.dll
+2002-04-22  01:55            28,672 Null.dll
+2007-03-11  01:06             4,096 Obsidium #1.dll
+2003-06-06  23:54             4,096 Obsidium #2.dll
+2007-03-11  01:06             4,096 Obsidium #3.dll
+2006-07-25  12:38             3,584 Obsidium 1.3.dll
+2007-04-15  16:31               551 Obsidium 1.3.dll.txt
+2007-01-18  17:18             2,084 PE123.dll
+2007-01-18  17:24             1,556 PECompact 2.7.x.dll
+2006-07-29  23:09             5,120 PELock 1.06 (regged).dll
+2007-04-15  16:14               847 PELock 1.06 (regged).dll.txt
+2006-05-29  01:45             4,096 PELock 1.0x.dll
+2006-02-12  04:06             2,560 Perplex101.dll
+2007-04-05  21:49             3,108 PESpin.dll
+2006-06-17  16:33            28,672 PESpinPlugin.dll
+2002-04-25  08:20             2,145 Plugin.txt
+2006-07-07  16:27             4,608 PrivateExeProtector 1.8.dll
+2007-04-15  16:15               738 PrivateExeProtector 1.8.txt
+2004-08-23  17:27             2,560 Privilege.dll
+2006-07-30  12:23             2,560 Protection Plus 4.x.dll
+2006-02-13  02:20             2,560 RLPack 0.7.dll
+2007-01-18  17:26             1,556 RLPack 0.7.x.dll
+2006-10-17  13:48             6,656 RLPack 0.x.dll
+2007-03-27  17:32             1,556 RLPack 1.16.dll
+2007-03-27  17:32             1,556 RLPack 1.18.dll
+2006-08-10  23:09             3,072 SDProtector 1.12.dll
+2003-07-08  18:21             4,096 SVK Protector #1.dll
+2003-07-08  20:21             4,096 SVK Protector #2.dll
+2007-04-24  15:43             1,556 tELock 0.71.dll
+2002-01-20  17:53            28,672 tELock 0.92.dll
+2004-09-14  15:47             3,072 tELock 0.98 #1.dll
+2007-03-11  01:06            10,752 tELock 0.98 #2.dll
+2005-05-17  17:27            50,176 tELock 0.98 #3.dll
+2003-09-23  21:44             2,560 tELock 0.98 #4.dll
+2007-03-11  01:06            28,672 tELock 0.98 #5.dll
+2006-07-23  12:39             2,560 tELock 0.99.dll
+2005-05-17  15:27            50,176 tELock 0.9x.dll
+2006-05-29  22:22             4,608 TPP.dll
+2006-06-01  13:49             2,560 VisualProtect.dll
+2006-02-13  02:35             2,560 Yoda Crypter 1.02.dll
+              65 个文件        493,458 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2009-08-28  23:27    <DIR>          ASProtect 1.2x
+2009-08-28  23:27    <DIR>          eXcalibur 1.x
+2009-08-28  23:27    <DIR>          Morphine 3.3
+2009-08-28  23:27    <DIR>          Perplex 1.01
+2009-08-28  23:27    <DIR>          PESpin 1.3.04
+2009-08-28  23:27    <DIR>          RLPack 0.7
+2009-08-28  23:27    <DIR>          tELock 0.92x
+2009-08-28  23:27    <DIR>          Yoda 1.02
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\ASProtect 1.2x 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2009-08-28  23:27    <DIR>          Delphi
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\ASProtect 1.2x\Delphi 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2007-03-11  01:06             6,830 aspr.dpr
+               1 个文件          6,830 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\eXcalibur 1.x 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2007-04-06  13:35             3,106 Excalibur.dll
+2009-08-28  23:27    <DIR>          src
+               1 个文件          3,106 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\eXcalibur 1.x\src 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2007-04-03  11:26               197 BuildDLL.bat
+2007-04-06  13:32             3,823 EXC.asm
+2007-04-03  11:26                28 EXC.def
+2006-11-27  20:02             1,569 hde.inc
+2007-02-09  19:24             1,462 hde.lib
+               5 个文件          7,079 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\Morphine 3.3 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2009-08-28  23:27    <DIR>          Bak
+2006-11-17  00:34             2,353 morphine.Asm
+2006-11-16  01:58                22 morphine.Def
+2006-11-17  00:34               444 morphine.exp
+2006-11-16  01:58                68 morphine.Inc
+2006-11-17  00:34             2,072 morphine.lib
+2006-11-17  00:34               876 morphine.obj
+2006-11-18  01:01             1,834 morphine.rap
+               7 个文件          7,669 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\Morphine 3.3\Bak 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\Perplex 1.01 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2006-02-12  04:09             1,746 Perplex101.Asm
+2006-02-12  02:58                22 Perplex101.Def
+2006-02-12  04:06               450 Perplex101.exp
+2006-02-12  02:58                68 Perplex101.Inc
+2006-02-12  04:06             2,090 Perplex101.lib
+2006-02-12  04:06               854 Perplex101.obj
+2006-02-12  04:31             1,882 Perplex101.rap
+2006-02-12  03:16                33 Perplex101.rc
+2006-02-12  04:06               384 Perplex101.RES
+2009-08-28  23:27    <DIR>          Res
+               9 个文件          7,529 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\Perplex 1.01\Res 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2006-02-12  04:06               384 Perplex101Ver.rc
+               1 个文件            384 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\PESpin 1.3.04 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2006-06-17  16:33             4,045 PESpinPlugin.cpp
+2006-06-17  16:26             4,415 PESpinPlugin.dsp
+2006-05-01  18:39               547 PESpinPlugin.dsw
+2006-06-18  02:18            41,984 PESpinPlugin.ncb
+2006-06-18  02:18            49,664 PESpinPlugin.opt
+2006-06-18  02:18               260 PESpinPlugin.plg
+2006-05-01  18:39             1,649 ReadMe.txt
+2006-05-01  18:39               299 StdAfx.cpp
+2006-05-01  18:39               802 StdAfx.h
+               9 个文件        103,665 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\RLPack 0.7 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2009-08-28  23:27    <DIR>          Res
+2006-02-13  02:19             1,946 RLP07.Asm
+2006-02-13  02:18                22 RLP07.Def
+2006-02-13  02:20               434 RLP07.exp
+2006-02-13  02:18                68 RLP07.Inc
+2006-02-13  02:20             2,044 RLP07.lib
+2006-02-13  02:19               876 RLP07.obj
+2006-02-13  02:26             1,792 RLP07.rap
+2006-02-13  02:18                28 RLP07.rc
+               8 个文件          7,210 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\RLPack 0.7\Res 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2006-02-13  02:19               384 RLP07Ver.rc
+               1 个文件            384 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2009-08-28  23:27    <DIR>          Delphi
+2009-08-28  23:27    <DIR>          Masm
+2009-08-28  23:27    <DIR>          Tasm
+2009-08-28  23:27    <DIR>          VC++
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\Delphi 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2007-03-11  01:06             2,859 tELock.dpr
+               1 个文件          2,859 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\Masm 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2007-03-11  01:06               217 BuildDLL.bat
+2007-03-11  01:06             3,866 tELock.asm
+2007-03-11  01:06                31 tELock.def
+               3 个文件          4,114 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\Tasm 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2007-03-11  01:06               233 BuildDLL.bat
+2007-03-11  01:06             3,821 tELock.asm
+2007-03-11  01:06                31 tELock.def
+2007-03-11  01:06           155,224 W32.inc
+               4 个文件        159,309 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\VC++ 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2009-08-28  23:27    <DIR>          tELock0.92x
+2009-08-28  23:27    <DIR>          tELock0.95
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\VC++\tELock0.92x 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2007-03-11  01:06             2,883 tELock.cpp
+2007-03-11  01:06             4,158 tELock.dsp
+               2 个文件          7,041 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\VC++\tELock0.95 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2007-03-11  01:06             4,153 tELock.cpp
+2007-03-11  01:06             4,158 tELock.dsp
+               2 个文件          8,311 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\Yoda 1.02 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+2009-08-28  23:27    <DIR>          Res
+2006-02-13  02:35             1,743 Yoda102.Asm
+2006-02-13  02:35                22 Yoda102.Def
+1985-01-01  02:36               440 Yoda102.exp
+2006-02-13  02:35                68 Yoda102.Inc
+1985-01-01  02:36             2,062 Yoda102.lib
+1985-01-01  02:36               854 Yoda102.obj
+2006-02-15  02:57             1,815 Yoda102.rap
+2006-02-13  02:35                30 Yoda102.rc
+1985-01-01  02:36               384 Yoda102.RES
+               9 个文件          7,418 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\ImpREC FINAL 1.7七彩版\Plugin Source\Yoda 1.02\Res 的目录
+
+2009-08-28  23:27    <DIR>          .
+2009-08-28  23:27    <DIR>          ..
+1985-01-01  02:36               384 Yoda102Ver.rc
+               1 个文件            384 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版 的目录
+
+2009-08-28  23:47    <DIR>          .
+2009-08-28  23:47    <DIR>          ..
+2002-08-19  00:25            36,864 16Edit.DLL
+2008-11-16  03:07    <DIR>          docs
+2005-11-12  22:04    <DIR>          LDE
+2002-08-13  14:02    <DIR>          LDS_Clients
+2009-08-29  00:43               791 LordPE.iNi
+2005-11-10  23:08           208,896 LordPE看雪版.EXE
+2005-10-14  15:19            49,152 LordPlug.dll
+2005-11-11  14:30    <DIR>          LordPlug.dll_src
+2002-08-13  13:58    <DIR>          Misc
+2002-03-24  14:31             8,704 PROCS.DLL
+1999-12-10  12:00            28,944 PSAPI.DLL
+2002-03-24  14:31             7,680 REALIGN.DLL
+2002-03-30  16:01                28 RunLDS.BAT
+2002-08-13  14:09    <DIR>          SDK
+2002-03-24  14:31             3,072 TrapDll.exe
+               9 个文件        344,131 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\docs 的目录
+
+2008-11-16  03:07    <DIR>          .
+2008-11-16  03:07    <DIR>          ..
+2002-03-21  17:31               842 EndOfCommerce.tXt
+2002-08-12  19:07             2,362 LDE.tXt
+2002-03-21  17:33             5,169 LDS.tXt
+2001-04-26  00:07               398 License.tXt
+2002-08-08  21:05                15 ToDo.tXt
+               5 个文件          8,786 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\LDE 的目录
+
+2005-11-12  22:04    <DIR>          .
+2005-11-12  22:04    <DIR>          ..
+2003-10-21  11:05             1,706 armadmp.lde
+2002-08-12  03:01             3,584 IntelliDump.LDE
+2009-08-29  00:43               195 LDELoad.log
+               3 个文件          5,485 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\LDS_Clients 的目录
+
+2002-08-13  14:02    <DIR>          .
+2002-08-13  14:02    <DIR>          ..
+2002-08-13  14:02    <DIR>          CoolDump1.4
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\LDS_Clients\CoolDump1.4 的目录
+
+2002-08-13  14:02    <DIR>          .
+2002-08-13  14:02    <DIR>          ..
+2002-08-07  17:10            25,959 Cooldump.exe
+2002-08-07  17:21               430 File_id.diz
+2002-08-02  23:10             3,350 Genoep.dll
+2002-08-07  17:21             9,167 Ug2002.nfo
+               4 个文件         38,906 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\LordPlug.dll_src 的目录
+
+2005-11-11  14:30    <DIR>          .
+2005-11-11  14:30    <DIR>          ..
+2005-10-14  15:01            14,532 LordPlug.cpp
+2005-10-14  15:00               116 LordPlug.def
+2005-10-09  18:18             4,248 LordPlug.dsp
+2005-10-09  13:07               541 LordPlug.dsw
+               4 个文件         19,437 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\Misc 的目录
+
+2002-08-13  13:58    <DIR>          .
+2002-08-13  13:58    <DIR>          ..
+2002-08-19  00:25            36,864 16Edit.DLL
+2002-02-05  18:43             2,048 16Edit.exe
+2002-02-05  12:03               916 16Edit.tXt
+2002-03-24  13:21            17,920 LordElf.exe
+2002-03-24  00:24             1,502 LordElf.tXt
+2002-08-20  10:33            94,208 MetaPuck.exe
+2002-05-19  15:27             2,115 MetaPuck.tXt
+2002-04-06  14:44            20,992 PESnoop.exe
+2002-04-06  14:19             2,894 PESnoop.tXt
+2001-06-22  14:30             3,584 RunKMD.exe
+2001-06-22  14:29               750 RunKMD.tXt
+2001-06-28  21:09             2,560 RunVxD.exe
+2001-06-28  21:13               547 RunVxD.tXt
+2002-08-13  13:58    <DIR>          SoftSnoop
+2001-05-01  20:55             3,642 yPER.exe
+2001-05-01  20:59               354 yPER.tXt
+              15 个文件        190,896 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\Misc\SoftSnoop 的目录
+
+2002-08-13  13:58    <DIR>          .
+2002-08-13  13:58    <DIR>          ..
+2002-08-13  13:58    <DIR>          ApiDef
+2001-03-12  13:49             4,608 APISnoop.dll
+2001-03-02  22:53            10,240 ForceLibrary.dll
+2002-08-13  13:58    <DIR>          Plugins
+2002-08-20  20:12            76,800 SoftSnoop.exe
+2001-03-15  14:28             2,954 SoftSnoop.tXt
+               4 个文件         94,602 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\Misc\SoftSnoop\ApiDef 的目录
+
+2002-08-13  13:58    <DIR>          .
+2002-08-13  13:58    <DIR>          ..
+2001-03-12  12:50               655 Kernel32.ss
+2001-02-02  11:36             1,338 SS.TXT
+2001-01-20  01:42               534 User32.ss
+               3 个文件          2,527 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\Misc\SoftSnoop\Plugins 的目录
+
+2002-08-13  13:58    <DIR>          .
+2002-08-13  13:58    <DIR>          ..
+2001-02-01  19:56             2,560 HelloWorld.dll
+2001-02-01  20:31             3,584 MsgHook.dll
+2001-02-01  20:47             6,656 PluginExp3.dll
+2001-02-02  11:50             1,536 TestMe.exe
+               4 个文件         14,336 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-08-13  14:09    <DIR>          16Edit
+2002-08-13  14:09    <DIR>          LordPE
+2008-11-16  03:05    <DIR>          procsDLL
+2002-08-13  14:18    <DIR>          realignDLL
+2002-08-13  14:09    <DIR>          SoftSnoop
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\16Edit 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-04-29  19:14             5,445 16Edit.cs
+2002-02-06  02:34               105 16Edit.def
+2002-02-07  03:22             3,652 16EditDll.bas
+2002-02-06  12:14             3,563 16EditDll.h
+2002-02-06  12:09             3,880 16EditDll.INC
+2002-02-05  15:24             9,158 APIs.tXt
+2002-02-06  02:23             1,024 B_16Edit.lib
+2002-02-06  16:00             3,933 HEditDll.pas
+2002-02-05  14:57             2,474 MS_16Edit.lib
+2002-04-29  20:25               258 TOC.tXt
+              10 个文件         33,492 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-08-13  14:09    <DIR>          LDE
+2002-08-13  14:09    <DIR>          LDS
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDE 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-08-13  14:09    <DIR>          IntelliDump
+2002-08-12  19:07             2,362 LDE.tXt
+               1 个文件          2,362 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDE\IntelliDump 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-08-12  02:55             4,811 IntelliDump.c
+2002-08-09  14:48               124 IntelliDump.DEF
+2002-08-09  14:49             4,496 IntelliDump.dsp
+2002-08-13  02:03             4,898 IntelliDump.mak
+               4 个文件         14,329 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDS 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-08-13  14:09    <DIR>          Examples
+2002-08-13  14:09    <DIR>          INC
+2002-03-21  17:33             5,169 LDS.tXt
+               1 个文件          5,169 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDS\Examples 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-08-13  14:09    <DIR>          ASM
+2002-08-13  14:09    <DIR>          C
+2002-08-05  21:18            42,856 CallModMem.EXE
+2002-08-13  14:09    <DIR>          CS
+2002-08-13  14:09    <DIR>          Delphi
+2002-05-25  15:27            13,312 LDSChat.exe
+2002-06-28  16:12            39,936 LDS_DmpTst.exe
+2002-02-23  20:13             2,560 LDS_LoadDump.exe
+2002-02-21  23:03             3,584 LDS_TaskViewer.exe
+2002-02-23  20:20            39,936 LDS_VerPid.exe
+               6 个文件        142,184 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDS\Examples\ASM 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-02-23  20:02             7,412 LDS_LoadDump.bat
+               1 个文件          7,412 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDS\Examples\C 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-02-20  23:36             5,362 Plugin.c
+2002-02-20  23:57             4,195 Plugin.dsp
+2002-08-13  02:03             4,759 Plugin.mak
+2002-02-20  13:47               499 resource.h
+2002-02-20  23:47             2,374 rsrc.rc
+               5 个文件         17,189 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDS\Examples\CS 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-05-24  15:30             1,078 App.ico
+2002-05-24  15:30             2,426 AssemblyInfo.cs
+2002-05-25  15:25             5,185 Form1.cs
+2002-05-25  15:20             5,315 Form1.resx
+2002-05-25  15:06             4,693 LDSChat.csproj
+2002-05-25  15:27             1,772 LDSChat.csproj.user
+2002-05-24  15:30               910 LDSChat.sln
+               7 个文件         21,379 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDS\Examples\Delphi 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-08-07  16:13             1,217 FindLDSAndLaunch4Delphi.dpr
+2002-06-28  16:12             2,999 LDS_DmpTst.dpr
+2002-02-23  20:20             2,556 LDS_VerPid.dpr
+               3 个文件          6,772 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\LordPE\LDS\INC 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-03-24  14:10             6,920 LDS.bas
+2002-05-25  15:04            12,504 LDS.cs
+2002-03-24  14:02             6,973 LDS.h
+2002-03-24  14:12             8,224 LDS.INC
+2002-03-24  14:15             7,084 LDS.ni
+2002-03-24  14:12             7,531 LDS.pas
+               6 个文件         49,236 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\procsDLL 的目录
+
+2008-11-16  03:05    <DIR>          .
+2008-11-16  03:05    <DIR>          ..
+2002-08-13  14:18    <DIR>          examples
+2001-01-26  14:26               809 procs.h
+2001-01-26  12:39               594 procs.INC
+2001-02-02  10:02             3,962 procs.lib
+               3 个文件          5,365 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\procsDLL\examples 的目录
+
+2002-08-13  14:18    <DIR>          .
+2002-08-13  14:18    <DIR>          ..
+2001-01-25  14:27                26 EXP1Out.BAT
+2002-08-13  14:18    <DIR>          useprocs1
+2001-02-02  10:09             3,584 UseProcs1.exe
+2002-08-13  14:18    <DIR>          useprocs2
+2001-01-26  14:26             2,048 useprocs2.exe
+               3 个文件          5,658 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\procsDLL\examples\useprocs1 的目录
+
+2002-08-13  14:18    <DIR>          .
+2002-08-13  14:18    <DIR>          ..
+2001-01-25  14:16             1,985 CONSOLE.INC
+2001-01-25  14:17               325 MAKE.BAT
+2001-01-26  12:39               967 MAKE.PIF
+2001-01-25  20:41             4,636 UseProcs1.ASM
+               4 个文件          7,913 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\procsDLL\examples\useprocs2 的目录
+
+2002-08-13  14:18    <DIR>          .
+2002-08-13  14:18    <DIR>          ..
+2001-01-26  13:35             1,194 USEPROCS.C
+2001-01-26  12:16             4,158 useprocs2.dsp
+2001-01-26  11:59               571 UseProcs2.dsw
+               3 个文件          5,923 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\realignDLL 的目录
+
+2002-08-13  14:18    <DIR>          .
+2002-08-13  14:18    <DIR>          ..
+2002-02-11  23:04             1,450 Realign.h
+2002-02-11  23:05             2,728 realign.lib
+               2 个文件          4,178 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\SoftSnoop 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2002-08-13  14:09    <DIR>          PluginExp1
+2002-08-13  14:09    <DIR>          PluginExp2
+2002-08-13  14:09    <DIR>          PluginExp3
+2001-02-02  11:41             1,527 Plugins.tXt
+2001-03-15  13:34             9,115 SSplugin.h
+2001-03-15  13:58             4,579 SSPlugin.INC
+2001-03-15  14:16             4,055 SSPlugin.pas
+               4 个文件         19,276 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\SoftSnoop\PluginExp1 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2001-02-01  19:56               960 PluginExp1.c
+2001-01-30  13:38                25 PluginExp1.def
+2001-01-30  13:45             4,318 PluginExp1.dsp
+               3 个文件          5,303 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\SoftSnoop\PluginExp2 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2001-01-31  19:16               390 BUILD.BAT
+2001-02-01  20:31               967 BUILD.PIF
+2001-02-01  19:57             4,603 MsgHook.ASM
+2001-01-31  14:37               233 RESOURCE.INC
+2001-02-01  20:31               728 Rsrc.res
+               5 个文件          6,921 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\LordPE豪华版\SDK\SoftSnoop\PluginExp3 的目录
+
+2002-08-13  14:09    <DIR>          .
+2002-08-13  14:09    <DIR>          ..
+2001-02-01  20:48             3,785 PluginExp3.dpr
+2001-02-01  20:32               236 RSRC.RES
+               2 个文件          4,021 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\Overlay 最终版 的目录
+
+2009-08-29  01:18    <DIR>          .
+2009-08-29  01:18    <DIR>          ..
+2009-08-29  01:18    <DIR>          Language
+2006-07-08  20:22           570,880 Overlay 最终版.exe
+               1 个文件        570,880 字节
+
+ D:\CRACK8~1.0\crack8\手工脱壳\Overlay 最终版\Language 的目录
+
+2009-08-29  01:18    <DIR>          .
+2009-08-29  01:18    <DIR>          ..
+2009-08-29  01:18               641 Default.ini
+2006-07-08  20:23               758 English.ini
+               2 个文件          1,399 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具 的目录
+
+2009-08-29  22:59    <DIR>          .
+2009-08-29  22:59    <DIR>          ..
+2009-08-28  22:57    <DIR>          Crack8专版PEID
+2009-08-28  23:57               338 desktop.ini
+2009-08-29  22:57    <DIR>          DiE 6.4
+2008-03-20  17:11           779,264 ExeInfo PE汉化版.exe
+2009-08-28  23:54               766 PEiD.ico
+2009-08-28  22:57    <DIR>          QQ吻专版PEiD
+               3 个文件        780,368 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\Crack8专版PEID 的目录
+
+2009-08-28  22:57    <DIR>          .
+2009-08-28  22:57    <DIR>          ..
+2008-10-29  12:57           491,520 Crack8专版PEiD0.95.exe
+2005-01-30  15:26               651 external.txt
+2009-08-28  22:57             2,160 IDToText.Ini
+2006-05-11  17:22           974,848 mfc70.dll
+2006-05-11  17:22           344,064 msvcr70.dll
+2006-05-13  11:35            43,520 PESniffer.dll
+2009-08-28  21:41    <DIR>          plugins
+2009-08-28  19:59    <DIR>          pluginsdk
+2006-05-11  17:23           778,240 rtl70.bpl
+2008-06-14  22:06           310,777 Signs.txt
+2009-08-26  15:17           228,040 userdb.txt
+2006-05-11  17:23         1,381,376 vcl70.bpl
+              10 个文件      4,555,196 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\Crack8专版PEID\plugins 的目录
+
+2009-08-28  21:41    <DIR>          .
+2009-08-28  21:41    <DIR>          ..
+2004-11-03  19:22            19,968 AddSig.dll
+2006-05-12  16:05             7,168 advanced_scan.dll
+2003-01-01  04:39             3,382 AntiSPack.dll
+2005-01-17  10:22            27,136 crc32.dll
+2007-10-05  00:09            57,856 Easy Screen 1.3.0.dll
+2004-02-20  00:51            16,384 eCrap.dll
+2005-02-19  11:49            16,384 eCrapOepVerify.dll
+2004-11-28  16:20            31,232 EPScan.dll
+2005-09-23  19:04            10,752 ExtOverlay.dll
+2006-09-06  11:09             4,096 ExtractOverlay.dll
+2004-11-16  01:35            18,432 FC.dll
+2004-02-07  18:51            13,038 FileInfo.dll
+2005-07-07  16:36            12,800 FixCRC.dll
+2006-05-11  11:00            61,440 FNE.dll
+2006-05-03  09:14             7,320 frant.dll
+2003-12-10  21:23            11,776 FSG v1.33__.dll
+2003-12-10  21:23            11,776 FSG v1.33脱壳.dll
+2008-10-26  23:49             5,632 GenOEP (2).dll
+2006-03-26  22:06             5,632 GenOEP.dll
+2005-06-01  09:00            11,264 GUID.dll
+2005-10-19  11:32             8,970 hh.dll
+2005-12-22  21:47            15,360 HideCapt.dll
+2004-01-16  12:32            15,360 HideCapt2.dll
+2008-02-03  16:29            17,920 IDToText.DLL
+2008-02-03  16:29           129,936 Imploder.DLL
+2006-03-26  22:06            51,438 ImpREC.dll
+2008-11-01  17:55           119,296 kanal.dll
+2004-12-12  01:28            30,720 Morphine.dll
+2005-04-06  22:22           512,512 oepscan.dll
+2006-01-22  14:39            52,224 ohfixer_v01.dll
+2008-12-29  16:13             8,055 oreansid.dat
+2008-12-29  16:16             9,216 oreansid.dll
+2005-12-21  21:29           158,418 Overlay1.0.dll
+2005-12-21  21:29           158,418 Overlay1.0_.dll
+2005-12-21  21:29           158,418 Overlay1.0汉化.dll
+2006-05-11  19:15            19,968 Oversaver.dll
+2005-06-08  03:49           174,592 PackUPX.dll
+2007-06-06  21:46            78,336 Patch_Maker_0.5.0.dll
+2004-09-23  21:42            21,504 PE2HTML.dll
+2006-07-29  16:51            26,624 PE2HTML.exe
+2008-02-03  16:29            18,944 PEExtract.DLL
+2007-03-11  00:06            51,148 PEiDBundle.DLL
+2006-05-21  11:36            15,079 PESniffer4PEiD.ASM
+2008-10-27  18:26             6,656 PESniffer4PEiD.DLL
+2005-01-17  09:18            16,616 PlgLdr.dll
+2006-05-11  17:23             2,048 PluginEx.dll
+2004-04-23  19:20            20,480 pluzina.dll
+2004-08-30  20:16            15,872 pluzina1.dll
+2005-03-23  19:03            20,992 pluzina4.dll
+2005-03-23  19:08             9,520 pluziny.nfo
+2004-04-23  19:20            20,480 QuickChSum.dll
+2007-12-06  10:24             5,050 RebuildPE.dll
+2003-12-09  08:27             6,656 RelocRebuilder.dll
+2005-05-12  21:48            41,472 SecFix.dll
+2005-06-08  05:46            21,504 SecTool.dll
+2005-03-23  19:03            20,992 Sendspy.dll
+2005-02-13  18:30            19,456 StringViewer.dll
+2007-03-11  00:06            12,288 unbero.dll
+2008-02-03  16:29            15,872 UnCDS_SS.DLL
+2005-07-24  02:53             5,120 undef.dll
+2008-02-03  16:29            15,872 UnFakeNinja.DLL
+2005-01-17  10:22            20,480 UnFSG.dll
+2004-08-30  20:16            15,872 UnitsBrowser.dll
+2008-02-03  16:29            20,992 UnPPP.DLL
+2008-02-03  16:29            18,944 UnRCrypt.DLL
+2008-02-03  16:29            16,896 UnRPolyCrypt.DLL
+2006-04-29  14:06            11,776 UnUPolyX.dll
+2005-07-24  02:55            11,776 UNUPX.DLL
+2007-03-11  00:06            44,544 unupx2.dll
+2004-08-24  22:27             6,656 UnUPXShit.dll
+2006-01-15  02:25           249,344 UPXI.dll
+2005-11-09  00:01           154,464 UPXScramb.dll
+2003-12-09  08:27             7,168 uupx.dll
+2006-07-01  19:34           109,056 VerA.dll
+2006-06-30  10:31             2,171 VerA.txt
+2005-06-22  16:14           515,072 XNResourceEditor_Plugin.DLL
+2005-02-25  20:21            12,288 XP.dll
+2004-11-16  06:21            48,128 YPP.dll
+2006-04-10  12:24                87 ypp.ini
+2006-03-26  22:06             4,990 ZDRx.dll
+2009-08-28  20:27    <DIR>          [-=About PEiD =-]
+2009-04-29  17:54             1,652 [SST].nFo
+              81 个文件      3,755,226 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\Crack8专版PEID\plugins\[-=About PEiD =-] 的目录
+
+2009-08-28  20:27    <DIR>          .
+2009-08-28  20:27    <DIR>          ..
+2006-05-09  01:26             2,048 UnreaL.DLL
+               1 个文件          2,048 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\Crack8专版PEID\pluginsdk 的目录
+
+2009-08-28  19:59    <DIR>          .
+2009-08-28  19:59    <DIR>          ..
+2009-08-28  19:59    <DIR>          C++
+2009-08-28  19:59    <DIR>          Delphi
+2009-08-28  19:59    <DIR>          MASM
+2009-08-28  19:59    <DIR>          PowerBASIC
+2006-09-13  21:26               106 readme.txt
+               1 个文件            106 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\Crack8专版PEID\pluginsdk\C++ 的目录
+
+2009-08-28  19:59    <DIR>          .
+2009-08-28  19:59    <DIR>          ..
+2006-03-26  22:07               263 defs.h
+2006-03-26  22:07               668 null.c
+               2 个文件            931 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\Crack8专版PEID\pluginsdk\Delphi 的目录
+
+2009-08-28  19:59    <DIR>          .
+2009-08-28  19:59    <DIR>          ..
+2006-09-07  19:53               567 Sample.dpr
+               1 个文件            567 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\Crack8专版PEID\pluginsdk\MASM 的目录
+
+2009-08-28  19:59    <DIR>          .
+2009-08-28  19:59    <DIR>          ..
+2006-09-07  20:54               152 compile.bat
+2006-09-07  20:59             2,321 masm_plugin.asm
+2006-09-07  20:54                46 masm_plugin.def
+               3 个文件          2,519 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\Crack8专版PEID\pluginsdk\PowerBASIC 的目录
+
+2009-08-28  19:59    <DIR>          .
+2009-08-28  19:59    <DIR>          ..
+2004-12-11  19:02             2,426 PEiD_Plugin.bas
+               1 个文件          2,426 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\DiE 6.4 的目录
+
+2009-08-29  22:57    <DIR>          .
+2009-08-29  22:57    <DIR>          ..
+2007-05-06  00:08             6,666 Detections History.txt
+2008-03-11  12:36         1,350,144 DiE64.exe
+2009-08-29  22:56               116 Options.ini
+2007-04-26  10:47             9,626 Readme.txt
+2008-06-14  22:06           310,777 Signs.txt
+2008-07-10  22:31           507,160 userdb.txt
+               6 个文件      2,184,489 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\QQ吻专版PEiD 的目录
+
+2009-08-28  22:57    <DIR>          .
+2009-08-28  22:57    <DIR>          ..
+2005-01-30  15:26               651 external.txt
+2009-08-28  22:57             2,158 IDToText.Ini
+2006-05-11  17:22           974,848 mfc70.dll
+2006-05-11  17:22           344,064 msvcr70.dll
+2006-05-13  11:35            43,520 PESniffer.dll
+2009-08-28  22:27    <DIR>          plugins
+2008-10-29  09:02    <DIR>          pluginsdk
+2008-10-29  12:57           491,520 QQ吻专版PEiD0.95.exe
+2006-05-11  17:23           778,240 rtl70.bpl
+2008-06-14  22:06           310,777 Signs.txt
+2008-10-25  17:56         1,916,961 userdb.txt
+2006-05-11  17:23         1,381,376 vcl70.bpl
+              10 个文件      6,244,115 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\QQ吻专版PEiD\plugins 的目录
+
+2009-08-28  22:27    <DIR>          .
+2009-08-28  22:27    <DIR>          ..
+2006-05-12  16:05             7,168 advanced_scan.dll
+2003-01-01  04:39             3,382 AntiSPack.dll
+2005-01-17  10:22            27,136 crc32.dll
+2007-10-05  00:09            57,856 Easy Screen 1.3.0.dll
+2004-02-20  00:51            16,384 eCrap.dll
+2005-02-19  11:49            16,384 eCrapOepVerify.dll
+2004-11-28  16:20            31,232 EPScan.dll
+2005-09-23  19:04            10,752 ExtOverlay.dll
+2006-09-06  11:09             4,096 ExtractOverlay.dll
+2004-11-16  01:35            18,432 FC.DLL
+2004-02-07  18:51            13,038 FileInfo.dll
+2005-07-07  16:36            12,800 FixCRC.DLL
+2006-05-11  11:00            61,440 FNE.dll
+2006-05-03  09:14             7,320 frant.dll
+2003-12-10  21:23            11,776 FSG v1.33脱壳.dll
+2005-11-07  18:30             5,632 GenOEP.dll
+2005-06-01  09:00            11,264 GUID.dll
+2005-10-19  11:32             8,970 hh.dll
+2005-12-22  21:47            15,360 HideCapt.dll
+2004-01-16  12:32            15,360 HideCapt2.dll
+2008-02-03  16:29            17,920 IDToText.DLL
+2008-02-03  16:29           129,936 Imploder.DLL
+2002-05-30  14:17            51,438 ImpREC.dll
+2006-05-10  19:26           124,416 kanal.dll
+2004-12-12  01:28            30,720 Morphine.DLL
+2005-04-06  22:22           512,512 oepscan.dll
+2006-01-22  14:39            52,224 ohfixer_v01.dll
+2005-12-21  21:29           158,418 Overlay1.0.dll
+2005-12-21  21:29           158,418 Overlay1.0汉化.dll
+2006-05-11  19:15            19,968 Oversaver.dll
+2005-06-08  03:49           174,592 PackUPX.DLL
+2007-06-06  21:46            78,336 Patch_Maker_0.5.0.dll
+2004-09-23  21:42            21,504 PE2HTML.dll
+2006-07-29  16:51            26,624 PE2HTML.exe
+2008-02-03  16:29            18,944 PEExtract.DLL
+2007-03-11  00:06            51,148 PEiDBundle.DLL
+2006-05-21  11:36            15,079 PESniffer4PEiD.ASM
+2008-10-27  18:26             6,656 PESniffer4PEiD.DLL
+2005-01-17  09:18            16,616 PlgLdr.dll
+2006-05-11  17:23             2,048 PluginEx.dll
+2004-04-23  19:20            20,480 pluzina.dll
+2004-08-30  20:16            15,872 pluzina1.dll
+2005-03-23  19:03            20,992 pluzina4.dll
+2005-03-23  19:08             9,520 pluziny.nfo
+2004-04-23  19:20            20,480 QuickChSum.dll
+2007-12-06  10:24             5,050 RebuildPE.dll
+2003-12-09  08:27             6,656 RelocRebuilder.dll
+2005-05-12  21:48            41,472 SecFix.dll
+2005-06-08  05:46            21,504 SecTool.DLL
+2005-03-23  19:03            20,992 Sendspy.dll
+2005-02-13  18:30            19,456 StringViewer.dll
+2007-03-11  00:06            12,288 unbero.dll
+2008-02-03  16:29            15,872 UnCDS_SS.DLL
+2005-07-24  02:53             5,120 undef.dll
+2008-02-03  16:29            15,872 UnFakeNinja.DLL
+2005-01-17  10:22            20,480 unfsg.dll
+2004-08-30  20:16            15,872 UnitsBrowser.dll
+2008-02-03  16:29            20,992 UnPPP.DLL
+2008-02-03  16:29            18,944 UnRCrypt.DLL
+2008-02-03  16:29            16,896 UnRPolyCrypt.DLL
+2006-04-29  14:06            11,776 UnUPolyX.dll
+2005-07-24  02:55            11,776 UNUPX.DLL
+2007-03-11  00:06            44,544 unupx2.dll
+2004-08-24  22:27             6,656 UnUPXShit.dll
+2006-01-15  02:25           249,344 UPXI.dll
+2005-11-09  00:01           154,464 UPXScramb.dll
+2003-12-09  08:27             7,168 uupx.dll
+2006-07-01  19:34           109,056 VerA.dll
+2006-06-30  10:31             2,171 VerA.txt
+2005-06-22  16:14           515,072 XNResourceEditor_Plugin.DLL
+2005-02-25  20:21            12,288 XP.dll
+2004-11-16  06:21            48,128 YPP.DLL
+2006-04-10  12:24                87 ypp.ini
+2006-05-11  17:25            22,016 ZDRx.dll
+2008-10-29  09:02    <DIR>          [-=About PEiD =-]
+              74 个文件      3,562,655 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\QQ吻专版PEiD\plugins\[-=About PEiD =-] 的目录
+
+2008-10-29  09:02    <DIR>          .
+2008-10-29  09:02    <DIR>          ..
+2006-05-09  01:26             2,048 UnreaL.DLL
+               1 个文件          2,048 字节
+
+ D:\CRACK8~1.0\crack8\查壳工具\QQ吻专版PEiD\pluginsdk 的目录
+
+2008-10-29  09:02    <DIR>          .
+2008-10-29  09:02    <DIR>          ..
+2004-02-13  20:33               289 defs.h
+2003-11-16  18:08               668 null.c
+2003-11-16  17:11             2,048 NULL.dll
+               3 个文件          3,005 字节
+
+ D:\CRACK8~1.0\crack8\破解辅助 的目录
+
+2009-09-10  11:55    <DIR>          .
+2009-09-10  11:55    <DIR>          ..
+2002-01-14  16:25            53,694 ABS utility.ico
+2009-08-29  14:50               351 desktop.ini
+2008-05-26  10:01         1,226,739 取标题.exe
+2008-10-12  11:46         1,037,320 注册表跳转.exe
+2008-07-10  15:32         1,086,664 激活灰色按钮.exe
+2004-06-22  11:35           530,707 破解计算器.exe
+2005-12-27  23:29           112,128 破解计算工具 v1.00.exe
+               7 个文件      4,047,603 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具 的目录
+
+2009-09-10  12:49    <DIR>          .
+2009-09-10  12:49    <DIR>          ..
+2003-02-16  23:31            25,214 3.ICO
+2009-08-29  14:47               341 desktop.ini
+2009-09-10  12:18    <DIR>          UltraCompare6.4
+2009-08-30  06:15    <DIR>          UltraEdit v15.0.0
+2009-09-10  12:49    <DIR>          WinHex15.4-SR5
+               2 个文件         25,555 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraCompare6.4 的目录
+
+2009-09-10  12:18    <DIR>          .
+2009-09-10  12:18    <DIR>          ..
+2009-09-10  12:18    <DIR>          ipm
+2009-08-31  06:40           634,352 SftpDLL.dll
+2009-08-31  06:40           104,448 uc.com
+2009-08-31  06:40         6,661,904 uc6.4.exe
+2009-08-31  06:40             2,219 ucorder.txt
+2009-08-31  06:40         1,555,456 ucres.dll
+2009-08-31  06:40           126,976 UC_ShellExt.dll
+2009-08-31  06:40           163,328 unrar.dll
+2009-09-10  12:18               157 注册码.txt
+               8 个文件      9,248,840 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraCompare6.4\ipm 的目录
+
+2009-09-10  12:18    <DIR>          .
+2009-09-10  12:18    <DIR>          ..
+2009-09-10  12:18    <DIR>          images
+2009-06-08  08:11            16,066 messaging.js
+2009-02-18  12:44             9,109 ngdefault.html
+2009-06-08  08:11             8,182 style.css
+2009-06-18  10:48            23,844 vars.js
+               4 个文件         57,201 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraCompare6.4\ipm\images 的目录
+
+2009-09-10  12:18    <DIR>          .
+2009-09-10  12:18    <DIR>          ..
+2009-06-05  11:46             2,258 best_value_arrow.gif
+2009-01-16  15:31             1,256 best_value_bg.gif
+2009-01-16  15:31             1,426 bonus.gif
+2009-01-16  15:31               808 button.gif
+2009-01-16  15:31               562 button_big.gif
+2009-01-16  15:31            18,030 clock_bg.png
+2009-01-16  15:31             7,372 command_line_quick_diff.gif
+2009-01-16  15:31            13,483 compare_ftp_folders.gif
+2009-01-16  15:31            10,409 compare_text_snippets_icon.gif
+2009-01-16  15:31             5,960 custom_colors_icon.gif
+2009-01-16  15:31            12,017 custom_date_format_icon.gif
+2009-01-16  15:31             8,768 edit_text_icon.jpg
+2009-01-16  15:31               640 faq_icon.gif
+2009-01-16  15:31             6,842 favorite_files_folders_icon.gif
+2009-01-16  15:31            10,796 folder_compare_icon.jpg
+2009-01-16  15:31            10,850 folder_mode_filters_icon.gif
+2009-01-16  15:31             1,089 forums_icon.gif
+2009-01-16  15:31            10,993 ignore_options_icon.gif
+2009-01-16  15:31             8,218 key_mapping.gif
+2009-01-16  15:31               712 lock-key_icon.gif
+2009-01-16  15:31             9,904 manual_allign_icon.gif
+2009-01-16  15:31             9,299 merge_icon.jpg
+2009-01-16  15:31               816 powertip_icon.gif
+2009-01-16  15:31             7,457 profiles_icon.gif
+2009-01-16  15:31               581 progress_bar.gif
+2009-01-16  15:31               411 progress_bar_overlay.gif
+2009-01-16  15:31            10,961 report_icon.gif
+2009-01-16  15:31             9,018 sessions_icon.gif
+2009-01-16  15:31             7,219 shell_integration_icon.gif
+2009-01-16  15:31               898 support_icon.gif
+2009-01-16  15:31               765 tech_support_icon.gif
+2009-01-16  15:31            11,003 text_compare_icon.jpg
+2009-01-16  15:31             5,493 ucbox_big.gif
+2009-01-16  15:31             3,013 ucbox_sm.gif
+2009-01-16  15:31            14,349 uc_bg.png
+2009-01-16  15:31             9,593 uc_merge_icon.gif
+2009-01-16  15:31             5,493 uebox_big.gif
+2009-01-16  15:31             2,218 ue_uc_box.gif
+2009-01-16  15:31             4,856 ue_uc_box_big.gif
+2009-01-16  15:31            12,490 web_compare_icon.gif
+2009-01-16  15:31            10,581 word_compare.gif
+2009-01-16  15:31            11,991 zip_archive_icon.gif
+              42 个文件        280,898 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0 的目录
+
+2009-08-30  06:15    <DIR>          .
+2009-08-30  06:15    <DIR>          ..
+2009-06-02  15:00            69,401 changes.txt
+2009-06-02  15:00         1,038,848 dbghelp.dll
+2009-08-30  06:14    <DIR>          extras
+2009-08-30  06:14    <DIR>          GNU
+2009-08-30  06:14    <DIR>          ipm
+2009-06-02  15:00           963,584 libxml2.dll
+2009-06-02  15:00             2,691 order.txt
+2009-08-30  06:14    <DIR>          qsg
+2009-06-02  15:00             2,253 readme.txt
+2009-08-30  06:14    <DIR>          scripts
+2009-06-02  15:00            44,821 taglist.uet
+2009-06-02  15:00           315,392 tidylib.dll
+2009-06-02  15:00         3,551,744 ucl.exe
+2009-06-02  15:00         1,465,856 ucres.dll
+2009-06-02  15:00            93,696 ue32ctmn.dll
+2009-06-02  15:00           118,438 uedit32.lng
+2009-06-02  15:00            50,688 UEDOS32.exe
+2009-06-02  15:00             8,704 uehh.exe
+2009-06-02  15:00           684,032 uejs.dll
+2009-06-02  15:00         2,717,184 ueres.dll
+2009-06-02  15:00         9,538,320 UltraEdit v15.0.0.exe
+2009-04-06  11:13           209,639 UltraEdit.v15.keygen.rar
+2008-02-06  10:28           214,792 WiseUpdt.EXE
+2009-06-02  15:00           799,016 wodCertificate.dll
+2009-03-04  10:33         1,216,856 wodFtpDLX.dll
+2009-06-02  15:00         1,143,136 wodTelnetDLX.ocx
+2009-08-30  06:14    <DIR>          wordfiles
+              21 个文件     24,249,091 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\extras 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-08-30  06:14    <DIR>          images
+2009-06-02  15:00             4,200 style.css
+2009-06-02  15:00             4,496 ues_ad.html
+               2 个文件          8,696 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\extras\images 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00               752 bg-repeat.gif
+2009-06-02  15:00               534 footer.gif
+2009-06-02  15:00             3,220 header.gif
+2009-06-02  15:00               861 uc_icon.gif
+2009-06-02  15:00               637 ue3_icon.gif
+2009-06-02  15:00               924 ues_icon.gif
+2009-06-02  15:00               957 ue_icon.gif
+2009-06-02  15:00               951 us_icon.gif
+               8 个文件          8,836 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\GNU 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-08-30  06:14    <DIR>          aspell
+2009-06-02  15:00           118,784 astyle.exe
+2009-06-02  15:00           200,704 ctags.exe
+2009-06-02  15:00           978,432 iconv.dll
+2009-06-02  15:00           963,584 libxml2.dll
+2009-08-30  06:14    <DIR>          licenses
+2009-08-30  06:14    <DIR>          src
+2009-06-02  15:00            36,352 xmllint.exe
+2009-06-02  15:00            59,904 zlib1.dll
+               6 个文件      2,357,760 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\GNU\aspell 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-08-30  06:14    <DIR>          bin
+2009-06-02  15:00            26,934 COPYING
+2009-08-30  06:14    <DIR>          data
+2009-08-30  06:14    <DIR>          dict
+2009-06-02  15:00                26 en.prepl
+2009-06-02  15:00                22 en.pws
+2009-06-02  15:00            13,755 README
+               4 个文件         40,737 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\GNU\aspell\bin 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00           770,048 aspell6.dll
+               1 个文件        770,048 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\GNU\aspell\data 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00             7,969 ASCII.dat
+2009-06-02  15:00            33,395 cp1250.cmap
+2009-06-02  15:00            14,476 cp1250.cset
+2009-06-02  15:00            33,801 cp1251.cmap
+2009-06-02  15:00            14,128 cp1251.cset
+2009-06-02  15:00            32,925 cp1252.cmap
+2009-06-02  15:00            14,301 cp1252.cset
+2009-06-02  15:00            40,737 cp1253.cmap
+2009-06-02  15:00            13,944 cp1253.cset
+2009-06-02  15:00            32,977 cp1254.cmap
+2009-06-02  15:00            14,306 cp1254.cset
+2009-06-02  15:00            37,384 cp1255.cmap
+2009-06-02  15:00            13,294 cp1255.cset
+2009-06-02  15:00            46,610 cp1256.cmap
+2009-06-02  15:00            13,569 cp1256.cset
+2009-06-02  15:00            33,197 cp1257.cmap
+2009-06-02  15:00            14,197 cp1257.cset
+2009-06-02  15:00            35,914 cp1258.cmap
+2009-06-02  15:00            14,182 cp1258.cset
+2009-06-02  15:00                98 dvorak.kbd
+2009-06-02  15:00            32,797 iso-8859-1.cmap
+2009-06-02  15:00            14,110 iso-8859-1.cset
+2009-06-02  15:00            33,017 iso-8859-10.cmap
+2009-06-02  15:00            14,521 iso-8859-10.cset
+2009-06-02  15:00            28,631 iso-8859-11.cmap
+2009-06-02  15:00            13,500 iso-8859-11.cset
+2009-06-02  15:00            33,089 iso-8859-13.cmap
+2009-06-02  15:00            14,251 iso-8859-13.cset
+2009-06-02  15:00            33,424 iso-8859-14.cmap
+2009-06-02  15:00            14,641 iso-8859-14.cset
+2009-06-02  15:00            32,729 iso-8859-15.cmap
+2009-06-02  15:00            14,201 iso-8859-15.cset
+2009-06-02  15:00            32,751 iso-8859-16.cmap
+2009-06-02  15:00            14,546 iso-8859-16.cset
+2009-06-02  15:00            33,253 iso-8859-2.cmap
+2009-06-02  15:00            14,395 iso-8859-2.cset
+2009-06-02  15:00            32,865 iso-8859-3.cmap
+2009-06-02  15:00            14,234 iso-8859-3.cset
+2009-06-02  15:00            33,093 iso-8859-4.cmap
+2009-06-02  15:00            14,367 iso-8859-4.cset
+2009-06-02  15:00            33,659 iso-8859-5.cmap
+2009-06-02  15:00            14,011 iso-8859-5.cset
+2009-06-02  15:00            43,191 iso-8859-6.cmap
+2009-06-02  15:00            12,814 iso-8859-6.cset
+2009-06-02  15:00            40,683 iso-8859-7.cmap
+2009-06-02  15:00            13,901 iso-8859-7.cset
+2009-06-02  15:00            29,241 iso-8859-8.cmap
+2009-06-02  15:00            12,819 iso-8859-8.cset
+2009-06-02  15:00            32,938 iso-8859-9.cmap
+2009-06-02  15:00            14,147 iso-8859-9.cset
+2009-06-02  15:00             7,973 iso8859-1.dat
+2009-06-02  15:00             7,998 iso8859-10.dat
+2009-06-02  15:00             7,991 iso8859-13.dat
+2009-06-02  15:00             8,010 iso8859-14.dat
+2009-06-02  15:00             7,987 iso8859-15.dat
+2009-06-02  15:00             7,995 iso8859-2.dat
+2009-06-02  15:00             7,984 iso8859-3.dat
+2009-06-02  15:00             7,984 iso8859-4.dat
+2009-06-02  15:00             8,265 iso8859-5.dat
+2009-06-02  15:00             8,120 iso8859-6.dat
+2009-06-02  15:00             8,148 iso8859-7.dat
+2009-06-02  15:00             8,058 iso8859-8.dat
+2009-06-02  15:00             7,965 iso8859-9.dat
+2009-06-02  15:00             8,295 koi8-f.dat
+2009-06-02  15:00            33,291 koi8-r.cmap
+2009-06-02  15:00            13,661 koi8-r.cset
+2009-06-02  15:00             8,213 koi8-r.dat
+2009-06-02  15:00            33,445 koi8-u.cmap
+2009-06-02  15:00            13,823 koi8-u.cset
+2009-06-02  15:00             8,237 koi8-u.dat
+2009-06-02  15:00               122 split.kbd
+2009-06-02  15:00               100 standard.kbd
+2009-06-02  15:00             9,911 tex.conv
+2009-06-02  15:00             8,059 viscii.dat
+              74 个文件      1,418,858 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\GNU\aspell\dict 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\GNU\licenses 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00            26,934 COPYING.aspell
+2009-06-02  15:00            18,689 COPYING.astyle
+2009-06-02  15:00            18,687 COPYING.ctags
+2009-06-02  15:00            25,773 COPYING.iconv
+2009-06-02  15:00             1,124 libxml2.txt
+               5 个文件         91,207 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\GNU\src 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00             1,162 source_code.txt
+               1 个文件          1,162 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\ipm 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-08-30  06:14    <DIR>          images
+2009-06-02  15:00            15,823 messaging.js
+2009-06-02  15:00             9,088 ngdefault.html
+2009-06-02  15:00             8,158 style.css
+2009-06-02  15:00            25,356 vars.js
+               4 个文件         58,425 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\ipm\images 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00             6,078 add_wordfile_icon.gif
+2009-06-02  15:00             2,258 best_value_arrow.gif
+2009-06-02  15:00             1,256 best_value_bg.gif
+2009-06-02  15:00             1,426 bonus.gif
+2009-06-02  15:00             3,534 bookmarks_icon.gif
+2009-06-02  15:00            12,640 browser_preview_icon.gif
+2009-06-02  15:00               808 button.gif
+2009-06-02  15:00               562 button_big.gif
+2009-06-02  15:00            16,702 clock_bg.png
+2009-06-02  15:00             4,183 column_mode_icon.gif
+2009-06-02  15:00             6,430 encrypt.gif
+2009-06-02  15:00             6,876 environment_icon.gif
+2009-06-02  15:00               640 faq_icon.gif
+2009-06-02  15:00             4,308 find_dialog.gif
+2009-06-02  15:00             1,089 forums_icon.gif
+2009-06-02  15:00             6,814 ftp_dialog.gif
+2009-06-02  15:00             8,218 key_mapping.gif
+2009-06-02  15:00             5,165 link_local_remote.gif
+2009-06-02  15:00               712 lock-key_icon.gif
+2009-06-02  15:00             5,002 macro_icon.gif
+2009-06-02  15:00               816 powertip_icon.gif
+2009-06-02  15:00               581 progress_bar.gif
+2009-06-02  15:00               411 progress_bar_overlay.gif
+2009-06-02  15:00             3,663 projects_dialog.gif
+2009-06-02  15:00               759 reminder_clock_icon.gif
+2009-06-02  15:00             6,202 replace_in_files_icon.gif
+2009-06-02  15:00             3,879 scripting_icon.gif
+2009-06-02  15:00             6,272 search_favorites.gif
+2009-06-02  15:00             6,090 sort_icon.gif
+2009-06-02  15:00             7,165 spell_check.gif
+2009-06-02  15:00             8,599 style_builder.gif
+2009-06-02  15:00               898 support_icon.gif
+2009-06-02  15:00               765 tech_support_icon.gif
+2009-06-02  15:00             5,744 telnet.gif
+2009-06-02  15:00             4,288 templates.gif
+2009-06-02  15:00             4,111 uc_dialog.gif
+2009-06-02  15:00             9,593 uc_merge_icon.gif
+2009-06-02  15:00             3,780 uebox_big.gif
+2009-06-02  15:00             1,998 uebox_sm.gif
+2009-06-02  15:00             1,405 ues_icon.gif
+2009-06-02  15:00            12,567 ue_bg.png
+2009-06-02  15:00               782 ue_icon.gif
+2009-06-02  15:00             2,218 ue_uc_box.gif
+2009-06-02  15:00             4,856 ue_uc_box_big.gif
+2009-06-02  15:00             5,789 versioned_backup.gif
+              45 个文件        197,932 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\qsg 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-08-30  06:14    <DIR>          images
+2009-06-02  15:00             2,278 qsg1.html
+2009-06-02  15:00             2,335 qsg2.html
+2009-06-02  15:00             2,329 qsg3.html
+2009-06-02  15:00             2,196 qsg4.html
+2009-06-02  15:00             1,235 style.css
+2009-06-02  15:00             2,340 ues.html
+               6 个文件         12,713 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\qsg\images 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00             1,352 ues_icon.gif
+2009-06-02  15:00             1,353 ue_icon.gif
+2009-06-02  15:00            29,926 ue_rnd.ico
+               3 个文件         32,631 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\scripts 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00             1,517 header.js
+2009-06-02  15:00             1,105 hello.js
+2009-06-02  15:00             1,608 stringvar.js
+               3 个文件          4,230 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\UltraEdit v15.0.0\wordfiles 的目录
+
+2009-08-30  06:14    <DIR>          .
+2009-08-30  06:14    <DIR>          ..
+2009-06-02  15:00             1,453 csharp.uew
+2009-06-02  15:00            13,370 css.uew
+2009-06-02  15:00             2,327 c_cplusplus.uew
+2009-06-02  15:00             5,163 html.uew
+2009-06-02  15:00             8,406 java.uew
+2009-06-02  15:00             7,440 javascript.uew
+2009-06-02  15:00             3,882 mysql.uew
+2009-06-02  15:00             4,881 perl.uew
+2009-06-02  15:00            87,763 php.uew
+2009-06-02  15:00             8,903 ruby.uew
+2009-06-02  15:00             9,111 vbscript.uew
+2009-06-02  15:00             7,893 visualbasic.uew
+2009-06-02  15:00            15,571 xml.uew
+              13 个文件        176,163 字节
+
+ D:\CRACK8~1.0\crack8\编缉工具\WinHex15.4-SR5 的目录
+
+2009-09-10  12:49    <DIR>          .
+2009-09-10  12:49    <DIR>          ..
+2009-08-30  15:04             1,217 Boot Sector FAT.tpl
+2009-08-30  15:04             1,441 Boot Sector FAT32.tpl
+2009-08-30  15:04             1,614 Boot Sector NTFS.tpl
+2009-08-30  15:04           124,928 Dialogs.dat
+2009-08-30  15:04               512 ebcdic.dat
+2009-08-30  15:04               586 Ext Directory Entry.tpl
+2009-08-30  15:04               453 Ext Group Descriptor.tpl
+2009-08-30  15:04             1,401 Ext Inode.tpl
+2009-08-30  15:04             3,437 Ext Superblock.tpl
+2009-08-30  15:04               912 FAT Directory Entry.tpl
+2009-08-30  15:04               711 FAT LFN Entry.tpl
+2009-08-30  15:04             7,355 File Type Signatures Search.txt
+2009-08-30  15:04             1,995 HFS+ Volume Header.tpl
+2009-09-10  12:24                26 indexcha.txt
+2009-08-30  15:04           238,989 language.dat
+2009-08-30  15:04             1,117 Master Boot Record.tpl
+2009-08-30  15:04             2,175 NTFS FILE Record.tpl
+2009-09-10  13:00             8,896 Recently Opened.dat
+2009-08-30  15:04             1,134 Reiser Superblock.tpl
+2009-08-30  15:04             1,052 Reiser4 Superblock.tpl
+2009-08-30  15:04             2,051 Sample script.whs
+2009-08-30  15:04               267 Text file conversion UNIX - Windows.whs
+2009-08-30  15:04               267 Text file conversion Windows - UNIX.whs
+2009-08-30  15:04             4,800 timezone.dat
+2009-09-10  12:29               170 user.txt
+2009-09-10  13:00            13,380 WinHex qqkisscrack8.cfg
+2009-08-30  15:04             1,761 winhex-d.cnt
+2009-08-30  15:04             1,683 winhex.cnt
+2009-09-10  12:23            25,231 WinHex.GID
+2009-08-30  15:04         1,739,776 WinHex15.4原版.exe
+2009-08-30  15:04            59,904 zlib1.dll
+2009-09-10  12:30               144 注册码.txt
+              32 个文件      2,249,385 字节
+
+ D:\CRACK8~1.0\crack8\脱壳机 的目录
+
+2009-10-13  20:03    <DIR>          .
+2009-10-13  20:03    <DIR>          ..
+2008-04-24  10:29           486,912 Aspack脱壳机.exe
+2009-08-29  14:47               354 desktop.ini
+2009-03-25  13:48           384,000 dump E 0.3b1 .exe
+2007-11-01  22:56           772,608 E语言通用脱壳机.exe
+2009-08-29  08:30    <DIR>          morphine2.7脱壳机
+2007-08-15  12:34           123,285 RL!dePacker1.4.1.exe
+2003-01-10  17:30           161,862 The Flying Sub.ico
+2008-03-25  19:55         1,019,392 TMD脱壳机2.0.exe
+2003-10-12  07:27           159,744 UnAspack.exe
+2008-03-19  12:48    <DIR>          Unpacker ExeCryptor 2.x.x. beta 2
+2008-11-29  22:11    <DIR>          UPXShell v3.09
+2009-08-29  08:33    <DIR>          VMUnpacker1.3官方版
+2008-11-17  01:03           409,067 四百八十多个脱壳脚本汇总.rar
+2009-08-29  08:32    <DIR>          超级巡警1.5.Misswe专版
+               9 个文件      3,517,224 字节
+
+ D:\CRACK8~1.0\crack8\脱壳机\morphine2.7脱壳机 的目录
+
+2009-08-29  08:30    <DIR>          .
+2009-08-29  08:30    <DIR>          ..
+2005-09-03  13:18           116,224 dump.dll
+2005-09-03  13:27            62,976 unmorphine2.7.exe
+               2 个文件        179,200 字节
+
+ D:\CRACK8~1.0\crack8\脱壳机\Unpacker ExeCryptor 2.x.x. beta 2 的目录
+
+2008-03-19  12:48    <DIR>          .
+2008-03-19  12:48    <DIR>          ..
+2007-10-07  19:42             6,656 Importer.dll
+2007-10-09  16:20            33,268 Unpacker ExeCryptor.exe
+               2 个文件         39,924 字节
+
+ D:\CRACK8~1.0\crack8\脱壳机\UPXShell v3.09 的目录
+
+2008-11-29  22:11    <DIR>          .
+2008-11-29  22:11    <DIR>          ..
+2004-01-09  22:23           846,336 UPXShell.exe
+2004-01-09  22:49             7,091 简体中文.lng
+               2 个文件        853,427 字节
+
+ D:\CRACK8~1.0\crack8\脱壳机\VMUnpacker1.3官方版 的目录
+
+2009-08-29  08:33    <DIR>          .
+2009-08-29  08:33    <DIR>          ..
+2006-05-19  22:01           230,912 dbghelp.dll
+2007-07-21  09:46           337,408 unarc.dll
+2007-09-08  16:30            30,048 unpack.avd
+2007-09-10  21:13           610,304 VMUnpacker1.3官方版.exe
+2007-09-10  15:08           454,656 VUnpackSDK.dll
+2007-09-11  10:46             4,867 软件说明.txt
+               6 个文件      1,668,195 字节
+
+ D:\CRACK8~1.0\crack8\脱壳机\超级巡警1.5.Misswe专版 的目录
+
+2009-08-29  08:32    <DIR>          .
+2009-08-29  08:32    <DIR>          ..
+2008-03-25  02:54                52 license.key
+2007-11-29  18:40           337,408 unarc.dll
+2008-03-15  16:53            31,016 unpack.avd
+2008-03-17  16:35           700,416 VUnpackSDK.dll
+2008-03-25  02:58           342,217 超级巡警1.5.Misswe专版.exe
+               5 个文件      1,411,109 字节
+
+ D:\CRACK8~1.0\crack8\调试工具 的目录
+
+2009-10-30  15:14    <DIR>          .
+2009-10-30  15:14    <DIR>          ..
+2009-10-30  15:17    <DIR>          Crack8个性加强版OD
+2009-08-28  23:59               336 desktop.ini
+2009-08-29  08:11    <DIR>          OD 随机标题
+2009-08-28  23:59             4,406 OD.ico
+2009-08-29  00:13    <DIR>          OllyDBG_1.10汉化第二版
+2008-11-28  22:15    <DIR>          Ollydbg个性修改版
+2009-08-28  23:15    <DIR>          OllyICE1.1看雪版
+2009-09-10  11:17    <DIR>          SoftSnoop2009V0.2
+2008-11-30  03:12    <DIR>          ^0^-Fly
+               2 个文件          4,742 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD 的目录
+
+2009-10-30  15:17    <DIR>          .
+2009-10-30  15:17    <DIR>          ..
+2009-10-30  11:17         1,376,329 0D加载自定义工具.exe
+2009-10-30  11:31    <DIR>          crack8
+2009-10-30  11:41         1,242,750 Crack8OD.bmp
+2009-10-30  11:18    <DIR>          Crack8_Skin
+2009-10-30  09:37         1,820,672 Crack8个性加强版OD.exe
+2009-10-30  11:55        10,159,119 Crack8加载自定义工具教程.exe
+2007-09-27  15:47         1,045,128 dbghelp.dll
+2009-08-26  10:55             4,507 Loaddll.exe
+2004-05-23  01:10         1,117,696 OLLYDBG.EXE
+2009-10-30  15:16            16,185 Ollydbg.ini
+2009-10-30  10:46    <DIR>          Plugin
+1998-08-28  14:10            17,680 PSAPI.DLL
+2009-10-30  10:43           486,811 StrongOD v0[1].2.7.rar
+2009-10-30  15:16                33 TBar manager.ini
+2009-10-30  11:31           102,400 Tbar.exe
+2009-10-30  11:41    <DIR>          UDD
+2009-10-30  11:35             2,434 修改说明.txt
+              13 个文件     17,391,744 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8 的目录
+
+2009-10-30  11:31    <DIR>          .
+2009-10-30  11:31    <DIR>          ..
+2009-09-13  20:52    <DIR>          C32Asm
+2009-09-13  20:51    <DIR>          Crack8专版PEID
+2009-10-28  12:27         6,320,128 Crack8时尚全能记事本V1.0.exe
+2009-09-13  20:52    <DIR>          DeDeDark3.5
+2009-09-13  20:55    <DIR>          eXeScope6.5注册版
+2009-09-13  20:54    <DIR>          FixResDemo最终版
+2009-03-15  23:56           744,448 freeRes0.94.exe
+2009-09-13  20:53    <DIR>          ImpREC FINAL 1.7七彩版
+2009-09-13  20:52    <DIR>          LordPE豪华版
+2009-09-13  20:54    <DIR>          OC偏移量转换器
+2009-09-13  20:54    <DIR>          Overlay 最终版
+2009-09-13  20:55    <DIR>          PE Explorer1.98
+2007-09-12  08:57           270,336 Resource Binder 2.6.exe
+2009-09-13  20:55    <DIR>          ResScope194
+2009-09-13  20:55    <DIR>          Restorator2007
+2009-09-13  20:51    <DIR>          SoftSnoop2009V0.2
+2009-09-13  20:52    <DIR>          VB Decompiler7.0
+2006-05-12  21:49           435,712 VBExplorer.exe
+2002-03-24  20:23           881,664 看雪ResHacker.exe
+               5 个文件      8,652,288 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\C32Asm 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  15:51               448 AnalysisReport.txt
+2003-10-24  12:03           964,096 C32asm.dll
+2004-01-20  21:57           686,080 C32Asm.exe
+2009-10-30  11:54             3,609 C32ASM.INI
+2004-01-17  22:03             1,363 history.txt
+2009-09-13  20:52    <DIR>          KeyWord
+2009-09-13  20:52    <DIR>          LANGUAGE
+2009-09-13  20:52    <DIR>          PeSave
+2009-09-13  20:52    <DIR>          Symbol
+               5 个文件      1,655,596 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\C32Asm\KeyWord 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2003-06-18  13:44            23,614 变态高亮.xml
+2003-06-18  13:44            23,897 特别高亮call.xml
+2003-06-18  13:44            26,447 特别高亮jmp.xml
+2003-06-18  13:44            22,404 缺省高亮.xml
+               4 个文件         96,362 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\C32Asm\LANGUAGE 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2004-01-17  21:30            26,983 ChineseGb.ini
+2004-01-17  21:30            30,709 English.ini
+               2 个文件         57,692 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\C32Asm\PeSave 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\C32Asm\Symbol 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2003-06-07  19:08               891 KERNEL32.ini
+2003-06-10  07:23           343,480 mfc42.ini
+2003-06-10  10:30           309,187 mfc70.ini
+               3 个文件        653,558 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Crack8专版PEID 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2008-10-29  12:57           491,520 Crack8专版PEiD0.95.exe
+2005-01-30  15:26               651 external.txt
+2009-08-28  22:57             2,160 IDToText.Ini
+2006-05-11  17:22           974,848 mfc70.dll
+2006-05-11  17:22           344,064 msvcr70.dll
+2006-05-13  11:35            43,520 PESniffer.dll
+2009-09-13  20:51    <DIR>          plugins
+2009-09-13  20:51    <DIR>          pluginsdk
+2006-05-11  17:23           778,240 rtl70.bpl
+2008-06-14  22:06           310,777 Signs.txt
+2009-08-26  15:17           228,040 userdb.txt
+2006-05-11  17:23         1,381,376 vcl70.bpl
+              10 个文件      4,555,196 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Crack8专版PEID\plugins 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2004-11-03  19:22            19,968 AddSig.dll
+2006-05-12  16:05             7,168 advanced_scan.dll
+2003-01-01  04:39             3,382 AntiSPack.dll
+2005-01-17  10:22            27,136 crc32.dll
+2007-10-05  00:09            57,856 Easy Screen 1.3.0.dll
+2004-02-20  00:51            16,384 eCrap.dll
+2005-02-19  11:49            16,384 eCrapOepVerify.dll
+2004-11-28  16:20            31,232 EPScan.dll
+2005-09-23  19:04            10,752 ExtOverlay.dll
+2006-09-06  11:09             4,096 ExtractOverlay.dll
+2004-11-16  01:35            18,432 FC.dll
+2004-02-07  18:51            13,038 FileInfo.dll
+2005-07-07  16:36            12,800 FixCRC.dll
+2006-05-11  11:00            61,440 FNE.dll
+2006-05-03  09:14             7,320 frant.dll
+2003-12-10  21:23            11,776 FSG v1.33__.dll
+2003-12-10  21:23            11,776 FSG v1.33脱壳.dll
+2008-10-26  23:49             5,632 GenOEP (2).dll
+2006-03-26  22:06             5,632 GenOEP.dll
+2005-06-01  09:00            11,264 GUID.dll
+2005-10-19  11:32             8,970 hh.dll
+2005-12-22  21:47            15,360 HideCapt.dll
+2004-01-16  12:32            15,360 HideCapt2.dll
+2008-02-03  16:29            17,920 IDToText.DLL
+2008-02-03  16:29           129,936 Imploder.DLL
+2006-03-26  22:06            51,438 ImpREC.dll
+2008-11-01  17:55           119,296 kanal.dll
+2004-12-12  01:28            30,720 Morphine.dll
+2005-04-06  22:22           512,512 oepscan.dll
+2006-01-22  14:39            52,224 ohfixer_v01.dll
+2008-12-29  16:13             8,055 oreansid.dat
+2008-12-29  16:16             9,216 oreansid.dll
+2005-12-21  21:29           158,418 Overlay1.0.dll
+2005-12-21  21:29           158,418 Overlay1.0_.dll
+2005-12-21  21:29           158,418 Overlay1.0汉化.dll
+2006-05-11  19:15            19,968 Oversaver.dll
+2005-06-08  03:49           174,592 PackUPX.dll
+2007-06-06  21:46            78,336 Patch_Maker_0.5.0.dll
+2004-09-23  21:42            21,504 PE2HTML.dll
+2006-07-29  16:51            26,624 PE2HTML.exe
+2008-02-03  16:29            18,944 PEExtract.DLL
+2007-03-11  00:06            51,148 PEiDBundle.DLL
+2006-05-21  11:36            15,079 PESniffer4PEiD.ASM
+2008-10-27  18:26             6,656 PESniffer4PEiD.DLL
+2005-01-17  09:18            16,616 PlgLdr.dll
+2006-05-11  17:23             2,048 PluginEx.dll
+2004-04-23  19:20            20,480 pluzina.dll
+2004-08-30  20:16            15,872 pluzina1.dll
+2005-03-23  19:03            20,992 pluzina4.dll
+2005-03-23  19:08             9,520 pluziny.nfo
+2004-04-23  19:20            20,480 QuickChSum.dll
+2007-12-06  10:24             5,050 RebuildPE.dll
+2003-12-09  08:27             6,656 RelocRebuilder.dll
+2005-05-12  21:48            41,472 SecFix.dll
+2005-06-08  05:46            21,504 SecTool.dll
+2005-03-23  19:03            20,992 Sendspy.dll
+2005-02-13  18:30            19,456 StringViewer.dll
+2007-03-11  00:06            12,288 unbero.dll
+2008-02-03  16:29            15,872 UnCDS_SS.DLL
+2005-07-24  02:53             5,120 undef.dll
+2008-02-03  16:29            15,872 UnFakeNinja.DLL
+2005-01-17  10:22            20,480 UnFSG.dll
+2004-08-30  20:16            15,872 UnitsBrowser.dll
+2008-02-03  16:29            20,992 UnPPP.DLL
+2008-02-03  16:29            18,944 UnRCrypt.DLL
+2008-02-03  16:29            16,896 UnRPolyCrypt.DLL
+2006-04-29  14:06            11,776 UnUPolyX.dll
+2005-07-24  02:55            11,776 UNUPX.DLL
+2007-03-11  00:06            44,544 unupx2.dll
+2004-08-24  22:27             6,656 UnUPXShit.dll
+2006-01-15  02:25           249,344 UPXI.dll
+2005-11-09  00:01           154,464 UPXScramb.dll
+2003-12-09  08:27             7,168 uupx.dll
+2006-07-01  19:34           109,056 VerA.dll
+2006-06-30  10:31             2,171 VerA.txt
+2005-06-22  16:14           515,072 XNResourceEditor_Plugin.DLL
+2005-02-25  20:21            12,288 XP.dll
+2004-11-16  06:21            48,128 YPP.dll
+2006-04-10  12:24                87 ypp.ini
+2006-03-26  22:06             4,990 ZDRx.dll
+2009-09-13  20:51    <DIR>          [-=About PEiD =-]
+2009-04-29  17:54             1,652 [SST].nFo
+              81 个文件      3,755,226 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Crack8专版PEID\plugins\[-=About PEiD =-] 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2006-05-09  01:26             2,048 UnreaL.DLL
+               1 个文件          2,048 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Crack8专版PEID\pluginsdk 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2009-09-13  20:51    <DIR>          C++
+2009-09-13  20:51    <DIR>          Delphi
+2009-09-13  20:51    <DIR>          MASM
+2009-09-13  20:51    <DIR>          PowerBASIC
+2006-09-13  21:26               106 readme.txt
+               1 个文件            106 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Crack8专版PEID\pluginsdk\C++ 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2006-03-26  22:07               263 defs.h
+2006-03-26  22:07               668 null.c
+               2 个文件            931 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Crack8专版PEID\pluginsdk\Delphi 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2006-09-07  19:53               567 Sample.dpr
+               1 个文件            567 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Crack8专版PEID\pluginsdk\MASM 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2006-09-07  20:54               152 compile.bat
+2006-09-07  20:59             2,321 masm_plugin.asm
+2006-09-07  20:54                46 masm_plugin.def
+               3 个文件          2,519 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Crack8专版PEID\pluginsdk\PowerBASIC 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2004-12-11  19:02             2,426 PEiD_Plugin.bas
+               1 个文件          2,426 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\DeDeDark3.5 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+1995-07-19  17:52            82,552 Api.lst
+1999-07-22  07:22            78,362 Classes.lst
+2009-08-28  23:21               449 DarkDe4.fls
+2009-08-28  23:21               711 DarkDe4.ini
+2009-09-13  20:52    <DIR>          DSF
+2009-09-13  20:52    <DIR>          Dumps
+2009-09-13  20:52    <DIR>          LANGRES
+2009-09-13  20:52    <DIR>          Projects
+2003-12-25  21:00             1,874 Readme.txt
+2000-06-27  13:27             3,449 SU.LST
+2004-01-02  20:13         2,217,984 看雪DarkDe4.exe
+2009-10-30  11:50                 0 看雪DarkDe4.fls
+2009-10-30  11:50               264 看雪DarkDe4.ini
+               9 个文件      2,385,645 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\DeDeDark3.5\DSF 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-08-15  00:12           189,480 CLX.dsf
+2002-02-19  19:40             9,653 d2.doi
+2002-02-19  19:41            17,363 d3.doi
+2002-11-29  15:04            44,589 d4.doi
+2002-12-05  00:21            55,573 D5.DOI
+2002-08-18  13:01            47,426 d6.doi
+2001-09-20  13:31            18,742 d6clx.doi
+2002-12-05  00:28            43,556 D7.DOI
+2003-01-29  00:32           129,536 dasm_plgin.dll
+2003-01-29  00:32             6,058 dede.sdk.v1.1.rar
+2002-02-19  19:42             7,114 DeDe_SDK.pas
+2002-02-19  19:42             7,276 DeDe_SDK.rtf
+2002-08-13  05:52            45,210 KOL.dsf
+2002-02-19  19:43               173 TObject_VCL4.ini
+2002-12-05  00:52           181,349 VCL2.dsf
+2002-12-05  00:45           250,682 vcl3.dsf
+2002-12-02  01:00           364,597 VCL4.dsf
+2002-12-04  23:03           514,189 vcl5.dsf
+2002-12-05  01:33           880,934 VCL6.dsf
+2002-12-05  01:33               100 Vcl6.log
+2002-12-01  23:55           886,479 Vcl6_.dsf
+2002-12-03  23:50           907,474 VCL7.dsf
+              22 个文件      4,607,553 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\DeDeDark3.5\Dumps 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\DeDeDark3.5\LANGRES 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2003-01-29  00:32            11,810 ChineseGB.ini
+2003-12-25  10:21            13,506 DIY_ENG.ini
+               2 个文件         25,316 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\DeDeDark3.5\Projects 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\eXeScope6.5注册版 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2004-06-16  23:23           113,664 EXEBAT.EXE
+2001-09-16  23:22               525 EXESCENG.CNT
+2009-08-29  00:38               137 EXESCOPE.ini
+2004-06-18  12:37           994,984 EXESCOPE6.5.exe
+2009-08-29  00:44                73 EXESCOPE6.5.ini
+               5 个文件      1,109,383 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\FixResDemo最终版 的目录
+
+2009-09-13  20:54    <DIR>          .
+2009-09-13  20:54    <DIR>          ..
+2007-01-01  00:00            48,594 DT_FixRes.dll
+2007-01-01  00:00           204,145 FixResDemo.exe
+2007-01-01  00:00             5,920 Readme_CN.txt
+               3 个文件        258,659 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2009-09-13  20:53    <DIR>          Documentation
+2008-02-22  18:21            16,686 History.txt
+2008-02-23  20:54           539,660 ImpREC FINAL 1.7 七彩版.exe
+2009-08-29  00:43               422 ImpREC.ini
+2009-09-13  20:53    <DIR>          Plugin
+2009-09-13  20:53    <DIR>          Plugin Source
+2006-11-02  19:46            12,288 psapi.dll
+               4 个文件        569,056 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Documentation 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2002-04-17  06:51             3,340 Loader.txt
+2003-07-25  05:08               914 News.txt
+2003-07-25  04:45            16,966 ReadMe.txt
+2002-04-25  16:23             4,237 Tips.txt
+               4 个文件         25,457 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2004-06-13  04:20             3,072 ACProtect #1.dll
+2004-05-19  20:31            14,848 ACProtect #2.dll
+2007-01-18  17:24             1,556 ACProtect #3.dll
+2007-01-18  17:22             1,556 Alex Protector.dll
+2002-11-08  19:55             4,096 Armadillo 2.6.dll
+2002-09-17  09:02             6,144 ASProtect 1.22.dll
+2003-11-21  11:15             2,560 ASProtect 1.23 rc4.dll
+2007-03-11  01:06             6,144 ASProtect 1.2x Emul API #1.dll
+2007-03-11  01:06            10,240 ASProtect 1.2x Emul API #2.dll
+2002-10-09  01:50            18,432 ASProtect 1.2x.dll
+2003-01-06  18:09             7,168 ASProtect 1.3.dll
+2003-08-23  00:17            17,920 ASProtect 2.xx.dll
+2006-03-28  00:34             2,560 CoolCrypt.dll
+2007-01-18  17:25             1,556 Cryptocrack's PE Protector.dll
+2007-04-06  13:35             3,106 Excalibur.dll
+2006-01-01  07:11             8,192 ExeCryptor.dll
+2006-02-13  02:35             2,560 EXEStealth275.dll
+2007-03-13  13:04             2,560 Expressor 1.5.x.dll
+2005-09-23  16:04            10,752 ExtOverlay.dll
+1985-01-01  02:36             2,560 GoatsPEMutilator16.dll
+2006-05-29  22:27               443 HowTo.txt
+2003-01-01  23:20            28,672 Krypton 0.4 - 0.5 #1.dll
+2007-03-11  01:06            10,752 Krypton 0.4 - 0.5 #2.dll
+2004-05-03  02:32             1,556 Krypton 0.5.dll
+2006-11-17  00:34             2,560 Morphine.dll
+2007-01-20  12:42             3,072 NTKrnl Protector 0.1.x.dll
+2002-04-22  01:55            28,672 Null.dll
+2007-03-11  01:06             4,096 Obsidium #1.dll
+2003-06-06  23:54             4,096 Obsidium #2.dll
+2007-03-11  01:06             4,096 Obsidium #3.dll
+2006-07-25  12:38             3,584 Obsidium 1.3.dll
+2007-04-15  16:31               551 Obsidium 1.3.dll.txt
+2007-01-18  17:18             2,084 PE123.dll
+2007-01-18  17:24             1,556 PECompact 2.7.x.dll
+2006-07-29  23:09             5,120 PELock 1.06 (regged).dll
+2007-04-15  16:14               847 PELock 1.06 (regged).dll.txt
+2006-05-29  01:45             4,096 PELock 1.0x.dll
+2006-02-12  04:06             2,560 Perplex101.dll
+2007-04-05  21:49             3,108 PESpin.dll
+2006-06-17  16:33            28,672 PESpinPlugin.dll
+2002-04-25  08:20             2,145 Plugin.txt
+2006-07-07  16:27             4,608 PrivateExeProtector 1.8.dll
+2007-04-15  16:15               738 PrivateExeProtector 1.8.txt
+2004-08-23  17:27             2,560 Privilege.dll
+2006-07-30  12:23             2,560 Protection Plus 4.x.dll
+2006-02-13  02:20             2,560 RLPack 0.7.dll
+2007-01-18  17:26             1,556 RLPack 0.7.x.dll
+2006-10-17  13:48             6,656 RLPack 0.x.dll
+2007-03-27  17:32             1,556 RLPack 1.16.dll
+2007-03-27  17:32             1,556 RLPack 1.18.dll
+2006-08-10  23:09             3,072 SDProtector 1.12.dll
+2003-07-08  18:21             4,096 SVK Protector #1.dll
+2003-07-08  20:21             4,096 SVK Protector #2.dll
+2007-04-24  15:43             1,556 tELock 0.71.dll
+2002-01-20  17:53            28,672 tELock 0.92.dll
+2004-09-14  15:47             3,072 tELock 0.98 #1.dll
+2007-03-11  01:06            10,752 tELock 0.98 #2.dll
+2005-05-17  17:27            50,176 tELock 0.98 #3.dll
+2003-09-23  21:44             2,560 tELock 0.98 #4.dll
+2007-03-11  01:06            28,672 tELock 0.98 #5.dll
+2006-07-23  12:39             2,560 tELock 0.99.dll
+2005-05-17  15:27            50,176 tELock 0.9x.dll
+2006-05-29  22:22             4,608 TPP.dll
+2006-06-01  13:49             2,560 VisualProtect.dll
+2006-02-13  02:35             2,560 Yoda Crypter 1.02.dll
+              65 个文件        493,458 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2009-09-13  20:53    <DIR>          ASProtect 1.2x
+2009-09-13  20:53    <DIR>          eXcalibur 1.x
+2009-09-13  20:53    <DIR>          Morphine 3.3
+2009-09-13  20:53    <DIR>          Perplex 1.01
+2009-09-13  20:53    <DIR>          PESpin 1.3.04
+2009-09-13  20:53    <DIR>          RLPack 0.7
+2009-09-13  20:53    <DIR>          tELock 0.92x
+2009-09-13  20:53    <DIR>          Yoda 1.02
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\ASProtect 1.2x 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2009-09-13  20:53    <DIR>          Delphi
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\ASProtect 1.2x\Delphi 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2007-03-11  01:06             6,830 aspr.dpr
+               1 个文件          6,830 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\eXcalibur 1.x 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2007-04-06  13:35             3,106 Excalibur.dll
+2009-09-13  20:53    <DIR>          src
+               1 个文件          3,106 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\eXcalibur 1.x\src 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2007-04-03  11:26               197 BuildDLL.bat
+2007-04-06  13:32             3,823 EXC.asm
+2007-04-03  11:26                28 EXC.def
+2006-11-27  20:02             1,569 hde.inc
+2007-02-09  19:24             1,462 hde.lib
+               5 个文件          7,079 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\Morphine 3.3 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2009-09-13  20:53    <DIR>          Bak
+2006-11-17  00:34             2,353 morphine.Asm
+2006-11-16  01:58                22 morphine.Def
+2006-11-17  00:34               444 morphine.exp
+2006-11-16  01:58                68 morphine.Inc
+2006-11-17  00:34             2,072 morphine.lib
+2006-11-17  00:34               876 morphine.obj
+2006-11-18  01:01             1,834 morphine.rap
+               7 个文件          7,669 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\Morphine 3.3\Bak 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\Perplex 1.01 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2006-02-12  04:09             1,746 Perplex101.Asm
+2006-02-12  02:58                22 Perplex101.Def
+2006-02-12  04:06               450 Perplex101.exp
+2006-02-12  02:58                68 Perplex101.Inc
+2006-02-12  04:06             2,090 Perplex101.lib
+2006-02-12  04:06               854 Perplex101.obj
+2006-02-12  04:31             1,882 Perplex101.rap
+2006-02-12  03:16                33 Perplex101.rc
+2006-02-12  04:06               384 Perplex101.RES
+2009-09-13  20:53    <DIR>          Res
+               9 个文件          7,529 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\Perplex 1.01\Res 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2006-02-12  04:06               384 Perplex101Ver.rc
+               1 个文件            384 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\PESpin 1.3.04 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2006-06-17  16:33             4,045 PESpinPlugin.cpp
+2006-06-17  16:26             4,415 PESpinPlugin.dsp
+2006-05-01  18:39               547 PESpinPlugin.dsw
+2006-06-18  02:18            41,984 PESpinPlugin.ncb
+2006-06-18  02:18            49,664 PESpinPlugin.opt
+2006-06-18  02:18               260 PESpinPlugin.plg
+2006-05-01  18:39             1,649 ReadMe.txt
+2006-05-01  18:39               299 StdAfx.cpp
+2006-05-01  18:39               802 StdAfx.h
+               9 个文件        103,665 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\RLPack 0.7 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2009-09-13  20:53    <DIR>          Res
+2006-02-13  02:19             1,946 RLP07.Asm
+2006-02-13  02:18                22 RLP07.Def
+2006-02-13  02:20               434 RLP07.exp
+2006-02-13  02:18                68 RLP07.Inc
+2006-02-13  02:20             2,044 RLP07.lib
+2006-02-13  02:19               876 RLP07.obj
+2006-02-13  02:26             1,792 RLP07.rap
+2006-02-13  02:18                28 RLP07.rc
+               8 个文件          7,210 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\RLPack 0.7\Res 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2006-02-13  02:19               384 RLP07Ver.rc
+               1 个文件            384 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2009-09-13  20:53    <DIR>          Delphi
+2009-09-13  20:53    <DIR>          Masm
+2009-09-13  20:53    <DIR>          Tasm
+2009-09-13  20:53    <DIR>          VC++
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\Delphi 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2007-03-11  01:06             2,859 tELock.dpr
+               1 个文件          2,859 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\Masm 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2007-03-11  01:06               217 BuildDLL.bat
+2007-03-11  01:06             3,866 tELock.asm
+2007-03-11  01:06                31 tELock.def
+               3 个文件          4,114 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\Tasm 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2007-03-11  01:06               233 BuildDLL.bat
+2007-03-11  01:06             3,821 tELock.asm
+2007-03-11  01:06                31 tELock.def
+2007-03-11  01:06           155,224 W32.inc
+               4 个文件        159,309 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\VC++ 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2009-09-13  20:53    <DIR>          tELock0.92x
+2009-09-13  20:53    <DIR>          tELock0.95
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\VC++\tELock0.92x 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2007-03-11  01:06             2,883 tELock.cpp
+2007-03-11  01:06             4,158 tELock.dsp
+               2 个文件          7,041 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\tELock 0.92x\VC++\tELock0.95 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2007-03-11  01:06             4,153 tELock.cpp
+2007-03-11  01:06             4,158 tELock.dsp
+               2 个文件          8,311 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\Yoda 1.02 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+2009-09-13  20:53    <DIR>          Res
+2006-02-13  02:35             1,743 Yoda102.Asm
+2006-02-13  02:35                22 Yoda102.Def
+1985-01-01  02:36               440 Yoda102.exp
+2006-02-13  02:35                68 Yoda102.Inc
+1985-01-01  02:36             2,062 Yoda102.lib
+1985-01-01  02:36               854 Yoda102.obj
+2006-02-15  02:57             1,815 Yoda102.rap
+2006-02-13  02:35                30 Yoda102.rc
+1985-01-01  02:36               384 Yoda102.RES
+               9 个文件          7,418 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ImpREC FINAL 1.7七彩版\Plugin Source\Yoda 1.02\Res 的目录
+
+2009-09-13  20:53    <DIR>          .
+2009-09-13  20:53    <DIR>          ..
+1985-01-01  02:36               384 Yoda102Ver.rc
+               1 个文件            384 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-08-19  00:25            36,864 16Edit.DLL
+2009-09-13  20:52    <DIR>          docs
+2009-09-13  20:52    <DIR>          LDE
+2009-09-13  20:52    <DIR>          LDS_Clients
+2009-09-13  21:14               791 LordPE.iNi
+2005-11-10  23:08           208,896 LordPE看雪版.EXE
+2005-10-14  15:19            49,152 LordPlug.dll
+2009-09-13  20:52    <DIR>          LordPlug.dll_src
+2009-09-13  20:52    <DIR>          Misc
+2002-03-24  14:31             8,704 PROCS.DLL
+1999-12-10  12:00            28,944 PSAPI.DLL
+2002-03-24  14:31             7,680 REALIGN.DLL
+2002-03-30  16:01                28 RunLDS.BAT
+2009-09-13  20:52    <DIR>          SDK
+2002-03-24  14:31             3,072 TrapDll.exe
+               9 个文件        344,131 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\docs 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-03-21  17:31               842 EndOfCommerce.tXt
+2002-08-12  19:07             2,362 LDE.tXt
+2002-03-21  17:33             5,169 LDS.tXt
+2001-04-26  00:07               398 License.tXt
+2002-08-08  21:05                15 ToDo.tXt
+               5 个文件          8,786 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\LDE 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2003-10-21  11:05             1,706 armadmp.lde
+2002-08-12  03:01             3,584 IntelliDump.LDE
+2009-09-13  21:14               222 LDELoad.log
+               3 个文件          5,512 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\LDS_Clients 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          CoolDump1.4
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\LDS_Clients\CoolDump1.4 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-08-07  17:10            25,959 Cooldump.exe
+2002-08-07  17:21               430 File_id.diz
+2002-08-02  23:10             3,350 Genoep.dll
+2002-08-07  17:21             9,167 Ug2002.nfo
+               4 个文件         38,906 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\LordPlug.dll_src 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2005-10-14  15:01            14,532 LordPlug.cpp
+2005-10-14  15:00               116 LordPlug.def
+2005-10-09  18:18             4,248 LordPlug.dsp
+2005-10-09  13:07               541 LordPlug.dsw
+               4 个文件         19,437 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\Misc 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-08-19  00:25            36,864 16Edit.DLL
+2002-02-05  18:43             2,048 16Edit.exe
+2002-02-05  12:03               916 16Edit.tXt
+2002-03-24  13:21            17,920 LordElf.exe
+2002-03-24  00:24             1,502 LordElf.tXt
+2002-08-20  10:33            94,208 MetaPuck.exe
+2002-05-19  15:27             2,115 MetaPuck.tXt
+2002-04-06  14:44            20,992 PESnoop.exe
+2002-04-06  14:19             2,894 PESnoop.tXt
+2001-06-22  14:30             3,584 RunKMD.exe
+2001-06-22  14:29               750 RunKMD.tXt
+2001-06-28  21:09             2,560 RunVxD.exe
+2001-06-28  21:13               547 RunVxD.tXt
+2009-09-13  20:52    <DIR>          SoftSnoop
+2001-05-01  20:55             3,642 yPER.exe
+2001-05-01  20:59               354 yPER.tXt
+              15 个文件        190,896 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\Misc\SoftSnoop 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          ApiDef
+2001-03-12  13:49             4,608 APISnoop.dll
+2001-03-02  22:53            10,240 ForceLibrary.dll
+2009-09-13  20:52    <DIR>          Plugins
+2002-08-20  20:12            76,800 SoftSnoop.exe
+2001-03-15  14:28             2,954 SoftSnoop.tXt
+               4 个文件         94,602 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\Misc\SoftSnoop\ApiDef 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2001-03-12  12:50               655 Kernel32.ss
+2001-02-02  11:36             1,338 SS.TXT
+2001-01-20  01:42               534 User32.ss
+               3 个文件          2,527 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\Misc\SoftSnoop\Plugins 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2001-02-01  19:56             2,560 HelloWorld.dll
+2001-02-01  20:31             3,584 MsgHook.dll
+2001-02-01  20:47             6,656 PluginExp3.dll
+2001-02-02  11:50             1,536 TestMe.exe
+               4 个文件         14,336 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          16Edit
+2009-09-13  20:52    <DIR>          LordPE
+2009-09-13  20:52    <DIR>          procsDLL
+2009-09-13  20:52    <DIR>          realignDLL
+2009-09-13  20:52    <DIR>          SoftSnoop
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\16Edit 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-04-29  19:14             5,445 16Edit.cs
+2002-02-06  02:34               105 16Edit.def
+2002-02-07  03:22             3,652 16EditDll.bas
+2002-02-06  12:14             3,563 16EditDll.h
+2002-02-06  12:09             3,880 16EditDll.INC
+2002-02-05  15:24             9,158 APIs.tXt
+2002-02-06  02:23             1,024 B_16Edit.lib
+2002-02-06  16:00             3,933 HEditDll.pas
+2002-02-05  14:57             2,474 MS_16Edit.lib
+2002-04-29  20:25               258 TOC.tXt
+              10 个文件         33,492 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          LDE
+2009-09-13  20:52    <DIR>          LDS
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDE 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          IntelliDump
+2002-08-12  19:07             2,362 LDE.tXt
+               1 个文件          2,362 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDE\IntelliDump 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-08-12  02:55             4,811 IntelliDump.c
+2002-08-09  14:48               124 IntelliDump.DEF
+2002-08-09  14:49             4,496 IntelliDump.dsp
+2002-08-13  02:03             4,898 IntelliDump.mak
+               4 个文件         14,329 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDS 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          Examples
+2009-09-13  20:52    <DIR>          INC
+2002-03-21  17:33             5,169 LDS.tXt
+               1 个文件          5,169 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDS\Examples 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          ASM
+2009-09-13  20:52    <DIR>          C
+2002-08-05  21:18            42,856 CallModMem.EXE
+2009-09-13  20:52    <DIR>          CS
+2009-09-13  20:52    <DIR>          Delphi
+2002-05-25  15:27            13,312 LDSChat.exe
+2002-06-28  16:12            39,936 LDS_DmpTst.exe
+2002-02-23  20:13             2,560 LDS_LoadDump.exe
+2002-02-21  23:03             3,584 LDS_TaskViewer.exe
+2002-02-23  20:20            39,936 LDS_VerPid.exe
+               6 个文件        142,184 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDS\Examples\ASM 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-02-23  20:02             7,412 LDS_LoadDump.bat
+               1 个文件          7,412 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDS\Examples\C 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-02-20  23:36             5,362 Plugin.c
+2002-02-20  23:57             4,195 Plugin.dsp
+2002-08-13  02:03             4,759 Plugin.mak
+2002-02-20  13:47               499 resource.h
+2002-02-20  23:47             2,374 rsrc.rc
+               5 个文件         17,189 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDS\Examples\CS 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-05-24  15:30             1,078 App.ico
+2002-05-24  15:30             2,426 AssemblyInfo.cs
+2002-05-25  15:25             5,185 Form1.cs
+2002-05-25  15:20             5,315 Form1.resx
+2002-05-25  15:06             4,693 LDSChat.csproj
+2002-05-25  15:27             1,772 LDSChat.csproj.user
+2002-05-24  15:30               910 LDSChat.sln
+               7 个文件         21,379 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDS\Examples\Delphi 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-08-07  16:13             1,217 FindLDSAndLaunch4Delphi.dpr
+2002-06-28  16:12             2,999 LDS_DmpTst.dpr
+2002-02-23  20:20             2,556 LDS_VerPid.dpr
+               3 个文件          6,772 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\LordPE\LDS\INC 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-03-24  14:10             6,920 LDS.bas
+2002-05-25  15:04            12,504 LDS.cs
+2002-03-24  14:02             6,973 LDS.h
+2002-03-24  14:12             8,224 LDS.INC
+2002-03-24  14:15             7,084 LDS.ni
+2002-03-24  14:12             7,531 LDS.pas
+               6 个文件         49,236 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\procsDLL 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          examples
+2001-01-26  14:26               809 procs.h
+2001-01-26  12:39               594 procs.INC
+2001-02-02  10:02             3,962 procs.lib
+               3 个文件          5,365 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\procsDLL\examples 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2001-01-25  14:27                26 EXP1Out.BAT
+2009-09-13  20:52    <DIR>          useprocs1
+2001-02-02  10:09             3,584 UseProcs1.exe
+2009-09-13  20:52    <DIR>          useprocs2
+2001-01-26  14:26             2,048 useprocs2.exe
+               3 个文件          5,658 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\procsDLL\examples\useprocs1 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2001-01-25  14:16             1,985 CONSOLE.INC
+2001-01-25  14:17               325 MAKE.BAT
+2001-01-26  12:39               967 MAKE.PIF
+2001-01-25  20:41             4,636 UseProcs1.ASM
+               4 个文件          7,913 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\procsDLL\examples\useprocs2 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2001-01-26  13:35             1,194 USEPROCS.C
+2001-01-26  12:16             4,158 useprocs2.dsp
+2001-01-26  11:59               571 UseProcs2.dsw
+               3 个文件          5,923 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\realignDLL 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2002-02-11  23:04             1,450 Realign.h
+2002-02-11  23:05             2,728 realign.lib
+               2 个文件          4,178 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\SoftSnoop 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          PluginExp1
+2009-09-13  20:52    <DIR>          PluginExp2
+2009-09-13  20:52    <DIR>          PluginExp3
+2001-02-02  11:41             1,527 Plugins.tXt
+2001-03-15  13:34             9,115 SSplugin.h
+2001-03-15  13:58             4,579 SSPlugin.INC
+2001-03-15  14:16             4,055 SSPlugin.pas
+               4 个文件         19,276 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\SoftSnoop\PluginExp1 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2001-02-01  19:56               960 PluginExp1.c
+2001-01-30  13:38                25 PluginExp1.def
+2001-01-30  13:45             4,318 PluginExp1.dsp
+               3 个文件          5,303 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\SoftSnoop\PluginExp2 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2001-01-31  19:16               390 BUILD.BAT
+2001-02-01  20:31               967 BUILD.PIF
+2001-02-01  19:57             4,603 MsgHook.ASM
+2001-01-31  14:37               233 RESOURCE.INC
+2001-02-01  20:31               728 Rsrc.res
+               5 个文件          6,921 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\LordPE豪华版\SDK\SoftSnoop\PluginExp3 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2001-02-01  20:48             3,785 PluginExp3.dpr
+2001-02-01  20:32               236 RSRC.RES
+               2 个文件          4,021 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\OC偏移量转换器 的目录
+
+2009-09-13  20:54    <DIR>          .
+2009-09-13  20:54    <DIR>          ..
+2005-01-12  23:00             3,072 CCLdll.dll
+2005-01-16  20:03            19,456 偏移量转换器OC.exe
+               2 个文件         22,528 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Overlay 最终版 的目录
+
+2009-09-13  20:54    <DIR>          .
+2009-09-13  20:54    <DIR>          ..
+2009-09-13  20:54    <DIR>          Language
+2006-07-08  20:22           570,880 Overlay 最终版.exe
+               1 个文件        570,880 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Overlay 最终版\Language 的目录
+
+2009-09-13  20:54    <DIR>          .
+2009-09-13  20:54    <DIR>          ..
+2009-08-29  01:18               641 Default.ini
+2006-07-08  20:23               758 English.ini
+               2 个文件          1,399 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2009-09-13  20:55    <DIR>          API LIBRARY
+2006-05-03  04:25           140,552 pexdll.dll
+2006-05-03  04:25            97,544 pexdll2.dll
+2006-05-30  16:55         2,401,280 pexplorer1.98.exe
+2009-09-13  20:55    <DIR>          PLUGINS
+2006-05-03  04:25            69,896 unmg.dll
+               4 个文件      2,709,272 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\API LIBRARY 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2009-09-13  20:55    <DIR>          BASE
+2009-09-13  20:55    <DIR>          USER
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\API LIBRARY\BASE 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2009-09-13  20:55    <DIR>          CPP
+2009-09-13  20:55    <DIR>          PAS
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\API LIBRARY\BASE\CPP 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2006-05-03  04:25                 1 temp.ins
+               1 个文件              1 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\API LIBRARY\BASE\PAS 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2006-05-03  04:25             6,197 aclapi.dll.dat
+2006-05-03  04:25            31,704 advapi32.dll.dat
+2006-05-03  04:25               405 avicap32.dll.dat
+2006-05-03  04:25             1,998 avifil32.dll.dat
+2006-05-03  04:25             6,367 comctl32.dll.dat
+2006-05-03  04:25             1,341 comdlg32.dll.dat
+2006-05-03  04:25             1,504 d3drm.dll.dat
+2006-05-03  04:25               508 ddraw.dll.dat
+2006-05-03  04:25               245 dinput.dll.dat
+2006-05-03  04:25               719 dplayx.dll.dat
+2006-05-03  04:25               979 dsetup.dll.dat
+2006-05-03  04:25               744 dsound.dll.dat
+2006-05-03  04:25            23,614 gdi32.dll.dat
+2006-05-03  04:25             2,249 gds32.dll.dat
+2006-05-03  04:25             4,036 glu32.dll.dat
+2006-05-03  04:25             5,949 imagehlp.dll.dat
+2006-05-03  04:25             5,177 imm32.dll.dat
+2006-05-03  04:25            57,792 kernel32.dll.dat
+2006-05-03  04:25               696 lz32.dll.dat
+2006-05-03  04:25             4,759 mpr.dll.dat
+2006-05-03  04:25               589 msimg32.dll.dat
+2006-05-03  04:25               144 netapi32.dll.dat
+2006-05-03  04:25            15,653 ole32.dll.dat
+2006-05-03  04:25            13,430 oleaut32.dll.dat
+2006-05-03  04:25               805 oledlg.dll.dat
+2006-05-03  04:25             1,182 olepro32.dll.dat
+2006-05-03  04:25            16,894 opengl32.dll.dat
+2006-05-03  04:25             6,688 penwin32.dll.dat
+2006-05-03  04:25               275 quartz.dll.dat
+2006-05-03  04:25             4,260 rasapi32.dll.dat
+2006-05-03  04:25             4,289 shell32.dll.dat
+2006-05-03  04:25             6,553 urlmon.dll.dat
+2006-05-03  04:25            45,005 user32.dll.dat
+2006-05-03  04:25             1,457 version.dll.dat
+2006-05-03  04:25            18,402 wininet.dll.dat
+2006-05-03  04:25            12,503 winmm.dll.dat
+2006-05-03  04:25            11,853 winspool.drv.dat
+2006-05-03  04:25               339 wintrust.dll.dat
+2006-05-03  04:25             3,977 wsock32.dll.dat
+              39 个文件        321,281 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\API LIBRARY\USER 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2009-09-13  20:55    <DIR>          CPP
+2009-09-13  20:55    <DIR>          PAS
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\API LIBRARY\USER\CPP 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2006-05-03  04:25                 1 temp.ins
+               1 个文件              1 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\API LIBRARY\USER\PAS 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2006-05-03  04:25                 1 temp.ins
+               1 个文件              1 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\PLUGINS 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2009-09-13  20:55    <DIR>          Demo Plug-ins
+2006-07-30  02:43           116,488 unupx.dll
+               1 个文件        116,488 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\PLUGINS\Demo Plug-ins 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2009-09-13  20:55    <DIR>          C
+2009-09-13  20:55    <DIR>          Delphi
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\PLUGINS\Demo Plug-ins\C 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2006-05-03  04:25             6,144 pexplgc.dll
+2009-09-13  20:55    <DIR>          SOURCE
+               1 个文件          6,144 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\PLUGINS\Demo Plug-ins\C\SOURCE 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2006-05-03  04:25               516 globals.h
+2006-05-03  04:25             4,244 pex_plugin_c.c
+2006-05-03  04:25               964 pex_plugin_c.rc
+               3 个文件          5,724 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\PLUGINS\Demo Plug-ins\Delphi 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2006-05-03  04:25            22,856 pexgp.dll
+2009-09-13  20:55    <DIR>          SOURCE
+               1 个文件         22,856 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\PE Explorer1.98\PLUGINS\Demo Plug-ins\Delphi\SOURCE 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2006-05-03  04:25             1,181 t12dll.dof
+2006-05-03  04:25             8,297 t12dll.dpr
+2006-05-03  04:25             1,221 t12dll.dsk
+2006-05-03  04:25             1,792 t12dll.res
+               4 个文件         12,491 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\ResScope194 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2009-08-30  05:49         2,309,632 bform.dll
+2009-08-30  05:49               368 key.reg
+2009-08-30  05:49         2,030,080 ResScope.exe
+2009-08-30  05:57                40 ResScope1.94.bat
+               4 个文件      4,340,120 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\Restorator2007 的目录
+
+2009-09-13  20:55    <DIR>          .
+2009-09-13  20:55    <DIR>          ..
+2007-02-06  09:42               304 !)卸载.reg
+2007-02-06  09:42               752 !)注册.reg
+2007-03-16  22:13         2,257,920 Restorator2007.exe
+               3 个文件      2,258,976 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\SoftSnoop2009V0.2 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2009-09-13  20:51    <DIR>          ApiAddr
+2009-09-13  20:51    <DIR>          ApiDef
+2009-07-10  15:13         1,244,160 APISnoop.dll
+2009-09-12  20:26            27,045 hxd_out.txt
+2009-07-10  15:21             6,024 ignoreapi.txt
+2009-07-10  15:14             6,024 LoadIgnoreApi.txt
+2009-09-13  20:51    <DIR>          Plugins
+2009-09-13  20:51    <DIR>          SDK
+2009-07-10  15:13            91,648 SoftSnoop.exe
+2009-10-30  09:33            61,650 SoftSnoop.ini
+               6 个文件      1,436,551 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\SoftSnoop2009V0.2\ApiAddr 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2009-07-10  13:55             1,098 HookAddr.txt
+2009-06-09  00:07           379,646 HookAddr_MFC42.txt
+2009-06-08  16:58           328,896 HookAddr_MFC71.txt
+2009-06-17  19:37             1,614 RenameApi.txt
+2009-07-10  15:20             1,008 tempApiAddr.txt
+               5 个文件        712,262 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\SoftSnoop2009V0.2\ApiDef 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2009-05-14  09:34                60 Kernel32.ss
+2001-02-02  11:36             1,338 SS.TXT
+               2 个文件          1,398 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\SoftSnoop2009V0.2\Plugins 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2001-02-01  19:56             2,560 HelloWorld.dll
+2001-02-01  20:31             3,584 MsgHook.dll
+2001-02-01  20:47             6,656 PluginExp3.dll
+2009-10-30  09:33               262 PluginInit.log
+2001-02-02  11:50             1,536 TestMe.exe
+               5 个文件         14,598 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\SoftSnoop2009V0.2\SDK 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2009-09-13  20:51    <DIR>          PluginExp1
+2009-09-13  20:51    <DIR>          PluginExp2
+2009-09-13  20:51    <DIR>          PluginExp3
+2001-02-02  11:41             1,527 Plugins.tXt
+2001-03-15  13:34             9,115 SSplugin.h
+2001-03-15  13:58             4,579 SSPlugin.INC
+2001-03-15  14:16             4,055 SSPlugin.pas
+               4 个文件         19,276 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\SoftSnoop2009V0.2\SDK\PluginExp1 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2001-02-01  19:56               960 PluginExp1.c
+2001-01-30  13:38                25 PluginExp1.def
+2009-04-30  14:02             4,296 PluginExp1.dsp
+2009-04-30  13:20               545 PluginExp1.dsw
+2009-04-30  14:02            41,984 PluginExp1.ncb
+2009-04-30  14:02            53,760 PluginExp1.opt
+2009-04-30  14:01               989 PluginExp1.plg
+               7 个文件        102,559 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\SoftSnoop2009V0.2\SDK\PluginExp2 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2001-01-31  19:16               390 BUILD.BAT
+2001-02-01  20:31               967 BUILD.PIF
+2001-02-01  19:57             4,603 MsgHook.ASM
+2001-01-31  14:37               233 RESOURCE.INC
+2001-02-01  20:31               728 Rsrc.res
+               5 个文件          6,921 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\SoftSnoop2009V0.2\SDK\PluginExp3 的目录
+
+2009-09-13  20:51    <DIR>          .
+2009-09-13  20:51    <DIR>          ..
+2001-02-01  20:48             3,785 PluginExp3.dpr
+2001-02-01  20:32               236 RSRC.RES
+               2 个文件          4,021 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          colors
+2004-02-17  14:43           139,776 comctl.dll
+2008-02-27  02:43            66,560 DisAsmDll.dll
+2008-08-07  18:59            23,552 Force.dll
+2009-09-13  20:52    <DIR>          plugins
+2009-09-13  20:52    <DIR>          plugins sdk
+2008-10-24  19:23           519,680 QUnpack.dll
+2008-10-14  21:25             5,632 QUnpack32.sys
+2008-01-23  00:13            67,072 RAEdit.dll
+2005-08-06  19:20               664 replace.ini
+2000-05-21  23:00           203,976 RICHTX32.OCX
+2007-04-25  09:05            57,344 um.dll
+2008-03-02  02:56         2,929,500 vb decompiler.dat
+2008-12-19  01:52         2,204,861 VB Decompiler7.0看雪.exe
+2008-12-18  01:08            14,628 whatsnew.txt
+              12 个文件      6,233,245 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\colors 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2006-03-05  16:53               197 help.ini
+2006-03-05  17:03               224 hiew.ini
+               2 个文件            421 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          CreateMap
+2008-10-28  02:05            44,544 CreateMap.dll
+2008-11-14  03:22            22,016 frxview.dat
+2008-10-17  20:30             4,608 FRXView.dll
+2007-11-05  16:42           180,224 LangeFree.dll
+2007-12-28  15:10            21,504 Priority.dll
+2007-11-01  11:05            66,048 ShowRef.dll
+               6 个文件        338,944 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins\CreateMap 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2008-10-28  02:05            44,544 CreateMap.dll
+               1 个文件         44,544 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins sdk 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          asm
+2009-09-13  20:52    <DIR>          delphi
+2009-09-13  20:52    <DIR>          vc
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins sdk\asm 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          fasm
+2009-09-13  20:52    <DIR>          masm
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins sdk\asm\fasm 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2008-05-23  14:44             7,643 DecompilerPlugin.ASM
+2008-03-01  21:27             4,608 DecompilerPlugin.DLL
+2008-02-16  21:16             1,909 readme.txt
+               3 个文件         14,160 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins sdk\asm\masm 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2009-09-13  20:52    <DIR>          AsmPDK
+2006-10-02  00:49             1,946 Build.bat
+2009-09-13  20:52    <DIR>          Res
+2006-10-02  00:45             2,148 SaveRTF.asm
+2006-10-02  00:45             5,632 SaveRTF.dll
+2006-01-22  17:41             4,836 SaveRTF_En.rtf
+2006-01-19  03:24             6,576 SaveRTF_Ru.rtf
+2006-10-02  00:40             3,329 VBDM_SaveRTF.asm
+2006-01-18  23:44                74 VBDM_SaveRTF.def
+2006-10-02  00:37               747 VBDM_SaveRTF.inc
+2006-01-20  14:38             2,929 VBDM_SaveRTF.rap
+2006-01-20  11:29                74 VBDM_SaveRTF.rc
+2006-01-23  17:28             1,704 VBDM_SaveRTF.res
+2006-10-02  00:48               632 VBDM_SaveRTF.wap
+              12 个文件         30,627 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins sdk\asm\masm\AsmPDK 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2006-10-02  00:14             4,129 VBDecMod.asm
+2008-05-23  14:46             2,426 VBDecMod.inc
+               2 个文件          6,555 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins sdk\asm\masm\Res 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2006-01-18  23:41               766 TxtDoc.ico
+2006-01-20  11:29                74 VBDM_SaveRTFRes.rc
+2006-01-20  11:46               703 VBDM_SaveRTFVer.rc
+               3 个文件          1,543 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins sdk\delphi 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2008-05-23  14:47             5,390 DelphiPlugin.dpr
+2005-10-20  23:55               876 DelphiPlugin.res
+2005-12-21  19:34               841 Main.dfm
+2005-12-21  19:35               636 Main.pas
+               4 个文件          7,743 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\crack8\VB Decompiler7.0\plugins sdk\vc 的目录
+
+2009-09-13  20:52    <DIR>          .
+2009-09-13  20:52    <DIR>          ..
+2006-04-07  18:16               685 resource.h
+2006-04-09  17:59             5,225 VBDecC.c
+2006-04-07  18:27             5,731 VBDecC.dsp
+2006-04-02  21:40               535 VBDecC.dsw
+2006-04-07  18:16             2,518 VBDecMod.rc
+2008-05-23  14:52             7,573 VBDecPDK.h
+               6 个文件         22,267 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\Crack8_Skin 的目录
+
+2009-10-30  11:18    <DIR>          .
+2009-10-30  11:18    <DIR>          ..
+2008-11-07  15:59             4,854 Bar.bmp
+2008-10-20  15:58             1,406 button10_Normal.ico
+2008-11-07  15:23             1,406 button11_Normal.ico
+2008-11-07  16:14             1,406 button1_Normal.ico
+2008-06-14  22:30             1,534 button2_Normal.ico
+2008-10-20  15:55             1,406 button3_Normal.ico
+2008-01-10  22:11             1,406 button4_Normal.ico
+2008-06-04  00:06             1,406 button5_Normal.ICO
+2008-11-07  15:16             1,406 button7_Down.ico
+2008-11-07  15:15             1,406 button7_Move.ico
+2008-11-07  15:15             1,406 button7_Normal.ico
+2008-10-20  15:56             1,406 button8_Normal.ICO
+2008-10-20  15:55             1,406 button9_Normal.ico
+2007-12-05  10:49             2,432 Close_Down.bmp
+2007-12-08  00:18             2,432 Close_Move.bmp
+2007-12-04  13:12             2,432 Close_Normal.bmp
+2009-10-08  01:14             6,518 Crack8.ico
+2006-10-11  00:26             2,658 crack8.mid
+2008-10-20  16:48             1,998 C_Down.ico
+2008-10-20  16:46             1,998 C_Move.ico
+2005-09-05  13:52             1,150 file.ico
+2008-11-03  16:57             1,150 game.ico
+2009-10-01  10:55    <DIR>          ico
+2008-06-15  03:26             1,406 MenuCheck.ico
+2008-06-15  03:22               126 MenuLeft.bmp
+2007-12-05  10:49             1,496 Min_Down.bmp
+2007-12-04  13:16             1,568 Min_Move.bmp
+2007-12-04  13:13             1,568 Min_Normal.bmp
+2008-11-03  19:02             4,286 NetOn.ico
+2008-11-09  01:58            51,100 Pre.gif
+2008-06-15  00:06             1,254 Scroll.bmp
+2008-06-03  17:43             1,286 SearchButton_Down.bmp
+2008-06-03  17:43             1,286 SearchButton_Move.bmp
+2008-06-03  17:43             1,286 SearchButton_Normal.bmp
+2008-11-09  01:47             1,548 Setup.ini
+2008-11-06  21:07                78 Skin-1.bmp
+2008-11-09  01:28               318 Skin-2.bmp
+2007-12-24  22:34                80 Skin-3.bmp
+2008-11-09  01:31               170 Skin-4.bmp
+2008-11-09  01:27             5,862 Skin-5.bmp
+2008-11-09  01:25            20,120 Skin-6.bmp
+2008-11-09  01:31             2,606 Skin-7.bmp
+2008-11-09  01:30             8,870 Skin-8.bmp
+2007-01-17  15:08             1,494 Skin_Down.bmp
+2007-12-04  13:17             1,352 Skin_Move.bmp
+2007-12-04  13:12             1,352 Skin_Normal.bmp
+2005-09-05  13:52             1,150 soft.ico
+2008-11-09  01:34             3,126 S_Down.bmp
+2008-11-09  01:37             3,126 S_Move.bmp
+2008-11-09  01:34             3,126 S_Normal.bmp
+2009-07-12  20:34            61,440 Thumbs.db
+2008-06-15  00:08             2,038 updown.bmp
+2005-10-01  01:15             4,286 VStart1.ico
+2005-09-05  13:52             1,150 web.ico
+              53 个文件        234,576 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\Crack8_Skin\ico 的目录
+
+2009-10-01  10:55    <DIR>          .
+2009-10-01  10:55    <DIR>          ..
+2009-09-30  17:19            22,875 8.png
+2009-09-30  17:24            33,470 A.png
+2009-09-30  17:22            36,514 C.png
+2009-09-30  17:23            31,272 C2.png
+2009-09-30  17:24            32,893 K.png
+2009-09-30  17:08            29,572 R.png
+               6 个文件        186,596 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\Plugin 的目录
+
+2009-10-30  10:46    <DIR>          .
+2009-10-30  10:46    <DIR>          ..
+2009-08-16  02:00            95,232 AdvancedOlly.dll
+2005-10-03  17:14            14,848 ApiBreak.dll
+2005-10-03  10:02            45,056 Asm2Clipboard.dll
+2004-05-23  01:10            55,808 BOOKMARK.DLL
+2003-03-11  21:55            58,880 CleanupEx.dll
+2007-03-08  19:54            52,224 CmdBar.dll
+2009-10-30  15:16                37 CmdBar.ini
+2004-05-23  01:10            63,488 Cmdline.dll
+2009-09-07  13:28            74,240 Crack8BP.DLL
+2009-09-07  13:14             5,834 Crack8BP.ini
+2003-08-25  16:26            41,033 DeJunk.dll
+2007-09-04  23:33           266,240 ODbgScript.dll
+2005-04-24  10:41            78,848 OllyDump.dll
+2006-06-03  15:40           348,160 TBAR.dll
+              14 个文件      1,199,928 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Crack8个性加强版OD\UDD 的目录
+
+2009-10-30  11:41    <DIR>          .
+2009-10-30  11:41    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OD 随机标题 的目录
+
+2009-08-29  08:11    <DIR>          .
+2009-08-29  08:11    <DIR>          ..
+2009-04-27  18:34           335,872 eAPI.fne
+2009-04-27  18:36           441,856 OD Random title.exe
+               2 个文件        777,728 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版 的目录
+
+2009-08-29  00:13    <DIR>          .
+2009-08-29  00:13    <DIR>          ..
+2005-11-26  22:54    <DIR>          FixOD
+2002-11-05  22:19               513 Labeler.def
+2005-11-24  16:16            79,360 Labeler.dll
+2005-11-23  23:51    <DIR>          LIB
+2004-05-23  01:10             3,462 license.txt
+2004-06-06  22:18             7,680 loaddll.exe
+2005-12-08  18:09         1,300,992 Ollydbg.exe
+2009-09-10  08:29             7,004 ollydbg.ini
+2009-08-29  00:10    <DIR>          OMS
+2009-08-29  00:10    <DIR>          PLUGIN
+1998-08-28  14:10            17,680 PSAPI.DLL
+2005-11-23  23:51    <DIR>          Scripts
+2003-12-28  02:37            63,774 Signs.txt
+2009-08-29  00:12    <DIR>          Tools
+2005-11-23  23:51    <DIR>          UDD
+2005-11-23  23:51    <DIR>          原版界面
+2005-12-09  12:56             5,605 汉化说明.txt
+2005-11-27  15:16    <DIR>          英文配置补丁
+               9 个文件      1,486,070 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\FixOD 的目录
+
+2005-11-26  22:54    <DIR>          .
+2005-11-26  22:54    <DIR>          ..
+2005-11-24  13:51             1,573 AutoPach使用说明.txt
+2005-11-24  13:58           600,576 AutoPath.dll
+2005-11-29  18:35             1,644 AutoPath.ini
+2005-12-08  18:17         1,301,245 Ollydbg.exe
+               4 个文件      1,905,038 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\LIB 的目录
+
+2005-11-23  23:51    <DIR>          .
+2005-11-23  23:51    <DIR>          ..
+1998-06-17  00:00         2,157,890 MFC42.Lib
+2003-03-19  12:31         2,580,010 mfc71.Lib
+               2 个文件      4,737,900 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\OMS 的目录
+
+2009-08-29  00:10    <DIR>          .
+2009-08-29  00:10    <DIR>          ..
+2004-11-21  22:33               400 HelloWorld.oms
+2004-11-21  22:34               443 Include.oms
+2004-11-22  10:53                75 UPX.omb
+2004-11-21  22:35               671 UPX.oms
+               4 个文件          1,589 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\PLUGIN 的目录
+
+2009-08-29  00:10    <DIR>          .
+2009-08-29  00:10    <DIR>          ..
+2005-10-03  17:56           114,688 AJunk.dll
+2005-10-03  17:14            14,848 ApiBreak.dll
+2005-11-24  16:39             8,628 APIBREAK.GID
+2005-04-30  23:59             5,227 APIBREAK.HLP
+2005-10-03  10:02            45,056 Asm2Clipboard.dll
+2002-11-03  15:39            55,808 BOOKMARK.DLL
+2005-10-03  20:53            58,880 CleanupEx.dll
+2005-11-26  22:35            64,512 CmdBar.dll
+2009-08-29  00:43                79 CmdBar.ini
+2005-01-08  13:04            63,488 CMDLINE.DLL
+2005-11-24  16:37             8,628 CMDLINE.GID
+2002-11-16  01:08            13,316 CMDLINE.HLP
+2001-11-12  12:00           486,400 DBGHELP.DLL
+2003-08-25  16:32               758 dejunk 1.2.txt
+2003-08-25  16:26            41,033 DeJunk.dll
+2004-01-29  09:50            10,573 DeJunk.ini
+2003-09-20  00:44               132 DeJunk.sfv
+2002-03-25  18:25            55,808 dumpsig.exe
+2005-01-08  02:25            45,148 extracopy.dll
+2005-10-03  23:21           316,416 GODUP.dll
+2002-11-26  08:37            56,832 HideCapt.dll
+2005-12-01  16:24             9,216 HideDebugger.dll
+2005-12-01  16:21                32 HideDebugger.ini
+2004-07-23  09:21             6,656 IsDebug V1.4.dll
+2003-09-19  14:45             7,866 Junkdb.cfg
+2002-11-05  22:19               513 Labeler.def
+2005-11-24  16:16            79,360 Labeler.dll
+2005-10-03  09:04            71,168 Labelmaster.dll
+2004-07-23  09:28            49,157 LoadMap.dll
+2003-06-13  00:16           155,136 MapConv.dll
+2003-06-10  08:59             1,629 MapConv.txt
+2004-12-13  23:53            45,056 mapgen.plw
+2005-10-03  17:46            73,728 MemoryManage.dll
+2005-12-03  11:38           143,360 ODbgScript.dll
+2005-03-10  10:29             6,751 olly2html.pl
+2005-04-24  10:41            78,848 OllyDump.dll
+2003-05-23  21:49                64 OllyDump.ini
+2005-11-23  22:37            61,440 OllyFlow.dll
+2005-03-16  22:02            90,112 OllyHelper.dll
+2005-03-02  14:37           107,786 OllyMachine 手册.chm
+2005-03-16  23:18            90,112 OllyMachine.dll
+2005-03-14  22:28               304 OllyMachine.ini
+2005-03-16  20:08           212,992 OllyScript.dll
+2005-03-14  22:31            16,142 OllyScript中文说明.txt
+2005-04-29  15:55           217,088 pedumper.dll
+2005-04-27  12:04             1,912 pedumper.txt
+2003-01-29  11:43             5,632 StayOntop.dll
+2005-10-03  18:15            40,960 TracKid.dll
+2005-04-26  12:58             8,192 UnhExcFlt.DLL
+2004-07-27  10:49             1,056 UnhExcFlt.txt
+2005-11-23  21:47            65,536 ustrrefadd.dll
+2002-11-26  09:12            52,736 WatchMan.dll
+2003-07-02  23:21             4,096 windowinfos.dll
+2004-01-23  16:27            24,576 windowjuggler.dll
+2005-03-15  14:38           357,376 wingraph32.exe
+2005-11-23  23:51    <DIR>          备用
+              55 个文件      3,552,846 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\PLUGIN\备用 的目录
+
+2005-11-23  23:51    <DIR>          .
+2005-11-23  23:51    <DIR>          ..
+2005-01-08  12:46            80,896 OllyDump_2.21.dll
+2005-11-23  21:35            57,344 olly_bp_man.dll
+2004-06-09  15:58            37,888 PuntosMagicos.dll
+2005-01-08  02:08            26,112 ustrref.dll
+               4 个文件        202,240 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\Scripts 的目录
+
+2005-11-23  23:51    <DIR>          .
+2005-11-23  23:51    <DIR>          ..
+2004-11-14  19:55               218 32Lite 0.03a.txt
+2004-06-10  12:20               823 anti-debug_lastex.txt
+2004-06-10  12:10             7,207 Arm 3.7Std_release.txt
+2005-02-20  16:51             6,539 ARMADiLLO DETECTiVE v1.00.txt
+2004-07-15  01:44             1,323 arma_detach.txt
+2004-07-15  01:44             3,109 arma_unpack.txt
+2004-11-14  15:40               243 ASpack 1.x-2.x.txt
+2004-06-10  12:21               126 aspack.txt
+2004-06-10  12:21               265 aspack_1.08.02.txt
+2004-07-15  01:44               590 aspack_212.txt
+2004-01-23  19:16               132 ASPR 1.23RC4.txt
+2004-05-27  01:28               937 ASPR 1.23RC4findOEP.txt
+2004-06-10  12:21               182 asprbp.txt
+2004-11-22  13:55               301 ASProtect 1.2-1.2c.txt
+2004-11-22  15:34               794 ASProtect 1.22 - 1.23 Beta 21-Rc1.txt
+2004-08-04  04:35               788 asprotect 1.23 RC4.txt
+2004-12-14  22:19             8,460 ASProtect 2.0 Unpack.txt
+2004-11-18  12:28               694 Asprotect1.x.txt
+2004-06-10  12:21             1,588 asprotect_13b_stolen_code.txt
+2004-06-10  12:21               935 asprsoep.txt
+2004-06-10  12:21               259 asprsto.txt
+2004-07-15  01:44               734 aspr_123_rc4.txt
+2004-06-10  12:21             2,064 aspr_130b.txt
+2004-06-10  12:21             2,766 aspr_131b.txt
+2004-07-15  01:44             5,623 aspr_generic.txt
+2004-11-22  11:04               333 Crunch v1.0.txt
+2004-11-26  19:17               337 CrunchPE Heuristic.txt
+2004-07-15  01:44             2,604 dbpe2x.txt
+2004-06-10  12:22             1,419 dbpe_2.x.txt
+2004-11-14  19:35               227 Dxpack 0.86.txt
+2004-11-19  23:32             1,434 EXE Stealth2.72.txt
+2004-03-14  19:39               710 EXE Stealth2.74.txt
+2004-11-24  12:49               476 EXE32Pack 1.3X.txt
+2004-06-10  12:22               955 execryptor_1.5x.txt
+2004-07-15  01:44               479 exeshield_0x.txt
+2004-06-10  12:22               458 exestealth_2.7.txt
+2004-06-10  12:22               682 exestealth_2.74.txt
+2004-11-14  15:56               295 EZIP 1.0.txt
+2004-07-15  01:44               569 ezip_10.txt
+2004-11-17  13:58               278 fsg2.0.txt
+2004-06-10  12:22               268 fsg_1.33.txt
+2004-06-10  12:22               889 fsg_1.33_2.txt
+2004-07-15  01:44               223 fsg_2_0.txt
+2004-11-14  18:16               238 JDPack 1.01.txt
+2004-06-10  12:22               700 Krypton0.5.txt
+2004-06-10  12:22               695 krypton_0.5.txt
+2004-06-10  12:22               132 lastex.txt
+2004-07-15  01:44               501 mew10_1_0.txt
+2004-11-17  19:19               521 MoleBox2.X 跳过IAT加密.TXT
+2004-06-10  12:23               967 molebox_2x.txt
+2004-06-10  12:23               743 morphine_1.2.txt
+2004-07-15  01:45               657 morphine_13.txt
+2004-11-17  14:07               273 Neolite 2.0 .txt
+2004-01-23  21:21               179 neolite 2.0.txt
+2004-06-10  12:23               108 neolite20.txt
+2004-11-14  15:03               250 NSpack 1.3.txt
+2004-06-10  12:23             1,740 obsidium_1_0061.txt
+2004-11-15  12:36               250 PC Shrinker 0.71.txt
+2004-11-22  21:24               934 PC-Guard 5.0.txt
+2004-06-10  12:23             1,228 pcguard_150.txt
+2004-11-22  15:18               433 PE-SHiELD V0.25.txt
+2004-11-24  12:24               781 PEbundle V2.3 Oep+ Patch IAT.txt
+2004-07-15  01:45               581 pebundle_2x.txt
+2004-11-14  15:40               263 Pecompact 1.x.txt
+2004-11-17  15:24               668 PECompact 2.x.txt
+2005-01-12  21:55               956 PECompact 2.xx.txt
+2004-06-10  12:23               154 pecompact_1_76.txt
+2004-06-10  12:23               371 pecompact_1_84.txt
+2004-11-14  19:14               323 PEDiminishe 0.1.txt
+2004-06-10  12:23               200 pediminisher_1_0.txt
+2004-06-10  12:23             1,399 PeLock1.06c.txt
+2004-07-15  01:45               598 pelock_204.txt
+2004-11-19  16:23               758 PEncrypt 4.0.TXT
+2004-11-16  19:04               253 PEPack 1.0.txt
+2004-06-10  12:23               144 pepack10.txt
+2004-06-10  12:24             2,488 peshield.txt
+2004-11-27  19:24             1,008 PESpin V0.1.txt
+2004-06-10  12:24               965 pespin_0.3.txt
+2004-07-15  01:45             1,618 pespin_0304_vb.txt
+2004-07-15  01:45               978 pespin_07.txt
+2004-11-22  08:53             1,044 Petite 2.2 Patch IAT.txt
+2004-11-20  12:42               303 Petite 2.2.txt
+2004-06-10  12:24               427 petite22.txt
+2004-06-10  12:24               516 pex_0_99.txt
+2004-11-14  19:51               180 PKLITE32 1.1.txt
+2004-06-10  12:24               218 pklite32_1.1.txt
+2004-06-10  12:24               351 protection_plus_oep.txt
+2004-06-10  12:24               261 stolen bytes.txt
+2004-06-10  12:24             1,590 Stolen code Finder.txt
+2004-06-10  12:24               609 svkpoep.txt
+2004-06-10  12:24             2,769 svkp_13x.txt
+2004-06-10  12:24               999 tElock 0.9-1.0 OEP Finder.txt
+2004-11-20  13:05               742 Telock0.98x.txt
+2004-07-18  22:19               609 telock098.osc
+2004-06-10  12:24               585 telock098.txt
+2004-06-10  12:24               949 telock_0.9.txt
+2004-06-10  12:25               799 uprot1_def.txt
+2004-06-10  12:25             1,171 uprot1_vb.txt
+2004-11-14  14:48               297 Upx 1.x.txt
+2004-11-19  12:19               268 UPX-Scrambler RC1.x.txt
+2004-01-26  02:52               276 UPX.osc
+2004-06-10  12:25               276 upx.txt
+2004-07-15  01:45               511 upxprotector_10x.txt
+2004-06-10  12:25               277 upxscr_rc1.txt
+2004-11-19  11:59               198 UPXShit 0.x.txt
+2004-07-15  01:45               444 upxshit006.txt
+2004-06-10  12:25               374 upx_upxprot.txt
+2004-11-20  12:54               347 VGCrypt PE Encryptor V0.75.txt
+2004-07-15  01:45               508 virogen_075.txt
+2004-11-22  10:39               495 WWPack32 1.x.txt
+2004-06-10  12:25               507 y0da_crypter_1.2.txt
+2004-11-20  18:56             1,808 yoda's Crypter V1.2-1.3.txt
+2004-11-20  20:12             1,502 yoda's cryptor 1.x  modified.txt
+2004-02-25  13:59            11,843 中文ReadMe.txt
+2004-02-25  00:55               247 变形fsg1.33.txt
+2004-02-25  14:12               996 普通fsg1.33.txt
+2004-11-17  13:55               649 普通变形 fsg1.33.txt
+             117 个文件        120,336 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\Tools 的目录
+
+2009-08-29  00:12    <DIR>          .
+2009-08-29  00:12    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\UDD 的目录
+
+2005-11-23  23:51    <DIR>          .
+2005-11-23  23:51    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\原版界面 的目录
+
+2005-11-23  23:51    <DIR>          .
+2005-11-23  23:51    <DIR>          ..
+2005-12-08  18:25         1,117,696 Ollydbg.exe
+               1 个文件      1,117,696 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyDBG_1.10汉化第二版\英文配置补丁 的目录
+
+2005-11-27  15:16    <DIR>          .
+2005-11-27  15:16    <DIR>          ..
+2005-12-08  20:38            18,012 硬件断点内容恢复为英文.exe
+2005-12-08  20:42               795 补丁说明.TXT
+2005-12-08  12:40            18,375 配置文件恢复为英文补丁.exe
+               3 个文件         37,182 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Ollydbg个性修改版 的目录
+
+2008-11-28  22:15    <DIR>          .
+2008-11-28  22:15    <DIR>          ..
+2008-05-29  02:35                42 APIFinder.ini
+2001-11-12  13:00           486,400 DBGHELP.DLL
+2008-08-01  13:28    <DIR>          Lib
+2005-03-20  19:28            10,752 loaddll.exe
+2007-03-19  17:33         1,112,576 Ollydbg.exe
+2009-09-10  08:28            14,629 OllyDbg.ini
+2008-11-28  22:14    <DIR>          Plugin
+2008-08-01  13:28    <DIR>          Script
+2008-05-29  02:46                33 TBar manager.ini
+2009-08-29  00:06    <DIR>          Tools
+2009-09-10  08:28    <DIR>          UDD
+2007-03-19  17:29         1,184,768 个性版OD.exe
+               7 个文件      2,809,200 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Ollydbg个性修改版\Lib 的目录
+
+2008-08-01  13:28    <DIR>          .
+2008-08-01  13:28    <DIR>          ..
+1998-06-17  01:00         2,157,890 MFC42.Lib
+2003-03-19  13:31         2,580,010 mfc71.Lib
+2006-06-12  15:07             3,486 ollybone.lib
+2004-07-12  15:34            38,620 Ollydbg.lib
+2004-10-04  08:16             2,036 ollygraph.lib
+               5 个文件      4,782,042 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Ollydbg个性修改版\Plugin 的目录
+
+2008-11-28  22:14    <DIR>          .
+2008-11-28  22:14    <DIR>          ..
+2006-08-27  14:35            96,768 advancedolly.dll
+2005-10-03  17:14            14,848 ApiBreak.dll
+2008-01-30  17:33             5,847 APIBreak.ini
+2006-09-03  05:19           465,408 APIFinder.dll
+2006-04-10  10:38            74,240 API_Break.dll
+2005-10-03  20:53            58,880 CleanupEx.dll
+2009-09-10  08:28                37 CmdBar.ini
+2003-07-16  01:09            61,952 CMDLINE.DLL
+2006-12-14  05:18           395,264 DelphiHelper.dll
+2008-02-16  13:24            87,552 Games Invader.dll
+2005-12-01  16:24             9,216 HideDebugger.dll
+2008-05-29  02:32                32 HideDebugger.ini
+2008-05-26  13:59           245,760 IDAFicator.dll
+2005-10-03  17:46            73,728 MemoryManage.dll
+2007-09-04  23:33           266,240 ODbgScript.dll
+2008-04-05  23:47            93,696 OD隐藏.dll
+2007-11-13  13:10           174,080 OD隐藏插件.dll
+2005-04-24  10:41            78,848 OllyDump.dll
+2005-11-23  22:37            61,440 OllyFlow.dll
+2005-03-16  23:18            90,112 OllyMachine.dll
+2008-05-29  02:21               304 OllyMachine.ini
+2003-08-25  16:26            41,033 去花器.dll
+2006-12-14  22:23            71,168 命令栏.dll
+2006-09-01  15:26            44,032 异常计数器.dll
+2006-12-14  04:52            61,440 查找字符串.dll
+2006-12-14  08:05                23 清理文件.ini
+2008-04-04  20:13           245,810 自动注释.dll
+2006-09-03  20:03            95,232 进程补丁.dll
+2006-12-15  14:19            53,248 隐藏OD.dll
+              29 个文件      2,966,238 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Ollydbg个性修改版\Script 的目录
+
+2008-08-01  13:28    <DIR>          .
+2008-08-01  13:28    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Ollydbg个性修改版\Tools 的目录
+
+2009-08-29  00:06    <DIR>          .
+2009-08-29  00:06    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\Ollydbg个性修改版\UDD 的目录
+
+2009-09-10  08:28    <DIR>          .
+2009-09-10  08:28    <DIR>          ..
+2009-09-10  08:28             3,857 hackIE2.01.UPX.udd
+               1 个文件          3,857 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版 的目录
+
+2009-08-28  23:15    <DIR>          .
+2009-08-28  23:15    <DIR>          ..
+2001-11-12  12:00           486,400 DBGHELP.DLL
+2006-10-15  20:06    <DIR>          LIB
+2005-08-11  09:44             7,680 loaddll.exe
+2007-12-16  12:44         1,314,304 OllyDBG.EXE
+2009-09-10  08:29             9,417 ollydbg.ini
+2007-12-16  12:44         1,473,024 OllyICE看雪版.exe
+2009-08-28  23:19    <DIR>          plugin
+2007-09-21  14:31    <DIR>          tools
+2006-10-15  20:06    <DIR>          UDD
+2006-10-15  20:06    <DIR>          原版
+               5 个文件      3,290,825 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\LIB 的目录
+
+2006-10-15  20:06    <DIR>          .
+2006-10-15  20:06    <DIR>          ..
+1998-06-17  00:00         2,157,890 MFC42.Lib
+2003-03-19  12:31         2,580,010 mfc71.Lib
+               2 个文件      4,737,900 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\plugin 的目录
+
+2009-08-28  23:19    <DIR>          .
+2009-08-28  23:19    <DIR>          ..
+2004-12-19  19:15            45,056 Asm2Clipboard.dll
+2004-05-23  01:10            55,808 BOOKMARK.DLL
+2003-03-11  21:55            58,880 CleanupEx.dll
+2006-01-11  15:00                39 CleanupEx.ini
+2004-01-20  13:47            64,512 CmdBar.dll
+2009-08-29  00:43                79 CmdBar.ini
+2003-08-25  16:26            41,033 DeJunk.dll
+2005-03-17  11:18            15,424 DeJunk.ini
+2004-08-09  01:28           320,000 GODUP.dll
+2002-11-17  16:21            56,832 HideCapt.dll
+2007-10-19  16:43            53,248 HideOD.dll
+2005-08-11  16:59             5,120 Loaddll.dll
+2007-09-21  14:08           266,240 ODbgScript.dll
+2005-03-24  13:13            79,872 OllyDump.dll
+2004-12-07  14:32            30,720 OllyMachine.dll
+2009-08-28  23:19               304 OllyMachine.ini
+2004-07-16  21:41           212,992 OllyScript.dll
+2007-11-17  20:41            93,184 PhantOm.dll
+2005-09-20  15:33            65,536 ustrref.dll
+2002-11-17  22:45            52,736 WatchMan.dll
+2006-08-27  00:14            10,240 内存数据格式转换.dll
+              21 个文件      1,527,855 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\tools 的目录
+
+2007-09-21  14:31    <DIR>          .
+2007-09-21  14:31    <DIR>          ..
+2007-09-21  14:36    <DIR>          HideToolz
+2006-10-15  20:06    <DIR>          xidt
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\tools\HideToolz 的目录
+
+2007-09-21  14:36    <DIR>          .
+2007-09-21  14:36    <DIR>          ..
+2007-09-21  14:36            97,792 HideToolz.exe
+               1 个文件         97,792 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\tools\xidt 的目录
+
+2006-10-15  20:06    <DIR>          .
+2006-10-15  20:06    <DIR>          ..
+2005-03-15  09:08             1,961 History.txt
+2005-03-14  14:06             6,656 krmem.dll
+2005-03-15  00:04            28,672 XIdt.exe
+               3 个文件         37,289 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\UDD 的目录
+
+2006-10-15  20:06    <DIR>          .
+2006-10-15  20:06    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\原版 的目录
+
+2006-10-15  20:06    <DIR>          .
+2006-10-15  20:06    <DIR>          ..
+2006-10-15  20:06    <DIR>          汉化原版
+2006-10-15  20:06    <DIR>          英文原版
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\原版\汉化原版 的目录
+
+2006-10-15  20:06    <DIR>          .
+2006-10-15  20:06    <DIR>          ..
+2006-11-30  21:10         1,300,992 Ollydbg.exe
+               1 个文件      1,300,992 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\OllyICE1.1看雪版\原版\英文原版 的目录
+
+2006-10-15  20:06    <DIR>          .
+2006-10-15  20:06    <DIR>          ..
+2004-05-23  01:10             3,462 license.txt
+2004-05-23  01:10         1,117,696 OLLYDBG.EXE
+               2 个文件      1,121,158 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\SoftSnoop2009V0.2 的目录
+
+2009-09-10  11:17    <DIR>          .
+2009-09-10  11:17    <DIR>          ..
+2009-09-10  11:17    <DIR>          ApiAddr
+2009-09-10  11:17    <DIR>          ApiDef
+2009-07-10  15:13         1,244,160 APISnoop.dll
+2009-07-10  15:21             6,024 ignoreapi.txt
+2009-07-10  15:14             6,024 LoadIgnoreApi.txt
+2009-09-10  11:17    <DIR>          Plugins
+2009-09-10  11:17    <DIR>          SDK
+2009-07-10  15:13            91,648 SoftSnoop.exe
+2009-07-10  15:22            61,650 SoftSnoop.ini
+               5 个文件      1,409,506 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\SoftSnoop2009V0.2\ApiAddr 的目录
+
+2009-09-10  11:17    <DIR>          .
+2009-09-10  11:17    <DIR>          ..
+2009-07-10  13:55             1,098 HookAddr.txt
+2009-06-09  00:07           379,646 HookAddr_MFC42.txt
+2009-06-08  16:58           328,896 HookAddr_MFC71.txt
+2009-06-17  19:37             1,614 RenameApi.txt
+2009-07-10  15:20             1,008 tempApiAddr.txt
+               5 个文件        712,262 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\SoftSnoop2009V0.2\ApiDef 的目录
+
+2009-09-10  11:17    <DIR>          .
+2009-09-10  11:17    <DIR>          ..
+2009-05-14  09:34                60 Kernel32.ss
+2001-02-02  11:36             1,338 SS.TXT
+               2 个文件          1,398 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\SoftSnoop2009V0.2\Plugins 的目录
+
+2009-09-10  11:17    <DIR>          .
+2009-09-10  11:17    <DIR>          ..
+2001-02-01  19:56             2,560 HelloWorld.dll
+2001-02-01  20:31             3,584 MsgHook.dll
+2001-02-01  20:47             6,656 PluginExp3.dll
+2009-07-10  15:22               262 PluginInit.log
+2001-02-02  11:50             1,536 TestMe.exe
+               5 个文件         14,598 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\SoftSnoop2009V0.2\SDK 的目录
+
+2009-09-10  11:17    <DIR>          .
+2009-09-10  11:17    <DIR>          ..
+2009-09-10  11:17    <DIR>          PluginExp1
+2009-09-10  11:17    <DIR>          PluginExp2
+2009-09-10  11:17    <DIR>          PluginExp3
+2001-02-02  11:41             1,527 Plugins.tXt
+2001-03-15  13:34             9,115 SSplugin.h
+2001-03-15  13:58             4,579 SSPlugin.INC
+2001-03-15  14:16             4,055 SSPlugin.pas
+               4 个文件         19,276 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\SoftSnoop2009V0.2\SDK\PluginExp1 的目录
+
+2009-09-10  11:17    <DIR>          .
+2009-09-10  11:17    <DIR>          ..
+2001-02-01  19:56               960 PluginExp1.c
+2001-01-30  13:38                25 PluginExp1.def
+2009-04-30  14:02             4,296 PluginExp1.dsp
+2009-04-30  13:20               545 PluginExp1.dsw
+2009-04-30  14:02            41,984 PluginExp1.ncb
+2009-04-30  14:02            53,760 PluginExp1.opt
+2009-04-30  14:01               989 PluginExp1.plg
+               7 个文件        102,559 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\SoftSnoop2009V0.2\SDK\PluginExp2 的目录
+
+2009-09-10  11:17    <DIR>          .
+2009-09-10  11:17    <DIR>          ..
+2001-01-31  19:16               390 BUILD.BAT
+2001-02-01  20:31               967 BUILD.PIF
+2001-02-01  19:57             4,603 MsgHook.ASM
+2001-01-31  14:37               233 RESOURCE.INC
+2001-02-01  20:31               728 Rsrc.res
+               5 个文件          6,921 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\SoftSnoop2009V0.2\SDK\PluginExp3 的目录
+
+2009-09-10  11:17    <DIR>          .
+2009-09-10  11:17    <DIR>          ..
+2001-02-01  20:48             3,785 PluginExp3.dpr
+2001-02-01  20:32               236 RSRC.RES
+               2 个文件          4,021 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\^0^-Fly 的目录
+
+2008-11-30  03:12    <DIR>          .
+2008-11-30  03:12    <DIR>          ..
+2008-09-01  11:46    <DIR>          Lib
+2007-04-20  10:37             5,120 loaddll.exe
+2001-11-12  12:00           486,400 ODBHELP.DLL
+2005-03-09  01:30         1,112,576 Ollydbg.exe
+2009-09-10  08:28            12,001 Ollydbg.ini
+2008-11-30  03:10    <DIR>          Plugin
+2002-09-05  16:53            59,392 plugs.plw
+2004-08-16  16:39            23,040 psapi.dll
+2008-09-01  11:46    <DIR>          Script
+2009-08-30  23:08                33 TBar manager.ini
+2008-11-30  03:11    <DIR>          UDD
+2007-06-03  12:20         1,820,062 ^0^-Fly.exe
+2007-06-03  11:59               274 删除菜单右键.reg
+2003-11-03  13:54             1,778 命令行命令.txt
+2007-06-03  12:25            15,705 备份 Ollydbg.ini
+2003-06-13  02:01               628 常用热键.txt
+              12 个文件      3,537,009 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\^0^-Fly\Lib 的目录
+
+2008-09-01  11:46    <DIR>          .
+2008-09-01  11:46    <DIR>          ..
+1998-06-17  00:00         2,157,890 MFC42.Lib
+2003-03-19  12:31         2,580,010 mfc71.Lib
+               2 个文件      4,737,900 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\^0^-Fly\Plugin 的目录
+
+2008-11-30  03:10    <DIR>          .
+2008-11-30  03:10    <DIR>          ..
+2005-10-03  17:14            14,848 ApiBreak.dll
+2005-07-30  00:19             2,510 APIBreak.ini
+2006-04-10  10:38            74,240 API_Break.dll
+2005-10-03  20:53            58,880 CleanupEx.dll
+2007-03-08  19:54            52,224 CmdBar.dll
+2009-08-30  23:08                81 CmdBar.ini
+2003-08-25  16:26            41,033 DeJunk.dll
+2005-03-17  11:18            15,424 DeJunk.ini
+2006-09-01  15:26            44,032 ExCounter.dll
+2002-11-26  08:37            56,832 HideCapt.dll
+2007-03-19  17:22             8,704 HideDebugger.dll
+2007-06-02  14:28                31 HideDebugger.ini
+2006-12-15  14:19            53,248 HideOD.dll
+2006-07-14  12:14             5,120 Importer.dll
+2006-09-03  10:09               467 NonaWrite.cnt
+2006-09-02  20:26           157,696 NonaWrite.dll
+2006-07-25  23:11           208,896 ODbgScript.-1.51dll
+2007-05-26  09:03           262,144 ODbgScript.-1.62ll
+2007-09-04  23:33           266,240 ODbgScript.dll
+2007-03-18  15:27           348,160 OD工具栏管理.dll
+2008-04-05  23:47            93,696 OD隐藏.dll
+2007-11-13  13:10           174,080 OD隐藏插件.dll
+2005-04-24  10:41            78,848 OllyDump.dll
+2006-09-03  12:11             9,728 OllyTiper.dll
+2005-11-23  21:47            65,536 ustrrefadd.dll
+2006-08-27  00:14            10,240 内存数据格式转换.dll
+2007-06-02  14:34                23 清理文件.ini
+              27 个文件      2,102,961 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\^0^-Fly\Script 的目录
+
+2008-09-01  11:46    <DIR>          .
+2008-09-01  11:46    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\调试工具\^0^-Fly\UDD 的目录
+
+2008-11-30  03:11    <DIR>          .
+2008-11-30  03:11    <DIR>          ..
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\资源工具 的目录
+
+2010-01-17  05:01    <DIR>          .
+2010-01-17  05:01    <DIR>          ..
+2009-08-29  00:23               350 desktop.ini
+2009-08-29  00:44    <DIR>          eXeScope6.5注册版
+2009-03-15  23:56           744,448 freeRes0.94.exe
+2009-08-29  00:37    <DIR>          PE Explorer1.98
+2009-08-30  05:59    <DIR>          ResScope194
+2007-01-25  02:43            10,134 restorator.ico
+2009-08-29  00:28    <DIR>          Restorator2007
+2008-11-29  02:34         4,089,627 UltraEdit 10.20a 黑基正式版.rar
+2002-03-24  20:23           881,664 看雪ResHacker.exe
+2010-01-17  05:02               328 看雪ResHacker.ini
+               6 个文件      5,726,551 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\eXeScope6.5注册版 的目录
+
+2009-08-29  00:44    <DIR>          .
+2009-08-29  00:44    <DIR>          ..
+2004-06-16  23:23           113,664 EXEBAT.EXE
+2001-09-16  23:22               525 EXESCENG.CNT
+2009-08-29  00:38               137 EXESCOPE.ini
+2004-06-18  12:37           994,984 EXESCOPE6.5.exe
+2009-08-29  00:44                73 EXESCOPE6.5.ini
+               5 个文件      1,109,383 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98 的目录
+
+2009-08-29  00:37    <DIR>          .
+2009-08-29  00:37    <DIR>          ..
+2009-08-29  00:34    <DIR>          API LIBRARY
+2006-05-03  04:25           140,552 pexdll.dll
+2006-05-03  04:25            97,544 pexdll2.dll
+2006-05-30  16:55         2,401,280 pexplorer1.98.exe
+2009-08-29  00:34    <DIR>          PLUGINS
+2006-05-03  04:25            69,896 unmg.dll
+               4 个文件      2,709,272 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\API LIBRARY 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2009-08-29  00:34    <DIR>          BASE
+2009-08-29  00:34    <DIR>          USER
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\API LIBRARY\BASE 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2009-08-29  00:34    <DIR>          CPP
+2009-08-29  00:34    <DIR>          PAS
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\API LIBRARY\BASE\CPP 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2006-05-03  04:25                 1 temp.ins
+               1 个文件              1 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\API LIBRARY\BASE\PAS 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2006-05-03  04:25             6,197 aclapi.dll.dat
+2006-05-03  04:25            31,704 advapi32.dll.dat
+2006-05-03  04:25               405 avicap32.dll.dat
+2006-05-03  04:25             1,998 avifil32.dll.dat
+2006-05-03  04:25             6,367 comctl32.dll.dat
+2006-05-03  04:25             1,341 comdlg32.dll.dat
+2006-05-03  04:25             1,504 d3drm.dll.dat
+2006-05-03  04:25               508 ddraw.dll.dat
+2006-05-03  04:25               245 dinput.dll.dat
+2006-05-03  04:25               719 dplayx.dll.dat
+2006-05-03  04:25               979 dsetup.dll.dat
+2006-05-03  04:25               744 dsound.dll.dat
+2006-05-03  04:25            23,614 gdi32.dll.dat
+2006-05-03  04:25             2,249 gds32.dll.dat
+2006-05-03  04:25             4,036 glu32.dll.dat
+2006-05-03  04:25             5,949 imagehlp.dll.dat
+2006-05-03  04:25             5,177 imm32.dll.dat
+2006-05-03  04:25            57,792 kernel32.dll.dat
+2006-05-03  04:25               696 lz32.dll.dat
+2006-05-03  04:25             4,759 mpr.dll.dat
+2006-05-03  04:25               589 msimg32.dll.dat
+2006-05-03  04:25               144 netapi32.dll.dat
+2006-05-03  04:25            15,653 ole32.dll.dat
+2006-05-03  04:25            13,430 oleaut32.dll.dat
+2006-05-03  04:25               805 oledlg.dll.dat
+2006-05-03  04:25             1,182 olepro32.dll.dat
+2006-05-03  04:25            16,894 opengl32.dll.dat
+2006-05-03  04:25             6,688 penwin32.dll.dat
+2006-05-03  04:25               275 quartz.dll.dat
+2006-05-03  04:25             4,260 rasapi32.dll.dat
+2006-05-03  04:25             4,289 shell32.dll.dat
+2006-05-03  04:25             6,553 urlmon.dll.dat
+2006-05-03  04:25            45,005 user32.dll.dat
+2006-05-03  04:25             1,457 version.dll.dat
+2006-05-03  04:25            18,402 wininet.dll.dat
+2006-05-03  04:25            12,503 winmm.dll.dat
+2006-05-03  04:25            11,853 winspool.drv.dat
+2006-05-03  04:25               339 wintrust.dll.dat
+2006-05-03  04:25             3,977 wsock32.dll.dat
+              39 个文件        321,281 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\API LIBRARY\USER 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2009-08-29  00:34    <DIR>          CPP
+2009-08-29  00:34    <DIR>          PAS
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\API LIBRARY\USER\CPP 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2006-05-03  04:25                 1 temp.ins
+               1 个文件              1 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\API LIBRARY\USER\PAS 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2006-05-03  04:25                 1 temp.ins
+               1 个文件              1 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\PLUGINS 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2009-08-29  00:34    <DIR>          Demo Plug-ins
+2006-07-30  02:43           116,488 unupx.dll
+               1 个文件        116,488 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\PLUGINS\Demo Plug-ins 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2009-08-29  00:34    <DIR>          C
+2009-08-29  00:34    <DIR>          Delphi
+               0 个文件              0 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\PLUGINS\Demo Plug-ins\C 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2006-05-03  04:25             6,144 pexplgc.dll
+2009-08-29  00:34    <DIR>          SOURCE
+               1 个文件          6,144 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\PLUGINS\Demo Plug-ins\C\SOURCE 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2006-05-03  04:25               516 globals.h
+2006-05-03  04:25             4,244 pex_plugin_c.c
+2006-05-03  04:25               964 pex_plugin_c.rc
+               3 个文件          5,724 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\PLUGINS\Demo Plug-ins\Delphi 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2006-05-03  04:25            22,856 pexgp.dll
+2009-08-29  00:34    <DIR>          SOURCE
+               1 个文件         22,856 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\PE Explorer1.98\PLUGINS\Demo Plug-ins\Delphi\SOURCE 的目录
+
+2009-08-29  00:34    <DIR>          .
+2009-08-29  00:34    <DIR>          ..
+2006-05-03  04:25             1,181 t12dll.dof
+2006-05-03  04:25             8,297 t12dll.dpr
+2006-05-03  04:25             1,221 t12dll.dsk
+2006-05-03  04:25             1,792 t12dll.res
+               4 个文件         12,491 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\ResScope194 的目录
+
+2009-08-30  05:59    <DIR>          .
+2009-08-30  05:59    <DIR>          ..
+2009-08-30  05:49         2,309,632 bform.dll
+2009-08-30  05:49               368 key.reg
+2009-08-30  05:49         2,030,080 ResScope.exe
+2009-08-30  05:57                40 ResScope1.94.bat
+               4 个文件      4,340,120 字节
+
+ D:\CRACK8~1.0\crack8\资源工具\Restorator2007 的目录
+
+2009-08-29  00:28    <DIR>          .
+2009-08-29  00:28    <DIR>          ..
+2007-02-06  09:42               304 !)卸载.reg
+2007-02-06  09:42               752 !)注册.reg
+2007-03-16  22:13         2,257,920 Restorator2007.exe
+               3 个文件      2,258,976 字节
+
+     所列文件总数:
+            2038 个文件    247,262,733 字节
+             959 个目录  5,591,822,336 可用字节
