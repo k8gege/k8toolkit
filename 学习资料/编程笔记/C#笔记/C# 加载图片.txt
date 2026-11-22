@@ -1,0 +1,4 @@
+
+pictureBox1.Image = Bitmap.FromFile("c:\\test.bmp");
+
+

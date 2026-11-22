@@ -1,0 +1,116 @@
+
+
+我们在程序中经常会用到MessageBox。
+
+   MessageBox.Show()共有21中重载方法。现将其常见用法总结如下：  
+
+
+1.MessageBox.Show("Hello~~~~");
+
+最简单的，只显示提示信息。
+
+
+
+2.MessageBox.Show("There are something wrong!","ERROR");
+
+可以给消息框加上标题。
+
+
+
+
+3.if (MessageBox.Show("Delete this user?", "Confirm Message", MessageBoxButtons.OKCancel) == DialogResult.OK)
+
+{
+
+   //delete
+
+}
+
+询问是否删除时会用到这个。
+
+
+
+
+4.if (MessageBox.Show("Delete this user?", "Confirm Message", MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
+
+{
+
+    //delete
+
+}
+
+可以给MessageBox加上一个Icon，.net提供常见的Icon共选择。
+
+
+
+
+
+5.if (MessageBox.Show("Delete this user?", "Confirm Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,MessageBoxDefaultButton.Button2) == DialogResult.OK)
+
+{
+
+   //delete
+
+}
+
+可以改变MessageBox的默认焦点，如下：
+
+
+
+
+6.if (MessageBox.Show("Delete this user?", "Confirm Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Question,MessageBoxDefaultButton.Button2,MessageBoxOptions.RtlReading) == DialogResult.OK)
+
+{
+
+   //delete
+
+}
+
+反向显示：
+
+
+
+
+7.if (MessageBox.Show("Delete this user?", "Confirm Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2, MessageBoxOptions.RightAlign,true) == DialogResult.OK)
+
+{
+
+    //delete
+
+}
+
+添加Help按钮：
+
+
+
+
+8.if (MessageBox.Show("Delete this user?", "Confirm Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading, @"/folder/file.htm") == DialogResult.OK)
+
+{
+
+   //delete
+
+}
+
+指定帮助文件的路径，点击即可打开该路径下的帮助文件。
+
+
+
+
+
+9.//HelpNavigator指定常数来指示要显示的帮助文件元素。Find 帮助文件将打开到搜索页。 
+
+if (MessageBox.Show("Delete this user?", "Confirm Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading, @"/folder/file.htm", HelpNavigator.Find) == DialogResult.OK)
+
+{
+
+    //delete
+
+}
+
+
+
+还有一些用法，不是太实用这里就不一一介绍了，有兴趣的朋友可以参考下这里：MSDN的MessageBox类。
+
+
+本文来自CSDN博客，转载请标明出处：http://blog.csdn.net/xuenzhen123/archive/2009/11/13/4808005.aspx

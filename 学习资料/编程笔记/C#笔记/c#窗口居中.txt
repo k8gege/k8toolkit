@@ -1,0 +1,9 @@
+c#窗口居中
+
+this.CenterToParent();
+
+而不是：this.StartPosition = FormStartPosition.CenterScreen; 
+
+显然，这与Vc++也很不同，
+ 
+ Crack8_编程小组[K.8] 专业源自我们不断的努力

@@ -1,0 +1,175 @@
+　　using System;
+
+　　using System.Collections.Generic;
+
+　　using System.ComponentModel;
+
+　　using System.Data;
+
+　　using System.Drawing;
+
+　　using System.Linq;
+
+　　using System.Text;
+
+　　using System.Windows.Forms;
+
+　　using System.Threading;
+
+　　using HtmlDom;
+
+　　namespace HTMLElementSelect
+
+　　{
+
+　　public partial class Form1 : Form
+
+　　{
+
+　　public Form1()
+
+　　{
+
+　　InitializeComponent();
+
+　　}
+
+　　AboutForm afrm=new AboutForm();
+
+　　private void Form1_Load(object sender, EventArgs e)
+
+　　{
+
+　　webBrowser1.Navigate("http://www.cnblogs.com/JiangHuakey/");
+
+　　webBrowser1.ContextMenuStrip = contextMenuStrip1;    //! 设置我们自己的弹出菜单
+
+　　webBrowser1.IsWebBrowserContextMenuEnabled = false;  //! 禁用IE默认的弹出菜单
+
+　　}
+
+　　private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+
+　　{
+
+　　//! 屏幕坐标
+
+　　Point ScreenCoord = new Point(MousePosition.X, MousePosition.Y);
+
+　　//! 浏览器坐标
+
+　　Point BrowserCoord = webBrowser1.PointToClient(ScreenCoord);
+
+　　HtmlElement elem = webBrowser1.Document.GetElementFromPoint(BrowserCoord);
+
+　　//! 隐藏所有菜单项
+
+　　for (int i = 0; i < contextMenuStrip1.Items.Count; i++)
+
+　　{
+
+　　contextMenuStrip1.Items[i].Visible = false;
+
+　　}
+
+　　//! 显示对应的菜单
+
+　　switch (elem.TagName)
+
+　　{
+
+　　case "A":
+
+　　//! 如果是一个超链接，则显示相关超链接的菜单项
+
+　　openToolStripMenuItem.Visible = true;
+
+　　openInNewTabToolStripMenuItem.Visible = true;
+
+　　openInNewWindowToolStripMenuItem.Visible = true;
+
+　　break;
+
+　　case "IMG":
+
+　　//! 如果是图片，则显示相关图片的菜单项
+
+　　saveImageToolStripMenuItem.Visible = true;
+
+　　setAsDesktopWallpaperToolStripMenuItem.Visible = true;
+
+　　break;
+
+　　default:
+
+　　//! 其它
+
+　　refreshToolStripMenuItem.Visible = true;
+
+　　viewSourceToolStripMenuItem.Visible = true;
+
+　　break;
+
+　　}
+
+　　}
+
+　　void SaveImageToolStripMenuItemClick(object sender, EventArgs e)
+
+　　{
+
+　　afrm.Show();
+
+　　}
+
+　　void SetAsDesktopWallpaperToolStripMenuItemClick(object sender, EventArgs e)
+
+　　{
+
+　　afrm.Show();
+
+　　}
+
+　　void OpenToolStripMenuItemClick(object sender, EventArgs e)
+
+　　{
+
+　　afrm.Show();
+
+　　}
+
+　　void OpenInNewTabToolStripMenuItemClick(object sender, EventArgs e)
+
+　　{
+
+　　afrm.Show();
+
+　　}
+
+　　void OpenInNewWindowToolStripMenuItemClick(object sender, EventArgs e)
+
+　　{
+
+　　afrm.Show();
+
+　　}
+
+　　void RefreshToolStripMenuItemClick(object sender, EventArgs e)
+
+　　{
+
+　　afrm.Show();
+
+　　}
+
+　　void ViewSourceToolStripMenuItemClick(object sender, EventArgs e)
+
+　　{
+
+　　afrm.Show();
+
+　　}
+
+　　}
+
+　　}

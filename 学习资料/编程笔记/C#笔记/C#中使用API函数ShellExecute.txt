@@ -1,0 +1,32 @@
+函数的声明和函数参数的声明：
+        [DllImport("shell32.dll")]
+        public extern static IntPtr ShellExecute(IntPtr hwnd,
+                                                 string lpOperation,
+                                                 string lpFile,
+                                                 string lpParameters,
+                                                 string lpDirectory,
+                                                 int nShowCmd
+                                                );
+        public enum ShowWindowCommands : int
+        {
+
+            SW_HIDE = 0,
+            SW_SHOWNORMAL = 1,
+            SW_NORMAL = 1,
+            SW_SHOWMINIMIZED = 2,
+            SW_SHOWMAXIMIZED = 3,
+            SW_MAXIMIZE = 3,
+            SW_SHOWNOACTIVATE = 4,
+            SW_SHOW = 5,
+            SW_MINIMIZE = 6,
+            SW_SHOWMINNOACTIVE = 7,
+            SW_SHOWNA = 8,
+            SW_RESTORE = 9,
+            SW_SHOWDEFAULT = 10,
+            SW_MAX = 10
+        }
+函数调用：
+
+ShellExecute(this.Handle, "open", "http://qqhack8.blog.163.com", null, null, (int)ShowWindowCommands.SW_SHOW);
+
+ShellExecute(this.Handle, "open", "mailto:qhack8@qq.com", null, null, (int)ShowWindowCommands.SW_SHOW);

@@ -1,0 +1,27 @@
+C#中回车键事件写法
+
+１.private void textBox1_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+{
+if(e.KeyValue==13)
+{
+MessageBox.Show("你摁下了回车");
+}
+}
+２.public partial class Form1 : Form
+{
+public Form1()
+{
+InitializeComponent();
+this.textBox1.KeyDown += new KeyEventHandler(textBox1_KeyDown);
+this.button1.Click += new EventHandler(btnOK_Click);
+}
+void button1_Click(object sender, EventArgs e) { }
+void textBox1_KeyDown(object sender, KeyEventArgs e)
+{
+if (e.KeyCode == Keys.Enter)
+{
+this.button1_Click(button1, null); //在TextBox按Enter键就执行button1的单击事件
+//如果你要用引发的话要用到api
+}
+}
+}

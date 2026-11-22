@@ -1,0 +1,139 @@
+在Windows程序设计中WinAPI也为我们提供了类似的函数，它们就是WinExec()和ShellExecute()，下面就来讨论一下这两个函数的用法。 
+
+1)WinExec() 函数原型：
+
+UINT WinExec(LPCSTR lpCmdLine,UINT uCmdShow); 
+
+参数说明：(激活的意思是能接受焦点，即标题栏变成蓝色) 
+
+lpCmdLine：以0结尾的字符串，命令行参数。
+
+uCmdShow:新的应用程序的运行方式。其取值如下： 
+
+SW_HIDE 隐藏 
+
+SW_MAXIMIZE 最大化 
+
+SW_MINIMIZE 最小化，并把Z order顺序在此窗口之后（即窗口下一层）的窗口激活 
+
+SW_RESTORE 激活窗口并还原为初始化大小 SW_SHOW 以当前大小和状态激活窗口 
+
+SW_SHOWDEFAULT 以默认方式运行
+
+SW_SHOWMAXIMIZED 激活窗口并最大化 
+
+SW_SHOWMINIMIZED 激活窗口并最小化 
+
+SW_SHOWMINNOACTIVE 最小化但不改变当前激活的窗口 
+
+SW_SHOWNA 以当前状态显示窗口但不改变当前激活的窗口 
+
+SW_SHOWNOACTIVATE 以初始化大小显示窗口但不改变当前激活的窗口 
+
+SW_SHOWNORMAL 激活并显示窗口，如果是最大(小)化，窗口将会还原。第一次运行程序 时应该使用这个值 
+
+比如说，我想要用记事本打开"C:\HDC.TXT"，以正常方式运行： 
+
+WinExec("notepad c:\\hdc.txt",SW_SHOWNORMAL); 
+
+如果调用成功，这个函数会返回一个不小于31的值，否则调用失败，其返回值的意义如下： 
+
+0 系统内存或资源不足 
+
+ERROR_BAD_FORMAT .EXE文件格式无效（比如不是32位应用程序） 
+
+ERROR_FILE_NOT_FOUND 指定的文件设有找到
+
+ERROR_PATH_NOT_FOUND 指定的路径没有找到 
+
+这个函数和system()非常类似，只能运行.EXE文件，这样在WINDOWS中有它不尽人意的地方，比如不能用此方法通过关联的方法打开文件，例如WinExec("1.html",SW_SHOWNA);就不能打开此文档。
+
+2）ShellExecute() 
+
+函数原型：
+
+HINSTANCE ShellExecute( HWND hwnd, LPCTSTR lpOperation, LPCTSTR lpFile, LPCTSTR lpParameters, LPCTSTR lpDirectory, INT nShowCmd );
+
+参数说明： 
+
+hwnd 窗口的句柄 
+
+lpOperation 进行的操作，如"open","print","explore"分别对应"打开","打印","游览"， 也可以为空（""），此时表示进行默认的操作。 
+
+lpFile 要操作的文件。 
+
+lpParameters 如果lpFile指定的是一个可执行文件则表示参数 
+
+lpDirectory 操作进行的目录 nShowCmd 程序的运行方式，其取值见上例。
+
+如果这个函数调用成功，将返回实例的句柄，如果不成功，返回值包含错误信息，由于类型比较多，这里就不一一列举了，详见WinApi的帮助。 
+
+这样，上面的例子就可以改变为(假设窗口的句柄为Handle) 
+
+ShellExecute(Handle,"open","notepad","c:\\hdc.txt","",SW_SHOWNORMAL); 
+
+其实不用那么复杂，因为.TXT的关联程序就是记事本，所以只要这样就可以了 
+
+ShellExecute(Handle,"","c:\\hdc.txt","","",SW_SHOWNORMAL); 
+
+这个函数和WIN9X中的命令行命令"start"类似，不光可以对文件进行操作，还可以对HTTP、MAILTO等进行操作。这样我们就可以设计有超级链接风格的程序了。 例如在VB中，我们首先声明此函数(可由VB自带的API游览器得到)： 
+
+Public Declare Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" (ByVal hwnd As Long, ByVal lpOperation As String, ByVal lpFile As String, ByVal lpParameters As String, ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long 
+
+然后放置两个Label,设置其属性为： 
+
+Name lbHomepage lbEMail Caption http://bcbtop.126.com mailto:hugsnow@126.com 
+
+并把字体改为蓝色有下划线，然后分别在两个Label的Click事件中加入以下代码： 
+
+ShellExecute(Me.hWnd,"",lbHomepage.Caption,"","",SW_SHOWNORMAL); 
+
+ShellExecute(Me.hWnd,"",lbEMail.Caption,"","",SW_SHOWNORMAL); 
+
+OK！试试看，如何？够酷的吧！ 
+
+从上面可看出，ShellExecute的功能要强得多，并且可以完全替代WinExec()，事实上，WinExec()也是为了和以前版本兼容而保留，所以，我们要尽量使用ShellExecute()。 
+
+介绍一个功能强大的API函数 ShellExecute 
+
+编译 赵湘宁 
+
+问题的提出：
+   我使用MFC编写一个APP,要求About对话框中显示LOGO、公司名、地址和公司的URL链接。使用户点击URL链接以后，启动浏览器访问Web页面，这种对话框中的热链接使应用程序增色不少。我琢磨的方法是从系统注册表中通过查找.htm 或 .html文件的关联程序来获得缺省浏览器的名字，这样好象有很多工作要做。此外，如果浏览器已经打开，总是开始一个新的实例替代当前已有的一个实例。想找一个容易一点的方法，但我查过有关的资料，没有收获，请高手指教。 
+
+解决方法：
+       如果有这样的一个API函数该多好：OpenThisHereURLForMeNowPlease（），问题不就解决了！！我告诉你吧，有，但它不是你所想象的那个函数。到目前为止，有关文档中还没有提到过这么一个有用的函数，它能打开桌面上的任何文件，也能打开Internet URL。唯一我能找到的参考资料是在Microsoft&reg; Access KnowledgeBase中很暧昧地提到过这个函数。
+这个不可思议的函数就是：ShellExecute，取代了WinExec。你可以给它任何文件的名字，它都能识别出来并打开它。例如：
+
+ShellExecute(NULL,"open","iloveu.bmp",NULL,NULL,SW_SHOWNORMAL);
+
+
+用缺省的位图编辑器打开一个叫iloveu.bmp的位图文件，这个缺省的位图编辑器可能是Microsoft Paint, Adobe Photoshop, 或者 Corel PhotoPaint。
+
+有关ShellExecute的详细用法信息自己去参考有关资料吧，重要的是你知道了这个函数能打开任何文件，甚至是桌面和URL快捷方式（ .ink或 .url）。ShellExecute解析系统注册表HKEY_CLASSES_ROOT中所有的内容，判断启动那一个执行程序，并且启动一个新的实例或使用DDE将文件名连到一打开的实例。然后，ShellExecute 返回打开文件的应用的实例句柄。
+
+更奇妙的是ShellExecute不仅能打开机器上的文件，还能打开Internet的站点地址。例如：
+
+ShellExecute(NULL, "open", "http://www.microsoft.com", NULL, NULL, SW_SHOWNORMAL);  
+这个代码使你能访问微软的主页。当ShellExecute遇到文件名前面的“http:”时，可以判断出要打开的文件是Web文件，随之启动Internet Explorer 或者 Netscape Navigator 或者任何你使用的别的浏览器打开文件。ShellExecute还能识别其它协议，象FTP、GOPHER。甚至识别“mailto”，如果文件名指向“mailto:zxn@hq.cninfo.net”,它启动电子邮件程序并打开一个待编辑的新邮件。总之，ShellExecute函数就是如此简单地打开磁盘文件和Internet文件。如果将第二个参数“OPEN”改为“PRINT”或者“EXPLORE”，ShellExecute将能打印文件和打开文件夹。ShellExecute还有一个扩展函数ShellExecuteEx，所带参数中有一个特殊的结构，功能更强，它的用法参见有关文档。
+
+现在，你知道了ShellExecute的秘密，用它很容易增加一个链接到你的About对话框。不是吗。
+
+怎样加载其他的应用程序?  
+
+三个SDK函数 winexec, shellexecute,createprocess可以使用。WinExec最简单，两个参数，前一个指定路径，后一个指定显示方式.后一个参数值得说一下，比如泥用 SW_SHOWMAXMIZED方式去加载一个无最大化按钮的程序，就是Neterm,calc等等，就不会出现正常的窗体，但是已经被加到任务列表里了。
+ShellExecute较 WinExex灵活一点，可以指定工作目录,下面的Example就是直接打开 c:\temp\1.txt,而不用加载与 txt文件关联的应用程序,很多安装程序完成后都会打开一个窗口，来显示Readme or Faq,我猜就是这么作的啦.
+
+
+ShellExecute(NULL,NULL,_T("1.txt",NULL,_T("c:\\temp",SW_SHOWMAXMIZED)
+
+
+CreateProcess最复杂，一共有十个参数，不过大部分都可以用NULL代替，它可以指定进程的安全属性，继承信息，类的优先级等等.来看个很简单的Example:
+
+
+STARTUPINFO stinfo
+//启动窗口的信息
+PROCESSINFO procinfo //进程的信息
+CreateProcess(NULL,_T("notepad.exe",NULL,NULL.FALSE,
+NORMAL_PRIORITY_
+CLASS,NULL,NULL, &stinfo,&procinfo)

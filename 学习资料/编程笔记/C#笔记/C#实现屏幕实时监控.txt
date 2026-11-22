@@ -1,0 +1,16 @@
+一，在窗体添加控件：picturebox，timer，
+二，设置timer控件属性Interval为指定间隔5000毫秒，form窗体AutoScroll属性为True。
+三，双击timer控件，添加timer_Tick事件代码：
+            //获得当前屏幕的大小
+            Rectangle rect = new Rectangle();
+            rect = Screen.GetWorkingArea(this);
+            Size mySize = new Size(rect.Width, rect.Height);
+            Bitmap bitmap = new Bitmap(rect.Width, rect.Height);
+            Graphics g = Graphics.FromImage(bitmap);
+            g.CopyFromScreen(0, 0, 0, 0, mySize);
+            //bitmap.Save("C:\\pic.jpg");
+            //MessageBox.Show("当前屏幕已经保存为C盘的pic.jpg文件！");
+            this.pictureBox1.Size = new System.Drawing.Size(rect.Width, rect.Height);
+            pictureBox1.Image = bitmap;
+四，双击form窗体添加form_Load事件代码：
+             timr1.Enable = true;//激活timer控件

@@ -1,0 +1,10 @@
+From:QQ吻's  Blog  http://qqhack8.blog.163.com
+
+明明就一句话 搞定的事 在网上 找了一些文章 长得要命
+不知道哪个混蛋把他弄复杂话了 害得我差点蛋疼
+
+using System.Diagnostics;
+
+Process.Start("IEXPLORE.EXE", "http://qqhack8.blog.163.com");//调用IE打开指定网页
+
+Process.Start("cmd"); //调用系统命令

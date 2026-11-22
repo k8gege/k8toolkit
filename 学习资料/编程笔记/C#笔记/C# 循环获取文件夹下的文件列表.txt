@@ -1,0 +1,120 @@
+private void GetFileList(string strCurDir)
+        {
+            string FileName, FileExt;
+
+            ///文件大小
+            long FileSize;
+
+            ///最后修改时间;
+            DateTime FileModify;
+
+
+            ///初始化时,默认为当前页面所在的目录
+            strCurDir = Server.MapPath(strCurDir);
+            // lblCurDir.Text = strCurDir;
+            // /txtCurDir.Text = strCurDir;
+            if (Directory.Exists(Path.GetDirectoryName(strCurDir)))
+            {
+                //Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+
+
+
+
+                FileInfo fi;
+                DirectoryInfo dir;
+                TableCell td;
+                TableRow tr;
+                tr = new TableRow();
+
+                ///动态添加单元格内容
+                td = new TableCell();
+                td.Controls.Add(new LiteralControl("文件名"));
+                tr.Cells.Add(td);
+                td = new TableCell();
+                td.Controls.Add(new LiteralControl("文件类型"));
+                tr.Cells.Add(td);
+                td = new TableCell();
+                td.Controls.Add(new LiteralControl("文件大小"));
+                tr.Cells.Add(td);
+                td = new TableCell();
+                td.Controls.Add(new LiteralControl("最后修改时间"));
+                tr.Cells.Add(td);
+
+                tableDirInfo.Rows.Add(tr);
+
+                ///针对当前目录建立目录引用对象
+                DirectoryInfo dirInfo = new DirectoryInfo(strCurDir);
+
+                ///循环判断当前目录下的文件和目录
+                foreach (FileSystemInfo fsi in dirInfo.GetFileSystemInfos())
+                {
+                    FileName = "";
+                    FileExt = "";
+                    FileSize = 0;
+
+                    ///如果是文件
+                    if (fsi is FileInfo)
+                    {
+                        fi = (FileInfo)fsi;
+
+                        ///取得文件名
+                        FileName = fi.Name;
+
+                        ///取得文件的扩展名
+                        FileExt = fi.Extension;
+
+                        ///取得文件的大小
+                        FileSize = fi.Length;
+
+                        ///取得文件的最后修改时间
+                        FileModify = fi.LastWriteTime;
+
+                        //string files = fid.Text + "/" + id.Text + "/" + FileName;
+                        //string thunb = "thumb/" + FileName;
+                        //string opath = Server.MapPath("upfile/" + dir.Name + "/" + FileName);
+                        //string tpath = Server.MapPath("upfile/thumb/" + FileName);
+                        //ThumbImage.MakeThumbnail(opath, tpath, 142, 100, "D");
+                        
+                    }
+
+                    ///否则是目录
+                    else
+                    {
+                        dir = (DirectoryInfo)fsi;
+
+                        ///取得目录名
+                        FileName = dir.Name;
+
+                        ///取得目录的最后修改时间
+                        FileModify = dir.LastWriteTime;
+
+                        ///设置文件的扩展名为"文件夹"
+                        FileExt = "文件夹";
+
+                        //获取文件夹路径
+                        GetFileList(strCurDir + "\\" + dir.Name);
+                    }
+                   
+
+                    
+                    //AddFilePath(Dir0.Text.Trim(),fid.Text.Trim(),id.Text.Trim(),files,thunb,script.Text.Trim());
+
+
+                    ///动态添加表格内容
+                    tr = new TableRow();
+                    td = new TableCell();
+                    td.Controls.Add(new LiteralControl(FileName));
+                    tr.Cells.Add(td);
+                    td = new TableCell();
+                    td.Controls.Add(new LiteralControl(FileExt));
+                    tr.Cells.Add(td);
+                    td = new TableCell();
+                    td.Controls.Add(new LiteralControl(FileSize.ToString() + "字节"));
+                    tr.Cells.Add(td);
+                    td = new TableCell();
+                    td.Controls.Add(new LiteralControl(FileModify.ToString("yyyy-mm-dd hh:mm:ss")));
+                    tr.Cells.Add(td);
+                    tableDirInfo.Rows.Add(tr);
+                }
+            }
+        } 

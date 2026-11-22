@@ -1,0 +1,100 @@
+. 属性列表：
+
+    SelectionMode    组件中条目的选择类型，即多选(Multiple)、单选(Single)
+    Rows             列表框中显示总共多少行
+    Selected         检测条目是否被选中
+    SelectedItem     返回的类型是ListItem，获得列表框中被选择的条目
+    Count            列表框中条目的总数
+    SelectedIndex    列表框中被选择项的索引值
+    Items            泛指列表框中的所有项，每一项的类型都是ListItem
+
+2. 取列表框中被选中的值
+
+     ListBox.SelectedValue
+
+3. 动态的添加列表框中的项：
+
+     ListBox.Items.Add("所要添加的项");
+
+4. 移出指定项：
+
+     //首先判断列表框中的项是否大于0
+     If(ListBox.Items.Count > 0 )
+     {
+//移出选择的项
+ListBox.Items.Remove(ListBox.SelectedItem);
+     }
+
+5. 清空所有项：
+
+     //首先判断列表框中的项是否大于0
+     If(ListBox.Items.Count > 0 )
+     {
+//清空所有项
+ListBox.Items.Clear();
+     }
+
+6. 列表框可以一次选择多项：
+  
+     只需设置列表框的属性 SelectionMode="Multiple",按Ctrl可以多选
+
+7. 两个列表框联动，即两级联动菜单
+
+     //判断第一个列表框中被选中的值
+     switch(ListBox1.SelectValue)
+     {
+//如果是"A"，第二个列表框中就添加这些：
+case "A"
+      ListBox2.Items.Clear();
+      ListBox2.Items.Add("A1");
+      ListBox2.Items.Add("A2");
+      ListBox2.Items.Add("A3");
+//如果是"B"，第二个列表框中就添加这些：
+case "B"
+      ListBox2.Items.Clear();
+      ListBox2.Items.Add("B1");
+      ListBox2.Items.Add("B2");
+      ListBox2.Items.Add("B3");
+     }
+
+8. 实现列表框中项的移位
+     即：向上移位、向下移位
+     具体的思路为：创建一个ListBox对象，并把要移位的项先暂放在这个对象中。
+     如果是向上移位，就是把当前选定项的的上一项的值赋给当前选定的项，然后
+     把刚才新加入的对象的值，再附给当前选定项的前一项。
+     具体代码为：
+      //定义一个变量，作移位用
+      index = -1;
+      //将当前条目的文本以及值都保存到一个临时变量里面
+      ListItem lt=new ListItem (ListBox.SelectedItem.Text,ListBox.SelectedValue);
+      //被选中的项的值等于上一条或下一条的值
+      ListBox.Items[ListBox.SelectedIndex].Text=ListBox.Items[ListBox.SelectedIndex + index].Text;
+      //被选中的项的值等于上一条或下一条的值
+      ListBox.Items[ListBox.SelectedIndex].Value=ListBox.Items[ListBox.SelectedIndex + index].Value;
+      //把被选中项的前一条或下一条的值用临时变量中的取代
+      ListBox.Items[ListBox.SelectedIndex].Test=lt.Test;
+      //把被选中项的前一条或下一条的值用临时变量中的取代
+      ListBox.Items[ListBox.SelectedIndex].Value=lt.Value;
+      //把鼠标指针放到移动后的那项上
+      ListBox.Items[ListBox.SelectedIndex].Value=lt.Value;
+
+9. 移动指针到指定位置：
+
+      (1).移至首条
+          //将被选中项的索引设置为0就OK了
+          ListBox.SelectIndex=0;
+      (2).移至尾条
+          //将被选中项的索引设置为ListBox.Items.Count-1就OK了
+          ListBox.SelectIndex=ListBox.Items.Count-1;
+      (3).上一条
+          //用当前被选中的索引去减 1
+          ListBox.SelectIndex=ListBox.SelectIndex - 1;
+      (4).下一条
+          //用当前被选中的索引去加 1
+          ListBox.SelectIndex=ListBox.SelectIndex + 1;
+
+this.ListBox1.Items.Insertat(3,new   ListItem("插入在第3行之后项",""));
+
+this.ListBox1.Items.Insertat(index,ListItem)
+
+ListBox1.Items.Insert(0,new   ListItem("text","value"));

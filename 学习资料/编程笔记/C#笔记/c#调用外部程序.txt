@@ -1,0 +1,51 @@
+　　//本来看似非常简单的。。程序是一个界面。左边一个提示有个 checkbox 提示用户"我知道了，请不要再显示"，右边是运行QQ的一个按钮。但是弄的时候弄了四个小时左右。经常是调试的时候是对的，但是有的时候点了按钮过后没有反映，
+
+　　//不能够运行外部程，//Events() 方法过后好些，但是偶尔还是会出现这情况，最后再加上。 System.Threading.Thread.Sleep(2000); 得到解决。。目前还没有扯拐。
+
+　　public static void RunQQ()
+
+　　{
+
+　　//实例一个Process类，启动一个独立进程
+
+　　Process p = new Process();
+
+　　string command = @"d:\sysset\menu\runqq\runqq.bat";
+
+　　//Process类有一个StartInfo属性，这个是ProcessStartInfo类，包括了一些属性和方法，下面我们用到了他的几个属性：
+
+　　p.StartInfo.FileName = command;           //设定程序名
+
+　　p.StartInfo.Arguments = "/c " + string.Empty;    //设定程式执行参数
+
+　　p.StartInfo.UseShellExecute = false;        //关闭Shell的使用
+
+　　p.StartInfo.RedirectStandardInput = true;   //重定向标准输入
+
+　　p.StartInfo.RedirectStandardOutput = true;  //重定向标准输出
+
+　　p.StartInfo.RedirectStandardError = true;   //重定向错误输出
+
+　　p.StartInfo.CreateNoWindow = true;          //设置不显示窗口
+
+　　p.Start();   //启动
+
+　　//p.StandardInput.WriteLine(command);       //也可以用这种方式输入要执行的命令
+
+　　//p.StandardInput.WriteLine("exit");        //不过要记得加上Exit要不然下一行程式执行的时候会当机
+
+　　}
+
+　　//里面有个非常关键。。就是要用到
+
+　　Application.DoEvents();   System.Threading.Thread.Sleep(2000);   Directory.CreateDirectory(@"e:\ok"); //新建文件夹
+
+　　if (!Directory.Exists(@"e:\ok"))//若文件夹不存在则新建文件夹
+
+　　{
+
+　　//显示窗体.
+
+　　Application.Run(new Form1());
+
+　　}

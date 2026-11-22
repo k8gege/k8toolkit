@@ -1,0 +1,5 @@
+C#退出程序为哪个命令
+
+答：
+单个窗体 this.close()
+整个应用程序Application.close();

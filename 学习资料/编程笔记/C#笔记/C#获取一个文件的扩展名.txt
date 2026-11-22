@@ -1,0 +1,16 @@
+C#获取一个文件的扩展名
+
+System.IO.Path.GetExtension( "文件名 ");
+
+ChangeExtension   更改路径字符串的扩展名。  
+Combine   合并两个路径字符串。  
+GetDirectoryName   返回指定路径字符串的目录信息。  
+GetExtension   返回指定的路径字符串的扩展名。  
+GetFileName   返回指定路径字符串的文件名和扩展名。  
+GetFileNameWithoutExtension   返回不具有扩展名的指定路径字符串的文件名。  
+GetFullPath   返回指定路径字符串的绝对路径。  
+GetPathRoot   获取指定路径的根目录信息。  
+GetTempFileName   返回唯一临时文件名并在磁盘上通过该名称创建零字节文件。  
+GetTempPath   返回当前系统的临时文件夹的路径。  
+HasExtension   确定路径是否包括文件扩展名。  
+IsPathRooted   获取一个值，该值指示指定的路径字符串是包含绝对路径信息还是包含相对路径信息。   

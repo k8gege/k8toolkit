@@ -1,0 +1,31 @@
+C#透明窗体及按钮的效果就是使用Alpha Blending技术。Alpha Blending技术是一个混合各种颜色值并产生透明效果的过程。具体的实现原理也很简单：在GDI+中，任何一种颜色由四种成分组成 ――Alpha，Red，Green和Blue。其中的Alpha成分则代表了一种颜色的透明程度，它的值在0到255之间变化。不言而喻，0代表完全透 明而255则表示完全不透明。因此，你只要用透明效果创建一种颜色并用该颜色来画图像就可以完成图像的透明处理了。
+
+    C#透明窗体及按钮的效果：
+
+    1、C#按钮透明：
+
+    设置按钮的backcolor为0，0，0，0 的数字即可，同时设置FlatApperance的BorderSize为0，FlatStyle为Flat，这样该按钮就完全透明了，此种效果常用在用 背景做皮肤，然后在相应位置放一个按钮，控制按钮事件，但不想让用户看到按钮的情况；
+
+    2、C#窗体关闭时产生透明渐变：
+
+    前几天无意中听同学说想要弄个窗体渐变的，后来自己上网搜索了一下，发现些方法，自己试了一下是成功的，但是还是有些问题，郁闷。。。以下列出几种我弄的方法：
+
+    ① 新键窗体，窗体里加个按钮，双击按钮进入事件编写代码：
+while (this.Opacity > 0)  {  this.Opacity -= 0.02;  Thread.Sleep(20);  }  Application.Exit(); 
+
+    程序运行后点击该按钮关闭的时候整个窗体是先变成黑色，然后透明度再慢慢变小，变为0的时候程序再退出的，理论上来说我这个思路应该是正确的，可是我就不知道是怎么回事了？
+
+    ②往窗体里加入Timer控件，Interval设置为20，控件事件编写代码：
+if (this.Opacity > 0)  {  this.Opacity -= 0.02;  }  else {  Application.Exit();   } 
+
+    然后在按钮的点击事件中写上  timer1.Start(); 就行了，经测试，这种方法是可以的，窗体是慢慢变透明而后又关闭的。。。
+
+    C#透明窗体及按钮的效果变化遇到的问题
+
+    可是随后的问题又来了，我现在是想当我点击窗体右上角的关闭按钮时，窗体渐变关闭，我在窗体的FormClosing事件中输入 timer1.Start();，测试，结果是当我点击窗体右上角的关闭按钮时，程序是直接退出了，并没有渐变消失，郁闷，搞不懂是怎么回事哦，而后上网 找了好久，找到个解决方法，FormClosing事件中输入e.Cancel = true;   timer1.Start();  测试，结果，点击关闭后，窗体是能渐变消失了，可是当透明度到0了以后，并没有关闭，任务栏上的图标还在，任务管理器里也有相应的进程。
+private void Form1_FormClosing(  object sender, FormClosingEventArgs e)  {  timer1.Start();  e.Cancel = false;       } 
+
+    两步顺序倒了，解释下：在窗体关闭时事件 调用线程逐减透明度 然后 Cancel=false;是让窗体关闭不取消楼主理解错误了 true是取消 所以窗体不会关闭Cancel 一般是关闭窗体时写，例子：
+private void Form1_FormClosing(object sender, FormClosingEventArgs e)  {  DialogResult dr=MessageBox.Show("是否关闭本窗体","提示",MessageBoxButtons.YesNo);  if (DialogResult.No == dr)//如果点否按钮  {  e.Cancel = true;//取消关闭  }  } 
+
+    C#透明窗体及按钮的效果的实现基本情况就向你介绍到这里，希望对你了解和学习C#透明窗体及按钮的效果有所帮助。

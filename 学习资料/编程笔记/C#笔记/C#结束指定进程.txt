@@ -1,0 +1,8 @@
+            //C# .NET结束指定进程
+            foreach (System.Diagnostics.Process thisproc in System.Diagnostics.Process.GetProcesses())
+            {
+                if (thisproc.ProcessName.ToString() == "cmd")
+                {
+                    thisproc.Kill();
+                }
+            }

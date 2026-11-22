@@ -1,0 +1,23 @@
+{}注释符号 相当于C // //
+
+
+
+隐藏窗体  在工程中的Project->View Source中添加:Application.ShowMainForm:=false;即可。
+
+application.terminate;//退出程序
+
+
+第6课
+
+'BORLAND'          {BORLADN}
+'YOU''ll see'      {YOu'll see}
+''''               {'}
+''                 {空串}
+
+静态数组
+
+abc=arrray[1,10,-5,5] of integer;
+
+动态数组  下标从O开始
+
+abc:array of integer; 

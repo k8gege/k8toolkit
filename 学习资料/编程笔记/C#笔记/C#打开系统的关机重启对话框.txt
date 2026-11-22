@@ -1,0 +1,46 @@
+要求显示系统的关机/重启对话框，即“开始->关机...”所出来的对话框
+
+在网上搜索了一下，Shell32.dll中存在着微软未公开的几个函数：
+
+SHRestartSystemMB@12    @59     NONAME
+SHShutDownDialog@4      @60     NONAME
+SHRunDialog@24          @61     NONAME
+SHChangeIconDialog@16   @62     NONAME
+SHGetExtension@4        @31     NONAME
+SHAddBackslash@4        @32     NONAME
+SHGetFileName@4         @34     NONAME
+SHPathIsRelative@4      @40     NONAME
+SHPathIsExe@4           @43     NONAME
+SHFileExists@4          @45     NONAME
+SHGetPathArgs@4         @52     NONAME
+SHGetShortPathName@4    @92     NONAME
+SHObjectProperties@16   @178    NONAME
+
+等等，
+
+那也许第60个函数就是想要的功能了。
+因为以前经常用rundll32来运行dll库中的函数，所以尝试了一下：
+
+rundll32.exe shell32.dll @60   运行结果：丢失条目 @60
+
+使用Depends查看shell32.dll，在E列中会有个#，VB导出函数时也用#，继续尝试
+rundll32.exe shell32.dll #60   运行成功，出来了系统的关机对话框
+
+所以编程时，也可以导出这个函数调唤系统的关机对话框，参考：
+http://www.chez.com/haar/ada/ada.htm
+http://www.frontfree.net/view/article_220.html
+http://www.cstudyhome.com/wenzhang06/ReadNews.asp?NewsID=3349
+
+下面是代码：
+
+     [DllImport("shell32.dll",EntryPoint="#60")]
+            internal static extern int SHShutdownDialog(int sig); 
+            /**/
+            /// <summary>
+            /// 调用关闭对话框
+            /// </summary>
+            ///
+            public static int InvokeShutdownDialog()
+            {
+                return SHShutdownDialog(0);
+            }

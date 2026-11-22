@@ -1,0 +1,29 @@
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Runtime.InteropServices;
+
+namespace CsharpCallApiDemo
+{
+    public partial class Form1 : Form
+    {
+        //Form:QQ吻's Blog http://qqhack8.blog.163.com
+        //C# 调用API例子 MessageBox 在user32.dll中
+        // using System.Runtime.InteropServices;
+        [DllImport("user32.dll")]
+        public static extern int MessageBox(int hWnd, String text,String caption, uint type);
+
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox(0,"Welcome to Crack8_Team!","C#调用API例子",0);
+        }
+    }
+}

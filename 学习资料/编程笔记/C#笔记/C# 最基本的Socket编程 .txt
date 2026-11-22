@@ -1,0 +1,135 @@
+示例程序是同步套接字程序，功能很简单，只是客户端发给服务器一条信息，服务器向客户端返回一条信息；这里只是一个简单的示例，是一个最基本的socket编程流程，在接下来的文章中，会依次记录套接字的同步和异步，以及它们的区别。
+
+ 
+
+下面是示例程序的简单步骤说明
+
+服务器端：
+
+第一步：用指定的端口号和服务器的ip建立一个EndPoint对像；
+
+第二步：建立一个Socket对像；
+
+第三步：用socket对像的Bind()方法绑定EndPoint；
+
+第四步：用socket对像的Listen()方法开始监听；
+
+第五步：接受到客户端的连接，用socket对像的Accept()方法创建新的socket对像用于和请求的客户端进行通信;
+
+第六步：通信结束后一定记得关闭socket;
+
+代码：
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+namespace server
+{
+    class Program
+    {
+        static void Main(string[] args)
+       {
+            int port = 2000;
+            string host = "127.0.0.1";
+
+       /**////创建终结点（EndPoint）
+            IPAddress ip  = IPAddress.Parse(host);//把ip地址字符串转换为IPAddress类型的实例
+            IPEndPoint ipe = new IPEndPoint(ip, port);//用指定的端口和ip初始化IPEndPoint类的新实例
+
+         /**////创建socket并开始监听
+            Socket s　=　new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);//创建一个socket对像，如果用udp协议，则要用SocketType.Dgram类型的套接字
+            s.Bind(ipe);//绑定EndPoint对像（2000端口和ip地址）
+            s.Listen(0);//开始监听
+            Console.WriteLine("等待客户端连接");
+
+         /**////接受到client连接，为此连接建立新的socket，并接受信息
+            Socket temp = s.Accept();//为新建连接创建新的socket
+            Console.WriteLine("建立连接");
+            string recvStr = "";
+            byte[] recvBytes = new byte[1024];
+            int bytes;
+            bytes = temp.Receive(recvBytes, recvBytes.Length, 0);//从客户端接受信息
+            recvStr += Encoding.ASCII.GetString(recvBytes, 0, bytes);
+
+         /**////给client端返回信息
+            Console.WriteLine("server get message:{0}", recvStr);//把客户端传来的信息显示出来
+            string sendStr = "ok!Client send message successful!";
+            byte[] bs = Encoding.ASCII.GetBytes(sendStr);
+            temp.Send(bs, bs.Length, 0);//返回信息给客户端
+            temp.Close();
+            s.Close();
+            Console.ReadLine();
+        }
+      
+    }
+}
+
+客户端：
+
+第一步：用指定的端口号和服务器的ip建立一个EndPoint对像；
+
+第二步：建立一个Socket对像；
+
+第三步：用socket对像的Connect()方法以上面建立的EndPoint对像做为参数，向服务器发出连接请求；
+
+第四步：如果连接成功，就用socket对像的Send()方法向服务器发送信息；
+
+第五步：用socket对像的Receive()方法接受服务器发来的信息 ;
+
+第六步：通信结束后一定记得关闭socket；
+最基本的Socket编程　C版 [转] - QQ吻 - QQ吻S Blog代码：
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+namespace Client
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                int port = 2000;
+                string host = "127.0.0.1";
+               /**////创建终结点EndPoint
+                IPAddress ip = IPAddress.Parse(host);
+                //IPAddress ipp = new IPAddress("127.0.0.1");
+                IPEndPoint ipe = new IPEndPoint(ip, port);//把ip和端口转化为IPEndpoint实例
+
+              /**////创建socket并连接到服务器
+                Socket c = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);//创建Socket
+                Console.WriteLine("Conneting…");
+                c.Connect(ipe);//连接到服务器
+
+              /**////向服务器发送信息
+                string sendStr = "hello!This is a socket test";
+                byte[] bs = Encoding.ASCII.GetBytes(sendStr);//把字符串编码为字节
+                Console.WriteLine("Send Message");
+                c.Send(bs, bs.Length, 0);//发送信息
+
+             /**////接受从服务器返回的信息
+                string recvStr = "";
+                byte[] recvBytes = new byte[1024];
+                int bytes;
+                bytes = c.Receive(recvBytes, recvBytes.Length, 0);//从服务器端接受返回信息
+                recvStr += Encoding.ASCII.GetString(recvBytes, 0, bytes);
+                Console.WriteLine("client get message:{0}", recvStr);//显示服务器返回信息
+              /**////一定记着用完socket后要关闭
+                c.Close();
+            }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine("argumentNullException: {0}", e);
+            }
+            catch (SocketException e)
+            {
+                Console.WriteLine("SocketException:{0}", e);
+            }
+            Console.WriteLine("Press Enter to Exit");
+        }
+    }
+}

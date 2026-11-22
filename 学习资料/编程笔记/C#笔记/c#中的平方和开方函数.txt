@@ -1,0 +1,33 @@
+Math.Pow 方法
+返回指定数字的指定次幂。
+
+命名空间:System
+程序集:mscorlib（在 mscorlib.dll 中）
+
+语法
+public static double Pow (
+double x,
+double y
+)
+
+参数
+x 要乘幂的双精度浮点数。
+y 指定幂的双精度浮点数。
+
+返回值
+数字 x 的 y 次幂。
+
+ 
+
+在.net类库的System.Math名空间有Math类，处理许多数学运算：
+开平方： Math.Sqrt()
+开任何方：Math.Pow()
+
+下面是一个对变量x操作的代码：
+
+double result;
+
+//开平方
+result=Pow(x,0.5);
+//开立方
+result=Pow(x,1/3);

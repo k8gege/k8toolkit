@@ -1,0 +1,60 @@
+
+
+CrAcK8 --- 67 114 65 99 75 56
+
+
+Dim mychar
+mychar = Chr(67)
+msgbox mychar
+
+
+mystring=Cstr((Chr(67)+Chr(114)))
+msgbox mystring
+
+
+mystring=Cstr((Chr(67)+Chr(114)+Chr(65)+Chr(99)+Chr(75)+Chr(56)))
+msgbox mystring
+
+For i=1 To len(mystring)
+     msgbox "sss"
+Next
+
+//数组
+Dim A
+A = Array(10,20,30)
+B = A(2)   ' B 现在为 30。
+msgbox B
+
+
+Dim K8str
+K8str=Array(67,114,65,99,75,56)
+
+For i=0 To UBound(K8str)  'UBound 取数组最大下标
+     destr=destr+Cstr(Chr(K8str(i)))
+Next
+
+msgbox destr
+
+
+Dim K8str
+K8str=Array(27,74,25,59,35,16)
+
+For i=0 To UBound(K8str) 
+     destr=destr+Cstr(Chr(K8str(i)+40))
+Next
+
+msgbox destr
+
+
+
+
+
+
+
+
+
+
+
+
+
+

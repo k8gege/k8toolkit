@@ -1,0 +1,24 @@
+如果为了保护文件夹，可以隐藏，也可以伪装文件夹
+private void button3_Click(object sender, EventArgs e)
+{
+  File.SetAttributes(textBox1.Text, FileAttributes.Normal);//设置文件夹属性为正常
+  Directory.SetCreationTime(textBox1.Text, dateTimePicker1.Value);//设置文件夹创建时间
+  Directory.SetLastWriteTime(textBox1.Text, dateTimePicker2.Value);//设置文件夹最近被修改时间
+  Directory.SetLastAccessTime(textBox1.Text, dateTimePicker3.Value);//设置文件夹最近被访问时间
+  if (checkBox1.Checked == true)
+  File.SetAttributes(textBox1.Text, FileAttributes.ReadOnly);//设置成只读文件夹
+  FileAttributes MyAttributes = File.GetAttributes(textBox1.Text);
+  if (this.checkBox2.Checked == true)
+  File.SetAttributes(textBox1.Text, MyAttributes | FileAttributes.System);//设置添加系统文件夹
+  MyAttributes = File.GetAttributes(textBox1.Text);
+  if (this.checkBox3.Checked == true)
+  File.SetAttributes(textBox1.Text, MyAttributes | FileAttributes.Hidden);//设置添加隐藏文件夹
+  MyAttributes = File.GetAttributes(textBox1.Text);
+  if (this.checkBox4.Checked == true)
+  File.SetAttributes(textBox1.Text, MyAttributes | FileAttributes.Archive);//设置添加归档文件夹
+  MyAttributes = File.GetAttributes(textBox1.Text);
+  MessageBox.Show("设置文件夹属性操作成功！", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+}
+
+注：textBox1.Text是一个文件夹
+//但用delete可以删！ 

@@ -1,0 +1,5 @@
+            //C# 定位指定文件 类似快捷方式上的查找目标
+            ProcessStartInfo psi = new ProcessStartInfo("Explorer.exe");
+            string file = @"c:\windows\notepad.exe";
+            psi.Arguments = " /select," + file;
+            Process.Start(psi);

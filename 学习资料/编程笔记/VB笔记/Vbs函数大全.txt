@@ -1,0 +1,862 @@
+Abs 函数 返回数的绝对值。
+And 运算符 执行两个表达式的逻辑连接。
+Array 函数 返回含一数组的 变体 。
+Asc 函数 返回字符串首字母的 ANSI 字符代码。
+赋值运算符 (=) 给变量或属性赋值。
+Atn 函数 返回数的反正切值。
+调用语句 将控制移交 Sub 或 Function 过程。
+CBool 函数 返回已被转换为 Boolean 子类型的变体的表达式。
+CByte 函数 返回已被转换为字节子类型的变体的表达式。
+CCur 函数 返回已被转换为货币子类型的变体的表达式。
+CDate 函数 返回已被转换为日期子类型的变体的表达式。
+CDbl 函数 返回已被转换为双精度子类型的变体的表达式。
+Chr 函数 返回指定 ANSI 字符码的字符。
+CInt 函数 返回已被转换为整数子类型的变体的表达式。
+Class 对象 提供对已创建的类的事件的访问。
+Class 语句 声明类名
+Clear 方法 清除 Err 对象的所有属性设置。  
+CLng 函数 返回已被转换为 Long 子类型的变体的表达式。
+颜色常数 颜色常数列表。
+比较常数 用于比较运算的常数列表。
+连接运算符 (&) 强制两个表达式的字符串连接。  
+Const 语句 声明用于字母值的常数。
+Cos 函数 返回角度的余弦值。
+CreateObject 函数 创建并返回对“自动”对象的引用。
+CSng 函数 返回已被转换为单精度子类型的变体的表达式。
+CStr 函数 返回已被转换为字符串子类型的变体的表达式。
+日期和时间常数 在日期和时间运算中用来定义星期几和其他常数的常数列表。
+日期格式常数 用于日期和时间格式的常数列表。
+Date 函数 返回当前系统日期。
+DateAdd 函数 返回加上了指定的时间间隔的日期。
+DateDiff 函数 返回两个日期之间的间隔。
+DatePart 函数 返回给定日期 的指定部分。
+DateSerial 函数 返回指定年月日的 日期子类型的变体 。
+DateValue 函数 返回日期子类型的变体 。
+Day 函数 返回日期，取值范围为 1 至 31。
+Description 属性 返回或者设置说明某个错误的字符串。
+Dictionary 对象 存储数据键、项目对的对象。
+Dim 语句 声明变量并分配存储空间。
+除法运算符 (/) 两数相除并以浮点数格式返回商。
+Do...Loop 语句 当条件为 True 或者当条件变为 True 时，重复一语句块。
+Empty 表示尚未初始化的变量值。
+Eqv 运算符 使两个表达式相等。
+Erase 语句 重新初始化固定数组的元素并重新分配动态数组的存储空间。
+Err 对象 含有关于运行时错误的信息。
+Eval 函数 计算并返回表达式的值。
+Execute 方法 根据指定的字符串，执行正则表达式的搜索。
+Execute 语句 执行单个或更多的指定语句。
+Exit 语句 退出 Do...Loop、For...Next、 Function 或 Sub 代码块。  
+Exp 函数 返回 e （自然对数的底）的多少次方。
+自乘运算符 (^) 指数函数，幂为自变量。
+False 关键字，其值为零。
+FileSystemObject 对象 提供对计算机文件系统的访问。
+Filter 函数 根据指定的筛选条件,返回含有字符串数组子集的、下限为 0 的数组。
+FirstIndex 属性 返回字符串匹配的位置。
+Fix 函数 返回数的整数部分。
+For...Next 语句 以指定的次数重复一组语句。
+For Each...Next 语句 对于数组或集合中的每一个元素，重复一组语句。
+FormatCurrency 函数 返回的表达式为货币值格式，其货币符号采用系统控制面板中定义的。
+FormatDateTime 函数 返回格式化为日期或时间的表达式。
+FormatNumber 函数 返回格式化为数的表达式。
+FormatPercent 函数 返回格式化为百分比（乘以 100）的表达式，以 % 符号结尾。
+Function 语句 声明形成 Function 过程体的名称、参数和代码。
+GetObject 函数 从文件返回对“自动”对象的访问。
+GetRef 函数 返回对可以绑定到事件的过程的引用。
+Global 属性 设置或返回 Boolean 值。
+Hex 函数 返回表示数的十六进制值的字符串。
+HelpContext 属性 设置或返回帮助文件中某主题的上下文 ID。
+HelpFile 属性 设置或返回帮助文件的全路径。
+Hour 函数 返回小时数，取值范围为 0 至 23。
+If...Then...Else 语句 根据表达式的值，有条件地执行一组语句。
+IgnoreCase 属性 设置或返回 Boolean 值，指示模式搜索是否区分大小写。
+Imp 运算符 执行两个表达式的逻辑隐含。
+初始化事件
+发生在创建相关类的实例时。
+InputBox 函数 在对话框中显示提示，等待用户输入文本或者单击按钮，并返回文本框的内容。
+InStr 函数 返回一个字符串在另一个字符串中第一次出现的位置。
+InStrRev 函数 返回一个字符串在另一个字符串中出现的位置，是从字符串的末尾算起。
+Int 函数 返回数的整数部分。
+整数除法运算符(\) 两数相除，返回的商取其整数部分。
+Is 运算符 比较两个对象引用变量。
+IsArray 函数 返回 Boolean 值，表示变量是否为数组。
+IsDate 函数 返回 Boolean 值，表示表达式是否可以转换为日期。
+IsEmpty 函数 返回 Boolean 值，表示变量是否已被初始化。
+IsNull 函数 返回 Boolean 值，表示表达式是否含有无效数据 (Null)。
+IsNumeric 函数 返回 Boolean 值，表示表达式能否当作一个数，用来计算。
+IsObject 函数 返回 Boolean 值，表示表达式是否引用了有效的“自动”对象。
+Join 函数 返回连接许多包含在一个数组中的子串而创建的字符串。
+LBound 函数 对于指示的数组维数，返回最小的可用下标。
+LCase 函数 返回已被转换为小写字母的字符串。
+Left 函数 返回字符串最左边的指定数量的字符。
+Len 函数 返回字符串中的字符数量，或者存储变量所需的字节数。
+Length 属性 返回在搜索字符串中匹配的长度。
+LoadPicture 函数 返回图片对象。仅用于 32 位平台。
+Log 函数 返回数的自然对数。  
+LTrim 函数 返回去掉前导空格的字符串副本。
+Match 对象 提供访问匹配正则表达式的只读属性。
+Matches 集合 正则表达式匹配对象的集合。
+Mid 函数 从字符串中返回指定数量的字符。
+Minute 函数 返回小时内的分钟数，取值范围为 0 至 59。
+杂项常数 不能纳入任何其他类的常数列表。
+Mod 运算符 两数相除，只返回余数。
+Month 函数 返回月份，取值范围为 1 至 12。
+MonthName 函数 返回表示月份的字符串。  
+MsgBox 常数 与MsgBox 函数一起使用的常数列表。
+MsgBox 函数 在对话框中显示消息，等待用户单击按钮，并返回表示用户所击按钮的数值。  
+乘法运算符 (*) 两数相乘。  
+取反运算符 (-) 表示数值表达式的相反数。
+Not 运算符 执行表达式的逻辑“非”运算。   
+Now 函数 返回当前计算机的系统日期和时间。  
+Nothing 使对象变量与所有实际的对象没有任何关联。
+Null 表示变量含有无效的数据。
+Number 属性 返回或设置代表某个错误的数值。
+Oct 函数 返回表示一数的八进制值的字符串。
+On Error 语句 启用错误处理。
+运算符的优先级 表示各种 VBScript 运算符的优先顺序的列表。
+Option Explicit 语句 强制显式声明脚本中的所有变量。
+Or 运算符 执行两个表达式的逻辑“或”运算。
+Pattern 属性 设置或返回正被搜索的正则表达式的模式。
+Private 语句 声明私有变量并分配存储空间。
+PropertyGet 语句 声明在窗体属性过程中获取（返回）属性值的名称，参数和代码。
+PropertyLet 语句 声明在窗体属性过程中指定属性值的名称，参数和代码。
+PropertySet 语句 声明在窗体属性过程中设置引用到对象的名称，参数和代码。
+Public 语句 声明公有变量并分配存储空间。
+Raise 方法 产生运行时错误。
+Randomize 语句 初始化随机数发生器。
+ReDim 语句 声明动态数组变量，并分配或重新分配过程级的存储空间。
+RegExp 对象 提供简单正则表达式的支持。
+Rem 语句 包含程序中的注释。
+Replace 函数 返回一个字符串，其中某个指定的子串被另一个子串替换，替换的次数也有规定。
+Replace 方法 替换在正则表达式搜索中已发现的正文。
+RGB 函数 返回表示 RGB 颜色值的数。  
+Right 函数 返回字符串最右边的指定数量的字符。
+Rnd 函数 返回一随机数。
+Round 函数 返回指定位数、四舍五入的数。
+RTrim 函数 返回去掉尾部空格的字符串副本。  
+ScriptEngine 函数 返回表示正在使用中的脚本语言的字符串。
+ScriptEngineBuildVersion 函数 返回使用中的脚本引擎的编译版本号。
+ScriptEngineMajorVersion 函数 返回使用中的脚本引擎的主版本号。
+ScriptEngineMinorVersion 函数 返回使用中的脚本引擎的次版本号。  
+Second 函数 返回时间的秒数，取值范围为 0 至 59。
+Select Case 语句 根据表达式的值，在若干组语句中选择一组执行。
+Set 语句 将对象引用赋予变量或属性。
+Sgn 函数 返回表示数的符号的整数。
+Sin 函数 返回角度的正弦值。
+Source 属性 返回最早出错的对象或应用程序的名称。
+Space 函数 返回由指定数量的空格组成的字符串。
+Split 函数 返回下限为 0 的、由指定数量的子串组成的一维数组。
+Sqr 函数 返回数的平方根。  
+StrComp 函数 返回反映字符串比较结果的值。
+字符串常数 字符串常数的列表。
+String 函数 返回重复的字符串，达到指定的长度。
+StrReverse 函数 返回一字符串，其中字符的顺序与指定的字符串中的顺序相反。
+Sub 语句 声明形成 Sub 过程体的名称、参数和代码。
+减法运算符 (-) 求两数之差，或表示某数值表达式的相反数。
+Tan 函数 返回角度的正切值。
+终结事件
+发生在相关类的实例终结之时。
+Test 方法 根据指定的字符串，执行正则表达式的搜索。
+Time 函数 返回反映当前系统时间的日期子类型的变体。
+Timer 函数 返回时经子夜 12:00 AM 后的秒数。
+TimeSerial 函数 返回含有指定时分秒时间的日期子类型的变体。
+TimeValue 函数 返回含有时间的日期子类型的变体。
+Trim 函数 返回去掉前导空格或末尾空格的字符串副本。
+三态常数 在代码中使用，以便表示每个显示的值。
+True 其值为 -1 的关键字。
+TypeName 函数 返回一字符串，它提供了关于变量的变体子类型信息。
+UBound 函数 返回指定维数数组的最大有效下标。
+UCase 函数 返回的字符串已经被转换为大写字母。
+Value 属性 返回在搜索字符串中已发现匹配的值或正文。
+VarType 常数 定义变体子类型的常数列表。
+VarType 函数 返回标识变体子类型的数值。
+VBScript 常数 在 VBScript 中提供不同种类的常数。
+Weekday 函数 返回表示星期几的数值。
+WeekdayName 函数 返回表示星期几的字符串。
+While...Wend 语句 只要给定的条件为 True，便执行一串语句。
+With 语句 对单个的对象执行一串语句。
+Xor 运算符 执行两个表达式的逻辑“异或”运算。
+Year 函数 返回表示年份的数值。   
+VB中整除运算符 \ 与取整函数 INT 的作用是否相同
+  
+性质不同。一个是运算符，一个是函数。
+整除，顾名思义，有除法在里面，而取整只是删除零头而已。
+但它们在某种情况下可以相互替换，如：
+3\2=Int(3/2)
+Int(10.11)=10.11\1
+
+
+本文来自CSDN博客，转载请标明出处：http://blog.csdn.net/gori/archive/2009/01/26/3853204.aspx
+
+1.函数array()　
+功能:创建一个数组变量　
+格式:array(list)　
+参数:list　为数组变量中的每个数值列,中间用逗号间隔　
+例子:　
+<%　i　=　array　(“1”,”2”,”3”)　%>　
+结果:　i　被赋予为数组　
+2.函数Cint()　
+功能:将一表达式/其它类型的变量转换成整数类型(int)　
+格式:Cint(expression)　
+参数:expression　是任何有效的表达式/其它类型的变量　
+例子:　
+<%　
+f　=　”234”　
+response.write　cINT(f)　+　2　
+%>　
+结果:　236　
+函数Cint()将字符”234”转换　成整数234.如果表达式为空,　或者无效时,返回值为0;　
+3.函数:Creatobject()　
+功能:创建及返回一个ActiveX对象.　
+格式:Creatobject(obname)　
+参数bname　是对象的名称　
+例子:　
+<%　
+Set　con　=　Server.CreateObject(“ADODB.Connection”)　
+%>　
+结果:　
+4.函数Cstr()　
+功能:将一表达式/其它类型的变量转换成字符类型(string)　
+格式:Cstr(expression)　
+参数:expression是任何有效的表达式/其它类型的变量　
+例子:　
+<%　
+s　=　3　+　2　
+response.write　”The　result　is:　”　&　cStr(s)　
+%>　
+结果:函数Cstr()将整数　5　转换　成字符”5”.　
+5.函数Date()　
+功能:返回当前系统(server端)的日期　
+格式:　Date()　
+参数:无　
+例子<%　date　()　%>　
+结果:05/10/00　
+6.函数Dateadd()　
+功能:计算某个指定的时间和　
+格式:　dateadd(timeinterval,number,date)　
+参数:timeinterval是时间单位(月,日..);　number是时间间隔值,date是时间始点.　
+例子:　
+<%　
+currentDate　=　#8/4/99#　
+newDate　=　DateAdd(“m”,3,currentDate)　
+response.write　newDate　
+%>　<%　
+currentDate　=　#12:34:45　PM#　
+newDate　=　DateAdd(“h”,3,currentDate)　
+response.write　newDate　
+%>　
+结果:　
+11/4/99　
+3:34:45　PM　
+其中　
+“m”　=　”month”;　
+“d”　=　”day”;　
+如果是currentDate　格式,则,　
+“h”　=　”hour”;　
+“s”　=　”second”;　
+7.函数Datediff()　
+功能:计算某量个指定的时间差　
+格式:　datediff(timeinterval,date1,date2[,firstdayofweek[,firstdayofyear]])　
+参数:　timeinterval　是时间单位;　date1,date2是有效的日期表达式,firstdayofweek,firstdayofyear　是任意选项.　
+例子:　
+<%　
+fromDate　=　#8/4/99#　
+toDate　=　#1/1/2000#　
+response.write　”There　are　”　&　_　
+DateDiff(“d”,fromDate,toDate)　&　_　
+“　days　to　millenium　from　8/4/99.”　
+%>　
+结果:There　are　150　days　to　millenium　from　8/4/99.　
+8.函数day()　
+功能:返回一个整数值,对应于某月的某日　
+格式:　day(date)　
+参数:　date是一个有效的日期表达式;　
+例子<%　=date(#8/4/99#)　%>　
+结果:4　
+9.函数formatcurrency()　
+功能:转换成货币格式　
+格式:　formatcurrency(expression　[,digit[,leadingdigit[,paren[,groupdigit]]]])　
+参数:　expression　是有效的数字表达式;digit表示小数点后的位数;leadingdigit,paren,groupdigit是任意选项.　
+例子<%=FormatCurrency(34.3456)%>　
+结果34.35　
+10.函数Formatdatetime()　
+功能:格式化日期表达式/变量　
+格式:　formatdatetime(date[,nameformat])　
+参数:　date为有效的日期表达式/变量;nameformat是指定的日期格式常量名称.　
+例子<%　=formatdatetime(“08/04/99”,vblongdate)　%>　
+结果:Wednesday,August　04,1999　
+说明:　
+--------------------------------------------------------------------------------
+描述
+返回表达式，此表达式已被格式化为日期或时间。　
+语法
+FormatDateTime(Date[,　NamedFormat])
+FormatDateTime　函数的语法有以下参数：
+
+参数　描述　
+Date　必选项。要被格式化的日期表达式。　
+NamedFormat　可选项。指示所使用的日期/时间格式的数值，如果省略，则使用　vbGeneralDate。　
+
+设置
+NamedFormat　参数可以有以下值：
+常数　值　描述　
+vbGeneralDate　0　显示日期和/或时间。如果有日期部分，则将该部分显示为短日期格式。如果有时间部分，则将该部分显示为长时间格式。如果都存在，则显示所有部分。　
+vbLongDate　1　使用计算机区域设置中指定的长日期格式显示日期。　
+vbShortDate　2　使用计算机区域设置中指定的短日期格式显示日期。　
+vbLongTime　3　使用计算机区域设置中指定的时间格式显示时间。　
+vbShortTime　4　使用　24　小时格式　(hh:mm)　显示时间。　
+
+说明
+下面例子利用　FormatDateTime　函数把表达式格式化为长日期型并且把它赋给　MyDateTime:　
+Function　GetCurrentDate　
+“FormatDateTime　把日期型格式化为长日期型。
+GetCurrentDate　=　FormatDateTime(Date,　1)　
+End　Function
+--------------------------------------------------------------------------------
+
+11.函数Isnumeric()　
+功能:返回一个布尔值,判断变量是否为数字变量,或者是可以转换成数字的其它变量.　
+格式:isnumeric(expression)　
+参数:expression　是任意的变量.　
+例子:　
+<%　
+i=“234”　
+response.write　isnumeric(i)　
+%>　
+结果:　true.　
+12.函数Isobject()　
+功能:返回一个布尔值,判断变量是否为对象的变量,　
+格式:　isobject(expression)　
+参数:　expression　是任意的变量.　
+例子:　
+<%　
+set　con　=server.creatobject(“adodb.connection”)　
+response.write　isobject(con)　
+%>　
+结果:　true　
+13.函数:Lbound()　
+功能:返回一个数组的下界.　
+格式:Lbound(arrayname[,dimension])　
+参数:arrayname　是数组变量,dimension　是任意项　
+例子:　
+<%　
+i　=　array(“1”,”2”,”3”)　
+response.write　lbound(i)　
+%>　
+结果:0
+14.函数Lcase()　
+功能:将一字符类型变量的字符全部变换小写字符.　
+格式:Lcase(string)　
+参数:string是字符串变量　
+例子:　
+<%　
+str=“THIS　is　Lcase!”　
+response.write　Lcase(str)　
+%>　
+结果:this　is　lcase!　
+15.函数left()　
+功能:截取一个字符串的前部分;　
+格式:left(string,length)　
+参数:string字符串,length截取的长度.　
+例子:　<%　=left(“this　is　a　test!”,6)　%>　
+结果:this　i　
+16.函数len()　
+功能:返回字符串长度或者变量的字节长度　
+格式:len(string　*varname)　
+参数:string字符串;varname任意的变量名称　
+例子:　
+<%　
+strtest=“this　is　a　test!”　
+response.write　left(strtest)　
+%>　
+结果:15　
+17.函数ltrim()　
+功能:去掉字符串前的空格.　
+格式:ltrim(string)　
+参数:string　字符串.　
+例子:　<%　=ltrim　(“　this　is　a　test!”)　
+结果:this　is　a　test!　
+18.函数Mid()　
+功能:从字符串中截取字符串.　
+格式:mid(string,start　[,length])　
+参数:string字符串,start截取的起点,length要截取的长度.　
+例子:　
+<%　
+strtest=“this　is　a　test,　Today　is　Monday!”　
+response.write　mid(strtest,17,5)　
+%>　
+结果:Today　
+19.函数minute()　
+功能:返回一数值,　表示分钟　
+格式:minute(time)　
+参数:　time是时间变量　
+例子lt;%　=minute(#12:23:34#)　%>　
+结果:23　
+20.函数month()　
+功能:返回一数值,　表示月份　
+格式:month(time)　
+参数:time是日期变量　
+例子<%　=month(#08/09/99)　%>　
+结果:9　
+21.函数monthname()
+功能:返回月份的字符串(名称).　
+格式:Monthname(date　[,abb])　
+参数:　date是日期变量,abb=true时　则月份的缩写,　
+例子:　
+<%　=monthname(#4/5/99#)　%>　
+结果:April　
+22.函数Now()　
+功能:返回系统的当前时间和日期.　
+格式:now()　
+参数:无　
+例子:　
+<%　=now()　%>　
+结果:　05/10/00　8:45:32　pm　
+23.函数:replace()　
+功能:在字符串中查找,替代指定的字符串.　
+格式:replace(strtobesearched,strsearchfor,strreplacewith　[,start[,count[,compare]]])　
+参数:strtobesearched是字符串;　strsearchfor是被查找的子字符串;strreplacewith　是用来替代的子字符串.start,count,compare　是任意选项.　
+例子:　
+<%　
+strtest=“this　is　an　apple.”　
+response.write　replace(strtest,”apple”,”orange”)　
+%>　
+结果:this　is　an　orange.　
+24.函数right()　
+功能:截取一个字符串的后部分　
+格式:right(string,length)　
+参数:string字符串,length截取的长度.　
+例子:　
+<%　
+strtest=“this　is　a　test!”　
+response.write　right(strtest,3)　
+%>　
+结果:st!　
+25.函数rnd()　
+功能:返回一个随机数值　
+格式:rnd[(number)]　
+参数:number是任意数值.　
+例子:　
+<%　
+randomize()　
+response.write　rnd()　
+%>　
+结果:0/1数值之一,无randomize(),　则不能产生随机数.　
+26.函数round()　
+功能:完整数值　
+格式:round(expression[,numright])　
+参数:expression数字表达式;numright任意选项.　
+例子:　
+<%　
+i=12.33654　
+response.write　round(i)　
+%>　
+结果:　12　
+27.函数rtrim()　
+功能:去掉字符串后的空格.　
+格式:rtrim(string)　
+参数:string　是字符串　
+例子:　
+<%　
+response.write　rtrim(“this　is　a　test!　”)　
+%>　
+结果:this　is　a　test!　
+28.函数second()　
+功能:返回一个整数值.　
+格式:second(time)　
+参数:time是一个有效的时间表达式;　
+例子lt;%　=second(#　12:28:30#)　%>　
+结果:30　
+29.函数strReverse()　
+功能:返回与原字符串排列逆向的字符串.　
+格式:strreverse(string)　
+参数:string是字符串　
+例子<%　=strreverse(“this　is　a　test!”)　
+结果:!tset　a　si　siht　
+30.函数time()　
+功能:返回当前系统的时间值.　
+格式:time()　
+参数:无　
+结果:9:58:28　Am　
+31.函数trim()　
+功能:删去字符串前,后的空格.　
+格式:trim(string)　
+参数:string　字符串.　
+例子:　
+<%　
+strtest=“　this　is　a　test!　”　
+response.write　trim(strtest)　
+%>　
+结果:this　is　a　test!　
+32.函数UBound()　
+功能:返回一个数组的上界.　
+格式:Ubound(expression　[,dimension])　
+参数:expression　是数组表达式/数组变量,dimension　是任意项　
+例子:　
+<%　
+i　=　array(“1”,”2”,”3”)　
+response.write　ubound(i)　
+%>　
+结果:　2　
+33.函数:UCase()　
+功能:将一字符类型变量的字符全部变换成大写字符.　
+格式:Ucase(string)　
+参数:string是字符串变量　
+例子:　
+<%　
+str=“THIS　is　Lcase!”　
+response.write　Lcase(str)　
+%>　
+结果:THIS　IS　LCASE!　
+34.函数Vartype()　
+功能:返回变量的常量代码(整数)　
+格式:Vartype(varname)　
+参数:varname是任何类型的变量名称.　
+例子:　
+<%　
+i=5　
+response.write　vartype(i)　
+%>　
+结果:2　(2表示整数,须要参考ASP常量代码.)　
+35.函数Weekday()　
+功能:返回一个整数,对应一周中的第几天.　
+格式:Weekday(date　[,firstofweek])　
+参数:　date为日期变量,firstofweek为任选项.　
+例子:　
+<%　
+d=　#　5/9/00　#　
+response.write　weekday(d)　%>　
+结果:3(3　表示是星期二)　
+36.函数weekdayname()　
+功能:返回字符串,对应星期几.　
+格式:weekdayname(weekday[,abb[,firstdayofweek]])　
+参数:weekday为日期变量,abb,firstdayofweek为任选项.　
+例子:　
+<%　
+d　=　#8/4/99#　
+response.write　weekdayname(d)　
+%>　
+结果:　Wednesday　
+37.函数year()　
+功能:返回日期表达式所在的年份.　
+格式:year(date)　
+参数:　date是有效的日期表达式　
+例子:　
+<%　=year(#8/9/99#)　%>　
+结果:1999　
+38.函数Mod()功能:取余数.
+例子:3　Mod　2　
+结果:1
+
+ASP常用函数表（vbs）
+
+Array()
+函数返回一个数组
+表达式 Array(list)
+允许数据类型: 字符，数字均可
+实例：
+返回结果: 建立了一个包含7个元素的数组myArray
+myArray("Sunday","Monday", ... ... "Saturday")
+
+CInt()
+函数将一个表达式转化为数字类型
+表达式 CInt(expression)
+允许数据类型: 任何有效的字符均可(不大于32767)
+实例：
+返回结果: 236
+转化字符"234"为数字"234"，如果字符串为空，则返回0值
+
+CreateObject()
+函数建立和返回一个已注册的ACTIVEX组件的实例。
+表达式 CreateObject(objName)
+允许数据类型: objName 是任何一个有效、已注册的ACTIVEX组件的名字.
+实例：
+
+CStr()
+函数转化一个表达式为字符串.
+表达式 CStr(expression)
+允许数据类型: expression 是任何有效的表达式。
+实例：
+返回结果: 转化数字“5”为字符“5”。
+
+Date()
+函数返回当前系统日期.
+表达式 Date()
+允许数据类型: None.
+实例：
+返回结果: 9/9/00
+
+DateAdd()
+函数返回一个被改变了的日期。
+表达式 DateAdd(timeinterval,number,date)
+允许数据类型:
+timeinterval is the time interval to add;
+number is amount of time intervals to add;
+and date is the starting date.
+实例：
+
+返回结果: 9/9/00
+3:34:45 PM
+"m" = "month";
+"d" = "day";
+If currentDate is in time format then,
+"h" = "hour";
+"s" = "second";
+
+DateDiff()
+函数返回两个日期之间的差值 。
+表达式 DateDiff(timeinterval,date1,date2 [, firstdayofweek [, firstweekofyear]])
+允许数据类型: timeinterval 表示相隔时间的类型，如“M“表示“月”。
+实例：
+返回结果: 从9/9/00 到2000年还有 150 天.
+
+Day()
+函数返回一个月的第几日 .
+表达式 Day(date)
+允许数据类型: date 是任何有效的日期。
+实例：
+返回结果: 9
+
+formatCurrency()
+函数返回表达式，此表达式已被格式化为货币值
+表达式 formatCurrency(Expression [, Digit [, LeadingDigit [, Paren [, GroupDigit]]]])
+允许数据类型: Digit 指示小数点右侧显示位数的数值。默认值为 -1，指示使用的是计算机的区域设置; LeadingDigit 三态常数，指示是否显示小数值小数点前面的零。
+实例：
+返回结果: $34.35
+
+formatDateTime()
+函数返回表达式，此表达式已被格式化为日期或时间
+表达式 formatDateTime(Date, [, Namedformat])
+允许数据类型: Namedformat 指示所使用的日期/时间格式的数值，如果省略，则使用 vbGeneralDate.
+实例：
+返回结果: Sunday, September 09, 2000
+
+formatNumber()
+函数返回表达式，此表达式已被格式化为数值.
+表达式 formatNumber(Expression [, Digit [, LeadingDigit [, Paren [, GroupDigit]]]])
+允许数据类型: Digit 指示小数点右侧显示位数的数值。默认值为 -1，指示使用的是计算机的区域设置。; LeadingDigit i指示小数点右侧显示位数的数值。默认值为 -1，指示使用的是计算机的区域设置。; Paren 指示小数点右侧显示位数的数值。默认值为 -1，指示使用的是计算机的区域设置。; GroupDigit i指示小数点右侧显示位数的数值。默认值为 -1，指示使用的是计算机的区域设置。.
+实例：
+返回结果: 45.325
+
+formatPercent()
+函数返回表达式，此表达式已被格式化为尾随有 % 符号的百分比（乘以 100 ）。 (%)
+表达式 formatPercent(Expression [, Digit [, LeadingDigit [, Paren [, GroupDigit]]]])
+允许数据类型: 同上.
+实例：
+返回结果: 45.267%
+
+Hour()
+函数以24时返回小时数.
+表达式 Hour(time)
+允许数据类型:
+实例：
+返回结果: 16
+(Hour has been converted to 24-hour system)
+
+Instr()
+函数返回字符或字符串在另一个字符串中第一次出现的位置.
+表达式 Instr([start, ] strToBeSearched, strSearchFor [, compare])
+允许数据类型: Start为搜索的起始值，strToBeSearched接受搜索的字符串 strSearchFor要搜索的字符.compare比较方式（详细见ASP常数）
+实例：
+返回结果: 9
+
+InstrRev()
+函数同上，只是从字符串的最后一个搜索起
+表达式 InstrRev([start, ] strToBeSearched, strSearchFor [, compare])
+允许数据类型: 同上.
+实例：
+返回结果: 13
+
+Int()
+函数返回数值类型,不四舍五入。
+表达式 Int(number)
+允许数据类型:
+实例：
+返回结果: 32
+
+IsArray()
+函数判断一对象是否为数组，返回布尔值 .
+表达式 IsArray(name)
+实例：
+返回结果: False
+
+IsDate()
+函数判断一对象是否为日期，返回布尔值
+表达式 IsDate(expression)
+实例：
+返回结果: True
+
+IsEmpty()
+函数判断一对象是否初始化，返回布尔值.
+表达式 IsEmpty(expression)
+实例：
+返回结果: True
+
+IsNull()
+函数判断一对象是否为空，返回布尔值.
+表达式 IsNull(expression)
+实例：
+返回结果: False
+
+IsNumeric()
+函数判断一对象是否为数字，返回布尔值.
+表达式 IsNumeric(expression)
+实例：
+返回结果: True
+就算数字加了引号，ASP还是认为它是数字。
+
+IsObject()
+函数判断一对象是否为对象，返回布尔值.
+表达式 IsObject(expression)
+实例：
+返回结果: True
+
+LBound()
+函数返回指定数组维的最小可用下标.
+表达式 Lbound(arrayname [, dimension])
+实例：
+返回结果: 0
+
+LCase()
+函数 返回字符串的小写形式
+表达式 Lcase(string)
+实例：
+返回结果: this is a test!
+
+Left()
+函数返回字符串左边第length个字符以前的字符（含第length个字符).
+表达式 Left(string, length)
+实例：
+返回结果: Thi
+
+Len()
+函数返回字符串的长度.
+表达式 Len(string | varName)
+实例：
+返回结果: 15
+
+LTrim()
+函数去掉字符串左边的空格.
+表达式 LTrim(string)
+实例：
+返回结果: This is a test!
+
+Mid()
+函数返回特定长度的字符串(从start开始,长度为length).
+表达式 Mid(string, start [, length])
+实例：
+返回结果: Today
+
+Minute()
+函数返回时间的分钟.
+表达式 Minute(time)
+实例：
+返回结果: 45
+
+Month()
+函数返回日期.
+表达式 Month(date)
+实例：
+返回结果: 8
+
+MonthName()
+函数返回指定月份
+表达式 MonthName(month, [, Abb])
+实例：
+返回结果: August
+
+Now()
+函数返回系统时间
+表达式 Now()
+实例：
+返回结果: 9/9/00 9:30:16 AM
+
+Right()
+函数返回字符串右边第length个字符以前的字符（含第length个字符).
+表达式 Right(string, length)
+实例：
+返回结果: st!
+
+Rnd()
+函数产生一个随机数.
+表达式 Rnd [ (number) ]
+实例：
+返回结果: 任何一个在0 到 1 之间的数
+
+Round()
+函数返回按指定位数进行四舍五入的数值.
+表达式 Round(expression [, numRight])
+实例：
+返回结果: 32
+
+Rtrim()
+函数去掉字符串右边的字符串.
+表达式 Rtrim(string)
+实例：
+返回结果: This is a test!!
+
+Split()
+函数将一个字符串分割并返回分割结果
+表达式 Split (S[，d])
+实例：
+返回结果: A B C
+
+Second()
+函数返回秒.
+表达式 Second(time)
+实例：
+返回结果: 28
+
+StrReverse()
+函数反排一字符串
+表达式 StrReverse(string)
+实例：
+返回结果: !!tset a si sihT
+
+Time()
+函数返回系统时间.
+表达式 Time()
+实例：
+返回结果: 9:58:28 AM
+
+Trim()
+函数去掉字符串左右的空格.
+表达式 Trim(string)
+实例：
+返回结果: This is a test!!
+
+UBound()
+函数返回指定数组维数的最大可用下标>.
+表达式 Ubound(arrayname [, dimension])
+实例：
+返回结果: 2
+
+UCase()
+函数返回字符串的大写形式.
+表达式 UCase(string)
+允许数据类型:
+实例：
+返回结果: THIS IS A TEST!!
+
+VarType()
+函数返回指示变量子类型的值
+表达式 VarType(varName)
+实例：
+返回结果: 2(数字)详见"asp常数"
+
+WeekDay()
+函数返回在一周的第几天.
+表达式 WeekDay(date [, firstdayofweek])
+实例：
+返回结果: 4(星期三)
+
+WeekDayName()
+函数返回一周第几天的名字.
+表达式 WeekDayName(weekday [, Abb [, firstdayofweek]])
+实例：
+返回结果: Wednesday
+
+Year()
+函数返回当前的年份.
+表达式 Year(date)
+实例：
+返回结果: 1999
