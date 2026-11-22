@@ -1,0 +1,41 @@
+树形结构更合理
+
+1 网站漏洞  按语言分类：PHP  ASP  ASPX  JSP  CGI  其它 
+			按漏洞类型： Cookie  SQL注入  XSS 上传 编辑器  等 
+			PHP：PHP dedecms discuz DVBBS  PHPCMS PHP168 PHPBB WordPress 尼码真多 让大家自己慢慢加进去
+			
+2 软件漏洞  分类: web服务器 Abode系列 oracle 浏览器类  聊天工具  其它
+
+			web服务器 分类：IIS APACHE NGNIX  Tomcat  其它 
+
+			浏览器类  分类: IE  Firefox  Maxthon   TheWorld  Opera  Chrome  搜狗  其它
+
+3 溢出攻击  分类: 本地  远程  shellcode
+
+4 系统漏洞  分类: linux  windows  mac  其它
+
+5 木马病毒  分类: 病毒公告 免杀  感染型 木马  蠕虫  却持  脚本病毒  宏病毒 后门病毒 捆绑 整人  其它
+
+6 黑客编程  分类：ASM C/C++  VB C# DELPHI  PYTHON  PERL  RUBY PHP ASP ASPX JSP CGI SQL 易语言  其它
+
+7 提权利用  分类：EXP 拿SHELL 提权
+
+8 内网渗透  分类: APR  路由器 交换机 
+
+9 社会工程  分类：信息刺探  专业术语  心理学  社工实例 沟通技巧  演员  等等省略
+
+10 无线安全 分类：
+
+11 手机安全 分类：
+
+12 加密解密 分类：密码算法  封包 算法 脱壳 爆破 病毒分析 oday研究
+
+13 远程控制
+
+14 ShellCode 
+==================================================================================
+
+
+
+
+

@@ -1,0 +1,14 @@
+一款 把你的QQ 密码明文 通过MD5 BASE64 加密后 直接登陆QQ
+
+免去每次登陆都要输入QQ密码的麻烦  登陆速度还比普通的快
+
+详细功能  或者 本软件的原理  编程爱好者看下一句
+
+请去GOOGLE搜索 VB++QQ加密算法分析及防盗登陆器制作
+
+Crack8_编程小组荣誉出品  QQ吻's Blog http://hi.baidu.com/qhack8
+
+
+QQ吻防盗BAT生成器2.0.exe MD5：65E44453E3A2E6236226B32F8C3762C0
+
+QQ吻QQ密码加密.exe   D7C9048EAD27229D21EEECEA9A534B0F
