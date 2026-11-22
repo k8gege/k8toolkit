@@ -1,0 +1,8 @@
+// WinHex license file
+
+Name: "Crack8"
+Addr1: "qqkiss"
+Addr2: "qq396890445"
+Key1: 54593E49A7260B8346BFF86C43907565
+Key2: 428FC547896C1AAB527620201A2ED608
+Chksm: E4

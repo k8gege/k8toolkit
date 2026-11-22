@@ -1,0 +1,4617 @@
+2010-08-11, 04:30:23
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+28: 0-2 (FAT32, 1.0 GB)
+28: 0-0 (FAT32, 1.0 GB)
+28: 36-2017 (FAT32, 1.0 GB)
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2010-08-11, 04:30:27
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+28: 0-2 (FAT32, 1.0 GB)
+28: 0-0 (FAT32, 1.0 GB)
+28: 36-2017 (FAT32, 1.0 GB)
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291456
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291458
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291460
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291462
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291464
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291466
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291468
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291470
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291472
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291474
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291476
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291478
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291504
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291506
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291508
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291510
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291512
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:08
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291514
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291516
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291518
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291520
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291522
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291524
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291526
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291528
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291530
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291532
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291534
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291536
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291538
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291540
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291542
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291544
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291546
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291548
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291550
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291552
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291554
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291556
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:09
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291558
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291560
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291562
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291564
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291566
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291568
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291570
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291572
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291574
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291576
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291578
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291580
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291582
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291584
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291586
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:10
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291588
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291590
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291592
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291594
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291596
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291598
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291600
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291602
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291604
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291606
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291608
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291610
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:11
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291612
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291614
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291616
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291618
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291620
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291622
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291624
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291626
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291628
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291630
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:12
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291632
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291634
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291636
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291638
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291640
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291642
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291644
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291646
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291648
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291650
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:13
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291652
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:14
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291654
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:14
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291656
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:14
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291658
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:14
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291660
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:14
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291662
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:14
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291664
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:14
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291666
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291668
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291670
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291672
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291674
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291676
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291678
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291680
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291682
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:15
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291684
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:16
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291686
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:16
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291688
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:16
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291690
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:16
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291692
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:16
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291694
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:16
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291696
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:16
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291698
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:16
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291700
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:17
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291702
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:17
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291704
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:17
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291706
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:17
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291708
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:17
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291710
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:17
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291712
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:17
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291714
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:18
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291716
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:18
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291718
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:18
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291720
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:18
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291722
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:18
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291724
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:18
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291726
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:19
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291728
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:19
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291730
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:19
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291732
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:19
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291734
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:19
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291736
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:19
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291738
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:20
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291740
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:20
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291742
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:20
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291744
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:20
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291746
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:20
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291748
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:20
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291750
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:21
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291752
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:21
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291754
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:21
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291756
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:21
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291758
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:21
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291760
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:21
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291762
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:22
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291764
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:22
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291766
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:22
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291768
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:22
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291770
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:22
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291772
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:22
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291774
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:23
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291776
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:23
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291778
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:23
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291780
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:23
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291782
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:23
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291784
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:24
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291786
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:24
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291788
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:24
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291790
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:24
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291792
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:24
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291794
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:25
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291796
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:25
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291798
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:25
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291800
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:25
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291802
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:25
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291804
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:25
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291806
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:26
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291808
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:26
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291810
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:26
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291812
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:26
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291814
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:26
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291816
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:27
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291818
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:27
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291820
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:27
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291822
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:27
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291824
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:28
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291826
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:28
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291828
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:28
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291830
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:28
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291832
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:28
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291834
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:29
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291836
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:29
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291838
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:29
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291840
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:29
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291842
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:30
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291844
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:30
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291846
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:30
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291848
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:30
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291850
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:30
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291852
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:31
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291854
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:31
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291856
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:31
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291858
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:31
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291860
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:32
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291862
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:32
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291864
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:32
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291866
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:32
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291868
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:33
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291870
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:33
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291872
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:33
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291874
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:33
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291876
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:34
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291878
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:34
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291880
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:34
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291882
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:34
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291884
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:35
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291886
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:35
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291888
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:35
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291890
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:35
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291892
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:36
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291894
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:36
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291896
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:36
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291898
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:36
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291900
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:37
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291902
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:37
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291904
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:37
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291906
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:37
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291908
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:38
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291910
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:38
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291912
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:38
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291914
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:39
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291916
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:39
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291918
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:39
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291920
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:39
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291922
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:40
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291924
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:40
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291926
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:40
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291928
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:40
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291930
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:41
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291932
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:41
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291934
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:41
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291936
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:42
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291938
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:42
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291940
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:42
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291942
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:42
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291944
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:43
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291946
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:43
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291948
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:43
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291950
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:44
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291952
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:44
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291954
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:44
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291956
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:45
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291958
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:45
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291960
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:45
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291962
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:45
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291964
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:46
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291966
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:46
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291968
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:46
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291970
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:47
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291972
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:47
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291974
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:47
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291976
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:47
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291978
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:48
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291980
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:48
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291982
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:48
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291984
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:49
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291986
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:49
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291988
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:49
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291990
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:50
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291992
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:50
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291994
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:50
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291996
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:51
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6291998
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:51
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292000
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:51
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292002
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:51
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292004
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:52
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292006
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:52
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292008
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:52
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292010
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:53
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292012
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:53
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292014
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:53
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292016
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:54
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292018
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:54
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292020
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:54
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292022
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:55
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292024
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:55
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292026
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:55
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292028
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:56
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292030
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:56
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292032
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:56
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292034
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:56
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292036
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:57
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292038
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:57
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292040
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:57
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292042
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:58
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292044
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:58
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292046
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:58
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292048
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:59
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292050
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
+
+--- *** ---
+
+2013-01-06, 22:32:59
+WinHex 15.4 SR-5 Error Report
+Windows 5.1.4100 SP 3 (NT)
+
+Sectors that were read last:
+5: 0-0 (NTFS, 250 GB)
+5: 1-1 (NTFS, 250 GB)
+5: 6291456-6292455 (NTFS, 250 GB)
+
+Last FILE record scanned was in sector 6292052
+
+Exception type 216 occurred at memory offset 00554EC0 when I [please complete]...
+
