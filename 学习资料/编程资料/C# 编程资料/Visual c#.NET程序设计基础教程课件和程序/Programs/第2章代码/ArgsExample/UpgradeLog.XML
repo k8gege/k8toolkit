@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ArgsExample">
+</Property><Property Name="Solution File" Value="E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\ArgsExample.sln">
+</Property><Property Name="User Options File" Value="E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\ArgsExample.suo">
+</Property><Property Name="Date" Value="2010年3月9日">
+</Property><Property Name="Time" Value="15:04">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ArgsExample.sln" Description="File successfully backed up as E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\Backup\ArgsExample.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ArgsExample.suo" Description="File successfully backed up as E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\Backup\ArgsExample.suo">
+</Event><Event ErrorLevel="0" Project="ArgsExample" Source="ArgsExample.csproj" Description="Project file successfully backed up as E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\Backup\ArgsExample.csproj">
+</Event><Event ErrorLevel="0" Project="ArgsExample" Source="ArgsExample.csproj.user" Description="Project user file successfully backed up as E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\Backup\ArgsExample.csproj.user">
+</Event><Event ErrorLevel="0" Project="ArgsExample" Source="AssemblyInfo.cs" Description="File successfully backed up as E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ArgsExample" Source="Class1.cs" Description="File successfully backed up as E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\Backup\Class1.cs">
+</Event><Event ErrorLevel="0" Project="ArgsExample" Source="App.ico" Description="File successfully backed up as E:\DownLoad\031553-01\Visual C#.NET程序设计基础教程程序\Programs\第2章代码\ArgsExample\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="ArgsExample" Source="ArgsExample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ArgsExample" Source="ArgsExample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ArgsExample.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ArgsExample.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ArgsExample" Source="ArgsExample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

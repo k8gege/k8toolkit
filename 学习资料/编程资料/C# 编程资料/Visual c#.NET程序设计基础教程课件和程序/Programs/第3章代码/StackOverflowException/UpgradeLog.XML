@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="StackOverflowException">
+</Property><Property Name="Solution File" Value="L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\StackOverflowException.sln">
+</Property><Property Name="User Options File" Value="L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\StackOverflowException.suo">
+</Property><Property Name="Date" Value="2010年4月19日">
+</Property><Property Name="Time" Value="11:57">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="StackOverflowException.sln" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\Backup\StackOverflowException.sln">
+</Event><Event ErrorLevel="0" Project="" Source="StackOverflowException.suo" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\Backup\StackOverflowException.suo">
+</Event><Event ErrorLevel="0" Project="StackOverflowException" Source="StackOverflowException.csproj" Description="Project file successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\Backup\StackOverflowException.csproj">
+</Event><Event ErrorLevel="0" Project="StackOverflowException" Source="StackOverflowException.csproj.user" Description="Project user file successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\Backup\StackOverflowException.csproj.user">
+</Event><Event ErrorLevel="0" Project="StackOverflowException" Source="AssemblyInfo.cs" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="StackOverflowException" Source="Class1.cs" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\Backup\Class1.cs">
+</Event><Event ErrorLevel="0" Project="StackOverflowException" Source="App.ico" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\StackOverflowException\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="StackOverflowException" Source="StackOverflowException.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="StackOverflowException" Source="StackOverflowException.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="StackOverflowException.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="StackOverflowException.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="StackOverflowException" Source="StackOverflowException.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,5 @@
+D:\My Documents\My Dropbox\CSharp教程\源程序\Master_Details(GridView_DetailsView)\bin\Master_Details(GridView_DetailsView).dll
+D:\My Documents\My Dropbox\CSharp教程\源程序\Master_Details(GridView_DetailsView)\bin\Master_Details(GridView_DetailsView).pdb
+D:\My Documents\My Dropbox\CSharp教程\源程序\Master_Details(GridView_DetailsView)\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\CSharp教程\源程序\Master_Details(GridView_DetailsView)\obj\Debug\Master_Details(GridView_DetailsView).dll
+D:\My Documents\My Dropbox\CSharp教程\源程序\Master_Details(GridView_DetailsView)\obj\Debug\Master_Details(GridView_DetailsView).pdb

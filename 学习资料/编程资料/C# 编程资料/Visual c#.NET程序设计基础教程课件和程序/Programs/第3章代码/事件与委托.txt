@@ -1,0 +1,191 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+//了解委托
+//我们知道回调函数实际上就是方法调用的指针，也就是通常所说的函数指针。
+//那么在.NET中，以委托的方式来实现了函数指针的概念。
+//.NET中使用委托的主要原因是它是类型安全的，为什么呢？
+//因为在以前，比如C中，函数指针只不过是一个指向存储单元的指针，我们无法说出这个指针实际指向什么，而委托确定了指向方法的返回值类型和参数列表。
+//注意的是：委托并不等同于方法，而是一个引用类型。
+
+
+// 三、多播委托
+ //  在多播委托中需要注意两点：
+
+//（1）+=和-=操作，其实它们分别调用了Delegate.Combine和Delegate.Remove方法
+
+//（2）多播委托的返回值一般为Void，如果委托类型为非Void类型，那么多播委托将返回最后一个调用的方法的执行结果，实际中不推荐这样应用
+
+
+//五、委托和事件 
+
+//      从前面的示例代码中可以看出，在客户端我们可以随意对委托进行操作，这在一定程度上破坏了面向对象的封装机制。
+
+//      .NET的事件模型建立在委托机制之上，它实现了对委托的封装。
+
+//      事件发送器：可以是应用程序中的一个对象或程序集等，主要作用是引发事件。
+
+//      事件接收器：发生某些事情时被通知的任何应用程序、对象或组件。
+
+//      发送器怎么通知接收器呢？我们在事件接收器的某个地方定义一个方法，它负责处理事件， 在每次发生已注册的事件时，就执行这个事件处理程序。
+//      由于发送器对接收器一无所知，这时就要使用委托作为中介。发送器定义接收器要使用的委托，接收器将事件处理程序注册到事件中。
+
+//      先了解一下这段代码：btnSave.Click += new EventHandler(btnSave_Click)。我们在程序设计中经常见到，
+//      它告诉我们：在引发btnSave按钮的Click事件时，应执行btnSave_Click方法。EventHandler是事件用于把处理程序（btnSave_Click）赋予事件（Click ）的委托。
+
+namespace ConAppDelegate
+{
+    class DelegateTest
+    {
+        //第1步：声明一个委托
+        public delegate void CalculateDelegate(int x, int y);
+
+        //第2步：创建与委托关联的方法，二者具有相同的返回值类型和参数列表
+        public void Add(int i, int j)
+        {
+            Console.WriteLine((i + j).ToString());
+        }
+        //第3步：定义委托类型变量
+        private CalculateDelegate myDelegate;
+
+        public void GetDelegateEx()
+        {
+            //第4步：进行委托绑定
+            myDelegate = new CalculateDelegate(Add);
+
+            //第5步：回调Add方法
+            myDelegate(1, 2);
+        }
+
+        static void Main(string[] args)
+        {
+            //   new DelegateTest().GetDelegateEx();
+            CalculateDelegate myDelegate = new CalculateDelegate(new DelegateTest().Add);
+
+            //DelegateTest p = new DelegateTest();
+            //p.myDelegate = new CalculateDelegate(p.Add);
+            //p.myDelegate(2, 3);
+            Console.Read();
+
+        }
+    }
+
+
+    class EventAndDelegateTest
+    {
+        //定义一个内部事件参数类型，用于存放当事件引发时向处理程序传递的状态信息。
+        public class CalculateEventArgs : EventArgs
+        {
+            public readonly int x, y;
+
+            public CalculateEventArgs(int x, int y)
+            {
+                this.x = x;
+                this.y = y;
+            }
+        }
+       
+        //声明事件委托。
+        public delegate void CalculateEventHandler(object sender, CalculateEventArgs e);
+        public class Calculator
+        {
+            //定义事件成员，提供外部绑定。
+            public event CalculateEventHandler MyCalculate;
+
+
+            //定义负责通知事件引发的方法，也就是委托的Invoke方法调用。
+            protected virtual void OnCalculate(CalculateEventArgs e)
+            {
+                if (MyCalculate != null)
+                {
+                    MyCalculate(this, e);
+                }
+            }
+
+            //调用该方法就表示有新的事件方法。
+            public void Calculate(int x, int y)
+            {
+                CalculateEventArgs e = new CalculateEventArgs(x, y);
+
+                //通知所有的事件的注册者
+                OnCalculate(e);
+            }
+        }
+        public class CalculaterManager
+        {
+            public void Add(object sender, CalculateEventArgs e)
+            {
+                Console.WriteLine((e.x + e.y).ToString());
+            }
+        }
+        static void Main()
+        {
+            Calculator calculator = new Calculator();
+
+            CalculaterManager manager = new CalculaterManager();
+
+            calculator.MyCalculate += manager.Add;
+            calculator.Calculate(1, 2);
+
+        }
+
+    }
+
+    class EventAndDelegateTest2
+    {
+        //声明事件委托。
+        public delegate void EvenNumberHandler(int Number);
+
+
+        class Counter
+        {
+            //定义事件成员，提供外部绑定。
+            public event EvenNumberHandler OnEvenNumber;
+            public Counter()
+            {
+                OnEvenNumber = null;
+            }
+            public void CountTo100()
+            {
+                int CurrentNumer;
+                for (CurrentNumer = 0; CurrentNumer <= 100; CurrentNumer++)
+                {
+                    if (CurrentNumer % 2 == 0)
+                    {
+                        if (OnEvenNumber != null)
+                        {
+                            //事件的发送者 ， 通知所有的事件的注册者 
+                            OnEvenNumber(CurrentNumer);
+                        }
+                    }
+                }
+            }
+        }
+
+        class EvenNumberHandlerClass
+        {
+            public void EvenNumberFound(int EvenNumber)
+            {
+                Console.WriteLine(EvenNumber);
+            }
+        }
+
+
+        static void Main()
+        {
+            Counter MyCounter = new Counter();
+
+            EvenNumberHandlerClass MyEvenNumberHandlerClass = new EvenNumberHandlerClass();
+
+            //注册事件，事件与函数 MyEvenNumberHandlerClass.EvenNumberFound(int EvenNumber) 绑定
+            MyCounter.OnEvenNumber += new EvenNumberHandler(MyEvenNumberHandlerClass.EvenNumberFound);
+
+
+            //MyCounter.OnEvenNumber +=  MyEvenNumberHandlerClass.EvenNumberFound;
+
+            MyCounter.CountTo100();
+            Console.ReadLine();
+
+        }
+    }
+}

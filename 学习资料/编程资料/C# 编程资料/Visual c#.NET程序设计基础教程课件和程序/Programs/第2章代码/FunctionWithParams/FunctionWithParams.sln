@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionWithParams", "FunctionWithParams.csproj", "{ABFE7363-4304-4A4C-8F7D-08BE40F2FCEC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{ABFE7363-4304-4A4C-8F7D-08BE40F2FCEC}.Debug.ActiveCfg = Debug|.NET
+		{ABFE7363-4304-4A4C-8F7D-08BE40F2FCEC}.Debug.Build.0 = Debug|.NET
+		{ABFE7363-4304-4A4C-8F7D-08BE40F2FCEC}.Release.ActiveCfg = Release|.NET
+		{ABFE7363-4304-4A4C-8F7D-08BE40F2FCEC}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+bin\Debug\SqlServerProject1.dll
+bin\Debug\SqlServerProject1.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SqlServerProject1.dll
+obj\Debug\SqlServerProject1.pdb

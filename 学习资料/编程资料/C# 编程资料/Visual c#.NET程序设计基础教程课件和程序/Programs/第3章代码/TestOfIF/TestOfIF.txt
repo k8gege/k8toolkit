@@ -1,0 +1,29 @@
+ class TestOfIf
+    {
+        static void Main()
+        {
+            int scoreOfStudent = 95;
+            if (scoreOfStudent >= 90 && scoreOfStudent <= 100)
+            {
+                Console.WriteLine("你的成绩是：优秀");
+            }
+            else if (scoreOfStudent >= 80 && scoreOfStudent < 90)
+            {
+                Console.WriteLine("你的成绩是：良好");
+            }
+            else if (scoreOfStudent >= 70 && scoreOfStudent < 80)
+            {
+                Console.WriteLine("你的成绩是：中等");
+            }
+            else if (scoreOfStudent >= 60 && scoreOfStudent < 70)
+            {
+                Console.WriteLine("你的成绩是：及格");
+            }
+            else if (scoreOfStudent >= 0 && scoreOfStudent < 60)
+            {
+                Console.WriteLine("你的成绩是：不及格");
+            }
+            else
+                Console.WriteLine("数据错误！");
+        }
+    }

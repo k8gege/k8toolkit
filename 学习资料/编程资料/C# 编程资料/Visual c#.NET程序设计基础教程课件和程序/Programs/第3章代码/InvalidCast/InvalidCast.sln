@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvalidCast", "InvalidCast.csproj", "{73523E11-76B8-48B4-BCD9-A96B1A7FFB08}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{73523E11-76B8-48B4-BCD9-A96B1A7FFB08}.Debug.ActiveCfg = Debug|.NET
+		{73523E11-76B8-48B4-BCD9-A96B1A7FFB08}.Debug.Build.0 = Debug|.NET
+		{73523E11-76B8-48B4-BCD9-A96B1A7FFB08}.Release.ActiveCfg = Release|.NET
+		{73523E11-76B8-48B4-BCD9-A96B1A7FFB08}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

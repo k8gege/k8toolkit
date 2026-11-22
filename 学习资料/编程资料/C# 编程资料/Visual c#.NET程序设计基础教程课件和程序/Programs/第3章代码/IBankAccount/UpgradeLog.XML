@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="IBankAccount">
+</Property><Property Name="Solution File" Value="L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\IBankAccount.sln">
+</Property><Property Name="User Options File" Value="L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\IBankAccount.suo">
+</Property><Property Name="Date" Value="2010年4月19日">
+</Property><Property Name="Time" Value="9:48">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="IBankAccount.sln" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\Backup\IBankAccount.sln">
+</Event><Event ErrorLevel="0" Project="" Source="IBankAccount.suo" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\Backup\IBankAccount.suo">
+</Event><Event ErrorLevel="0" Project="IBankAccount" Source="IBankAccount.csproj" Description="Project file successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\Backup\IBankAccount.csproj">
+</Event><Event ErrorLevel="0" Project="IBankAccount" Source="IBankAccount.csproj.user" Description="Project user file successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\Backup\IBankAccount.csproj.user">
+</Event><Event ErrorLevel="0" Project="IBankAccount" Source="AssemblyInfo.cs" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="IBankAccount" Source="Class1.cs" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\Backup\Class1.cs">
+</Event><Event ErrorLevel="0" Project="IBankAccount" Source="App.ico" Description="File successfully backed up as L:\Class\Visual C#.NET 程序设计基础教程\Visual C#.NET程序设计基础教程程序\Programs\第3章代码\IBankAccount\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="IBankAccount" Source="IBankAccount.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IBankAccount" Source="IBankAccount.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="IBankAccount.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="IBankAccount.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IBankAccount" Source="IBankAccount.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

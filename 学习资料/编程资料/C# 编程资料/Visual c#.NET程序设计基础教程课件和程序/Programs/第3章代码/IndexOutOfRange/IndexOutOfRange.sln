@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexOutOfRange", "IndexOutOfRange.csproj", "{F826EBA6-3E29-4255-9C12-8D79AEF5E91D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F826EBA6-3E29-4255-9C12-8D79AEF5E91D}.Debug.ActiveCfg = Debug|.NET
+		{F826EBA6-3E29-4255-9C12-8D79AEF5E91D}.Debug.Build.0 = Debug|.NET
+		{F826EBA6-3E29-4255-9C12-8D79AEF5E91D}.Release.ActiveCfg = Release|.NET
+		{F826EBA6-3E29-4255-9C12-8D79AEF5E91D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

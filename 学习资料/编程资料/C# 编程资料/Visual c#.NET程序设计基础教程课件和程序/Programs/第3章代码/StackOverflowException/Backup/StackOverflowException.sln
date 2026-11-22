@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflowException", "StackOverflowException.csproj", "{1B7F8250-73EF-44DD-8CE7-CE5802A52342}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1B7F8250-73EF-44DD-8CE7-CE5802A52342}.Debug.ActiveCfg = Debug|.NET
+		{1B7F8250-73EF-44DD-8CE7-CE5802A52342}.Debug.Build.0 = Debug|.NET
+		{1B7F8250-73EF-44DD-8CE7-CE5802A52342}.Release.ActiveCfg = Release|.NET
+		{1B7F8250-73EF-44DD-8CE7-CE5802A52342}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

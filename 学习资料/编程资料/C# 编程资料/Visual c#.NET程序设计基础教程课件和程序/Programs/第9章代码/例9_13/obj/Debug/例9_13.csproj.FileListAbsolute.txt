@@ -1,0 +1,5 @@
+D:\My Documents\My Dropbox\CSharp教程\源程序\例9_13\bin\例9_13.dll
+D:\My Documents\My Dropbox\CSharp教程\源程序\例9_13\bin\例9_13.pdb
+D:\My Documents\My Dropbox\CSharp教程\源程序\例9_13\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\CSharp教程\源程序\例9_13\obj\Debug\例9_13.dll
+D:\My Documents\My Dropbox\CSharp教程\源程序\例9_13\obj\Debug\例9_13.pdb

@@ -1,0 +1,8 @@
+D:\My Documents\My Dropbox\CSharp教程\源程序\例4_3\bin\Debug\例4_3.exe
+D:\My Documents\My Dropbox\CSharp教程\源程序\例4_3\bin\Debug\例4_3.pdb
+D:\My Documents\My Dropbox\CSharp教程\源程序\例4_3\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\CSharp教程\源程序\例4_3\obj\Debug\例4_3.Form1.resources
+D:\My Documents\My Dropbox\CSharp教程\源程序\例4_3\obj\Debug\例4_3.Properties.Resources.resources
+D:\My Documents\My Dropbox\CSharp教程\源程序\例4_3\obj\Debug\例4_3.csproj.GenerateResource.Cache
+D:\My Documents\My Dropbox\CSharp教程\源程序\例4_3\obj\Debug\例4_3.exe
+D:\My Documents\My Dropbox\CSharp教程\源程序\例4_3\obj\Debug\例4_3.pdb

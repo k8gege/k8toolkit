@@ -1,0 +1,5 @@
+obj\Debug\ArgsExample.exe
+obj\Debug\ArgsExample.pdb
+bin\Debug\ArgsExample.exe
+bin\Debug\ArgsExample.pdb
+obj\Debug\ResolveAssemblyReference.cache

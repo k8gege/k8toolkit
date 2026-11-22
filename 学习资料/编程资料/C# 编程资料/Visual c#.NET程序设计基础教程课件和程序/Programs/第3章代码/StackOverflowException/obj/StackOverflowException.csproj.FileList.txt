@@ -1,0 +1,5 @@
+obj\Debug\StackOverflowException.exe
+obj\Debug\StackOverflowException.pdb
+bin\Debug\StackOverflowException.exe
+bin\Debug\StackOverflowException.pdb
+obj\Debug\ResolveAssemblyReference.cache

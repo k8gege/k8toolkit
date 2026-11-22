@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ClassStudent cSt1 = new ClassStudent();
+            cSt1.Name = "张三";
+            cSt1.GoToSchool();
+
+            ClassStudent cSt2 = cSt1;
+            cSt2.Name = "李四";
+            cSt1.GoToSchool();
+
+
+            StructStudent sSt1 = new StructStudent();
+            sSt1.Name = "张三";
+            sSt1.GoToSchool();
+
+
+            StructStudent sSt2 = sSt1;
+            sSt2.Name = "李四";
+            sSt1.GoToSchool();
+
+
+            StructStudent sSt3;
+            sSt3.Name = "王五";
+            sSt3.Age = 20;
+            sSt3.Sex = "男";
+            sSt3.GoToSchool();
+
+            Console.ReadLine();
+        }
+    }
+
+    //可以把结构看作是缩小的类
+    //结构和类的区别
+    //1。结构是值类型，类是属于引用类型；
+    //2。结构不支持继承；
+    //3。结构的默认构造函数不可以替换，使用定义的构造函数时需要把里面的变量成员初始化；
+    //4。结构里的变量成员不可以给初始值；而类里面的变量成员可以给初始值；
+    struct StructStudent 
+    {
+        public string Name;
+        public string Sex;
+        public int Age;
+
+        public void GoToSchool()
+        {
+            Console.WriteLine(Name + "去上学！");
+        }
+        public StructStudent(string name, string sex,int age)
+        {
+            Name = name;
+            Sex = sex;
+            Age = age;
+        }
+
+    }
+
+    class ClassStudent 
+    {
+        public string Name="AAA";
+        public string Sex;
+        public int Age;
+        
+        public ClassStudent()
+        { 
+        }
+
+        public void GoToSchool()
+        {
+            Console.WriteLine(Name + "去上学！");
+        }
+    }
+}

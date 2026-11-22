@@ -1,0 +1,262 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // m 是一个实例（对象），只能访问实例的成员
+            //MyClass m = new MyClass();
+            
+            //MyClass.pubStaVal=88;
+
+            ////Animal a = new Animal(38);
+            ////a.SayHello();
+
+            //Animal dog = new Dog(12);
+            //dog.SayHello();
+
+            //Animal cat = new Cat();
+            //cat.SayHello();
+            //try
+            //{
+            //    Person p = new Person();
+            //    int age = Convert.ToInt32(Console.ReadLine());
+
+            //    bool flag = TestAge(age);
+            //    if (flag)
+            //    {
+            //        p.Age = age;
+            //        Console.WriteLine(p.Age);
+            //    }
+            //    else
+            //    {
+            //        Exception e = new Exception("您输入的年龄超出范围！");
+            //        throw e;
+            //    }
+
+            //    p.PAge = age;
+            //    Console.WriteLine(p.PAge);
+
+
+                
+            //}
+            //catch (Exception e)
+            //{
+
+            //    Console.WriteLine(e.Message);
+            //}
+
+            //Person p2 = new Person();
+            //int age2 = Convert.ToInt32(Console.ReadLine());
+            //if (TestAge(age2))
+            //{
+            //    p2.Age = age2;
+            //    Console.WriteLine(p2.Age);
+            //}
+            //else
+            //{
+            //    Exception e = new Exception("您输入的年龄超出范围！");
+            //    throw e;
+            //}
+
+            //p2.PAge = age2;
+            //Console.WriteLine(p2.PAge);
+
+            MyZiClass m = new MyZiClass();
+
+            m.Test();
+            Console.ReadLine();
+            
+        }
+
+        public static bool TestAge(int age)
+        {
+            if (age > 0 && age < 150)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+
+
+    //类的成员只能是 静态 或 实例 成员； 区分静态成员和实例成员的方法，看看有没有使用 static 关键字来定义，如果有就是静态成员，
+    // 使用关键字 static 表示该成员为静态成员 ， 访问时通过  类名.字段名 来访问
+    // 实例成员必须要创建对象来访问该成员
+    public class MyClass
+    {
+        // public 访问级别最高，可以在任意代码中访问 ； 
+        public int pubVal;
+
+        // internal 定义的字段，只能在该项目中使用；
+        internal int internalVar;
+
+        // protected 受保护的成员，只能在该类和该类的派生类中访问
+        protected int proVar;
+
+        // private 关键字表示 声明 的该字段只能在该类访问得到
+        private int priVal;
+
+        //静态 -- 实例
+        // 使用关键字 static 表示该成员为静态成员 ， 访问时通过  类名.字段名 来访问
+        public static int pubStaVal;
+
+        // readonly 定义只读的字段 , 在初始化的时候和该类的构造函数给它赋值
+        public readonly int pubReadOnlyVal ;
+
+        //const 定义该字段为常量； 常量必须给初始值 ； 是属于静态成员
+        public const int pubConstVal = 90;
+
+        public MyClass()
+        {
+            pubReadOnlyVal = 88;
+           
+        }
+
+        public void Test()
+        {
+            Console.WriteLine("使用父类的Test（）");
+        }
+
+    }
+
+    public class MyZiClass : MyClass
+    {
+        public MyZiClass()
+        {
+        }
+
+        public void ZiTest()
+        {
+            base.proVar=77;
+        }
+
+
+        new public void Test()
+        {
+            base.Test();
+           // Console.WriteLine("使用子类的Test（）");
+        }
+
+    }
+
+    public abstract class Animal
+    {
+        protected double TiZhong;
+        
+        public Animal()
+        { 
+
+        }
+
+        public Animal(double tiZhong)
+        {
+            TiZhong = tiZhong;
+        }
+
+        //使用 virtual 关键字 表示该为 虚方法；他可以由派生类重写；
+        public virtual void SayHello()
+        {
+            Console.WriteLine("Animal Say Hello!");
+        }
+
+        public abstract void Run();
+
+        public abstract void Fly();
+
+    }
+   
+    public class Dog:Animal
+    {
+        public Dog(double tiZhong):base(tiZhong)
+        { 
+            
+        }
+        //使用 override 关键字 来重写 父类的虚方法 ；
+        public override void SayHello()
+        {
+            Console.WriteLine("Wang!Wang!");
+        }
+        public override void Run()
+        {
+            Console.WriteLine("Dog Run!");
+        }
+        public override void Fly()
+        {
+            Console.WriteLine("Dog Can't Fly");
+        }
+    }
+    
+    public class Cat:Animal
+    {
+        public override void SayHello()
+        {
+            Console.WriteLine("Miao!Miao!");
+        }
+        public override void Run()
+        {
+            Console.WriteLine("Cat Run!");
+        }
+        public override void Fly()
+        {
+              throw new Exception("The method or operation is not implemented.");
+        }
+
+    }
+
+    public abstract class MyAbClass
+    {
+        //使用关键字 abstract 声明该方法为抽象方法， 它不能有执行的代码体， 必须有派生类来实现其代码体；
+        public abstract void AbStractFunction();
+       
+    }
+
+    public class MyAbZiClass : MyAbClass
+    {
+        // 使用关键字 override  实现 父类的抽象方法 ；
+        public override void AbStractFunction()
+        {
+            
+        }
+    }
+
+
+    public class Person
+    {
+        public int Age;
+
+        private int age;
+
+
+        //定义属性； 属性不可以存储值，它的值存在私有字段中
+        public int PAge
+        {
+            // 设定属性可读 ， 必须有 return 语句；
+            get 
+            { 
+                return age; 
+            }
+            // 设定属性可写，写入值存在私有字段中；
+            set 
+            {
+                if (value > 0 && value < 150)
+                    age = value;
+                else
+                {
+                    Exception e = new Exception("您输入的年龄超出范围！");
+                    throw e;
+                }
+
+            }
+        }
+    }
+
+
+}

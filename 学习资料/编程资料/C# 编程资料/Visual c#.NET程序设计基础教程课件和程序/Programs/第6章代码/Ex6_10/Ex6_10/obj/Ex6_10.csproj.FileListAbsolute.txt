@@ -1,0 +1,8 @@
+E:\study\教学\出书\Programs\Ex6_10\Ex6_10\bin\Debug\Ex6_10.exe
+E:\study\教学\出书\Programs\Ex6_10\Ex6_10\bin\Debug\Ex6_10.pdb
+E:\study\教学\出书\Programs\Ex6_10\Ex6_10\obj\Debug\ResolveAssemblyReference.cache
+E:\study\教学\出书\Programs\Ex6_10\Ex6_10\obj\Debug\Ex6_10.Form1.resources
+E:\study\教学\出书\Programs\Ex6_10\Ex6_10\obj\Debug\Ex6_10.Properties.Resources.resources
+E:\study\教学\出书\Programs\Ex6_10\Ex6_10\obj\Debug\Ex6_10.csproj.GenerateResource.Cache
+E:\study\教学\出书\Programs\Ex6_10\Ex6_10\obj\Debug\Ex6_10.exe
+E:\study\教学\出书\Programs\Ex6_10\Ex6_10\obj\Debug\Ex6_10.pdb

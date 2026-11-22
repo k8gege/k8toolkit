@@ -1,0 +1,9 @@
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\bin\Debug\test.exe
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\bin\Debug\test.pdb
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\obj\Debug\test.Form2.resources
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\obj\Debug\test.Properties.Resources.resources
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\obj\Debug\test.csproj.GenerateResource.Cache
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\obj\Debug\test.exe
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\obj\Debug\test.pdb
+D:\My Documents\My Dropbox\CSharp教程\源程序\test\obj\Debug\test.Form1.resources

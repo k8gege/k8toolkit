@@ -1,0 +1,16 @@
+F:\source\C#\PaintTest\PaintTest\obj\Debug\ResolveAssemblyReference.cache
+F:\source\C#\PaintTest\PaintTest\obj\Debug\PaintTest.Form1.resources
+F:\source\C#\PaintTest\PaintTest\obj\Debug\PaintTest.Properties.Resources.resources
+F:\source\C#\PaintTest\PaintTest\obj\Debug\PaintTest.csproj.GenerateResource.Cache
+F:\source\C#\PaintTest\PaintTest\obj\Debug\PaintTest.pdb
+F:\source\C#\PaintTest\PaintTest\bin\Debug\PaintTest.exe
+F:\source\C#\PaintTest\PaintTest\bin\Debug\PaintTest.pdb
+F:\source\C#\PaintTest\PaintTest\obj\Debug\PaintTest.exe
+E:\NoteEDisk\科研\c#书\课件及程序\PaintTest\PaintTest\obj\Debug\PaintTest.exe
+E:\NoteEDisk\科研\c#书\课件及程序\PaintTest\PaintTest\obj\Debug\PaintTest.pdb
+E:\NoteEDisk\科研\c#书\课件及程序\PaintTest\PaintTest\bin\Debug\PaintTest.exe
+E:\NoteEDisk\科研\c#书\课件及程序\PaintTest\PaintTest\bin\Debug\PaintTest.pdb
+E:\NoteEDisk\科研\c#书\课件及程序\PaintTest\PaintTest\obj\Debug\ResolveAssemblyReference.cache
+E:\NoteEDisk\科研\c#书\课件及程序\PaintTest\PaintTest\obj\Debug\PaintTest.Form1.resources
+E:\NoteEDisk\科研\c#书\课件及程序\PaintTest\PaintTest\obj\Debug\PaintTest.Properties.Resources.resources
+E:\NoteEDisk\科研\c#书\课件及程序\PaintTest\PaintTest\obj\Debug\PaintTest.csproj.GenerateResource.Cache

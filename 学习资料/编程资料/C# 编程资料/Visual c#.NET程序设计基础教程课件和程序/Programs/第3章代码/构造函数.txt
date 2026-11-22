@@ -1,0 +1,122 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    public class Program:Object
+    {
+        static void Main(string[] args)
+        {
+
+            //1. 执行 Object.Object() 构造函数
+            //2. 执行 MyBaseClass.MyBaseClass() 构造函数
+            //3. 执行 MyDerivedClass.MyDerivedClass() 构造函数 
+            //MyDerivedClass myObj = new MyDerivedClass();
+
+            //1. 执行 Object.Object() 构造函数
+            //2. 执行 MyBaseClass.MyBaseClass() 构造函数
+            //3. 执行 MyDerivedClass.MyDerivedClass(int i) 构造函数
+            //MyDerivedClass myObj = new MyDerivedClass(8);
+
+
+            //1. 执行 Object.Object() 构造函数
+            //2. 执行 MyBaseClass.MyBaseClass() 构造函数
+            //3. 执行 MyDerivedClass.MyDerivedClass(int i,int j) 构造函数
+            //MyDerivedClass myObj = new MyDerivedClass(1, 2);
+
+
+
+            //public MyDerivedClass(int i,int j):base(i)
+            //{
+            //    Console.WriteLine("执行 MyDerivedClass.MyDerivedClass(int i,int j) 构造函数！");
+            //}
+            // 使用了 base 关键 指定 MyDerivedClass 对象的实例化过程，以使用基类中匹配的构造函数
+            //1. 执行 Object.Object() 构造函数
+            //2. 执行 MyBaseClass.MyBaseClass(int i) 构造函数
+            //3. 执行 MyDerivedClass.MyDerivedClass(int i,int j) 构造函数
+            //MyDerivedClass myObj = new MyDerivedClass(1, 2);
+
+
+            //public MyDerivedClass(int i,int j):this(i)
+            //{
+            //    Console.WriteLine("执行 MyDerivedClass.MyDerivedClass(int i,int j) 构造函数！");
+            //}
+            // 使用 this 关键字来 指定创建该对象时， 先执行的构造函数。 
+            //1. 执行 Object.Object() 构造函数
+            //2. 执行 MyBaseClass.MyBaseClass() 构造函数
+            //3. 执行 MyDerivedClass.MyDerivedClass(int i) 构造函数
+            //4. 执行 MyDerivedClass.MyDerivedClass(int i,int j) 构造函数
+
+            MyDerivedClass myObj = new ConsoleApplication1.MyDerivedClass(1, 2);
+
+            MyDerivedClass.Test();
+
+            myObj.Test2();
+            
+            //myObj.Test();
+
+            //MyDerivedClass.Test2();
+
+            
+            Console.ReadLine();
+        }
+    }
+    public class MyBaseClass
+    {
+        //构造函数：用于创建对象使用。
+        //构造函数特性：
+        //1。Obect 提供一个默认的构造函数，这个构造函数没有任何参数。
+        //2。构造函数和该类同名
+        //3。构造函数 不需要指定返回类型，或者void ，它和 new 关键字搭配使用用于创建一个该类型的对象。
+        //4。声明有其他带有参数的构造函数后，默认的构造函数不能再使用，除非特别再声明该默认的构造函数
+        public MyBaseClass()
+        {
+            Console.WriteLine("执行 MyBaseClass.MyBaseClass() 构造函数 （默认的构造函数）");
+        }
+
+        //函数的重载：在同一个类里面，函数名称相同，但是参数不同。
+
+        public MyBaseClass(int i)
+        {
+            Console.WriteLine("执行 MyBaseClass.MyBaseClass(int i) 构造函数！");
+        }
+
+      
+    }
+    public class MyDerivedClass:MyBaseClass
+    {
+        public MyDerivedClass()
+        {
+            Console.WriteLine("执行 MyDerivedClass.MyDerivedClass() 构造函数 （默认的构造函数）");
+        }
+        public MyDerivedClass(int i)
+        {
+            Console.WriteLine("执行 MyDerivedClass.MyDerivedClass(int i) 构造函数！");
+        }
+        public MyDerivedClass(int i,int j):this(i)
+        {
+            Console.WriteLine("执行 MyDerivedClass.MyDerivedClass(int i,int j) 构造函数！");
+        }
+
+        //使用 static 来指定该 方法是静态的方法
+        // 不能使用实例来调用该方法；
+        public static void Test()
+        {
+            
+        }
+
+        // 该方法是一个实例方法
+        public void Test2()
+        {
+            
+        }
+
+
+        ~MyDerivedClass()
+        { 
+            
+        }
+    
+    }
+}
