@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LicenseCertificate version="2" publisher="Spoon">
+    <LicenseType>Retail</LicenseType>
+    <LicenseModel>Site</LicenseModel>
+    <ProductCode>ALL</ProductCode>
+    <LicenseeName>LineZer0</LicenseeName>
+    <Account>LineZer0</Account>
+    <Signature>
+        b741fb7157f38cbdfbe9e41faa55d72b
+        aba67d350ec7f2ba38236a01e06476f1
+        f4d6e184a49ce6716162935d2768aed3
+        e583afcf7f8b59be415c57898dca0d67
+        289c342633b590bb2b342f97e92872e8
+        6de1434c9e84d6757638786e5abf24cd
+        e6394692e1012b93e517b27d38721c94
+        dac5c0964a6d6b63826e314dd0dbe41d
+    </Signature>
+</LicenseCertificate>
