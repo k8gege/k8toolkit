@@ -1,0 +1,1 @@
+resym.exe是一个处理.LIB文件的符号重命名工具，详见 sdk\static_docs\index.html 中的说明
