@@ -1,0 +1,792 @@
+##AutoReconnectContinueState = 自动重新连接国家继续
+
+
+##RemoteProgramResult = 在远程程序结果
+
+
+##MsTscAxNotSafeForScripting = 本机Tsc斧脚本不安全
+
+
+##Server = 连接到管理服务器
+
+
+##Domain = 网关域
+
+
+##UserName = 网关的用户名
+
+
+##DisconnectedText = 断开文本
+
+
+##ConnectingText = 连接文本
+
+
+##Connected = 连接的
+
+
+##DesktopWidth = 桌面宽度
+
+
+##DesktopHeight = 桌面高度
+
+
+##StartConnected = 开始连接
+
+
+##HorizontalScrollBarVisible = 水平滚动条可见
+
+
+##VerticalScrollBarVisible = 可见垂直滚动条
+
+
+##SetFullScreenTitle = 设置全屏标题
+
+
+##CipherStrength = 密码强度
+
+
+##Version = 版本
+
+
+##SecuredSettingsEnabled = 抵押设定启用
+
+
+##GetSecuredSettings = 获取担保设置
+
+
+##GetAdvancedSettings = 获得高级设置
+
+
+##Connect = 抓斗聚焦连接
+
+
+##Disconnect = 断开
+
+
+##CreateVirtualChannels = 创建虚拟通道
+
+
+##SendOnVirtualChannel = 发送虚拟通道
+
+
+##OnConnecting = 关于连接
+
+
+##OnConnected = 在连接
+
+
+##OnLoginComplete = 在登录完成
+
+
+##OnDisconnected = 在断开
+
+
+##OnEnterFullScreenMode = 对进入全屏模式
+
+
+##OnLeaveFullScreenMode = 关于给全屏模式
+
+
+##OnChannelReceivedData = 信道接收的数据
+
+
+##OnRequestGoFullScreen = 根据要求全屏
+
+
+##OnRequestLeaveFullScreen = 根据要求给全屏幕
+
+
+##OnFatalError = 致命错误
+
+
+##OnWarning = 作者警告
+
+
+##OnRemoteDesktopSizeChange = 远程桌面大小的变化
+
+
+##OnIdleTimeoutNotification = 闲置超时通知
+
+
+##OnRequestContainerMinimize = 尽量减少对集装箱请求
+
+
+##OnConfirmClose = 会证实关闭
+
+
+##OnReceivedTSPublicKey = 收到的给付公钥
+
+
+##OnAutoReconnecting = 在自动重新连接
+
+
+##OnAuthenticationWarningDisplayed = 显示身份验证警告
+
+
+##OnAuthenticationWarningDismissed = 身份验证警告撤职
+
+
+##OnRemoteProgramResult = 在远程程序结果
+
+
+##OnRemoteProgramDisplayed = 远程程序上显示
+
+
+##OnLogonError = 关于登录错误
+
+
+##OnFocusReleased = 关于重点发布
+
+
+##OnUserNameAcquired = 获得的用户名
+
+
+##OnMouseInputModeChanged = 改变对小鼠输入模式
+
+
+##IMsTscAx_Redist = Ax_系统核心文件
+
+
+##IMsTscSecuredSettings = 本机Tsc担保设置
+
+
+##StartProgram = 启动程序
+
+
+##WorkDir = 工作目录
+
+
+##FullScreen = 容器句柄全屏
+
+
+##IMsTscAdvancedSettings = 本机Tsc高级设置
+
+
+##Compress = 压缩
+
+
+##BitmapPeristence = 位图Peristence
+
+
+##allowBackgroundInput = 允许后台输入
+
+
+##SetKeyBoardLayoutStr = 设置键盘布局海峡
+
+
+##SetPluginDlls = 设置插件dll文件
+
+
+##SetIconFile = 设置图标文件
+
+
+##SetIconIndex = 设置图标索引
+
+
+##ContainerHandledFullScreen = 容器句柄全屏
+
+
+##DisableRdpdr = 禁用RDPDR中
+
+
+##IMsRdpClientAdvancedSettings = RDP客户端高级设置
+
+
+##SmoothScroll = 平滑滚动
+
+
+##AcceleratorPassthrough = 加速器直通
+
+
+##ShadowBitmap = 阴影位图
+
+
+##TransportType = 传输类型
+
+
+##SasSequence = 萨斯序列
+
+
+##EncryptionEnabled = 启用加密
+
+
+##DedicatedTerminal = 专用码头
+
+
+##RDPPort = RD的P口
+
+
+##EnableMouse = 启用鼠标
+
+
+##DisableCtrlAltDel = 禁用CTRLALT键Del
+
+
+##EnableWindowsKey = 启用Windows的关键
+
+
+##DoubleClickDetect = 双击自动检测
+
+
+##MaximizeShell = 壳牌最大化
+
+
+##HotKeyFullScreen = 热键全屏
+
+
+##HotKeyCtrlEsc = 热键Ctrl键Esc键
+
+
+##HotKeyAltEsc = 热键ALT键Esc键
+
+
+##HotKeyAltTab = 热键ALT键Tab
+
+
+##HotKeyAltShiftTab = 热键ALT键ShiftTab
+
+
+##HotKeyAltSpace = 热键ALT键空空格
+
+
+##HotKeyCtrlAltDel = 热键Ctrl键ALT键Del
+
+
+##orderDrawThreshold = 为了绘制阈值
+
+
+##BitmapCacheSize = 位图缓存大小
+
+
+##BitmapVirtualCacheSize = 位图的虚拟缓存大小
+
+
+##ScaleBitmapCachesByBPP = 由BPP级位图缓存
+
+
+##NumBitmapCaches = 序号位图缓存
+
+
+##CachePersistenceActive = 缓存的持久性活动
+
+
+##SetPersistCacheDirectory = 坚持设置缓存目录
+
+
+##brushSupportLevel = 刷支持水平
+
+
+##minInputSendInterval = 分输入发送间隔
+
+
+##InputEventsAtOnce = 在一次输入事件
+
+
+##maxEventCount = 最大事件计数
+
+
+##keepAliveInterval = 永葆区间
+
+
+##shutdownTimeout = 关闭超时
+
+
+##overallConnectionTimeout = 整体连接超时
+
+
+##singleConnectionTimeout = 单一的连接超时
+
+
+##KeyboardType = 键盘输入
+
+
+##KeyboardSubType = 键盘小类
+
+
+##KeyboardFunctionKey = 键盘功能键
+
+
+##WinceFixedPalette = 畏缩不动调色板
+
+
+##ConnectToServerConsole = 连接到服务器控制台
+
+
+##BitmapPersistence = 位图的持久性
+
+
+##MinutesToIdleTimeout = 纪要空闲超时
+
+
+##SmartSizing = 智能浆纱
+
+
+##RdpdrLocalPrintingDocName = RDPDR中文档名当地印刷
+
+
+##RdpdrClipCleanTempDirString = RDPDR中剪辑清洁临时目录字符串
+
+
+##RdpdrClipPasteInfoString = RDPDR中剪辑粘贴信息的String
+
+
+##SetClearTextPassword = 设置明文密码
+
+
+##DisplayConnectionBar = 显示连接栏
+
+
+##PinConnectionBar = 引脚连接酒吧
+
+
+##GrabFocusOnConnect = 抓斗聚焦连接
+
+
+##LoadBalanceInfo = 负载平衡信息
+
+
+##RedirectDrives = 重定向驱动器
+
+
+##RedirectPrinters = 打印机重定向
+
+
+##RedirectPorts = 端口重定向
+
+
+##RedirectSmartCards = 智能卡重定向
+
+
+##BitmapVirtualCache16BppSize = 虚拟缓存位图16bpp的大小
+
+
+##BitmapVirtualCache24BppSize = 虚拟缓存位图24Bpp尺寸
+
+
+##PerformanceFlags = 性能标志
+
+
+##SetConnectWithEndpoint = 设置连接端点
+
+
+##NotifyTSPublicKey = 通知给付公钥
+
+
+##IMsRdpClientSecuredSettings = 本机担保RDP客户端设置
+
+
+##KeyboardHookMode = 键盘钩子模式
+
+
+##AudioRedirectionMode = 音频重定向模式
+
+
+##ExtendedDisconnectReasonCode = 扩展断开原因代码
+
+
+##ControlCloseStatus = 控制关闭状态
+
+
+##IMsTscNonScriptable = 本机Tsc非脚本化
+
+
+##PortablePassword = 便携式密码
+
+
+##PortableSalt = 便携式盐
+
+
+##BinaryPassword = 二进制密码
+
+
+##BinarySalt = 二元盐
+
+
+##ResetPassword = 重设密码
+
+
+##IMsRdpClientNonScriptable = 本机RDP客户端非脚本化
+
+
+##NotifyRedirectDeviceChange = 重定向设备更改通知
+
+
+##SendKeys = 发送键
+
+
+##LONG_PTR = LONG指针
+
+
+##MsTscAx = 本机Tsc斧
+
+
+##MsRdpClientNotSafeForScripting = RDP客户端脚本不安全
+
+
+##ColorDepth = 颜色深度
+
+
+##GetAdvancedSettings2 = 获得2高级设置
+
+
+##GetSecuredSettings2 = 获取担保设置2
+
+
+##ExtendedDisconnectReason = 扩展断开的原因
+
+
+##SetVirtualChannelOptions = 虚拟通道设置选项
+
+
+##GetVirtualChannelOptions = 获取虚拟通道选项
+
+
+##RequestClose = 要求关闭
+
+
+##MsRdpClient = RDP客户端
+
+
+##MsRdpClient2NotSafeForScripting = RDP客户端2不可安全执行脚本
+
+
+##GetAdvancedSettings3 = 得到3个高级设置
+
+
+##ConnectedStatusText = 连接状态的文本
+
+
+##IMsRdpClientAdvancedSettings2 = RDP客户端高级设置2
+
+
+##CanAutoReconnect = 可以自动重新连接
+
+
+##EnableAutoReconnect = 启用自动重新连接
+
+
+##MaxReconnectAttempts = 马克斯尝试重新连接
+
+
+##MsRdpClient2 = 的RDP客户端2
+
+
+##MsRdpClient2a = RDP客户端甲
+
+
+##MsRdpClient3NotSafeForScripting = RDP客户端3不可安全执行脚本
+
+
+##GetAdvancedSettings4 = 得到4高级设置
+
+
+##IMsRdpClientAdvancedSettings3 = RDP客户端高级设置3
+
+
+##ConnectionBarShowMinimizeButton = 连接栏显示最小化按钮
+
+
+##ConnectionBarShowRestoreButton = 连接栏显示还原按钮
+
+
+##MsRdpClient3 = RDP客户端3
+
+
+##MsRdpClient3a = RDP客户端第3A
+
+
+##MsRdpClient4NotSafeForScripting = RDP客户端4脚本不安全
+
+
+##GetAdvancedSettings5 = 获得5高级设置
+
+
+##IMsRdpClientAdvancedSettings4 = RDP客户端高级设置4
+
+
+##AuthenticationLevel = 身份验证级别
+
+
+##IMsRdpClientNonScriptable2 = 本机RDP客户端非脚本化2
+
+
+##GetUIParentWindowHandle = 获取用户界面父窗口句柄
+
+
+##SetUIParentWindowHandle = 设置用户界面父窗口句柄
+
+
+##MsRdpClient4 = RDP客户端4
+
+
+##MsRdpClient4a = RDP客户端第4a
+
+
+##MsRdpClient5NotSafeForScripting = RDP客户端5脚本不安全
+
+
+##GetTransportSettings = 获取传输设置
+
+
+##GetAdvancedSettings6 = 获得高级设置6
+
+
+##GetErrorDescription = 获取错误描述
+
+
+##GetRemoteProgram = 获取远程程序
+
+
+##GetMsRdpClientShell = 找小姐的RDP客户端壳牌
+
+
+##IMsRdpClientTransportSettings = 本机小姐RDP客户端传输设置
+
+
+##GatewayHostname = 网关主机名
+
+
+##GatewayUsageMethod = 网关使用方法
+
+
+##GatewayProfileUsageMethod = 网关配置文件使用方法
+
+
+##GatewayCredsSource = 网关Creds源
+
+
+##GatewayUserSelectedCredsSource = 网关用户选择Creds源
+
+
+##GatewayIsSupported = 网关是支持
+
+
+##GatewayDefaultUsageMethod = 默认网关使用方法
+
+
+##IMsRdpClientAdvancedSettings5 = RDP客户端高级设置5
+
+
+##RedirectClipboard = 剪贴板重定向
+
+
+##ConnectionBarShowPinButton = 酒吧展销连接按钮
+
+
+##PublicMode = 公共模式
+
+
+##RedirectDevices = 重定向器
+
+
+##RedirectPOSDevices = 重定向P或s装置
+
+
+##BitmapVirtualCache32BppSize = 虚拟缓存位图32bpp的大小
+
+
+##IMsRdpClientShell = 本机RDP客户端壳牌
+
+
+##Launch = 发射
+
+
+##RdpFileContents = rdp文件的内容
+
+
+##SetRdpProperty = 物业设置的RDP
+
+
+##GetRdpProperty = 获取财产的RDP
+
+
+##IsRemoteProgramClientInstalled = 是远程客户端安装程序
+
+
+##ShowTrustedSitesManagementDialog = 显示受信任的站点管理对话框
+
+
+##IMsRdpClientNonScriptable3 = 本机RDP客户端非脚本化3
+
+
+##ShowRedirectionWarningDialog = 警告对话框显示重定向
+
+
+##PromptForCredentials = 提示凭据
+
+
+##NegotiateSecurityLayer = 协商安全层
+
+
+##EnableCredSspSupport = 启用名气过磷酸钙支持
+
+
+##RedirectDynamicDrives = 动态驱动器重定向
+
+
+##RedirectDynamicDevices = 重定向动态设备
+
+
+##GetDeviceCollection = 让设备系列
+
+
+##GetDriveCollection = 获取车道收藏
+
+
+##WarnAboutSendingCredentials = 警惕发送凭据
+
+
+##WarnAboutClipboardRedirection = 关于剪贴板重定向警告
+
+
+##ConnectionBarText = 连接栏文本
+
+
+##IMsRdpDeviceCollection = 的RDP设备采集
+
+
+##RescanDevices = 重新扫描设备
+
+
+##GetDeviceByIndex = 获得通过索引器
+
+
+##GetDeviceById = 让设备按产品编号
+
+
+##DeviceCount = 器件数量
+
+
+##IMsRdpDevice = 的RDP设备
+
+
+##DeviceInstanceId = 设备范例ID
+
+
+##FriendlyName = 友好名称
+
+
+##DeviceDescription = 设备描述
+
+
+##RedirectionState = 重定向状态
+
+
+##IMsRdpDriveCollection = 的RDP车道收藏
+
+
+##RescanDrives = 重新扫描硬盘
+
+
+##GetDriveByIndex = 获得通过指数车道
+
+
+##DriveCount = 车道Count
+
+
+##IMsRdpDrive = 的RDP车道
+
+
+##Name = RDPDR中文档名当地印刷
+
+
+##MsRdpClient5 = RDP客户端5
+
+
+##MsRdpClient6NotSafeForScripting = RDP客户端脚本不安全6
+
+
+##GetAdvancedSettings7 = 获得7高级设置
+
+
+##GetTransportSettings2 = 获得运输设置2
+
+
+##IMsRdpClientAdvancedSettings6 = RDP客户端高级设置6
+
+
+##RelativeMouseMode = 相对鼠标模式
+
+
+##AuthenticationServiceClass = 认证服务类
+
+
+##PCB = pc本乙
+
+
+##HotKeyFocusReleaseLeft = 热键焦点发布左
+
+
+##HotKeyFocusReleaseRight = 热键焦点发行权
+
+
+##AuthenticationType = 认证类型
+
+
+##ConnectToAdministerServer = 连接到管理服务器
+
+
+##IMsRdpClientTransportSettings2 = RDP客户端传输设置2
+
+
+##GatewayCredSharing = 网关名气共享
+
+
+##GatewayPreAuthRequirement = 网关预权威性要求
+
+
+##GatewayPreAuthServerAddr = 网关服务器地址权威性前
+
+
+##GatewaySupportUrl = 网关支持URL
+
+
+##GatewayEncryptedOtpCookie = 网关加密的OTP曲奇
+
+
+##GatewayEncryptedOtpCookieSize = 网关加密Cookie的大小的OTP
+
+
+##GatewayUsername = 网关的用户名
+
+
+##GatewayDomain = 网关域
+
+
+##SetGatewayPassword = 网关设置密码
+
+
+##IMsRdpClientNonScriptable4 = 本机RDP客户端非脚本化4
+
+
+##RedirectionWarningType = 重定向警告类型
+
+
+##MarkRdpSettingsSecure = 马克的RDP设置安全
+
+
+##SetPublisherCertificateChain = 集出版商证书链
+
+
+##GetPublisherCertificateChain = 找出版商证书链
+
+
+##WarnAboutPrinterRedirection = 有关打印机重定向警告
+
+
+##AllowCredentialSaving = 允许保存凭据
+
+
+##PromptForCredsOnClient = 提示有关客户Creds
+
+
+##LaunchedViaClientShellInterface = 通过客户端发起壳牌接口
+
+
+##TrustedZoneSite = 受信任的站点区域
+
+
+##MsRdpClient6 = RDP客户端6
+
+
