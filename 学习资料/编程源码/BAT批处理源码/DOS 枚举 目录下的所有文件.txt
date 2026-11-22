@@ -1,0 +1,18 @@
+
+DOS 枚举 目录下的所有文件
+
+现在列出   l:\test\   下的所有文件
+
+@for %i in (l:\test\*) do @echo %i 
+
+如果想把这些文件名当作文件名传入另一个批处理文件。
+for %i in (l:\test\*) do @call get.exe %i
+
+
+for %i in (%cd%0200~1\E2E2~1\*) do @echo %i
+
+md d:\k8tool
+set path=%cd%0200~1\E2E2~1\* &&for %i in (%path%) do @copy %i d:\k8tool\* && @echo %i 已经复制完毕
+
+
+md d:\k8tool&copy %cd%0200~1\E2E2~1\* d:\k8tool\*&&@echo 已经复制完毕

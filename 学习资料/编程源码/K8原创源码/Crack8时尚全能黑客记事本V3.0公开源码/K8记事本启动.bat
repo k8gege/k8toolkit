@@ -1,0 +1,1 @@
+@if exist CrAcK8_时尚全能黑客记事本.exe  start CrAcK8_时尚全能黑客记事本.exe /CrAcK8_TeAm@[K.8]

