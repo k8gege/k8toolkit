@@ -1,0 +1,818 @@
+开始查找模块.....
+查询到模块开始于: 0x00400000  终止于: 0x006E5000  模块名称: Q:\QQ吻个人桌面管理器\QQ吻桌面.exe
+查询到CWinApp::CWinApp()地址[ 00 ]:0x4B04C2
+API添加成功,hook API成功: CWinApp::CWinApp() 地址:0x4B04C2
+查询到模块开始于: 0x10000000  终止于: 0x1012B000  模块名称: ksfmon.dll
+查询到模块开始于: 0x5ADC0000  终止于: 0x5ADF7000  模块名称: UxTheme.dll
+查询到模块开始于: 0x5D170000  终止于: 0x5D20A000  模块名称: COMCTL32.dll
+查询到模块开始于: 0x5EF10000  终止于: 0x5EFDC000  模块名称: OPENGL32.dll
+查询到模块开始于: 0x5FDD0000  终止于: 0x5FE25000  模块名称: NETAPI32.dll
+查询到模块开始于: 0x62C20000  终止于: 0x62C29000  模块名称: LPK.dll
+查询到模块开始于: 0x68E20000  终止于: 0x68E40000  模块名称: GLU32.dll
+查询到模块开始于: 0x71A10000  终止于: 0x71A18000  模块名称: WS2HELP.dll
+查询到模块开始于: 0x71A20000  终止于: 0x71A37000  模块名称: WS2_32.dll
+查询到模块开始于: 0x71A40000  终止于: 0x71A4B000  模块名称: WSOCK32.dll
+查询到模块开始于: 0x72F70000  终止于: 0x72F96000  模块名称: WINSPOOL.DRV
+查询到模块开始于: 0x73640000  终止于: 0x7366E000  模块名称: msctfime.ime
+查询到模块开始于: 0x736D0000  终止于: 0x7371B000  模块名称: DDRAW.dll
+查询到模块开始于: 0x73AC0000  终止于: 0x73AD7000  模块名称: AVIFIL32.dll
+查询到模块开始于: 0x73B30000  终止于: 0x73B36000  模块名称: DCIMAN32.dll
+查询到模块开始于: 0x73B40000  终止于: 0x73B60000  模块名称: MSVFW32.dll
+查询到模块开始于: 0x73FA0000  终止于: 0x7400B000  模块名称: USP10.dll
+查询到模块开始于: 0x74680000  终止于: 0x746CC000  模块名称: MSCTF.dll
+查询到模块开始于: 0x74C90000  终止于: 0x74CB0000  模块名称: oledlg.dll
+查询到模块开始于: 0x75430000  终止于: 0x754A1000  模块名称: CRYPTUI.dll
+查询到模块开始于: 0x762F0000  终止于: 0x762F5000  模块名称: MSIMG32.dll
+查询到模块开始于: 0x76300000  终止于: 0x7631D000  模块名称: IMM32.dll
+查询到模块开始于: 0x76320000  终止于: 0x76367000  模块名称: comdlg32.dll
+查询到模块开始于: 0x765E0000  终止于: 0x76673000  模块名称: CRYPT32.dll
+查询到模块开始于: 0x76680000  终止于: 0x76726000  模块名称: WININET.dll
+查询到模块开始于: 0x76990000  终止于: 0x76ACD000  模块名称: ole32.dll
+查询到模块开始于: 0x76B10000  终止于: 0x76B3A000  模块名称: WINMM.dll
+查询到模块开始于: 0x76BC0000  终止于: 0x76BCB000  模块名称: PSAPI.DLL
+查询到模块开始于: 0x76C00000  终止于: 0x76C2E000  模块名称: WINTRUST.dll
+查询到模块开始于: 0x76C60000  终止于: 0x76C88000  模块名称: IMAGEHLP.dll
+查询到模块开始于: 0x76D70000  终止于: 0x76D92000  模块名称: appHelp.dll
+查询到模块开始于: 0x76DB0000  终止于: 0x76DC2000  模块名称: MSASN1.dll
+查询到模块开始于: 0x76E50000  终止于: 0x76E5E000  模块名称: rtutils.dll
+查询到模块开始于: 0x76E60000  终止于: 0x76E72000  模块名称: rasman.dll
+查询到模块开始于: 0x76E80000  终止于: 0x76EAF000  模块名称: TAPI32.dll
+查询到模块开始于: 0x76EB0000  终止于: 0x76EEC000  模块名称: RASAPI32.dll
+查询到模块开始于: 0x76F30000  终止于: 0x76F5C000  模块名称: WLDAP32.dll
+查询到模块开始于: 0x76FA0000  终止于: 0x7701F000  模块名称: CLBCatQ.DLL
+查询到模块开始于: 0x77020000  终止于: 0x770BA000  模块名称: COMRes.dll
+查询到模块开始于: 0x770F0000  终止于: 0x7717B000  模块名称: OLEAUT32.dll
+查询到模块开始于: 0x77180000  终止于: 0x77283000  模块名称: COMCTL32.dll
+查询到模块开始于: 0x77BB0000  终止于: 0x77BC5000  模块名称: MSACM32.dll
+查询到模块开始于: 0x77BD0000  终止于: 0x77BD8000  模块名称: VERSION.dll
+查询到模块开始于: 0x77BE0000  终止于: 0x77C38000  模块名称: msvcrt.dll
+查询到模块开始于: 0x77D10000  终止于: 0x77DA0000  模块名称: USER32.dll
+查询到模块开始于: 0x77DA0000  终止于: 0x77E49000  模块名称: ADVAPI32.dll
+查询到模块开始于: 0x77E50000  终止于: 0x77EE3000  模块名称: RPCRT4.dll
+查询到模块开始于: 0x77EF0000  终止于: 0x77F39000  模块名称: GDI32.dll
+查询到模块开始于: 0x77F40000  终止于: 0x77FB6000  模块名称: SHLWAPI.dll
+查询到模块开始于: 0x77FC0000  终止于: 0x77FD1000  模块名称: Secur32.dll
+查询到模块开始于: 0x7C800000  终止于: 0x7C91E000  模块名称: KERNEL32.dll
+查询到模块开始于: 0x7C920000  终止于: 0x7C9B6000  模块名称: ntdll.dll
+查询到模块开始于: 0x7D590000  终止于: 0x7DD84000  模块名称: SHELL32.dll
+查询到模块开始于: 0x7E550000  终止于: 0x7E6C3000  模块名称: SHDOCVW.dll
+查询到模块开始于: 0x7EAE0000  终止于: 0x7EB81000  模块名称: urlmon.dll
+共查找到56个模块.....
+DetourTransactionCommit函数处理中........(10秒内未返回说明调用失败)
+成功获取函数: 11243......
+     
+返回地址: 00460234  函数名称: SetDIBitsToDevice(GDI32.dll) 
+SetDIBitsToDevice: 将一幅与设备无关位图的全部或部分数据直接复制到一个设备
+          hDC=0x9C013920
+          XDest=0x00000013
+          YDest=0x00000003
+          dwWidth=0x00000270
+          dwHeight=0x00000018
+          XSrc=0x00000000
+          YSrc=0x00000000
+          uStartScan=0x00000000
+          cScanLines=0x00000018
+          lpvBits=0x02164E70
+          lpbmi=0x00CB6F80
+          fuColorUse=0x00000000
+SetDIBitsToDevice返回值: 0x00000018
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分14秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分14秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-13"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 00460234  函数名称: SetDIBitsToDevice(GDI32.dll) 
+SetDIBitsToDevice: 将一幅与设备无关位图的全部或部分数据直接复制到一个设备
+          hDC=0x25013889
+          XDest=0x00000013
+          YDest=0x00000003
+          dwWidth=0x00000270
+          dwHeight=0x00000018
+          XSrc=0x00000000
+          YSrc=0x00000000
+          uStartScan=0x00000000
+          cScanLines=0x00000018
+          lpvBits=0x02164E70
+          lpbmi=0x00CB6F80
+          fuColorUse=0x00000000
+SetDIBitsToDevice返回值: 0x00000018
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分16秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分16秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 00460234  函数名称: SetDIBitsToDevice(GDI32.dll) 
+SetDIBitsToDevice: 将一幅与设备无关位图的全部或部分数据直接复制到一个设备
+          hDC=0x78013DF0
+          XDest=0x00000013
+          YDest=0x00000003
+          dwWidth=0x00000270
+          dwHeight=0x00000018
+          XSrc=0x00000000
+          YSrc=0x00000000
+          uStartScan=0x00000000
+          cScanLines=0x00000018
+          lpvBits=0x02164E70
+          lpbmi=0x00CB6F80
+          fuColorUse=0x00000000
+SetDIBitsToDevice返回值: 0x00000018
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分17秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分18秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-16"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5B2A  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString=""
+lstrlen返回值: 0x00000000(字符串长度)
+     
+返回地址: 00460234  函数名称: SetDIBitsToDevice(GDI32.dll) 
+SetDIBitsToDevice: 将一幅与设备无关位图的全部或部分数据直接复制到一个设备
+          hDC=0x7601309E
+          XDest=0x00000013
+          YDest=0x00000003
+          dwWidth=0x00000270
+          dwHeight=0x00000018
+          XSrc=0x00000000
+          YSrc=0x00000000
+          uStartScan=0x00000000
+          cScanLines=0x00000018
+          lpvBits=0x02164E70
+          lpbmi=0x00CB6F80
+          fuColorUse=0x00000000
+SetDIBitsToDevice返回值: 0x00000018
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分19秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分19秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-18"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5B2A  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString=""
+lstrlen返回值: 0x00000000(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分20秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分20秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-19"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 00460234  函数名称: SetDIBitsToDevice(GDI32.dll) 
+SetDIBitsToDevice: 将一幅与设备无关位图的全部或部分数据直接复制到一个设备
+          hDC=0x7601309E
+          XDest=0x00000013
+          YDest=0x00000003
+          dwWidth=0x00000270
+          dwHeight=0x00000018
+          XSrc=0x00000000
+          YSrc=0x00000000
+          uStartScan=0x00000000
+          cScanLines=0x00000018
+          lpvBits=0x02164E70
+          lpbmi=0x00CB6F80
+          fuColorUse=0x00000000
+SetDIBitsToDevice返回值: 0x00000018
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A5B2A  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString=""
+lstrlen返回值: 0x00000000(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分22秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分22秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-21"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 00460234  函数名称: SetDIBitsToDevice(GDI32.dll) 
+SetDIBitsToDevice: 将一幅与设备无关位图的全部或部分数据直接复制到一个设备
+          hDC=0x57013FF7
+          XDest=0x00000013
+          YDest=0x00000003
+          dwWidth=0x00000270
+          dwHeight=0x00000018
+          XSrc=0x00000000
+          YSrc=0x00000000
+          uStartScan=0x00000000
+          cScanLines=0x00000018
+          lpvBits=0x02164E70
+          lpbmi=0x00CB6F80
+          fuColorUse=0x00000000
+SetDIBitsToDevice返回值: 0x00000018
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A5B2A  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString=""
+lstrlen返回值: 0x00000000(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分24秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分24秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-23"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5B2A  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString=""
+lstrlen返回值: 0x00000000(字符串长度)
+     
+返回地址: 00460234  函数名称: SetDIBitsToDevice(GDI32.dll) 
+SetDIBitsToDevice: 将一幅与设备无关位图的全部或部分数据直接复制到一个设备
+          hDC=0x57013FF7
+          XDest=0x00000013
+          YDest=0x00000003
+          dwWidth=0x00000270
+          dwHeight=0x00000018
+          XSrc=0x00000000
+          YSrc=0x00000000
+          uStartScan=0x00000000
+          cScanLines=0x00000018
+          lpvBits=0x02164E70
+          lpbmi=0x00CB6F80
+          fuColorUse=0x00000000
+SetDIBitsToDevice返回值: 0x00000018
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分25秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分25秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-24"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分26秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分26秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-25"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 00460234  函数名称: SetDIBitsToDevice(GDI32.dll) 
+SetDIBitsToDevice: 将一幅与设备无关位图的全部或部分数据直接复制到一个设备
+          hDC=0x35013AF6
+          XDest=0x00000013
+          YDest=0x00000003
+          dwWidth=0x00000270
+          dwHeight=0x00000018
+          XSrc=0x00000000
+          YSrc=0x00000000
+          uStartScan=0x00000000
+          cScanLines=0x00000018
+          lpvBits=0x02164E70
+          lpbmi=0x00CB6F80
+          fuColorUse=0x00000000
+SetDIBitsToDevice返回值: 0x00000018
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 004A7D9F  函数名称: GetWindowTextLengthA(USER32.dll) 
+GetWindowTextLengthA: 调查窗口标题文字或控件内容的长短
+          hWnd=0x0001043E
+GetWindowTextLengthA返回值: 0x0000002A
+     
+返回地址: 004A7DB7  函数名称: GetWindowTextA(USER32.dll) 
+GetWindowTextA: 取得一个窗体的标题文字,或者一个控件的内容
+          hWnd=0x0001043E
+          lpBuffer=0x0214DB88
+          nBufferSize=0x0000002B
+          存入缓冲区中的数据: "QQ吻个人桌面管理器   2011年2月21日  星期一"
+GetWindowTextA返回值: 0x0000002A(文本的长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="QQ吻个人桌面管理器   2011年2月21日  星期一"
+lstrlen返回值: 0x0000002A(字符串长度)
+     
+返回地址: 00495523  函数名称: GetLocalTime(KERNEL32.dll) 
+GetLocalTime: 在lpSystemTime结构中装载本地日期和时间
+          lpSystemTime=0x0012FB28
+          系统时间: 2011年2月21日15时33分28秒
+GetLocalTime返回值: 0x0012FB28(无返回值)
+     
+返回地址: 0049552D  函数名称: GetSystemTime(KERNEL32.dll) 
+GetSystemTime: 在一个SYSTEMTIME中载入当前系统时间,这个时间采用的是"协同世界时间"（即UTC,也叫做GMT）格式
+          lpSystemTime=0x0012FB18
+          系统时间: 2011年2月21日7时33分28秒
+GetSystemTime返回值: 0x0012FB18(无返回值)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-156"
+lstrlen返回值: 0x00000004(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-15"
+lstrlen返回值: 0x00000003(字符串长度)
+     
+返回地址: 004A5E22  函数名称: lstrlen(KERNEL32.dll) 
+lstrlen: 获取字符串的长度
+          lpString="-33"
+lstrlen返回值: 0x00000003(字符串长度)

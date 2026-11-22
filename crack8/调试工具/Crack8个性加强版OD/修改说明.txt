@@ -1,0 +1,64 @@
+
+Crack8个性修改版OD  简介
+
+1  Crack8个性版OD.exe  基于^0^-Fly经典版上的修改 
+
+2  OLLYDBG.EXE官方原版（http://www.ollydbg.de/odbg110.zip）
+
+3  dbghelp.dll升级到6.8.4.0版本（取自官方OD里） 可反很多ANTI
+
+4  PSAPI.DLL升级到5.0.1641.1版本（来自官方OD里）
+
+5  Cmdline.dll  BOOKMARK.DLL 插件来自官方OD（来自官方OD里）
+
+6  Loaddll.exe WIN7修正版 修复OD在win7下面无法载入插件问题（来自看雪插件区）
+
+7  Crack8BP.DLL 目前最完善的API断点设置插件 分VB5 VB6 (修改自看雪插件区  欢迎大家多提供些API以更加全面）
+
+8  带自定义工具菜单插件  大家可以在OD上加上自己喜欢的工具 不用VSTART了 哈哈（来自看雪插件区）
+
+9  ApiBreak.dll  支持 XP系统下使用 万能断点 
+
+10 Asm2Clipboard.dll  仅复制汇编代码到剪切板 大大方便了我们的工作
+
+11 AdvancedOlly.dll 修正版 可加载127个插件 解决了 与StrongOD.v0.2.6.415之间的一个BUG
+
+12 cmdbar.dll  右下角命令框 比官方的CMDLINE.DLL方便很多
+
+13 CleanupEx.dll 看雪修正版  真的能删除UDD 
+
+14 ODbgScript.dll  带载入脚本的历史记录
+
+15 DeJunk.dll 花指令清除插件1.2
+
+16 OllyDump.dll V3.0.110
+
+17 0D加载自定义工具   目前只对 Crack8_OD 有效  当然 大家也可以自己改 
+
+18 使用 StrongOD v0.2.7.433时   要把cmdbar.dll 拿出来 （因为两者之间有点小冲突）
+
+默认加载的工具如下    大家可自行添加自己喜欢的工具
+
+2009-09-13  20:52    <DIR>          C32Asm
+2009-09-13  20:51    <DIR>          Crack8专版PEID
+2009-10-28  12:27         6,320,128 Crack8时尚全能记事本V1.0.exe
+2009-09-13  20:52    <DIR>          DeDeDark3.5
+2009-09-13  20:55    <DIR>          eXeScope6.5注册版
+2009-09-13  20:54    <DIR>          FixResDemo最终版
+2009-03-15  23:56           744,448 freeRes0.94.exe
+2009-09-13  20:53    <DIR>          ImpREC FINAL 1.7七彩版
+2009-09-13  20:52    <DIR>          LordPE豪华版
+2009-09-13  20:54    <DIR>          OC偏移量转换器
+2009-09-13  20:54    <DIR>          Overlay 最终版
+2009-09-13  20:55    <DIR>          PE Explorer1.98
+2007-09-12  08:57           270,336 Resource Binder 2.6.exe
+2009-09-13  20:55    <DIR>          ResScope194
+2009-09-13  20:55    <DIR>          Restorator2007
+2009-09-13  20:51    <DIR>          SoftSnoop2009V0.2
+2009-09-13  20:52    <DIR>          VB Decompiler7.0
+2006-05-12  21:49           435,712 VBExplorer.exe
+2002-03-24  20:23           881,664 看雪ResHacker.exe
+
+以上第一次修改  本想在完善点在放出来的 但是太忙了 一不小心国庆就到了  就提前放出来了 
+
+转载注明出处：http://crack8.qzone.qq.com           2009-11-1  by Crack8 vs QQ吻  制作
