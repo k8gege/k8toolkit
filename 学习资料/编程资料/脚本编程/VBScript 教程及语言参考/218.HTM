@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>Weekday 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="Day 函数,日期数据类型,日期,Weekday 函数,vbFriday,vbMonday,vbSunday,weekdays,vbTuesday,vbSaturday,vbThursday,vbUseSystem,vbWednesday"><META NAME="Description" CONTENT="Weekday 函数"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Weekday 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="219.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回代表一星期中某天的整数。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>Weekday(</b><b>date,</b> [<b>firstdayofweek</b>]<b>)</b><p>
+
+ <b>Weekday</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>date</b></FONT></TD>
+<TD><FONT SIZE="2">可以代表<A HREF="0.htm#defDateExpression">日期</A>的任意表达式。如果 <b>date</b> 参数中包含 <A HREF="0.htm#defNull"><B>Null</B></A>，则返回 <b>Null</b>。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>firstdayofweek</b></FONT></TD>
+<TD><FONT SIZE="2">指定星期中第一天的常数。如果省略，默认使用 
+<b>vbSunday</b>。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>设置</H5>
+<BLOCKQUOTE> <b>firstdayofweek</b> 参数有如下设置：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=25%><FONT SIZE="2"><b>常数</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2"><b>值</b></FONT></TD>
+			<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbUseSystem</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">0</FONT></TD>
+			<TD><FONT SIZE="2">使用区域语言支持 (NLS) API 设置。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbSunday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">1</FONT></TD>
+			<TD><FONT SIZE="2">星期日</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbMonday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">2</FONT></TD>
+			<TD><FONT SIZE="2">星期一</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbTuesday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">3</FONT></TD>
+			<TD><FONT SIZE="2">星期二</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbWednesday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">4</FONT></TD>
+			<TD><FONT SIZE="2">星期三</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbThursday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">5</FONT></TD>
+			<TD><FONT SIZE="2">星期四</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbFriday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">6</FONT></TD>
+			<TD><FONT SIZE="2">星期五</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbSaturday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">7</FONT></TD>
+			<TD><FONT SIZE="2">星期六</FONT></TD></TR>
+</TABLE></BLOCKQUOTE>
+
+<H5>返回值</H5>
+<BLOCKQUOTE> <b>Weekday</b> 函数返回如下值：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>常数</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2"><b>值</b></FONT></TD>
+			<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbSunday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">1</FONT></TD>
+			<TD><FONT SIZE="2">星期日</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbMonday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">2</FONT></TD>
+			<TD><FONT SIZE="2">星期一</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbTuesday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">3</FONT></TD>
+			<TD><FONT SIZE="2">星期二</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbWednesday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">4</FONT></TD>
+			<TD><FONT SIZE="2">星期三</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbThursday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">5</FONT></TD>
+			<TD><FONT SIZE="2">星期四</FONT></TD></TR><TR 
+
+VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbFriday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">6</FONT></TD>
+				<TD><FONT SIZE="2">星期五</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=25%><FONT SIZE="2"><b>vbSaturday</b></FONT></TD>
+		<TD WIDTH=10% ALIGN=CENTER><FONT SIZE="2">7</FONT></TD>
+			<TD><FONT SIZE="2">星期六</FONT></TD></TR>
+
+</TABLE></BLOCKQUOTE><P>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

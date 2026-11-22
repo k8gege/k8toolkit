@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>MsgBox 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="MsgBox 函数,消息框,模式窗体,系统模式,警告可视,可视警告,应用程序模式,显示提示,显示消息,提示显示,用户选择的按钮,消息显示,创建对话框,对话框创建,警告,提示,按钮,消息,对话框">
+<META NAME="Description" CONTENT="MsgBox 函数"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>MsgBox 函数</B></FONT>
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE>
+ 
+<FONT SIZE="2"><P>
+<A HREF="165.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>在对话框中显示消息，等待用户单击按钮，并返回一个值指示用户单击的按钮。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>MsgBox(</b><B>prompt</B>[<b>, </b><B>buttons</B>][<b>, </b><B>title</B>][<b>, </b><B>helpfile</B><b>, </b><B>context</B>]<b>)</b><P>
+
+ <b>MsgBox</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>prompt</B></FONT></TD>
+		<TD><FONT SIZE="2">作为消息显示在对话框中的<A HREF="0.htm#defStringExpression">字符串表达式</A>。<B>prompt</B> 的最大长度大约是 1024 个字符，这取决于所使用的字符的宽度。如果 <B>prompt</B> 中包含多个行，则可在各行之间用回车符 (<b>Chr(</b>13<b>)</b>)、换行符 (<b>Chr(</b>10<b>)</b>) 或回车换行符的组合 (<b>Chr(</b>13<b>) & Chr(</b>10<b>)</b>) 分隔各行。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>buttons</B></FONT></TD>
+		<TD><FONT SIZE="2"><A HREF="0.htm#defNumericExpression">数值表达式</A>，是表示指定显示按钮的数目和类型、使用的图标样式，默认按钮的标识以及消息框样式的数值的总和。有关数值，请参阅“设置”部分。如果省略，则 <B>buttons</B> 的默认值为 0。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>title</B></FONT></TD>
+		<TD><FONT SIZE="2">显示在对话框标题栏中的字符串表达式。如果省略 <B>title</B>，则将应用程序的名称显示在标题栏中。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>helpfile</B></FONT></TD>
+		<TD><FONT SIZE="2">字符串表达式，用于标识为对话框提供上下文相关帮助的帮助文件。如果已提供 <B>helpfile</B>，则必须提供 <B>context</B>。在 16 位系统平台上不可用。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>context</B></FONT></TD>
+		<TD><FONT SIZE="2">数值表达式，用于标识由帮助文件的作者指定给某个帮助主题的上下文编号。如果已提供 <B>context</B>，则必须提供 <B>helpfile</B>。在 16 位系统平台上不可用。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>设置</H5>
+<BLOCKQUOTE> <B>buttons</B> 参数可以有以下值：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>常数</b></FONT></TD>
+		
+<TD><FONT SIZE="2"><b>值</b></FONT></TD>			
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbOKOnly</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">0</FONT></TD>
+			
+<TD><FONT SIZE="2">只显示<B>确定</B>按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbOKCancel</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">1</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>确定</B>和<B>取消</B>按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbAbortRetryIgnore</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">2</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>放弃</B>、<B>重试</B>和<B>忽略</B>按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbYesNoCancel</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">3</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>是</B>、<B>否</B>和<B>取消</B>按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbYesNo</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">4</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>是</B>和<B>否</B>按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbRetryCancel</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">5</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>重试</B>和<B>取消</B>按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbCritical</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">16</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>临界信息</B>图标。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbQuestion</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">32</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>警告查询</B>图标。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbExclamation</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">48</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>警告消息</B>图标。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbInformation</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">64</FONT></TD>
+			
+<TD><FONT SIZE="2">显示<B>信息消息</B>图标。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbDefaultButton1</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">0</FONT></TD>
+			
+<TD><FONT SIZE="2">第一个按钮为默认按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbDefaultButton2</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">256</FONT></TD>
+			
+<TD><FONT SIZE="2">第二个按钮为默认按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbDefaultButton3</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">512</FONT></TD>
+			
+<TD><FONT SIZE="2">第三个按钮为默认按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbDefaultButton4</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">768</FONT></TD>
+			
+<TD><FONT SIZE="2">第四个按钮为默认按钮。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbApplicationModal</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">0</FONT></TD>
+			
+<TD><FONT SIZE="2">应用程序模式：用户必须响应消息框才能继续在当前应用程序中工作。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbSystemModal</b></FONT></TD>
+		
+<TD ALIGN=CENTER><FONT SIZE="2">4096</FONT></TD>
+			
+<TD><FONT SIZE="2">系统模式：在用户响应消息框前，所有应用程序都被挂起。</FONT></TD></TR>
+</TABLE>
+
+<P>
+
+第一组值 (0 - 5) 用于描述对话框中显示的按钮类型与数目；第二组值 (16, 32, 48, 64) 用于描述图标的样式；第三组值 (0, 256, 512) 用于确定默认按钮；而第四组值 (0, 4096) 则决定消息框的样式。在将这些数字相加以生成 <B>buttons</B> 参数值时，只能从每组值中取用一个数字。  
+</BLOCKQUOTE>
+
+<H5>返回值</H5>
+<BLOCKQUOTE> <B>MsgBox</B> 函数有以下返回值：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE="2"><b>常数</b></FONT></TD>
+		
+<TD  WIDTH=5% ALIGN=CENTER><FONT SIZE="2"><b>值</b></FONT></TD>
+			
+<TD><FONT SIZE="2"><b>按钮</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>vbOK</b></FONT></TD>
+		
+<TD  WIDTH=5% ALIGN=CENTER><FONT SIZE="2">1</FONT></TD>
+			
+<TD><FONT SIZE="2"><B>确定</B></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>vbCancel</b></FONT></TD>
+		
+<TD  WIDTH=5% ALIGN=CENTER><FONT SIZE="2">2</FONT></TD>
+			
+<TD><FONT SIZE="2"><B>取消</B></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>vbAbort</b></FONT></TD>
+		
+<TD  WIDTH=5% ALIGN=CENTER><FONT SIZE="2">3</FONT></TD>
+			
+<TD><FONT SIZE="2"><B>放弃</B></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>vbRetry</b></FONT></TD>
+		
+<TD WIDTH=5% ALIGN=CENTER><FONT SIZE="2">4</FONT></TD>
+			
+<TD><FONT SIZE="2"><B>重试</B></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>vbIgnore</b></FONT></TD>
+		
+<TD WIDTH=5% ALIGN=CENTER><FONT SIZE="2">5</FONT></TD>
+			
+<TD><FONT SIZE="2"><B>忽略</B></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>vbYes</b></FONT></TD>
+		
+<TD WIDTH=5% ALIGN=CENTER><FONT SIZE="2">6</FONT></TD>
+			
+<TD><FONT SIZE="2"><B>是</B></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>vbNo</b></FONT></TD>
+		
+<TD WIDTH=5% ALIGN=CENTER><FONT SIZE="2">7</FONT></TD>
+			
+<TD><FONT SIZE="2"><B>否</B></FONT></TD></TR>
+</TABLE></BLOCKQUOTE>
+
+
+<H5>说明</H5>
+
+<BLOCKQUOTE>如果同时提供了 <B>helpfile</B> 和 <B>context</B>，则用户可以按 <B>F1</B> 键以查看与上下文相对应的帮助主题。<P>
+如果对话框显示<B>取消</B>按钮，则按 <B>ESC</B> 键与单击<B>取消</B>的效果相同。如果对话框包含<B>帮助</B>按钮，则有为对话框提供的上下文相关帮助。但是在单击其他按钮之前，不会返回任何值。
+</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

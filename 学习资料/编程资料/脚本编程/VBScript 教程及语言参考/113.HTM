@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>FormatPercent 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT=""><META NAME="Description" CONTENT="FormatPercent 函数"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>FormatPercent 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="114.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>
+	返回表达式，此表达式已被格式化为尾随有 % 符号的百分比（乘以 100 ）。 
+</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+	<b>FormatPercent(</b><B>expression</B>[<b>,</b><B>NumDigitsAfterDecimal</B> [<b>,</b><B>IncludeLeadingDigit</B> [<b>,</b><B>UseParensForNegativeNumbers</B> [<B><b>,</b>GroupDigits</B>]]]]<b>)</b><P>
+
+ <b>FormatPercent</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>expression</B></FONT></TD>
+		<TD WIDTH=85%><FONT SIZE="2">必选。要被格式化的表达式。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>NumDigitsAfterDecimal</B></FONT></TD>
+		<TD WIDTH=155%><FONT SIZE="2">可选。指示小数点右侧显示位数的数值。默认值为 -1，指示使用的是计算机的区域设置。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>IncludeLeadingDigit</B></FONT></TD>
+		<TD WIDTH=85%><FONT SIZE="2">可选。三态常数，指示是否显示小数值小数点前面的零。有关数值，请参阅“设置”部分。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>UseParensForNegativeNumbers</B></FONT></TD>
+		<TD WIDTH=85%><FONT SIZE="2">可选。三态常数，指示是否将负值置于括号中。有关数值，请参阅“设置”部分。 </FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>GroupDigits</B></FONT></TD>
+		<TD WIDTH=85%><FONT SIZE="2">可选。三态常数，指示是否使用计算机区域设置中指定的数字分组符号将数字分组。有关数值，请参阅“设置”部分。 </FONT></TD></TR>
+
+</TABLE>
+</BLOCKQUOTE><P>
+
+<H5>设置</H5>
+<BLOCKQUOTE>
+ <B>IncludeLeadingDigit</B>、<B>UseParensForNegativeNumbers</B> 和 <B>GroupDigits</B> 参数可以有以下值：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>常数</b></FONT></TD>
+	<TD WIDTH=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>TristateTrue</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">-1</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">True</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>TristateFalse</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">0</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">False</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>TristateUseDefault</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">-2</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">使用计算机区域设置中的设置。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE><P>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+当省略一个或多个可选参数时，由计算机区域设置提供被省略参数的值。
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR>
+<TR><TD VALIGN=TOP><FONT SIZE="2"><B>注意</B>  所有设置信息均取自区域设置的“数字”附签。</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+
+</BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>VarType 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="vbDate,vbLong,vbNull,VarType 函数,vbArray,vbEmpty,vbError,vbDouble,vbObject,vbSingle,vbString,vbBoolean,vbInteger,vbVariant,vbCurrency,vbDataObject,Variant 子类型信息,Variant 数据类型"><META NAME="Description" CONTENT="VarType 函数"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>VarType 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p>
+<A HREF="217.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回指示变量子类型的值。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>VarType(varname)</b><P>
+ <b>varname</b> 参数可以是任何<A HREF="0.htm#defVariable">变量</A>。</BLOCKQUOTE>
+
+<H5>返回值</H5>
+<BLOCKQUOTE> <b>VarType</b> 函数返回下列值：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>常数</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+			<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbEmpty</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   0</FONT></TD>
+			<TD><FONT SIZE="2"><A HREF="0.htm#defEmpty"><b>Empty</b></A>（未初始化）</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbNull</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   1</FONT></TD>
+			<TD><FONT SIZE="2"><A HREF="0.htm#defNull"><B>Null</B></A>（无有效数据）</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbInteger</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   2</FONT></TD>
+			<TD><FONT SIZE="2">整数</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbLong</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   3</FONT></TD>
+			<TD><FONT SIZE="2">长整数</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbSingle</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   4</FONT></TD>
+			<TD><FONT SIZE="2">单精度浮点数</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbDouble</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   5</FONT></TD>
+			<TD><FONT SIZE="2">双精度浮点数</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbCurrency</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   6</FONT></TD>
+			<TD><FONT SIZE="2">货币</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbDate</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   7</FONT></TD>
+			<TD><FONT SIZE="2">日期</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbString</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   8</FONT></TD>
+			<TD><FONT SIZE="2">字符串</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbObject</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">   9</FONT></TD>
+			<TD><FONT SIZE="2"><A HREF="0.htm#defOLEAutomationObject">Automation 对象</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbError</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">  10</FONT></TD>
+			<TD><FONT SIZE="2">错误</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbBoolean</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">  11</FONT></TD>
+			<TD><FONT SIZE="2">Boolean</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbVariant</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">  12</FONT></TD>
+			<TD><FONT SIZE="2">Variant（只和变量数组一起使用）</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbDataObject</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">  13</FONT></TD>
+			<TD><FONT SIZE="2">数据访问对象</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbByte</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">  17</FONT></TD>
+			<TD><FONT SIZE="2">字节</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbArray</b></FONT></TD>
+		<TD ALIGN=CENTER width=10%><FONT SIZE="2">8192</FONT></TD>
+			<TD><FONT SIZE="2">数组</FONT></TD></TR></TABLE>
+
+<P>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR>
+<TR><TD VALIGN=TOP><FONT SIZE="2"><b>注意</B>  这些<A HREF="0.htm#defConstant">常数</A>是由 VBScript 指定的。所以，这些名称可在代码中随处使用，以代替实际值。</FONT></TD></TR><TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE> <b>VarType</b> 函数从不通过自己返回 Array 的值。它总是要添加一些其他值来指示一个具体类型的数组。当 Variant 的值被添加到 Array 的值中以表明 <b>VarType</b> 函数的参数是一个数组时，它才被返回。例如，对一个整数数组的返回值是 2 + 8192 的计算结果，或 8194。如果一个对象有默认<A HREF="0.htm#defProperty">属性</A>，则 <b>VarType(object)</b> 返回对象默认属性的类型。</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

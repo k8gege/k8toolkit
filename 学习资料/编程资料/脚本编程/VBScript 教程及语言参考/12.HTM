@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//IETF/DTD HTML//EN">
+<HTML>
+<HEAD><TITLE>对象样例</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="robots" CONTENT="noindex">
+<SCRIPT LANGUAGE="VBScript">
+<!--
+
+' 在用户单击按钮 cmdChangeIt 时将标签中的文本修改为文本框中的文本。
+Sub cmdChangeIt_onClick
+	Dim TheForm
+	Set TheForm = Document.LabelControls
+	lblActiveLbl.Caption = TheForm.txtNewText.Value
+End Sub
+
+' 每次单击按钮时，将标签旋转 45 度。
+Sub cmdRotate_onClick
+	Dim TheForm
+	Set TheForm = Document.LabelControls
+	lblActiveLbl.Angle = (lblActiveLbl.Angle + 45) Mod 360
+End Sub
+
+-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<FONT FACE="宋体" SIZE=2>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END--> <!-- global default -->
+<H3>对象样例</H3>
+<HR NOSHADE SIZE=1>
+<P>此页面需要在 ActiveX&trade; 库中有可用的标签控件。<P>
+<TABLE CELLPADDING=3 BORDER=0 CELLSPACING=0>
+<TR> <TD>
+<!-- 插入标签对象并设置它的默认值。 -->
+<OBJECT
+	classid="clsid:99B42120-6EC7-11CF-A6C7-00AA00A47DD2"
+	id=lblActiveLbl
+	width=250
+	height=250
+	align=left
+	hspace=20
+	vspace=0
+>
+<PARAM NAME="Angle" VALUE="90">
+<PARAM NAME="Alignment" VALUE="4">
+<PARAM NAME="BackStyle" VALUE="0">
+<PARAM NAME="Caption" VALUE="一个简单标签">
+<PARAM NAME="FontName" VALUE="宋体">
+<PARAM NAME="FontSize" VALUE="20">
+<PARAM NAME="FontBold" VALUE="1">
+<PARAM NAME="FrColor" VALUE="0">
+</OBJECT>
+</TD>
+<TD>
+<FORM NAME="LabelControls" Action="">
+<INPUT TYPE="TEXT" NAME="txtNewText" SIZE=25>
+<INPUT TYPE="BUTTON" NAME="cmdChangeIt" VALUE="更改文本">
+<INPUT TYPE="BUTTON" NAME="cmdRotate" VALUE="旋转标签">
+</FORM>
+</TD></TR></TABLE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

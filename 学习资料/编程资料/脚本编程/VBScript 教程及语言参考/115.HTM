@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>GetObject 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="对象,;GetObject 函数,;对象变量,;创建对象,;对象, 创建,;"><META NAME="Description" CONTENT="GetObject 函数"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>GetObject 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="116.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回对文件中 <a href="0.htm#defOLEAutomationObject">Automation 对象</a>的引用。
+</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+	<b>GetObject(</b>[<B>pathname</B>] [<B>,</B> <B>class</B>]<b>)</b><P>
+
+ <b>GetObject </b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>pathname</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。字符串，包含待检索对象的文件的完整路径和名称。如果省略 <B>pathname</B> 则必须有 <B>class</B>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>class</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。字符串，对象的<a href="0.htm#defClass">类</a>。</FONT></TD></TR>
+</TABLE><p>
+
+ <B>class</B> <a href="0.htm#defArg">参数</a>的语法格式为 <B>appname.objectype</B>，其中包括以下部分：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>appname</B></FONT></TD>
+		<TD><FONT SIZE="2">必选。字符串，提供对象的应用程序名称。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>objectype</B></FONT></TD>
+		<TD><FONT SIZE="2">必选。字符串，要创建的对象的类型或类。</FONT></TD></TR>
+</TABLE>
+
+</BLOCKQUOTE><P>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+使用 <b>GetObject</b> 函数可以访问文件中的 Automation 对象，而且可以将该对象赋值给对象变量。使用 <b>Set</b> 语句将 <b>GetObject</b> 返回的对象赋值给对象变量。例如：<p>
+<BLOCKQUOTE><PRE><FONT FACE="宋体" size=2>Dim CADObject
+Set CADObject = <FONT COLOR="#FF0000">GetObject(</FONT>"C:\CAD\SCHEMA.CAD"<FONT COLOR="#FF0000">)</FONT>
+</FONT></PRE></BLOCKQUOTE>
+在执行上述代码时，就会启动与指定路径名相关联的应用程序，同时激活指定文件中的对象。如果 <B>pathname</B> 是零长度字符串 ("")，<b>GetObject</b> 返回指定类型的新对象实例。如果省略 <B>pathname</B> 参数，<b>GetObject</b> 将返回指定类型的当前活动对象。如果没有指定类型的对象，就会出现错误。<P>
+某些应用程序允许只激活文件的一部分，方法是在文件名后加上一个惊叹号 (!) 以及用于标识要激活的文件部分的字符串。有关创建这种字符串的详细信息，请参阅创建对象的应用程序的有关文档。<P>
+例如，在绘图应用程序中，一个存放在文件中的图可能有多层。可以使用下述代码来激活图 <FONT FACE="宋体" SIZE="2">SCHEMA.CAD</FONT> 中的某一层：<p>
+<BLOCKQUOTE><PRE><FONT FACE="宋体" size=2>Set LayerObject = <FONT COLOR ="#FF0000">GetObject(</FONT>"C:\CAD\SCHEMA<FONT COLOR="#FF0000">.</FONT>CAD!Layer3"<FONT Color="#FF0000">)</FONT>
+</FONT></PRE></BLOCKQUOTE>
+如果没有指定对象的类，则 Automation 会根据所提供的文件名，确定要启动的应用程序以及要激活的对象。但是，有些文件可能支持多个对象类。例如，图可能支持三种不同类型的对象：Application 对象、Drawing 对象和 Toolbar 对象，所有这些都是同一个文件中的一部分。使用可选的 <B>class</B> 参数可以指定文件中要激活的对象。例如：<p>
+<BLOCKQUOTE><pre><FONT FACE="宋体" size=2>Dim MyObject
+Set MyObject = <FONT COLOR="#FF0000">GetObject(</FONT>"C:\DRAWINGS\SAMPLE.DRW", "FIGMENT.DRAWING"<FONT COLOR="#FF0000">)</FONT></FONT></pre></BLOCKQUOTE>
+
+在上述样例中，<FONT FACE="Courier" SIZE="2">FIGMENT</FONT> 是绘图应用程序的名称，而 <FONT FACE="Courier" SIZE="3">DRAWING</FONT> 则是它支持的一种对象类型。对象被激活之后，就可以在代码中使用所定义的对象变量来引用它。在前面的例子中，可以使用对象变量 <FONT FACE="Courier" SIZE="2">MyObject</FONT> 访问新对象的<a href="0.htm#defProperty">属性</a>和方法。例如：
+<BLOCKQUOTE><pre><FONT FACE="宋体" size=2>MyObject.Line 9, 90
+MyObject.InsertText 9, 100, "嗨，你好！"
+MyObject.SaveAs "C:\DRAWINGS\SAMPLE.DRW"
+</FONT></pre></BLOCKQUOTE>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR>
+<TR><TD VALIGN=TOP><FONT SIZE="2"><B>注意</B>  在对象的当前实例存在，或者要用已加载的文件创建对象时，请使用 <b>GetObject</b> 函数。如果没有当前实例，并且不准备使用已加载的文件启动对象，请使用 <b>CreateObject</b> 函数。</P>
+
+如果对象已注册为单个实例的对象，则无论执行多少次 <b>CreateObject</b>，都只能创建该对象的一个实例。若使用单个实例对象，当使用零长度字符串 ("") 语法调用时，<b>GetObject</b> 总是返回同一个实例，而如果省略 <B>pathname</B> 参数，则会出现错误。
+</FONT></TD></TR><TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+</BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

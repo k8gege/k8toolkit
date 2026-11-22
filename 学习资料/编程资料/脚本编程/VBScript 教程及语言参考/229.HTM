@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">               
+<HTML>
+<HEAD>
+<TITLE>未包含在 VBScript 中的 Visual Basic for Applications 特性</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN"> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Description" CONTENT="未包含在 VBScript 中的 Visual Basic for Applications 特性">
+</HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>未包含在 VBScript 中的 Visual Basic for Applications 特性</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START-->&nbsp;<!--START PAGE END--><P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2> <P>
+
+<HR NOSHADE SIZE=2>
+
+<BR><BLOCKQUOTE>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE=2><b>类别</b></FONT></TD>
+<TD><FONT SIZE=2><b>特性/关键字</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>数组处理</FONT></TD>
+<TD><FONT SIZE=2>Option Base<BR>
+声明数组下界 &lt;&gt; 0</FONT></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>集合</FONT></TD>
+<TD><FONT SIZE=2>Add, Count, Item, Remove<BR>使用 ! 字符访问集合（例如，MyCollection!Foo）</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>条件编译</FONT></TD>
+<TD><FONT SIZE=2>#Const<BR>#If...Then...#Else</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>控制流程</FONT></TD>
+<TD><FONT SIZE=2>
+	DoEvents<BR>
+	GoSub...Return, GoTo<BR>
+	On Error GoTo<BR> 
+	On...GoSub, On...GoTo<BR>
+	Line numbers, Line labels<BR>
+	With...End With</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>转换</FONT></TD>
+<TD><FONT SIZE=2>CVar, CVDate<BR>Str, Val</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>数据类型</FONT></TD>
+<TD><FONT SIZE=2>除 Variant 外的所有固有数据类型<BR>
+	Type...End Type</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>日期/时间</FONT></TD>
+<TD><FONT SIZE=2>Date 语句、Time 语句<BR>
+	Timer</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>DDE</FONT></TD>
+<TD><FONT SIZE=2>LinkExecute, LinkPoke, LinkRequest, LinkSend</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>调试</FONT></TD>
+<TD><FONT SIZE=2>Debug.Print<BR>
+	End, Stop</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>声明</FONT></TD>
+<TD><FONT SIZE=2>Declare （声明 DLL ）<BR>
+	New<BR>
+	Optional<BR>
+	ParamArray<BR>
+	Property Get, Property Let, Property Set<BR>
+	Static</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>错误处理</FONT></TD>
+<TD><FONT SIZE=2>Erl<BR>Error<BR>
+	On Error...Resume<BR>
+	Resume, Resume Next</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>文件输入/输出</FONT></TD>
+<TD><FONT SIZE=2>所有传统的基本文件输入/输出 (I/O)</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>财务</FONT></TD>
+<TD><FONT SIZE=2>所有财务函数</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>对象操作</FONT></TD>
+<TD><FONT SIZE=2>TypeOf</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>对象</FONT></TD>
+<TD><FONT SIZE=2>Clipboard<BR>Collection</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>运算符</FONT></TD>
+<TD><FONT SIZE=2>Like</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>选项</FONT></TD>
+<TD><FONT SIZE=2>Def<i>type</I><BR>
+	Option Base<BR>
+	Option Compare<BR>
+	Option Private Module</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>选择条件</FONT></TD>
+<TD><FONT SIZE=2>包含 <b>Is</b> 关键字或任何比较运算符的表达式<BR>
+	包含一系列使用 <b>To</b> 关键字的数值的表达式</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>字符串</FONT></TD>
+<TD><FONT SIZE=2>固定长度字符串<BR>
+	LSet, RSet<BR>Mid 语句<BR>
+	StrConv</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2>使用对象</FONT></TD>
+<TD><FONT SIZE=2>使用 ! 对集合的访问</FONT></TD></TR>
+</TABLE></BLOCKQUOTE>
+<p>
+
+
+<hr noshade SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

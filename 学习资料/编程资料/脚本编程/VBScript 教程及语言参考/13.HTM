@@ -1,0 +1,208 @@
+<HTML>
+<HEAD>
+<TITLE>VBScript 运算符</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="CATEGORY" CONTENT="教程">
+
+<META NAME="Description" CONTENT="VBScript 运算符">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>VBScript 运算符</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstutor.htm">VBScript 教程</A> <BR>&nbsp;<A HREF="5.htm">上一页</A> | <A HREF="4.htm">下一页</A> <P></FONT>
+
+
+</TD></TR>
+</TABLE> 
+&nbsp;<BR><HR NOSHADE SIZE=1>
+
+
+
+<BLOCKQUOTE>
+VBScript 有一套完整的运算符，包括<A HREF="235.htm">算术运算符</A>、<A HREF="224.htm">比较运算符</A>、<A HREF="236.htm">连接运算符</A>和<A HREF="239.htm">逻辑运算符</A>。</BLOCKQUOTE>
+<H5>运算符优先级</H5>
+<BLOCKQUOTE>当表达式包含多个运算符时，将按预定顺序计算每一部分，这个顺序被称为运算符优先级。可以使用括号越过这种优先级顺序，强制首先计算表达式的某些部分。运算时，总是先执行括号中的运算符，然后再执行括号外的运算符。但是，在括号中仍遵循标准运算符优先级。<P>
+
+当表达式包含多种运算符时，首先计算算术运算符，然后计算比较运算符，最后计算逻辑运算符。所有比较运算符的优先级相同，即按照从左到右的顺序计算比较运算符。算术运算符和逻辑运算符的优先级如下所示：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR BGCOLOR=#DDDDDD VALIGN=TOP ALIGN=CENTER>
+	<TD COLSPAN=2><FONT SIZE=2><B>算术运算符</B></FONT></TD>
+	<TD COLSPAN=2><FONT SIZE=2><B>比较运算符</B></FONT></TD>
+	<TD COLSPAN=2 ><FONT SIZE=2><B>逻辑运算符</B></TD></FONT></TR>
+
+<TR  BGCOLOR=#DDDDDD VALIGN=TOP>
+	<TD><FONT SIZE=2><B>描述</B></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2><B>符号</B></FONT></TD>
+  	<TD><FONT SIZE=2><B>描述</B></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2><B>符号</B></FONT></TD>
+	<TD><FONT SIZE=2><B>描述</B></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2><B>符号</B></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="425.htm">求幂</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>^</FONT></TD>
+  	<TD><FONT SIZE=2><A HREF="224.htm">等于</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>=</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="437.htm">逻辑非</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>Not</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="441.htm">负号</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>-</FONT></TD>
+  	<TD><FONT SIZE=2><A HREF="224.htm">不等于</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&lt;&gt;</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="417.htm">逻辑与</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>And</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="435.htm">乘</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>*</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="224.htm">小于</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&lt;</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="439.htm">逻辑或</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>Or</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="421.htm">除</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>/</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="224.htm">大于</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&gt;</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="443.htm">逻辑异或</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>Xor</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="429.htm">整除</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>\</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="224.htm">小于等于</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&lt;=</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="423.htm">逻辑等价</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>Eqv</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="433.htm">求余</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>Mod</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="224.htm">大于等于</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&gt;=</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="427.htm">逻辑隐含</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>Imp</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="415.htm">加</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>+</FONT></TD>
+	<TD><FONT SIZE=2><A HREF="431.htm">对象引用比较</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>Is</FONT></TD>
+	<TD><FONT SIZE=2>&nbsp </FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&nbsp </FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="441.htm">减</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>-</FONT></TD>
+	<TD><FONT SIZE=2>&nbsp </FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&nbsp </FONT></TD>
+	<TD><FONT SIZE=2>&nbsp </FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&nbsp </TD></FONT></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><A HREF="419.htm">字符串连接</A></FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&</FONT></TD>
+	<TD><FONT SIZE=2>&nbsp </FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&nbsp </FONT></TD>
+	<TD><FONT SIZE=2>&nbsp </FONT></TD>
+	<TD ALIGN=CENTER><FONT SIZE=2>&nbsp </FONT></TD></TR>
+
+</TABLE>
+
+<FONT SIZE=2>
+当乘号与除号同时出现在一个表达式中时，按从左到右的顺序计算乘、除运算符。同样当加与减同时出现在一个表达式中时，按从左到右的顺序计算加、减运算符。<P>
+
+字符串连接 (&) 运算符不是算术运算符，但是在优先级顺序中，它排在所有算术运算符之后和所有比较运算符之前。<B>Is</B> 运算符是对象引用比较运算符。它并不比较对象或对象的值，而只是进行检查，判断两个对象引用是否引用同一个对象。
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

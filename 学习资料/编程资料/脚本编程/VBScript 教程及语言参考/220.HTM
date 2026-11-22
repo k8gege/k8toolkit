@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>WeekDayName 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT=""><META NAME="Description" CONTENT="WeekDayName 函数"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>WeekDayName 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><P>
+<A HREF="221.htm">请参阅</A></FONT>
+<hr noshade size=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回一个字符串，表示星期中指定的某一天。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>WeekDayName(</b><b>weekday</b><b>,</b> <b>abbreviate</b><b>,</b> <b>firstdayofweek</b><b>)</b><P>
+ <b>WeekDayName</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>weekday</b></FONT></TD>
+		<TD WIDTH=85%><FONT SIZE="2">必选。星期中某天的数值定义。各天的数值定义取决于 <b>firstdayofweek</b> 参数设置。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>abbreviate</b></FONT></TD>
+		<TD WIDTH=155%><FONT SIZE="2">可选。Boolean 值，指明是否缩写表示星期各天的名称。如果省略， 默认值为 <b>False</b>，即不缩写星期各天的名称。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><b>firstdayofweek</b></FONT></TD>
+		<TD WIDTH=155%><FONT SIZE="2">可选。指明星期第一天的数值。关于数值，请参阅“设置”部分。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>设置</H5>
+<BLOCKQUOTE> <b>firstdayofweek</b> 参数有以下值：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>常数</b></FONT></TD>
+	<TD WIDTH=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbUseSystem</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">0</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">使用区域语言支持 (NLS) API 设置。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbSunday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">1</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">星期日（默认）</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbMonday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">2</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">星期一</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbTuesday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">3</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">星期二</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbWednesday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">4</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">星期三</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbThursday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">5</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">星期四</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbFriday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">6</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">星期五</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbSaturday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">7</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">星期六</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE><p>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

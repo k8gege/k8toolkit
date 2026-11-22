@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>派生数学函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="数学,角,正割,反正弦,度,相反,余弦,反余弦,反正割,余切,算术,对数,反余割,反余切,数学函数,双曲函数,派生数学函数,三角函数"><META NAME="Description" CONTENT="派生数学函数"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>派生数学函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<P><FONT SIZE="2"><A HREF="227.htm">请参阅</A></FONT>
+<HR NOSHADE SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>下列是由固有数学函数派生的非固有数学函数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>函数</b></FONT></TD>
+<TD><FONT SIZE="2"><b>派生的等效公式</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Secant（正割）</FONT></TD>
+<TD><FONT SIZE="2">Sec(X) = 1 / Cos(X)</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Cosecant（余割）</FONT></TD>
+<TD><FONT SIZE="2">Cosec(X) = 1 / Sin(X)</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Cotangent（余切）</FONT></TD>
+<TD><FONT SIZE="2">Cotan(X) = 1 / Tan(X)</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Sine（反正弦）</FONT></TD>
+<TD><FONT SIZE="2">Arcsin(X) = Atn(X / Sqr(-X * X + 1))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Cosine（反余弦）</FONT></TD>
+<TD><FONT SIZE="2">Arccos(X) = Atn(-X / Sqr(-X * X + 1)) + 2 * Atn(1)</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Secant（反正割）</FONT></TD>
+<TD><FONT SIZE="2">Arcsec(X) = Atn(X / Sqr(X * X - 1)) + Sgn((X) -1) * (2 * Atn(1))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Cosecant（反余割）</FONT></TD>
+<TD><FONT SIZE="2">Arccosec(X) = Atn(X / Sqr(X * X - 1)) + (Sgn(X) - 1) * (2 * Atn(1))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Cotangent（反余切）</FONT></TD>
+<TD><FONT SIZE="2">Arccotan(X) = Atn(X) + 2 * Atn(1)</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Hyperbolic Sine（双曲正弦）</FONT></TD>
+<TD><FONT SIZE="2">HSin(X) = (Exp(X) - Exp(-X)) / 2 </FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Hyperbolic Cosine（双曲余弦）</FONT></TD>
+<TD><FONT SIZE="2">HCos(X) = (Exp(X) + Exp(-X)) / 2</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Hyperbolic Tangent（双曲正切）</FONT></TD>
+<TD><FONT SIZE="2">HTan(X) = (Exp(X) - Exp(-X)) / (Exp(X) + Exp(-X))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Hyperbolic Secant（双曲正割）</FONT></TD>
+<TD><FONT SIZE="2">HSec(X) = 2 / (Exp(X) + Exp(-X))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Hyperbolic Cosecant（双曲余割）</FONT></TD>
+<TD><FONT SIZE="2">HCosec(X) = 2 / (Exp(X) - Exp(-X))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Hyperbolic Cotangent（双曲余切）</FONT></TD>
+<TD><FONT SIZE="2">HCotan(X) = (Exp(X) + Exp(-X)) / (Exp(X) - Exp(-X))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Hyperbolic Sine（反双曲正弦）</FONT></TD>
+<TD><FONT SIZE="2">HArcsin(X) = Log(X + Sqr(X * X + 1))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Hyperbolic Cosine（反双曲余弦）</FONT></TD>
+<TD><FONT SIZE="2">HArccos(X) = Log(X + Sqr(X * X - 1))</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Hyperbolic Tangent（反双曲正切）</FONT></TD>
+<TD><FONT SIZE="2">HArctan(X) = Log((1 + X) / (1 - X)) / 2</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Hyperbolic Secant（反双曲正割）</FONT></TD>
+<TD><FONT SIZE="2">HArcsec(X) = Log((Sqr(-X * X + 1) + 1) / X)</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Hyperbolic Cosecant（反双曲余割）</FONT></TD>
+<TD><FONT SIZE="2">HArccosec(X) = Log((Sgn(X) * Sqr(X * X + 1) +1) / X)</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">Inverse Hyperbolic Cotangent（反双曲余切）</FONT></TD>
+<TD><FONT SIZE="2">HArccotan(X) = Log((X + 1) / (X - 1)) / 2</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">以 N 为底的对数</FONT></TD>
+<TD><FONT SIZE="2">LogN(X) = Log(X) / Log(N)</FONT></TD></TR></TABLE></BLOCKQUOTE><p>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

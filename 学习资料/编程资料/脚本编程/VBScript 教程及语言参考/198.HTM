@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>StrComp 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+
+<META NAME="Keywords" CONTENT="StrComp 函数,文本比较,区分大小写,匹配字符串,比较字符串,字符串比较,字符串匹配,文本,字符串"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>StrComp 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+
+</TD></TR>
+</TABLE> 
+<P>
+<FONT SIZE="2">
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>
+返回指示<A HREF="0.htm#defStringComparison">字符串比较</A>结果的值。 
+</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+<b>StrComp(</b><B>string1</B><b>, </b><B>string2</B>[<b>, </b><B>compare</B>]<b>)</b><p>
+ <b>StrComp</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+	<TD><FONT SIZE="2"><b>描述</b></FONT></TD>
+</TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>string1</B></FONT></TD>
+	<TD><FONT SIZE="2">必选。任意有效的<A HREF="0.htm#defStringExpression">字符串表达式</A>。</FONT></TD>
+</TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>string2</B></FONT></TD>
+	<TD><FONT SIZE="2">必选。任意有效的字符串表达式。</FONT></TD>
+</TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>compare</B></FONT></TD>
+	<TD><FONT SIZE="2">可选。指示在计算字符串时使用的比较类型的数值。如果省略，则执行二进制比较。有关数值，请参阅“设置”部分。</FONT></TD>
+</TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>设置</H5>
+<BLOCKQUOTE>
+ <B>compare</B> 参数可以有以下值：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE="2"><b>常数</b></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbBinaryCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">0</FONT></TD>
+			<TD WIDTH= "*"><FONT SIZE="2">执行二进制比较。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbTextCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">1</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2">执行文本比较。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbDatabaseCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">2</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2">执行基于数据库（在此数据库中执行比较）中包含的信息的比较。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>返回值</H5>
+<BLOCKQUOTE> <B>StrComp</B> 函数有以下返回值：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>如果</b></FONT></TD>
+	<TD><FONT SIZE="2"><b>StrComp 返回</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>string1</B> 小于 <B>string2</B></FONT></TD>
+	<TD><FONT SIZE="2">-1</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>string1</B> 等于 <B>string2</B></FONT></TD>
+	<TD><FONT SIZE="2">0</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>string1</B> 大于 <B>string2</B></FONT></TD>
+	<TD><FONT SIZE="2">1</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>string1</B> 或 <B>string2</B> 为 
+	<A HREF="0.htm#defNull"><b>Null</b></A></FONT></TD>
+	<TD><FONT SIZE="2"><b>Null</b></FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE><p>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>Split 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT=""><META NAME="Description" CONTENT="Split 函数"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Split 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+
+<FONT SIZE="2"><P>
+<A HREF="196.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回基于 0 的一维<A HREF="0.htm#defArray">数组</A>，其中包含指定数目的子字符串。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>Split(</b><B>expression</B>[<B>,</B> <B>delimiter</B>[<B>,</B> <B>count</B>[<B>,</B> <B>start</B>]]]<b>)</b><p>
+
+ <b>Split</b> 函数的语法有以下参数：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>expression</B></FONT></TD>
+		<TD><FONT SIZE="2">必选。<A HREF="0.htm#defStringExpression">字符串表达式</A>，包含子字符串和分隔符。如果 <B>expression</B> 为零长度字符串，<b>Split</b> 返回空数组，即不包含元素和数据的数组。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>delimiter</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。用于标识子字符串界限的字符。如果省略，使用空格 ("") 作为分隔符。如果 <B>delimiter</B> 为零长度字符串，则返回包含整个 <B>expression</B> 字符串的单元素数组。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>count</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。被返回的子字符串数目，-1 指示返回所有子字符串。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>compare</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。指示在计算子字符串时使用的比较类型的数值。有关数值，请参阅“设置”部分。</FONT></TD></TR>
+
+
+</TABLE>
+
+</BLOCKQUOTE><P>
+
+<H5>设置</H5>
+<BLOCKQUOTE> <B>compare</B> 参数可以有以下值：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE="2"><b>常数</b></FONT></TD>
+		<TD WIDTH=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbBinaryCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">0</FONT></TD>
+			<TD WIDTH= "*"><FONT SIZE="2">执行二进制比较。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbTextCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">1</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2">执行文本比较。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbDatabaseCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">2</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2">执行基于数据库（在此数据库中执行比较）中包含的信息的比较。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE><P>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>Rnd 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="Rnd 函数,随机,数学函数,随机数,数随机,假随机数,随机数假,生成随机数,数字"><META NAME="Description" CONTENT="Rnd 函数"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Rnd 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="176.htm">请参阅</A></FONT>
+<HR NOSHADE SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回一个随机数。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>Rnd</b>[<b>(</b><b>number</b><b>)</b>]<P>
+ <b>number</b> 参数可以是任意有效的<A HREF="0.htm#defNumericExpression">数值表达式</A>。</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE> <b>Rnd</b> 函数返回一个小于 1 但大于或等于 0  的值。<P>
+ <b>number</b> 的值决定了 <b>Rnd</b> 生成随机数的方式：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>如果 <b>number</b> 为</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Rnd 生成</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">小于零</FONT></TD>
+<TD><FONT SIZE="2">每次都相同的值，使用 <b>number</b> 作为<A HREF="0.htm#defSeed">种子</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">大于零</FONT></TD>
+<TD><FONT SIZE="2">序列中的下一个随机数。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">等于零</FONT></TD>
+<TD><FONT SIZE="2">最近生成的数。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">省略</FONT></TD>
+<TD><FONT SIZE="2">序列中的下一个随机数。</FONT></TD></TR></TABLE><P>
+
+因每一次连续调用 <b>Rnd</b> 函数时都用序列中的前一个数作为下一个数的种子，所以对于任何最初给定的种子都会生成相同的数列。<P>
+在调用 <b>Rnd</b> 之前，先使用无参数的 <b>Randomize</b> 语句初始化随机数生成器，该生成器具有基于系统计时器的种子。<P>
+
+要产生指定范围的随机整数，请使用以下公式：<P>
+<BLOCKQUOTE><PRE><FONT FACE="宋体" size=2>Int((<b>upperbound</b> - <b>lowerbound</b> + 1) * <FONT COLOR=#FF0000>Rnd</FONT> + <b>lowerbound</b>)
+</FONT></PRE>
+</BLOCKQUOTE>
+
+这里， <b>upperbound</b> 是此范围的上界，而 <b>lowerbound</b> 是此范围内的下界。
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR><TR>
+<TD VALIGN=TOP><FONT SIZE="2"><b>注意</b>  要重复随机数的序列，请在使用数值参数调用 <b>Randomize</b> 之前，立即用负值参数调用 <b>Rnd</b>。使用同样 <b>number</b> 值的 <b>Randomize</b> 不能重复先前的随机数序列。</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

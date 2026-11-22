@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>InputBox 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="InputBox 函数,模式窗体,输入文本,文本输入,显示提示,提示消息,提示显示,消息显示,创建对话框,对话框创建,文本,提示,消息,对话框"><META NAME="Description" CONTENT="InputBox 函数"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>InputBox 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="122.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>在对话框中显示提示，等待用户输入文本或单击按钮，并返回文本框内容。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>InputBox(</b><B>prompt</B>[<b>, </b><B>title</B>][<b>, </b><B>default</B>][<b>, </b><B>xpos</B>][<b>, </b><B>ypos</B>][<b>, </b><B>helpfile</B><b>, </b><B>context</B>]<b>)</b><P>
+ <b>InputBox</b> 函数的语法有以下参数：<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>prompt</B></FONT></TD>
+<TD><FONT SIZE="2"><A HREF="0.htm#defStringExpression">字符串表达式</A>，作为消息显示在对话框中。<B>prompt</B> 的最大长度大约是 1024 个字符，这取决于所使用的字符的宽度。如果 <B>prompt</B> 中包含多个行，则可在各行之间用回车符 (<b>Chr(</b>13<b>)</b>)、换行符 (<b>Chr(</b>10<b>)</b>) 或回车换行符的组合 (<b>Chr(</b>13<b>) & Chr(</b>10<b>)</b>) 以分隔各行。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>title</B></FONT></TD>
+<TD><FONT SIZE="2">显示在对话框标题栏中的字符串表达式。如果省略 <B>title</B>，则应用程序的名称将显示在标题栏中。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>default</B></FONT></TD>
+<TD><FONT SIZE="2">显示在文本框中的字符串表达式，在没有其它输入时作为默认的响应值。如果省略 <B>default</B>，则文本框为空。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>xpos</B></FONT></TD>
+<TD><FONT SIZE="2"><A HREF="0.htm#defNumericExpression">数值表达式</A>，用于指定对话框的左边缘与屏幕左边缘的水平距离（单位为缇）。如果省略 <B>xpos</B>，则对话框会在水平方向居中。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>ypos</B></FONT></TD>
+<TD><FONT SIZE="2">数值表达式，用于指定对话框的上边缘与屏幕上边缘的垂直距离（单位为缇）。如果省略 <B>ypos</B>，则对话框显示在屏幕垂直方向距下边缘大约三分之一处。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>helpfile</B></FONT></TD>
+<TD><FONT SIZE="2">字符串表达式，用于标识为对话框提供上下文相关帮助的帮助文件。如果已提供 <B>helpfile</B>，则必须提供 <B>context</B>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>context</B></FONT></TD>
+<TD><FONT SIZE="2">数值表达式，用于标识由帮助文件的作者指定给某个帮助主题的上下文编号。如果已提供 <B>context</B>，则必须提供 <B>helpfile</B>。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>如果同时提供了 <B>helpfile</B> 和 <B>context</B>，就会在对话框中自动添加“帮助”按钮。<P>
+如果用户单击<B>确定</B>或按下 <B>ENTER</B>，则 <b>InputBox</b> 函数返回文本框中的内容。如果用户单击<B>取消</B>，则函数返回一个零长度字符串 ("")。</BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

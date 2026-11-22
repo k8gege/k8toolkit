@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>运算符优先级</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="算术运算符,逻辑运算符,运算符优先级,优先级顺序,算术运算符,比较运算符,优先运算符,运算符的分层结构,优先级"><META NAME="Description" CONTENT="运算符优先级"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>运算符优先级</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p>
+<A HREF="231.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>在一个表达式中进行多个运算时，每一部分都会按预先确定的顺序进行计算求解，这个顺序被称为运算符优先级。括号可改变优先级的顺序，强制优先处理表达式的某部分。括号内的操作总是比括号外的操作先被执行。但是在括号内，仍保持正常的运算符优先级。<P>
+当表达式有多种运算符时，先处理算术运算符，接着处理比较运算符，然后再处理逻辑运算符。所有比较运算符有相同的优先级，即按它们出现的顺序从左到右进行处理。算术运算符和逻辑运算符按下列优先级进行处理：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>算术</b></FONT></TD>
+<TD><FONT SIZE="2"><b>比较</b></FONT></TD>
+<TD><FONT SIZE="2"><b>逻辑</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">指数运算 (<b>^</b>)</FONT></TD>
+<TD><FONT SIZE="2">相等 (<b>=</b>)</FONT></TD>
+<TD><FONT SIZE="2"><b>Not</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">负数 (<b>-</b>)</FONT></TD>
+<TD><FONT SIZE="2">不等 (<b>&lt;&gt;</b>)</FONT></TD>
+<TD><FONT SIZE="2"><b>And</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">乘法和除法 (<b>*</b>, <b>/</b>)</FONT></TD>
+<TD><FONT SIZE="2">小于 (<b>&lt;</b>)</FONT></TD>
+<TD><FONT SIZE="2"><b>Or</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">整除 (<b>\</b>)</FONT></TD>
+<TD><FONT SIZE="2">大于 (<b>&gt;</b>)</FONT></TD>
+<TD><FONT SIZE="2"><b>Xor</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">求余运算 (<b>Mod</b>)</FONT></TD>
+<TD><FONT SIZE="2">小于或等于 (<b>&lt;=</b>)</FONT></TD>
+<TD><FONT SIZE="2"><b>Eqv</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">加法和减法 (<b>+</b>, <b>-</b>)</FONT></TD>
+<TD><FONT SIZE="2">大于或等于 (<b>&gt;=</b>)</FONT></TD>
+<TD><FONT SIZE="2"><b>Imp</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">字符串连接 (<b>&</b>)</FONT></TD>
+<TD><FONT SIZE="2"><b>Is</b></FONT></TD>
+<TD><FONT SIZE="2"><B>&amp;</B></FONT></TD></TR>
+</TABLE><P>
+
+当乘法和除法同时出现在表达式中时，按照从左到右出现的顺序处理每个运算符。同样，当加法和减法同时出现在表达式中时，也按照从左到右出现的顺序处理每个运算符。<P>
+字符串连接运算符 (<b>&amp;</b>) 不是算术运算符，但是就其优先级而言，它在所有算术运算符之后，而在所有比较运算符之前。<b>Is</b> 运算符是对象引用的比较运算符，它并不比较对象或对象的值，而只判断两个对象引用是否引用了相同的对象。</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

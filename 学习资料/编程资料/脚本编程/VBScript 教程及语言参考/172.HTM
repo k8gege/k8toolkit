@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>RGB 函数</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="RGB 函数">
+</HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>RGB 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+
+</TD></TR>
+</TABLE> <P>
+<!--FONT FACE="宋体" SIZE=2>
+<A HREF="vsfctRGBC.htm">请参阅</A></FONT-->
+<HR NOSHADE SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回代表 RGB 颜色值的整数。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>RGB(</b><b>red</b>, <b>green</b>, <b>blue</b><b>)</b><P>
+<b>RGB</b> 函数的语法有以下参数：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE=2><b>部分</b></FONT></TD>
+<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>red</b></FONT></TD>
+<TD><FONT SIZE=2>必选。0 到 255 间的整数，代表颜色中的红色成分。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>green</b></FONT></TD>
+<TD><FONT SIZE=2>必选。0 到 255 间的整数，代表颜色中的绿色成分。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>blue</b></FONT></TD>
+<TD><FONT SIZE=2>必选。0 到 255 间的整数，代表颜色中的蓝色成分。</FONT></TD></TR>
+</TABLE>
+
+</BLOCKQUOTE><P>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+接受颜色说明的应用程序方法和属性，要求该说明以整数代表 RGB 颜色值。RGB 颜色值指定了红色、绿色、蓝色的相对强度，三色组合形成显示的特定颜色。
+<p>低字节值表示红色，中字节值表示绿色，高字节值表示蓝色。
+
+<p>对于要求反转字节顺序的应用程序，下面函数在反转字节顺序下提供相同信息：
+
+<BLOCKQUOTE><pre><font face="Courier New" SIZE=2>Function RevRGB(red, green, blue)
+    RevRGB= CLng(blue + (green * 256) + (red * 65536))
+End Function</font></pre></BLOCKQUOTE>
+
+<p>RGB 函数中任一超过 255 的参数都假定为 255。
+
+</BLOCKQUOTE>
+
+<hr noshade SIZE=2>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>InStr 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="InStr 函数,InStrB 函数,子字符串,比较字符串,字符串比较,字符串搜索,字符位置,字符串子字符串,字符串内的字符串,字符串"><META NAME="Description" CONTENT="InStr 函数"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>InStr 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<P><FONT SIZE="2"><P>
+<A HREF="124.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回某字符串在另一字符串中第一次出现的位置。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>InStr(</b>[<B>start</B><b>, </b>]<B>string1</B><b>, </b><B>string2</B>[<b>, </b><B>compare</B>]<b>)</b><P>
+ <b>InStr</b> 函数的语法有以下参数：<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>start</B></FONT></TD>
+<TD><FONT SIZE="2">可选。<A HREF="0.htm#defNumericExpression">数值表达式</A>，用于设置每次搜索的开始位置。如果省略，将从第一个字符的位置开始搜索。如果 <B>start</B> 包含 <A HREF="0.htm#defNull"><B>Null</B></A>，则会出现错误。如果已指定 <B>compare</B>，则必须要有 <B>start</B> 参数。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>string1</B></FONT></TD>
+<TD><FONT SIZE="2">必选。接受搜索的<A HREF="0.htm#defStringExpression">字符串表达式</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>string2</B></FONT></TD>
+<TD><FONT SIZE="2">必选。要搜索的字符串表达式。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>compare</B></FONT></TD>
+<TD><FONT SIZE="2">可选。指示在计算子字符串时使用的比较类型的数值。有关数值，请参阅“设置”部分。如果省略，将执行二进制比较。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>设置</H5>
+<BLOCKQUOTE> <B>compare</B> 参数可以有以下值：<p>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE="2"><b>常数</b></FONT></TD>
+		<TD WIDTH=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbBinaryCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">0</FONT></TD>
+			<TD WIDTH= "*"><FONT SIZE="2">执行二进制比较。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbTextCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">1</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2">执行文本比较。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbDatabaseCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">2</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2">执行基于包含在数据库（在此数据库中执行比较）中的信息的比较。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>返回值</H5>
+<BLOCKQUOTE> <B>Instr</B> 函数返回以下值：<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>如果</b></FONT></TD>
+<TD><FONT SIZE="2"><b>InStr 返回</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>string1</B> 为零长度</FONT></TD>
+<TD><FONT SIZE="2">0</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>string1</B> 为 <b>Null</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>string2</B> 为零长度</FONT></TD>
+<TD><FONT SIZE="2"><B>start</B></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>string2</B> 为 <b>Null</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>string2</B> 没有找到</FONT></TD>
+<TD><FONT SIZE="2">0</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">在 <B>string1</B> 中找到 <B>string2</B></FONT></TD>
+<TD><FONT SIZE="2">找到匹配字符串的位置</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>start</B> &gt; <b>Len(</b><B>string2</B><b>)</b></FONT></TD>
+<TD><FONT SIZE="2">0</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+
+<BLOCKQUOTE>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><HR noshade size=1></TD></TR>
+<TR><TD VALIGN=TOP><FONT SIZE="2"><B>注意</B>  <b>InStrB</b> 函数使用包含在字符串中的字节数据，所以 <b>InStrB</b> 返回的不是一个字符串在另一个字符串中第一次出现的字符位置，而是字节位置。</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><HR noshade size=1></TD></TR></TABLE>
+</BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

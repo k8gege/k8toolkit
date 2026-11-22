@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//IETF/DTD HTML//EN">
+<HTML>
+<HEAD><TITLE>简单验证</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="robots" CONTENT="noindex">
+<SCRIPT LANGUAGE="VBScript">
+<!--
+Sub Submit_OnClick
+  Dim TheForm
+  Set TheForm = Document.ValidForm
+  If IsNumeric(TheForm.Text1.Value) Then
+    If TheForm.Text1.Value < 1 Or TheForm.Text1.Value > 10 Then
+      MsgBox "请输入一个 1 到 10 之间的数字。"
+    Else
+      MsgBox "谢谢。"
+    End If
+  Else
+    MsgBox "请输入一个数字。"
+  End If
+End Sub
+-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<FONT FACE="宋体" SIZE=2>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END--> <!-- global default -->
+<H3>简单验证</H3>
+<HR NOSHADE SIZE=1>
+<FORM NAME="ValidForm" Action="">
+请输入一个 1 到 10 之间的数字：
+<INPUT NAME="Text1" TYPE="TEXT" SIZE="2">
+<INPUT NAME="Submit" TYPE="BUTTON" VALUE="提交">
+</FORM>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

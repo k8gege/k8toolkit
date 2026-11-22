@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>Filter 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT=""><META NAME="Description" CONTENT="Filter 函数"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Filter 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="106.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>
+	返回基于零的数组，此数组包含基于指定过滤器条件的字符串数组的子集。
+</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+	<b>Filter(</b><B>InputStrings</B><b>,</b> <B>Value</B>[<b>,</b> <B>Include</B>[<b>,</b> <B>Compare</B>]]<b>)</b><P>
+ <b>Filter</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>InputStrings</B></FONT></TD>
+		<TD><FONT SIZE="2">必选。一维数组，要在其中搜索字符串。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>Value</B></FONT></TD>
+		<TD><FONT SIZE="2">必选。要搜索的字符串。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>Include</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。Boolean 值，指定返回的子字符串是否包含 <B>Value</B>。如果 <B>Include</B> 为 <b>True</b>，<b>Filter</b> 将返回包含子字符串 <B>Value</B> 的数组子集。如果 <B>Include </B>为 <b>False</b>，<b>Filter</b> 将返回不包含子字符串 <B>Value</B> 的数组子集。</FONT></TD></TR><TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>Compare</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。指示字符串比较类型的数值。有关数值，请参阅“设置”部分。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE><P>
+
+<H5>设置</H5>
+<BLOCKQUOTE>
+ <B>Compare</B> 参数可以有以下值：<p>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE="2"><b>常数</b></FONT></TD>
+		<TD WIDTH=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbBinaryCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">0</FONT></TD>
+			<TD WIDTH= "*"><FONT SIZE="2">执行二进制比较。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbTextCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">1</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2">执行文本比较。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>vbDatabaseCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">2</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE="2">执行基于数据库（在此数据库中执行比较）中包含的信息的比较。</FONT></TD></TR>
+
+
+</TABLE>
+</BLOCKQUOTE><P>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+如果在 <B>InputStrings</B> 中没有找到与 <B>Value</B> 匹配的值，<b>Filter</b> 将返回空数组。如果 <B>InputStrings</B> 为 <B>Null</B> 或者不是一维数组，则会发生错误。<p>
+由 <b>Filter</b> 函数返回的数组仅包含足以包含匹配项数目的元素。
+
+</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+<HTML>
+<HEAD>
+<TITLE>在 VBScript 中使用对象</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="CATEGORY" CONTENT="教程">
+
+<META NAME="Description" CONTENT="在 VBScript 中使用对象"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>在 VBScript 中使用对象</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstutor.htm">VBScript 教程</A> <BR>&nbsp;<A HREF="1.htm">上一页</A> <P></FONT>
+
+</TD></TR>
+</TABLE> 
+&nbsp;<BR>
+
+<HR NOSHADE SIZE=1>
+
+<H5>使用对象</H5>
+<BLOCKQUOTE>
+无论使用的是 ActiveX&trade; 控件（以前称为 OLE 控件）还是 Java&trade; 对象，Microsoft Visual Basic Scripting Edition 和 Microsoft&reg; Internet Explorer 都以相同的方式处理它们。如果您使用的是 Internet Explorer 并且 ActiveX 库中安装了这些控件，就会看到由以下代码<A HREF="12.htm">制作的页面</A>。
+
+<P>&lt;OBJECT&gt; 标记用来包含对象，&lt;PARAM&gt; 标记用来设置对象属性的初始值。使用 &lt;PARAM&gt; 标记类似于在 Visual Basic 中设置窗体控件的初始属性值。例如，以下代码使用 &lt;OBJECT&gt; 和 &lt;PARAM&gt; 标记将 ActiveX 标签控件添加到页面中：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3>&lt;OBJECT
+	classid="clsid:99B42120-6EC7-11CF-A6C7-00AA00A47DD2"
+	id=lblActiveLbl
+	width=250
+	height=250
+	align=left
+	hspace=20
+	vspace=0
+&gt;
+&lt;PARAM NAME="Angle" VALUE="90"&gt;
+&lt;PARAM NAME="Alignment" VALUE="4"&gt;
+&lt;PARAM NAME="BackStyle" VALUE="0"&gt;
+&lt;PARAM NAME="Caption" VALUE="一个简单标签"&gt;
+&lt;PARAM NAME="FontName" VALUE="宋体"&gt;
+&lt;PARAM NAME="FontSize" VALUE="20"&gt;
+&lt;PARAM NAME="FontBold" VALUE="1"&gt;
+&lt;PARAM NAME="FrColor" VALUE="0"&gt;
+&lt;/OBJECT&gt;
+</FONT></PRE></BLOCKQUOTE>
+
+象对任何窗体控件一样，可以获取属性、设置属性和调用方法。例如，以下代码包含 &lt;FORM&gt; 控件，可用其对标签控件的两个属性进行操作：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3>&lt;FORM NAME="LabelControls"&gt;
+&lt;INPUT TYPE="TEXT" NAME="txtNewText" SIZE=25&gt;
+&lt;INPUT TYPE="BUTTON" NAME="cmdChangeIt" VALUE="更改文本"&gt;
+&lt;INPUT TYPE="BUTTON" NAME="cmdRotate" VALUE="旋转标签"&gt;
+&lt;/FORM&gt;
+</FONT></PRE></BLOCKQUOTE>
+
+通过定义过的窗体，<FONT FACE="宋体" SIZE="2">cmdChangeIt</FONT> 按钮的事件过程可更改标签文本：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3>&lt;SCRIPT LANGUAGE="VBScript"&gt;
+&lt;!--
+Sub cmdChangeIt_onClick
+	Dim TheForm
+	Set TheForm = Document.LabelControls
+	lblActiveLbl.Caption = TheForm.txtNewText.Value
+End Sub
+--&gt;
+&lt;/SCRIPT&gt;
+</FONT></PRE></BLOCKQUOTE>
+
+代码将对控件和值的引用限定在窗体中，这与<A HREF="1.htm">简单验证</A>示例中的代码类似。<P>
+ActiveX 库中有多个 ActiveX&trade; 控件可用于 Internet Explorer。您可以在那里找到关于属性、方法和事件的全部信息，也可以在编程参考页面上找到关于控件类标识符 (CLSID) 的信息。另外还可以在 Internet Explorer 4.0 Author's Guide and HTML Reference 页面上找到有关 &lt;OBJECT&gt; 标记的详细信息。
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%>
+<TR><TD COLSPAN=2 VALIGN=BOTTOM><HR NOSHADE SIZE=1></TD></TR>
+<TR><TD VALIGN=TOP><FONT SIZE=2><b>注意</b> &nbsp;&nbsp;Internet Explorer 的早期版本要求用大括号 ({}) 将 classid 属性括起来，不符合 <A HREF="http://www.w3.org/pub/WWW/Addressing/clsid-scheme" TARGET="_top">W3C 规格</A>。在当前版本中使用大括号则会产生“此页使用了过期版本的 &lt;OBJECT&gt; 标记”信息。
+</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><HR NOSHADE SIZE=1></TD></TR></TABLE>
+
+</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

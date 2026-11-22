@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>TimeSerial 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="TimeSerial 函数,时间转换,时间"><META NAME="Description" CONTENT="TimeSerial 函数"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>TimeSerial 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="207.htm">请参阅</A></FONT>
+<HR NOSHADE SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回一个 <b>Date</b> 子类型的 <b>Variant</b>，含有指定时、分、秒的时间。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>TimeSerial(</b><b>hour</b><b>, </b><b>minute</b><b>, </b><b>second</b><b>)</b><P>
+
+ <b>TimeSerial</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>hour</b></FONT></TD>
+<TD><FONT SIZE="2">其值为从 0 (12:00 A.M.) 到 23 (11:00 P.M.) 的数值或<A HREF="0.htm#defNumericExpression">数值表达式</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>minute</b></FONT></TD>
+<TD><FONT SIZE="2">任意数值表达式。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>second</b></FONT></TD>
+<TD><FONT SIZE="2">任意数值表达式。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>要指定一时刻，如 11:59:59，<b>TimeSerial</b> 的参数取值应在可接受的范围内；也就是说，小时应介于 0-23 之间，分和秒应介于 0-59 之间。但是，可以使用数值表达式为每个参数指定相对时间，这一表达式代表某时刻之前或之后的时、分或秒数。以下样例中使用了表达式代替绝对时间数。<b>TimeSerial</b> 函数返回中午之前六小时 (12 - 6) 十五分钟的时间 (-15)，即 5:45:00 A.M.。
+<BLOCKQUOTE>
+<PRE><FONT FACE="Courier New" size=2><FONT COLOR="#FF0000">TimeSerial(</FONT>12 - 6<FONT COLOR=#FF0000>,</FONT> -15<FONT COLOR=#FF0000>, </FONT>0<FONT COLOR=#FF0000>)</FONT>
+</FONT></PRE></BLOCKQUOTE>
+
+当任何一个参数的取值超出可接受的范围时，它会正确地进位到下一个较大的时间单位中。例如，如果指定了 75 分钟，则这个时间被解释成一小时十五分钟。但是，如果任何一个参数值超出 -32768 到 32767 的范围，就会导致错误。如果使用三个参数直接指定的时间或通过表达式计算出的时间超出可接受的日期范围，也会导致错误。</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

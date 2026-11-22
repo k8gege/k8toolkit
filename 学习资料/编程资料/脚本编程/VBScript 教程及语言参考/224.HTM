@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>比较运算符</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="运算符,比较值,比较运算符,关系运算符,运算符比较,运算符关系,符号比较运算符,符号"><META NAME="Description" CONTENT="比较运算符"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>比较运算符</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="225.htm">请参阅</A></FONT>
+<HR NOSHADE SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>用于比较表达式。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>result</b> <b>=</b> <b>expression1</b> <b>comparisonoperator</b> <b>expression2<P>result </b><b>=</b> <b>object1</b><b> Is </b><b>object2</b><P>
+比较运算符的语法有以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>result</b></FONT></TD>
+<TD><FONT SIZE="2">任意数值变量。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>expression</b></FONT></TD>
+<TD><FONT SIZE="2">任意<A HREF="0.htm#defExpression">表达式</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>comparisonoperator</b></FONT></TD>
+<TD><FONT SIZE="2">任意<A HREF="0.htm#defComparisonOperator">比较运算符</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>object</b></FONT></TD>
+<TD><FONT SIZE="2">任意对象名称。</FONT></TD></TR>
+<!--TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>字符串</b></FONT></TD>
+<TD><FONT SIZE=2>任意<A HREF="0.htm#defStringExpression">字符串表达式</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>图案</b></FONT></TD>
+<TD><FONT SIZE=2>任意字符串表达式或字符范围。</FONT></TD></TR-->
+</TABLE></BLOCKQUOTE><P>
+
+<H5>说明</H5>
+<BLOCKQUOTE> <b>Is</b> 运算符有特定的比较功能，它们不同于下列表格中的运算符。下列表格中有一系列比较运算符以及判断 <b>result</b> 是 <b>True</b>、<b>False</b> 或 <A HREF="0.htm#defNull"><b>Null</b> 的条件</A>：<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=6 CELLSPACING=0>
+<TR ALIGN=CENTER BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>运算符</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD>
+<TD><FONT SIZE="2"><b>如果 ... 则为 True</b></FONT></TD>
+<TD><FONT SIZE="2"><b>如果 ... 则为 False</b></FONT></TD>
+<TD><FONT SIZE="2"><b>如果 ... 则为 Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD ALIGN=CENTER><FONT SIZE="2"><b>&lt;</b></FONT></TD>
+<TD><FONT SIZE="2">小于</FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &lt; <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &gt;= <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> 或 <b>expression2</b> = <b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD ALIGN=CENTER><FONT SIZE="2"><b>&lt;=</b></FONT></TD>
+<TD><FONT SIZE="2">小于或等于</FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &lt;= <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &gt; <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> 或 <b>expression2</b> = <b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD ALIGN=CENTER><FONT SIZE="2"><b>&gt;</b></FONT></TD>
+<TD><FONT SIZE="2">大于</FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &gt; <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &lt;= <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> 或 <b>expression2</b> = <b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD ALIGN=CENTER><FONT SIZE="2"><b>&gt;=</b></FONT></TD>
+<TD><FONT SIZE="2">大于或等于</FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &gt;= <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &lt; <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> 或 <b>expression2</b> = <b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD ALIGN=CENTER><FONT SIZE="2"><b>=</b></FONT></TD>
+<TD><FONT SIZE="2">等于</FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> = <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &lt;&gt; <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> 或 <b>expression2</b> = <b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD ALIGN=CENTER><FONT SIZE="2"><b>&lt;&gt;</b></FONT></TD>
+<TD><FONT SIZE="2">不等于</FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> &lt;&gt; <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> = <b>expression2</b></FONT></TD>
+<TD><FONT SIZE="2"><b>expression1</b> 或 <b>expression2</b> = <b>Null</b></FONT></TD></TR></TABLE><P>
+
+在比较两个表达式时，可能难以确定要将表达式作为数字还是作为字符串进行比较。<P>
+下列表格说明如何比较表达式，或指出通过比较得到的结果，这些取决于下述子类型：<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>如果 </b></FONT></TD>
+<TD><FONT SIZE="2"><b>则</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">两个表达式都是数值	</FONT></TD>
+<TD><FONT SIZE="2">执行数值比较。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">两个表达式都是字符串</FONT></TD>
+<TD><FONT SIZE="2">执行<A HREF="0.htm#defStringComparison">字符串比较</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">一个表达式是数值而另一个是字符串</FONT></TD>
+<TD><FONT SIZE="2">数值表达式小于字符串表达式。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">一个表达式是 <A HREF="0.htm#defEmpty"><b>Empty</b></A> 而另一个是数值</FONT></TD>
+<TD><FONT SIZE="2">执行数值比较，使用 0 作为 <b>Empty</b> 表达式。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">一个表达式是 <b>Empty</b> 而另一个是字符串</FONT></TD>
+<TD><FONT SIZE="2">执行字符串比较，使用零长度字符串 ("") 作为 <b>Empty</b> 表达式。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">两个表达式都是 <b>Empty</b></FONT></TD>
+<TD><FONT SIZE="2">表达式相等。</FONT></TD></TR></TABLE>
+</BLOCKQUOTE><p>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
