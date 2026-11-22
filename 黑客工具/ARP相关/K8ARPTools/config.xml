@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <sip>192.168.1.2</sip>
+  <smac>80-80-80-80-80-80</smac>
+  <mip>192.168.1.150</mip>
+  <mmac>00-03-ff-47-c1-16</mmac>
+</data>
