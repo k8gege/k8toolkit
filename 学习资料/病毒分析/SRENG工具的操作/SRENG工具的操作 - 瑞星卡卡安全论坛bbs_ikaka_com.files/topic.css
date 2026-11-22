@@ -1,0 +1,72 @@
+#newmsg {
+	BORDER-RIGHT: #ecd38f 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ecd38f 1px solid; PADDING-LEFT: 26px; FONT-SIZE: 14px; BACKGROUND: url(images/icon_newmsg.gif) #ffffcc no-repeat 10px center; PADDING-BOTTOM: 5px; MARGIN: 0px; BORDER-LEFT: #ecd38f 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ecd38f 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+#newmsg A:link {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+#newmsg A:visited {
+	COLOR: #800080; TEXT-DECORATION: underline
+}
+#newmsg A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+#newmsg A:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+#div_5GeContainer  {
+	FONT-SIZE: 9pt
+}
+#div_5GeContainer {
+	BORDER-RIGHT: #b5e1f7 1px solid; BORDER-TOP: #b5e1f7 1px solid; MIN-HEIGHT: 100px; MARGIN: 5px auto 10px; BORDER-LEFT: #b5e1f7 1px solid; WIDTH: 99.8%; BORDER-BOTTOM: #b5e1f7 1px solid; HEIGHT: 100px
+}
+#div_5GeContainer .topImg {
+	WIDTH: 27%
+}
+#div_5GeContainer .topPosts {
+	WIDTH: 24%
+}
+#div_5GeContainer .topPosts LI A {
+	COLOR: #0044dd
+}
+#div_5GeContainer .topUsers {
+	WIDTH: 13%
+}
+#div_5GeContainer .topUsers LI A {
+	COLOR: #0044dd
+}
+#div_5GeContainer .line {
+	BORDER-LEFT: #b5e1f7 1px solid
+}
+#div_5GeContainer #ul_5GeTitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+#div_5GeContainer #ul_5GeContent {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+#div_5GeContainer #ul_5GeTitle {
+	
+}
+#div_5GeContainer #ul_5GeTitle LI {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 12px; FLOAT: left; LINE-HEIGHT: 31px; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
+}
+#div_5GeContainer #ul_5GeContent LI {
+	DISPLAY: block; FLOAT: left; OVERFLOW: hidden; COLOR: #0000ff; TEXT-INDENT: 0.2em; LINE-HEIGHT: 22px; LIST-STYLE-TYPE: none; HEIGHT: 180px
+}
+#div_5GeContainer #ul_5GeContent LI .listStyle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 3px auto; WIDTH: 95%; PADDING-TOP: 0px; HEIGHT: 500px
+}
+#div_5GeContainer #ul_5GeContent LI .listStyle LI {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 100%; LINE-HEIGHT: 22px; WHITE-SPACE: nowrap; HEIGHT: 22px; TEXT-OVERFLOW: ellipsis
+}
+.titlebar {
+	OVERFLOW: hidden
+}
+#div_5GeContainer #ul_5GeContent LI .listStyle LI IMG {
+	MARGIN-RIGHT: 5px
+}
+#div_5GeContainer #ul_5GeContent .topImg DIV {
+	MARGIN: 5px auto; VERTICAL-ALIGN: middle; WIDTH: 98%; LINE-HEIGHT: 170px; TEXT-ALIGN: center
+}
+.clearBlank {
+	CLEAR: both; FONT-SIZE: 0px; LINE-HEIGHT: 0px; HEIGHT: 0px
+}

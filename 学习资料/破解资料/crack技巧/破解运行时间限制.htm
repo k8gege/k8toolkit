@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>crack4</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+.p11{  font-size: 11pt}
+.p11{  font-size: 11pt}
+a:hover {  color: #00FF00}
+a {  text-decoration: none; color: #3333CC}
+.p12 {  font-size: 11pt; font-weight: bold; color: #FF3333}
+-->
+</style>
+</head>
+
+<body bgcolor="#FBFDFF" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+<div align="center"><span class="p"><b><font color="#000000" class="p11"> crack常见技巧</font></b></span> <br>
+  <br>
+</div>
+ 
+<p align="center" class="p9"><span class="p9"><span class="p9"> 运行时间限制</span></span> 
+   </p>
+<p align="left" class="p9"><span class="p9"><b><font color="#0000FF">一、运行时间限制</font></b><br>
+  这种程序是每次运行的时间有限制，如运行10分钟，20分钟等情况。<br>
+  它们里面一般有个计时器，让我们假设这程序每秒减一，其会用上DEC指令。一般的程序是32位，你反汇编后查找&quot;dec dword ptr&quot;，如运气好的话，有可能给你提供重要的线索。<br>
+  当然实现这种功能方法很多，需要我们多接触这种类型就能掌握。<br>
+  <br>
+  <b><font color="#3333FF">二、时间限制</font></b><br>
+  这种限制是程序让用几天，而每次运行时间不限。CRACK这种程序有以下经验：<br>
+  1、限定多少天时间限制<br>
+  这种类型程序很多，让你有10天、20天、30天等，它们在安装时，在你的系统某处做上时间标记，每次运行时用当前系统时间和安装时的时间比较，判断你还否能使用。<br>
+  如最典型的30天限制的一种情况：<br>
+  mov ecx,1E ; 把1E (30天 十进制) 放入 ecx<br>
+  mov eax,[esp+10] ; 把用过天数放到eax<br>
+  cmp eax,ecx ; 在此比较<br>
+  jl ... <br>
+  如碰到这种情况，只需把&quot;mov eax,[esp+10]&quot;改成&quot;mov eax,1&quot; 。<br>
+  2、要记住当前年份、月份的十六进制的一些表示方法，如：2000年的十六进制是07D0，然后用W32DASM反汇编你的程序，用查找字符串的方法找D007（在机器码中位置颠倒了一下）或其它类似时间的数字，有可能会找到有价值的线索。你别小看这种方法，对那些没怎么防范的程序，此招很有效。<br>
+  如：一程序限定在2000年使用，可能有如下一代码：<br>
+  :00037805 817C2404D0070000 cmp dword ptr [esp+04], 000007D0 比较是否在2000年。</span></p>
+<p><span class="p9">另外，在1中的30天限期中也可用类似方法，如：<br>
+  CMP DWORD PTR register, 1E &lt;-- 1E 表示 30 <br>
+  JLE/JGE address &lt;-- 一般都是这些条件中断<br>
+  其中CMP的机器码是83,1E是30天，7E (JLE) 或7D (JGE)，以这些为查找对象，在十六进制工具或W32DASM中查找功能找寻，你有可能找到多处，这时可用排处法，找到最大可能处，把7E 
+  (JLE) 或7D (JGE)改成EB（JMP），试试时间限制是否取消。</span></p>
+<p><span class="p9">3、还有一种方法是常用的，把系统时间调后，程序将出现到期的警告窗，然后记下警告窗的一些提示语言，在W32DASM中利用串式数据参考功能（ 
+  string reference）查找，然后分析代码，CRACK它。<br>
+  另外，有一点要注意的，如这对话框或警告窗是中文的，在W32DASM是找不到相应的中文字串的，你可用十六进制工具把相关的中文的提示改成英文，如其提示：“你的使用时间到期”。你用十六进制工具把这改成：“Trial 
+  Time has expired”（注意改后的字节不可超过原文的字节数），再用W32DASM查找字串。<br>
+  <b><font color="#3333FF"><br>
+  三、与时间相关函数</font></b> </span></p>
+<p><span class="p9">1、GetSystemTime 得当前系统时间</span></p>
+<table width="100%" border="1" align="center" bordercolorlight="#808080" bordercolordark="#FFFFFF" cellspacing="0">
+  <tr bgcolor="#CCCCFF"> 
+    <td height="28"> <span class="p9">说明：<br>
+      在一个SYSTEMTIME中载入当前系统时间，这个时间采用的是“协同世界时间”（即UTC，也叫做GMT）格式。</span> <br>
+      <span class="p9">VOID GetSystemTime(</span> 
+      <p><span class="p9"> LPSYSTEMTIME lpSystemTime // <font color="#FF3333">SYSTEMTIME</font>，随同当前时间载入的结构 
+        <br>
+        ); </span></p>
+
+</table>
+<br>
+<p><span class="p9"> </span><span class="p9"> </span><span class="p9">2、GetLocalTime 
+  得当前本地时间</span></p>
+<table width="100%" border="1" align="center" bordercolorlight="#808080" bordercolordark="#FFFFFF" cellspacing="0">
+  <tr bgcolor="#CCCCFF"> 
+    <td height="28">
+      <p><span class="p9">VOID GetLocalTime(</span></p>
+      <p><span class="p9"> LPSYSTEMTIME lpSystemTime // <font color="#FF0033">SYSTEMTIME</font>，用于装载本地时间的结构<br>
+        );</span></p>
+    
+  
+</table>
+<p><span class="p9">3、SystemTimeToFileTime 根据一个<font color="#FF3366">FILETIME</font>结构的内容，载入一个<font color="#FF3366">SYSTEMTIME</font>结构</span></p>
+<table width="100%" border="1" align="center" bordercolorlight="#808080" bordercolordark="#FFFFFF" cellspacing="0">
+  <tr bgcolor="#CCCCFF"> 
+    <td height="28"> 
+      <p><span class="p9">BOOL SystemTimeToFileTime(</span></p>
+      <p><span class="p9"> CONST SYSTEMTIME * lpst, // <font color="#FF3366">SYSTEMTIME</font>，包含了系统时间信息的一个结构 
+        <br>
+        LPFILETIME lpft //<font color="#FF3366"> FILETIME</font>，用于装载文件时间的一个结构 
+        <br>
+        ); <br>
+        返回值 ：非零表示成功，零表示失败。 </span></p>
+
+</table>
+<p class="p9">4、SetTimer 创建一定时器，在指定时间内暂停<br>
+</p>
+<table width="100%" border="1" align="center" bordercolorlight="#808080" bordercolordark="#FFFFFF" cellspacing="0">
+  <tr bgcolor="#CCCCFF"> 
+    <td height="28"> 
+      <p class="p9">UINT SetTimer(<br>
+        HWND hwnd, // 时间信息句柄<br>
+        UINT idtimer, // 定时器ID 标识符<br>
+        UINT uTimeout, // 暂停时间<br>
+        TIMERPROC tmprc // 处理定时过程的程序入口地址<br>
+        );</p>
+      
+</table>
+<p class="p9"> <br>
+</p>
+<p><span class="p9"><font color="#FF3333">附：SYSTEMTIME 类型定义</font></span><br>
+</p>
+<table border="1" width="100%" bordercolorlight="#808080" cellspacing="0"
+bordercolordark="#FFFFFF" bgcolor="#CCCCFF">
+  <tr> 
+    <td width="103%" colspan="2" class="p9">SYSTEMTIME 类型定义</td>
+  </tr>
+  <tr> 
+    <td width="103%" colspan="2" class="p9">Type SYSTEMTIME ' 16 Bytes <br>
+      wYear As Integer<br>
+      wMonth As Integer<br>
+      wDayOfWeek As Integer<br>
+      wDay As Integer<br>
+      wHour As Integer<br>
+      wMinute As Integer<br>
+      wSecond As Integer<br>
+      wMilliseconds As Integer<br>
+      End Type</td>
+  </tr>
+  <tr> 
+    <td width="103%" colspan="2" class="p9">说明</td>
+  </tr>
+  <tr> 
+    <td width="103%" colspan="2" class="p9"> 
+      <p align="left">这结构中包含日期和时间信息. 
+    </td>
+  </tr>
+  <tr> 
+    <td width="103%" colspan="2" class="p9">字段表</td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">字段</td>
+    <td width="75%" class="p9">类型与说明</td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">wYear</td>
+    <td width="75%" class="p9">Integer，<span class="p9">当前年份 </span>.</td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">wMonth</td>
+    <td width="75%" class="p9">Integer，<span class="p9">当前的月份. 一月份是1</span>.</td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">wDayOfWeek</td>
+    <td width="75%" class="p9">Integer，<span class="p9">星期几. 星期天是 0.</span></td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">wDay</td>
+    <td width="75%" class="p9">Integer，<span class="p9">当月中的第几天. </span></td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">wHour</td>
+    <td width="75%" class="p9">Integer，<span class="p9">当前小时. </span></td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">wMinute</td>
+    <td width="75%" class="p9">Integer，<span class="p9">当前分钟.</span></td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">wSecond</td>
+    <td width="75%" class="p9">Integer，<span class="p9">当前秒. </span></td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">wMilliseconds</td>
+    <td width="75%" class="p9">Integer，<span class="p9">当前毫秒. </span></td>
+  </tr>
+</table>
+<br>
+<font color="#FF3333"><span class="p9">附：FILETIM <span class="p9"> 类型定义</span></span></font><br>
+<table border="1" width="100%" bordercolorlight="#808080" cellspacing="0"
+bordercolordark="#FFFFFF" bgcolor="#CCCCFF">
+  <tr> 
+    <td width="100%" colspan="2" class="p9">类型定义</td>
+  </tr>
+  <tr> 
+    <td width="100%" colspan="2" class="p9">Type FILETIME ' 8 Bytes <br>
+      dwLowDateTime As Long<br>
+      dwHighDateTime As Long<br>
+      End Type</td>
+  </tr>
+  <tr> 
+    <td width="100%" colspan="2" class="p9">说明</td>
+  </tr>
+  <tr> 
+    <td width="100%" colspan="2" class="p9">windows提供了一种特殊的机制，可以记录文件的访问及创建时间。在win32环境中，这些信息以64位值的形式保存，量度的是自1601年1月1日以来经历的100ns时间单位数量（64-bit 
+      number specifying the elapsed time since January 1, 1601, in 100-nanosecond 
+      increments.）</td>
+  </tr>
+  <tr> 
+    <td width="100%" colspan="2" class="p9">字段表</td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">字段</td>
+    <td width="75%" class="p9">类型及说明</td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">dwLowDateTime</td>
+    <td width="75%" rowspan="2" class="p9">Long，Low and high-order 32 bits of 
+      the file time</td>
+  </tr>
+  <tr> 
+    <td width="25%" class="p9">dwHighDateTime</td>
+  </tr>
+  <tr> 
+    <td width="100%" colspan="2" class="p9">注解</td>
+  </tr>
+  <tr> 
+    <td width="100%" colspan="2" class="p9"> 
+      <p align="left">文件时间在系统中通常用“协同世界时间”（UTC）的格式保存，但同时提供了在UTC及本地时间之间转换的函数。FILETIME结构里可包含UTC或本地时间——由我们自行决定在结构中包含什么时间
+    </td>
+  </tr>
+</table>
+<p></p>
+<a href="crack0.htm">返回 </a><p></p>
+ 
+<p> </p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>crack5</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style type="text/css">
+<!--
+.p11 {  font-size: 11pt}
+.p11{  font-size: 11pt}
+a:hover {  color: #00FF00}
+a {  text-decoration: none; color: #3333CC}
+.p11{  font-size: 11pt; font-weight: bold; color: #FF3333}
+-->
+</style>
+</head>
+
+<body bgcolor="#FBFDFF" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+<div align="center"><span class="p"><b><font color="#000000" class="p11">  crack常见技巧</font></b></span> <br>
+  <br>
+</div>
+ 
+<p align="center" class="p9"><span class="p9"><span class="p9"> <span class="p9"><span class="p9">功能限制的程序</span></span></span></span> 
+   </p>
+<p align="left" class="p9"> 　这种程序一般是DEMO版或菜单中部分选项是灰色。有些DEMO版本的部分功能里面根本就没有。而有些程序功能全有，只要注册后就正常了。</p>
+<p align="left" class="p9">　你使用这些DEMO程序部分被禁止的功能时，会跳出提示框，说这是DEMO版等话，它们一般都是调用<font color="#000000"><b>MessageBox[A]</b></font> 
+  或 <font color="#000000"><b>DialogBox[A]</b></font>等函数。你可在W32DASM反汇编它，一般能找到如下字符串："Function 
+  Not Avaible in Demo" 或 "Command Not Avaible" 或 "Can't save in Shareware/Demo"等，这些CALL会被相应的调用，可作为你破解的一指示器。</p>
+<p align="left" class="p9">另外，就是菜单中部分选项是灰色的不能用，一般它们是通过如下两种函数实现的：<font face=verdana,arial,helvetica size=2><span class="p9"> 
+  </span></font></p>
+<p align="left" class="p9"><font face=verdana,arial,helvetica size=2><span class="p9">EnableMenuItem</span></font></p>
+<table border=1 cellpadding=4 cellspacing=0 bgcolor=#FFFF80 width=100% bordercolorlight="#666666" bordercolordark="#FFFFFF">
+  <tr bgcolor="#CCCCFF"> 
+    <td height="2"><span class="p9"><span class="p9">允许、禁止或变灰指定的菜单条目 </span></span></td>
+  </tr>
+  <tr bgcolor="#CCCCFF"> 
+    <td><span class="p9"> BOOL EnableMenuItem(<br>
+      HMENU hMenu, // 菜单句柄<br>
+      UINT uIDEnableItem, // 菜单ID，形式为：充许,禁止,或灰<br>
+      UINT uEnable //菜单项目旗帜<br>
+      );</span><br>
+      <span class="p9">Returns </span></td>
+  </tr>
+  <tr bgcolor="#CCCCFF"> 
+    <td class="p9"><span class="p9"><span class="p9">在ASM代码形式如</span>下:<br>
+      PUSH uEnable 　　　//uEnable=0 则菜单选项允许<br>
+      PUSH uIDEnableItem<br>
+      PUSH <span class="p9"><span class="p9">hWnd</span></span><br>
+      CALL [KERNEL32!EnableMenuItem]</span></td>
+  </tr>
+</table>
+<font face=verdana,arial,helvetica size=2><span class="p9"><br>
+EnableWindow</span></font><br>
+<font face=verdana,arial,helvetica size=2>
+<table border=1 cellpadding=4 cellspacing=0 bgcolor=#FFFF80 width=100% bordercolorlight="#666666" bordercolordark="#FFFFFF">
+  <tr bgcolor="#CCCCFF">
+    <td><span class="p9"><span class="p9">允许或禁止鼠标和键盘控制指定窗口和条目（禁止时菜单变灰） </span></span></td>
+  </tr>
+  <tr bgcolor="#CCCCFF"> 
+    <td><span class="p9"><span class="p9">BOOL EnableWindow( <br>
+      HWND hWnd, // 窗口句柄<br>
+      BOOL bEnable // 允许/禁止输入<br>
+      );<br>
+      <b>Returns</b><br>
+      如窗口以前被禁止则返回一TRUE，否则返回 FALSE</span>。</span></td>
+  </tr>
+</table>
+</font> 
+<a href="crack0.htm">返回 </a>
+<p> </p>
+</body>
+</html>

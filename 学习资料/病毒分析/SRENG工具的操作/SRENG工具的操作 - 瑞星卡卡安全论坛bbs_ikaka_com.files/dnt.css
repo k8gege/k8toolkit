@@ -1,0 +1,2022 @@
+BODY {
+	FONT: 12px/160% Tahoma, Verdana,snas-serif; COLOR: #000
+}
+TD {
+	FONT: 12px/160% Tahoma, Verdana,snas-serif; COLOR: #000
+}
+TEXTAREA {
+	FONT: 12px/160% Tahoma, Verdana,snas-serif; COLOR: #000
+}
+SELECT {
+	FONT: 12px/160% Tahoma, Verdana,snas-serif; COLOR: #000
+}
+BUTTON {
+	FONT: 12px/160% Tahoma, Verdana,snas-serif; COLOR: #000
+}
+H1 {
+	FONT-SIZE: 12px
+}
+H2 {
+	FONT-SIZE: 12px
+}
+H3 {
+	FONT-SIZE: 12px
+}
+H4 {
+	FONT-SIZE: 12px
+}
+H5 {
+	FONT-SIZE: 12px
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#header LI {
+	LIST-STYLE-TYPE: none
+}
+#menubar LI {
+	LIST-STYLE-TYPE: none
+}
+#forumfooter LI {
+	LIST-STYLE-TYPE: none
+}
+.forumstats LI {
+	LIST-STYLE-TYPE: none
+}
+.userinfo LI {
+	LIST-STYLE-TYPE: none
+}
+#announcementbody LI {
+	LIST-STYLE-TYPE: none
+}
+.listcontent LI {
+	LIST-STYLE-TYPE: none
+}
+.pannelbody LI {
+	LIST-STYLE-TYPE: none
+}
+.avatarlist LI {
+	LIST-STYLE-TYPE: none
+}
+.framemenu LI {
+	LIST-STYLE-TYPE: none
+}
+.navfocuslist LI {
+	LIST-STYLE-TYPE: none
+}
+UL#forumtemplate LI {
+	LIST-STYLE-TYPE: none
+}
+.useravatar LI {
+	LIST-STYLE-TYPE: none
+}
+.popupmenuitem LI {
+	LIST-STYLE-TYPE: none
+}
+.previewjpg LI {
+	LIST-STYLE-TYPE: none
+}
+.usermessage LI {
+	LIST-STYLE-TYPE: none
+}
+#online LI {
+	LIST-STYLE-TYPE: none
+}
+#online1 LI {
+	LIST-STYLE-TYPE: none
+}
+.helpmenu LI {
+	LIST-STYLE-TYPE: none
+}
+.helpcontent LI {
+	LIST-STYLE-TYPE: none
+}
+.forumcutline LI {
+	LIST-STYLE-TYPE: none
+}
+.profile LI {
+	LIST-STYLE-TYPE: none
+}
+UL.tools LI {
+	LIST-STYLE-TYPE: none
+}
+EM {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CITE {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+STRONG {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+TH {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+TABLE {
+	BORDER-COLLAPSE: collapse; empty-cells: show
+}
+A {
+	COLOR: #666; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#container {
+	BACKGROUND: #fff; MARGIN: 10px auto 0px; WIDTH: 96%
+}
+#wraper {
+	MARGIN: 0px auto; WIDTH: 100%; TEXT-ALIGN: left
+}
+.fontfamily {
+	FONT-FAMILY: Georgia,Tahoma, Verdana,snas-serif
+}
+.kaka96 {
+	MARGIN: 0px auto; WIDTH: 96%
+}
+.kakanoground {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.ntforumbox {
+	CLEAR: both; BORDER-RIGHT: #408de4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #408de4 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: #408de4 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #408de4 1px solid
+}
+.onlineuser {
+	CLEAR: both; BORDER-RIGHT: #408de4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #408de4 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: #408de4 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #408de4 1px solid
+}
+.ticket {
+	CLEAR: both; BORDER-RIGHT: #408de4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #408de4 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: #408de4 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #408de4 1px solid
+}
+#navcutline {
+	CLEAR: both; BORDER-RIGHT: #408de4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #408de4 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: #408de4 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #408de4 1px solid
+}
+.forumcutline {
+	CLEAR: both; BORDER-RIGHT: #408de4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #408de4 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: #408de4 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #408de4 1px solid
+}
+#adtext {
+	CLEAR: both; BORDER-RIGHT: #408de4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #408de4 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: #408de4 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #408de4 1px solid
+}
+.forumrules {
+	CLEAR: both; BORDER-RIGHT: #408de4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #408de4 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: #408de4 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #408de4 1px solid
+}
+#forumjumping {
+	CLEAR: both; BORDER-RIGHT: #408de4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #408de4 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; BORDER-LEFT: #408de4 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #408de4 1px solid
+}
+ HTML .ntforumbox {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.ntforumbox TABLE {
+	WIDTH: 100%; BORDER-COLLAPSE: separate; empty-cells: show
+}
+.list {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #ffffff; PADDING-BOTTOM: 5px; COLOR: #666; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.list TH {
+	BORDER-TOP: #cadbf1 1px solid
+}
+.list TD {
+	BORDER-TOP: #cadbf1 1px solid
+}
+.liston TH {
+	BORDER-TOP: #cadbf1 1px solid
+}
+.liston TD {
+	BORDER-TOP: #cadbf1 1px solid
+}
+.editorbody {
+	BORDER-TOP: #cadbf1 1px solid
+}
+.list A {
+	COLOR: #0044dd
+}
+.liston {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #f2f8ff; PADDING-BOTTOM: 5px; COLOR: #000; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.liston A {
+	COLOR: #0044dd; TEXT-DECORATION: underline
+}
+.liston .topicmanager A {
+	COLOR: #666; TEXT-DECORATION: none
+}
+.liston .topicbackwriter A {
+	TEXT-DECORATION: none
+}
+.editortoolbar TABLE {
+	WIDTH: auto
+}
+.titlebar {
+	BACKGROUND: url(images/bbs_title_bg.gif) #1080c0 repeat-x 0px 0px; COLOR: #fff; LINE-HEIGHT: 28px; HEIGHT: 30px
+}
+.titlebar H2 {
+	PADDING-LEFT: 36px; BACKGROUND: url(images/bbs-title-dot.gif) no-repeat 11px 50%; FLOAT: left; COLOR: #fff
+}
+.titlebar H3 {
+	PADDING-LEFT: 36px; BACKGROUND: url(images/bbs-title-dot.gif) no-repeat 11px 50%; FLOAT: left; COLOR: #fff
+}
+.titlebar H3 {
+	PADDING-LEFT: 18px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.titlebar EM {
+	COLOR: #efefef
+}
+.titlebar A {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.titlebar A:hover {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.open {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1em; PADDING-TOP: 10px
+}
+.open IMG {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; CURSOR: pointer; PADDING-TOP: 0px
+}
+.open A {
+	FONT-WEIGHT: bold
+}
+.kakaopen {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1em; PADDING-TOP: 7px
+}
+.kakaopen IMG {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; CURSOR: pointer; PADDING-TOP: 0px
+}
+.kakaopen A {
+	FONT-WEIGHT: normal
+}
+#kakatopbar {
+	BACKGROUND: #fff; MARGIN-BOTTOM: 5px; WIDTH: 100%; BORDER-BOTTOM: #ededed 1px solid
+}
+#kakatopbarbg {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px auto; WIDTH: 96%; PADDING-TOP: 5px
+}
+#kakatopbarbg A {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 5px; BACKGROUND: url(images/kakatopbar_navmenudot.gif) no-repeat right center; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#kakatopbarbg A.kakanoground {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#header {
+	MARGIN: 0px auto; WIDTH: 96%; HEIGHT: 72px
+}
+#header H2 {
+	FLOAT: left; MARGIN: 20px 4px 16px
+}
+#header UL#iconmenu {
+	MARGIN-TOP: 20px; FLOAT: left; MARGIN-LEFT: 10px
+}
+#header UL#iconmenu LI {
+	FLOAT: left; MARGIN: 8px 4px; TEXT-ALIGN: center
+}
+#header UL#iconmenu LI H3 {
+	PADDING-LEFT: 8px
+}
+#header UL#iconmenu LI A:link {
+	COLOR: #999; TEXT-DECORATION: none
+}
+#header UL#iconmenu LI A:visited {
+	COLOR: #999; TEXT-DECORATION: none
+}
+#header UL#iconmenu LI A:visited {
+	COLOR: #999; TEXT-DECORATION: none
+}
+#header UL#iconmenu LI A:active {
+	COLOR: #999; TEXT-DECORATION: none
+}
+A.reg {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; BACKGROUND: url(images/submenudot.gif) no-repeat left center; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+A.kakaregister {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 18px; BACKGROUND: url(images/kaka_register.gif) no-repeat left center; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+A.kakaact {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 18px; BACKGROUND: url(images/kaka_activation.gif) no-repeat left center; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+A.kakalogin {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 18px; BACKGROUND: url(images/kaka_login.gif) no-repeat left center; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+A.kakalogout {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 18px; BACKGROUND: url(images/kaka_logout.gif) no-repeat left center; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#ad {
+	TEXT-ALIGN: right
+}
+#menubar {
+	CLEAR: both; BORDER-RIGHT: #e8e8e8 1px; BORDER-TOP: #e8e8e8 1px solid; BACKGROUND: url(images/menu_bg.gif) #fff repeat-x left top; MARGIN: 0px auto; BORDER-LEFT: #e8e8e8 1px; WIDTH: 100%; LINE-HEIGHT: 34px; BORDER-BOTTOM: #e8e8e8 1px solid; HEIGHT: 34px; min-width: 778px
+}
+#menubar .selectmode {
+	FLOAT: left
+}
+#menubar .selectmode A {
+	PADDING-LEFT: 18px; BACKGROUND: url(images/celan.gif) no-repeat 0px 45%
+}
+#menubar UL {
+	FLOAT: right
+}
+#menubar LI {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; BACKGROUND: url(images/menu_line.gif) no-repeat 100% 50%; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#menubar LI A {
+	COLOR: #333
+}
+#menubar LI A:link {
+	COLOR: #333
+}
+#menubar LI A:hover {
+	COLOR: #258dc9; TEXT-DECORATION: none
+}
+#menubar A:hover {
+	COLOR: #258dc9; TEXT-DECORATION: none
+}
+#menubar .noground {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+A.mycontent {
+	PADDING-RIGHT: 2px; DISPLAY: block; PADDING-LEFT: 2px; BACKGROUND: url(images/jsmenu.gif) no-repeat right center; PADDING-BOTTOM: 0px; WIDTH: 40px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+A.kakastyle {
+	PADDING-RIGHT: 15px; DISPLAY: block; PADDING-LEFT: 0px; BACKGROUND: url(images/jsmenu.gif) no-repeat right center; PADDING-BOTTOM: 0px; WIDTH: 80px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.ntdropmenu {
+	BORDER-RIGHT: #d7e3f2 1px solid; BORDER-TOP: #d7e3f2 1px; BACKGROUND: #f2f8ff; BORDER-LEFT: #d7e3f2 1px solid; WIDTH: 80px; BORDER-BOTTOM: #d7e3f2 1px solid; TEXT-ALIGN: center
+}
+.ntdropmenu A {
+	DISPLAY: block; MARGIN: 0px 2px; LINE-HEIGHT: 24px; BORDER-BOTTOM: #cadbf1 1px solid; HEIGHT: 24px
+}
+.ntdropmenu A:link {
+	COLOR: #333; TEXT-DECORATION: none
+}
+.ntdropmenu A:visited {
+	COLOR: #333; TEXT-DECORATION: none
+}
+.ntdropmenu A:hover {
+	COLOR: #258dc9; TEXT-DECORATION: none
+}
+.ntdropmenu A:active {
+	COLOR: #258dc9; TEXT-DECORATION: none
+}
+#foruminfo {
+	CLEAR: both; MARGIN-BOTTOM: 8px; POSITION: relative
+}
+#foruminfo A {
+	TEXT-DECORATION: underline
+}
+ HTML #foruminfo {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.userinfo {
+	PADDING-LEFT: 3px; FLOAT: left
+}
+.forumstats {
+	FLOAT: right; WIDTH: 300px
+}
+.focusstats {
+	FLOAT: right; WIDTH: 300px
+}
+.focusstats {
+	WIDTH: auto
+}
+.userinfo H2 {
+	FONT-WEIGHT: bold; LINE-HEIGHT: 28px
+}
+.userinfo UL {
+	MARGIN-TOP: 3px; WHITE-SPACE: nowrap
+}
+.userinfo UL LI {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.forumstats UL {
+	MARGIN-TOP: 3px; FLOAT: right; WHITE-SPACE: nowrap
+}
+.forumstats UL LI {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+#foruminfo SPAN A {
+	PADDING-LEFT: 10px; BACKGROUND: url(images/dot-postiont2.gif) no-repeat 0px 50%; MARGIN-LEFT: 5px
+}
+#foruminfo STRONG {
+	PADDING-LEFT: 10px; BACKGROUND: url(images/dot-postiont2.gif) no-repeat 0px 50%; MARGIN-LEFT: 5px
+}
+#foruminfo STRONG IMG {
+	VERTICAL-ALIGN: middle
+}
+#foruminfo STRONG STRONG {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.forumstats .lastitem {
+	BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 25px; TEXT-ALIGN: center
+}
+.forumstats SPAN A {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+UNKNOWN {
+	WIDTH: 358px
+}
+#homewindow {
+	BORDER-RIGHT: #b4c9e0 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #b4c9e0 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; BORDER-LEFT: #b4c9e0 1px solid; WIDTH: 350px; PADDING-TOP: 5px; BORDER-BOTTOM: #b4c9e0 1px solid; BACKGROUND-COLOR: #f5fafe; TEXT-ALIGN: left
+}
+UNKNOWN {
+	WIDTH: 340px
+}
+#homewindow DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#homewindow DT {
+	CLEAR: both; FONT-WEIGHT: bold; MARGIN: 0px 1em; COLOR: #a9c1dc; LINE-HEIGHT: 28px
+}
+#homewindow DD {
+	FLOAT: left; MARGIN: 0em 1em; OVERFLOW: hidden; WIDTH: 7em; LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+#search {
+	PADDING-LEFT: 78px
+}
+.forumstats {
+	POSITION: relative
+}
+.kakalastusername {
+	DISPLAY: inline-block; OVERFLOW: hidden; WIDTH: 70px; TEXT-OVERFLOW: ellipsis
+}
+.forumstats #search {
+	RIGHT: 0px; POSITION: absolute; TOP: 0px
+}
+#searchbar {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: #fff; BORDER-LEFT: #ccc 1px solid; WIDTH: 220px; LINE-HEIGHT: 24px; MARGIN-RIGHT: 0px; BORDER-BOTTOM: #ccc 1px solid; HEIGHT: 26px
+}
+#searchbar DT {
+	FLOAT: left
+}
+#searchbar DD {
+	FLOAT: left
+}
+#searchbar .s2 {
+	BACKGROUND: url(images/dot-down.gif) #fff no-repeat right center; WIDTH: 80px; COLOR: #090; LINE-HEIGHT: 26px; TEXT-ALIGN: center
+}
+#searchbar .text {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0.2em; WIDTH: 110px; TEXT-INDENT: 2px; PADDING-TOP: 0.2em; BORDER-RIGHT-WIDTH: 0px
+}
+ HTML #searchbar .text {
+	WIDTH: 108px
+}
+UNKNOWN {
+	WIDTH: 108px
+}
+#searchbar .textinput {
+	BORDER-RIGHT: #ccc 1px solid
+}
+#searchbar .s3 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(images/button-search.gif) #fff no-repeat 100% 0px; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 28px; HEIGHT: 25px; BORDER-RIGHT-WIDTH: 0px
+}
+.searchmenu {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #ccc 0px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #ccc 1px solid; WIDTH: 75px; PADDING-TOP: 4px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #f5fafe; TEXT-ALIGN: center
+}
+.cursor {
+	CURSOR: pointer
+}
+#foruminfo #announcement {
+	LEFT: 0px; OVERFLOW: hidden; WIDTH: 70%; POSITION: absolute; TOP: 45px; HEIGHT: 35px
+}
+#foruminfo #announcement H2 {
+	FONT-WEIGHT: bold
+}
+#foruminfo #announcement .gonggaomarquee {
+	FLOAT: left; MARGIN-LEFT: 2px; TEXT-ALIGN: left
+}
+#announcementbody {
+	
+}
+#announcementbody STRONG {
+	
+}
+#announcementbody LI {
+	PADDING-LEFT: 10px; FLOAT: left; COLOR: #999
+}
+.announcementcontent {
+	MARGIN: 10px
+}
+ HTML .announcementcontent {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+#adtext {
+	BACKGROUND: url(images/ad_bg.gif) repeat-x 2% 2%
+}
+.forumrules {
+	BACKGROUND: url(images/ad_bg.gif) repeat-x 2% 2%
+}
+.adtextbody TD {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+.notelist {
+	CLEAR: both
+}
+.notelist TD {
+	LINE-HEIGHT: 240%
+}
+.ntforumbox THEAD {
+	BACKGROUND: url(images/title_bg.gif) #f5f8fd; LINE-HEIGHT: 20px; TEXT-ALIGN: center
+}
+.topicicon {
+	WIDTH: 53px
+}
+.topictitle {
+	PADDING-LEFT: 8px; TEXT-ALIGN: left
+}
+.topictitle H3 {
+	LINE-HEIGHT: 180%
+}
+.topictitle IMG {
+	FLOAT: left
+}
+.kakaforumicon {
+	VERTICAL-ALIGN: top; TEXT-ALIGN: left
+}
+.kakaforumicon IMG {
+	
+}
+.topicmanager A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ntnumbers {
+	WIDTH: 80px; FONT-FAMILY: Tahoma, Verdana,snas-serif
+}
+.lastposter {
+	WIDTH: 300px; TEXT-ALIGN: left
+}
+.lastposter H4 {
+	FONT-WEIGHT: normal; MARGIN-LEFT: 6px; OVERFLOW: hidden; WIDTH: 24em; CURSOR: pointer; LINE-HEIGHT: 180%; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}
+.topicbackwriter {
+	MARGIN-LEFT: 6px
+}
+.topicbackwriter A {
+	COLOR: #999
+}
+.today {
+	PADDING-LEFT: 3px; FONT-WEIGHT: normal
+}
+.forumtopic STRONG {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Tahoma, Verdana,snas-serif
+}
+.hlist {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px; TEXT-ALIGN: left
+}
+.forumrules H4 {
+	PADDING-LEFT: 15px; LINE-HEIGHT: 30px; HEIGHT: 30px
+}
+.forumrules P {
+	PADDING-LEFT: 40px; BACKGROUND: url(images/law.gif) no-repeat 15px 0px; LINE-HEIGHT: 180%
+}
+.forumlisttitle {
+	TEXT-ALIGN: left
+}
+.searchtitle {
+	TEXT-ALIGN: left
+}
+.searchtitle {
+	PADDING-LEFT: 15px
+}
+.list TH.forumlisttitle {
+	BACKGROUND-IMAGE: none
+}
+.liston TH.forumlisttitle {
+	BACKGROUND-IMAGE: none
+}
+.forumlisttitle INPUT {
+	MARGIN-BOTTOM: 1px
+}
+.forumlisttitle IMG {
+	VERTICAL-ALIGN: middle
+}
+.listicon {
+	WIDTH: 30px
+}
+.listitem {
+	TEXT-ALIGN: left
+}
+.listitem H3 {
+	FONT-WEIGHT: normal; MARGIN-LEFT: 10px
+}
+.listitem H3 SPAN {
+	FONT-SIZE: 11px; COLOR: #666
+}
+.listitem H4 {
+	PADDING-RIGHT: 2px; FONT-WEIGHT: normal; MARGIN-LEFT: 10px
+}
+.listitem H4 SPAN {
+	FONT-SIZE: 11px; COLOR: #666
+}
+.listitem P {
+	PADDING-LEFT: 10px; FONT-SIZE: 11px; COLOR: #999; FONT-STYLE: italic; FONT-FAMILY: Pmingliu, Tahoma, Verdana,snas-serif
+}
+.viewnumbers {
+	TEXT-ALIGN: center
+}
+.listlast {
+	TEXT-ALIGN: left
+}
+ HTML .openlist {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.openlist {
+	CLEAR: both; PADDING-LEFT: 89px
+}
+.listcontent LI {
+	PADDING-LEFT: 10px; BACKGROUND: url(images/openlist-dot.jpg) no-repeat left center
+}
+.pagecontent {
+	BORDER-RIGHT: #b4c9e0 1px solid; BORDER-TOP: #b4c9e0 1px solid; MARGIN-TOP: 6px; MARGIN-BOTTOM: 2px; MARGIN-LEFT: 89px; BORDER-LEFT: #b4c9e0 1px solid; WIDTH: 160px; BORDER-BOTTOM: #b4c9e0 1px solid; TEXT-ALIGN: center
+}
+.pagediv {
+	BORDER-TOP: #d1e1ef 1px solid; BACKGROUND-COLOR: #f9fcff; TEXT-ALIGN: left
+}
+.platepage {
+	PADDING-LEFT: 4px; BACKGROUND: url(images/dot_page.gif) no-repeat 12px 0px; LINE-HEIGHT: 20px
+}
+.platepage A {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; COLOR: #666; PADDING-TOP: 3px
+}
+.platepage A:hover {
+	TEXT-DECORATION: underline
+}
+.froumlistmanager {
+	BORDER-TOP: #d1e1ef 1px solid; PADDING-LEFT: 14px; HEIGHT: 40px; TEXT-ALIGN: left
+}
+.froumlistmanager STRONG {
+	FONT-WEIGHT: bold
+}
+.forumlist IMG {
+	VERTICAL-ALIGN: middle
+}
+.popupmenu_topictype {
+	BORDER-RIGHT: #b4c9e0 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #b4c9e0 1px solid; MARGIN-TOP: 8px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; BORDER-LEFT: #b4c9e0 1px solid; WIDTH: 80px; PADDING-TOP: 5px; BORDER-BOTTOM: #b4c9e0 1px solid; BACKGROUND-COLOR: #f5fafe; TEXT-ALIGN: left
+}
+.popupmenu_topictype P {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid
+}
+.popupmenu_topictype P A:link {
+	FONT-WEIGHT: normal; COLOR: #000
+}
+.popupmenu_topictype P A:visited {
+	FONT-WEIGHT: normal; COLOR: #000
+}
+.popupmenu_topictype P A:hover {
+	FONT-WEIGHT: normal; COLOR: #ccc
+}
+.popupmenu_topictype P A:active {
+	FONT-WEIGHT: normal; COLOR: #ccc
+}
+ HTML .viewthread {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.postauthor {
+	VERTICAL-ALIGN: top; OVERFLOW: hidden; WIDTH: 177px; BACKGROUND-COLOR: #f5fafe
+}
+.postcontent {
+	VERTICAL-ALIGN: top; BORDER-LEFT: #e6eef7 1px solid
+}
+.forumdetailline {
+	BORDER-TOP: #d1e1ef 1px solid; LINE-HEIGHT: 8px; HEIGHT: 8px; BACKGROUND-COLOR: #d7e3f2
+}
+.viewthread TABLE {
+	TABLE-LAYOUT: fixed
+}
+.avatarphoto {
+	PADDING-RIGHT: 0px; BORDER-TOP: #e6eef7 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 6px; MARGIN: 0px auto; OVERFLOW: hidden; PADDING-TOP: 6px; TEXT-ALIGN: left
+}
+.postauthor P {
+	FONT-WEIGHT: lighter; MARGIN: 0px 10px; COLOR: #069
+}
+.nickname {
+	PADDING-LEFT: 10px
+}
+.kakastatus {
+	PADDING-LEFT: 10px
+}
+.profile {
+	BORDER-TOP: #e6eef7 1px solid; MARGIN: 10px
+}
+.profile LI {
+	OVERFLOW: hidden; WIDTH: 96%; WORD-BREAK: keep-all; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}
+.profile .otherproduct {
+	OVERFLOW: hidden; WIDTH: 96%; WORD-BREAK: keep-all; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}
+.profile SPAN {
+	PADDING-LEFT: 3px; COLOR: #000
+}
+.otherproduct {
+	LINE-HEIGHT: 36px; HEIGHT: 36px
+}
+.otherproduct STRONG {
+	LINE-HEIGHT: 36px; HEIGHT: 36px
+}
+.otherproduct EM {
+	LINE-HEIGHT: 36px; HEIGHT: 36px
+}
+.otherproduct STRONG {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.otherproduct EM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.otherproduct EM {
+	MARGIN-LEFT: 10px
+}
+.medals {
+	MARGIN: 6px; TEXT-ALIGN: left
+}
+ HTML .medals {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.medals IMG {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.ipshow {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; LINE-HEIGHT: 20px; PADDING-TOP: 6px
+}
+.noregediter {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; LINE-HEIGHT: 30px; PADDING-TOP: 6px
+}
+.hintinfo {
+	BORDER-RIGHT: #dbddd3 1px dotted; PADDING-RIGHT: 2px; BORDER-TOP: #dbddd3 1px dotted; PADDING-LEFT: 25px; BACKGROUND: url(images/hint.gif) #fdfff2 no-repeat 7px 3px; PADDING-BOTTOM: 2px; MARGIN: 15px 0px; BORDER-LEFT: #dbddd3 1px dotted; PADDING-TOP: 2px; BORDER-BOTTOM: #dbddd3 1px dotted
+}
+.normalname {
+	BORDER-RIGHT: #f5fafe 1px solid; BORDER-TOP: #f5fafe 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/dot-down2.gif) no-repeat right center; MARGIN: 2px auto; BORDER-LEFT: #f5fafe 1px solid; WIDTH: 165px; CURSOR: pointer; LINE-HEIGHT: 26px; BORDER-BOTTOM: #f5fafe 1px solid; WHITE-SPACE: nowrap; HEIGHT: 26px; TEXT-DECORATION: none
+}
+.normalnameon {
+	BORDER-RIGHT: #f5fafe 1px solid; BORDER-TOP: #f5fafe 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/dot-down2.gif) no-repeat right center; MARGIN: 2px auto; BORDER-LEFT: #f5fafe 1px solid; WIDTH: 165px; CURSOR: pointer; LINE-HEIGHT: 26px; BORDER-BOTTOM: #f5fafe 1px solid; WHITE-SPACE: nowrap; HEIGHT: 26px; TEXT-DECORATION: none
+}
+.normalnameon {
+	BORDER-RIGHT: #e6eef7 1px solid; BORDER-TOP: #e6eef7 1px solid; BACKGROUND: url(images/name-bg.gif) repeat-x left center; BORDER-LEFT: #e6eef7 1px solid; BORDER-BOTTOM: #e6eef7 1px solid
+}
+.normalname IMG {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; VERTICAL-ALIGN: middle; PADDING-TOP: 6px
+}
+.normalnameon IMG {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; VERTICAL-ALIGN: middle; PADDING-TOP: 6px
+}
+.menuwindow {
+	BORDER-RIGHT: #d7e3f2 3px solid; MARGIN-TOP: 6px; BACKGROUND: #fff; MARGIN-LEFT: 1px; BORDER-LEFT: #d7e3f2 1px solid; WIDTH: 176px; BORDER-BOTTOM: #d7e3f2 3px solid
+}
+.popupmenuitem {
+	PADDING-RIGHT: 0px; BORDER-TOP: #e6eef7 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; MARGIN: 2px 4px; PADDING-TOP: 2px; WHITE-SPACE: nowrap
+}
+.popupmenuitem P {
+	PADDING-LEFT: 24px
+}
+.popupmenuitem LI {
+	PADDING-LEFT: 24px
+}
+.popupmenuitem .recivemessage {
+	BACKGROUND: url(images/send-message.gif) no-repeat left center
+}
+.popupmenuitem .seeip {
+	BACKGROUND: url(images/ip.gif) no-repeat left center
+}
+.recivemessage A {
+	COLOR: #090
+}
+.seeip A {
+	COLOR: #090
+}
+UL.tools {
+	FONT-SIZE: 10px; COLOR: #09c; FONT-FAMILY: Tahoma, Verdana,snas-serif
+}
+.tools P {
+	PADDING-LEFT: 0px
+}
+.tools LI {
+	PADDING-LEFT: 0px
+}
+.kakaonline P {
+	PADDING-LEFT: 0px
+}
+.tools IMG {
+	PADDING-RIGHT: 8px; VERTICAL-ALIGN: middle
+}
+.kakaonline IMG {
+	PADDING-RIGHT: 8px; VERTICAL-ALIGN: middle
+}
+.viewnumber {
+	PADDING-LEFT: 15px
+}
+.viewnumber STRONG {
+	PADDING-RIGHT: 4px; FONT-WEIGHT: bold
+}
+.navpostinfo {
+	BORDER-BOTTOM: #e6eef7 1px solid
+}
+.postinfoleft {
+	FLOAT: left; LINE-HEIGHT: 32px; HEIGHT: 32px
+}
+.postinfoleft SPAN {
+	PADDING-LEFT: 8px
+}
+.postinfoleft EM {
+	MARGIN-LEFT: 15px; COLOR: #eee
+}
+.postinfoitem {
+	LINE-HEIGHT: 32px; MARGIN-RIGHT: 6px; HEIGHT: 32px; TEXT-ALIGN: right
+}
+ HTML .postinfoitem INPUT {
+	MARGIN-TOP: 6px
+}
+.postinfoitem A {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; MARGIN: 0px 2px; PADDING-TOP: 0px
+}
+.postinfoitem A SPAN {
+	BORDER-RIGHT: #dedeb8 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #dedeb8 1px solid; PADDING-LEFT: 5px; BACKGROUND: url(images/floud.gif) #ffffd9 no-repeat 2px 2px; PADDING-BOTTOM: 3px; BORDER-LEFT: #dedeb8 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #dedeb8 1px solid
+}
+.ntprint {
+	Z-INDEX: 1000; CURSOR: pointer; POSITION: absolute
+}
+.defaultcontent {
+	CLEAR: both; MIN-HEIGHT: 250px; OVERFLOW-X: hidden; WIDTH: 100%; HEIGHT: 250px
+}
+.defaultcontent A:link {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+.defaultcontent A:visited {
+	COLOR: #800080; TEXT-DECORATION: underline
+}
+.defaultcontent A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.defaultcontent A:active {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.defaultcontent .kakaprint {
+	POSITION: relative
+}
+.defaultcontent .kakaprint .ntprint {
+	Z-INDEX: 1000; RIGHT: 10px; CURSOR: pointer; POSITION: absolute; TOP: 10px
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+ HTML .postmessage {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+ HTML .postmessage {
+	CLEAR: both
+}
+.forumarticle {
+	PADDING-RIGHT: 30px; PADDING-LEFT: 30px; PADDING-BOTTOM: 30px; WORD-BREAK: break-all; PADDING-TOP: 15px; WORD-WRAP: break-word
+}
+ HTML .forumarticle {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.forumarticle H3 {
+	LINE-HEIGHT: 24px
+}
+.forumarticle LI {
+	MARGIN-LEFT: 2em
+}
+.t_attach {
+	BORDER-RIGHT: #e8e8e8 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #e8e8e8 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 12px; BACKGROUND: #fff; PADDING-BOTTOM: 5px; BORDER-LEFT: #e8e8e8 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #e8e8e8 1px solid
+}
+.t_attach STRONG {
+	FONT-WEIGHT: bold
+}
+.absmiddle {
+	VERTICAL-ALIGN: middle
+}
+.postertext {
+	BORDER-TOP: #eee 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; MARGIN: 5px 10px; PADDING-TOP: 5px
+}
+.quote {
+	BORDER-RIGHT: #dedeb8 1px solid; BORDER-TOP: #dedeb8 5px solid; MARGIN: 10px 30px; BORDER-LEFT: #dedeb8 1px solid; BORDER-BOTTOM: #dedeb8 1px solid
+}
+ HTML .quote {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.quote .text {
+	PADDING-LEFT: 14px; BACKGROUND: url(images/td_bg2.gif) #ffffd9 no-repeat left top; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; BORDER-BOTTOM: #fff 4px solid
+}
+ HTML .quote .text {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.attachmentinfo {
+	BORDER-RIGHT: #dedeb8 1px dotted; PADDING-RIGHT: 6px; BORDER-TOP: #dedeb8 1px dotted; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; BORDER-LEFT: #dedeb8 1px dotted; WIDTH: 80%; PADDING-TOP: 6px; BORDER-BOTTOM: #dedeb8 1px dotted; BACKGROUND-COLOR: #ffffff
+}
+.t_table {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.t_table TD {
+	BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid
+}
+.t_signature {
+	
+}
+.t_smallfont {
+	FONT-SIZE: 12px; LINE-HEIGHT: 160%
+}
+.t_smallfont DIV {
+	FONT-SIZE: 12px; LINE-HEIGHT: 160%
+}
+.t_msgfont {
+	FONT-SIZE: 14px; OVERFLOW: hidden; LINE-HEIGHT: 160%; PADDING-TOP: 6px
+}
+.t_bigfont {
+	FONT-SIZE: 16px; LINE-HEIGHT: 160%
+}
+.t_bigfont DIV {
+	FONT-SIZE: 16px; LINE-HEIGHT: 160%
+}
+.t_smallfont  {
+	LINE-HEIGHT: normal! important
+}
+.t_msgfont  {
+	LINE-HEIGHT: normal! important
+}
+.t_bigfont  {
+	LINE-HEIGHT: normal! important
+}
+.msgheader {
+	BORDER-RIGHT: #d7e3f2 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #d7e3f2 5px solid; PADDING-LEFT: 4px; BACKGROUND: #f5fafe; PADDING-BOTTOM: 4px; MARGIN: 0px 2em; BORDER-LEFT: #d7e3f2 1px solid; PADDING-TOP: 4px
+}
+.msgborder {
+	BORDER-RIGHT: #d7e3f2 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: 0px 2em; BORDER-LEFT: #d7e3f2 1px solid; WORD-BREAK: break-all; PADDING-TOP: 10px; BORDER-BOTTOM: #d7e3f2 1px solid; BACKGROUND-COLOR: #f5fafe
+}
+.right {
+	PADDING-RIGHT: 4px; FLOAT: right; MARGIN-RIGHT: 0px! important; TEXT-ALIGN: right
+}
+.ad_pip {
+	CLEAR: right; DISPLAY: inline; FLOAT: right; MARGIN: 10px
+}
+ HTML .ad_pip {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.lastediter {
+	MARGIN-TOP: 10px; MARGIN-LEFT: 30px
+}
+.ratelog {
+	MARGIN-TOP: 10px; MARGIN-LEFT: 30px
+}
+.ratelog IMG {
+	VERTICAL-ALIGN: middle
+}
+#postleaderboardad {
+	TEXT-ALIGN: center
+}
+.threadfoot {
+	BORDER-TOP: #e6eef7 1px solid; VERTICAL-ALIGN: middle
+}
+.threadfoot IMG {
+	MARGIN-LEFT: 16px
+}
+.threadfootright {
+	BORDER-LEFT: #e6eef7 1px solid
+}
+.ad_textlink1 {
+	PADDING-LEFT: 30px; MIN-HEIGHT: 28px; BACKGROUND: url(images/dot-ad.gif) no-repeat 4px 8px; FLOAT: left; OVERFLOW: hidden; WIDTH: 70%; LINE-HEIGHT: 28px
+}
+ HTML .ad_textlink1 {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.forumanswer {
+	FLOAT: right; TEXT-ALIGN: right
+}
+.forumanswer IMG {
+	MARGIN-TOP: 2px
+}
+.navnextpage {
+	PADDING-LEFT: 10px; LINE-HEIGHT: 28px
+}
+.navnextpage A {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ticket .list {
+	TEXT-ALIGN: left
+}
+#ticketcount {
+	PADDING-LEFT: 8px; BORDER-BOTTOM: #fff 3px solid; HEIGHT: 35px
+}
+#ticketcount IMG {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 8px
+}
+.ticketleft {
+	PADDING-LEFT: 25px; WIDTH: 360px
+}
+UNKNOWN {
+	MARGIN-BOTTOM: -3px
+}
+.ticket-show {
+	BACKGROUND: url(images/ticket_bg.gif) repeat-x left top; MARGIN: 10px 12px; WIDTH: 380px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 13px; TEXT-ALIGN: left
+}
+.ticket-show DIV {
+	BACKGROUND: url(images/ticket.gif) repeat-x left top; HEIGHT: 12px
+}
+.ticketnumbers STRONG {
+	FONT-WEIGHT: bold; COLOR: #f60
+}
+.ticketfooter {
+	BORDER-TOP: #dce6f1 1px solid; PADDING-LEFT: 45px; HEIGHT: 43px
+}
+.controlpannel {
+	CLEAR: both; MARGIN-BOTTOM: 8px
+}
+ HTML .controlpannel {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.pannelmenu {
+	MARGIN-TOP: 18px; FLOAT: left; WIDTH: 10%; POSITION: relative
+}
+.pannelmenu A {
+	DISPLAY: block; MARGIN-BOTTOM: 5px; LINE-HEIGHT: 30px; HEIGHT: 30px; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.pannelmenu A.current {
+	BORDER-RIGHT: #b4c9e0 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #b4c9e0 1px solid; PADDING-LEFT: 1px; BACKGROUND: #f2f8fe; LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #b4c9e0 1px solid; CURSOR: default; LINE-HEIGHT: 26px; PADDING-TOP: 1px; BORDER-BOTTOM: #b4c9e0 1px solid; POSITION: relative; HEIGHT: 26px
+}
+UNKNOWN {
+	LEFT: 0px
+}
+ HTML .pannelmenu A.current {
+	LEFT: 0px
+}
+.pannelmenu A:hover {
+	TEXT-DECORATION: none
+}
+.current SPAN {
+	DISPLAY: block; PADDING-LEFT: 15px; BACKGROUND: #eaf3fd; LINE-HEIGHT: 23px; HEIGHT: 23px
+}
+.pannelcontent {
+	FLOAT: right; MARGIN-LEFT: -1px; WIDTH: 90%; MARGIN-RIGHT: 1px
+}
+.pannelcontent .pcontent {
+	BORDER-RIGHT: #b5c9e0 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #b5c9e0 1px solid; PADDING-LEFT: 1px; BACKGROUND: #f4f9fe; PADDING-BOTTOM: 1px; BORDER-LEFT: #b5c9e0 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #b5c9e0 1px solid
+}
+.pcontent .panneldetail {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; BACKGROUND: url(images/content-bg.jpg) #eaf3fd repeat-x left top; PADDING-BOTTOM: 10px; PADDING-TOP: 20px
+}
+.panneltabs {
+	PADDING-BOTTOM: 28px
+}
+.panneltabs A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 28px; MARGIN-RIGHT: 5px; PADDING-TOP: 0px; HEIGHT: 28px; TEXT-DECORATION: none
+}
+.panneltabs A:hover {
+	BACKGROUND: #fff; COLOR: #666
+}
+.panneltabs A.current {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; CURSOR: default; COLOR: #000; LINE-HEIGHT: 27px; MARGIN-RIGHT: 5px; PADDING-TOP: 0px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 27px; TEXT-ALIGN: center
+}
+.panneltabs A.current:hover {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; CURSOR: default; COLOR: #000; LINE-HEIGHT: 27px; MARGIN-RIGHT: 5px; PADDING-TOP: 0px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 27px; TEXT-ALIGN: center
+}
+.panneltabs A.addbutton {
+	CURSOR: default; COLOR: #090
+}
+.pannelbody {
+	CLEAR: both; BORDER-RIGHT: #d6e8f8 2px solid; PADDING-RIGHT: 20px; PADDING-LEFT: 20px; MIN-HEIGHT: 450px; BACKGROUND: #fff; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; BORDER-BOTTOM: #d6e8f8 4px solid
+}
+ HTML .pannelbody {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.pannellist {
+	MARGIN-BOTTOM: 8px; HEIGHT: 480px
+}
+.messagetableon {
+	BACKGROUND: #f5fafe
+}
+.pannellist TD {
+	LINE-HEIGHT: 220%; BORDER-BOTTOM: #ccc 1px dashed; TEXT-ALIGN: center
+}
+.pannellist TH {
+	LINE-HEIGHT: 220%; BORDER-BOTTOM: #ccc 1px dashed; TEXT-ALIGN: center
+}
+.pannellist .forumpages TD {
+	BORDER-BOTTOM: #bddaf7 1px solid
+}
+.pannelmessage {
+	LINE-HEIGHT: 40px; HEIGHT: 40px
+}
+.pannelleft {
+	PADDING-LEFT: 10px; FLOAT: left; WIDTH: 48%; LINE-HEIGHT: 36px
+}
+.pannelleft A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.pannelright {
+	FLOAT: right; WIDTH: 48%; TEXT-ALIGN: right
+}
+.pannelbody LABEL {
+	FONT-WEIGHT: bold; FLOAT: left; WIDTH: 140px; LINE-HEIGHT: 220%
+}
+.labelshort {
+	WIDTH: 60px
+}
+.labellong {
+	WIDTH: 150px
+}
+.labellong2 {
+	WIDTH: 160px; LINE-HEIGHT: 400%
+}
+.pannelbody BR {
+	CLEAR: left
+}
+.pannelbody UL {
+	MARGIN-BOTTOM: 10px; LINE-HEIGHT: 200%
+}
+.notetitle {
+	PADDING-LEFT: 25px; FONT-WEIGHT: bold; BACKGROUND: url(images/message_1.gif) no-repeat left center; COLOR: #f90
+}
+.notetime {
+	PADDING-LEFT: 25px; FONT-WEIGHT: lighter; COLOR: #999
+}
+.notecontent {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 14px; PADDING-BOTTOM: 10px; OVERFLOW: hidden; WORD-BREAK: break-all; PADDING-TOP: 10px; WORD-WRAP: break-word
+}
+.paychange {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.paychange EM {
+	FONT-WEIGHT: bold; COLOR: #f90
+}
+.notecontent A {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.usermessagesname {
+	FONT-WEIGHT: bold; COLOR: #090
+}
+.compartline {
+	BORDER-TOP: #ccc 1px dashed; MARGIN: 0px auto; LINE-HEIGHT: 15px; HEIGHT: 15px
+}
+.usermessagephoto {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+ HTML .usermessagephoto {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.photoimg {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px dashed
+}
+ HTML .photoimg {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.photoimg IMG {
+	FLOAT: left; MARGIN: 0px 10px 10px
+}
+.photoimgediter {
+	FLOAT: right; WIDTH: 85%
+}
+UL#photo {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; MARGIN: 0px auto; PADDING-TOP: 6px; WHITE-SPACE: nowrap
+}
+ HTML UL#photo {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+#photo LI {
+	MIN-HEIGHT: 240px; FLOAT: left; OVERFLOW: hidden; WIDTH: 24.5%; HEIGHT: 240px
+}
+.photodetail H4 {
+	FONT-WEIGHT: bold
+}
+.pictureimg {
+	TEXT-ALIGN: center
+}
+.photoediter {
+	MARGIN-TOP: 15px
+}
+ HTML .photoediter {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.photoediter .photoshow {
+	FLOAT: left; WIDTH: 20%; TEXT-ALIGN: center
+}
+.photoediter .photomessage {
+	FLOAT: right; WIDTH: 68%
+}
+.avatarlist {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #999 1px solid; OVERFLOW-Y: auto; PADDING-LEFT: 10px; BACKGROUND: #fff; OVERFLOW-X: hidden; PADDING-BOTTOM: 10px; BORDER-LEFT: #999 1px solid; WIDTH: 450px; PADDING-TOP: 10px; BORDER-BOTTOM: #999 0px solid; HEIGHT: 400px
+}
+.avatarlist LI {
+	FLOAT: left; MARGIN: 0px 1px; WIDTH: 24%; HEIGHT: 120px
+}
+.avatarbutton {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #999 0px solid; DISPLAY: block; PADDING-LEFT: 0px; LEFT: 0px; PADDING-BOTTOM: 5px; BORDER-LEFT: #999 1px solid; BOTTOM: 0px; PADDING-TOP: 5px; BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center
+}
+.avatarbackground {
+	BACKGROUND-COLOR: #f5f5f5
+}
+#BOX_overlay LABEL {
+	WIDTH: 40px
+}
+#avatarbox LABEL {
+	FLOAT: none; CURSOR: pointer
+}
+UNKNOWN {
+	MARGIN-BOTTOM: -3px
+}
+.newmessage {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; TEXT-ALIGN: right
+}
+A.submitbutton {
+	PADDING-RIGHT: 22px; PADDING-LEFT: 22px; BACKGROUND: url(images/userbutton3.gif) no-repeat left center; PADDING-BOTTOM: 7px; PADDING-TOP: 7px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.submitbutton STRONG {
+	COLOR: #000
+}
+A.otherbutton {
+	PADDING-RIGHT: 16px; PADDING-LEFT: 16px; BACKGROUND: url(images/userbutton2.gif) no-repeat left center; PADDING-BOTTOM: 7px; PADDING-TOP: 7px; TEXT-ALIGN: center
+}
+A.selectall {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url(images/usersubmit.gif) no-repeat left center; PADDING-BOTTOM: 7px; PADDING-TOP: 7px; TEXT-ALIGN: center
+}
+.ntforumplate {
+	CLEAR: both
+}
+#frameback {
+	LINE-HEIGHT: 26px; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 27px; BACKGROUND-COLOR: #deeffa
+}
+#frameback STRONG {
+	PADDING-LEFT: 35px; BACKGROUND: url(images/back.gif) no-repeat 25% 50%; BORDER-LEFT: #f5fafd 1px solid
+}
+#frameback EM {
+	PADDING-LEFT: 30px; BACKGROUND: url(images/back2.gif) no-repeat 13% 50%; MARGIN-LEFT: 10px
+}
+.framemenu {
+	CLEAR: both; MARGIN-LEFT: 8px; TEXT-ALIGN: left
+}
+.framemenu IMG {
+	VERTICAL-ALIGN: middle
+}
+.framemenu LI SPAN {
+	COLOR: #000
+}
+.framemenu STRONG {
+	FONT-WEIGHT: normal; COLOR: #09c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.framemenu SPAN {
+	COLOR: #09c
+}
+.framemenuLine {
+	BACKGROUND: url(images/space.gif) repeat-x left center; MARGIN: 0px auto; WIDTH: 200px
+}
+#newpmcount {
+	COLOR: #09c; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.forumdropmenu {
+	BORDER-RIGHT: #e6eef7 1px solid; PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: #f2f8ff; PADDING-BOTTOM: 2px; BORDER-LEFT: #d7e3f2 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #e6eef7 1px solid; TEXT-ALIGN: left
+}
+.framehead {
+	CLEAR: both; LINE-HEIGHT: 22px
+}
+.frameheadleft {
+	FLOAT: left; TEXT-ALIGN: left
+}
+.frameheadright {
+	FLOAT: right; TEXT-ALIGN: right
+}
+.framehead P {
+	LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+#forumfocus {
+	CLEAR: both; MARGIN-BOTTOM: 8px
+}
+ HTML #forumfocus {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.focuslistleft {
+	FLOAT: left; WIDTH: 48%
+}
+.focuslistright {
+	FLOAT: right; WIDTH: 48%
+}
+.navfocuslist LI {
+	BORDER-TOP: #d1e1ef 1px solid; MARGIN-BOTTOM: 1px; COLOR: #036; LINE-HEIGHT: 24px; BACKGROUND-COLOR: #f5fafe; TEXT-ALIGN: left
+}
+.navfocuslist LI IMG {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.framelistselect {
+	CLEAR: both; BORDER-TOP: #e6eef7 1px solid; COLOR: #09c; LINE-HEIGHT: 28px; HEIGHT: 30px; BACKGROUND-COLOR: #f5fafe
+}
+.listspace {
+	PADDING-LEFT: 26px
+}
+ HTML UL#forumtemplate {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+UL#forumtemplate LI {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 45%; PADDING-TOP: 10px; HEIGHT: 260px; TEXT-ALIGN: center
+}
+UL#forumtemplate IMG {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; MARGIN: 1px; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.searchtab {
+	PADDING-LEFT: 5px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 27px; BORDER-BOTTOM: #7ac4ea 1px solid
+}
+.searchtab A {
+	BORDER-RIGHT: #7ac4ea 1px solid; PADDING-RIGHT: 20px; BORDER-TOP: #7ac4ea 1px solid; PADDING-LEFT: 20px; FONT-WEIGHT: bold; BACKGROUND: #f5fbff; FLOAT: left; PADDING-BOTTOM: 0px; BORDER-LEFT: #7ac4ea 1px solid; COLOR: #666; LINE-HEIGHT: 26px; MARGIN-RIGHT: 5px; PADDING-TOP: 0px; BORDER-BOTTOM: #7ac4ea 1px solid; HEIGHT: 26px; TEXT-DECORATION: none
+}
+.searchtab A.currenttab {
+	BACKGROUND: #fff; CURSOR: default; COLOR: #000! important; BORDER-BOTTOM: #fff 1px solid
+}
+.searchtab A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #666
+}
+.useravatar {
+	FLOAT: left; WIDTH: 250px
+}
+ HTML .useravatar {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.useravatar IMG {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 20px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ccc 1px solid
+}
+.useravatar UL {
+	MARGIN: 0px 20px 20px
+}
+.useravatar LI A {
+	FONT-WEIGHT: bold; COLOR: #0d7dbf; TEXT-DECORATION: underline
+}
+.navuserspace {
+	PADDING-LEFT: 25px; BACKGROUND: url(images/dotspace.gif) no-repeat 0px 50%; LINE-HEIGHT: 30px
+}
+.navuserphoto {
+	PADDING-LEFT: 25px; BACKGROUND: url(images/dotspace.gif) no-repeat 0px 50%; LINE-HEIGHT: 30px
+}
+.navusermail {
+	PADDING-LEFT: 25px; BACKGROUND: url(images/dotspace.gif) no-repeat 0px 50%; LINE-HEIGHT: 30px
+}
+.navuserpm {
+	PADDING-LEFT: 25px; BACKGROUND: url(images/dotspace.gif) no-repeat 0px 50%; LINE-HEIGHT: 30px
+}
+.navuserban {
+	PADDING-LEFT: 25px; BACKGROUND: url(images/dotspace.gif) no-repeat 0px 50%; LINE-HEIGHT: 30px
+}
+.navuserphoto {
+	BACKGROUND: url(images/dotphoto.gif) no-repeat 0px 50%
+}
+.navusermail {
+	BACKGROUND: url(images/email.gif) no-repeat 0px 50%
+}
+.navuserpm {
+	BACKGROUND: url(images/draftbox.gif) no-repeat 0px 50%
+}
+.navuserban {
+	BACKGROUND: url(images/page_link.gif) no-repeat 0px 50%
+}
+.usermessage {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 260px; LINE-HEIGHT: 180%
+}
+.usermessage UL.firestmessage {
+	FLOAT: left; MARGIN: 10px 0px; WIDTH: 50%
+}
+.usermessage UL.secondmessage {
+	FLOAT: right; MARGIN: 10px 0px; WIDTH: 45%
+}
+.usermessage LI.navname {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; LINE-HEIGHT: 35px; HEIGHT: 35px
+}
+.usermessage SPAN {
+	FONT-WEIGHT: normal; COLOR: #666
+}
+.forumuserinfo {
+	CLEAR: both; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 15px; MARGIN-RIGHT: 10px; PADDING-TOP: 15px
+}
+.forumuserinfo A {
+	TEXT-DECORATION: underline
+}
+.colorblue {
+	BORDER-RIGHT: #b9cde3 1px double; BORDER-TOP: #b9cde3 1px double; MARGIN: 2px; BORDER-LEFT: #b9cde3 1px double; BORDER-BOTTOM: #b9cde3 1px double; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #fff
+}
+.colorfocus {
+	BORDER-RIGHT: #b9cde3 1px double; BORDER-TOP: #b9cde3 1px double; MARGIN: 2px; BORDER-LEFT: #b9cde3 1px double; BORDER-BOTTOM: #b9cde3 1px double; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #fff
+}
+.colorblue2 {
+	BORDER-RIGHT: #b9cde3 1px double; BORDER-TOP: #b9cde3 1px double; MARGIN: 2px; BORDER-LEFT: #b9cde3 1px double; BORDER-BOTTOM: #b9cde3 1px double; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #fff
+}
+.colorfocus {
+	BORDER-RIGHT: #9c0 1px double; BORDER-TOP: #9c0 1px double; BORDER-LEFT: #9c0 1px double; BORDER-BOTTOM: #9c0 1px double
+}
+.colorblue2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 40px; PADDING-TOP: 0px
+}
+.InPutRadio {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 15px; LINE-HEIGHT: 20px; PADDING-TOP: 15px
+}
+.sbutton {
+	FONT-WEIGHT: bold; BACKGROUND: url(images/button-bg3.gif) #1885c4 no-repeat left top; MARGIN-LEFT: 2px; WIDTH: 77px; COLOR: #fff; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 27px; BORDER-BOTTOM-STYLE: none
+}
+.sbutton:hover {
+	FONT-WEIGHT: bold; BACKGROUND: url(images/button-bg3.gif) #1885c4 no-repeat left top; MARGIN-LEFT: 2px; WIDTH: 77px; COLOR: #fff; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 27px; BORDER-BOTTOM-STYLE: none
+}
+.lightbutton {
+	BORDER-RIGHT: #95d2f0 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #95d2f0 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; BORDER-LEFT: #95d2f0 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #95d2f0 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 24px; BACKGROUND-COLOR: #f5fafe
+}
+ HTML .lightbutton {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+UNKNOWN {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.forumform {
+	CLEAR: both; TEXT-ALIGN: left
+}
+.formlabel {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; WIDTH: 200px; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+.quicklabel {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; WIDTH: 200px; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+.quicklabel {
+	WIDTH: 170px
+}
+.formbody {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; TEXT-ALIGN: left
+}
+UNKNOWN {
+	MARGIN-BOTTOM: -3px
+}
+.forumform INPUT {
+	MARGIN-RIGHT: 7px
+}
+.forumform SELECT {
+	MARGIN-RIGHT: 7px
+}
+.formarea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 208px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+.navformcommend {
+	BORDER-TOP: #d1e1ef 1px solid; PADDING-LEFT: 15px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(images/title_bg.jpg); LINE-HEIGHT: 27px; TEXT-ALIGN: left
+}
+.navtopiccommend {
+	BORDER-TOP: #d1e1ef 1px solid; PADDING-LEFT: 15px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(images/title_bg.jpg); LINE-HEIGHT: 27px; TEXT-ALIGN: left
+}
+.navtopiccommend {
+	BACKGROUND: #ffffd9; BORDER-TOP-STYLE: none; BORDER-BOTTOM: #dedeb8 1px solid; TEXT-ALIGN: center
+}
+.quickreply .formlabel {
+	WIDTH: 165px
+}
+.quickpost .formlabel {
+	WIDTH: 165px
+}
+.quickreply .formarea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 183px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.quickpost .formarea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 183px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.editorbody {
+	VERTICAL-ALIGN: top; TEXT-ALIGN: left
+}
+.quickbody TABLE {
+	TABLE-LAYOUT: fixed
+}
+.scrollbar TABLE {
+	TABLE-LAYOUT: auto
+}
+.formcode IMG {
+	VERTICAL-ALIGN: middle
+}
+.popupmenu_popup {
+	BORDER-RIGHT: #86b9d6 1px solid; BORDER-TOP: #86b9d6 1px solid; BACKGROUND: #fff; BORDER-LEFT: #86b9d6 1px solid; COLOR: #000; BORDER-BOTTOM: #86b9d6 1px solid
+}
+.popupmenu_option {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; BACKGROUND: #f5fafe; PADDING-BOTTOM: 2px; CURSOR: pointer; PADDING-TOP: 2px; WHITE-SPACE: nowrap
+}
+.popupmenu_option A:link {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; TEXT-DECORATION: none
+}
+.popupmenu_option A:visited {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; TEXT-DECORATION: none
+}
+.popupmenu_option A:hover {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; COLOR: #fff; PADDING-TOP: 2px; TEXT-DECORATION: none
+}
+.popupmenu_option A:active {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; COLOR: #fff; PADDING-TOP: 2px; TEXT-DECORATION: none
+}
+.smiliepanel {
+	PADDING-BOTTOM: 24px; BORDER-BOTTOM: #b4c9e0 1px solid
+}
+.scrollbar {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 190px; HEIGHT: 25px
+}
+.scrollbar TABLE {
+	WIDTH: auto
+}
+.scrollbar TD DIV {
+	BORDER-RIGHT: #b4c9e0 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #b4c9e0 1px solid; PADDING-LEFT: 4px; BACKGROUND: #f5fbff; PADDING-BOTTOM: 0px; BORDER-LEFT: #b4c9e0 1px solid; WIDTH: 60px; CURSOR: pointer; LINE-HEIGHT: 23px; MARGIN-RIGHT: 5px; PADDING-TOP: 0px; BORDER-BOTTOM: #b4c9e0 1px solid; HEIGHT: 23px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.lian {
+	BORDER-RIGHT: #b4c9e0 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #b4c9e0 1px solid; PADDING-LEFT: 4px; BACKGROUND: #f5fbff; PADDING-BOTTOM: 0px; BORDER-LEFT: #b4c9e0 1px solid; WIDTH: 60px; CURSOR: pointer; LINE-HEIGHT: 23px; MARGIN-RIGHT: 5px; PADDING-TOP: 0px; BORDER-BOTTOM: #b4c9e0 1px solid; HEIGHT: 23px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.scrollbar .lian {
+	FONT-WEIGHT: bold; BACKGROUND: #fff; COLOR: #0d7dbf! important; BORDER-BOTTOM: #fff 1px solid; WHITE-SPACE: nowrap
+}
+#scrlcontrol {
+	FLOAT: right; PADDING-TOP: 4px; TEXT-ALIGN: right
+}
+.navcontrol {
+	MARGIN-LEFT: 10px; WIDTH: 280px
+}
+.navtextarea {
+	WIDTH: 50%
+}
+.autosave {
+	BEHAVIOR: url(#default#userdata); WIDTH: 98%; WORD-BREAK: break-all; HEIGHT: 118px; WORD-WRAP: break-word
+}
+.smiles {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; BACKGROUND: #fff; PADDING-BOTTOM: 3px; MARGIN-LEFT: 2px; COLOR: #fff; PADDING-TOP: 3px
+}
+#showsmilie {
+	BORDER-RIGHT: #b4c9e0 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #b4c9e0 0px solid; OVERFLOW-Y: auto; PADDING-LEFT: 5px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; OVERFLOW: hidden; BORDER-LEFT: #b4c9e0 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #b4c9e0 1px solid; HEIGHT: 102px
+}
+#showsmilie IMG {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+#showsmilie P {
+	text-algin: center
+}
+.p_bar {
+	CLEAR: both; MARGIN-TOP: 10px; MIN-HEIGHT: 24px; MARGIN-LEFT: 1px; LINE-HEIGHT: 20px; HEIGHT: 24px
+}
+.p_bar A {
+	DISPLAY: block; FLOAT: left; WIDTH: 20px; MARGIN-RIGHT: 4px; HEIGHT: 20px; TEXT-ALIGN: center
+}
+A.p_curpage {
+	BORDER-RIGHT: #b4c9e0 1px solid; BORDER-TOP: #b4c9e0 1px solid; FONT-WEIGHT: bold; BACKGROUND: #fff; BORDER-LEFT: #b4c9e0 1px solid; BORDER-BOTTOM: #b4c9e0 1px solid
+}
+.forumpages {
+	CLEAR: both; MARGIN: 8px 0px; HEIGHT: 34px
+}
+.forumpagesnumbers {
+	FLOAT: left; WIDTH: 65%; PADDING-TOP: 4px
+}
+.forumallpages {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+.forumallpages A {
+	BORDER-RIGHT: #bddaf7 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #bddaf7 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 3px; BORDER-LEFT: #bddaf7 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #bddaf7 1px solid
+}
+.forumallpages A:hover {
+	BACKGROUND: url(images/page-bg.gif) #45ace1 repeat-x left top; COLOR: #fff; TEXT-DECORATION: none
+}
+.forumpages SPAN {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: url(images/page-bg.gif) #45ace1 repeat-x left top; PADDING-BOTTOM: 5px; MARGIN-LEFT: 3px; COLOR: #fff; PADDING-TOP: 5px
+}
+.forumallpages3 {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+.forumallpages3 INPUT {
+	MARGIN: 0px 2px; HEIGHT: 18px
+}
+.pagesothers {
+	FLOAT: right; WIDTH: 34%; LINE-HEIGHT: 33px; HEIGHT: 33px; TEXT-ALIGN: right
+}
+.pagesothers DIV {
+	FLOAT: left; WIDTH: 78px
+}
+.pagesothers2 {
+	FLOAT: right; PADDING-BOTTOM: 5px; WIDTH: 200px; TEXT-ALIGN: right
+}
+.forumerror {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 45px; BACKGROUND: url(images/btn-error.gif) no-repeat left center; PADDING-BOTTOM: 10px; MARGIN: 0px auto; FONT: bold 14px/160% Arial, Helvetica, sans-serif; WIDTH: 40%; COLOR: #090; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+.navforumtrue {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 45px; BACKGROUND: url(images/btn-error.gif) no-repeat left center; PADDING-BOTTOM: 10px; MARGIN: 0px auto; FONT: bold 14px/160% Arial, Helvetica, sans-serif; WIDTH: 40%; COLOR: #090; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+ HTML .forumerror {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.errorback {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; MARGIN: 0px auto; COLOR: #3f4e5a; TEXT-ALIGN: left
+}
+.forumtrue {
+	CLEAR: both; BORDER-RIGHT: #b4c9e0 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #b4c9e0 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 8px auto 0px; BORDER-LEFT: #b4c9e0 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #b4c9e0 1px solid; BACKGROUND-COLOR: #f5fafe; TEXT-ALIGN: center
+}
+ HTML .forumtrue {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.navforumtrue {
+	BACKGROUND: url(images/btn-true.gif) no-repeat left center
+}
+#forumjumping {
+	MARGIN: 8px 0px; LINE-HEIGHT: 40px
+}
+ HTML #forumjumping {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.jumpmodule {
+	PADDING-LEFT: 30px; BACKGROUND: url(images/dot_redirect.gif) no-repeat 10px center; FLOAT: left; WIDTH: 40%
+}
+ HTML .jumpmodule {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+ HTML .jumpmodule SELECT {
+	MARGIN-TOP: 10px
+}
+.manageritem {
+	MARGIN-TOP: 8px; PADDING-LEFT: 15px; FLOAT: left; WIDTH: 40%
+}
+ HTML .manageritem {
+	MARGIN-TOP: auto
+}
+UNKNOWN {
+	MARGIN-TOP: auto
+}
+.jumpingright {
+	FLOAT: right
+}
+.forumjump {
+	MARGIN-TOP: 8px; FLOAT: right
+}
+ HTML .forumjump {
+	MARGIN-TOP: auto
+}
+UNKNOWN {
+	MARGIN-TOP: auto
+}
+UNKNOWN {
+	MARGIN-BOTTOM: -5px; MARGIN-RIGHT: 2px
+}
+ HTML .onlineuser {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.onlineuser H4 {
+	PADDING-LEFT: 14px; LINE-HEIGHT: 35px; BORDER-BOTTOM: #e6eef7 1px solid; HEIGHT: 35px
+}
+.forumlink H4 {
+	PADDING-LEFT: 14px; LINE-HEIGHT: 35px; BORDER-BOTTOM: #e6eef7 1px solid; HEIGHT: 35px
+}
+.forumlink H4 {
+	BORDER-BOTTOM-STYLE: none
+}
+.onlineuser H4 EM {
+	PADDING-LEFT: 20px; BACKGROUND: url(images/time.gif) no-repeat left center; MARGIN-LEFT: 15px; FONT-FAMILY: Georgia,Tahoma, Verdana,snas-serif
+}
+.onlineuserlist {
+	PADDING-LEFT: 14px; MARGIN: 0px 5px 5px
+}
+ HTML .onlineuserlist {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.onlineuserlist DT {
+	LINE-HEIGHT: 30px; BORDER-BOTTOM: #ccc 1px solid
+}
+.onlineusernumber {
+	LINE-HEIGHT: 30px; BORDER-BOTTOM: #ccc 1px solid
+}
+ HTML .onlineuserlist DT {
+	PADDING-TOP: 4px
+}
+.onlineuserlist DT IMG {
+	MARGIN-BOTTOM: 3px; VERTICAL-ALIGN: middle
+}
+.onlineusernumber STRONG {
+	FONT-WEIGHT: bold
+}
+.newuser {
+	PADDING-LEFT: 20px; BACKGROUND: url(images/dot_newuser.gif) no-repeat left center; PADDING-TOP: 3px
+}
+#online LI {
+	MIN-HEIGHT: 0px; FLOAT: left; WIDTH: 16%; LINE-HEIGHT: 24px; HEIGHT: 24px; TEXT-ALIGN: left
+}
+#online LI IMG {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 12px
+}
+#online .seelist {
+	FONT-WEIGHT: bold
+}
+#online1 LI {
+	MIN-HEIGHT: 0px; FLOAT: left; WIDTH: 19%; LINE-HEIGHT: 24px; HEIGHT: 24px; TEXT-ALIGN: left
+}
+#online LI IMG {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 12px
+}
+#online .seelist {
+	FONT-WEIGHT: bold
+}
+.navhelp {
+	MARGIN: 15px 0px
+}
+ HTML .navhelp {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.helpmenu {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: url(images/forumcontentBg.jpg) repeat-x left top; FLOAT: left; BORDER-LEFT: #ccc 1px solid; WIDTH: 20%; BORDER-BOTTOM: #ccc 1px solid
+}
+.helpmenu STRONG {
+	FONT-WEIGHT: bold
+}
+.helpcontent {
+	BORDER-RIGHT: #b6cae0 1px solid; BORDER-TOP: #b6cae0 1px solid; FLOAT: right; BORDER-LEFT: #b6cae0 1px solid; WIDTH: 78%; BORDER-BOTTOM: #b6cae0 1px solid
+}
+ HTML .helpcontent {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.helpcontent H2 {
+	PADDING-LEFT: 15px; FONT-SIZE: 14px; COLOR: #1b87c5; BACKGROUND-COLOR: rgb(245,250,254)
+}
+.helpsubtitle {
+	FONT-WEIGHT: bold
+}
+.helpcontent UL {
+	MARGIN: 15px
+}
+.forumlink {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+#linklist {
+	CLEAR: both
+}
+.linktitle {
+	PADDING-LEFT: 14px; TEXT-ALIGN: left
+}
+.linktitle IMG {
+	MARGIN-BOTTOM: 2px
+}
+.linklogo {
+	PADDING-LEFT: 6px; VERTICAL-ALIGN: middle; TEXT-ALIGN: left
+}
+.linktitle P {
+	COLOR: #666
+}
+#linklist IMG {
+	MARGIN-TOP: 2px; VERTICAL-ALIGN: middle
+}
+#navcutline {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px auto; WIDTH: 300px; LINE-HEIGHT: 50px; PADDING-TOP: 2px; HEIGHT: 50px; TEXT-ALIGN: center
+}
+.forumcutline {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px auto; WIDTH: 300px; LINE-HEIGHT: 50px; PADDING-TOP: 2px; HEIGHT: 50px; TEXT-ALIGN: center
+}
+.forumcutline {
+	WIDTH: 400px; LINE-HEIGHT: 60px; HEIGHT: 60px
+}
+#navcutline STRONG {
+	PADDING-LEFT: 35px; BACKGROUND: url(images/forum_old.gif) no-repeat left center; PADDING-BOTTOM: 15px; PADDING-TOP: 15px
+}
+#navcutline EM {
+	PADDING-LEFT: 35px; BACKGROUND: url(images/forum_old.gif) no-repeat left center; PADDING-BOTTOM: 15px; PADDING-TOP: 15px
+}
+#navcutline EM {
+	BACKGROUND: url(images/forum_new.gif) no-repeat left center; MARGIN-LEFT: 15px
+}
+.forumcutline UL {
+	MARGIN-LEFT: 20px
+}
+.forumcutline LI {
+	FLOAT: left; WIDTH: 125px; LINE-HEIGHT: 30px; TEXT-ALIGN: left
+}
+.forumcutline LI IMG {
+	PADDING-RIGHT: 9px; PADDING-LEFT: 9px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: middle; PADDING-TOP: 3px
+}
+#bottomad {
+	CLEAR: both; MARGIN: 8px auto; TEXT-ALIGN: center
+}
+ HTML #bottomad {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+.leaderboard {
+	CLEAR: both; MARGIN: 8px auto; TEXT-ALIGN: center
+}
+ HTML .leaderboard {
+	HEIGHT: 1%
+}
+UNKNOWN {
+	OVERFLOW: hidden
+}
+#forumfooter {
+	CLEAR: both; MARGIN-TOP: 26px; WIDTH: 100%; COLOR: #333; POSITION: relative; HEIGHT: 62px; TEXT-ALIGN: center
+}
+#forumfooter .footercopy {
+	RIGHT: 0px; POSITION: absolute; TOP: 25px
+}
+.footercopy {
+	MARGIN-TOP: 10px; LINE-HEIGHT: 16px; TEXT-ALIGN: right
+}
+.footercopy P {
+	
+}
+.footercopy SPAN {
+	DISPLAY: block; FONT-SIZE: 10px; COLOR: #ccc
+}
+.footercopy EM {
+	COLOR: #ccc
+}
+.footercopy A {
+	COLOR: #ccc
+}
+.footergoto {
+	POSITION: relative
+}
+.footergoto SPAN {
+	
+}
+.footergoto SELECT {
+	
+}
+#forumfooter .kakagototop {
+	RIGHT: 0px; CURSOR: pointer; POSITION: absolute; TOP: 0px
+}
+#forumfooter .footergoto {
+	MARGIN: 10px auto; WIDTH: 350px
+}
+#kakastylebar UL {
+	FLOAT: right
+}
+#kakastylebar LI {
+	
+}
+#kakastylebar LI A {
+	DISPLAY: block; COLOR: #333
+}
+#forumfooter #kakastylebar LI A:link {
+	DISPLAY: block; COLOR: #333
+}
+#kakastylebar LI A:hover {
+	COLOR: #258dc9; TEXT-DECORATION: none
+}
+#forumfooter #kakastylebar A:hover {
+	COLOR: #258dc9; TEXT-DECORATION: none
+}
+#kakastylebar .noground {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.kakaskinpreview {
+	MARGIN: 0px auto
+}
+.kakaskinpreview A {
+	FLOAT: left
+}
+.kakaskinpreview SELECT {
+	FLOAT: left
+}
+.kakaleft {
+	FLOAT: left
+}
+.kakaright {
+	FLOAT: right
+}
+.kakaclear {
+	CLEAR: both; FONT-SIZE: 0px; LINE-HEIGHT: 0; HEIGHT: 0px
+}
+.b {
+	FONT-WEIGHT: bold
+}
+.i {
+	FONT-STYLE: italic
+}
+.fnormal {
+	FONT-WEIGHT: normal
+}
+.cf00 {
+	COLOR: #ff0000
+}
+.cf00 A {
+	COLOR: #ff0000
+}
+.kakalisticon {
+	PADDING-RIGHT: 15px; FLOAT: right
+}
+.kakaauthor {
+	WIDTH: 130px
+}
+.kakaviewnumbers {
+	WIDTH: 90px; TEXT-ALIGN: center
+}
+.kakalast {
+	WIDTH: 230px; TEXT-ALIGN: left
+}
+.kakabge8f3ff {
+	BACKGROUND: #f2f8ff
+}
+.kakatopicmanager {
+	WIDTH: 150px; TEXT-ALIGN: left
+}
+.kakatopicmanager .topicmanager {
+	OVERFLOW: hidden; TEXT-OVERFLOW: ellipsis
+}
