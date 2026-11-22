@@ -1,0 +1,613 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0047)http://www.linuxidc.com/Linux/2008-05/13345.htm -->
+<HTML lang=utf-8 xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Ubuntu下安装Wordpress博客系统傻瓜教程[图文]</TITLE>
+<META http-equiv=content-type content=text/html;charset=utf-8><LINK 
+href="favicon.ico" type=image/x-icon rel=icon><LINK href="favicon.ico" 
+type=image/x-icon rel="shortcut icon">
+<META 
+content="wordpress是站长比较喜欢的PHP博客系统，下面Linux公社为大家整理了一篇关于在Ubuntu下安装Wordpress系统的傻瓜教程，给需要的做个参考。1 环境配置 1.1 安装必要软件 1.2 mysql初始配置 1.3 启动apache2和mysql server 2 Wordpress安装 " 
+name=description>
+<META content=Linux,ubuntu,Fedora,红旗Linux,suse,SQL,PHP,mysql,apache,Linux公社 
+name=keywords>
+<META content="MSHTML 6.00.2900.6049" name=GENERATOR>
+<META content=Linux name=generator><LINK 
+href="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/style.css" type=text/css 
+rel=stylesheet>
+<SCRIPT src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/head.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+var imgMaxWidth=600;
+var urlPrefix="../../";
+</SCRIPT>
+
+<SCRIPT src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/show.js" 
+type=text/javascript></SCRIPT>
+</HEAD>
+<BODY>
+<DIV class=twidth>
+<DIV id=sitehead>
+<DIV class=l></DIV>
+<DIV class=r></DIV>
+<DIV class=m>
+<TABLE width="100%">
+  <TBODY>
+  <TR align=middle>
+    <TD width=160><A href="http://www.linuxidc.com/"><IMG 
+      style="FILTER: chroma(color=#FFFFFF)" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/logo.jpg" border=0></A> </TD>
+    <TD>
+      <DIV align=center>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux.js" 
+      type=text/javascript></SCRIPT>
+      </DIV></TD>
+    <TD style="LINE-HEIGHT: 120%" width=100><A 
+      onclick="javascript:window.external.addFavorite('http://www.linuxidc.com/','Linux公社-Linux|Ubuntu|Fedora|新闻|下载|教程|安装|SUSE|Linux发行版|编程|服务器')" 
+      href="http://www.linuxidc.com/Linux/2008-05/13345.htm#">加入收藏</A><BR><A 
+      href="http://www.linuxidc.com/sitemap.aspx">网站地图</A><BR><A 
+      href="http://www.linuxidc.com/search.aspx">网站搜索</A><BR>
+      <SCRIPT src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/language.js" 
+      type=text/javascript></SCRIPT>
+    </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV id=navbar>
+<DIV class=l></DIV>
+<DIV class=r></DIV>
+<DIV class=m>
+<SCRIPT src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/popmenu.js" 
+type=text/javascript charset=utf-8></SCRIPT>
+<A class=first href="http://www.linuxidc.com/index.htm">首页</A><A 
+href="http://www.linuxidc.com/it/index.htm">Linux新闻</A><A 
+href="http://www.linuxidc.com/Linuxit/index.htm">Linux技术交流</A><A 
+href="http://www.linuxidc.com/MySql/index.htm">数据库技术</A><A 
+href="http://www.linuxidc.com/RedLinux/index.htm">Linux编程学习</A><A 
+class=thisclass href="http://www.linuxidc.com/Apache/index.htm">服务器应用</A><A 
+href="http://www.linuxidc.com/Unix/index.htm">Linux网络安全</A><A 
+href="http://www.linuxidc.com/download/index.htm">Linux下载</A><A 
+href="http://www.linuxidc.com/Linuxrz/index.htm">Linux认证</A><A 
+href="http://www.linuxidc.com/theme/index.htm">Linux主题</A><A 
+href="http://www.linuxidc.com/digi/index.htm">数码</A><A 
+href="http://www.linuxidc.com/mobile/index.htm">手机</A><A 
+href="http://www.linuxidc.com/nbook/index.htm">笔记本</A> </DIV></DIV>
+<DIV id=navsub>
+<DIV class=l></DIV>
+<DIV class=r></DIV>
+<DIV class=m><A href="http://www.linuxidc.com/index.htm">首页</A> → <A 
+href="http://www.linuxidc.com/Apache/index.htm">服务器应用</A> </DIV></DIV>
+<DIV class=linus>
+<SCRIPT language=javaScript src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux1.js" 
+type=text/javascript></SCRIPT>
+</DIV>
+<DIV class=linus>
+<SCRIPT language=javaScript src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linuxa.js" 
+type=text/javascript></SCRIPT>
+</DIV>
+<TABLE id=middle style="TABLE-LAYOUT: fixed" cellSpacing=0 cellPadding=0 
+width="100%">
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <DIV class=mframe>
+      <DIV class=tl></DIV>
+      <DIV class=tr></DIV>
+      <DIV class=tm><SPAN class=tt>阅读内容</SPAN> </DIV>
+      <DIV class=wrapper>
+      <DIV class=ml></DIV>
+      <DIV class=mr></DIV>
+      <DIV class=mm id=bodyTd>
+      <DIV id=printBody style="WORD-BREAK: break-all"><BR>
+      <DIV align=center>
+      <H1 class=aTitle>Ubuntu下安装Wordpress博客系统傻瓜教程[图文]</H1></DIV>
+      <TABLE width="97%" align=center>
+        <TBODY>
+        <TR>
+          <TD width=120>[日期：2008-05-30]</TD>
+          <TD align=middle>来源：<A href="http://www.linuxidc.com/" 
+            target=_blank>Linux公社</A>&nbsp; 作者：Linux整理</TD></TR></TBODY></TABLE>
+      <DIV class=linua>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux2.js" 
+      type=text/javascript></SCRIPT>
+      </DIV>
+      <DIV class=linub>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux19.js" 
+      type=text/javascript></SCRIPT>
+      </DIV>
+      <DIV id=content>
+      <P>wordpress是站长比较喜欢的PHP博客系统，下面<A title=Linux公社 
+      href="http://www.linuxidc.com/">Linux公社</A>为大家整理了一篇关于在<A title=Ubuntu 
+      href="http://www.linuxidc.com/topicnews.aspx?tid=2">Ubuntu</A>下安装Wordpress系统的傻瓜教程，给需要的做个参考。</P>
+      <P>1 环境配置 </P>
+      <P>1.1 安装必要软件 </P>
+      <P>1.2 mysql初始配置 </P>
+      <P>1.3 启动apache2和mysql server </P>
+      <P>2 Wordpress安装 <!--IWMS_AD_BEGIN-->
+      <TABLE width="97%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD colSpan=3>
+            <DIV align=center>
+            <SCRIPT language=javaScript 
+            src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/system60.js" 
+            type=text/javascript></SCRIPT>
+            </DIV></TD></TR></TBODY></TABLE><!--IWMS_AD_END--></P>
+      <P>2.1 准备工作 </P>
+      <P>2.2 wordpress配置 </P>
+      <P>1 环境配置</P>
+      <P>1.1 安装必要软件</P>
+      <P>打开终端</P>
+      <P>sudo apt-get install apache2</P>
+      <P>sudo apt-get install libapache2-mod-php5 php5</P>
+      <P>sudo apt-get install mysql-server-5.0 mysql-common mysql-admin</P>
+      <P>sudo apt-get install php5-mysql</P>
+      <P>1.2 mysql初始配置</P>
+      <P>设置mysql密码：</P>
+      <P>sudo mysql-admin</P>
+      <P>第一次运行用root登录不需要密码。可以进去后添加用户同时修改root密码。</P>
+      <P>然后点击Catalogs，在下面的Schemata里面新建一个数据库。</P>
+      <P>然后进入User Administrator，在新建的User上选Schema Privileges，赋予其对该数据库操作的权限。</P>
+      <P align=center><IMG alt=Ubuntu下安装Wordpress博客系统傻瓜教程[图文] 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/08053016044845.jpg" 
+      align=center></P><IMG alt=Ubuntu下安装Wordpress博客系统傻瓜教程[图文] 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/08053016042225.jpg" 
+      align=center> 
+      <P>1.3 启动apache2和mysql server</P>
+      <P>启动apache2和mysql</P>
+      <P>sudo /etc/init.d/mysql start;sudo /etc/init.d/apache2 start</P>
+      <P>2 Wordpress安装</P>
+      <P>2.1 准备工作</P>
+      <P>下载，解压缩，放到apache2的目录里，修改权限。</P>
+      <P>wget -c http://wordpress.org/latest.tar.gz</P>
+      <P>tar xvzf wordpress-2.2.tar.gz</P>
+      <P>sudo cp -rf wordpress /var/www/</P>
+      <P>sudo chown -R www-data:www-data wordpress/</P>
+      <P>2.2 wordpress配置</P>
+      <P>然后进入http://localhost/wordpress/</P>
+      <P>check一下，如下图：</P>
+      <CENTER><IMG alt=Ubuntu下安装Wordpress博客系统傻瓜教程[图文] 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/08053016045389.jpg" 
+      align=center></CENTER>
+      <P>修改wp-config-sample.php文件</P>
+      <P>sudo gvim wp-config-sample.php</P>
+      <P>主要是前面三个</P>
+      <P>define('DB_NAME', 'wordpress');&nbsp;&nbsp;&nbsp; // The name of the 
+      database</P>
+      <P>define('DB_USER', 'username');&nbsp;&nbsp;&nbsp;&nbsp; // Your MySQL 
+      username</P>
+      <P>define('DB_PASSWORD', 'password'); // ...and password</P>
+      <P>修改成刚才建立的数据库名称，用户名和密码。 然后运行</P>
+      <P>sudo mv wp-config-sample.php wp-config.php</P>
+      <P>现在进入入http://localhost/wordpress/</P>
+      <P>check一下，如下图：</P></DIV>
+      <DIV class=pager style="TEXT-ALIGN: center"><SPAN 
+      class=p_current>1</SPAN><A 
+      href="http://www.linuxidc.com/Linux/2008-05/13345p2.htm">2</A><A 
+      href="http://www.linuxidc.com/Linux/2008-05/13345p2.htm">下一页</A>&nbsp; 
+      <INPUT id=goPage value=2><A href="javascript:pager.Jump();">GO</A>
+      <SCRIPT src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/pager.js" 
+      type=text/javascript></SCRIPT>
+
+      <SCRIPT type=text/javascript>var pager=new iwmsPager(1,2,true);</SCRIPT>
+      </DIV></DIV><BR>
+      <DIV align=center>
+      <SCRIPT language=javascript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/wangzhai.js"></SCRIPT>
+
+      <DIV class=linuc>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux3.js" 
+      type=text/javascript></SCRIPT>
+      <BR>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux8.js" 
+      type=text/javascript></SCRIPT>
+      </DIV></DIV><BR>
+      <DIV style="CLEAR: both; PADDING-LEFT: 20px">上一篇：<A 
+      href="http://www.linuxidc.com/Linux/2008-05/13337.htm">技巧分享 
+      把Linux服务器加入到域</A><BR>下一篇：<A 
+      href="http://www.linuxidc.com/Linux/2008-05/13362.htm">Linux服务器CPU居高不下的解决</A><BR>
+      <DIV align=center>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux9.js" 
+      type=text/javascript></SCRIPT>
+      </DIV></DIV></DIV></DIV>
+      <DIV class=bl></DIV>
+      <DIV class=br></DIV>
+      <DIV class=bm></DIV></DIV>
+      <DIV class=mframe>
+      <DIV class=tl></DIV>
+      <DIV class=tr></DIV>
+      <DIV class=tm><SPAN class=tt>相关资讯</SPAN> &nbsp; &nbsp; &nbsp; <A 
+      href="http://www.linuxidc.com/search.aspx?Where=Nkey&amp;Keyword=Linux%e6%9c%8d%e5%8a%a1%e5%99%a8" 
+      target=_blank>Linux服务器</A>&nbsp; <A 
+      href="http://www.linuxidc.com/search.aspx?Where=Nkey&amp;Keyword=WordPress" 
+      target=_blank>WordPress</A>&nbsp; <A 
+      href="http://www.linuxidc.com/search.aspx?Where=Nkey&amp;Keyword=Ubuntu%e6%9c%8d%e5%8a%a1%e5%99%a8" 
+      target=_blank>Ubuntu服务器</A>&nbsp; </DIV>
+      <DIV class=wrapper>
+      <DIV class=ml></DIV>
+      <DIV class=mr></DIV>
+      <DIV class=mm>
+      <TABLE width="100%">
+        <TBODY>
+        <TR>
+          <TD vAlign=top width="50%">
+            <UL class=nl>
+              <LI><A title=调查称基于Linux服务器性能表现优于微软IIS网站服务平台 
+              href="http://www.linuxidc.com/Linux/2007-06/5376.htm" 
+              target=_blank>调查称基于Linux服务器性能表现优于微软IIS</A>&nbsp; <SPAN 
+              class=gray>(06/21/2007 08:04:19)</SPAN> 
+              <LI><A href="http://www.linuxidc.com/Linux/2007-06/4981.htm" 
+              target=_blank>我们不用盗版WINDOWS 用正版Linux服务器</A>&nbsp; <SPAN 
+              class=gray>(06/10/2007 08:50:08)</SPAN> 
+              <LI><A href="http://www.linuxidc.com/Linux/2007-05/4565.htm" 
+              target=_blank>Linux服务器安全配置学习小结</A>&nbsp; <SPAN 
+              class=gray>(05/28/2007 11:36:52)</SPAN> </LI></UL></TD>
+          <TD vAlign=top width="50%">
+            <UL class=nl>
+              <LI><A href="http://www.linuxidc.com/Linux/2007-06/5131.htm" 
+              target=_blank>利用SrvRepor来远程监控与管理Linux服务器</A>&nbsp; <SPAN 
+              class=gray>(06/14/2007 08:12:08)</SPAN> 
+              <LI><A href="http://www.linuxidc.com/Linux/2007-06/4733.htm" 
+              target=_blank>Linux服务器市场保持继续稳定增长</A>&nbsp; <SPAN 
+              class=gray>(06/03/2007 05:56:03)</SPAN> 
+              <LI><A href="http://www.linuxidc.com/Linux/2007-05/4433.htm" 
+              target=_blank>实用教程 架设校园网Linux服务器初探</A>&nbsp; <SPAN 
+              class=gray>(05/24/2007 08:28:38)</SPAN> 
+      </LI></UL></TD></TR></TBODY></TABLE></DIV></DIV>
+      <DIV class=bl></DIV>
+      <DIV class=br></DIV>
+      <DIV class=bm></DIV></DIV>
+      <DIV class=lframe>
+      <DIV class=tl></DIV>
+      <DIV class=tr></DIV>
+      <DIV class=tm><SPAN class=tt>相关图片</SPAN> </DIV>
+      <DIV class=wrapper>
+      <DIV class=ml></DIV>
+      <DIV class=mr></DIV>
+      <DIV class=mm>
+      <DIV class=imgList>
+      <UL>
+        <LI style="WIDTH: 25%"><A 
+        href="http://www.linuxidc.com/Linux/2010-12/30725.htm" 
+        target=_blank><IMG height=90 alt=Linux磁盘检查脚本 
+        src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/101221122791372t.jpg" 
+        width=120>Linux磁盘检查脚本</A></LI>
+        <LI style="WIDTH: 25%"><A 
+        title="Linux无法更改密码的解决办法--passwd: User not known" 
+        href="http://www.linuxidc.com/Linux/2010-12/30724.htm" 
+        target=_blank><IMG height=90 
+        alt="Linux无法更改密码的解决办法--passwd: User not known" 
+        src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/101221122473211t.jpg" 
+        width=120>Linux无法更改密码的</A></LI>
+        <LI style="WIDTH: 25%"><A title=Linux服务器不得不注意的安全问题--ssh暴力破解--denyhosts解决 
+        href="http://www.linuxidc.com/Linux/2010-12/30722.htm" 
+        target=_blank><IMG height=90 
+        alt=Linux服务器不得不注意的安全问题--ssh暴力破解--denyhosts解决 
+        src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/101221121861021t.jpg" 
+        width=120>Linux服务器不得不注</A></LI>
+        <LI style="WIDTH: 25%"><A 
+        title=RHEL6安装phpMyAdmin源码phpMyAdmin-3.3.4-all-languages 
+        href="http://www.linuxidc.com/Linux/2010-12/30720.htm" 
+        target=_blank><IMG height=90 
+        alt=RHEL6安装phpMyAdmin源码phpMyAdmin-3.3.4-all-languages 
+        src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/101221121161873t.jpg" 
+        width=120>RHEL6安装phpMyAdmin</A></LI>
+        <LI style="WIDTH: 25%"><A title=体验无人值守安装RHEL6 
+        href="http://www.linuxidc.com/Linux/2010-12/30719.htm" 
+        target=_blank><IMG height=90 alt=体验无人值守安装RHEL6 
+        src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/101221120345852t.jpg" 
+        width=120>体验无人值守安装RHEL</A></LI>
+        <LI style="WIDTH: 25%"><A title=在RHEL5下实现RAID5磁盘阵列 
+        href="http://www.linuxidc.com/Linux/2010-12/30718.htm" 
+        target=_blank><IMG height=90 alt=在RHEL5下实现RAID5磁盘阵列 
+        src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/101221115973451t.jpg" 
+        width=120>在RHEL5下实现RAID5磁</A></LI>
+        <LI style="WIDTH: 25%"><A title=在RHEL5下构建LAMP网站服务平台之安装phpMyAdmin数据库管理套件 
+        href="http://www.linuxidc.com/Linux/2010-12/30717.htm" 
+        target=_blank><IMG height=90 alt=在RHEL5下构建LAMP网站服务平台之安装phpMyAdmin数据库管理套件 
+        src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/101221115596062t.jpg" 
+        width=120>在RHEL5下构建LAMP网</A></LI>
+        <LI style="WIDTH: 25%"><A title="Ubuntu 10.10安装PHPWind 8" 
+        href="http://www.linuxidc.com/Linux/2010-12/30716.htm" 
+        target=_blank><IMG height=90 alt="Ubuntu 10.10安装PHPWind 8" 
+        src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/101221115158691t.jpg" 
+        width=120>Ubuntu 10.10安装PHPW</A></LI></UL></DIV></DIV></DIV>
+      <DIV class=bl></DIV>
+      <DIV class=br></DIV>
+      <DIV class=bm></DIV></DIV>
+      <DIV class=mframe>
+      <DIV class=tl></DIV>
+      <DIV class=tr></DIV>
+      <DIV class=tm><SPAN class=tt>本文评论</SPAN> &nbsp; &nbsp; &nbsp; <A 
+      style="CURSOR: hand" href="http://www.linuxidc.com/remark.aspx?id=13345" 
+      target=_blank>全部评论</A> </DIV>
+      <DIV class=wrapper>
+      <DIV class=ml></DIV>
+      <DIV class=mr></DIV>
+      <DIV class=mm></DIV></DIV>
+      <DIV class=bl></DIV>
+      <DIV class=br></DIV>
+      <DIV class=bm></DIV></DIV>
+      <DIV class=mframe>
+      <DIV class=tl></DIV>
+      <DIV class=tr></DIV>
+      <DIV class=tm><SPAN class=tt>发表评论</SPAN> </DIV>
+      <DIV class=wrapper>
+      <DIV class=ml></DIV>
+      <DIV class=mr></DIV>
+      <DIV class=mm>
+      <FORM id=remarkForm 
+      style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px" 
+      onsubmit="return checkRemark();" action=../../remark.aspx?id=13345 
+      method=post>
+      <SCRIPT language=javascript type=text/javascript>
+			function checkRemark()
+			{
+			var form=document.getElementById("remarkForm");
+			var remarkSize = 1000;
+			if (form.body.value=="")
+			{	alert("请填写评论内容");
+				form.body.focus();
+				return false;
+			}
+			if (form.username.value=="")
+			{	alert("请填写姓名");
+				form.username.focus();
+				return false;
+			}
+			if (form.body.value.length>remarkSize)
+			{	form.body.value = form.body.value.substr(0,remarkSize);
+				showLen(form.body);
+				form.body.focus();
+				alert("评论内容不可以超过"+remarkSize+"字,已帮你删除多余部分");
+				return false;
+			}
+			if (form.username.value.length>10)
+			{	alert("姓名不可以超过10个字");
+				form.username.focus();
+				return false;
+			}
+			form.submit.disabled=true;
+			form.vcode.value = VCode("Ubuntu下安装Wordpress博客系统傻瓜教程[图文]");
+			return true;
+			}
+			function showLen(obj)
+			{
+				document.getElementById("bodyLen").value=obj.value.length;
+			}
+			</SCRIPT>
+      <INPUT type=radio CHECKED value=1 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face1.gif"><INPUT type=radio 
+      value=2 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face2.gif"><INPUT type=radio 
+      value=3 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face3.gif"><INPUT type=radio 
+      value=4 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face4.gif"><INPUT type=radio 
+      value=5 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face5.gif"><INPUT type=radio 
+      value=6 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face6.gif"><INPUT type=radio 
+      value=7 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face7.gif"><INPUT type=radio 
+      value=8 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face8.gif"><INPUT type=radio 
+      value=9 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face9.gif"><INPUT type=radio 
+      value=10 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face10.gif"><INPUT type=radio 
+      value=11 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face11.gif"><INPUT type=radio 
+      value=12 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face12.gif"><INPUT type=radio 
+      value=13 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face13.gif"><INPUT type=radio 
+      value=14 name=face><IMG alt="" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/face14.gif"> 
+      <BR>请您注意：<BR>遵守国家有关法律、法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任。<BR>LinuxIDC.com拥有管理笔名和留言的一切权利。<BR>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux11.js" 
+      type=text/javascript></SCRIPT>
+      <BR>
+      <DIV style="PADDING-TOP: 5px">点评： <TEXTAREA onkeydown=showLen(this) onkeyup=showLen(this) name=body rows=12 cols=78></TEXTAREA> 
+      字数<INPUT id=bodyLen 
+      style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+      readOnly size=3> </DIV>
+      <DIV style="PADDING-TOP: 5px">姓名： <INPUT id=i_username maxLength=15 
+      size=10 name=username> <INPUT id=i_submit type=submit value=" 发 表 " name=submit> </DIV>
+      <SCRIPT type=text/javascript>
+			var remarkmember = false;
+			var allowremark = true;
+			if (remarkmember){
+				document.getElementById("i_username").readonly=true;
+				document.write("(限会员登录后发表评论)");
+			}
+			if (!allowremark){
+				document.getElementById("i_submit").disabled=true;
+			}
+			</SCRIPT>
+
+      <SCRIPT src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/clientDate.js" 
+      type=text/javascript></SCRIPT>
+      <INPUT type=hidden name=vcode> </FORM></DIV></DIV>
+      <DIV class=bl></DIV>
+      <DIV class=br></DIV>
+      <DIV class=bm></DIV></DIV><IFRAME 
+      style="VISIBILITY: hidden; WIDTH: 0px; HEIGHT: 0px" 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux.htm"></IFRAME></TD>
+    <TD class=linuz vAlign=top>
+      <DIV class=linuzs>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux12.js" 
+      type=text/javascript></SCRIPT>
+      </DIV>
+      <DIV class=lframe>
+      <DIV class=tl></DIV>
+      <DIV class=tr></DIV>
+      <DIV class=tm><SPAN class=tt>最新资讯</SPAN> </DIV>
+      <DIV class=wrapper>
+      <DIV class=ml></DIV>
+      <DIV class=mr></DIV>
+      <DIV class=mm>
+      <UL class=nl>
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30725.htm" 
+        target=_blank>Linux磁盘检查脚本</A> 
+        <LI><A title="Linux无法更改密码的解决办法--passwd: User not known" 
+        href="http://www.linuxidc.com/Linux/2010-12/30724.htm" 
+        target=_blank>Linux无法更改密码的解决办法--passwd: User not kn</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30723.htm" 
+        target=_blank>RHCE笔记—xinetd超级守护进程与TCP Wrappers</A> 
+        <LI><A title=Linux服务器不得不注意的安全问题--ssh暴力破解--denyhosts解决 
+        href="http://www.linuxidc.com/Linux/2010-12/30722.htm" 
+        target=_blank>Linux服务器不得不注意的安全问题--ssh暴力破解--de</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30721.htm" 
+        target=_blank>Linux下sshd被后门替换后的暂时解决办法--dropbear</A> 
+        <LI><A title=RHEL6安装phpMyAdmin源码phpMyAdmin-3.3.4-all-languages 
+        href="http://www.linuxidc.com/Linux/2010-12/30720.htm" 
+        target=_blank>RHEL6安装phpMyAdmin源码phpMyAdmin-3.3.4-all-lang</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30719.htm" 
+        target=_blank>体验无人值守安装RHEL6</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30718.htm" 
+        target=_blank>在RHEL5下实现RAID5磁盘阵列</A> 
+        <LI><A title=在RHEL5下构建LAMP网站服务平台之安装phpMyAdmin数据库管理套件 
+        href="http://www.linuxidc.com/Linux/2010-12/30717.htm" 
+        target=_blank>在RHEL5下构建LAMP网站服务平台之安装phpMyAdmin数</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30716.htm" 
+        target=_blank>Ubuntu 10.10安装PHPWind 8</A> 
+        <LI><A title="RedRat Enterprise Linux 5.4用CentOS 5.5 yum源替换" 
+        href="http://www.linuxidc.com/Linux/2010-12/30715.htm" 
+        target=_blank>RedRat Enterprise Linux 5.4用CentOS 5.5 yum源替</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30714.htm" 
+        target=_blank>RedHat Enterprise Linux 5.0 root密码更改</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30713.htm" 
+        target=_blank>Oracle宣称MySQL 5.5将加强支持Web应用程序</A> 
+        <LI><A title="预装Ubuntu系统 全球首款14英寸“双屏”平板电脑Kno月底发售" 
+        href="http://www.linuxidc.com/Linux/2010-12/30712.htm" 
+        target=_blank>预装Ubuntu系统 全球首款14英寸“双屏”平板电脑Kno</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30711.htm" 
+        target=_blank>这会是Ubuntu软件中心下一版的界面么？</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30710.htm" 
+        target=_blank>Linux下三种虚拟主机的配置方法</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30709.htm" 
+        target=_blank>在Linux中用GCC时switch语句的另一种简洁写法</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30708.htm" 
+        target=_blank>Debian lennny 下安装Virtual box</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30707.htm" 
+        target=_blank>C++ 拷贝构造函数和赋值运算符</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30706.htm" 
+        target=_blank>Oracle 10 SQL*Plus使用编辑器编辑SQL</A> </LI></UL></DIV></DIV>
+      <DIV class=bl></DIV>
+      <DIV class=br></DIV>
+      <DIV class=bm></DIV></DIV>
+      <DIV class=linuzb>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux16.js" 
+      type=text/javascript></SCRIPT>
+      <BR>
+      <SCRIPT language=javaScript 
+      src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linux18.js" 
+      type=text/javascript></SCRIPT>
+      </DIV>
+      <DIV class=lframe>
+      <DIV class=tl></DIV>
+      <DIV class=tr></DIV>
+      <DIV class=tm><SPAN class=tt>本周热门</SPAN> </DIV>
+      <DIV class=wrapper>
+      <DIV class=ml></DIV>
+      <DIV class=mr></DIV>
+      <DIV class=mm>
+      <UL class=nl>
+        <LI><A href="http://www.linuxidc.com/Linux/2007-10/8062.htm" 
+        target=_blank>Linux下VSFTP配置全攻略</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2007-11/9151.htm" 
+        target=_blank>Ubuntu vsftpd 安装配置</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2008-02/11055.htm" 
+        target=_blank>Linux服务器使用SSH的命令</A> 
+        <LI><A class=highlight 
+        href="http://www.linuxidc.com/Linux/2010-08/28289.htm" 
+        target=_blank>Ubuntu 10.04 LAMP Server安装简明教程</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-02/24349.htm" 
+        target=_blank>Ubuntu开启ssh服务</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2008-01/10679.htm" 
+        target=_blank>不重启Linux服务器关闭SeLinux的方法</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2009-05/20246.htm" 
+        target=_blank>Ubuntu下SVN+Apache版本管理服务器配置[图文]</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-03/24820.htm" 
+        target=_blank>Ubuntu网络设置详解</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2008-04/12530.htm" 
+        target=_blank>Linux版Matlab安装调试步骤图解指南</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2007-08/6660.htm" 
+        target=_blank>ubuntu下快速配置ftp服务器</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2008-04/12160.htm" 
+        target=_blank>Linux下JDK安装详悉说明</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30531.htm" 
+        target=_blank>自己建了个RHEL6 Yum服务器</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-06/26619.htm" 
+        target=_blank>Linux下WebLogic10.3的安装与配置</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2009-12/23577.htm" 
+        target=_blank>Linux NFS配置：NFS开机自动启用及其原理</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2007-11/9269.htm" 
+        target=_blank>Linux下配置端口映射的详细过程</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-12/30710.htm" 
+        target=_blank>Linux下三种虚拟主机的配置方法</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-06/26445.htm" 
+        target=_blank>SUSE Linux企业服务器搭建双机集群配置</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2007-04/3125.htm" 
+        target=_blank>Samba使用教程 Samba服务器应用详细介绍</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-10/29327.htm" 
+        target=_blank>CentOS+Qmail安装笔记</A> 
+        <LI><A title="Linux相关TCP参数优化: proc/sys/net/ipv4/ 提高web质量" 
+        href="http://www.linuxidc.com/Linux/2010-10/29496.htm" 
+        target=_blank>Linux相关TCP参数优化: proc/sys/net/ipv4/ 提高web</A> 
+        <LI><A title="Ubuntu Server 10.0.4+Apache 下配置 mono 下运行 asp.net" 
+        href="http://www.linuxidc.com/Linux/2010-10/29470.htm" 
+        target=_blank>Ubuntu Server 10.0.4+Apache 下配置 mono 下运行 a</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-08/28269.htm" 
+        target=_blank>让Linux 虚拟主机用户支持.htaccess</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2010-03/24692.htm" 
+        target=_blank>Linux Samba配置</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2009-12/23261.htm" 
+        target=_blank>使用Samba将Linux主机加入AD域</A> 
+        <LI><A href="http://www.linuxidc.com/Linux/2009-12/23230.htm" 
+        target=_blank>CentOs 5.3 安装Apache+Tomcat+PHP+MySQL</A> 
+      </LI></UL></DIV></DIV>
+      <DIV class=bl></DIV>
+      <DIV class=br></DIV>
+      <DIV class=bm></DIV></DIV></TD></TR></TBODY></TABLE>
+<DIV id=footer><BR>
+<P align=center><A href="http://www.linuxidc.com/aboutus.htm">Linux公社简介</A> - <A 
+href="http://www.linuxidc.com/adsense.htm">广告服务</A> - <A 
+href="http://www.linuxidc.com/sitemap.aspx">网站地图</A> - <A 
+href="http://www.linuxidc.com/help.htm">帮助信息</A> - <A 
+href="http://www.linuxidc.com/contactus.htm">联系我们</A><BR>本站（LinuxIDC）所刊载文章不代表同意其说法或描述，仅为提供更多信息，也不构成任何建议。<BR>
+<SCRIPT language=javaScript src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/qq.js" 
+type=text/javascript></SCRIPT>
+<BR>
+<SCRIPT language=javaScript src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/foot.js" 
+type=text/javascript></SCRIPT>
+<BR>Copyright © 2006-2010　<A href="http://www.linuxidc.com/">Linux公社</A>　All 
+rights reserved 浙ICP备06018118号</P>
+<DIV class=menuskin id=popmenu 
+onmouseover="clearhidemenu();highlightmenu(event,'on')" style="Z-INDEX: 100" 
+onmouseout="highlightmenu(event,'off');dynamichide(event)"></DIV>
+<SCRIPT src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/menu.js" type=text/javascript 
+charset=utf-8></SCRIPT>
+
+<SCRIPT type=text/javascript>
+	jsdone=true;
+	</SCRIPT>
+</DIV></DIV>
+<SCRIPT language=javaScript 
+src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linuxren1.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javaScript 
+src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linuxren2.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javaScript 
+src="Ubuntu下安装Wordpress博客系统傻瓜教程[图文].files/linuxren3.js" 
+type=text/javascript></SCRIPT>
+</BODY></HTML>

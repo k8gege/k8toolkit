@@ -1,0 +1,3 @@
+document.writeln("<A href=\"http:\/\/www.linuxidc.net\/\" target=_blank><IMG height=90 alt=LinuxIDC src=\"http:\/\/img.linuxidc.com\/img\/linuxidcnet.png\" width=300><\/A>")
+document.writeln("<A href=\"http:\/\/www.linuxidc.com\/search.aspx?Where=Nkey&Keyword=Ubuntu+10.10\" target=_blank><IMG height=90 alt=Ubuntu src=\"http:\/\/img.linuxidc.com\/img\/ubuntu910.jpg\" width=300><\/A>")
+document.writeln("<A href=\"http:\/\/www.britepic.org\/\" target=_blank><IMG height=96 alt=Linux src=\"http:\/\/img.linuxidc.com\/img\/linux.jpg\" width=300><\/A>")

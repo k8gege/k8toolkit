@@ -1,0 +1,2 @@
+﻿document.writeln("<script type=\"text\/javascript\"> \/*300*120，LinuxIDC右侧广告创建于2010-7-29*\/ var cpro_id = \'u127863\';<\/script>");
+document.writeln("<script type=\"text\/javascript\" src=\"http:\/\/cpro.baidu.com\/cpro\/ui\/c.js\"><\/script>")

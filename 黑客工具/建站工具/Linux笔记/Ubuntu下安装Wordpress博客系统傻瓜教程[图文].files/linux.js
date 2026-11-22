@@ -1,0 +1,1 @@
+document.writeln("<iframe  marginwidth=\"0\" marginheight=\"0\" frameborder=\"0\" scrolling=\"no\" src=\"http:\/\/www.linuxidc.com\/linuxfile\/linux.htm\" width=\"468\" height=\"60\"><\/iframe>")

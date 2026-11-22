@@ -1,0 +1,113 @@
+From:QQ吻's Blog  Team: Crack8_Team
+blog:http://hi.baidu.com/qhack8
+
+如何完成Apache虚拟主机设置？
+实现Apache虚拟主机方法一:
+开启虚拟主机配置文件
+
+对httpd.conf进行设置：
+
+1.注释以下三行
+
+
+#ServerAdmin
+#ServerName
+#DocumentRoot
+
+
+2．去掉mod_proxy.so和mod_proxy_ajp.so的注释
+
+
+3．#Virtual hosts
+
+
+#Include conf/extra/httpd-vhosts.conf （查找这行，把前面的＃去掉）
+/conf/extra/httpd-vhosts.conf
+
+4．打开　/conf/extra/httpd-vhosts.conf
+
+
+#192.168.1.24为本地Ip
+NameVirtualHost 192.168.1.24:80 
+
+
+
+# php项目
+
+
+<VirtualHost 192.168.1.24:80>
+
+<Directory "D:/phproot/phpmyadmin">
+
+DirectoryIndex index.php
+
+</Directory>
+
+ServerAdmin baibiao @gmail.com
+
+ServerName email.sinoepiboly.com
+
+#ServerAlias email.sinoepiboly.com
+
+DocumentRoot D:/phproot/phpmyadmin
+
+</VirtualHost>
+
+==================================================================
+
+方法二:
+
+多二级域名主机开发环境设置说明
+第一步 DNS解析实现
+
+找到本机的host文件，一般在 C:\WINNT\system32\drivers\etc，在文件结尾添加：
+
+127.0.0.1 localhost
+127.0.0.1 www.com.cn
+127.0.0.1 home.com.cn
+127.0.0.1 mail.com.cn
+127.0.0.1 music.com.cn
+127.0.0.1 browseusers.com.cn
+127.0.0.1 search.com.cn
+127.0.0.1 invite.com.cn
+127.0.0.1 rank.com.cn
+127.0.0.1 blog.com.cn
+127.0.0.1 favorites.com.cn
+127.0.0.1 forum.com.cn
+127.0.0.1 groups.com.cn
+127.0.0.1 events.com.cn
+127.0.0.1 classifieds.com.cn
+127.0.0.1 signup.com.cn
+192.168.6.153 i.com.cn
+192.168.6.153 x.com.cn
+
+其中
+192.168.6.2 i.com.cn
+192.168.6.2 x.com.cn
+技术人员不作修改，是美工页面专用的
+
+第二步：apache 设置
+
+打开httpd.conf，以music.com.cn为例，其他栏目类似添加,在文件最后加入:
+
+1. 保证
+Listen 80
+
+2. 打开注释
+NameVirtualHost *:80
+
+3. 在末尾添加
+<VirtualHost *:80>
+ServerAdmin x_cn@msn.com
+DocumentRoot "C:/Program Files/Apache Group/Apache2/htdocs/espace/music"
+ServerName music.com.cn
+</VirtualHost>
+<VirtualHost *:80>
+ServerAdmin x_cn@msn.com
+DocumentRoot "C:/Program Files/Apache Group/Apache2/htdocs/espace/blog"
+ServerName blog.com.cn
+</VirtualHost>
+
+...
+
+重启即可,Apache虚拟主机设置完成。

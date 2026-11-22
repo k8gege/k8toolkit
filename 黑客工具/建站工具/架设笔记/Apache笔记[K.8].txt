@@ -1,0 +1,23 @@
+From:QQ吻's Blog  Team: Crack8_Team
+blog:http://hi.baidu.com/qhack8
+
+安装目录
+\Apache Software Foundation\Apache2.2\conf
+
+配置文件
+httpd.conf
+
+设置网站默认目录 找到 DocumentRoot
+example:
+DocumentRoot "O:\www\php" 
+
+设置404 500等错误页面
+example:
+ErrorDocument 404 /404.html 直接把这句添加到末尾就OK
+
+
+注意以上设置修 记得保存 OK后 要重启服务 可能重启多次才生效
+
+
+以上给不会搭建的菜鸟一条明路  真不会或嫌烦的朋友 
+可以用phpnow APMServ5.2.6 等各类比这些更SB式的工具架设网站

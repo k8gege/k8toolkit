@@ -1,0 +1,1 @@
+document.writeln("<A href=\"http:\/\/www.linuxidc.net\/thread-221-1-1.html\" target=_blank><IMG height=90 src=\"http:\/\/img.linuxidc.com\/img\/linuxgz.gif\" width=500><\/A>")

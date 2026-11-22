@@ -1,0 +1,153 @@
+From:QQ吻's Blog  Team: Crack8_Team
+blog:http://hi.baidu.com/qhack8
+
+1 官网下载Xubuntu9.04-i386-desktop.iso版 , 刻录光盘，光驱安装
+用光盘安装， 基本上是一直回车确定，没什么设置， 很快就安装成功
+
+
+2 上网
+右击-->终端 sudo pppoeconf 回车
+--> 提示password for 叫你打密码, 密码不回显 (按完密码回车则可)
+跟着一直enter, enter, 写完ADSL帐号和密码， 以后开机会自动连接网络
+
+2.5 update sources
+sudo mousepad /etc/apt/sources.list
+
+paste the code in the sources.list
+代码:
+deb http://mirror.lupaworld.com/ubuntu jaunty main restricted universe multiverse
+deb http://mirror.lupaworld.com/ubuntu jaunty-security main restricted universe multiverse
+deb http://mirror.lupaworld.com/ubuntu jaunty-updates main restricted universe multiverse
+deb http://mirror.lupaworld.com/ubuntu jaunty-backports main restricted universe multiverse
+deb http://mirror.lupaworld.com/ubuntu jaunty-proposed main restricted universe multiverse
+deb-src http://mirror.lupaworld.com/ubuntu jaunty main restricted universe multiverse
+deb-src http://mirror.lupaworld.com/ubuntu jaunty-security main restricted universe multiverse
+deb-src http://mirror.lupaworld.com/ubuntu jaunty-updates main restricted universe multiverse
+deb-src http://mirror.lupaworld.com/ubuntu jaunty-backports main restricted universe multiverse
+deb-src http://mirror.lupaworld.com/ubuntu jaunty-proposed main restricted universe multiverse
+
+
+
+sudo apt-get update
+
+3 中文打字 (解决安装，乱码)
+用系统synaptic package manager搜索---下载--安装fcitx, 后发现是乱码，
+从终端用命令打开 sudo mousepad ~/.fcitx/config 里面修改
+[程序]
+显示字体(中)=AR PL UMing CN
+显示字体(英)=*
+显示字体大小=12
+主窗口字体大小=12
+字体区域=zh_CN.UTF-8
+使用AA字体=1
+使用粗体=1
+( 主要是 显示字体（中）里要设置为你系统应该有的字体，
+查看系统文字命令 fc-list，本人系统是AR PL UMing CN, 这也是为什么乱码的主要原因 )
+系统自带的scim可以不用管， 也可以删除
+(安装系统时默认选择英文右上角是没有小键盘的， 自己从源里找安装， 选中文包， 安装之后有一套中文输入法，如五笔，拼音等
+这段话是2009-11-10补充)
+(除此之外还可以用系统自带的ibus输入法［ubuntu9.10］， 设置后重新登录一次X即可)
+
+
+4 声音
+右上角有个喇叭， 点一下, 选择控制-->选master-->调一下音亮-->把喇叭那个差差打掉 即可
+（开机静音， 有几个声卡， 换一个开机不是默认静音就可以了， 或命令/sbin/alsactl restore）
+
+
+5 分辨率
+(有人显示器屏幕会有斑文， 或分辨率太小， 或开机自动变回原系统的分辨率， 可以如下设置)
+分辨率调整 -->etc/X11/xorg.conf文件, 在section "Screen"中添加
+Section "Screen"
+SubSection "Display"
+Depth 24
+Modes "1024x768"
+EndSubSection
+EndSection
+( 红色字为添加部分, Modes 后面设置你喜欢的分辨率)
+(因为我的显卡是ati的后来， 第二次装xubuntu时选择了默认语言为英语，在add/remove applications里有,ATI Catalyst Control Center和Adobe Flash plugin装了它，也不知道是不是更换了源的原因看网络视频简直是高清! 一点都不卡, 2009-11-10补充)
+(2009-11-11日， 今天我把分辨设置回默认， 结果无法用root进入系统，结果用了先前设置过的另一帐号登录， 打su命令进入， 把分辨率改回如上，则能root能正常登录)
+
+6 flash不能全屏问题
+现在已升级到xubuntu9.10版， 装了Adobe Flash plugin, 对着视频右键-->setting-->Display-->把勾打掉(Enable hardware acceleration)
+
+7 firefox主页设置
+Edit-->preferences-->main-->设置home page
+
+8 xubuntu用户切换和基本操作
+其它用户， su <用户名>
+root用户， sudo -s
+退出root, 回到当臆用户exit
+更改用户密码， sudo passwd <用户名>
+
+9 文件
+进入文件用cd <路径>
+退出cd
+创建文件gvim <文件名> 如果不能创建则在前面加上sudo
+删除文件，sudo rm -r <文件名>
+cp -R /home/yourname/desktop/  /var/www/    --移动文件夹，到另一个文件夹， －R是递归
+ln -s  /var/www/   /home/yourname/desktop/   --把文件创建连接到桌面(复制到当前目录用 ./为路径)
+rm --删除文件， 不可逆
+chmod  777 -R /var/www/     --设置文件为 可读 可写 可执行
+pwd --当前目录
+
+10 软件安装和卸载
+安装 apt-get install <名>
+卸载 apt-get [--purge删除配置] remove <名>
+搜索包 apt-cache search <名>
+更新信息库 apt-get update
+系统升级 apt-get upgrade
+
+10 安装lamp
+一键安装LAMP，sudo tasksel install lamp-server
+启动mysql命令， sudo /etc/init.d/mysql start
+启动，重启，关闭apache2，sudo /usr/sbin/apache2ctl （后面加 start 或restart或stop）
+phpmyadmin安装，sudo apt-get install phpmyadmin
+连接命令， sudo ln -s /usr/share/phpmyadmin/ /var/www/
+(装phpmyadmin时曾经一片空白， 重装一次正常)
+
+11 vim用法
+i 和 a 进入编辑
+命令模式(ESC退出编辑模式)
+:w   --保存 <文件名--没有文件时自动创建>
+:wq --保存退出
+:q!  --不保存退出
+ v 上下左右选字， V选行，
+ y 复件
+x 剪切
+ p粘贴
+ d删除
+ u撤消，" . " 返回
+ :%s/search_str/replace_str/gc --替换字符串， %当前文档，g替换甩有， c提示确认才替换
+
+12 FF快速使用
+ctrl+tab --tab中切换
+ctrl+F 和 / --快速查找 F3再次查找 ESC退出
+ctrl+t --新标签
+ctrl++ ctrl-- ctrl+0 --放大 放小 返回
+alt+home --首页
+ctrl+enter shift+enter --打开com和net后缀的网页
+ctrl+l -- 地址栏
+ctrl+k --搜索栏( 打开about:config选browser.search.openintab设为true即結果在新页打开 )
+alt+left --前进
+alt+right --后退
+Tab mix 插件可以设置标签页事件
+F12  firebug调试/关掉
+
+
+13 进程
+ top显示情况，h暂停，q退出
+ killall <名字>  --kill掉进程
+
+14自定义系统快捷键
+gconf-editor 命令(好用的配置器)
+“Apps->Metacity->keybinding Commands”，右边点 command_1 右键添加值, gnome-system-monitor
+“Apps->Metacity->Global keybingdings”，右边点 run_command_1 右键添加值, <Control><Alt>m
+提示：当只有值为空或disable才可以用，现在你可以直接在桌面按ctrl+alt+m打开gnome-system-monitor
+           metacity是系统視窗， 在这里添加系统热键
+
+15 gedit插件
+ http://linuxtoy.org/archives/gedit-symbol-browser-plugin.html
+ http://github.com/nagaozen/gedit-plugin-autocomplete/             --官网下载
+　安装autocomplete
+　　到http://github.com/nagaozen/gedit-plugin-autocomplete/下载
+　　解压，打开终端，运行sh install　
