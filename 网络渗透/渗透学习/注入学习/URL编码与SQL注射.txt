@@ -1,0 +1,39 @@
+到url编码，你或许会想起N年前的url编码漏洞。可惜我是“生不逢时”啊，我接触网络时，那个漏洞早就绝迹咯。
+
+言归正传，URL 编码是什么东东呢？看看我从网上抄的定义：
+呵呵，明白了吧，其实url编码就是一个字符ascii码的十六进制。不过稍微有些变动，需要在前面加上“%”。比如“”，它的ascii码是92，92的十六进制是5c，所以“”的url编码就是。那么汉字的url编码呢？很简单，看例子：“胡”的ascii码是-17670，十六进制是BAFA，url编码是“%BA%FA”。呵呵，知道怎么转换的了吧。
+
+URL编码平时我们是用不到的，因为IE会自动将你输入到地址栏的非数字字母转换为url编码。所以对于浏览器来说http://blog.csdn.net/l%61ke2与http://blog.csdn.net/lake2是等效的（注意，第一个url我用%61替换了a）。呵呵，或许你已经想起了，有人提出数据库名字里带上“#”以防止被下载，因为IE遇到#就会忽略后面的字母。破解方法很简单——用url编码#替换掉#。我本来企图利用url编码来躲过注射检查的，不过失败了，因为服务器端会将url编码转换成字符的。
+
+等等，好像跑题了啊，呵呵，不好意思：）
+
+现在SQL注射非常流行，所以就有人写了一些防注射的脚本。当然啦，思路不一样，效果大不同。各位看官请看下面的××SQL通用防注入asp版部分代码。
+
+          Fy_Url=Request.ServerVariables("QUERY_STRING")
+          Fy_a=split(Fy_Url,"&")
+          redim Fy_Cs(ubound(Fy_a))
+          On Error Resume Next
+          for Fy_x=0 to ubound(Fy_a)
+                     Fy_Cs(Fy_x) = left(Fy_a(Fy_x),instr(Fy_a(Fy_x),"=")-1)
+          Next
+          For Fy_x=0 to ubound(Fy_Cs)
+                    If Fy_Cs(Fy_x)<>"" Then
+                           If Instr(LCase(Request(Fy_Cs(Fy_x))),"and")<>0 then
+                                  Response.Write "出现错误！"
+                                  Response.End
+                           End If
+                    End If
+          Next
+
+
+它的思路就是先获得提交的数据，以“&”为分界获得并处理name/value组，然后判断value里是否含有定义的关键字（这里为求简便，我只留下了“and”），有之，则为注射。
+
+乍一看去，value被检查了，似乎没有问题。呵呵，是的，value不会有问题，可是，name呢？
+
+它的name/value组值来自于Request.ServerVariables("QUERY_STRING")，呵呵，不好意思，这里出问题了。Request.ServerVariables("QUERY_STRING")是得到客户端提交的字符串，这里并不会自动转换url编码，哈哈，如果我们把name进行url编码再提交的话，呵呵，那就可以绕过检查了。比如参数是ph4nt0m=lake2 and lis0，此时程序能够检测到；如果提交%50h4nt0m=lake2 and lis0（对p进行url编码），程序就会去判断%50h4nt0m的值，而%50h4nt0m会被转换为ph4nt0m，所以%50h4nt0m值为空，于是就绕过了检测。
+
+等等，为什么既然name不解码可以绕过检查而value就不能绕过呢？因为value的值取自Request(Fy_Cs(Fy_x))，这个服务器就会解码的。
+
+程序怎么改进呢？只要能够得到客户端提交的数据是解码后的就可以了，把得到name的语句改为For Each SubmitName In Request.QueryString就可以了。
+
+呵呵，谢谢阁下耐着性子看完我的文章^_^

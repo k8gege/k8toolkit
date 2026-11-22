@@ -1,0 +1,161 @@
+　如何防范SQL注入:测试篇
+http://www.it168.com 2009年12月23日 来源：51Testing 作者：jamesking 编辑：晓熊 评论：0条 
+本文Tag： 安全 　　【IT168 技术文档】在上一篇文章《如何防范SQL注入-编程篇》中，我们讲了对于程序员而言，如何编码以防范代码存在SQL注入漏洞，那么，对于测试人员来说，如何测试SQL注入漏洞是否存在呢?
+
+　　首先，我们将SQL注入攻击能分为以下三种类型：
+
+　　Inband：数据经由SQL代码注入的通道取出，这是最直接的一种攻击，通过SQL注入获取的信息直接反映到应用程序的Web页面上;
+
+　　Out-of-band：数据通过不同于SQL代码注入的方式获得(譬如通过邮件等)
+
+　　推理：这种攻击是说并没有真正的数据传输，但攻击者可以通过发送特定的请求，重组返回的结果从而得到一些信息。
+
+　　不论是哪种SQL注入，攻击者都需要构造一个语法正确的SQL查询，如果应用程序对一个不正确的查询返回了一个错误消息，那么就和容易重新构造初始的查询语句的逻辑，进而也就能更容易的进行注入;如果应用程序隐藏了错误信息，那么攻击者就必须对查询逻辑进行反向工程，即我们所谓的“盲SQL注入”
+
+　　黑盒测试及示例：
+
+　　这个测试的第一步是理解我们的应用程序在什么时候需要访问数据库，典型的需要访问数据库的时机是：
+
+　　认证表单：输入用户名和密码以检查是否有权限
+
+　　搜索引擎：提交字符串以从数据库中获取相应的记录
+
+　　电子商务站点：获取某类商品的价格等信息
+
+　　作为测试人员，我们需要列对所有输入域的值可能用于查询的字段做一个表单，包括那些POST请求的隐含字段，然后截取查询语句并产生错误信息。第一个测试往往是用一个单引号“‘”或是分号“;”，前者在SQL中是字符串终结符，如果应用程序没有过滤，则会产生一条错误信息;后者在SQL中是一条SQL语句的终结符，同样如果没有过滤，也会产生错误信息。在Microsoft SQL Server中，返回的错误信息一般是这样：
+
+Microsoft OLE DB Provider for ODBC Drivers error ‘80040e14’
+
+　　[Microsoft][ODBC SQL Server Driver][SQL Server]Unclosed quotation mark before the character string ‘’.
+
+　　/target/target.asp, line 113
+　　同样可用于测试的还有“--”以及SQL中的一些诸如“AND”的关键字，通常很常见的一种测试是在要求输入为数字的输入框中输入字符串，会返回如下的错误信息：
+
+Microsoft OLE DB Provider for ODBC Drivers error ‘80040e07’
+
+　　[Microsoft][ODBC SQL Server Driver][SQL Server]Syntax error converting the varchar value ‘tester’ to a column of data type int.
+
+　　/target/target.asp, line 113
+　　类似上面这样的出错返回信息能让我们知道很多数据库的信息，通常不会返回那么多信息，会返回诸如“500 Server Error”的信息，那就需要“盲SQL注入”了。注意，我们需要对所有可能存在SQL注入漏洞的输入域进行测试，并且在每个测试用例时只变化一个域的值，从而才能找到真正存在漏洞的输入域。
+
+　　下面我们看一下标准的SQL注入测试是怎样的。
+
+　　我们以下面的SQL查询为例：
+
+SELECT * FROM Users WHERE Username='$username' AND Password='$password'
+　　如果我们在页面上输入以下的用户名和密码：
+
+$username = 1' or '1' = '1
+
+　　$password = 1' or '1' = '1
+　　那么整个查询语句就变为：　
+
+SELECT * FROM Users WHERE Username='1' OR '1' = '1' AND Password='1' OR '1' = '1'
+　　假设参数值是通过GET方法传递到服务器的，且域名为www.example.com，那么我们的访问请求就是：
+
+　http://www.example.com/index.php?username=1'%20or%20'1'%20=%20'1&password=1'%20or%20'1'%20=%20'1
+　　对上面的SQL语句作简单分析后我们就知道由于该语句永远为真，所以肯定会返回一些数据，在这种情况下实际上并未验证用户名和密码，并且在某些系统中，用户表的第一行记录是管理员，那这样造成的后果则更为严重。
+
+　　另外一个查询的例子如下：
+
+SELECT * FROM Users WHERE ((Username='$username') AND (Password=MD5('$password')))
+　　在这个例子中，存在两个问题，一个是括号的用法，还有一个是MD5哈希函数的用法。对于第一个问题，我们可以很容易找到缺失的右括号解决，对于第二个问题，我们可以想办法使第二个条件失效。我们在查询语句的最后加上一个注释符以表示后面的都是注释，常见的注释起始符是/*(在Oracle中是--)，也就是说，我们用如下的用户名和密码：
+
+$username = 1' or '1' = '1'))/*
+
+　　$password = foo
+　　那么整条SQL语句就变为：　
+
+SELECT * FROM Users WHERE ((Username='1' or '1' = '1'))/*') AND (Password=MD5('$password')))
+　　我们的URL请求就变为：
+
+http://www.example.com/index.php?username=1'%20or%20'1'%20=%20'1'))/*&password=foo　
+
+
+Union查询SQL注入测试
+
+　　还有一种测试是利用Union的，利用Union可以连接查询，从而从其他表中得到信息，假设我们有如下的查询：　
+
+SELECT Name, Phone, Address FROM Users WHERE Id=$id
+　　然后我们设置id的值为：
+
+　$id=1 UNION ALL SELECT creditCardNumber,1,1 FROM CreditCarTable
+　　那么整体的查询就变为：
+
+SELECT Name, Phone, Address FROM Users WHERE Id=1 UNION ALL SELECT creditCardNumber,1,1 FROM CreditCarTable
+　　显然这样就能得到所有信用卡用户的信息。
+
+　　盲SQL注入测试
+
+　　在上面我们提到过盲SQL注入，即blind SQL injection，它意味着对于某个操作我们得不到任何信息，通常这是由于程序员已经编写了特定的出错返回页面，从而隐藏了数据库结构的信息。
+
+　　利用推理方法，有时候我们能够恢复特定字段的值。这种方法通常采用一组对服务器的布尔查询，依据返回的结果来推断结果的含义。仍然延续上面的www.example.com，有一个参数名为id，那么我们输入以下url请求：
+
+http://www.example.com/index.php?id=1'
+
+　　显然由于语法错误，我们会得到一个预先定义好的出错页面，假设服务器上的查询语句为SELECT field1, field2, field3 FROM Users WHERE Id='$Id'，假设我们想要得到用户名字段的值，那么通过一些函数，我们就可以逐字符的读取用户名的值。在这里我们使用以下的函数：　
+
+SUBSTRING (text, start, length)，ASCII (char)，LENGTH (text)
+　　我们定义id为：　
+
+$Id=1' AND ASCII(SUBSTRING(username,1,1))=97 AND '1'='1
+　　那么最终的SQL查询语句为：　
+
+SELECT field1, field2, field3 FROM Users WHERE Id='1' AND ASCII(SUBSTRING(username,1,1))=97 AND '1'='1'
+　　那么，如果在数据库中有用户名的第一个字符的ASCII码为97的话，那么我们就能得到一个真值，那么我们就继续寻找该用户名的下一个字符;如果没有的话，那么我们就递增猜测第一个字符的ASCII码为98的用户名，这样反复下去就能判断出合法的用户名。
+
+　　那么，什么时候我们可以结束推理呢，我们假设id的值为：
+
+　$Id=1' AND LENGTH(username)=N AND '1' = '1
+　　其中N是我们到目前为止已经分析的字符数目，那么整体的sql查询为：　
+
+SELECT field1, field2, field3 FROM Users WHERE Id='1' AND LENGTH(username)=N AND '1' = '1'
+　　这个查询的返回值如果是真，那我们就已经完成了推理并且我们已经得到了想要的数值，如果为假，则表示我们还要继续分析。
+
+　　这种盲SQL注入会要求我们输入大量的sql尝试，有一些自动化的工具能够帮我们实现，SqlDumper就是这样的一种工具，对MySQL数据库进行GET访问请求。
+相关阅读：
+SQL注入攻击的种类和防范手段 
+
+　存储过程注入
+
+　　在上一篇《如何防范SQL注入—编程篇》中，我们提到使用存储过程是能够防范SQL注入的，但同时也要注意，存储过程如果使用不得当，使用存储过程的动态查询事实上也会造成一定的SQL注入漏洞。
+
+　　以下面的SQL存储过程为例：
+
+　Create procedure user_login @username varchar(20), @passwd varchar(20) As
+
+　　Declare @sqlstring varchar(250)
+
+　　Set @sqlstring = ‘
+
+　　Select 1 from users
+
+　　Where username = ‘ + @username + ‘ and passwd = ‘ + @passwd
+
+　　exec(@sqlstring)
+
+　　Go
+　　用户的输入如下：
+
+　anyusername or 1=1'
+
+　　anypassword
+　　如果我们没有对输入进行验证，那么上面的语句就回返回数据库中的一条记录。
+
+　　我们再看下面的一条：　
+
+Create procedure get_report @columnamelist varchar(7900) As
+
+　　Declare @sqlstring varchar(8000)
+
+　　Set @sqlstring = ‘
+
+　　Select ‘ + @columnamelist + ‘ from ReportTable‘
+
+　　exec(@sqlstring)
+
+　　Go
+　　如果用户输入是：
+
+1 from users; update users set password = 'password'; select *
+　　后面则显而易见，用户的所有密码都被更改且得到了报表信息。

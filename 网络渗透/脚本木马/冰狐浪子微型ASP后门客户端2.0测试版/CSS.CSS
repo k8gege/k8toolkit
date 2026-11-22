@@ -1,0 +1,23 @@
+INPUT,BODY {
+FONT-SIZE:9pt;
+color:#009900;
+border: 3px dotted #009900;
+}
+
+SELECT,TEXTAREA {
+border: 3px dotted #009900;
+COLOR: #009900;
+WIDTH: 100%;
+HEIGHT:100px
+}
+
+
+BODY {
+overflow : hidden;
+background-color : #000000;
+cursor:default;
+FONT-SIZE: 9pt;
+color : #FF0000;
+}
+
+#ifl{Z-INDEX: 1;FILTER:glow(color=#FF0000,strength=15) Chroma(color=#FF0000) Chroma(color=#ffffff);position:absolute;font-size:150px;color:#ffffff}

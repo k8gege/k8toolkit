@@ -1,0 +1,370 @@
+奔流不息的网络里，Web绽放着绚丽的色彩、电子邮件呼哧的穿梭网际、语音电话、网络会议、文件传输，各种数据交织错落，形成辉煌的数字世界。在喧闹的数字世界底层，存在一种精致的次序，这种次序决定着数据的选路、异构介质衔接、协议的交互等功能。而这一次序的缔造者正是布满整个网络的路由器。于是，路由器成了数据通信的交通亭，也成为了众多黑帽(Blackhat)争夺的目标之一。
+
+Cisco路由器占据这网络世界的绝对位置，于是安全焦点效应激发了路由入侵与防御而产生的精美艺术。下面我将由浅入深的方式讲述Cisco入侵的手段以及防御策略。
+
+
+【路由器感冒】
+
+路由器从本身的IOS来说，并不是一个健壮的体系，因而它偶尔也会让自己感冒发烧。系统感冒发烧起来，抵抗力自然就降低不少。
+
+
+*IOS自身欺骗
+
+Cisco路由器是用IOS系统来实现路由的细节功能，因此它是路由系统的灵魂。Show命令的在线系统方式却为我们打开一个偷窥之门。
+
+众所周知，Cisco路由器中，一般用户只能查看路由器的很少信息。而能进入特权模式的用户才有资格查看全部信息和修改路由。一般模式下，show 的在线帮助系统不会列表所有可用的命令，虽然75个show的扩展参数只能用于特权模式下(enable)，实际上只有13个受到限制。这意味着一般用户（非特权用户）可以查看访问列表或其他路由安全相关信息。
+
+重要安全相关的ACL信息可以被登录路由的非特权用户查看，诸如：
+
+#show access-lists
+
+#show ip prot
+
+#show ip ospf dat
+
+#sh ip eigrp top
+
+等命令可以在非特权模式下泄露网络敏感信息。通过这些命令，我们能得出路由器配置的大致情况，这对采取进一步的入侵起到辅助作用。不过由于这种方式需要用户已经有一个登录帐户，因此得到这样的信息有一定难度。
+
+
+*WCCP暗道
+
+Cisco在IOS 11.2版本中引入WCCP(Web Cache Control Protocol)，为Cisco缓存引擎提供协议通信。Cisco缓存引擎为www提供透明缓存服务。缓存引擎用WCCP来和其他cisco路由器通信。路由器把HTTP数据发送到缓存引擎主机中。
+
+虽然这种方式默认是关闭的。假如使能(enable)的话，那么WCCP本身是没有认证机制的。路由器将会把每一个发送合法缓存引擎类型的Hello包的主机认为缓存引擎，于是把HTTP数据缓存到那台主机。这意味着恶意用户可以通过这种方式获取信息。
+
+通过这种方式，攻击者可以截获站点认证信息，包括站点密码；替代实际WEB内容为自己设计的陷阱；通过路由彻底破坏Web提供的服务。这种方式，可以完全规避登录烦琐的攻击方法，对Web提供全面而且致命的打击。
+
+我们既可关闭WCCP的启用机制，也可通过ACL阻止WCCP发送HTTP流量给不信任主机来防止这样的恶劣情况发生。
+
+ 
+
+*HTTP服务的困惑
+
+Cisco在IOS版本加入了远程管理路由的Web特性，这对于新羽(newbie)的管理员来，无疑是值得高兴的事情。但引入方便的同时，隐患也随之进入。
+
+１．基于拒绝式服务攻击的HTTP的漏洞
+
+Cisco路由启用(enable)远程WEB管理，很容易遭受DoS。这种DoS能导致路由器停止对网络请求的响应。这是功能是Cisco路由的内嵌功能。但启用这个特性，通过构造一个简单的Http请求就会造成DoS攻击：
+
+http:///%%
+
+这种请求导致路由停止响应，甚至引起路由器执行硬重置(hard reset)。
+
+
+２．基于HTTP服务器查询的漏洞
+
+Cisco 安全建议小组在2000年10月30日公布了这个漏洞。IOS 11.0引入通过Web方式管理路由。”?”是HTML规范中定义的CGI参数的分界符。它也被IOS命令行接口解释成请求帮助。在IOS 12.0中，当问号邻接于”/”，URL解释器就不能正确解释其含义。当一个包括”?/”的URL对路由器HTTP服务器进行请求，并且提供一个有效的启用口令，则路由器进入死循环。因而引起路由崩溃并重起。
+
+如果http起用，浏览
+
+http://route_ip_addr/anytest?/
+
+并且提供特权口令，则可以导致DoS攻击，导致路由停机或者重启。
+
+除了让路由死亡之外，Http额外提供了一种可怕权限提升的漏洞，如下所论。
+
+
+３．Cisco IOS 认证漏洞
+
+当HTTP服务器启用并且使用本地用户认证方式。在某些条件，可以绕过认证并执行设备上的任何命令。用户可以对设备完全的控制。所有命令都将以最高特权执行(level 15)。
+
+使用username 和password的路由设备帐户认证方式，构造如下URL：
+
+http://router_ip_addr/level/xx/exec/….
+
+（注：xx代表16至99之间的84种不同的组合攻击，因为路由器硬件类型众多，而IOS版本也存在不同，因此针对不同的路由器类型，攻击组合数字不同。）
+
+通过这种方式，攻击者可以完全控制路由并可以改变路由表配置。这种可怕的事实让网管也感到惊悸。这种完整的控制方式将是网站数据通信枢纽的致命一击。
+
+
+虽然Http漏洞带来如此之多的漏洞，但这种漏洞最主要原因是因为启用http服务器管理路由的缘故，由于这种管理是种命令行方式的替代物，因此对于熟练的网管来说，没有必要启动这种危害性很大的服务。
+
+#no ip http server　的路由配置也成为时髦的安全配置语句。
+
+
+【在SNMP中行走】
+
+谈到Cisco路由的安全性，我们就必须涉及到SNMP这个看似简单，实际扮演着重要角色的协议，正因为它的存在，路由器的入侵变的丰富有趣多了。
+
+
+*SNMP基础简介：
+
+每个SNMP启用的路由设备都包含一个叫做管理信息模块（MIB），这是一种包含简单等级的数据目录结构，在这种树结构中包含设备各种信息。 SNMP基本的命令GET，可以检索MIB的信息，而SET命令则可设置MIB变量。一种用于监控和管理CISCO路由的的软件工具是MRTG，至于如何配置其用于Cisco设备的监控可以参阅LOG的《怎样在Windows NT/2K下安装MRTG》一文（http://www.2hackers.org/cgi-bin/2hb/topic.cgi?forum=7&topic=212）。
+
+在路由器中配置SNMP的方法如下：
+
+(conf)#snmp-server community readonly RO
+
+(conf)#snmp-server community readwrite RW
+
+SNMP协议通过社区(community)字串的概念赋予对设备MIB对象访问的权限。上例中，设置了只读访问的社区字串readonly和可进行读写操作的readwrite社区字串。而大部分管理员喜欢使用public和private设置只读字串和读写字串，疏不知，这样轻易的结果将给网络带来巨大的波动。我们可以在【触及RouterKit】部分清楚认识到这种危害。
+
+通过SNMP我们可以方便管理和监控Cisco的设备(参阅Log文章介绍)，同时也给攻击者带来可乘之机。
+
+
+*Cisco IOS软件SNMP读写ILMI社区字串漏洞
+
+ILMI是一个独立的工业标准，用于配置ATM接口。MIB是一个树形结构，包括操作(只读)数据以及配置(读写)选项。在有漏洞的设备上，通过在 SNMP请求中指定一个ILMI社团字符串，可以访问整个树形管理结构中三个特定部分的对象：MIB-II系统组，LAN-EMULATION- CLIENT MIB以及PNNI（Private Network-to-Network Interface）MIB。每一部分的子集对象都可以使用相同的“ILMI”社团字符串修改。
+
+MIB-II系统组包括设备本身的基本信息。能被修改对象的数目虽然是有限的。例如包括：
+
+system.sysContact.
+
+system.sysLocation.
+
+system.sysName.
+
+Cisco IOS软件版本11.x和12.0允许使用一个非文档的ILMI社区字串未经授权就查看和修改某些SNMP对象。其中就包括诸如上面所说的"sysContact","sysLocation",和"sysName"对象,虽然修改它们不会影响设备的正常操作，但如果意外修改可能会产生混乱。剩下的对象包含于LAN-EMULATION-CLIENT和PNNI MIBs,修改这些对象可以影响ATM配置。如果没有防止未授权使用ILMI社团字符串，一台有漏洞的路由器可能会遭受DoS攻击。
+
+如果SNMP请求可以被有漏洞的设备接收，那么没有适当授权，就可以访问某些MIB对象，违背了保密性。没有授权就可以修改可读MIB对象的子集，破坏了完整性。而更具有危害性的方法是向SNMP端口发送大量的读和写请求。有漏洞的设备，如果没有防范接收SNMP包的措施，就会遭受DoS攻击，导致路由重载。
+
+
+至于如何查看这些对象的信息，可以参阅【触及RouterKit】部分。
+
+*Cisco IOS软件层叠SNMP共享社区字串漏洞
+
+Cisco 配置文件中，意外创建和暴露SNMP共享字符串，可以允许未授权地查阅或者修改感染的设备。这种漏洞是调用SNMP函数中的缺陷引起的。SNMP利用 “community”的标记来划分“object”组,可以在设备上查看或者修改它们。在组中的数据组织MIB。单个设备可以有几个MIBs，连接在一起形成一个大的结构，不同的社团字符串可以提供只读或者读写访问不同的，可能重叠的大型数据结构的一部分。
+
+启用SNMP，键入“snmp-server”命令时，如果社区在设备上不是以有效的社区字串存在，就会不可预料地添加一个只读社区字串。如果删除它，这个社区字串将会在重载设备时重新出现。
+
+缺陷源于SNMPv2的“通知（informs）”功能的实现，这个功能包括交换只读社区字符串来共享状态信息。当一个有漏洞的设备处理一条定义接收SNMP "traps"（陷阱消息）主机的命令时（常规snmp-server配置），在trap消息中指定的社团也还是配置成通用，如果它在保存配置中没有定义。即使社区在前面被删除并且配置在系统重载前保存到存储器，也会发生这种情况。
+
+当通过"snmpwalk"(一种检测SNMP配置正确性的工具)，或者使用设备的只读社团字符串遍历基于视图的访问控制MIB来检查设备时，就会泄漏读写社团字符串。这意味着知道只读社区字串允许读访问存储在设备中的MIB，导致信息泄露。而更为严重的是，如果知道读写社区字符串就可以允许远程配置的路由，可以绕开授权认证机制，从而完全控制路由器的整体功能。
+
+
+题外话：一个被发现漏洞很具有讽刺意味，使用nmap等安全扫描工具对路由进行扫描，居然会产生DoS的攻击。有兴趣的朋友可以参阅：http://online.securityfocus.com/archive/1/28601/2002-11-29/2002-12-05/1
+
+
+【另类攻击】
+
+前面的漏洞综述，似乎我们都在围绕着如何获得路由配置信息而讲述，因为得到一个完整Router-config，那么我们便掌握了路由的世界。下面的入侵方法则另辟奚径。
+
+
+*TFTP的艺术
+
+Cisco的熟练管理员，一般习惯于Cisco免费提供的TFTP服务器(http://www.cisco.com/pcgi-bin/tablebuild.pl/tftp)，而Cisco培训的书籍总会介绍使用copy running-config tftp的命令来保存路由配置文件。于是获得TFTP就有可能获得路由配置文件。
+
+幸运的是，TFTPD守护程序存在目录遍历的漏洞，允许远程用户从目标系统中获得任意文件。我们可以通过下面简单方法获取目标系统中的任何文件：
+
+Exploit
+
+tftp> connect target_machine
+
+tftp> get cisco-conf.bin
+
+Recieved 472 bytes in 0.4 seconds
+
+tftpd> quit
+
+　　而这个免费软件还没有任何修补措施，因此借助这种方式，可以不费吹灰之力就可能得到一份完整的路由配置存档。
+
+
+*SSH安全感
+
+通过Telnet管理方式，造就了一批密码窃听者。通过明文的ASCII的网络传输形式，窃听者随便放置嗅探装置(sniffer)，就可安闲的等待着登录用户，密码以及各类敏感信息自动送到面前。SSH加密方式在路由器的应用，大大的消灭了这种嚣张的气焰。
+
+但入侵与反入侵本来就是个古老的话题。于是，SSH也开始有了危机感。Cisco SSH存在着三个精妙且复杂的漏洞，这种攻击的手法所涉及的知识已经大大超出本文的范畴，所以以简略的形式给予说明并指出应用漏洞的文章出处。(这些漏洞整理自中国网络安全响应中心CNSAN，http://www.cns911.com/holes/router/router01062902.php，在此对漏洞整理工作者的无私工作给予致敬。)
+
+１．RC-32完整性检查漏洞
+
+参考：http://www.core-sdi.com/files/files/11/CRC32.pdf
+
+作者运用及其复杂的数学方式来证明这种漏洞的存在性，看懂这片文章需要相当的数学功底，本人在看这篇文章的时候也是头痛万分。不过文章中的理论分析十分精彩，初学者可以省略此漏洞。
+
+CNSAN的文章则指出“要使这种攻击成功，攻击者要拥有一或者2个已知chipertxt/plaintext串，这一般并不难，因为每个进程启动时的问候屏幕是固定并可探测的，这样可以通过SNIFF进程来获得相应的chipertext”。
+
+
+２．通信分析
+
+参考：http://online.securityfocus.com/archive/1/169840
+
+CNSAN的文章论述：“要利用这个漏洞，攻击者必须捕获信息包，这样可以分析使用的密码长度并用暴力手段猜测密码”。
+
+在SSH中封装明文数据时，数据从8字节的边界上开始封装并对数据进行加密。这样的包在明文数据长度之后进行某中数学封装，SSH在加密通道内以明文的方式传输，结果，能检测SSH传输的攻击就能获得SSH内的内容。文章还友善的给出了Patch程序来修正这个漏洞。
+
+
+３．在SSH 1.5协议中KEY恢复
+
+参考：http://www.securityfocus.com/archive/1/161150
+
+CNSAN的文章论述：要利用这个协议，攻击者必须能嗅探SSH进程并能对SSH服务器建立连接，要恢复SERVER KEY，攻击者必须执行2^20+2^19=1572864 连接，由于KEY是一小时的生存时间，所以攻击者必须每秒执行400此连接。
+
+这种技巧的要求非常高，通常的远程入侵中，使用KEY来获得SSH会话过程的概率相当之低。
+
+
+*本地密码劫持
+
+在所有入侵中，这种类型的入侵活动可谓是蓄谋以久的野蛮做法。方法本来的意图是用于管理员忘记密码后的恢复措施。而技术做为双刃剑的一面，便在于我们如何使用它。
+
+如果你有一台笔记本电脑，你有一根与路由器相应类型的连接线，那么你配备了入侵路由的武器。剩下的时间，你将思考如何闭开网管的眼睛，把连接线与路由器连接。以后的动作，需要你行动迅速了。(以25xx系列路由为例)
+
+１．切断路由器的电源。
+
+２．连接计算机与路由器。
+
+３．打开超级终端(CTL-Break in Hyperterm)。
+
+４．在启动路由器的30秒时间内，迅速按CTL-Break组合键，使路由器进入rom monitor 状态，出现提示符如下：
+
+Followed by a '>' prompt...
+
+５．输入 O/R 0x2142，修改配置注册器(config register)路由器从Flash
+
+memory引导。
+
+６．输入I，路由器初始化设置后重新启动。
+
+７．输入系统配置 对话提示符敲no,一直等提示信息显示： Press RETURN to get started。
+
+８．输入enable 命令，出现Router# 提示符。
+
+这是，我们可以完全使用show命令查看路由中的一切配置，并可转储到计算机上。如果使用了enable的加密方式，虽然现在无法看，但可以使用工具进行破解。当然，粗鲁的做法是直接修改：
+
+Router#conf term
+
+Router(conf)#enable password 7 123pwd
+
+
+进行完以上操作，别忘了恢复路由的正常状态，否则网管很快就能发现问题所在：
+
+Router(conf)#config-register 0x2102
+
+Router(conf)#exit
+
+
+至此，我们从几个方面试图获得整个路由的配置，那么如何进一步扩大入侵的战果，一些令人激动的工具给我们带来的无比愉悦的方便。
+
+
+【触及RouterKit】
+
+就如攻击视窗系统人喜欢用NTRK，攻击Linux的人则喜欢用rootkit，Router的世界也有这优秀的Kit，让人爱不释手。
+
+
+*密码破解机
+
+得到路由配置文件后，如果看见在特权模式的配置中可能会有：“enable password 7 14341B180F0B187875212766”这样的加密字串。那么恭喜了，enable password命令的密码加密机制已经很古老,存在极大安全漏洞。通过一些简单的工具就可以得到破解的特权密码。
+
+
+*RAT的丰厚礼物
+
+RAT是系统管理网络安全研究机构(SANS)开发的免费路由审核工具(route audit tools)。这套工具能自动和立即的检索路由配置的情况，并针对配置的问题给出极其详尽的漏洞发现和推荐修改配置，并能寻址SNMP的漏洞给予安全建议。这种安全的配置文档对于管理员和黑帽来说，都是非常珍贵的资料。
+
+RAT是用Pearl语言编写而成，因此在Windows需要安装ActiveState Perl的环境。安装过程十分简单，对于路由的扫描结果以Html和ASCII文本格式给予用户查看。下面是扫描的具体实例。
+
+Exploit：
+
+C:\>perl c:\rat\bin\rat –a –u username –w passwd –e enablepass {router_ip_addr}
+
+snarfing router_ip_addr...done.
+
+auditing router_ip_addr...done.
+
+ncat_report: Guide file rscg.pdf not found in current directory. Searching...
+
+Linking to guide found at c:\rat/rscg.pdf
+
+ncat_report: writing {router_ip_addr}.ncat_fix.txt.
+
+ncat_report: writing {router_ip_addr}.ncat_report.txt.
+
+ncat_report: writing {router_ip_addr}.html.
+
+ncat_report: writing rules.html (cisco-ios-benchmark.html).
+
+ncat_report: writing all.ncat_fix.txt.
+
+ncat_report: writing all.ncat_report.txt.
+
+ncat_report: writing all.html.
+
+（注：-a参数扫描所有漏洞选项，-u登录帐户，-w登陆密码，-e特权模式密码。扫描产生的漏洞检测报告和安全建议则使用ncat_report写入相关文件中。{router_ip_addr}是实际的路由IP地址）
+
+
+可以说RAT 是IOS的安全配置检测工具，提供了详细的配置安全漏洞，并提供Fix Script for {router_ip_addr}的修补脚本，这样周全的工具不仅是管理员的福音，也给入侵者带来巨大好处。如果入侵者得到这样一份周详的报告，情况会有多糟糕？
+
+可惜的是，这样优秀的程序在对路由配置文件进行检索时，所用的snarf程序是以telnet的方式对配置文件进行检索，这样的话，任何传输过程都将是明文的方式，而程序的文档介绍中推荐使用的SSH协议本身也并不完善(可参阅【另类攻击】部分的介绍)，这样就为攻击者提供了偷窃的途径，从而获得路由全面的明晰配置图，这样结果对于网管来说将是多么的不幸。因此我们需要谨慎的使用这个威力巨大的工具。
+
+当然，这个优秀的免费工具带给我们的另一个丰厚的礼物便是程序中自动装入《路由安全配置指南》(RSCG)的PDF文档，里面详尽的Cisco安全路由配置文档介绍了路由的管理和安全配置方式，给出薄弱的路由配置配置说明。这种实惠既便利了安全工作者对于理解，也成为了攻击者利用漏洞的极佳参考。
+
+
+*终极力量Solarwinds
+
+Solarwinds公司出品Solarwinds.net的全面产品中包容了针对许多管理监测Cisco设备的精美工具，良好的GUI、容易操作的截面、还有Perfect的Toolbar(比较起庞大而复杂的Ciscowork管理软件，我偏向于Solarwinds提供的简单配置工具，当然 Ciscowork如果被攻击者运用，那么破坏的威力简直可以搞拷一个大型网站的通信枢纽。至于Ciscowork的使用说明，因为篇幅问题，不在赘述)。
+
+主要工具简介：
+
+SNMP Dictionary Attack
+
+SNMP字典攻击用于测试SNMP的社区字串的强度。在SNMP字典攻击中，攻击程序首先装载社区字串习惯用语字典和字典编辑器编辑的字典，然后按照字典排序进行猜解。
+
+
+SNMP Brute Force Attack
+
+SNMP暴力破解程序将会以字母和数字的组合形式远程对SNMP的只读字串和读写字串进行穷举破解，同时我们可以定义包括的字符和字串的估计长度，这样有助于加快破解速度。
+
+
+Router Security Check
+
+路由安全检查程序能尝试的进入到路由器中并提示IOS是否需要升级，同时它也自动尝试只读和读写的SNMP社区字串。下面就是一个实际检测的结果：
+
+
+IP Address202.xx.xx.xxSystem Namecisco7507Contact--Test Contact—010xxxxxxLocationCisco Internetwork Operating System Software IOS (tm) RSP Software (RSP-AJSV-M), Version 12.0(7), RELEASE SOFTWARE (fc1)Copyright (c) 1986-1999 by cisco Systems, Inc.Compiled Wed 13-Oct-99 23:20 by phanguyeRead-Only Community StringsILMIxxxxRead-Write Community StringsILMIXxxx
+
+注：从结果看，我们获得了读写字串，这种利用方式在前面已经论述过，不在重复。使用x隐含了真实的属性资料。
+
+
+Remote TCP Session Reset
+
+可以远程显示路由器上的所有TCP活动连接，更有意思的是，如果得知SNMP社区的读写字串，这个程序可以随意切断TCP的连接，这种恶作剧也常常让人苦恼不堪。
+
+
+Cisco Router Password Decryption
+
+不言而喻，这个程序是用来破解特权模式下的密码。至于如何取得密码，请参阅【触及RouterKit】的说明。
+
+
+当然，除了以上几种工具外，Solarwinds来集合了实用的Config Editor/View，upload Config，Download Config，Running Vs Startup Configs，Proxy Ping， Advanced CPU Load，Router CPU Load路由配置管理工具，通过工具名字我们不难得出这些工具的用途。
+
+
+Solarwinds牛刀小试
+
+这里将使用Solarwinds的工具组合进行一次高层次的入侵演习。不过这里的先决条件是，你已经通过各种漏洞探测针方式获取了社区可读写的字串(粗鲁的做法就可利用通过Solarwinds SNMP暴力破解方式来获取读写字串)。
+
+首先，创建一个包含新密码的文本文件：
+
+enable password New*Password
+
+注：这种设置甚至可以覆盖enable secret 5加密设置，不清楚Cisco既然得知Password 7方式加密是非常容易破解的，为什么还要保留这个遗物。
+
+
+接着，在文件中输入修改登录密码的语句：
+
+line vty 0 4password New*Passwordlogin
+
+
+启动Solarwinds自带的TFTP服务器，把创建的文件放置到服务器的根目录中。并在Config uploader实用工具中输入路由地址，读写字串和TFTP服务器的地址，并在TFTP目录中选择刚才创建的文件，按“Copy config PC to Router/Switch”。大致过程如图示：
+
+
+通过这种隐蔽的方式，我们更改了路由器的登录密码和特权模式密码。这种把戏经常让通过远程管理路由的网管大吃一惊，但重启路由后我们设置的密码就失效了。原因在于我们是在Running-conf模式下修改路由配置，而没有保存到NVRAM中。当然，许多过激的做法干脆使用修改的密码登录路由器，把配置文件写(write)到NVRAM。强权控管路由设备。
+
+
+【几点安全建议】
+
+综述了这些触目惊心的漏洞和威力无比工具的应用，我们是否应该行动起来，采取适当的措施来保护自身利益呢？
+
+*关于IOS的问题
+
+１．通过no ip http server取消http服务，消除Http带来的隐患。
+
+２．限制SNMP访问配置
+
+access-list 10 permit 204.50.25.0 0.0.0.255snmp-server community readwrite RW 10 (通过ACL限制受信主机访问)###########监测非授权的SNMP访问配置##########snmp-server enable traps (设置陷阱)snmp-server trap-authentication （如何认证失败，告诉路由发送陷阱。）snmp-server host 204.50.25.5 (陷阱消息接受工作站)（注：ciscoworks 工作站可以截获这些信息。）
+
+３．及时升级Cisco的IOS程序或者修补程序
+
+４．推荐阅读RAT中的RSCG文档建议
+
+５．利用安全工具对路由进行安全检查。
+
+关于安全的建议问题，不是一劳永逸的事情，漏洞在暗处挖掘着，新的技术在不断膨胀着，因此以上的几点建议只作为参考，实际的运用当中我们应该根据实际情况作出正确的策略。

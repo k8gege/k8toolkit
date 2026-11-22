@@ -1,0 +1,66 @@
+Mssql:
+
+view source
+print?
+1	<!--#include file="conn.asp"-->
+2	<%
+3	hid=request.QueryString("id")
+4	sql="select * from admin where id="&hid
+5	set rs=conn.execute (sql)
+6	%>
+
+Access:
+
+view source
+print?
+1	<%
+2	db="aspzhuru.mdb"'这里修改数据库路径或名称
+3	Set conn = Server.CreateObject("ADODB.Connection")
+4	dbpath="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & Server.MapPath(db)
+5	conn.Open dbpath
+6	%>
+
+Php:
+
+view source
+print?
+01	<?
+02	$mysql_server_name = "localhost";
+03	$mysql_username = "root";
+04	$mysql_password = "password";
+05	$mysql_database = "phpzr";
+06	$conn=mysql_connect( $mysql_server_name, $mysql_username, $mysql_password );
+07	mysql_select_db($mysql_database,$conn);
+08	$id=$_GET['id'];
+09	$sql = "select username,password from admin where id=$id";
+10	$result=mysql_db_query( $mysql_database, $sql,$conn );
+11	$row=mysql_fetch_row($result);
+12	?>
+
+.net （放到代码文件.cs里面）:
+
+view source
+print?
+01	using System.Data;
+02	using System.Configuration;
+03	using System.Collections;
+04	using System.Web;
+05	using System.Web.Security;
+06	using System.Web.UI;
+07	using System.Web.UI.WebControls;
+08	using System.Web.UI.WebControls.WebParts;
+09	using System.Web.UI.HtmlControls;
+10	using System.Data.SqlClient;
+11	public partial class Default2 : System.Web.UI.Page
+12	{
+13	 
+14	protected void Page_Load(object sender, EventArgs e)
+15	{
+16	SqlConnection conn = new SqlConnection();
+17	conn.ConnectionString = ConfigurationManager.ConnectionStrings["StudyConnectionString"].ToString();
+18	conn.Open();
+19	SqlCommand cmd = new SqlCommand("select * from [table] where id= " + this.Page.Request.Params["getid"], conn);
+20	cmd.ExecuteNonQuery();
+21	this.Page.RegisterClientScriptBlock("script", "<script>alert('注射成功')</script>");
+22	}
+23	} 

@@ -1,0 +1,29 @@
+SEBUG-ID:19964
+SEBUG-Appdir:Microsoft Windows
+发布时间:2010-07-15
+影响版本:
+Microsoft Windows XP SP3
+Microsoft Windows XP SP2
+Microsoft Windows 7漏洞描述:
+BUGTRAQ  ID: 41732
+
+Microsoft Windows是微软发布的非常流行的操作系统。
+
+Windows支持使用快捷方式或LNK文件。LNK文件是指向本地文件的引用，点击LNK文件与点击快捷方式所指定的目标具有相同的效果。
+
+Windows没有正确地处理LNK文件，特制的LNK文件可能导致Windows自动执行快捷方式文件所指定的代码。这些代码可能位于USB驱动、本地或远程文件系统、光驱或其他位置，使用资源管理器查看了LNK文件所在位置就足以触发这个漏洞。默认下Windows启动了自动加载和自动播放功能，因此在连接可移动设备（如USB闪存）后Windows会自动打开资源管理器。其他显示文件图标的应用也可用作这个漏洞的攻击载体。目前这个漏洞正在被广为利用传播恶意软件。<*参考 
+http://www.kb.cert.org/vuls/id/940193
+http://krebsonsecurity.com/2010/07/experts-warn-of-new-windows-shortcut-flaw/
+*>
+SEBUG安全建议:
+临时解决方法：
+
+* 禁用AutoRun功能。
+
+厂商补丁：
+
+Microsoft
+---------
+目前厂商还没有提供补丁或者升级程序，我们建议使用此软件的用户随时关注厂商的主页以获取最新版本：
+
+http://www.microsoft.com/technet/security/

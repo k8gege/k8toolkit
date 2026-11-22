@@ -1,0 +1,13 @@
+漏洞程序：淘宝博士互刷平台
+漏洞类型：上传漏洞
+漏洞描述：
+                    其实这个漏洞就是 动感购物商城 的那个上传问题。
+ if session(“useridname”)<>”" or session(“AdminName”)<>”" then
+
+
+这是upload_flash.asp文件对访问的验证，只需要注册个用户就可以上传了。
+
+用明小子直接上传。
+
+找了个关键字，不过可利用的不多：复制代码
+inurl:help/pay_introduce.asp

