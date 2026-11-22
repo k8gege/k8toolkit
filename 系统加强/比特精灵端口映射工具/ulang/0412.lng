@@ -1,0 +1,46 @@
+[About]
+Author = carrot52
+Font = Tahoma
+FontSize = 8
+
+[Language]
+Application.Title=BitSpirit
+TfrmUPNP=BitSpirit's UPNP 유틸리티
+TfrmUPNP.Label1=BitSpirit에 오신것을 환영합니다.
+TfrmUPNP.Label2=이 유틸리티는 당신이 UPNP 장치 유무를 결정하는데 도움을 해 줄 것입니다.
+TfrmUPNP.Label3=2 단계로 진행합니다:
+TfrmUPNP.Label4=1, 포트매핑을 지원하는 upnp 장치를 검색합니다.
+TfrmUPNP.Label5=2, UPNP 장치를 검색하면 포트매핑을 추가하거나 삭제합니다.
+TfrmUPNP.Label6=Upnp 장치 검색중:
+TfrmUPNP.lbFound=검색중......
+TfrmUPNP.btFindAgain=다시 검색
+TfrmUPNP.Label8=라우터에 포트매핑 추가/제거:
+TfrmUPNP.lbLocalPort=로컬 포트:
+TfrmUPNP.lbLocalIP=로컬 IP 주소:
+TfrmUPNP.lbWANIP=WAN IP 주소:
+TfrmUPNP.lbWANPort=WAN 포트:
+TfrmUPNP.lbDescription=포트 설명:
+TfrmUPNP.cbUseDefault=기본 WAN 설정 사용.
+TfrmUPNP.GroupBox1=행동:
+TfrmUPNP.rbAdd=추가
+TfrmUPNP.rbDel=제거
+TfrmUPNP.GroupBox2=형태:
+TfrmUPNP.rbTCP=TCP
+TfrmUPNP.rbUDP=UDP
+TfrmUPNP.Label13=행동 실행:
+TfrmUPNP.lbAction=대기하십시요.......
+TfrmUPNP.Panel1=
+TfrmUPNP.btPrev=<< 이전
+TfrmUPNP.btNext=다음 >>
+TfrmUPNP.btHelp=도움말
+TfrmUPNP.btClose=닫기
+TfrmUPNP.cbSkipICF=ICF 넘어감(인터넷 연결 방화벽).
+AddPortmapOK=WAN: %s:%d --> LAN: %s:%d, 추가됨!
+DelPortmapOK=WAN: %s:%d, 삭제됨!
+AddPortmapER=WAN: %s:%d --> LAN: %s:%d, 실패!
+DelPortmapER=Delete WAN: %s:%d, 실패!
+StandBy=대기하십시요......
+Finding=검색중......
+UPNPFound=UPNP 장치 검색:
+UPNPNotFound=UPNP 장치 없음!
+InvalidPort=잘못된 포트! 포트는 1 과 65535 사이의 값이어야합니다!

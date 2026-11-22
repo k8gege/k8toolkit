@@ -1,0 +1,46 @@
+[About]
+Author = DukeDog
+Font = MS UI Gothic
+FontSize = 9
+
+[Language]
+Application.Title=BitSpirit
+TfrmUPNP=BitSpirit UPnP ユーティリティ
+TfrmUPNP.Label1=BitSpirit v2.0 …強力で使いやすいBitTorrentクライアント… へようこそ
+TfrmUPNP.Label2=このユーティリティはUPnPに対応したデバイスがあるかどうかを調べます
+TfrmUPNP.Label3=次の2つのステップを行います:
+TfrmUPNP.Label4=1. ポートマッピングをサポートする全てのUPnPデバイスの検索
+TfrmUPNP.Label5=2. 見つかったUPnPデバイスにポートマッピングを追加/削除する
+TfrmUPNP.Label6=UPnPデバイスを検索中:
+TfrmUPNP.lbFound=検索中......
+TfrmUPNP.btFindAgain=再検索
+TfrmUPNP.Label8=ルーター内にポートマッピングを追加/削除:
+TfrmUPNP.lbLocalPort=ローカルポート:
+TfrmUPNP.lbLocalIP=ローカルIPアドレス:
+TfrmUPNP.lbWANIP=WAN IPアドレス:
+TfrmUPNP.lbWANPort=WANポート:
+TfrmUPNP.lbDescription=ポートの説明:
+TfrmUPNP.cbUseDefault=デフォルトのWAN設定を使用する
+TfrmUPNP.GroupBox1=アクション:
+TfrmUPNP.rbAdd=追加
+TfrmUPNP.rbDel=削除
+TfrmUPNP.GroupBox2=種類:
+TfrmUPNP.rbTCP=TCP
+TfrmUPNP.rbUDP=UDP
+TfrmUPNP.Label13=アクションを実行:
+TfrmUPNP.lbAction=しばらくお待ち下さい.....
+TfrmUPNP.Panel1=
+TfrmUPNP.btPrev=<< 前へ(&P)
+TfrmUPNP.btNext=次へ(&N) >>
+TfrmUPNP.btHelp=ヘルプ(&H)
+TfrmUPNP.btClose=閉じる(&C)
+TfrmUPNP.cbSkipICF=ICF (インターネット接続ファイアーウォール)をスキップ
+AddPortmapOK=WAN: %s:%d --> LAN: %s:%d, 追加!
+DelPortmapOK=WAN: %s:%d, Deleted!
+AddPortmapER=WAN: %s:%d --> LAN: %s:%d, 失敗!
+DelPortmapER=削除 WAN: %s:%d, 失敗!
+StandBy=しばらくお待ち下さい......
+Finding=検索中......
+UPNPFound=見つかったUPnPデバイス:
+UPNPNotFound=UPNPデバイスが見つかりませんでした!
+InvalidPort=無効なポートです!;有効なポート番号は1～65535の範囲内でなければなりません!

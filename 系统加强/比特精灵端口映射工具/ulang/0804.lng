@@ -1,0 +1,45 @@
+[About]
+Author = ZZ
+Font = 宋体
+FontSize = 8
+
+[Language]
+Application.Title=比特精灵
+TfrmUPNP=比特精灵 - UPNP自动端口映射工具
+TfrmUPNP.Label1=欢迎使用比特精灵 ---- 强大而易于使用的BT客户端.
+TfrmUPNP.Label2=这个小工具将帮助您检查您是否拥有一个UPNP设备.
+TfrmUPNP.Label3=这个向导分两步:
+TfrmUPNP.Label4=1, 查找支持UPNP自动端口映射的设备.
+TfrmUPNP.Label5=2, 在UPNP设备上添加或删除端口映射.
+TfrmUPNP.Label6=查找UPNP设备:
+TfrmUPNP.lbFound=正在查找......
+TfrmUPNP.btFindAgain=再次查找
+TfrmUPNP.Label8=在设备上添加或删除端口映射:
+TfrmUPNP.lbLocalPort=本机端口:
+TfrmUPNP.lbLocalIP=本机地址:
+TfrmUPNP.lbWANIP=公网地址:
+TfrmUPNP.lbWANPort=公网端口:
+TfrmUPNP.lbDescription=对该端口的描述:
+TfrmUPNP.cbUseDefault=使用默认的公网设置.
+TfrmUPNP.GroupBox1=动作:
+TfrmUPNP.rbAdd=添加
+TfrmUPNP.rbDel=删除
+TfrmUPNP.GroupBox2=类型:
+TfrmUPNP.rbTCP=TCP
+TfrmUPNP.rbUDP=UDP
+TfrmUPNP.Label13=正在执行指定的操作:
+TfrmUPNP.lbAction=请稍等......
+TfrmUPNP.btPrev=< 上一步(&P)
+TfrmUPNP.btNext=下一步(&N) >
+TfrmUPNP.btHelp=帮助(&H)
+TfrmUPNP.btClose=关闭(&C)
+TfrmUPNP.cbSkipICF=忽略ICF防火墙 (Internet Connection Firewall).
+AddPortmapOK=公网: %s:%d -> 内网: %s:%d, 成功添加!
+DelPortmapOK=公网: %s:%d, 成功删除!
+AddPortmapER=公网: %s:%d -> 内网: %s:%d, 添加失败!
+DelPortmapER=公网: %s:%d, 删除失败!
+StandBy=请稍等......
+Finding=正在查找......
+UPNPFound=找到UPNP设备:
+UPNPNotFound=没有找到UPNP设备!
+InvalidPort=无效的端口! 端口值必须在1到65535之间!

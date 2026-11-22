@@ -1,0 +1,46 @@
+[About]
+Author = ZZ
+Font = Tahoma
+FontSize = 8
+
+[Language]
+Application.Title=BitSpirit
+TfrmUPNP=BitSpirit's UPNP Utility
+TfrmUPNP.Label1=Welcome to BitSpirit - a powerful and easy-to-use BitTorrent client.
+TfrmUPNP.Label2=This utility will guide you to determine whether you have a UPNP device or not.
+TfrmUPNP.Label3=It will take 2 steps for this wizard:
+TfrmUPNP.Label4=1, Find any upnp device which support portmapping,
+TfrmUPNP.Label5=2, Add or Del portmapping in the found upnp device.
+TfrmUPNP.Label6=Finding upnp device:
+TfrmUPNP.lbFound=Finding......
+TfrmUPNP.btFindAgain=Find Again
+TfrmUPNP.Label8=Add/Del portmapping in the router:
+TfrmUPNP.lbLocalPort=Local Port:
+TfrmUPNP.lbLocalIP=Local IP Address:
+TfrmUPNP.lbWANIP=WAN IP Address:
+TfrmUPNP.lbWANPort=WAN Port:
+TfrmUPNP.lbDescription=Description for the port:
+TfrmUPNP.cbUseDefault=Use default WAN settings.
+TfrmUPNP.GroupBox1=Action:
+TfrmUPNP.rbAdd=Add
+TfrmUPNP.rbDel=Delete
+TfrmUPNP.GroupBox2=Type:
+TfrmUPNP.rbTCP=TCP
+TfrmUPNP.rbUDP=UDP
+TfrmUPNP.Label13=Execute the action:
+TfrmUPNP.lbAction=Please stand by......
+TfrmUPNP.Panel1=
+TfrmUPNP.btPrev=<< &Previous
+TfrmUPNP.btNext=&Next >>
+TfrmUPNP.btHelp=&Help
+TfrmUPNP.btClose=&Close
+TfrmUPNP.cbSkipICF=Skip ICF (Internet Connection Firewall).
+AddPortmapOK=WAN: %s:%d --> LAN: %s:%d, Added!
+DelPortmapOK=WAN: %s:%d, Deleted!
+AddPortmapER=WAN: %s:%d --> LAN: %s:%d, Failed!
+DelPortmapER=Delete WAN: %s:%d, Failed!
+StandBy=Please stand by......
+Finding=Finding......
+UPNPFound=UPNP Device Found:
+UPNPNotFound=No UPNP Device Found!
+InvalidPort=Invalid port! A valid port should between 1 and 65535!

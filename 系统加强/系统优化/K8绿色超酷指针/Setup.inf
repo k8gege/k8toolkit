@@ -1,0 +1,88 @@
+[Version] 
+signature="$CHICAGO$" 
+
+[DefaultInstall] 
+CopyFiles = Scheme.ani, Scheme.Txt 
+AddReg = Scheme.Reg,Wreg 
+
+[DestinationDirs] 
+Scheme.ani = 10,"%DIR%" 
+Scheme.Txt = 10,"%DIR%" 
+
+[Scheme.Reg] 
+HKCU,"Control Panel\Cursors\","%Arrow_NAME%",,"%10%\%DIR%\%Arrow%"
+HKCU,"Control Panel\Cursors\","%AppStarting_Name%",,"%10%\%DIR%\%AppStarting%"
+HKCU,"Control Panel\Cursors\","%Hand_name%",,"%10%\%DIR%\%Hand%"
+HKCU,"Control Panel\Cursors\","%NWPen_name%",,"%10%\%DIR%\%NWPen%"
+HKCU,"Control Panel\Cursors\","%IBeam_name%",,"%10%\%DIR%\%IBeam%"
+HKCU,"Control Panel\Cursors\","%Wait_name%",,"%10%\%DIR%\%Wait%"
+HKCU,"Control Panel\Cursors\","%SizeAll_name%",,"%10%\%DIR%\%SizeAll%"
+HKCU,"Control Panel\Cursors\","%Help_name%",,"%10%\%DIR%\%Help%"
+HKCU,"Control Panel\Cursors\","%SizeNESW_name%",,"%10%\%DIR%\%SizeNESW%"
+HKCU,"Control Panel\Cursors\","%SizeNWSE_name%",,"%10%\%DIR%\%SizeNWSE%"
+HKCU,"Control Panel\Cursors\","%Crosshair_name%",,"%10%\%DIR%\%Crosshair%"
+HKCU,"Control Panel\Cursors\","%UpArrow_name%",,"%10%\%DIR%\%UpArrow%"
+HKCU,"Control Panel\Cursors\","%NO_name%",,"%10%\%DIR%\%NO%"
+HKCU,"Control Panel\Cursors\","%SizeWE_name%",,"%10%\%DIR%\%SizeWE%"
+HKCU,"Control Panel\Cursors\","%SizeNS_name%",,"%10%\%DIR%\%SizeNS%"
+
+; -- Common Information 
+
+[Scheme.ani] 
+"Arrow.ani" 
+"AppStarting.ani"
+"hand.cur"
+"NWPen.ani"
+"IBeam.ani"
+"Wait.ani"
+"SizeAll.ani"
+"help.ani"
+"SizeNESW.ani"
+"Crosshair.ani"
+"UpArrow.ani"
+"SizeNWSE.ani"
+"NO.ani"
+"SizeWE.ani"
+"SizeNS.ani"
+
+
+[Strings] 
+DIR = "Cursors\qqkissani" 
+Arrow_NAME = "Arrow" 
+Arrow = "Arrow.ani" 
+AppStarting_Name="AppStarting"
+AppStarting="AppStarting.ani"
+Hand_name="Hand"
+Hand="hand.cur"
+NWPen_name="NWPen"
+NWPen="NWPen.ani"
+IBeam_name="IBeam"
+IBeam="IBeam.ani"
+Wait_name="Wait"
+Wait="Wait.ani"
+SizeAll_Name="SizeAll"
+SizeAll="SizeAll.ani"
+Help_Name="Help"
+Help="Help.ani"
+SizeNESW_Name="SizeNESW"
+SizeNESW="SizeNESW.ani"
+Crosshair_Name="Crosshair"
+Crosshair="Crosshair.ani"
+UpArrow_Name="UpArrow"
+UpArrow="UpArrow.ani"
+SizeNWSE_Name="SizeNWSE"
+SizeNWSE="SizeNWSE.ani"
+no_Name="no"
+no="no.ani"
+SizeWE_Name="SizeWE"
+SizeWE="SizeWE.ani"
+SizeNS_Name="SizeNS"
+SizeNS="SizeNS.ani"
+
+
+
+[Wreg] 
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\Setup\","",,"rundll32.exe shell32.dll,Control_RunDLL main.cpl @0,1" 
+
+
+;Made By QQÎÇ QQ:396890445
