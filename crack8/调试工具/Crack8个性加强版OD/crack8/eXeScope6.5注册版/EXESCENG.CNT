@@ -1,0 +1,24 @@
+:Base eXeScEng
+:Title eXeScope Help
+1 摘要
+2 目录 = Content
+2 eXeScope 是什么? = eXeScope
+1 功能
+2 eXeScope 的功能 = Func
+2 已支持的文件类型 = FType
+2 eXeScope 的不同用法 = Usage
+2 操作
+3 菜单和按钮 = Ope
+3 编辑对话框 = EDialog
+3 编辑菜单 = EMenu
+3 编辑 Delphi 窗体 = EDelphi
+3 显示类型库 = ETypeLib
+3 查找字符串 = EFind
+3 使用日志文件批量修改模式 = EBatch
+3 输出资源文件 (rc) = ERc
+1 运行环境, 限制
+2 运行环境和安装 = Machine
+2 限制, 警告 = Limit 
+1 注册和版权
+2 注册 = Regist
+2 关于版权 = CopyRight

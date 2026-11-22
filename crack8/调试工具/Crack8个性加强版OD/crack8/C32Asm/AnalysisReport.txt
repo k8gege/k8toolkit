@@ -1,0 +1,13 @@
+14:07:34:953 	文件名称:C:\Program Files\NetBox 2.8\netbox.exe.unpacked_ 备份.exe
+14:07:34:953 	开始分析PE文件
+14:07:34:953 	开始得到dos文件头
+14:07:34:953 	开始得到每个节的地址
+14:07:34:953 	开始分析Resource
+14:07:34:953 	开始分析Menu
+14:07:34:953 	开始分析Dialog
+14:07:34:953 	开始分析IMPORTED　functions
+14:07:35:296 	开始分析EXPORTED　functions
+14:07:35:312 	PE文件分析结束
+
+===============Finish Loging================
+
