@@ -1,0 +1,58 @@
+写程序比较忙 就不汉化了 我也相信大家看了这个就知道怎么写FLASH播放器了建议收藏 Flash控件 　常用的函数一般是： 
+1、用GotoFrame一类的跳转函数直接控制。在跳转前需要用FrameLoaded检测是否能够跳转。Flash制作中帧是从1开始计算，函数中是从0开始计算。 
+
+2、用SetVariable函数修改参数，然后用TCallFrame执行目标帧的函数。达到参数化控制的目的。（具体控制在Flash中完成。）　Flash控件的方法： 函数名 说　　 明 
+
+SetZoomRect 【函数】：SetZoomRect（left， top， right， bottom） 【语法】：参数：left整型，矩形区域的左坐标。top整型，矩形区域的上坐标。right整型，矩形区域的右坐标。bottom整型，矩形区域的下坐标。【说明】：放大电影的某个矩形区域。坐标的单位为twips（每英寸1440个单位）（每英寸72个象素点大小）。 
+
+Zoom 【函数】：Zoom（percent）【语法】：参数：percent整型，缩放的因数。【说明】：根据percent指定的缩放因数缩放窗口。Zoom（50）把窗口里的对象放大一倍。Zoom（200）把窗口里的对象缩小一半。Zoom（0）恢复窗口为原大小。但不能在当前窗口已经是原大小时再缩小对象的大小。
+
+ Pan 【函数】：Pan（x， y， mode）【语法】：参数：x整型，水平坐标。y整型，垂直坐标。 【说明】：浏览已经放大了的电影的指定x和y坐标的位置。mode指定x和y坐标的值是象素点还是窗口的百分比。mode为0，x和y是以象素点为单位的坐标；mode为1，x和y是窗口百分比边界。浏览不能超过放大了的电影的边界。 Play 开始播放电影。 Stop 停止正在播放的电影。 Back 后退一帧。如果电影正在播放，执行该方法会导致电影停止播放。 Forward 前进一帧。如果电影正在播放，执行该方法会导致电影停止播放。 Rewind 回到电影的第一帧。 StopPlay 停止正在播放的电影。 
+
+GotoFrame 【函数】：GotoFrame（frameNumber）【语法】：参数：frameNumber整型，帧数。【说明】：激活frameNumber指定的当前电影的帧。如果指定的帧数不可用，播放器将跳转到可用的最后一帧并停止，并在播放过程中引起不可预料的结果。这时，需调用PercentLoaded（）方法去检查是否足以调用GotoFrame（）方法。　　FrameNumber的参数从0开始；也就是说，frameNumber为0表示电影的第一帧，1表示第二帧，依此类推。 
+
+CurrentFrame 【语法】：返回值：整型，当前的帧数。【说明】：取正在播放的电影的当前帧数。 
+
+IsPlaying 【语法】：返回值：布尔型，如果电影正在播放，返回True；否则返回False。【说明】：如果电影正在播放，返回True。 
+
+PercentLoaded 【语法】：返回值：整型，电影装载的百分比；有效值为0到100。【说明】：返回Flash播放器已经装载电影的百分比。 
+
+FrameLoaded 【函数】：FrameLoaded（frameNumber）【语法】：返回值：布尔型，如果参数指定的帧已经装载，返回True；否则为False。【说明】：判断frameNumber指定的帧是否已经装载。
+
+LoadMovie 【函数】：LoadMovie（layerNumber，url）【语法】：参数：layerNumber整型，电影要装载到的层号。url字符串，要装载的Flash电影的路径、url或素材标识名。【说明】：装载url标识的电影到layerNumber指定的层。 
+
+SetVariable 【函数】：SetVariable（variableName，value）【语法】：参数：variableName字符串，变量名。value字符串，变量值。【说明】：设置variableName指定的Flash变量的值为value指定的值。 
+
+GetVariable 【函数】：GetVariable（varName）【语法】：返回值：字符串，变量值。参数：varName字符串，变量名。【说明】：返回varName指定的Flash变量的值。如果变量不存在，返回空。 
+
+TGotoFrame 【函数】：TGotoFrame（target，frameNumber）【语法】：参数：target字符串，目标时间线。frameNumber整型，帧数。【说明】：跳转到target目标时间线上frameNumber指定的帧。 
+
+TGotoLabel 【函数】：TGotoLabel（target，label）【语法】：参数：target字符串，目标时间线。label字符串，帧标签。【说明】：跳转到target目标时间线上label指定的帧标签。
+
+ TCurrentFrame 【函数】：TCurrentFrame（target）【语法】：返回值：整型，当前帧。参数：target字符串，目标时间线。【说明】：返回target指定的目标时间线的当前帧。帧数从0开始，也就是说0表示第一帧，1表示第二帧，依此类推。
+
+ TCurrentLabel 【函数】：TCurrentLabel（target）【语法】：返回值：字符串，当前帧标签；如果没有当前帧标签，返回空。参数：target字符串，目标时间线。【说明】：返回target指定的目标时间线的当前帧标签。如果没有当前帧标签，返回空字符串。 
+
+TPlay 【函数】：TPlay（target）【语法】：参数：target字符串，目标时间线。【说明】：播放target指定的目标时间线。
+
+TStopPlay 【函数】：TStopPlay（target）【语法】：参数：target字符串，目标时间线。【说明】：停止播放target指定的目标实现线。
+
+TCallFrame 【函数】：TCallFrame（target，frameNumber）【语法】：参数：target字符串，目标时间线。frameNumber整型，帧数。【说明】：在target指定的时间线上执行frameNumber指定的帧的action。
+
+TCallLabel 【函数】：TCallLabel（target，label）【语法】：参数：target字符串，目标时间线。label字符串，帧标签。【说明】：在target指定的目标时间线上执行label指定的帧标签的action。 
+
+TSetProperty 【函数】：TSetProperty（target，property，value）【语法】：参数：target字符串，目标时间线。property整型，属性索引。value字符串，属性值。【说明】：对target指定的目标时间线，设置property指定的属性的值value。property是代表所要设置的属性对应的整数。
+
+ TGetProperty 【函数】：TGetProperty（target，property）【语法】：返回值：字符串，属性值。参数：target字符串，目标时间线。property整型，属性索引。【说明】：对target指定的目标时间线，取property指定的属性的值。property是代表所要设置的属性对应的整数。 
+
+TSetPropertyNum 【函数】：TSetPropertyNum（target，property，value）【语法】：参数：target字符串，目标时间线。property整型，属性索引。value整型，属性值。【说明】：设置target指定的目标时间线的属性值。property指定要设置的属性，value为要设置的值。 
+
+TGetPropertyNum 【函数】：TGetPropertyNum（target，property）【语法】：返回值：浮点型，属性值。参数：target字符串，目标时间线。property整型，属性索引。【说明】：对target指定的目标时间线，取property指定的属性的数值。property是代表所要设置的属性对应的整数。 　　
+
+Flash控件的属性： 函数名 说　　 明 DeviceFont 类型：布尔型。说明：设备字体。 Loop 类型：布尔型。说明：循环播放。 Menu 类型：布尔型。说明：在浏览时是否显示右键菜单。 Play 类型：布尔型。说明：播放状态。 BGColor 类型：字符串。说明：背景颜色，格式"#RRGGBB"，其中RGB为十六进制的红、绿、蓝颜色值。 Movie 类型：字符串。说明：Flash电影路径、url或素材标识名。 Quality 类型：字符串。说明：Flash电影的播放质量，可以是以下值之一，Low、High、Autolow、Autohigh、Best。 SAlign 类型：字符串。说明：对齐方式，可以是以下值之一：L 、R 、T、 B、 TL、TR、BL、BR。 Scale 类型：字符串。说明：显示比例，可以是以下值之一：Showall、Noborder、Exactfit。 WMode 类型：字符串。说明：窗口模式，可以是以下值之一：Window、Opaque、Transparent。 　
+　
+Flash控件的事件： 函数名 说　　 明 OnReadyStateChange 【函数】：OnReadyStateChange(state)【语法】：参数：state整型，其中0=正在装载、1=未初始化、2=装载完毕、3=交互、4=结束。【说明】：当控件的就绪状态改变时发出的事件。 
+
+OnProgress 【函数】：OnProgress(percent)【语法】：参数：percent整型，下载百分比。【说明】：Flash电影正在下载时发出的事件。 
+
+FSCommand 【函数】：FSCommand(command， args)【语法】：参数：command字符串，命令。args字符串，参数。【说明】：Flash电影中的FSCommand action被执行时发出的事件。使用该事件去响应Flash电影里一个帧或者按钮的action。

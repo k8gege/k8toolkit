@@ -1,0 +1,96 @@
+@@ 易语言COM包装支持库
+
+记录格式说明：
+  “@@ Lang = xxxx”：记录当前翻译用语言的种类，必须在首部，请不要更改。
+  “@@ TypeLib = xxxx”：如果为包装类型库，则记录类型库的相关信息，请不要更改。
+  “@@ OCX = xxxx”：如果为包装组件，则记录组件的相关信息，请不要更改，与类型库信息不能同时存在。
+  “@@ Interface = xxxx”：记录内部重要信息，请不要做任何更改。
+  “##1”：表示某翻译项的开始，格式为“##1 项目原名 = 翻译后的名称”，
+           下行首直到下一翻译项标记处记录有关此项目的详细解释信息。
+  “##0”：记录被屏蔽的项目，被屏蔽项目将不会被包装支持库输出。
+           格式为“##0 项目原名”，不能屏蔽参数。
+
+------------------------------------------------------------
+
+@@ Lang = 1
+
+@@ OCX = {D27CDB6E-AE6D-11cf-96B8-444553540000},Flash控件
+双狮软件工作室  
+作者：林劲国  
+易论坛名：TLSWR 
+腾讯QQ：285807631
+电子邮箱：TLSWR@163.com
+个人主页：TLSWR.AnyP.cn
+2005年11月15日翻译
+版权归原作者所有！
+
+##1 ShockwaveFlash = Flash播放器
+
+
+##1 ShockwaveFlash.TotalFrames = 总帧数
+总帧数
+
+##1 ShockwaveFlash.Playing = 播放或暂停
+播放或暂停一个Flash
+
+##1 ShockwaveFlash.Quality = 播放质量
+指定当前渲染的播放质量（0=低 ，1=高 ，2= 自动低， 3=自动高）
+
+##1 ShockwaveFlash.ScaleMode = 缩放模式
+缩放模式（0= 全部显示 ,1=没有边框 2=合适大小）
+
+##1 ShockwaveFlash.Loop = 是否循环
+是否循环
+
+##1 ShockwaveFlash.Movie = 播放Flash文件路径
+指定播放的Flash文件路径，可以为一个URL 。
+
+##1 ShockwaveFlash.FrameNum = 当前播放的帧
+当前播放的帧
+
+##1 ShockwaveFlash.Zoom = 缩放
+按百分比缩放动画
+
+##1 ShockwaveFlash.Play = 播放
+开始播放动画
+
+##1 ShockwaveFlash.Stop = 停止
+停止播放动画
+
+##1 ShockwaveFlash.Back = 播放前一帧
+播放前一帧动画
+
+##1 ShockwaveFlash.Forward = 播放后一帧
+播放后一帧动画
+
+##1 ShockwaveFlash.Rewind = 播放第一帧
+播放第一帧动画
+
+##1 ShockwaveFlash.BGColor = 背景色
+背景色
+
+##1 _IShockwaveFlashEvents.OnProgress = 读取Flash时触发
+读取Flash时触发；状态改变时触发(其状态值 0=载入、加载 ，1=未初始化， 2=已载入 ，3=交互式 ，4=结束)。
+
+##0 FlashProp = 
+
+
+##0 IFlashFactory = 
+
+
+##0 IDispatchEx = 
+
+
+##0 IServiceProvider = 
+
+
+##0 FlashObjectInterface = 
+
+
+@@ Interface =
+1, {D27CDB6E-AE6D-11CF-96B8-444553540000}, ShockwaveFlash, { 109, 118, 119, 112, 113, 114, 115, 116, 126, 127, 128, 129, 130, 131, 132, 142, 143, 144, 145, 146, 147, 148, 151, 152, 153, 154, 155, 156, 157, 158, 172,  }, { 190, 171, 170, 159, 141, 140, 139, 138, 137, 136, 135, 134, 133, 107, 102, 106, 123, 121, 120, 105, 125, 124, -525,  }, { -609, 1958, 150,  }
+0, {1171A62F-05D2-11D1-83FC-00A0C9089C5A}, FlashProp, {  }, {  }, {  }
+0, {D27CDB70-AE6D-11CF-96B8-444553540000}, IFlashFactory, {  }, {  }, {  }
+0, {A6EF9860-C720-11D0-9337-00A0C90DCAA9}, IDispatchEx, { 1610743808, 1610743809, 1610743810, 1610743811, 1610743812, 1610743813, 1610743814, 1610743815,  }, {  }, {  }
+0, {6D5140C1-7436-11CE-8034-00AA006009FA}, IServiceProvider, { 1610678272,  }, {  }, {  }
+0, {D27CDB71-AE6D-11CF-96B8-444553540000}, FlashObjectInterface, {  }, {  }, {  }
