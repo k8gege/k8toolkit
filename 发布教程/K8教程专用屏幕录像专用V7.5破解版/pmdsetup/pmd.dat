@@ -1,0 +1,128 @@
+; mirror.inf
+;
+; Installation inf for the Mirror graphics adapter.
+;
+; Copyright (x) 2002-2007 Tlxsoft Corporation. All rights reserved
+;
+
+[Version]
+Signature="$CHICAGO$"
+Provider=%Tlxsoft%
+ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
+Class=Display
+DriverVer=05/05/2007,1.0
+
+[DestinationDirs]
+DefaultDestDir   = 11
+pmlxzjmd.Miniport  = 12  ; drivers
+pmlxzjmd.Display   = 11  ; system32
+
+;
+; Driver information
+;
+
+[Manufacturer]
+%Pmlxzj%   = pmlxzjmd.Mfg
+
+[pmlxzjmd.Mfg]
+%Mirror% = pmlxzjmd,Pmlxzj_Mirror
+
+;
+; General installation section
+;
+
+[pmlxzjmd]
+CopyFiles=pmlxzjmd.Miniport, pmlxzjmd.Display
+
+;
+; File sections
+;
+
+[pmlxzjmd.Miniport]
+pmlxzjmd.sys
+
+[pmlxzjmd.Display]
+pmlxzjmd.dll
+
+;
+; Service Installation
+;
+
+[pmlxzjmd.Services]
+AddService = pmlxzjmd, 0x00000002, pmlxzjmd_Service_Inst, pmlxzjmd_EventLog_Inst
+
+[pmlxzjmd_Service_Inst]
+
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 1                  ; SERVICE_SYSTEM_START
+ErrorControl   = 0                  ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Video
+ServiceBinary  = %12%\pmlxzjmd.sys
+
+[pmlxzjmd_EventLog_Inst]
+AddReg = pmlxzjmd_EventLog_AddReg
+
+[pmlxzjmd_EventLog_AddReg]
+HKR,,EventMessageFile,0x00020000,"%SystemRoot%\System32\IoLogMsg.dll;%SystemRoot%\System32\drivers\pmlxzjmd.sys"
+HKR,,TypesSupported,0x00010001,7
+
+
+;
+; Software Installation
+;
+
+[pmlxzjmd.SoftwareSettings]
+AddReg = pmlxzjmd_SoftwareDeviceSettings
+
+[pmlxzjmd_SoftwareDeviceSettings]
+HKR,, MirrorDriver,                %REG_DWORD%,    1
+HKR,, InstalledDisplayDrivers,     %REG_MULTI_SZ%, pmlxzjmd
+HKR,, VgaCompatible,               %REG_DWORD%,    0
+HKR,, Attach.ToDesktop,            %REG_DWORD%,    0
+
+[pmlxzjmd.OpenGLSoftwareSettings]
+AddReg = pmlxzjmd_OpenGLSoftwareSettings
+
+[pmlxzjmd_OpenGLSoftwareSettings]
+
+;
+; Not currently used:
+;
+
+[pmlxzjmd.GeneralConfigData]
+MaximumNumberOfDevices = 1
+KeepExistingDriverEnabled = 1
+
+;
+; Source file information
+;
+
+[SourceDisksNames.x86]
+1 = %DiskId%,,,""
+
+[SourceDisksFiles]
+pmlxzjmd.sys  = 1
+pmlxzjmd.dll = 1
+
+[Strings]
+
+;
+; Non-Localizable Strings
+;
+
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SERVICEROOT    = "System\CurrentControlSet\Services"
+
+;
+; Localizable Strings
+;
+
+DiskId       = "Mirror Installation DISK (VIDEO)"
+GraphAdap    = "Graphics Adapter"
+Pmlxzj    = "Pmlxzj"
+Mirror       = "Pmlxzj Mirror Driver"
+

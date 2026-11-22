@@ -1,0 +1,49 @@
+{
+O6 V80 @16
+#WORDS "線路はつづくよ　どこまでも"
+f.c8f8c8f8g8a2fr
+b-.b-8fga2.r
+
+#WORDS "野をこえ山こえ　谷こえて"
+f.c8f8c8f8g8a2fr
+gggag2.r
+
+#WORDS "はるかな町まで　ぼくたちの"
+g4.g8f8g8a8g8f2c2
+b-b-fga2.r
+
+#WORDS "たのしい旅の夢　つないでる"
+d.e8f8e8f8d8c2f2
+a.b-8agf2.r
+}
+{
+L4 O5 V60 @24
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+b-=d>=f>b-=d>=f>b-=d>=f>b-=d>=f> //B-
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+g=b=d>=f>g=b=d>=f>g=b=d>=f>g=b=d>=f> //G7
+c=e=g=b-c=e=g=b-c=e=g=b-c=e=g=b- //C7
+
+c=e=g=b-c=e=g=b-c=e=g=b-c=e=g=b- //C7
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+b-=d>=f>b-=d>=f>b-=d>=f>b-=d>=f> //B-
+a=c+>=e>=ga=c+>=e>=ga=c+>=e>=ga=c+>=e>=g //A7
+
+b-=d>=f>b-=d>=f>b-=d>=f>b-=d>=f> //B-
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+f=a=c>f=a=c>f=a=c>f=a=c> //F
+}
+{
+L8 O5 V2 Q1
+[CRCRCRCR]16
+}
+{
+@128
+L8 V100 Q1
+[N35N35N37N35N35N35N37N35]16
+}

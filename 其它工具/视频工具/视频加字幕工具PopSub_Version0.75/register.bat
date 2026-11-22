@@ -1,0 +1,11 @@
+regsvr32 /s ASYCFILT.DLL
+regsvr32 /s COMCAT.DLL
+regsvr32 /s COMCT332.OCX
+regsvr32 /s COMDLG32.OCX
+regsvr32 /s MSCOMCTL.OCX
+regsvr32 /s msvbvm60.dll
+regsvr32 /s OLEAUT32.DLL
+regsvr32 /s OLEPRO32.DLL
+regsvr32 /s RICHTX32.OCX
+regsvr32 /s TABCTL32.OCX
+regsvr32 /s SS32X25.OCX
