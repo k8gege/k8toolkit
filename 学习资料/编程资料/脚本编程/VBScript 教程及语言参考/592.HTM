@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>ReDim 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="As,To,ReDim 语句,Preserve,调整数组大小,数组调整大小,声明数组,数组声明,分配存储空间,声明变量,重分配数组,数组重分配,变量声明,重初始化数组,数组重初始化,声明动态数组,动态数组声明,数组更改维数,数组,存储,变量,动态数组"><META NAME="Description" CONTENT="ReDim 语句"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>ReDim 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A><BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A><P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p>
+<A HREF="593.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>用于<A HREF="0.htm#defProcLevel">过程级</A>声明动态数组变量并分配或重新分配存储空间。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+<b>ReDim</b> [<b>Preserve</b>] <b>varname</b><b>(</b><b>subscripts</b><b>) </b>[<b>, </b><b>varname</b><b>(</b><b>subscripts</b><b>)</b>] <b>. . .</b><P>
+ <b>ReDim</b> 语句语法有以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Preserve</b></FONT></TD>
+<TD><FONT SIZE="2"> 当更改现有<A HREF="0.htm#defArray">数组</A>最后一维的大小时保留数据。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>varname</b></FONT></TD>
+<TD><FONT SIZE="2">变量名，遵循标准<A HREF="0.htm#defVariable">变量</A>命名约定。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>subscripts</b></FONT></TD>
+<TD><FONT SIZE="2">数组变量的维数，最多可以声明 60 维数组。<b>subscripts</b> 参数语法格式如下：<P>
+<b>upper </b>[<b>,</b><b>upper</b>] <b>. . .</b><p>
+数组的下界总是零。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE> <b>ReDim</b> 语句通常用于指定或修改动态数组的大小，这些数组已用带有空括号的 <b>Private</b>、<b>Public</b> 或 <b>Dim</b> 语句（没有维数下标）正式声明过。可以重复使用 <b>ReDim</b> 语句更改数组维数和元素数目。<P>
+如果使用了 <b>Preserve</b> 关键字，就只能调整数组最后维的大小，并且不能改变数组的维数。例如，如果数组只有一维，就可以修改该数组的大小，因为该维是最后的也是仅有的一维。但是，如果数组有两个或更多维，就只能改变末维的大小并保留数组内容。下面的样例示范了如何不删除动态数组的原有内容而又增加末维的大小。<P>
+
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" size=2><FONT COLOR="#FF0000">ReDim</FONT> X(10, 10, 10)
+. . .
+<FONT COLOR="#FF0000">ReDim Preserve</FONT> X(10, 10, 15)
+</FONT></PRE>
+</BLOCKQUOTE>
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR><TR>
+<TD VALIGN=TOP><FONT SIZE="2"><b>小心</b>  如果减小数组的大小，则将丢失被排除的元素中的数据。</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+
+变量初始化时，数值变量初始化为 0，字符串变量初始化为零长度字符串 ("")。在使用引用对象的变量前，必须使用 <b>Set</b> 语句将某个现有对象赋予该变量。在进行对象赋值以前，已声明的对象变量有特定值 
+<A HREF="0.htm#defNothing"><b>Nothing</b></A>。</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

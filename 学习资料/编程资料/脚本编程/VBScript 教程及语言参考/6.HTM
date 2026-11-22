@@ -1,0 +1,175 @@
+<HTML>
+<HEAD>
+<TITLE>VBScript 数据类型</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="CATEGORY" CONTENT="教程">
+<META NAME="Description" CONTENT="VBScript 数据类型">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>VBScript 数据类型</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstutor.htm">VBScript 教程</A> <BR>&nbsp;<A HREF="9.htm">上一页</A> | <A HREF="15.htm">下一页</A> <P></FONT>
+
+
+</TD></TR>
+</TABLE> 
+&nbsp;<BR>
+<HR NOSHADE SIZE=1>
+
+<H5>什么是 VBScript 数据类型？</H5>
+<BLOCKQUOTE>
+VBScript 只有一种数据类型，称为 <B>Variant</B>。<B>Variant</B> 是一种特殊的数据类型，根据使用的方式，它可以包含不同类别的信息。因为 <B>Variant</B> 是 VBScript 中唯一的数据类型，所以它也是 VBScript 中所有函数的返回值的数据类型。<P>
+
+最简单的 <B>Variant</B> 可以包含数字或字符串信息。<B>Variant</B> 用于数字上下文中时作为数字处理，用于字符串上下文中时作为字符串处理。这就是说，如果使用看起来象是数字的数据，则 VBScript 会假定其为数字并以适用于数字的方式处理。与此类似，如果使用的数据只可能是字符串，则 VBScript 将按字符串处理。当然，也可以将数字包含在引号 (" ") 中使其成为字符串。
+</BLOCKQUOTE>
+<H5>Variant 子类型</H5>
+<BLOCKQUOTE>
+除简单数字或字符串以外，<B>Variant</B> 可以进一步区分数值信息的特定含义。例如使用数值信息表示日期或时间。此类数据在与其他日期或时间数据一起使用时，结果也总是表示为日期或时间。当然，从 Boolean 值到浮点数，数值信息是多种多样的。<B>Variant</B> 包含的数值信息类型称为子类型。大多数情况下，可将所需的数据放进 <B>Variant</B> 中，而 <B>Variant</B> 也会按照最适用于其包含的数据的方式进行操作。<P>
+
+下表显示 <B>Variant</B> 包含的数据子类型：<P>
+
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR BGCOLOR=#DDDDDD VALIGN=TOP><TD WIDTH=15%><FONT SIZE=2><B>子类型</B></FONT></TD><TD WIDTH=85%><FONT SIZE=2><B>描述</B></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Empty</B></FONT></TD>
+	<TD><FONT SIZE=2>未初始化的 <B>Variant</B>。对于数值变量，值为 0；对于字符串变量，值为零长度字符串 ("")。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Null</B></FONT></TD>
+	<TD><FONT SIZE=2>不包含任何有效数据的 <B>Variant</B>。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Boolean</B></FONT></TD>
+	<TD><FONT SIZE=2>包含 <A HREF="246.htm"><B>True</B></A> 或 <A HREF="242.htm"><B>False</B></A>。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Byte</B></FONT></TD>
+	<TD><FONT SIZE=2>包含 0 到 255 之间的整数。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Integer</B></FONT></TD>
+	<TD><FONT SIZE=2>包含 -32,768 到 32,767 之间的整数。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Currency</B></FONT></TD>
+	<TD><FONT SIZE=2>-922,337,203,685,477.5808 到 922,337,203,685,477.5807。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Long</B></FONT></TD>
+	<TD><FONT SIZE=2>包含 -2,147,483,648 到 2,147,483,647 之间的整数。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Single</B></FONT></TD>
+<TD><FONT SIZE=2>包含单精度浮点数，负数范围从 -3.402823E38 到 -1.401298E-45，正数范围从 1.401298E-45 到 3.402823E38。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Double</B></FONT></TD>
+	<TD><FONT SIZE=2>包含双精度浮点数，负数范围从 -1.79769313486232E308 到 -4.94065645841247E-324，正数范围从 4.94065645841247E-324 到 1.79769313486232E308。</FONT></TD></TR>
+<TR  VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Date (Time)</B></FONT></TD>
+	<TD><FONT SIZE=2>包含表示日期的数字，日期范围从公元 100 年 1 月 1 日到公元 9999 年 12 月 31 日。</FONT></TD></TR>
+
+<TR  VALIGN=TOP>
+	<TD><FONT SIZE=2><B>String</B></FONT></TD>
+	<TD><FONT SIZE=2>包含变长字符串，最大长度可为 20 亿个字符。</FONT></TD></TR>
+
+<TR  VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Object</B></FONT></TD>
+	<TD><FONT SIZE=2>包含对象。</FONT></TD></TR>
+
+<TR  VALIGN=TOP>
+	<TD><FONT SIZE=2><B>Error</B></FONT></TD>
+	<TD><FONT SIZE=2>包含错误号。</FONT></TD></TR>
+</TABLE>
+
+您可以使用<A HREF="237.htm">转换函数</A>来转换数据的子类型。另外，可使用 <A HREF="216.htm"><B>VarType</B></A> 函数返回数据的 <B>Variant</B> 子类型。
+</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END-->
+
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

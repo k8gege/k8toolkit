@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>Imp 运算符</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="Imp 运算符,逐位运算符,运算符逻辑,逻辑隐含,运算符逐位,隐含运算符,运算符隐含,运算符"><META NAME="Description" CONTENT="Imp 运算符"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Imp 运算符</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE>
+<FONT SIZE="2"><P>
+<A HREF="428.htm">请参阅</A></FONT>
+<HR NOSHADE SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>用于对两个表达式进行逻辑蕴涵运算。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>result</b> <b>=</b> <b>expression1</b> <b>Imp</b> <b>expression2</b><P>
+ <b>Imp</b> 运算符的语法有以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>result</b></FONT></TD>
+		<TD><FONT SIZE="2">任意数值变量。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>expression1</b></FONT></TD>
+		<TD><FONT SIZE="2">任意<A HREF="0.htm#defExpression">表达式</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>expression2</b></FONT></TD>
+		<TD><FONT SIZE="2">任意表达式。  </FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>下表显示如何确定 <b>result</b> 的取值：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>如果 <b>expression1 </b>为</b></FONT></TD>
+<TD><FONT SIZE="2"><b>且 <b>expression2 </b>为</b></FONT></TD>
+<TD><FONT SIZE="2"><b>则 <b>result </b>为</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD>
+<TD><FONT SIZE="2"><b>False</b></FONT></TD>
+<TD><FONT SIZE="2"><b>False</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD>
+<TD><FONT SIZE="2">
+<A HREF="0.htm#defNull"><B>Null</B></A></FONT></TD>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>False</b></FONT></TD>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>False</b></FONT></TD>
+<TD><FONT SIZE="2"><b>False</b></FONT></TD>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>False</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD>
+<TD><FONT SIZE="2"><b>True</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD>
+<TD><FONT SIZE="2"><b>False</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD></TR></TABLE>
+<P>
+<b>Imp</b> 运算符执行两个<A HREF="0.htm#defNumericExpression">数值表达式</A>相应位的<A HREF="0.htm#defBitwise">逐位比较</A>，并按下表设置 <b>result</b> 相应位：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b><b>如 expression1 </b>中的位是</b></FONT></TD>
+<TD><FONT SIZE="2"><b><b>且 expression2</b> 中的位是</b></FONT></TD>
+<TD><FONT SIZE="2"><b><b>则 result</b> 为</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">0</FONT></TD>
+<TD><FONT SIZE="2">0</FONT></TD>
+<TD><FONT SIZE="2">1</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">0</FONT></TD>
+<TD><FONT SIZE="2">1</FONT></TD>
+<TD><FONT SIZE="2">1</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">1</FONT></TD>
+<TD><FONT SIZE="2">0</FONT></TD>
+<TD><FONT SIZE="2">0</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">1</FONT></TD>
+<TD><FONT SIZE="2">1</FONT></TD>
+<TD><FONT SIZE="2">1</FONT></TD></TR></TABLE>
+</BLOCKQUOTE><P>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

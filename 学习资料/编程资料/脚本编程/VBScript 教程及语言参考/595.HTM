@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>Select Case 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Description" CONTENT="Select Case 语句"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Select Case 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p>
+<A HREF="596.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>
+根据表达式的值执行几组语句之一。
+</BLOCKQUOTE>
+
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>Select Case</b> <b>testexpression</b><BR>
+    [<b>Case</b><b> expressionlist-n</b><BR>
+        [<b>statements-n</b>]] <b>. . .</b><BR>
+    [<b>Case Else</b><b> expressionlist-n</b><BR>
+        [<b>elsestatements-n</b>]]<BR>
+<b>End Select</b><P>
+ <b>Select Case</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>testexpression</b></FONT></TD>
+<TD><FONT SIZE="2">任意<A HREF="0.htm#defNumericExpression">数值</A>或<A HREF="0.htm#defStringExpression">字符串表达式</A>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>expressionlist-n</b></FONT></TD>
+<TD><FONT SIZE="2">如 <b>Case</b> 出现则必选。一个或多个表达式的分界列表。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>statements-n</b></FONT></TD>
+<TD><FONT SIZE="2">当 <b>testexpression</b> 与 <b>expressionlist-n</b> 中的任意部分匹配时，执行的一条或多条语句。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>elsestatements</b></FONT></TD>
+<TD><FONT SIZE="2">当 <b>testexpression</b> 与 <B>Case</B> 子句的任何部分不匹配时，执行的一条或多条语句。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+如果 <b>testexpression</b> 与任何 <B>Case</B> <b>expressionlist</b> 表达式匹配，则执行此 <B>Case</B> 子句和下一个 <B>Case</B> 子句之间的语句，对于最后的子句，则会执行该子句到 <B>End Select</B> 之间的语句，然后控制权会转到 <B>End Select</B> 之后的语句。如 <b>testexpression</b> 与多个 <b>Case</b> 子句中的 <b>expressionlist</b> 表达式匹配，则只有第一个匹配后的语句被执行。<P>
+
+ <B>Case Else</B> 用于指示若在 <b>testexpression</b> 和任何其他 <B>Case</B> 选项的 <b>expressionlist</b> 之间未找到匹配，则执行 <b>elsestatements</b>。虽然不是必要的，但最好是将 <B>Case Else</B> 语句置于 <B>Select Case</B> 块中以处理不可预见的 <b>testexpression</b> 值。如果没有 <B>Case</B> <b>expressionlist</b> 与 <b>testexpression</b> 匹配且无 <B>Case Else</B> 语句，则继续执行 <B>End Select</B> 之后的语句。<P>
+
+<B>Select Case</B> 语句可以是嵌套的，每一层嵌套的 <B>Select Case</B> 语句必须有与之匹配的 <B>End Select</B> 语句。
+</BLOCKQUOTE>
+
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

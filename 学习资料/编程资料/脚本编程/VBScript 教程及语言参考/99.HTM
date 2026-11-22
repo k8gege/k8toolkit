@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>DateValue 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="DateValue 函数,日期转换,日期"><META NAME="Description" CONTENT="DateValue 函数"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&#174; Visual Basic&#174; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>DateValue 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2> <A HREF="vbstoc.htm">语言参考</A>  <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><P>
+<A HREF="100.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>Description</H5>
+<BLOCKQUOTE>返回 <b>Date</b> 子类型的 <b>Variant</b>。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>DateValue(</b><i>date</i><b>)</b><P>
+<i>date</i> 参数应是<A HREF="0.htm#defStringExpression">字符串表达式</A>，表示从 100 年 1 月 1 日到 9999 年 12 月 31 日中的一个日期。但是，<i>date</i> 也可以是表示上述范围内的日期、时间或日期时间混合的任意表达式。</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>如果 <i>date</i> 参数包含时间信息，则 <b>DateValue</b> 不会返回时间信息。但是如果 <i>date</i> 包含无效的时间信息（如 &quot;89:98&quot;），就会出现错误。<P>
+如果 <i>date</i> 是某一字符串，其中仅包含由有效的<A HREF="0.htm#defDateSeparators">日期分隔符</A>分隔开的数字，则 <b>DateValue</b> 将会根据为系统指定的短日期格式识别月、日和年的顺序。<b>DateValue</b> 还会识别包含月份名称（无论是全名还是缩写）的明确日期。例如，除了能够识别 12/30/1991 和 12/30/91 之外，<b>DateValue</b> 还能识别 December 30, 1991 和 Dec 30, 1991。<P>
+如果省略了 <i>date</i> 的年份部分，<b>DateValue</b> 将使用计算机系统日期中的当前年份。</BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>Source 属性</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="Source 属性,错误源"><META NAME="Description" CONTENT="Source 属性"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Source 属性</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE>
+<FONT SIZE="2"><P><A HREF="552.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="551.htm">应用于</A></FONT><HR NOSHADE SIZE=1>
+<H5>描述</H5>
+<BLOCKQUOTE>返回或设置最初生成错误的对象或应用程序的名称。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b><b>.Source </b>[<b>= </b><b>stringexpression</b>]<P>
+ <b>Source </b>属性的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>object</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Err</b> 对象。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>stringexpression</b></FONT></TD>
+<TD><FONT SIZE="2"><A HREF="0.htm#defStringExpression">字符串表达式</A>，表示生成错误的应用程序。</FONT></TD></TR>
+</TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE><b>Source</b> 属性指定一个字符串表达式，此表达式通常是导致错误的对象的<A HREF="0.htm#defClass">类</A>名称或程序设计的 ID。当代码无法处理可访问对象产生的错误时，请使用 <b>Source</b> 为用户提供信息。例如，如果访问 Microsoft Excel 并且产生一个<b>被零除</b>的错误，Microsoft Excel 将 <b>Err.Number</b> 设置为此错误的错误代码并将 <b>Source</b> 设置为 Excel.Application。注意，如果错误产生于另一个由 Microsoft Excel 调用的对象中，则 Excel 截获此错误并且将 <b>Err.Number</b> 设置为它自己的<b>被零除</b>的代码。但是，它保留其他 <b>Err</b> 对象（包括 <b>Source</b>），就象由产生错误的对象设置一样。<P>
+<b>Source</b> 总是含有最初产生错误的对象名称，您可根据所访问对象的错误信息文档，编写处理错误的代码。若错误处理程序失败，则可使用 <b>Err</b> 对象信息为用户描述错误，使用 <b>Source</b> 和其他 <b>Err</b> 通知用户最初导致错误的对象、错误描述等等。<P>
+在代码中产生错误时，<b>Source</b> 是应用程序的程序设计 ID。 <!--For <A HREF="0.htm#defClassModule">class modules</A>, <b>Source</b> should contain a name having the form <b>project</b><b><b>.</b></b><b>class</b>.--></BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

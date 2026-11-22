@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>Set 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="New,Set 语句,Nothing,对象引用,引用对象,变量赋值,赋值语句,引用,变量"><META NAME="Description" CONTENT="Set 语句"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><b>Set 语句</b></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p>
+<A HREF="598.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>将对象引用赋给变量或<A HREF="0.htm#defProperty">属性</A>。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>Set</b> <b>objectvar </b><b>=</b> {<b>objectexpression</b> | <b>Nothing</b>}
+<P>
+ <b>Set</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>objectvar</b></FONT></TD>
+<TD><FONT SIZE="2">变量或属性的名称，遵循标准<A HREF="0.htm#defVariable">变量</A>命名约定。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>objectexpression</b></FONT></TD>
+<TD><FONT SIZE="2">由对象名称、另一个已声明为相同<A HREF="0.htm#defObjectType">对象类型</A>的变量或返回相同对象类型的对象的函数或方法组成的表达式。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Nothing</b></FONT></TD>
+<TD><FONT SIZE="2">停止 <b>objectvar</b> 与任何指定对象的关联。当没有其他变量引用 <b>objectvar</b> 原来所引用的对象时，如将其赋为 <b>Nothing</b> 会释放与该对象所关联的所有系统和内存资源。</FONT></TD></TR>
+</TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>为确保有效，<b>objectvar</b> 必须与所赋对象的类型一致。<P>
+<b>Dim</b>、<b>Private</b>、<b>Public</b> 或 <b>ReDim</b> 语句只声明了引用对象的变量。只有使用 <b>Set</b> 语句将指定对象赋予该变量后，才能引用实际的对象。<P>
+通常，当使用 <b>Set</b> 将一个对象引用赋给变量时，并不是为变量创建对象的副本，而是创建对象的引用。可有多个对象变量引用同一个对象。因为这些变量是对象引用（不是副本），所以对对象所作的任何改动都会影响所有引用该对象的变量。</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

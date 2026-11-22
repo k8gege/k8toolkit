@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>Folders 集合</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="Folders 集合">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>Folders 集合</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 3</A> <P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="28.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="30.htm">属性</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="29.htm">方法</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>包含在一个 <b>Folder</b> 对象中的所有 <b>Folder</b> 对象的集合。</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+以下代码举例说明如何获得 <b>Folders</b> 集合并使用 <b>For Each...Next</b> 语句枚举集合成员：
+<BLOCKQUOTE><pre><font face="宋体" size=2>Sub ShowFolderList(folderspec)
+    Dim fs, f, f1, fc, s
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set f = fs.GetFolder(folderspec)
+    Set fc = <font color="#FF0000">f.SubFolders</font>
+    For Each f1 in fc
+        s = s & f1.name 
+        s = s &  vbCrLf
+    Next
+    MsgBox s
+End Sub</font></pre></BLOCKQUOTE>
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

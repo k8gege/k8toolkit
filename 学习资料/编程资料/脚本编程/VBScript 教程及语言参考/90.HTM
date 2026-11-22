@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>DateAdd 函数</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT=""><META NAME="Description" CONTENT="DateAdd 函数"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>DateAdd 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE=2><P>
+<A HREF="91.htm">请参阅</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>
+	返回已添加指定时间间隔的日期。
+</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+	<b>DateAdd(</b><b>interval</b><B>, </B><b>number</b><B>, </B><b>date</b><b>)</b><P>
+
+	<b>DateAdd</b> 函数的语法有以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE=2><b>部分</b></FONT></TD>
+		<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>interval</b></FONT></TD>
+		<TD><FONT SIZE=2>必选。<A HREF="0.htm#defStringExpression">字符串表达式</A>，表示要添加的时间间隔。有关数值，请参阅“设置”部分。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>number</b></FONT></TD>
+		<TD><FONT SIZE=2>必选。<A HREF="0.htm#defdefNumericExpression">数值表达式</A>，表示要添加的时间间隔的个数。数值表达式可以是正数（得到未来的日期）或负数（得到过去的日期）。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>date</b></FONT></TD>
+		<TD><FONT SIZE=2>必选。<B>Variant</B> 或要添加 <B>interval</B> 的表示日期的文字。 </FONT></TD></TR>
+
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>设置</H5>
+<BLOCKQUOTE>
+ <B>interval</B> 参数可以有以下值：<p>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD width=15%><FONT SIZE=2><b>设置</b></FONT></TD>
+		<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>yyyy</b></FONT></TD>
+		<TD><FONT SIZE=2>年</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>q</b></FONT></TD>
+		<TD><FONT SIZE=2>季度</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>m</b></FONT></TD>
+		<TD><FONT SIZE=2>月</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>y</b></FONT></TD>
+		<TD><FONT SIZE=2>一年的日数</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>d</b></FONT></TD>
+		<TD><FONT SIZE=2>日</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>w</b></FONT></TD>
+		<TD><FONT SIZE=2>一周的日数</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>ww</b></FONT></TD>
+		<TD><FONT SIZE=2>周</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>h</b></FONT></TD>
+		<TD><FONT SIZE=2>小时</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>n</b></FONT></TD>
+		<TD><FONT SIZE=2>分钟</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD width=15%><FONT SIZE=2><b>s</b></FONT></TD>
+		<TD><FONT SIZE=2>秒</FONT></TD></TR>
+
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+可用 <b>DateAdd</b> 函数从日期中添加或减去指定时间间隔。例如可以使用 <b>DateAdd</b> 从当天算起 30 天以后的日期或从现在算起 45 分钟以后的时间。要向 <B>date</B> 添加以“日”为单位的时间间隔，可以使用“一年的日数”（“y”）、“日”（“d”）或“一周的日数”（“w”）。<p>
+<b>DateAdd</b> 函数不会返回无效日期。如下示例将 95 年 1 月 31 日加上一个月：<P>
+
+<BLOCKQUOTE><PRE><font face="宋体" SIZE=2>NewDate = <FONT COLOR=#FF0000>DateAdd(</FONT>"m"<FONT COLOR=#FF0000>, </font>1<FONT COLOR=#FF0000>, </font>"31-Jan-95"<FONT COLOR=#FF0000>)</font></font>
+
+</PRE></BLOCKQUOTE>
+
+在这个例子中，<b>DateAdd</b> 返回 95 年 2 月 28 日，而不是 95 年 2 月 31 日。如果 <B>date</B> 为 96 年 1 月 31 日，则返回 96 年 2 月 29 日，这是因为 1996 是闰年。<p>
+如果计算的日期是在公元 100 年之前则会产生错误。<p>
+如果 <B>number</B> 不是 <B>Long</B> 型值，则在计算前四舍五入为最接近的整数。
+
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

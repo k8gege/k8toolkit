@@ -1,0 +1,158 @@
+<HTML>
+<HEAD>
+<TITLE>VBScript 页面的简单样例</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="CATEGORY" CONTENT="教程">
+<META NAME="Description" CONTENT="VBScript 页面的简单样例">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>VBScript 页面的简单样例</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstutor.htm">VBScript 教程</A> <BR>&nbsp;<A HREF="18.htm">上一页</A> | <A HREF="1.htm">下一页</A> <P></FONT>
+
+
+</TD></TR>
+</TABLE> 
+&nbsp;<BR>
+
+<HR NOSHADE SIZE=1>
+
+
+<H5>一个简单页面</H5>
+<BLOCKQUOTE>
+使用 Microsoft&reg; Internet Explorer 可以查看用以下 HTML 代码<A HREF="8.htm">制作的页面</A>。如果单击页面上的按钮，可看到 VBScript 的运行结果。
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3>&lt;HTML&gt;
+&lt;HEAD&gt;&lt;TITLE&gt;一个简单首页&lt;/TITLE&gt;
+&lt;SCRIPT LANGUAGE="VBScript"&gt;
+&lt;!--
+Sub Button1_OnClick
+        MsgBox "Mirabile visu."
+End Sub
+--&gt;
+&lt;/SCRIPT&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+&lt;H3&gt;一个简单首页&lt;/H3&gt;&lt;HR&gt;
+&lt;FORM&gt;&lt;INPUT NAME="Button1" TYPE="BUTTON" VALUE="单击此处"&gt;&lt;/FORM&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+</FONT></PRE>
+</BLOCKQUOTE>
+
+结果虽然有点简单：一个对话框显示一个拉丁短语（意为“看起来非常漂亮”）。然而这段代码实际上作了许多事情。<P>
+当 Internet Explorer 读取页面时，找到 &lt;SCRIPT&gt; 标记，识别出 VBScript 代码并保存代码。单击按钮时，Internet Explorer 使按钮与代码连接，并运行该过程。<P>
+
+&lt;SCRIPT&gt; 标记中的 <B>Sub</B> 过程是一个事件过程。过程名包含两部分：一部分为按钮名，即 <FONT FACE="宋体" SIZE=2>Button1</FONT>（从 &lt;INPUT&gt; 标记中的 NAME 属性获取），另一部分为事件名，即 <FONT FACE="宋体" SIZE=2>OnClick</FONT>。两部分由下划线 (_) 连接。单击按钮时，Internet Explorer 查找并运行相应的事件过程，即 <FONT FACE="宋体" SIZE=2>Button1_OnClick</FONT>。<P>
+Internet Explorer 在 Internet Explorer Scripting Object Model 文档中定义了可用于窗体控件的事件。<P>
+
+页面也可以使用控件与过程的组合。<A HREF="1.htm">VBScript 与窗体</A>显示了控件之间的一些简单交互作用。
+</BLOCKQUOTE>
+
+<H5>向事件附加代码的其他方法</H5>
+<BLOCKQUOTE>
+上述的方法也许是最简单和最常用的，但也可以使用另外两种方法向事件附加 VBScript 代码。一种方法是在定义控件的标记中添加较短的内部代码。例如在单击按钮时，下面的 &lt;INPUT&gt; 标记执行与前面示例相同的操作：
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3>&lt;INPUT NAME="Button1" TYPE="BUTTON"
+       VALUE="单击此处" OnClick='MsgBox "Mirabile visu."'&gt;
+</FONT></PRE></BLOCKQUOTE>
+
+请注意函数调用包含在单引号中，<B>MsgBox</B> 函数的字符串包含在双引号中。只要用冒号 (:) 分隔语句，就可以使用多条语句。<P>
+另一种方法是在 &lt;SCRIPT&gt; 标记中指定特定的控件和事件：
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3>&lt;SCRIPT LANGUAGE="VBScript" EVENT="OnClick" FOR="Button1"&gt;
+&lt;!--
+    MsgBox "Mirabile visu."
+--&gt;
+&lt;/SCRIPT&gt;
+</FONT></PRE>
+</BLOCKQUOTE>
+由于 &lt;SCRIPT&gt; 标记指定了事件和控件，所以不需要再用 <B>Sub</B> 和 <B>End Sub</B> 语句。
+</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

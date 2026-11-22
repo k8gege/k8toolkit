@@ -1,0 +1,869 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd"><HTML><HEAD><TITLE>VBScript 语言参考</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Description" CONTENT="VBScript 语言参考">
+<SCRIPT LANGUAGE="VBScript">
+<!--
+Sub writeVBScript
+    document.writeln "<SCRIPT LANGUAGE=""VBScript"">"
+    document.writeln "Sub DisplayTopic(ByVal URL)"
+    document.writeln "Window.Open URL, ""_self"""
+    document.writeln "End Sub"
+    document.writeln "</SCRIPT>"
+End Sub
+-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+    var browser;
+    function DoJavaScript( )
+        {
+        document.writeln('<SCRIPT LANGUAGE="JavaScript">');
+        document.writeln('function Form1_onclick(){');
+        document.writeln('DisplayTopic(window.event.srcElement.options[window.event.srcElement.selectedIndex].value);');
+        document.writeln('}');
+        document.writeln('function displayTopic(url){');
+        document.writeln('window.open(url, "_self");');
+        document.writeln('}');
+        document.writeln('</SCRIPT>');
+        }
+    function DoVBScript( )
+        {
+         writeVBScript();
+        }
+    if (navigator.appName != "Microsoft Internet Explorer"){
+        browser = 0;
+        DoJavaScript( );
+    }
+    else {
+        browser = 1;
+        DoVBScript( );
+    }
+// -->  
+</SCRIPT>
+
+</HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><br>
+<FONT SIZE=5 COLOR=#660033><B>VBScript 语言参考</B></FONT> 
+
+</TD>
+<TD ALIGN=Right>
+<FONT SIZE=2>&nbsp;<A HREF="vbstutor.htm">VBScript 教程</A> <BR><!--START PAGE START--><!--START PAGE END-->&nbsp;<A HREF="16.htm">版本信息</A> <P></FONT>
+</TD></TR>
+</TABLE>
+
+<P>
+<hr noshade SIZE=2>
+
+&nbsp;<BR><!-- extra space -->
+
+<!-- TABLE G -->
+<TABLE CELLPADDING=3 BORDER=0 CELLSPACING=0>
+
+<TR VALIGN=TOP><TD WIDTH=120 HEIGHT=40><FONT SIZE=2><B>特性信息</B></FONT></TD>
+	<TD VALIGN=TOP>
+	<FORM ACTION="" NAME="Form1">
+		<SELECT NAME="Target1">
+		<OPTION VALUE="228.htm">VBScript 特性
+		<OPTION VALUE="229.htm">未包含在 VBScript 中的 VBA 特性 
+		<OPTION VALUE="234.htm">未包含在 VBA 中的 VBScript 特性
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                   </SELECT>
+</TD>
+<TD VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form1.Target1.options(Target1.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form1.Target1.options[Target1.options[document.Target1.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+</FORM>
+</TR>
+
+
+<TR VALIGN=TOP><TD WIDTH=120 HEIGHT=40><FONT SIZE=2><B>关键字列表<BR>（按字母顺序）</B></FONT></TD>
+	<TD VALIGN=TOP>
+	<FORM ACTION="" NAME="Form2">
+		<SELECT NAME="Target2">
+		<OPTION VALUE="57.htm">Abs 函数
+		<OPTION VALUE="249.htm">Add 方法
+		<OPTION VALUE="252.htm">AddFolders 方法
+		<OPTION VALUE="415.htm">加法运算符 (+)
+		<OPTION VALUE="417.htm">And 运算符
+		<OPTION VALUE="59.htm">Array 函数
+		<OPTION VALUE="61.htm">Asc 函数
+		<OPTION VALUE="445.htm">AtEndOfLine 属性
+		<OPTION VALUE="448.htm">AtEndOfStream 属性
+		<OPTION VALUE="63.htm">Atn 函数
+		<OPTION VALUE="451.htm">Attributes 属性
+		<OPTION VALUE="454.htm">AvailableSpace 属性
+
+		<OPTION VALUE="255.htm">BuildPath 方法
+
+		<OPTION VALUE="565.htm">Call 语句
+		<OPTION VALUE="65.htm">CBool 函数
+		<OPTION VALUE="67.htm">CByte 函数
+		<OPTION VALUE="69.htm">CCur 函数
+		<OPTION VALUE="71.htm">CDate 函数
+		<!--OPTION VALUE="vsfctCDec.htm">CDec 函数-->
+		<OPTION VALUE="73.htm">CDbl 函数
+		<OPTION VALUE="75.htm">Chr 函数
+		<OPTION VALUE="77.htm">CInt 函数
+		<OPTION VALUE="258.htm">Clear 方法
+		<OPTION VALUE="79.htm">CLng 函数
+		<OPTION VALUE="261.htm">Close 方法
+		<OPTION VALUE="457.htm">Column 属性
+		<OPTION VALUE="460.htm">CompareMode 属性
+		<OPTION VALUE="419.htm">连接运算符 (&)
+		<OPTION VALUE="566.htm">Const 语句
+		<OPTION VALUE="264.htm">Copy 方法
+		<OPTION VALUE="267.htm">CopyFile 方法
+		<OPTION VALUE="270.htm">CopyFolder 方法
+		<OPTION VALUE="81.htm">Cos 函数
+		<OPTION VALUE="463.htm">Count 属性
+		<OPTION VALUE="273.htm">CreateFolder 方法
+		<OPTION VALUE="83.htm">CreateObject 函数
+		<OPTION VALUE="276.htm">CreateTextFile 方法
+		<OPTION VALUE="85.htm">CSng 函数
+		<OPTION VALUE="87.htm">CStr 函数
+
+		<OPTION VALUE="89.htm">Date 函数
+		<OPTION VALUE="91.htm">DateAdd 函数
+		<OPTION VALUE="466.htm">DateCreated 属性
+		<OPTION VALUE="93.htm">DateDiff 函数
+		<OPTION VALUE="469.htm">DateLastAccessed 属性
+		<OPTION VALUE="472.htm">DateLastModified 属性
+		<OPTION VALUE="95.htm">DatePart 函数
+		<OPTION VALUE="97.htm">DateSerial 函数
+		<OPTION VALUE="99.htm">DateValue 函数
+		<OPTION VALUE="101.htm">Day 函数
+		<OPTION VALUE="279.htm">Delete 方法
+		<OPTION VALUE="282.htm">DeleteFile 方法
+		<OPTION VALUE="285.htm">DeleteFolder 方法
+		<OPTION VALUE="475.htm">Description 属性
+		<OPTION VALUE="387.htm">Dictionary 对象
+		<OPTION VALUE="568.htm">Dim 语句
+		<OPTION VALUE="421.htm">除法运算符 (/)
+		<OPTION VALUE="570.htm">Do...Loop 语句
+		<OPTION VALUE="391.htm">Drive 对象
+		<OPTION VALUE="478.htm">Drive 属性
+		<OPTION VALUE="288.htm">DriveExists 方法
+		<OPTION VALUE="481.htm">DriveLetter 属性
+		<OPTION VALUE="19.htm">Drives 集合
+		<OPTION VALUE="484.htm">Drives 属性
+		<OPTION VALUE="487.htm">DriveType 属性
+
+		<OPTION VALUE="241.htm">Empty
+		<OPTION VALUE="423.htm">Eqv 运算符
+		<OPTION VALUE="572.htm">Erase 语句
+		<OPTION VALUE="395.htm">Err 对象
+		<OPTION VALUE="291.htm">Exists 方法
+		<OPTION VALUE="574.htm">Exit 语句
+		<OPTION VALUE="103.htm">Exp 函数
+		<OPTION VALUE="425.htm">求幂运算符 (^)
+
+		<OPTION VALUE="242.htm">False
+		<OPTION VALUE="294.htm">FileExists 方法
+		<OPTION VALUE="399.htm">File 对象        
+		<OPTION VALUE="23.htm">Files 集合
+		<OPTION VALUE="490.htm">Files 属性
+		<OPTION VALUE="403.htm">FileSystemObject 对象
+		<OPTION VALUE="493.htm">FileSystem 属性
+		<OPTION VALUE="105.htm">Filter 函数
+		<OPTION VALUE="127.htm">Fix 函数
+		<OPTION VALUE="407.htm">Folder 对象
+		<OPTION VALUE="27.htm">Folders 集合
+		<OPTION VALUE="297.htm">FolderExists 方法
+		<OPTION VALUE="576.htm">For...Next 语句
+		<OPTION VALUE="578.htm">For Each...Next 语句
+		<OPTION VALUE="107.htm">FormatCurrency 函数
+		<OPTION VALUE="109.htm">FormatDateTime 函数
+		<OPTION VALUE="111.htm">FormatNumber 函数
+		<OPTION VALUE="113.htm">FormatPercent 函数
+		<OPTION VALUE="496.htm">FreeSpace 属性
+		<OPTION VALUE="580.htm">Function 语句
+
+		<OPTION VALUE="300.htm">GetAbsolutePathName 方法
+		<OPTION VALUE="303.htm">GetBaseName 方法
+		<OPTION VALUE="306.htm">GetDrive 方法
+		<OPTION VALUE="309.htm">GetDriveName 方法
+		<OPTION VALUE="312.htm">GetExtensionName 方法
+
+		<OPTION VALUE="315.htm">GetFile 方法
+		<OPTION VALUE="318.htm">GetFileName 方法
+		<OPTION VALUE="321.htm">GetFolder 方法
+		<OPTION VALUE="115.htm">GetObject 函数
+		<OPTION VALUE="324.htm">GetParentFolderName 方法
+		<OPTION VALUE="327.htm">GetSpecialFolder 方法
+		<OPTION VALUE="330.htm">GetTempName 方法
+
+		<OPTION VALUE="117.htm">Hex 函数
+		<OPTION VALUE="499.htm">HelpContext 属性
+		<OPTION VALUE="502.htm">HelpFile 属性
+		<OPTION VALUE="119.htm">Hour 函数
+
+		<OPTION VALUE="582.htm">If...Then...Else 语句
+		<OPTION VALUE="427.htm">Imp 运算符
+		<OPTION VALUE="121.htm">InputBox 函数
+		<OPTION VALUE="123.htm">InStr 函数
+		<OPTION VALUE="125.htm">InStrRev 函数
+		<OPTION VALUE="127.htm">Int 函数
+		<OPTION VALUE="429.htm">整数除法运算符 (\)
+		<OPTION VALUE="431.htm">Is 运算符
+		<OPTION VALUE="129.htm">IsArray 函数
+		<OPTION VALUE="131.htm">IsDate 函数
+		<OPTION VALUE="133.htm">IsEmpty 函数
+		<OPTION VALUE="135.htm">IsNull 函数
+		<OPTION VALUE="137.htm">IsNumeric 函数
+		<OPTION VALUE="139.htm">IsObject 函数
+		<OPTION VALUE="505.htm">IsReady 属性
+		<OPTION VALUE="508.htm">IsRootFolder 属性
+		<OPTION VALUE="511.htm">Item 属性
+		<OPTION VALUE="333.htm">Items 方法
+
+		<OPTION VALUE="141.htm">Join 函数
+
+		<OPTION VALUE="514.htm">Key 属性
+		<OPTION VALUE="336.htm">Keys 方法
+
+		<OPTION VALUE="143.htm">LBound 函数
+		<OPTION VALUE="145.htm">LCase 函数
+		<OPTION VALUE="147.htm">Left 函数
+		<OPTION VALUE="149.htm">Len 函数
+		<OPTION VALUE="517.htm">Line 属性
+		<OPTION VALUE="151.htm">LoadPicture 函数
+		<OPTION VALUE="152.htm">Log 函数
+		<OPTION VALUE="154.htm">LTrim 函数
+
+		<OPTION VALUE="156.htm">Mid 函数
+		<OPTION VALUE="158.htm">Minute 函数
+		<OPTION VALUE="433.htm">Mod 运算符
+		<OPTION VALUE="160.htm">Month 函数
+		<OPTION VALUE="162.htm">MonthName 函数
+		<OPTION VALUE="339.htm">Move 方法
+		<OPTION VALUE="342.htm">MoveFile 方法
+		<OPTION VALUE="345.htm">MoveFolder 方法
+		<OPTION VALUE="164.htm">MsgBox 函数
+		<OPTION VALUE="435.htm">乘法运算符 (*)
+
+		<OPTION VALUE="520.htm">Name 属性
+		<OPTION VALUE="441.htm">求负运算符 (-)
+		<OPTION VALUE="437.htm">Not 运算符
+		<OPTION VALUE="166.htm">Now 函数
+		<OPTION VALUE="243.htm">Nothing
+		<OPTION VALUE="245.htm">Null
+		<OPTION VALUE="523.htm">Number 属性
+
+		<OPTION VALUE="168.htm">Oct 函数
+		<OPTION VALUE="583.htm">On Error 语句
+		<OPTION VALUE="348.htm">OpenAsTextStream 方法
+		<OPTION VALUE="351.htm">OpenTextFile 方法
+		<OPTION VALUE="230.htm">运算符优先级
+		<OPTION VALUE="585.htm">Option Explicit 语句
+		<OPTION VALUE="439.htm">Or 运算符
+
+		<OPTION VALUE="526.htm">ParentFolder 属性
+		<OPTION VALUE="529.htm">Path 属性
+		<OPTION VALUE="586.htm">Private 语句
+		<OPTION VALUE="588.htm">Public 语句
+
+
+		<OPTION VALUE="354.htm">Raise 方法
+		<OPTION VALUE="590.htm">Randomize 语句
+		<OPTION VALUE="357.htm">Read 方法
+		<OPTION VALUE="359.htm">ReadAll 方法
+		<OPTION VALUE="363.htm">ReadLine 方法
+		<OPTION VALUE="592.htm">ReDim 语句
+		<OPTION VALUE="594.htm">Rem 语句
+		<OPTION VALUE="366.htm">Remove 方法
+		<OPTION VALUE="368.htm">RemoveAll 方法
+		<OPTION VALUE="170.htm">Replace 函数
+		<OPTION VALUE="172.htm">RGB 函数
+		<OPTION VALUE="173.htm">Right 函数
+		<OPTION VALUE="175.htm">Rnd 函数
+		<OPTION VALUE="532.htm">RootFolder 属性
+		<OPTION VALUE="177.htm">Round 函数
+		<OPTION VALUE="154.htm">RTrim 函数
+
+		<OPTION VALUE="179.htm">ScriptEngine 函数
+		<OPTION VALUE="181.htm">ScriptEngineBuildVersion 函数
+		<OPTION VALUE="183.htm">ScriptEngineMajorVersion 函数
+		<OPTION VALUE="185.htm">ScriptEngineMinorVersion 函数
+		<OPTION VALUE="187.htm">Second 函数
+		<OPTION VALUE="595.htm">Select Case 语句
+		<OPTION VALUE="535.htm">SerialNumber 属性
+		<OPTION VALUE="597.htm">Set 语句
+		<OPTION VALUE="189.htm">Sgn 函数
+		<OPTION VALUE="538.htm">ShareName 属性
+		<OPTION VALUE="541.htm">ShortName 属性
+		<OPTION VALUE="544.htm">ShortPath 属性
+		<OPTION VALUE="191.htm">Sin 函数
+		<OPTION VALUE="547.htm">Size 属性
+		<OPTION VALUE="372.htm">Skip 方法
+		<OPTION VALUE="375.htm">SkipLine 方法
+		<OPTION VALUE="550.htm">Source 属性
+		<OPTION VALUE="193.htm">Space 函数
+		<OPTION VALUE="195.htm">Split 函数
+		<OPTION VALUE="197.htm">Sqr 函数
+		<OPTION VALUE="198.htm">StrComp 函数
+		<OPTION VALUE="199.htm">String 函数
+		<OPTION VALUE="201.htm">StrReverse 函数
+		<OPTION VALUE="599.htm">Sub 语句
+		<OPTION VALUE="553.htm">SubFolders 属性
+		<OPTION VALUE="441.htm">减法运算符 (-)
+
+		<OPTION VALUE="202.htm">Tan 函数
+		<OPTION VALUE="204.htm">Time 函数
+		<OPTION VALUE="411.htm">TextStream 对象
+		<OPTION VALUE="206.htm">TimeSerial 函数
+		<OPTION VALUE="208.htm">TimeValue 函数
+		<OPTION VALUE="556.htm">TotalSize 属性
+		<OPTION VALUE="154.htm">Trim 函数
+		<OPTION VALUE="246.htm">True
+		<OPTION VALUE="559.htm">Type 属性
+		<OPTION VALUE="210.htm">TypeName 函数
+
+		<OPTION VALUE="212.htm">UBound 函数
+		<OPTION VALUE="214.htm">UCase 函数
+
+		<OPTION VALUE="216.htm">VarType 函数
+		<OPTION VALUE="562.htm">VolumeName 属性
+
+		<OPTION VALUE="218.htm">Weekday 函数
+		<OPTION VALUE="220.htm">WeekdayName 函数
+		<OPTION VALUE="601.htm">While...Wend 语句
+		<OPTION VALUE="378.htm">Write 方法
+		<OPTION VALUE="380.htm">WriteBlankLines 方法
+		<OPTION VALUE="384.htm">WriteLine 方法
+
+		<OPTION VALUE="443.htm">Xor 运算符
+
+		<OPTION VALUE="222.htm">Year 函数
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+</SELECT>
+</TD>
+<TD VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form2.Target2.options(Target2.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form2.Target2.options[Target2.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+
+</FORM>
+</TR>
+
+
+<TR VALIGN=TOP><TD HEIGHT=40><FONT SIZE=2><B>常数</B></FONT></TD>
+	<TD>	
+	<FORM ACTION="" NAME="Form3">
+	<SELECT NAME="Target3">
+		<OPTION VALUE="31.htm">颜色常数
+		<OPTION VALUE="33.htm">比较常数
+		<OPTION VALUE="35.htm">日期格式常数
+		<OPTION VALUE="37.htm">日期和时间常数
+		<OPTION VALUE="39.htm">DriveType 常数
+		<OPTION VALUE="41.htm">FileAttributes 常数
+		<OPTION VALUE="43.htm">文件输入/输出常数
+		<OPTION VALUE="45.htm">其他常数
+		<OPTION VALUE="47.htm">MsgBox 常数
+		<OPTION VALUE="49.htm">SpecialFolder 常数
+		<OPTION VALUE="51.htm">字符串常数
+		<OPTION VALUE="53.htm">Tristate 常数
+		<OPTION VALUE="55.htm">VarType 常数
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+
+	</SELECT>
+</TD>
+<TD VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form3.Target3.options(Target3.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form3.Target3.options[Target3.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+</FORM>                                        
+
+</TR>
+
+
+
+
+<TR VALIGN=TOP><TD HEIGHT=40><FONT SIZE=2><B>函数</B></FONT></TD>
+	<TD>			
+	<FORM ACTION="" Name="Form4">
+	<SELECT NAME="Target4">
+		<OPTION VALUE="57.htm">Abs 函数
+		<OPTION VALUE="59.htm">Array 函数
+		<OPTION VALUE="61.htm">Asc 函数
+		<OPTION VALUE="63.htm">Atn 函数
+
+		<OPTION VALUE="65.htm">CBool 函数
+		<OPTION VALUE="67.htm">CByte 函数
+		<OPTION VALUE="69.htm">CCur 函数
+		<OPTION VALUE="71.htm">CDate 函数
+		<OPTION VALUE="73.htm">CDbl 函数
+		<!--OPTION VALUE="vsfctCDec.htm">CDec 函数-->
+		<OPTION VALUE="75.htm">Chr 函数
+		<OPTION VALUE="77.htm">CInt 函数
+		<OPTION VALUE="79.htm">CLng 函数
+		<OPTION VALUE="81.htm">Cos 函数
+		<OPTION VALUE="83.htm">CreateObject 函数
+		<OPTION VALUE="85.htm">CSng 函数
+		<OPTION VALUE="87.htm">CStr 函数
+
+		<OPTION VALUE="89.htm">Date 函数
+		<OPTION VALUE="91.htm">DateAdd 函数
+		<OPTION VALUE="93.htm">DateDiff 函数
+		<OPTION VALUE="95.htm">DatePart 函数
+		<OPTION VALUE="97.htm">DateSerial 函数
+		<OPTION VALUE="99.htm">DateValue 函数
+		<OPTION VALUE="101.htm">Day 函数
+
+		<OPTION VALUE="103.htm">Exp 函数
+
+		<OPTION VALUE="105.htm">Filter 函数
+		<OPTION VALUE="127.htm">Fix 函数
+		<OPTION VALUE="107.htm">FormatCurrency 函数
+		<OPTION VALUE="109.htm">FormatDateTime 函数
+		<OPTION VALUE="111.htm">FormatNumber 函数
+		<OPTION VALUE="113.htm">FormatPercent 函数
+
+		<OPTION VALUE="115.htm">GetObject 函数
+
+		<OPTION VALUE="117.htm">Hex 函数
+		<OPTION VALUE="119.htm">Hour 函数
+
+		<OPTION VALUE="121.htm">InputBox 函数
+		<OPTION VALUE="123.htm">InStr 函数
+		<OPTION VALUE="125.htm">InStrRev 函数
+		<OPTION VALUE="127.htm">Int 函数
+		<OPTION VALUE="129.htm">IsArray 函数
+		<OPTION VALUE="131.htm">IsDate 函数
+		<OPTION VALUE="133.htm">IsEmpty 函数
+		<OPTION VALUE="135.htm">IsNull 函数
+		<OPTION VALUE="137.htm">IsNumeric 函数
+		<OPTION VALUE="139.htm">IsObject 函数
+
+		<OPTION VALUE="141.htm">Join 函数
+
+		<OPTION VALUE="143.htm">LBound 函数
+		<OPTION VALUE="145.htm">LCase 函数
+		<OPTION VALUE="147.htm">Left 函数
+		<OPTION VALUE="149.htm">Len 函数
+		<OPTION VALUE="151.htm">LoadPicture 函数
+		<OPTION VALUE="152.htm">Log 函数
+		<OPTION VALUE="154.htm">LTrim 函数
+
+		<OPTION VALUE="156.htm">Mid 函数
+		<OPTION VALUE="158.htm">Minute 函数
+		<OPTION VALUE="160.htm">Month 函数
+		<OPTION VALUE="162.htm">MonthName 函数
+		<OPTION VALUE="164.htm">MsgBox 函数
+
+		<OPTION VALUE="166.htm">Now 函数
+
+		<OPTION VALUE="168.htm">Oct 函数
+
+		<OPTION VALUE="170.htm">Replace 函数
+		<OPTION VALUE="172.htm">RGB 函数
+		<OPTION VALUE="173.htm">Right 函数
+		<OPTION VALUE="175.htm">Rnd 函数
+		<OPTION VALUE="177.htm">Round 函数
+		<OPTION VALUE="154.htm">RTrim 函数
+
+		<OPTION VALUE="179.htm">ScriptEngine 函数
+		<OPTION VALUE="181.htm">ScriptEngineBuildVersion 函数
+		<OPTION VALUE="183.htm">ScriptEngineMajorVersion 函数
+		<OPTION VALUE="185.htm">ScriptEngineMinorVersion 函数
+		<OPTION VALUE="187.htm">Second 函数
+		<OPTION VALUE="189.htm">Sgn 函数
+		<OPTION VALUE="191.htm">Sin 函数
+		<OPTION VALUE="193.htm">Space 函数
+		<OPTION VALUE="195.htm">Split 函数
+		<OPTION VALUE="197.htm">Sqr 函数
+		<OPTION VALUE="198.htm">StrComp 函数
+		<OPTION VALUE="199.htm">String 函数
+		<OPTION VALUE="201.htm">StrReverse 函数
+		<OPTION VALUE="202.htm">Tan 函数
+		<OPTION VALUE="204.htm">Time 函数
+		<OPTION VALUE="206.htm">TimeSerial 函数
+		<OPTION VALUE="208.htm">TimeValue 函数
+		<OPTION VALUE="154.htm">Trim 函数
+		<OPTION VALUE="210.htm">TypeName 函数
+
+		<OPTION VALUE="212.htm">UBound 函数
+		<OPTION VALUE="214.htm">UCase 函数
+
+		<OPTION VALUE="216.htm">VarType 函数
+
+		<OPTION VALUE="218.htm">Weekday 函数
+		<OPTION VALUE="220.htm">WeekdayName 函数
+
+		<OPTION VALUE="222.htm">Year 函数
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</SELECT>
+</TD>
+<TD VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form4.Target4.options(Target4.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form4.Target4.options[Target4.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+</FORM>
+</TR>
+
+<TR VALIGN=TOP><TD HEIGHT=40><FONT SIZE=2><B>方法</B></FONT></TD>
+	<TD>	
+	<FORM ACTION="" NAME="Form5">
+	<SELECT NAME="Target5">
+		<OPTION VALUE="249.htm">Add 方法
+		<OPTION VALUE="252.htm">AddFolders 方法
+
+		<OPTION VALUE="255.htm">BuildPath 方法
+
+		<OPTION VALUE="258.htm">Clear 方法
+		<OPTION VALUE="261.htm">Close 方法
+		<OPTION VALUE="264.htm">Copy 方法
+		<OPTION VALUE="267.htm">CopyFile 方法
+		<OPTION VALUE="270.htm">CopyFolder 方法
+		<OPTION VALUE="273.htm">CreateFolder 方法
+		<OPTION VALUE="276.htm">CreateTextFile 方法
+
+		<OPTION VALUE="279.htm">Delete 方法
+		<OPTION VALUE="282.htm">DeleteFile 方法
+		<OPTION VALUE="285.htm">DeleteFolder 方法
+		<OPTION VALUE="288.htm">DriveExists 方法
+
+		<OPTION VALUE="291.htm">Exists 方法
+
+		<OPTION VALUE="294.htm">File 方法
+		<OPTION VALUE="294.htm">FileExists 方法
+		<OPTION VALUE="297.htm">Folder 方法
+		<OPTION VALUE="297.htm">FolderExists 方法
+		<OPTION VALUE="300.htm">GetAbsolutePathName 方法
+		<OPTION VALUE="303.htm">GetBaseName 方法
+		<OPTION VALUE="306.htm">GetDrive 方法
+		<OPTION VALUE="309.htm">GetDriveName 方法
+		<OPTION VALUE="312.htm">GetExtensionName 方法
+		<OPTION VALUE="315.htm">GetFile 方法
+		<OPTION VALUE="318.htm">GetFileName 方法
+		<OPTION VALUE="321.htm">GetFolder 方法
+		<OPTION VALUE="324.htm">GetParentFolderName 方法
+		<OPTION VALUE="327.htm">GetSpecialFolder 方法
+		<OPTION VALUE="330.htm">GetTempName 方法
+
+		<OPTION VALUE="333.htm">Items 方法
+
+		<OPTION VALUE="336.htm">Keys 方法
+
+		<OPTION VALUE="339.htm">Move 方法
+		<OPTION VALUE="342.htm">MoveFile 方法
+		<OPTION VALUE="345.htm">MoveFolder 方法
+
+		<OPTION VALUE="348.htm">OpenAsTextStream 方法
+		<OPTION VALUE="351.htm">OpenTextFile 方法
+
+		<OPTION VALUE="354.htm">Raise 方法
+		<OPTION VALUE="357.htm">Read 方法
+		<OPTION VALUE="359.htm">ReadAll 方法	
+		<OPTION VALUE="363.htm">ReadLine 方法
+		<OPTION VALUE="366.htm">Remove 方法
+		<OPTION VALUE="368.htm">RemoveAll 方法
+
+		<OPTION VALUE="372.htm">Skip 方法
+		<OPTION VALUE="375.htm">SkipLine 方法
+
+		<OPTION VALUE="378.htm">Write 方法
+		<OPTION VALUE="380.htm">WriteBlankLines 方法
+		<OPTION VALUE="384.htm">WriteLine 方法
+
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+	</SELECT>
+</TD>
+<TD VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form5.Target5.options(Target5.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form5.Target5.options[Target5.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+</FORM>                                        
+</TR>
+
+<TR VALIGN=TOP><TD HEIGHT=40><FONT SIZE=2><B>对象</B></FONT></TD>
+	<TD>		
+	<FORM ACTION="" NAME="Form6">
+	<SELECT NAME="Target6">
+		<OPTION VALUE="387.htm">Dictionary 对象
+		<OPTION VALUE="391.htm">Drive 对象
+		<OPTION VALUE="19.htm">Drives 集合
+		<OPTION VALUE="395.htm">Err 对象
+		<OPTION VALUE="399.htm">File 对象        
+		<OPTION VALUE="23.htm">Files 集合
+		<OPTION VALUE="403.htm">FileSystemObject 对象
+		<OPTION VALUE="407.htm">Folder 对象
+		<OPTION VALUE="27.htm">Folders 集合
+		<OPTION VALUE="411.htm">TextStream 对象
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+	</SELECT>
+</TD>
+<TD WIDTH=80 VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form6.Target6.options(Target6.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form6.Target6.options[Target6.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+</FORM>
+</TR>
+
+<TR VALIGN=TOP><TD HEIGHT=40><FONT SIZE=2><B>运算符</B></FONT></TD>
+	<TD>			
+	<FORM ACTION="" NAME="Form7">
+	<SELECT NAME="Target7">
+		<OPTION VALUE="415.htm">加法运算符 (+)
+		<OPTION VALUE="417.htm">And 运算符
+		<OPTION VALUE="419.htm">连接运算符 (&)
+		<OPTION VALUE="421.htm">除法运算符 (/)
+		<OPTION VALUE="423.htm">Eqv 运算符
+		<OPTION VALUE="425.htm">求幂运算符 (^)
+		<OPTION VALUE="427.htm">Imp 运算符
+		<OPTION VALUE="429.htm">整数除法运算符 (\)
+		<OPTION VALUE="431.htm">Is 运算符
+		<OPTION VALUE="433.htm">Mod 运算符
+		<OPTION VALUE="435.htm">乘法运算符 (*)
+		<OPTION VALUE="441.htm">求负运算符 (-)
+		<OPTION VALUE="437.htm">Not 运算符
+		<OPTION VALUE="439.htm">Or 运算符
+		<OPTION VALUE="230.htm">运算符优先级
+		<OPTION VALUE="441.htm">减法运算符 (-)
+		<OPTION VALUE="443.htm">Xor 运算符
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+	</SELECT>
+</TD>
+<TD VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form7.Target7.options(Target7.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form7.Target7.options[Target7.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+</FORM>                                        
+</TR>
+
+<TR VALIGN=TOP><TD HEIGHT=40><FONT SIZE=2><B>属性</B></FONT></TD>
+	<TD>			
+	<FORM ACTION="" NAME="Form8">
+	<SELECT NAME="Target8">
+		<OPTION VALUE="445.htm">AtEndOfLine 属性
+		<OPTION VALUE="448.htm">AtEndOfStream 属性
+		<OPTION VALUE="451.htm">Attributes 属性
+		<OPTION VALUE="454.htm">AvailableSpace 属性
+
+		<OPTION VALUE="457.htm">Column 属性
+		<OPTION VALUE="460.htm">CompareMode 属性
+		<OPTION VALUE="463.htm">Count 属性
+
+		<OPTION VALUE="466.htm">DateCreated 属性
+		<OPTION VALUE="469.htm">DateLastAccessed 属性
+		<OPTION VALUE="472.htm">DateLastModified 属性
+		<OPTION VALUE="475.htm">Description 属性
+		<OPTION VALUE="478.htm">Drive 属性
+		<OPTION VALUE="481.htm">DriveLetter 属性
+		<OPTION VALUE="484.htm">Drives 属性
+		<OPTION VALUE="487.htm">DriveType 属性
+
+		<OPTION VALUE="490.htm">Files 属性
+		<OPTION VALUE="493.htm">FileSystem 属性
+		<OPTION VALUE="496.htm">FreeSpace 属性
+
+		<OPTION VALUE="499.htm">HelpContext 属性
+		<OPTION VALUE="502.htm">HelpFile 属性
+
+		<OPTION VALUE="505.htm">IsReady 属性
+		<OPTION VALUE="508.htm">IsRootFolder 属性
+		<OPTION VALUE="511.htm">Item 属性
+
+		<OPTION VALUE="517.htm">Line 属性
+
+		<OPTION VALUE="520.htm">Name 属性
+		<OPTION VALUE="523.htm">Number 属性
+
+		<OPTION VALUE="526.htm">ParentFolder 属性
+		<OPTION VALUE="529.htm">Path 属性
+
+		<OPTION VALUE="532.htm">RootFolder 属性
+
+		<OPTION VALUE="535.htm">SerialNumber 属性
+		<OPTION VALUE="538.htm">ShareName 属性
+		<OPTION VALUE="541.htm">ShortName 属性
+		<OPTION VALUE="544.htm">ShortPath 属性
+		<OPTION VALUE="547.htm">Size 属性
+		<OPTION VALUE="550.htm">Source 属性
+		<OPTION VALUE="553.htm">SubFolders 属性
+
+		<OPTION VALUE="556.htm">TotalSize 属性
+		<OPTION VALUE="559.htm">Type 属性
+
+		<OPTION VALUE="562.htm">VolumeName 属性
+
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	</SELECT>
+</TD>
+<TD VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form8.Target8.options(Target8.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form8.Target8.options[Target8.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+</FORM>
+</TR>
+
+<TR VALIGN=TOP><TD HEIGHT=40><FONT SIZE=2><B>语句</B></FONT></TD>
+	<TD>			
+	<FORM ACTION="" NAME="Form9">
+	<SELECT NAME="Target9">
+		<OPTION VALUE="565.htm">Call 语句
+		<OPTION VALUE="566.htm">Const 语句
+
+		<OPTION VALUE="568.htm">Dim 语句
+		<OPTION VALUE="570.htm">Do...Loop 语句
+
+		<OPTION VALUE="572.htm">Erase 语句
+		<OPTION VALUE="574.htm">Exit 语句
+
+		<OPTION VALUE="576.htm">For...Next 语句
+		<OPTION VALUE="578.htm">For Each...Next 语句
+		<OPTION VALUE="580.htm">Function 语句
+
+		<OPTION VALUE="582.htm">If...Then...Else 语句
+
+		<OPTION VALUE="583.htm">On Error 语句
+		<OPTION VALUE="585.htm">Option Explicit 语句
+
+		<OPTION VALUE="586.htm">Private 语句
+		<OPTION VALUE="588.htm">Public 语句
+
+		<OPTION VALUE="590.htm">Randomize 语句
+		<OPTION VALUE="592.htm">ReDim 语句
+		<OPTION VALUE="594.htm">Rem 语句
+
+		<OPTION VALUE="595.htm">Select Case 语句
+		<OPTION VALUE="597.htm">Set 语句
+		<OPTION VALUE="599.htm">Sub 语句
+
+		<OPTION VALUE="601.htm">While...Wend 语句
+		<OPTION VALUE="vbstoc.htm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	</SELECT>
+</TD>
+<TD VALIGN=TOP>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (browser == 1){
+    document.write( '<INPUT TYPE="button" Language="VBScript" onClick="DisplayTopic document.Form9.Target9.options(Target9.selectedIndex).value"  Value="  转到！  ">' );
+    }
+    else {
+   document.write('<INPUT TYPE="button" LANGUAGE="JavaScript" onClick="displayTopic(document.Form9.Target9.options[Target9.selectedIndex].value)" value="  转到！  ">');
+    }
+// -->
+</SCRIPT>
+</FORM>
+</TR>
+</TABLE><!-- TABLE G - Close -->
+
+<HR NOSHADE SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT>
+</BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

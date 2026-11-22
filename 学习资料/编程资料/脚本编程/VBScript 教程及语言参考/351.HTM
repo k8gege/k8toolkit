@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>OpenTextFile 方法</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="OpenTextFile 方法">
+</HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>OpenTextFile 方法</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstoc.htm">语言参考</A> &nbsp;<BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> &nbsp;<P></FONT>
+</TD></TR>
+</TABLE>
+
+<FONT SIZE=2><P>
+<A HREF="353.htm">请参阅</A>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="352.htm">应用于</A></FONT>
+
+
+<HR noshade SIZE=2>
+<H5>描述</H5>
+<BLOCKQUOTE>打开指定的文件并返回一个 <b>TextStream</b> 对象，可以读取此对象或将其追加到文件。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+	<b>object</b><b>.OpenTextFile(</b><b>filename</b>[<b>,</b> <b>iomode</b>[<b>,</b> <b>create</b>[<b>,</b> <b>format</b>]]]<b>)</b><P>
+<b>OpenTextFile</b> 方法的语法有以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE=2><b>部分</b></FONT></TD>
+		<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>object</b></FONT></TD>
+		<TD><FONT SIZE=2>必选。应为 <b>FileSystemObject</b> 对象的名称。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>filename</b></FONT></TD>
+		<TD><FONT SIZE=2>必选。<A HREF="0.htm#defStringExpression">字符串表达式</A>，指明要打开的文件名称。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>iomode</b></FONT></TD>
+		<TD><FONT SIZE=2>可选。输入/输出模式，是下列两个常数之一：<b>ForReading</b> 或 <b>ForAppending</b>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>create</b></FONT></TD>
+		<TD><FONT SIZE=2>可选。Boolean 值，指出当指定的 <b>filename</b> 不存在时是否能够创建新文件。允许创建新文件时为 <b>True</b>，否则为 <b>False</b>。默认值为 <b>False</b>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>format</b></FONT></TD>
+		<TD><FONT SIZE=2>可选。三个 Tristate 值之一，指出以何种格式打开文件。若忽略此参数，则文件以 ASCII 格式打开。
+</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>设置</H5>
+<BLOCKQUOTE>
+<b>iomode</b> 参数可为下列设置之一：<p>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE=2><b>常数</b></font></TD>
+		<TD WIDTH=10%><FONT SIZE=2><b>值</b></font></TD>
+			<TD WIDTH="*"><FONT SIZE=2><b>描述</b></font></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>ForReading</B></font></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>1</font></TD>
+			<TD WIDTH= "*"><FONT SIZE=2>以只读模式打开文件。不能对此文件进行写操作。</font></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>ForAppending</B></font></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>8</font></TD>
+			<TD WIDTH="*"><FONT SIZE=2>打开文件并在文件末尾进行写操作。</font></TD></TR>
+</TABLE>
+
+<b>format</b> 参数可为下列设置之一：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE=2><b>常数</b></font></TD>
+		<TD WIDTH=10%><FONT SIZE=2><b>值</b></font></TD>
+			<TD WIDTH="*"><FONT SIZE=2><b>描述</b></font></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><b>TristateUseDefault</b></font></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>-2</font></TD>
+			<TD WIDTH="*"><FONT SIZE=2>以系统默认格式打开文件。</font></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><b>TristateTrue</b></font></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>-1</font></TD>
+			<TD WIDTH= "*"><FONT SIZE=2>以 Unicode 格式打开文件。</font></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><b>TristateFalse</b></font></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>&nbsp;0</font></TD>
+			<TD WIDTH="*"><FONT SIZE=2>以 ASCII 格式打开文件。</font></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+以下代码举例说明如何使用 <b>OpenTextFile</b> 方法在文件末尾添加文本：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=2>Sub OpenTextFileTest
+  Const ForReading = 1, ForWriting = 2, ForAppending = 3
+  Dim fs, f
+  Set fs = CreateObject("Scripting.FileSystemObject")
+  Set f = <FONT COLOR="#FF0000">fs.OpenTextFile(</FONT>"c:\testfile.txt"<FONT COLOR="#FF0000">,</FONT> ForAppending<FONT COLOR="#FF0000">,</FONT>TristateFalse<FONT COLOR="#FF0000">)</FONT>
+  f.Write "嗨，你好！"
+  f.Close
+End Sub
+</FONT></PRE></BLOCKQUOTE>
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

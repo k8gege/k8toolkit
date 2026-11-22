@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>Raise 方法</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="Raise 方法"><META NAME="Description" CONTENT="Raise 方法"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Raise 方法</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE>
+<FONT SIZE="2"><P><A HREF="356.htm">请参阅</A>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="355.htm">应用于</A></FONT>
+<hr noshade size=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>生成<A HREF="0.htm#defRTErr">运行时错误</A>。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b><b>.Raise(</b><b>number</b><b>, </b><b>source</b><b>, </b><b>description</b><b>, </b><b>helpfile</b><b>, </b><b>helpcontext</b><b>)</b><P>
+ <b>Raise</b> 方法的语法有以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>object</b></FONT></TD>
+		<TD><FONT SIZE="2">应为 <b>Err</b> 对象。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>number</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>Long</b> 整数子类型，标识错误性质。VBScript 错误（有 VBScript 定义和用户定义两种错误）的范围在 0-65535 之间。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>source</b></FONT></TD>
+		<TD><FONT SIZE="2"> 命名最初产生错误的对象或应用程序的<A HREF="0.htm#defStringExpression">字符串表达式</A>。当为 Automation 对象设置此属性时，请使用窗体 <b>project</b><b>.</b><b>class</b>。如未作任何指定，则使用当前 VBScript 项目的程序设计 ID。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>description</b></FONT></TD>
+		<TD><FONT SIZE="2">描述错误的字符串表达式。如未指定，则检查 <b>number</b> 的值。如可将其映射为 VBScript 运行时错误代码，则将 VBScript 提供的字符串作为 <b>description</b> 使用。如没有与 <b>number</b> 对应的 VBScript 错误，则使用通用错误信息。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>helpfile</b></FONT></TD>
+		<TD><FONT SIZE="2">Help 文件的完整合法的路径，在该 Help 文件中可找到此错误的帮助信息。如未指定，则 VBScript 将使用 VBScript Help 文件的完整合法的驱动器、路径和文件名。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>helpcontext</b></FONT></TD>
+		<TD><FONT SIZE="2">上下文 ID，标识 <b>helpfile</b> 中提供错误帮助的主题。如果省略，则使用与 <b>number</b> 属性对应的错误的 VBScript Help 文件上下文 ID（如果存在）。</FONT></TD></TR>
+</TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>除了 <b>number</b> 以外的所有参数都是可选的。如果使用 <b>Raise</b>，而不指定某些参数，且 <b>Err</b> 对象的属性设置含有未清除的值，则这些值将成为错误的值。<P>
+在 <A HREF="0.htm#defOLEAutomationObject">Automation 对象</A>中设置错误代码的 <b>number</b> 属性时，请向常数 <b>vbObjectError</b> 添加错误代码编号。例如，要生成错误号 1050，可将 <b>number</b> 属性赋值为 <b>vbObjectError</b> + 1050 。</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

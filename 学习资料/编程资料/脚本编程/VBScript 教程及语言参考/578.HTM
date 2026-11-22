@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>For Each...Next 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="In,For,Each,Next,循环,Exit For,程序控制,控制结构,重复指令,指令重复,数组重复指令,集合重复指令,指令,数组,集合"><META NAME="Description" CONTENT="For Each...Next 语句"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>For Each...Next 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><P><A HREF="579.htm">请参阅</A></FONT>
+<HR NOSHADE SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>对<A HREF="0.htm#defArray">数组</A>或<A HREF="0.htm#defCollection">集合</A>中的每个元素重复执行一组语句。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>For Each</b> <b>element </b><b>In</b> <b>group</b><BR>
+    [<b>statements</b>]<BR>
+    [<b>Exit For</b>]<BR>
+    [<b>statements</b>]<BR>
+<b>Next</b> [<b>element</b>]<P>
+ <b>For Each...Next</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>element</b></FONT></TD>
+<TD><FONT SIZE="2">用来枚举集合或数组中所有元素的<A HREF="0.htm#defVariable">变量</A>。对于集合，<b>element</b> 可能是 <b>Variant</b> 变量、通用 <b>Object</b> 变量或任意指定的 <A HREF="0.htm#defOLEAutomationObject">Automation 对象</A>变量。对于数组，<b>element</b> 只能是 <b>Variant</b> 变量。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>group</b></FONT></TD>
+<TD><FONT SIZE="2">对象集合或数组的名称。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>statements</b></FONT></TD>
+<TD><FONT SIZE="2">对于 <b>group</b> 中的每一项执行的一条或多条语句。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>如果 <b>group</b> 中有至少一个元素，就会进入 <b>For Each</b> 块执行。一旦进入循环，便首先对 <b>group</b> 中第一个元素执行循环中的所有语句。只要 <b>group</b> 中还有其他的元素，就会对每个元素执行循环中的语句。当 <b>group</b> 中的没有其他元素时退出循环，然后从 <b>Next</b> 语句之后的语句继续执行。<P>
+ <b>Exit For</b> 只能用于 <b>For Each...Next</b> 或 <b>For...Next</b> 控制结构中，提供另一种退出循环的方法。可在循环的任意位置放置任意个 <b>Exit For</b> 语句。<b>Exit For</b> 经常和条件判断语句一起使用（例如 <b>If...Then</b>），并立即将控制权转移到 <b>Next</b> 之后的语句。<P>
+可以将一个 <b>For Each...Next</b> 循环放置在另一个之中，组成嵌套式 <b>For Each...Next</b> 循环。但是每个循环的 <b>element</b> 必须是唯一的。
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR><TR>
+<TD VALIGN=TOP><FONT SIZE="2"><b>注意</B>  如果省略 <b>Next</b> 语句中的 <b>element</b>，则程序仍会象已包含它一样继续执行。如果 <b>Next</b> 语句在其相应的 <b>For</b> 语句之前出现，则会产生错误。</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE></BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>CreateObject 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="对象,;CreateObject 函数,;对象变量,;创建对象,;对象, 创建,;变量, 对象,;创建 OLE Automation 对象,;OLE Automation 对象, 创建,;变量,;OLE Automation 对象,"><META NAME="Description" CONTENT="CreateObject 函数"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>
+CreateObject 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="84.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>创建并返回对 <a href="0.htm#defOLEAutomationObject">Automation 对象</a>的引用。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>CreateObject(</b><b>class</b><b>)</b><P>
+ <b>class</b> 参数使用语法 <b>servername.typename</b>，有以下部分： <P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>servername</b></FONT></TD>
+		<TD><FONT SIZE="2">提供对象的应用程序名称。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>typename</b></FONT></TD><TD><FONT SIZE="2">要创建的对象类型或类。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>Automation 服务器至少提供一种对象类型。例如，字处理应用程序可以提供应用程序对象、文档对象和工具条对象。<P>
+
+要创建 Automation 对象，将 <b>CreateObject</b> 函数返回的对象赋值给某对象变量：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" size=2>Dim ExcelSheet
+Set ExcelSheet = <FONT COLOR="#FF0000">CreateObject(</FONT>"Excel<FONT COLOR="#FF0000">.</FONT>Sheet"<FONT COLOR="#FF0000">)</FONT>
+</FONT></PRE>
+</BLOCKQUOTE>
+上述代码启动创建对象（在此实例中，是 Microsoft Excel 电子表格）的应用程序。对象创建后，就可以在代码中使用定义的对象变量引用此对象。在下面的样例中，可使用对象变量、<FONT FACE="Courier New" SIZE="2">ExcelSheet</FONT> 和其他 Excel 对象，包括 Application  对象和 Cells 集合访问新对象的属性和方法。例如：<P>
+
+<BLOCKQUOTE>
+<PRE><FONT FACE="宋体" size=2>' 通过 Application 对象使 Excel 可见。
+ExcelSheet.Application.Visible = True
+' 在工作表的第一个单元中放置文本。
+ExcelSheet.Cells(1,1).Value = "这是 A 列第一行"
+' 保存工作表。
+ExcelSheet.SaveAs "C:\DOCS\TEST.XLS"
+' 在 Application 对象中使用 Quit 方法退出 Excel。
+ExcelSheet.Application.Quit
+' 释放对象变量。
+Set ExcelSheet = Nothing
+</FONT></PRE></BLOCKQUOTE>
+</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

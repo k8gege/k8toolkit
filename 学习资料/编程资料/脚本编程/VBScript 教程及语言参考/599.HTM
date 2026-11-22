@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>Sub 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="As,Sub 语句,ByRef,ByVal,Public,End Sub,Private,Exit Sub,过程,sub 过程,过程 sub,参数传递,创建过程,递归过程,过程,参数"><META NAME="Description" CONTENT="Sub 语句"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Sub 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A>     <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p><A HREF="600.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>声明 <b>Sub</b> 过程的名称、参数以及构成其主体的代码。</BLOCKQUOTE>
+
+<H5>语法</H5>
+
+<BLOCKQUOTE>[<B>Public</B> | <B>Private</B>] <b>Sub</b> <b>name</b> [<b>(</b><b>arglist</b><b>)</b>] <BR> 
+    [<b>statements</b>]<BR>
+    [<b>Exit Sub</b>]<BR> 
+    [<b>statements</b>]<BR>
+<b>End Sub</b><P>
+
+ <b>Sub</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>Public</b></FONT></TD>
+		<TD><FONT SIZE="2">表示 <b>Sub</b> 过程可被所有 Script 中的所有其他过程访问。</FONT></TD></TR>
+<TR VALIGN=TOP>
+
+	<TD><FONT SIZE="2"><b>Private</b></FONT></TD>
+		<TD><FONT SIZE="2">表示 <b>Sub</b> 过程只可被声明该过程的 Script 中的其他过程访问。</FONT></TD></TR>
+
+<!--TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>Static</b></FONT></TD>
+		<TD><FONT SIZE=2>Indicates that the <b>Sub</b> procedure's local variables are preserved between calls.  The <b>Static</b> attribute doesn't affect variables that are declared outside the <b>Sub</b>, even if they are used in the procedure.</FONT></TD></TR-->
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>name</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>Sub</b> 的名称，遵循标准<A HREF="0.htm#defVariable">变量</A>命名约定。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+		<TD><FONT SIZE="2"><b>arglist</b></FONT></TD>
+			<TD><FONT SIZE="2">代表在调用时要传递给 <b>Sub</b> 过程的参数的变量列表。用逗号隔开多个变量。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>statements</b></FONT></TD>
+		<TD><FONT SIZE="2">在 <b>Sub</b> 过程主体内所执行的任何语句组。</FONT></TD></TR>
+</TABLE><P>
+
+ <b>arglist</b> 参数包含下列语法和部分：<P>
+[<b>ByVal</b> | <b>ByVal</b>] <b>varname</b>[<b>( )</b>]<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>ByVal</b></FONT></TD>
+<TD><FONT SIZE="2">表示该参数<A HREF="0.htm#defByValue">按值</A>传递。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>ByRef</b></FONT></TD>
+<TD><FONT SIZE="2">表示该参数<A HREF="0.htm#defByReference">按引用</A>传递。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>varname</b></FONT></TD>
+<TD><FONT SIZE="2">代表参数的变量名称，遵循标准变量命名约定。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>如没有显式地指定使用 <B>Public</B> 或 <B>Private</B>，则 <b>Sub</b> 过程默认为公用，即它们对于 Script 中的所有其他过程都是可见的。<B>Sub</B> 过程中局部变量的值在调用过程中不被保留。<P>
+所有可执行代码必须包含于<A HREF="0.htm#defProcedure">过程</A>中。不能在另一个 <b>Sub</b> 或 <b>Function</b> 过程中定义一个 <b>Sub</b> 过程。<P>
+使用 <b>Exit Sub </b>语句可以立即从 <b>Sub</b> 过程中退出。程序继续执行调用 <b>Sub</b> 过程的语句之后的语句。可以在 <b>Sub</b> 过程中任意位置出现任意个 <b>Exit Sub</b> 语句。<P>
+与 <b>Function</b> 过程相似之处是：<b>Sub</b> 过程是一个可以获取参数，执行一系列语句以及可改变其参数的值的独立过程。而与 <b>Function</b> 过程不同之处是：Function 过程可以返回值，而 <b>Sub</b> 过程不能用于表达式中。<P>
+可以使用过程名并跟随相应的参数列表来调用 <b>Sub</b> 过程。关于如何调用 <b>Sub</b> 过程的详细说明信息，请参阅 <b>Call</b> 语句。
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR>
+<TR><TD VALIGN=TOP><FONT SIZE="2"><b>小心</b>  <b>Sub</b> 过程可以是递归的，即该过程可以调用自己来完成某个给定的任务。但是递归可能会导致堆栈溢出。<!--The <b>Static</b> keyword usually is not used with recursive <b>Sub</b> procedures.--></FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+在 <b>Sub</b> 过程中使用的变量分为两类：一类是在过程内显式声明的，另一类则不是。在过程内显式声明的变量（使用 <b>Dim</b> 或等效方法）总是局部变量。对于那些没有在过程中显式声明的变量也是局部的，除非在该过程外更高级别的位置显式地声明它们。
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR>
+<TR><TD VALIGN=TOP><FONT SIZE="2"><b>小心</b>  过程可以使用没有在过程内显式声明的变量，但只要有任何 <A HREF="0.htm#defScriptLevel">script 级</A>定义的名称与之同名，就会产生名称冲突。如果过程中引用的未声明的变量与其他的过程、<A HREF="0.htm#defConstant">常数</A>或变量的名称相同，则会认为过程引用的是 Script 级的名称。显式声明变量可以避免这类冲突，使用 <b>Option Explicit</b> 语句可强制显式声明变量。</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE></BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

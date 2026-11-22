@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>Path 属性</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="Path 属性">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>Path 属性</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstoc.htm">语言参考</A> &nbsp;<BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 3</A> &nbsp;<P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="531.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="530.htm">应用于</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回指定文件、文件夹或驱动器的路径。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b>.<b>Path</b>
+
+<P><b>object</b> 应为 <b>File</b>、<b>Folder</b> 或 <b>Drive</b> 对象的名称。
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+对于驱动器，路径不包含根目录。例如，C 驱动器的路径是 C:，而不是 C:\。<p>
+以下代码举例说明如何使用 <b>Path</b> 属性：
+
+<BLOCKQUOTE><pre><font face="宋体" SIZE=2>Sub ShowFileAccessInfo(filespec)
+    Dim fs, d, f, s
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set f = fs.GetFile(filespec)
+    s = UCase(<font color="#FF0000">f.Path</font>) & vbCrLf
+    s = s & "创建时间： " & f.DateCreated & vbCrLf
+    s = s & "上次访问时间： " & f.DateLastAccessed & vbCrLf
+    s = s & "上次修改时间： " & f.DateLastModified  
+    MsgBox s, 0, "文件访问信息"
+End Sub</font></pre></BLOCKQUOTE>
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

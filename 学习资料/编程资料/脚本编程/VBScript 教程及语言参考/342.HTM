@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>MoveFile 方法</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="MoveFile 方法">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>MoveFile 方法</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2><A HREF="vbstoc.htm">语言参考</A><BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 3</A><P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="344.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="343.htm">应用于</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>将一个或多个文件从某位置移动到另一位置。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b>.<b>MoveFile</b> <b>source</b>, <b>destination</b> 
+
+<P><b>MoveFile</b> 方法的语法有以下部分：
+<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE=2><b>部分</b></FONT></TD>
+<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<tr valign=top><td><font size=2><b>object</b></font></td>
+<td><font size=2>必选。应为 <b>FileSystemObject</b> 的名称。</font></td></tr>
+<tr valign=top><td><font size=2><b>source</b></font></td>
+<td><font size=2>必选。要移动的文件的路径。<b>source</b> 参数字符串仅可在路径的最后一个组成部分中用通配符。</font></td></tr>
+<tr valign=top><td><font size=2><b>destination</b></font></td>
+<td><font size=2>必选。指定路径，表示要将文件移动到该目标位置。<b>destination</b> 参数不能包含通配符。</font></td></tr>
+
+</TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+如果 <b>source</b> 包含通配符或 <b>destination</b> 以路径分隔符 (\) 结束，则假定 <b>destination</b> 指定现有文件夹，将匹配文件移动到该文件夹中。否则，假定 <b>destination</b> 是要创建的目标文件。在任一种情况下，移动单个文件时，可能出现以下三种情况：
+<ul>
+<li>如果 <b>destination</b> 不存在，则进行文件移动。这是通常会发生的情况。
+<li>如果 <b>destination</b> 是已经存在的文件，则会出现错误。
+<li>如果 <b>destination</b> 是目录，则会出现错误。
+</ul>
+
+<p>如果在 <b>source</b> 使用通配符，但没有匹配文件时，也会出现错误。<b>MoveFile</b> 方法在遇到出现的第一个错误时停止。该方法不会撤消错误发生前所作的任何更改。
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade SIZE=2></TD></TR><TR>
+<TD VALIGN=TOP><FONT SIZE=2><b>重点</b> &nbsp;&nbsp;仅当操作系统支持时，此方法允许在卷之间移动文件。</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><hr noshade SIZE=2></TD></TR></TABLE>
+
+ 
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

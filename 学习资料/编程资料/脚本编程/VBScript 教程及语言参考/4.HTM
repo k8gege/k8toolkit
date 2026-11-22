@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+<TITLE>使用条件语句</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="CATEGORY" CONTENT="教程">
+
+<META NAME="Description" CONTENT="使用条件语句">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>使用条件语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstutor.htm">VBScript 教程</A> <BR>&nbsp;<A HREF="13.htm">上一页</A> | <A HREF="10.htm">下一页</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<P>
+<HR NOSHADE SIZE=1>
+
+<H5>控制程序执行</H5>
+<BLOCKQUOTE>
+使用条件语句和循环语句可以控制 Script 的流程。使用条件语句可以编写进行判断和重复操作的 VBScript 代码。在 VBScript 中可使用以下条件语句：
+<UL>
+<LI> <A HREF="582.htm" ><B>If...Then...Else</B></A> 语句
+<LI> <A HREF="595.htm"><b>Select Case</B></A> 语句
+</UL>
+</BLOCKQUOTE>
+
+<H5>使用 If...Then...Else 进行判断</H5>
+<BLOCKQUOTE>
+<B>If...Then...Else</B> 语句用于计算条件是否为 <B>True</B> 或 <B>False</B>，并且根据计算结果指定要运行的语句。通常，条件是使用比较运算符对值或变量进行比较的表达式。有关比较运算符的详细信息，请参阅<A HREF="224.htm" >比较运算符</A>。<B>If...Then...Else</B> 语句可以按照需要进行嵌套。<P>
+
+<H5>条件为 True 时运行语句</H5>
+
+要在条件为 <B>True</B> 时运行单行语句，可使用 <B>If...Then...Else</B> 语句的单行语法。下例示范了单行语法。请注意此例省略了关键字 <B>Else</B>。
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3> Sub FixDate()
+     Dim myDate
+     myDate = #2/13/95#
+     If myDate &lt; Now Then myDate = Now
+ End Sub
+</FONT></PRE></BLOCKQUOTE>
+
+要运行多行代码，必须使用多行（或块）语法。多行（或块）语法包含 <B>End If</B> 语句，如下所示：
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3> Sub AlertUser(value)
+     If value = 0 Then
+         AlertLabel.ForeColor = vbRed
+         AlertLabel.Font.Bold = True
+         AlertLabel.Font.Italic = True
+     End If
+ End Sub
+</FONT></PRE></BLOCKQUOTE>
+
+<H5>条件为 True 和 False 时分别运行某些语句</H5>
+
+可以使用 <B>If...Then...Else</B> 语句定义两个可执行语句块：条件为 <B>True</B> 时运行某一语句块，条件为 <B>False</B> 时运行另一语句块。
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3> Sub AlertUser(value)
+     If value = 0 Then
+         AlertLabel.ForeColor = vbRed
+         AlertLabel.Font.Bold = True
+         AlertLabel.Font.Italic = True
+     Else
+         AlertLabel.Forecolor = vbBlack
+         AlertLabel.Font.Bold = False
+         AlertLabel.Font.Italic = False
+     End If
+ End Sub
+</FONT></PRE></BLOCKQUOTE>
+
+<H5>对多个条件进行判断</H5>
+
+<b>If...Then...Else</b> 语句的一种变形允许您从多个条件中选择，即添加 <b>ElseIf</b> 子句以扩充 <b>If...Then...Else</b> 语句的功能，使您可以控制基于多种可能的程序流程。例如：
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3> Sub ReportValue(value)
+     If value = 0 Then
+         MsgBox value
+     ElseIf value = 1 Then
+         MsgBox value
+     ElseIf value = 2 then
+         Msgbox value
+     Else
+         Msgbox "数值超出范围！"
+     End If
+</FONT></PRE></BLOCKQUOTE>
+可以添加任意多个 <b>ElseIf</b> 子句以提供多种选择。使用多个 <b>ElseIf</b> 子句经常会变得很累赘。在多个条件中进行选择的更好方法是使用 <B>Select Case</B> 语句。
+</BLOCKQUOTE>
+
+<H5>使用 Select Case 进行判断</H5>
+<BLOCKQUOTE>
+<b>Select Case</b> 结构提供了 <b>If...Then...ElseIf</b> 结构的一个变通形式，可以从多个语句块中选择执行其中的一个。<b>Select Case</b> 语句提供的功能与 <b>If...Then...Else</b> 语句类似，但是可以使代码更加简练易读。<p>
+
+<b>Select Case</b> 结构在其开始处使用一个只计算一次的简单测试表达式。表达式的结果将与结构中每个 <b>Case</b> 的值比较。如果匹配，则执行与该 <b>Case</b> 关联的语句块：<p>
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3> Select Case Document.Form1.CardType.Options(SelectedIndex).Text
+    Case "MasterCard"
+        DisplayMCLogo
+        ValidateMCAccount
+    Case "Visa"
+        DisplayVisaLogo
+        ValidateVisaAccount
+    Case "American Express"
+        DisplayAMEXCOLogo
+        ValidateAMEXCOAccount
+    Case Else
+        DisplayUnknownImage
+        PromptAgain
+End Select
+</FONT></PRE></BLOCKQUOTE>
+请注意 <b>Select Case</b> 结构只计算开始处的一个表达式（只计算一次），而 <b>If...Then...ElseIf</b> 结构计算每个 <b>ElseIf</b> 语句的表达式，这些表达式可以各不相同。仅当每个 <b>ElseIf</b> 语句计算的表达式都相同时，才可以使用 <b>Select Case </b>结构代替 <b>If...Then...ElseIf</b> 结构。
+</BLOCKQUOTE>
+
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END-->
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>SerialNumber 属性</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="SerialNumber 属性">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>SerialNumber 属性</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstoc.htm">语言参考</A> &nbsp;<BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 3</A> &nbsp;<P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="537.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="536.htm">应用于</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回十进制序列号，用于唯一标识一个磁盘卷。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b>.<b>SerialNumber</b>
+
+<P><b>object</b> 应为 <b>Drive</b> 对象的名称。
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+可以使用 <b>SerialNumber</b> 属性以确保在可移动媒体驱动器中插入正确的磁盘。
+
+<p>以下代码举例说明如何使用 <b>SerialNumber</b> 属性：
+<BLOCKQUOTE><pre><font face="宋体" SIZE=2>Sub ShowDriveInfo(drvpath)
+    Dim fs, d, s, t
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set d = fs.GetDrive(fs.GetDriveName(fs.GetAbsolutePathName(drvpath)))
+    Select Case d.DriveType
+        Case 0: t = "未知"
+        Case 1: t = "可移动"
+        Case 2: t = "固定"
+        Case 3: t = "网络"
+        Case 4: t = "CD-ROM"
+        Case 5: t = "RAM 磁盘"
+    End Select
+    s = "驱动器 " & d.DriveLetter & ": - " & t
+    s = s & vbCrLf & "序列号： " & <font color="#FF0000">d.SerialNumber</font>
+    MsgBox s
+End Sub</font></pre></BLOCKQUOTE>
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

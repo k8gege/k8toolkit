@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>DateDiff 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT=""><META NAME="Description" CONTENT="DateDiff 函数"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>DateDiff 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><P>
+<A HREF="94.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>
+	返回两个日期之间的时间间隔。
+</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+	<b>DateDiff(</b><B>interval</B><B>,</B> <B>date1</B><B>, </B><B>date2</B> [<B>,</B><B>firstdayofweek</B>[<B>,</B> <B>firstweekofyear</B>]]<b>)</b><P>
+
+ <b>DateDiff</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>interval</B></FONT></TD>
+		<TD><FONT SIZE="2">必选。字符串表达式，表示用于计算 <B>date1</B> 和 <B>date2</B> 之间的时间间隔。有关数值，请参阅“设置”部分。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>date1, date2</B></FONT></TD>
+		<TD><FONT SIZE="2">必选。日期表达式。用于计算的两个日期。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>firstdayofweek</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。指定星期中第一天的常数。如果没有指定，则默认为星期日。有关数值，请参阅“设置”部分。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>firstweekofyear</B></FONT></TD>
+		<TD><FONT SIZE="2">可选。指定一年中第一周的常数。如果没有指定，则默认为 1 月 1 日所在的星期。有关数值，请参阅“设置”部分。</FONT></TD></TR>
+
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>设置</H5>
+<BLOCKQUOTE>
+ <B>interval</B> 参数可以有以下值：<p>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE="2"><b>设置</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>yyyy</B></FONT></TD>
+		<TD><FONT SIZE="2">年</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>q</B></FONT></TD>
+		<TD><FONT SIZE="2">季度</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>m</B></FONT></TD>
+		<TD><FONT SIZE="2">月</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>y</B></FONT></TD>
+		<TD><FONT SIZE="2">一年的日数</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>d</B></FONT></TD>
+		<TD><FONT SIZE="2">日</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>w</B></FONT></TD>
+		<TD><FONT SIZE="2">一周的日数</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>ww</B></FONT></TD>
+		<TD><FONT SIZE="2">周</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>h</B></FONT></TD>
+		<TD><FONT SIZE="2">小时</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>m</B></FONT></TD>
+		<TD><FONT SIZE="2">分钟</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE="2"><B>s</B></FONT></TD>
+		<TD><FONT SIZE="2">秒</FONT></TD></TR>
+</TABLE><p>
+ <B>firstdayofweek</B> 参数可以有以下值：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>常数</b></FONT></TD>
+	<TD WIDTH=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbUseSystem</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">0</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">使用区域语言支持 (NLS) API 设置。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbSunday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">1</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">星期日（默认）</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbMonday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">2</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">星期一</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbTuesday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">3</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">星期二</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbWednesday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">4</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">星期三</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbThursday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">5</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">星期四</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbFriday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">6</FONT></TD>
+	<TD WIDTH=87%><FONT SIZE="2">星期五</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbSaturday</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">7</FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2">星期六</FONT></TD></TR>
+</TABLE><p>
+
+ <B>firstweekofyear</B> 参数可以有以下值：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>常数</b></FONT></TD>
+	<TD WIDTH=10%><FONT SIZE="2"><b>值</b></FONT></TD>
+	<TD WIDTH=75%><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbUseSystem</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">0</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">使用区域语言支持 (NLS) API 设置。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbFirstJan1</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">1</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">由 1 月 1 日所在的星期开始（默认）。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbFirstFourDays</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">2</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">由在新年中至少有四天的第一周开始。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><b>vbFirstFullWeek</b></FONT></TD>
+	<TD ALIGN=CENTER WIDTH=10%><FONT SIZE="2">3</FONT></TD>
+	<TD WIDTH=85%><FONT SIZE="2">由在新的一年中第一个完整的周开始。</FONT></TD></TR>
+</TABLE>
+
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+<b>DateDiff</b> 函数用于判断在两个日期之间存在的指定时间间隔的数目。例如可以使用 <b>DateDiff</b> 计算两个日期相差的天数，或者当天到当年最后一天之间的星期数。<p>
+要计算 <B>date1</B> 和 <B>date2</B> 相差的天数，可以使用“一年的日数”（“y”）或“日”（“d”）。当 <B>interval </B>为“一周的日数”（“w”）时，<b>DateDiff</b> 返回两个日期之间的星期数。如果 <B>date1</B> 是星期一，则 <b>DateDiff</b> 计算到 <B>date2</B> 之前星期一的数目。此结果包含 <B>date2</B> 而不包含 <B>date1</B>。如果 <B>interval</B> 是“周”（“ww”），则 <b>DateDiff</b> 函数返回日历表中两个日期之间的星期数。函数计算 <B>date1</B> 和 <B>date2</B> 之间星期日的数目。如果 <B>date2</B> 是星期日，<b>DateDiff</b> 将计算 <B>date2</B>，但即使 <B>date1</B> 是星期日，也不会计算 <B>date1</B>。<p>
+如果 <B>date1</B> 晚于 <B>date2</B>，则 <b>DateDiff</b> 函数返回负数。<p>
+ <B>firstdayofweek</B> 参数会对使用“w”和“ww”间隔符号的计算产生影响。<p>
+如果 <B>date1</B> 或 <B>date2</B> 是日期文字，则指定的年度会成为日期的固定部分。但是如果 <B>date1</B> 或 <B>date2</B> 被包括在引号 (" ") 中并且省略年份，则在代码中每次计算 <B>date1</B> 或 <B>date2</B> 表达式时，将插入当前年份。这样就可以编写适用于不同年份的程序代码。<p>
+在 <B>interval </B>为“年”（“yyyy”）时，比较 12 月 31 日和来年的 1 月 1 日，虽然实际上只相差一天，<b>DateDiff</b> 返回 1 表示相差一个年份。
+
+</BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

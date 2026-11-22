@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>Const 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT=""><META NAME="Description" CONTENT="Const 语句"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Const 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p>
+<A HREF="567.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>
+声明用于代替文字值的<A HREF="0.htm#defConstant">常数</A>。
+</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+[<b>Public</b> | <b>Private</b>]<b> Const</b> <b>constname</b> = <b>expression</b><P>
+
+ <b>Const</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>Public</B></FONT></TD>
+<TD><FONT SIZE="2">可选。该关键字用于在 <A HREF="0.htm#defScriptLevel">Script 级</A>中声明可用于所有 Script 中所有过程的常数。不允许在过程中使用。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><B>Private</B></FONT></TD>
+<TD><FONT SIZE="2">可选。该关键字用于在 Script 级中声明只可用在声明所在的 Script 中的常数。不允许在过程中使用。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>constname</b></FONT></TD>
+<TD><FONT SIZE="2">必选。常数的名称，根据标准的<A HREF="0.htm#defVariable">变量</A>命名约定。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>expression</b></FONT></TD>
+<TD><FONT SIZE="2">必选。文字或其他常数，或包括除 <B>Is</B> 外的所有算术操作符和逻辑操作符的任意组合。</FONT></TD></TR>
+
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+在默认情况下常数是公用的。过程中的常数总是专有的，其可见性无法改变。Script 中，可用 <B>Private</B> 关键字来改变 Script 级常数可见性的默认值。<P>
+
+要在同一行中声明若干个常数，可用逗号将每个常数赋值分开。用这种方法声明常数时，如果使用了 <B>Public</B> 或 <B>Private</B> 关键字，则该关键字对该行中所有常数都有效。<P>
+
+常数声明中不能使用变量、用户自定义的函数或 VBScript 内部函数（如 <b>Chr</b>)。按定义，它们不能是常数。另外也不能从含有操作符的表达式中创建常数，即只允许使用简单常数。在 <B>Sub</B> 或 <B>Function</B> 过程中声明的常数是该过程的局部常数。在过程外声明的常数是声明所在的 Script 中的全局常数。可以在任何使用表达式的地方使用常数。
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><HR noshade size=1></TD></TR><TR><TD VALIGN=TOP><FONT SIZE="2"><b>注意</B>  常数可以使 Script 更具可读性，且易于修改。在 Script 运行时，常数不会象变量那样无意中被改变。</FONT></TD></TR><TR><TD COLSPAN=2 VALIGN=TOP><HR noshade size=1></TD></TR></TABLE></BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

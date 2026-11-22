@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>CopyFolder 方法</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="CopyFolder 方法">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>CopyFolder 方法</B></FONT></TD>
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2><A HREF="vbstoc.htm">语言参考</A><BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 3</A><P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="272.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="271.htm">应用于</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>将文件夹从某位置递归复制到另一位置。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b>.<b>CopyFolder</b> <b>source</b>, <b>destination</b>[, <b>overwrite</b>]
+
+<P><b>CopyFolder</b> 方法的语法有以下部分：
+<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE=2><b>部分</b></FONT></TD>
+<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>object</b></FONT></TD>
+<TD><FONT SIZE=2>必选。应为 <b>FileSystemObject</b> 对象的名称。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>source</b></FONT></TD>
+<TD><FONT SIZE=2>必选。表示指定文件夹的字符串。要复制一个或多个文件夹时，可使用通配符。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>destination</b></FONT></TD>
+<TD><FONT SIZE=2>必选。表示目标位置的字符串，复制 <b>source</b> 文件夹或子文件夹到该位置。不允许用通配符。
+</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>overwrite</b></FONT></TD>
+<TD><FONT SIZE=2>可选。Boolean 值表明是否覆盖现有文件夹。如果为 <b>True</b>，则覆盖文件；如果为 <b>False</b>，则不覆盖文件。默认值是 <B>True</B>。
+</FONT></TD></TR>
+
+</TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+仅能在 <b>source</b> 参数的路径最后一个组成部分中使用通配符。例如，可以使用：
+
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=2>FileSystemObject.CopyFolder "c:\mydocuments\letters\*", "c:\tempfolder\"
+</FONT></PRE></BLOCKQUOTE> 
+但是，不可以使用：
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=2>FileSystemObject.CopyFolder "c:\mydocuments\*\*", "c:\tempfolder\"
+</FONT></PRE></BLOCKQUOTE> 
+如果 <b>source</b> 包含通配符或 <b>destination</b> 以路径分隔符 (\) 结束，则假定 <b>destination</b> 是现有文件夹，在该文件夹中复制匹配文件夹或子文件夹。否则，假定 <b>destination</b> 是要创建的文件夹。在任一种情况下，复制单个文件夹时，会发生如下四种情况。
+<UL>
+<li>如果 <b>destination</b> 不存在，则复制 <b>source</b> 文件夹和其所有内容。这是通常会发生的情况。
+<li>如果 <b>destination</b> 是已经存在的文件，则出现错误。 
+<li>如果 <b>destination</b> 是目录，则复制文件夹和其中的所有内容。如果在 <b>destination</b> 已经存在 <b>source</b> 包含的文件，且 <b>overwrite</b> 为 <b>False</b>，则会出现错误。否则，复制该文件覆盖现有文件。
+<li>如果 <b>destination</b> 是只读目录，在向该目录复制现有只读文件，且 <b>overwrite</b> 为 <b>False</b> 时，就会出现错误。
+</UL>
+如果 <b>source</b> 使用通配符，但没有匹配文件时，也会出现错误。<p>
+<b>CopyFolder</b> 方法在遇到出现的第一个错误时停止。该方法不会撤消错误发生前所作的任何更改。
+
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

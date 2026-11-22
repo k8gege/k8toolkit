@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>DateSerial 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="DateSerial 函数,日期转换,日期"><META NAME="Description" CONTENT="DateSerial 函数"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>DateSerial 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+<p>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><P>
+<A HREF="98.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>对于指定的年、月、日，返回 <b>Date</b> 子类型的 <b>Variant</b>。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>DateSerial(</b><B>year</B><b>, </b><B>month</B><b>, </b><B>day</B><b>)</b><P>
+ <b>DateSerial</b> 函数的语法有以下参数：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE="2"><b>参数</b></FONT></TD>
+		<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>year</B></FONT></TD>
+		<TD><FONT SIZE="2">从 100 到 9999 之间的数字或<A HREF="0.htm#defNumericExpression">数值表达式</A>。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>month</B></FONT></TD>
+		<TD><FONT SIZE="2">任意数值表达式。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE="2"><B>day</B></FONT></TD>
+		<TD><FONT SIZE="2">任意数值表达式。</FONT></TD></TR>
+</TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>要指定日期，如 1991 年 12 月 31 日，<b>DateSerial</b> 函数中每个参数的取值范围都应该是可接受的；即日的取值应在 1 和 31 之间，月的取值应在 1 和 12 之间。但是，也可以使用表示某日之前或之后的年、月、日数目的数值表达式为每个参数指定相对日期。<P>
+以下样例中使用了数值表达式代替绝对日期。在这里，<b>DateSerial</b> 函数返回 1990 年 8 月 1 日之前十年 (1990 - 10) 零两个月 (8 - 2) 又一天 (1 - 1) 的日期：即 1980 年 5 月 31 日。<P>
+
+<BLOCKQUOTE><PRE><FONT FACE="宋体" size=2 COLOR="#FF0000">DateSerial(</FONT>1990 - 10<FONT COLOR="#FF0000">,</FONT> 8 - 2<FONT COLOR="#FF0000">,</FONT> 1 - 1<FONT COLOR="#FF0000">)</FONT>
+
+</PRE></BLOCKQUOTE>
+
+对于 <B>year</B> 参数，若取值范围是从 0 到 99，则被解释为 1900 到 1999 年。对于此范围之外的 <B>year</B> 参数，则使用四位数字表示年份（例如 1800 年）。<P>
+当任何一个参数的取值超出可接受的范围时，则会适当地进位到下一个较大的时间单位。例如，如果指定了 35 天，则这个天数被解释成一个月加上多出来的日数，多出来的日数取决于其年份和月份。但是如果参数值超出 -32,768 到 32,767 的范围，或者由三个参数指定（无论是直接还是通过表达式指定）的日期超出了可以接受的日期范围，就会发生错误。</BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

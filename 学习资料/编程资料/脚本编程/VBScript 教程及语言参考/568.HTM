@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>Dim 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="Dim 语句,Public 语句,Private 语句,声明数组,数组声明,分配存储空间,声明变量,存储空间分配,变量声明,声明动态数组,动态数组声明,数组,存储空间,变量,动态数组"><META NAME="Description" CONTENT="Dim 语句"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Dim 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p><A HREF="569.htm">请参阅</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>声明变量并分配存储空间。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>Dim</b> <b>varname</b>[<b>(</b>[<b>subscripts</b>]<b>)</b>][<b>, </b><b>varname</b>[<b>(</b>[<b>subscripts</b>]<b>)</b>]] <b>. . .</b><P>
+ <b>Dim</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>varname</b></FONT></TD>
+<TD><FONT SIZE="2">变量的名称，符合标准<A HREF="0.htm#defVariable">变量</A>命名约定。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>subscripts</b></FONT></TD>
+<TD><FONT SIZE="2"> 
+<A HREF="0.htm#defArray">数组</A>变量的维数，最多可以声明 60 维的数组。<b>subscripts</b> 参数使用以下语法：
+<P><b>upperbound </b>[<b>,</b><b>upperbound</b>] <b>. . .</b>
+<P>数组下界总是 0。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>用 <b>Dim</b> 声明的 <A HREF="0.htm#defScriptLevel">Script 级</A>变量可用于 Script 中的所有过程，<A HREF="0.htm#defProcLevel">过程级</A>变量只能用于过程中。<P>
+也可用带空圆括号的 <b>Dim</b> 语句来声明动态数组。声明动态数组后，可在过程内使用 <b>ReDim</b> 语句来定义该数组的维数和元素。如果试图重新定义在 <b>Dim </b>语句中已经显式指定维数的数组，则会发生错误。<P>
+在初始化变量时，数值变量被初始化为 0，字符串被初始化为零长度字符串 ("")。
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><HR noshade size=1></TD></TR><TR>
+<TD VALIGN=TOP><FONT SIZE="2"><b>提示</b>  在过程中使用 <b>Dim</b> 语句时，通常将 <b>Dim</b> 语句放在过程的开始处。</FONT></TD></TR><TR><TD COLSPAN=2 VALIGN=TOP><HR noshade size=1></TD></TR></TABLE></BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

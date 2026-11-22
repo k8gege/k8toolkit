@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>CreateTextFile 方法</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="CreateTextFile 方法">
+</HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>CreateTextFile 方法</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2><A HREF="vbstoc.htm">语言参考</A><BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A><P></FONT>
+</TD></TR>
+</TABLE>
+
+<FONT SIZE=2><P>
+<A HREF="278.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="277.htm">应用于</A></FONT>
+
+
+<HR noshade SIZE=2>
+<H5>描述</H5>
+<BLOCKQUOTE>创建指定文件并返回 <b>TextStream</b> 对象，该对象可用于读或写创建的文件。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b>.<b>CreateTextFile(</b><b>filename</b>[<b>,</b> <b>overwrite</b>[<b>,</b> <b>unicode</b>]]<b>)</b><P>
+<b>CreateTextFile</b> 方法的语法有以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE=2><b>部分</b></FONT></TD>
+		<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>object</b></FONT></TD>
+		<TD><FONT SIZE=2>必选。应为 <b>FileSystemObject</b> 或 <b>Folder</b> 对象的名称。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>filename</b></FONT></TD>
+		<TD><FONT SIZE=2>必选。<A HREF="0.htm#defStringExpression">字符串表达式</A>，指明要创建的文件。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>overwrite</b></FONT></TD>
+		<TD><FONT SIZE=2>可选。Boolean 值指明是否可以覆盖现有文件。如果可覆盖文件，该值为 <b>True</b>；如果不能覆盖文件，则该值为 <b>False</b> 。如果省略该值，则不能覆盖现有文件。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><b>unicode</b></FONT></TD>
+		<TD><FONT SIZE=2>可选。Boolean 值指明是否以 Unicode 或 ASCII 文件格式创建文件。如果以 Unicode 文件格式创建文件，则该值为 <b>True</b>；如果以 ASCII 文件格式创建文件，则该值为 <b>False</b>。如果省略此部分，则假定创建 ASCII 文件。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+以下代码举例说明如何使用 <b>CreateTextFile</b> 方法创建并打开文本文件：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=2>Sub CreateAfile
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set a = fs.<FONT COLOR="#FF0000">CreateTextFile(</FONT>"c:\testfile.txt"<FONT COLOR="#FF0000">,</FONT> True<FONT COLOR="#FF0000">)</FONT>
+    a.WriteLine("这是一个测试。")
+    a.Close
+End Sub
+</FONT></PRE></BLOCKQUOTE>
+对于 <b>filename</b> 已经存在的文件，如果 <b>overwrite</b> 参数为 <b>False</b>，或未提供此参数时，则会出现错误。
+</BLOCKQUOTE>
+
+<hr noshade SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

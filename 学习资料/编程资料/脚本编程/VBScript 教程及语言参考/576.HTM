@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>For...Next 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="For 语句,Next,Step,循环,计数器,Exit For,程序控制,控制结构,重复指令,指令重复,指令"><META NAME="Description" CONTENT="For...Next 语句"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>For...Next 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p>
+<A HREF="577.htm">请参阅</A></FONT>
+<hr noshade size=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>以指定次数重复执行一组语句。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+<b>For</b> <b>counter</b> <b>=</b> <b>start</b> <b>To</b> <b>end</b> [<b>Step</b> <b>step</b>]<BR>
+    [<b>statements</b>]<BR>
+    [<b>Exit For</b>]<BR>
+    [<b>statements</b>]<BR>
+<b>Next</b><p>
+
+ <b>For...Next</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>counter</b></FONT></TD>
+<TD><FONT SIZE="2">用做循环计数器的数值变量。这个变量不能是<A HREF="0.htm#defArray">数组</A>元素或用户自定义类型的元素。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>start</b></FONT></TD>
+<TD><FONT SIZE="2"><b>counter</b> 的初值。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>end</b></FONT></TD>
+<TD><FONT SIZE="2"><b>counter</b> 的终值。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>step</b></FONT></TD>
+<TD><FONT SIZE="2"><b>counter</b> 的步长。如果没有指定，则 <b>step</b> 的默认值为 1。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>statements</b></FONT></TD>
+<TD><FONT SIZE="2"><b>For</b> 和 <b>Next</b> 之间的一条或多条语句，将被执行指定次数。</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE><b>step</b> 参数可以是正数或负数。<b>step</b> 参数值决定循环的执行情况，如下所示：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>值</b></FONT></TD>
+<TD><FONT SIZE="2"><b>如果 ... 则循环执行</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">正数或 0	</FONT></TD>
+<TD><FONT SIZE="2"><b>counter</b> &lt;= <b>end</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">负数</FONT></TD>
+<TD><FONT SIZE="2"><b>counter</b> &gt;= <b>end</b></FONT></TD></TR>
+</TABLE>
+<P>
+当循环启动并且所有循环中的语句都执行后，<b>step</b> 值被加到 <b>counter</b> 中。这时，或者循环中的语句再次执行（基于循环开始执行时同样的测试），或者退出循环并从 <b>Next</b> 语句之后的语句继续执行。
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><HR noshade size=1></TD></TR><TR>
+<TD VALIGN=TOP><FONT SIZE="2"><b>提示</b>  在循环中改变 <b>counter</b> 的值，将会使程序代码的阅读和调试变得更加困难。</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><HR noshade size=1></TD></TR></TABLE>
+<b>Exit For</b> 只能用于 <b>For Each...Next</b> 或 <b>For...Next</b> 结构中，提供另一种退出循环的方法。可在语句中的任意位置放置任意个 <b>Exit For</b> 语句。<b>Exit For </b>经常和条件判断语句一起使用（例如 <b>If...Then</b>），并立即将控制权转移到 <b>Next</b> 之后的语句。<P>
+可以将一个 <b>For...Next</b> 循环放置在另一个 <b>For...Next</b> 循环中，组成嵌套循环。每个循环中的 <b>counter</b> 要使用不同的变量名。下面的结构是正确的：
+
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" size=2><FONT COLOR="#FF0000">For</FONT> I = 1 <FONT COLOR="#FF0000">To</FONT> 10
+    <FONT COLOR="#FF0000">For</FONT> J = 1 <FONT COLOR="#FF0000">To</FONT> 10
+        <FONT COLOR="#FF0000">For</FONT> K = 1 <FONT COLOR="#FF0000">To</FONT> 10
+        <b>. . .</b>
+        <FONT COLOR="#FF0000">Next</FONT>
+    <FONT COLOR="#FF0000">Next</FONT>
+<FONT COLOR="#FF0000">Next</FONT>
+</FONT></PRE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

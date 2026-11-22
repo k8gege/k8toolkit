@@ -1,0 +1,402 @@
+<HTML>
+<HEAD>
+<TITLE>编码约定</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="CATEGORY" CONTENT="Tutorial">
+<META NAME="Description" CONTENT="VBScript 编码约定">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>VBScript 编码约定</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstutor.htm">VBScript 教程</A> <BR>&nbsp;<A HREF="14.htm">上一页</A> | <A HREF="18.htm">下一页</A> <P></FONT>
+
+</TD></TR>
+</TABLE> 
+&nbsp;<BR>
+
+<HR NOSHADE SIZE=1>
+
+<H5>什么是编码约定？</H5>
+<BLOCKQUOTE>
+编码约定是帮助您使用 Microsoft Visual Basic Scripting Edition 编写代码的一些建议。编码约定包含以下内容：
+<UL>
+<LI>对象、变量和过程的命名约定
+<LI>注释约定
+<LI>文本格式和缩进指南
+</UL>
+
+使用一致的编码约定的主要原因是使 Script 或 Script 集的结构和编码样式标准化，这样代码易于阅读和理解。使用好的编码约定可以使源代码明白、易读、准确，更加直观且与其他语言约定保持一致。
+</BLOCKQUOTE>
+
+<H5>常数命名约定</H5>
+<BLOCKQUOTE>
+VBScript 的早期版本不允许创建用户自定义常数。如果要使用常数，则常数以变量的方式实现，且全部字母大写以和其他变量区分。常数名中的多个单词用下划线 (_) 分隔。例如：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3> USER_LIST_MAX
+ NEW_LINE
+</FONT></PRE></BLOCKQUOTE>
+这种标识常数的方法依旧可行，但您还可以选择其他方案，用 <a href="566.htm"><b>Const</b></a> 语句创建真正的常数。这个约定使用大小写混合的格式，并以“con”作为常数名的前缀。例如：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=3> conYourOwnConstant
+</FONT></PRE></BLOCKQUOTE>
+
+</BLOCKQUOTE>
+<H5>变量命名约定</H5>
+<BLOCKQUOTE>
+出于易读和一致性的目的，请在 VBScript 代码中使用以下变量命名约定：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR BGCOLOR=#DDDDDD VALIGN=TOP>
+	<TD><FONT SIZE=2><B>子类型</B></FONT></TD>
+	<TD><FONT SIZE=2><B>前缀</B></FONT></TD>
+	<TD><FONT SIZE=2><B>示例</B></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Boolean</FONT></TD>
+	<TD><FONT SIZE=2>bln</FONT></TD>
+	<TD><FONT SIZE=2>blnFound</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Byte</FONT></TD>
+	<TD><FONT SIZE=2>byt</FONT></TD>
+	<TD><FONT SIZE=2>bytRasterData</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Date (Time)</FONT></TD>
+	<TD><FONT SIZE=2>dtm</FONT></TD>
+	<TD><FONT SIZE=2>dtmStart</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Double</FONT></TD>
+	<TD><FONT SIZE=2>dbl</FONT></TD>
+	<TD><FONT SIZE=2>dblTolerance</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Error</FONT></TD>
+	<TD><FONT SIZE=2>err</FONT></TD>
+	<TD><FONT SIZE=2>errOrderNum</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Integer</FONT></TD>
+	<TD><FONT SIZE=2>int</FONT></TD>
+	<TD><FONT SIZE=2>intQuantity</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Long</FONT></TD>
+	<TD><FONT SIZE=2>lng</FONT></TD>
+	<TD><FONT SIZE=2>lngDistance</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Object</FONT></TD>
+	<TD><FONT SIZE=2>obj</FONT></TD>
+	<TD><FONT SIZE=2>objCurrent</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Single</FONT></TD>
+	<TD><FONT SIZE=2>sng</FONT></TD>
+	<TD><FONT SIZE=2>sngAverage</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>String</FONT></TD>
+	<TD><FONT SIZE=2>str</FONT></TD>
+	<TD><FONT SIZE=2>strFirstName</FONT></TD></TR>
+
+</TABLE></BLOCKQUOTE>
+<H5>变量作用域</H5>
+<BLOCKQUOTE>
+变量应定义在尽量小的作用域中。VBScript <A HREF="15.htm">变量</A>的作用域如下所示：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR BGCOLOR=#DDDDDD VALIGN=TOP>
+	<TD><FONT SIZE=2><B>作用域</B></FONT></TD>
+	<TD><FONT SIZE=2><B>声明变量处</B></FONT></TD>
+	<TD><FONT SIZE=2><B>可见性</B></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>过程级</FONT></TD>
+	<TD><FONT SIZE=2>事件、函数或子过程</FONT></TD>
+	<TD><FONT SIZE=2>在声明变量的过程中可见</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Script 级</FONT></TD>
+	<TD><FONT SIZE=2>HTML 页面的 HEAD 部分，任何过程之外</FONT></TD>
+	<TD><FONT SIZE=2>在 Script 的所有过程中可见</FONT></TD></TR>
+</TABLE>
+<H5>变量作用域前缀</H5>
+
+随着 Script 代码长度的增加，有必要快速区分变量的作用域。在类型前缀前面添加一个单字符前缀可以实现这一点，而不致使变量名过长。<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR BGCOLOR=#DDDDDD VALIGN=TOP>
+	<TD><FONT SIZE=2><B>作用域</B></FONT></TD>
+	<TD><FONT SIZE=2><B>前缀</B></FONT></TD>
+	<TD><FONT SIZE=2><B>示例</B></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>过程级</FONT></TD>
+	<TD><FONT SIZE=2>无</FONT></TD>
+	<TD><FONT SIZE=2>dblVelocity</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Script 级</FONT></TD>
+	<TD><FONT SIZE=2>s</FONT></TD>
+	<TD><FONT SIZE=2>sblnCalcInProgress</FONT></TD></TR>
+
+</TABLE>
+
+</BLOCKQUOTE>
+
+<H5>描述性变量名和过程名</H5>
+<BLOCKQUOTE>
+
+变量名或过程名的主体应使用大小写混合格式，并且尽量完整地描述其目的。另外，过程名应以动词开始，例如 InitNameArray 或 CloseDialog。<P>
+
+对于经常使用的或较长的名称，推荐使用标准缩写以使名称保持在适当的长度内。通常多于 32 个字符的变量名会变得难以阅读。使用缩写时，应确保在整个 Script 中保持一致。例如，在一个 Script 或 Script 集中随意切换 Cnt 和 Count 将造成混乱。
+</BLOCKQUOTE>
+
+<H5>对象命名约定</H5>
+<BLOCKQUOTE>
+下表列出了 VBScript 中可能用到的对象命名约定（推荐）：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR BGCOLOR=#DDDDDD VALIGN=TOP>
+	<TD><FONT SIZE=2><B>对象类型</B></FONT></TD>
+	<TD><FONT SIZE=2><B>前缀</B></FONT></TD>
+	<TD><FONT SIZE=2><B>示例</B></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>3D 面板</FONT></TD>
+	<TD><FONT SIZE=2>pnl</FONT></TD>
+	<TD><FONT SIZE=2>pnlGroup</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>动画按钮</FONT></TD>
+	<TD><FONT SIZE=2>ani</FONT></TD>
+	<TD><FONT SIZE=2>aniMailBox</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>复选框</FONT></TD>
+	<TD><FONT SIZE=2>chk</FONT></TD>
+	<TD><FONT SIZE=2>chkReadOnly</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>组合框、下拉列表框</FONT></TD>
+	<TD><FONT SIZE=2>cbo</FONT></TD>
+	<TD><FONT SIZE=2>cboEnglish</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>命令按钮</FONT></TD>
+	<TD><FONT SIZE=2>cmd</FONT></TD>
+	<TD><FONT SIZE=2>cmdExit</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>公共对话框</FONT></TD>
+	<TD><FONT SIZE=2>dlg</FONT></TD>
+	<TD><FONT SIZE=2>dlgFileOpen</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>框架</FONT></TD>
+	<TD><FONT SIZE=2>fra</FONT></TD>
+	<TD><FONT SIZE=2>fraLanguage</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>水平滚动条</FONT></TD>
+	<TD><FONT SIZE=2>hsb</FONT></TD>
+	<TD><FONT SIZE=2>hsbVolume</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>图像</FONT></TD>
+	<TD><FONT SIZE=2>img</FONT></TD>
+	<TD><FONT SIZE=2>imgIcon</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>标签</FONT></TD>
+	<TD><FONT SIZE=2>lbl</FONT></TD>
+	<TD><FONT SIZE=2>lblHelpMessage</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>直线</FONT></TD>
+	<TD><FONT SIZE=2>lin</FONT></TD>
+	<TD><FONT SIZE=2>linVertical</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>列表框</FONT></TD>
+	<TD><FONT SIZE=2>lst</FONT></TD>
+	<TD><FONT SIZE=2>lstPolicyCodes</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>旋钮</FONT></TD>
+	<TD><FONT SIZE=2>spn</FONT></TD>
+	<TD><FONT SIZE=2>spnPages</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>文本框</FONT></TD>
+	<TD><FONT SIZE=2>txt</FONT></TD>
+	<TD><FONT SIZE=2>txtLastName</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>垂直滚动条</FONT></TD>
+	<TD><FONT SIZE=2>vsb</FONT></TD>
+	<TD><FONT SIZE=2>vsbRate</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>滑块</FONT></TD>
+	<TD><FONT SIZE=2>sld</FONT></TD>
+	<TD><FONT SIZE=2>sldScale</FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>代码注释约定</H5>
+<BLOCKQUOTE>
+所有过程的开始部分都应有描述其功能的简要注释。这些注释并不描述细节信息（如何实现功能），这是因为细节有时要频繁更改。这样就可以避免不必要的注释维护工作以及错误的注释。细节信息由代码本身及必要的内部注释来描述。<P>
+
+当传递给过程的参数的用途不明显，或过程对参数的取值范围有要求时，应加以说明。如果过程改变了函数和变量的返回值（特别是通过参数引用来改变），也应在过程的开始部分描述该返回值。<P>
+
+过程开始部分的注释应包含以下区段标题。相关样例，请参阅后面的“格式化代码”部分。<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR BGCOLOR=#DDDDDD VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>区段标题</B></FONT></TD>
+	<TD><FONT SIZE=2><B>注释内容</B></FONT></TD>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2>目的</FONT></TD>
+	<TD><FONT SIZE=2>过程的功能（不是实现功能的方法）。</FONT></TD>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2>假设</FONT></TD>
+	<TD><FONT SIZE=2>其状态影响此过程的外部变量、控件或其他元素的列表。</FONT></TD>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2>效果</FONT></TD>
+	<TD><FONT SIZE=2>过程对每个外部变量、控件或其他元素的影响效果的列表。</FONT></TD>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2>输入</FONT></TD>
+	<TD><FONT SIZE=2>每个目的不明显的参数的解释。每个参数都应占据单独一行并有其内部注释。</FONT></TD>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2>返回</FONT></TD>
+	<TD><FONT SIZE=2>返回值的解释。</FONT></TD>
+</TABLE>
+
+请记住以下几点：
+<UL>
+<LI>每个重要的变量声明都应有内部注释，描述变量的用途。
+<LI>应清楚地命名变量、控件和过程，仅在说明复杂细节时需要内部注释。
+<LI>应在 Script 的开始部分包含描述该 Script 的概述，列举对象、过程、运算法则、对话框和其他系统从属物。有时一段描述运算法则的假码是很有用的。
+</UL>
+</BLOCKQUOTE>
+
+<H5>格式化代码</H5>
+<BLOCKQUOTE>
+应尽可能多地保留屏幕空间，但仍允许用代码格式反映逻辑结构和嵌套。以下为几点提示：
+<UL>
+<LI>标准嵌套块应缩进 4 个空格。
+<LI>过程的概述注释应缩进 1 个空格。
+<LI>概述注释后的最高层语句应缩进 4 个空格，每一层嵌套块再缩进 4 个空格。例如：
+</UL>
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE =3>
+ '*********************************************************
+ ' 目的：    返回指定用户在 UserList 数组中第一次出现的位置。
+ ' 输入：    strUserList():   所查找的用户列表。
+ '           strTargetUser:   要查找的用户名。
+ ' 返回：    strTargetUser 在 strUserList 数组中第一次出现时的索引。
+ '           如果目标用户未找到，返回 -1。
+ '*********************************************************
+
+ Function intFindUser (strUserList(), strTargetUser)
+     Dim i                     ' 循环计数器。
+     Dim blnFound	       ' 发现目标的标记。
+     intFindUser = -1
+     i = 0                     ' 初始化循环计数器。
+     Do While i &lt;= Ubound(strUserList) and Not blnFound
+         If strUserList(i) = strTargetUser Then 
+             blnFound = True   ' 标记设为 True。
+             intFindUser = i   ' 返回值设为循环计数器。
+         End If
+         i = i + 1             ' 循环计数器加 1。
+     Loop
+ End Function
+</FONT></PRE></BLOCKQUOTE></BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

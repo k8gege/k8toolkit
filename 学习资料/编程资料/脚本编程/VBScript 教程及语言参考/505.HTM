@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>IsReady 属性</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="IsReady 属性">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>IsReady 属性</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstoc.htm">语言参考</A> &nbsp;<BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 3</A> &nbsp;<P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="507.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="506.htm">应用于</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>如果指定的驱动器就绪，返回 <b>True</b>；否则返回 <b>False</b>。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b>.<b>IsReady</b>
+
+<P><b>object</b> 应为 <b>Drive</b> 对象的名称。
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+对于可移动媒体驱动器和 CD-ROM 驱动器，仅当插入相应的媒体并准备接受访问时，<b>IsReady</b> 返回 <b>True</b>。
+<p>以下代码举例说明如何使用 <b>IsReady</b> 属性：
+<BLOCKQUOTE><pre><font face="宋体" SIZE=2>Sub ShowDriveInfo(drvpath)
+    Dim fs, d, s, t
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set d = fs.GetDrive(drvpath)
+    Select Case d.DriveType
+        Case 0: t = "未知"
+        Case 1: t = "可移动"
+        Case 2: t = "固定"
+        Case 3: t = "网络"
+        Case 4: t = "CD-ROM"
+        Case 5: t = "RAM 磁盘"
+    End Select
+    s = "驱动器 " & d.DriveLetter & ": - " & t
+    If <font color="#FF0000">d.IsReady</font> Then 
+        s = s & vbCrLf & "驱动器已就绪。"
+    Else
+        s = s & vbCrLf & "驱动器未就绪。"
+    End If
+    MsgBox s
+End Sub</font></pre></BLOCKQUOTE>
+
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>CStr 函数</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="CStr 函数,字符串函数,文本转换,数字转换,字符串转换,文本,数字,字符串"><META NAME="Description" CONTENT="CStr 函数"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>CStr 函数</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> <P>
+<FONT SIZE="2">
+<A HREF="88.htm">请参阅</A></FONT>
+<HR NOSHADE SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回表达式，该表达式已被转换为 <b>String</b> 子类型的 <b>Variant</b>。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>CStr(</b><B>expression</B><b>)</b><P>
+ <B>expression</B> 参数是任意有效的表达式。</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>通常，可以使用子类型转换函数书写代码，以显示某些操作的结果应被表示为特定的数据类型，而不是默认类型。例如，使用 <b>CStr</b> 强制将结果表示为 <b>String</b>。<p>
+<b>CStr</b> 函数用于替代 <b>Str</b> 函数来进行从其他数据类型到 <b>String</b> 子类型的国际公认的格式转换。例如对十进制分隔符的识别取决于系统的<A HREF="0.htm#defLocale">区域</A>设置。<P>
+
+ <B>expression</B> 根据下表决定返回的数据：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>如果 <B>expression</B> 为</b></FONT></TD>
+<TD><FONT SIZE="2"><b>CStr 返回</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Boolean</b></FONT></TD>
+<TD><FONT SIZE="2"><B>字符串</B>，包含 <B>True</B> 或 <B>False</B>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Date</b></FONT></TD>
+<TD><FONT SIZE="2"><B>字符串</B>，包含系统的短日期格式的日期。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Null</b></FONT></TD>
+<TD><FONT SIZE="2">运行时错误。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Empty</b></FONT></TD>
+<TD><FONT SIZE="2">零长度<B>字符串</B> ("")。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Error</b></FONT></TD>
+<TD><FONT SIZE="2"><B>字符串</B>，包含跟随有错误号码的单词 Error。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2">其他数值</FONT></TD>
+<TD><FONT SIZE="2"><B>字符串</B>，包含此数字。</FONT></TD></TR></TABLE>
+</BLOCKQUOTE><p>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

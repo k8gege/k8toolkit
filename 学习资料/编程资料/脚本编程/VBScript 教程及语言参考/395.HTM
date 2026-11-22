@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>Err 对象</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="Err 对象,Error 语句,错误,对象,模拟错误,错误模拟"><META NAME="Description" CONTENT="Err 对象"></HEAD><BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Err 对象</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+
+</TD></TR>
+</TABLE>
+<FONT SIZE="2"><P>
+<A HREF="396.htm">请参阅</A>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  
+<A HREF="398.htm">属性</A>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  
+<A HREF="397.htm">方法</A></FONT>
+<hr noshade size=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>含有关于<A HREF="0.htm#defRTErr">运行时错误</A>的信息。接受生成和清除运行时错误的 <b>Raise</b> 和 <b>Clear</b> 方法。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>Err</b>[<b>.</b>{<b>property</b> | <b>method：</b>}]</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE> <b>Err</b> 对象的属性是由错误生成者设定的，如 Visual Basic、Automation 对象或 VBScript 程序员。<P>
+ <b>Err </b>对象的默认属性是 <b>number</b>。<b>Err.Number</b> 含有一个整数，且可由 <A HREF="0.htm#defOLEAutomationObject">Automation 对象</A>使用以返回 <A HREF="0.htm#defSCode">SCODE</A>。<P>
+当发生运行时错误时，<b>Err</b> 的属性由标识错误的唯一信息以及可用于处理它的信息填充。要在代码中生成运行时错误，请用 <b>Raise </b>方法。<P>
+在错误处理例程中的 <b>On Error Resume</b> <b>Next</b> 语句以及 <b>Exit Sub</b> 或 <b>Exit Function</b> 语句之后，<b>Err</b> 对象属性被重新设置为零或零长度字符串 ("")。<b>Clear</b> 方法可被用于显式地重新设置 <b>Err</b>。<P> <b>Err</b> 对象是具有全局<A HREF="0.htm#defScoping">作用域</A>的固有对象，无需在代码中创建其实例。</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

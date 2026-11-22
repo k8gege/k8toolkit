@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>GetDrive 方法</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="GetDrive 方法">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>GetDrive 方法</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2><A HREF="vbstoc.htm">语言参考</A><BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 3</A><P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="308.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="307.htm">应用于</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>返回与指定的路径中驱动器相对应的 <b>Drive</b> 对象。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b>.<b>GetDrive</b> <b>drivespec</b>
+
+<P><b>GetDrive</b> 方法的语法有以下部分：
+<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE=2><b>部分</b></FONT></TD>
+<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<tr valign=top><td><font size=2><b>object</b></font></td>
+<td><font size=2>必选。应为 <b>FileSystemObject</b> 的名称。</font></td></tr>
+<tr valign=top><td><font size=2><b>drivespec</b></font></td>
+<td><font size=2>必选。<b>drivespec</b> 可以是驱动器号 (c)、带冒号的驱动器号 (c:)、带有冒号与路径分隔符的驱动器号 (c:\) 或任何指定的网络共享 (\\computer2\share1)。</font></td></tr>
+</TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+对于网络共享，检查并确保该网络共享存在。<p>
+
+如果 <b>drivespec</b> 未遵从上述语法约定或不存在，则会出现错误。<p>
+
+要在普通路径字符串中调用 <b>GetDrive</b> 方法，请使用如下语句序列以获得可作为 <b>drivespec</b> 使用的字符串：
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=2>DriveSpec = GetDriveName(GetAbsolutePathName(Path))
+</FONT></PRE></BLOCKQUOTE>
+
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

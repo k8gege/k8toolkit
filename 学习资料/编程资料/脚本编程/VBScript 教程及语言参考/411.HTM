@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML><HEAD><TITLE>TextStream 对象</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT=""><META NAME="Description" CONTENT="TextStream 对象"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>TextStream 对象</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR></TABLE> 
+
+<FONT SIZE="2"><P>
+<A HREF="412.htm">请参阅</A>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="414.htm">属性</A>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="413.htm">方法</A>
+
+
+<HR noshade SIZE=1>
+<H5>描述</H5>
+<BLOCKQUOTE>有助于顺序访问文件。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>TextStream.</b>{<b>property</b> | <b>method</b>}<p>
+ <b>property</b> 和 <b>method</b> 参数可以是任何与 <b>TextStream</b> 对象相关联的属性和方法。请注意在实际使用时，<b>TextStream</b> 对象由代表从 <b>FileSystemObject</b> 返回的 <b>TextStream</b> 对象的变量取代。
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+在下列代码中，<FONT FACE="Courier New" SIZE="4">a</FONT> 是由 <b>FileSystemObject</b> 中的 <b>CreateTextFile</b> 方法返回的 <b>TextStream</b> 对象：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" size=2>
+Set fs = CreateObject("Scripting.FileSystemObject")
+Set a = fs.CreateTextFile("c:\testfile.txt", True)
+a.WriteLine("这是一次测试。")
+a.Close
+</FONT></PRE></BLOCKQUOTE>
+<b>WriteLine</b> 和 <b>Close</b> 是 <b>TextStream</b> 对象的两个方法。
+
+</BLOCKQUOTE>
+
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

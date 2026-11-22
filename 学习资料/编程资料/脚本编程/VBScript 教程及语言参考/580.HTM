@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>Function 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="As,ByVal,ByRef,Public,Private,Function 语句,过程,End Function,Exit Function,参数传递,创建过程,函数过程,声明过程,过程创建,过程函数,递归过程,过程声明,过程递归,参数,过程"><META NAME="Description" CONTENT="Function 语句"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>Function 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"> <A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE="2"><p><A HREF="581.htm">请参阅</A></FONT>
+<hr noshade size=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>声明 <b>Function</b> 过程的名称、参数以及构成其主体的代码。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE>
+[<B>Public</B> | <B>Private</B>] <b>Function</b> <b>name</b> [<b>(</b><b>arglist</b><b>)</b>]<BR>
+    [<b>statements</b>]<BR> 
+    [<b>name</b> <b>=</b> <b>expression</b>]<BR> 
+    [<b>Exit Function</b>] <BR> 
+    [<b>statements</b>]<BR> 
+    [<b>name</b> <b>=</b> <b>expression</b>]<BR>
+<b>End Function</b>
+<P><b>Function</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Public</b></FONT></TD>
+<TD><FONT SIZE="2">表示 <b>Function</b> 过程可被所有 Script 中的所有其他过程访问。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>Private</b></FONT></TD>
+<TD><FONT SIZE="2">表示 <b>Function</b> 过程只可被声明它的 Script 中的其他过程访问。</FONT></TD></TR>
+
+
+<!--TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>Static</b></FONT></TD>
+<TD><FONT SIZE=2>Indicates that the <b>Function</b> procedure's local variables are preserved between calls. The <b>Static</b> attribute doesn't affect variables that are declared outside the <b>Function</b>, even if they are used in the procedure.</FONT></TD></TR-->
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>name</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Function</b> 的名称，遵循标准的<A HREF="0.htm#defVariable">变量</A>命名约定。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>arglist</b></FONT></TD>
+<TD><FONT SIZE="2">代表调用时要传递给 <b>Function</b> 过程的参数的变量列表。用逗号隔开多个变量。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>statements</b></FONT></TD>
+<TD><FONT SIZE="2">在 <b>Function</b> 过程的主体中执行的任意语句组。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>expression</b></FONT></TD>
+<TD><FONT SIZE="2"><b>Function</b> 的返回值。</FONT></TD></TR></TABLE><P>
+ <b>arglist</b> 参数包含下列语法和部分：<P>
+[<b>ByVal</b> | <b>ByRef</b>] <b>varname</b>[<b>( )</b>]<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>ByVal</b></FONT></TD>
+<TD><FONT SIZE="2">表示该参数<A HREF="0.htm#defByValue">按值</A>传递。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>ByRef</b></FONT></TD>
+<TD><FONT SIZE="2">表示该参数<A HREF="0.htm#defByReference">按引用</A>传递。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>varname</b></FONT></TD>
+<TD><FONT SIZE="2">代表参数变量的名称；遵循标准的变量命名约定。</FONT></TD></TR></TABLE>
+
+</BLOCKQUOTE>
+
+<H5>说明</H5>
+<BLOCKQUOTE>如没有显式指定使用 <B>Public</B> 或 <B>Private</B>，则 <b>Function</b> 过程默认为公用，即它们对于 Script 中的所有其他过程是可见的。<B>Function</B> 中局部变量的值在对过程的调用中不被保留。<P>
+所有可执行代码必须包含于<A HREF="0.htm#defProcedure">过程</A>中。不能在另一个 <b>Function</b> 或 <b>Sub</b> 过程中定义 <b>Function</b> 过程。<P>
+使用 <b>Exit Function </b>语句可以从 <b>Function</b> 过程中立即退出。程序继续执行调用 <b>Function</b> 过程的语句之后的语句。可在 <b>Function</b> 过程的任何位置出现任意个 <b>Exit Function</b> 语句。<P>
+与 <b>Sub</b> 过程类似，<b>Function</b> 过程是可以获取参数、执行一系列语句并改变其参数值的独立过程。与 <b>Sub</b> 过程的不同之处是：当要使用由函数返回的值时，可以在表达式的右边使用 <b>Function</b> 过程，这与内部函数的使用方式一样，例如 <b>Sqr</b>、<b>Cos</b> 或 <b>Chr</b>。<P>
+在表达式中，可以通过使用函数名，并在其后用圆括号给出相应的参数列表来调用 <b>Function</b> 过程。有关调用 <b>Function</b> 过程的详细信息，请参阅 <b>Call</b> 语句。
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR><TR><TD VALIGN=TOP><FONT SIZE="2"><b>小心</b>  <b>Function</b> 过程可以是递归的，即该过程可以调用自身以完成某个给定的任务。但是，递归可能会导致堆栈溢出。 </FONT></TD></TR><TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+
+要从函数返回一个值，只需将值赋给函数名。在过程的任意位置都可以出现任意个这样的赋值。如果没有给 <b>name</b> 赋值, 则过程将返回一个默认值：数值函数返回 0，字符串函数返回零长度字符串 ("")。如果在 <b>Function</b> 中没有对象引用被指定给 <b>name</b>（使用 <b>Set</b>)，则返回对象引用的函数将返回 <A HREF="0.htm#defNothing"><b>Nothing</b></A>。 <P>
+下面的样例说明如何给一个名为 BinarySearch 的函数赋返回值。在此样例中，将 <b>False</b> 赋给了该函数名，表示没有找到某个值。
+<BLOCKQUOTE><PRE><FONT FACE="宋体" size=2>
+<FONT COLOR= "#FF0000">Function</FONT> BinarySearch(. . .)
+    <b>. . .</b>
+    ' 未找到该值。返回 False 值。
+    If lower &gt; upper Then
+        BinarySearch = False  
+        <FONT COLOR= "#FF0000">Exit Function</FONT> 
+    End If
+    <b>. . .</b>
+<FONT COLOR= "#FF0000">End Function</FONT>
+</FONT></PRE></BLOCKQUOTE>
+
+在 <b>Function</b> 过程中使用的变量分为两类：一类是在过程内显式声明的，另一类则不是。在过程内显式声明的变量（使用 <b>Dim</b> 或等效方法）总是过程的局部变量。被使用但没有在过程中显式声明的变量也是局部变量，除非在该过程外更高级别的位置显式声明它们。
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR><TR><TD VALIGN=TOP><FONT SIZE="2"><b>小心</b>  过程可以使用没有在过程内显式声明的变量，但如果在 Script 级中任何定义的名称与之相同，则会发生名称冲突。如果过程中使用的未声明的变量与另一个过程、<A HREF="0.htm#defConstant">常数</A>或变量的名称相同，则会认为过程使用的是 Script 级的名称。显式声明变量可以避免这类冲突。可以使用 <b>Option Explicit</b> 语句来强制显式声明变量。</FONT></TD></TR><TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR><TR><TD VALIGN=TOP><FONT SIZE="2"><b>小心</b>  VBScript 可能会重新排列数学表达式以提高内部效率。当 <b>Function</b> 过程修改数学表达式中变量的值时，应避免在同一表达式中使用该函数。</FONT></TD></TR><TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE></BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

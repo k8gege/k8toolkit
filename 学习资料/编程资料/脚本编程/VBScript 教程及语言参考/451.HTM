@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>Attributes 属性</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="Attributes">
+<META NAME="Description" CONTENT="Attributes 属性">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>Attributes 属性</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 3</A> <P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="453.htm">请参阅</A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="452.htm">应用于</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>设置或返回文件或文件夹的属性。可读写或只读（与属性有关）。</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>object</b>.<b>Attributes</b> [= <b>newattributes</b>]
+
+<p><b>Attributes</b> 属性的语法有以下部分：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE=2><b>部分</b></FONT></TD>
+<TD><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>object</b></FONT></TD>
+<TD><FONT SIZE=2>必选。应为 <b>File</b> 或 <b>Folder</b> 对象的名称。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><b>newattributes</b></FONT></TD>
+<TD><FONT SIZE=2>可选。如果指定此参数，则 <b>newattributes</b> 为指定的 <b>object</b> 的属性的新值。</FONT></TD></TR>
+</TABLE>
+
+</BLOCKQUOTE>
+<H5>设置</H5>
+<BLOCKQUOTE>
+<b>newattributes</b> 参数可为下列设置之一或下列设置的合理组合：<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE=2><b>常数</b></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2><b>值</b></FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2><b>描述</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>Normal</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>0</FONT></TD>
+			<TD WIDTH= "*"><FONT SIZE=2>普通文件。没有设置任何属性。</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>ReadOnly</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>1</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>只读文件。可读写。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>Hidden</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>2</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>隐藏文件。可读写。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>System</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>4</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>系统文件。可读写。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>Volume</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>8</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>磁盘驱动器卷标。只读。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>Directory</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>16</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>文件夹或目录。只读。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>Archive</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>32</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>上次备份后已更改的文件。可读写。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>Alias</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>64</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>链接或快捷方式。只读。</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>Compressed</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>128</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>压缩文件。只读。</FONT></TD></TR>
+
+</TABLE>
+</BLOCKQUOTE>
+<H5>说明</H5>
+<BLOCKQUOTE>
+以下代码举例说明如何使用 <b>Attributes</b> 属性：
+
+<BLOCKQUOTE><pre><font face="宋体" SIZE=2>Sub SetClearArchiveBit(filespec)
+  Dim fs, f, r
+  Set fs = CreateObject("Scripting.FileSystemObject")
+  Set f = fs.GetFile(fs.GetFileName(filespec))
+  If <font color="#FF0000">f.attributes</font> and 32 Then
+      r = MsgBox("已设置 Archive 位，是否确定清除？", vbYesNo, "设置/清除 Archive 位")
+      If r = vbYes Then 
+          <font color="#FF0000">f.attributes</font> = <font color="#FF0000">f.attributes</font> - 32
+          MsgBox "已清除 Archive 位。"
+      Else
+          MsgBox "保留 Archive 位设置。"
+      End If
+  Else
+      r = MsgBox("未设置 Archive 位。是否确定设置？", vbYesNo, "设置/清除 Archive 位")
+      If r = vbYes Then 
+          <font color="#FF0000">f.attributes</font> = <font color="#FF0000">f.attributes</font> + 32
+          MsgBox "已设置 Archive 位。"
+      Else
+          MsgBox "未设置 Archive 位。"
+      End If
+  End If
+End Sub</font></pre></BLOCKQUOTE>
+
+
+</BLOCKQUOTE>
+<hr noshade SIZE=2>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

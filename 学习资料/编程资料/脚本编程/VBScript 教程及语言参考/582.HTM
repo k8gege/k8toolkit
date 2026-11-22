@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>If...Then...Else 语句</TITLE> 
+<META HTTP-EQUIV="Content Type" CONTENT="text/html;  charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META NAME="CHARSET" CONTENT="gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="If 语句,Is 运算符,Else,Then,ElseIf,End If,TypeOf,程序控制,控制结构,条件执行,执行条件,选择,选项,执行"><META NAME="Description" CONTENT="If...Then...Else 语句"></HEAD>
+
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE="2">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE="2" COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE="5" COLOR=#660033><B>If...Then...Else 语句</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE="2"><A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 1</A> <P></FONT>
+</TD></TR>
+</TABLE> 
+<FONT SIZE="2"><p>
+<HR noshade SIZE=1>
+
+<H5>描述</H5>
+<BLOCKQUOTE>根据表达式的值有条件地执行一组语句。</BLOCKQUOTE>
+
+<H5>语法</H5>
+
+<BLOCKQUOTE><b>If</b> <b>condition </b><b>Then</b> <b>statements </b>[<b>Else</b> <b>elsestatements </b>]
+<P>或者，使用块形式的语法：
+<P><b>If</b> <b>condition </b><b>Then</b><BR>
+    [<b>statements</b>]<BR>
+[<b>ElseIf</b> <b>condition-n</b> <b>Then</b><BR>
+    [<b>elseifstatements</b>]] <b>. . .</b><BR>
+[<b>Else</b><BR>    [<b>elsestatements</b>]]<BR>
+<b>End If</b>
+<P> <b>If...Then...Else</b> 语句的语法包含以下部分：<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE="2"><b>部分</b></FONT></TD>
+<TD><FONT SIZE="2"><b>描述</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>condition</b></FONT></TD>
+<TD><FONT SIZE="2">一个或多个下面两种类型的表达式：<P><A HREF="0.htm#defNumericExpression">数值</A>或<A HREF="0.htm#defStringExpression">字符串表达式</A>，其运算结果是 <b>True</b> 或 <b>False</b>。如果 <b>condition</b> 是 
+<A HREF="0.htm#defNull"><B>Null</B></A>，则 <b>condition</b> 被视为 <b>False</b>。<P>
+ 形如 <b>TypeOf</b> <b>objectname</b> <b>Is</b> <b>objecttype</b> 的表达式。<b>objectname</b> 是任何对象的引用，而 <b>objecttype</b> 则是任何有效的对象类型。如果 <b>objectname</b> 是 <b>objecttype</b> 所指定的一种对象类型，则表达式为 <b>True</b>；否则为 <b>False</b>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>statements</b></FONT></TD>
+<TD><FONT SIZE="2">如果 <b>condition</b> 为 <b>True</b> 时，执行的一条或多条（以冒号分开）语句。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>condition-n</b></FONT></TD>
+<TD><FONT SIZE="2">同 <b>condition</b>。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>elseifstatements</b></FONT></TD>
+<TD><FONT SIZE="2">如果相关的 <b>condition-n</b> 为 <b>Ture</b>时，执行的一条或多条语句。</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE="2"><b>elsestatements</b></FONT></TD>
+<TD><FONT SIZE="2">如果前面没有 <b>condition</b> 或 <b>condition-n</b> 表达式为 <b>True</b> 时，执行的一条或多条语句。</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>说明</H5>
+
+<BLOCKQUOTE>对于短小简单的测试，可以使用单行形式（第一种语法）。但块形式（第二种语法）提供了比单行形式更强的结构化与适应性，比较容易阅读、维护及调试。
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><hr noshade size=1></TD></TR><TR>
+<TD VALIGN=TOP><FONT SIZE="2"><b>注意</B>  在单行语法中，可以执行多条语句作为 <b>If...Then</b> 判断的结果，但所有语句必须在同一行上并且以冒号分开，如下列语句所示：
+<BLOCKQUOTE>
+<PRE><FONT FACE="Courier New" size=2><FONT COLOR= "#FF0000">If</FONT> A &gt; 10 <FONT COLOR= "#FF0000">Then</FONT> A = A + 1 : B = B + A : C = C + B
+</FONT></PRE>
+</BLOCKQUOTE>
+</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><hr noshade size=1></TD></TR></TABLE>
+当程序运行到 <b>If</b> 块（第二种语法）时，将测试 <b>condition</b>。如果 <b>condition</b> 是 <b>True</b>，则执行 <b>Then</b> 之后的语句。如 <b>condition</b> 是 <b>False</b>，则每个 <b>ElseIf</b> 部分的条件式（如果有的话）会依次计算并加以测试。当找到某个为 <b>True</b> 的条件时，则其相关的 <b>Then</b> 之后的语句会被执行。如没有一个 <b>ElseIf</b> 语句是 <b>True</b>（或没有 <b>ElseIf</b> 子句），则将执行 <b>Else</b> 之后的语句。执行 <b>Then</b> 或 <b>Else</b> 之后的语句以后，将继续执行 <b>End If</b> 之后的语句。<P>
+
+<b>Else</b> 和 <b>ElseIf</b> 子句都是可选的。在 <b>If</b> 块中可以放置任意多个 <b>ElseIf</b> 子句，但是都必须在 <b>Else</b> 子句之前。<b>If</b> 块语句可以被嵌套，即被包含在另一个 <b>If</b> 块语句之中。<P>
+
+要判断某个语句是否是一个 <b>If</b> 块，可检查 <b>Then</b> 关键字之后是什么。如果在 <b>Then</b> 的同一行之后还有其他非注释的内容，则此语句就是单行形式的 <b>If</b> 语句。<P>
+<b>If</b> 块语句必须是某一行的第一条语句，并且必须以 <b>End If</b> 语句结束。</BLOCKQUOTE>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->
+
+<!--COPYRIGHT END--> 
+</FONT> </FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

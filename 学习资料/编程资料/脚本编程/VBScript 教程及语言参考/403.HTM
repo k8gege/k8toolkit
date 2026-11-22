@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>FileSystemObject 对象</TITLE> 
+<META NAME="CATEGORY" CONTENT="语言参考"> 
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="FileSystemObject 对象">
+</HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="宋体" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%>
+<TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=2 COLOR=#660033>Microsoft&reg; Visual Basic&reg; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>FileSystemObject 对象</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="vbstoc.htm">语言参考</A> <BR>
+<!--START PAGE START--><!--START PAGE END--><A HREF="16.htm">版本 2</A> <P></FONT>
+</TD></TR>
+</TABLE>
+
+<FONT SIZE=2><P>
+<A HREF="404.htm">请参阅</A> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="406.htm">属性</A> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="405.htm">方法</A></FONT>
+<HR noshade SIZE=2>
+
+<H5>描述</H5>
+<BLOCKQUOTE>提供对计算机文件系统的访问。
+</BLOCKQUOTE>
+
+<H5>语法</H5>
+<BLOCKQUOTE><b>Scripting.FileSystemObject</b></BLOCKQUOTE>
+
+
+<H5>说明</H5>
+<BLOCKQUOTE>
+以下代码举例说明如何使用 <b>FileSystemObject</b> 对象返回一个 <b>TextStream</b> 对象，此对象可以被读取或写入：
+<BLOCKQUOTE><PRE><FONT FACE="宋体" SIZE=2>Set fs = CreateObject("<FONT COLOR="#FF0000">Scripting.FileSystemObject</FONT>")
+Set a = fs.CreateTextFile("c:\testfile.txt", True)
+a.WriteLine("这是一个测试。")
+a.Close
+</FONT></PRE></BLOCKQUOTE>
+以上代码中，<b>CreateObject</b> 函数返回 <b>FileSystemObject</b> 对象 (<FONT FACE="Courier New" SIZE=2>fs</font>)。<b>CreateTextFile</b> 方法创建一个文件作为 <b>TextStream</b> 对象 (<FONT FACE="Courier New" SIZE=2>a</FONT>)，然后 <b>WriteLine</b> 方法在此文件中写入一行文本。最后 <b>Close</b> 方法刷新缓冲区并关闭文件。
+</BLOCKQUOTE>
+
+<hr noshade SIZE=2>
+<!--COPYRIGHT BEGIN--><!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
