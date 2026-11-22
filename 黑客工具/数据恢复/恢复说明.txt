@@ -1,0 +1,4 @@
+1 Winhex15 竟然也有很多恢复不了
+2 SuperRecovery 能恢复大部分文件 恢复MDB 用不了 可用EasyRecovery的文件修复功能来恢复
+3 EasyRecovery 也有很多文件不能恢复  EasyRecovery Access MDB文件恢复也不给力
+4 winimage 不一定能恢复

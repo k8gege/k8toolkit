@@ -1,0 +1,46 @@
+[About]
+Author = Puszek
+Font = Tahoma
+FontSize = 8
+
+[Language]
+Application.Title=BitSpirit
+TfrmUPNP=BitSpirit's UPNP Utility
+TfrmUPNP.Label1=Witaj w BitSpirit - w potê¿nym lecz ³atwym w u¿yciu Kliencie BitTorrent.
+TfrmUPNP.Label2=To narzêdzie przeprowadzi Ciê przez proces szukania czy masz dostêp do urz¹dzenia UPNP, czy nie.
+TfrmUPNP.Label3=Wykonaj 2 kroki tego kreatora:
+TfrmUPNP.Label4=1, Szukaj jakiekolwiek urz¹dzenie upnp ze wsparciem mapowania portów,
+TfrmUPNP.Label5=2, Dodaj lub Kasuj mapowanie portów w znalezionym urz¹dzeniu upnp.
+TfrmUPNP.Label6=Szukanie urz¹dzenia upnp:
+TfrmUPNP.lbFound=Przeszukiwanie...
+TfrmUPNP.btFindAgain=Ponów
+TfrmUPNP.Label8=Dodaj/Kasuj mapowanie portów routera:
+TfrmUPNP.lbLocalPort=Lokalny Port:
+TfrmUPNP.lbLocalIP=Lokalny Adres IP:
+TfrmUPNP.lbWANIP=Adres IP WAN:
+TfrmUPNP.lbWANPort=Port WAN:
+TfrmUPNP.lbDescription=Opis tego portu:
+TfrmUPNP.cbUseDefault=U¿yj domyœlnych ustawieñ WAN.
+TfrmUPNP.GroupBox1=Akcja:
+TfrmUPNP.rbAdd=Dodaj
+TfrmUPNP.rbDel=Kasuj
+TfrmUPNP.GroupBox2=Typ:
+TfrmUPNP.rbTCP=TCP
+TfrmUPNP.rbUDP=UDP
+TfrmUPNP.Label13=Wykonaj akcjê:
+TfrmUPNP.lbAction=Proszê siê przygotowaæ...
+TfrmUPNP.Panel1=
+TfrmUPNP.btPrev=<<P&oprzedni
+TfrmUPNP.btNext=&Nastêpny>>
+TfrmUPNP.btHelp=&Pomoc
+TfrmUPNP.btClose=&Zamknij
+TfrmUPNP.cbSkipICF=Porzuæ ICF (Internet Connection Firewall).
+AddPortmapOK=WAN: %s:%d --> LAN: %s:%d, Dodano!
+DelPortmapOK=WAN: %s:%d, Skasowano!
+AddPortmapER=WAN: %s:%d --> LAN: %s:%d, B³êdne!
+DelPortmapER=Kasownie WAN: %s:%d, Niewykonalne!
+StandBy=Proszê siê przygotowaæ...
+Finding=Przeszukiwanie...
+UPNPFound=Znaleziono Urz¹dzenie UPNP:
+UPNPNotFound=Nie znaleziono Urz¹dzenia UPNP!
+InvalidPort=B³êdny port! Poprawny port zawiera siê w zakresie 1 do 65535!

@@ -1,0 +1,45 @@
+[About]
+Author = X-Ray
+Font = 新細明體
+FontSize = 9
+
+[Language]
+Application.Title=BitSpirit
+TfrmUPNP=BitSpirit - UPnP 自動連接埠映射工具
+TfrmUPNP.Label1=歡迎使用BitSpirit ---- 強大而易於使用的 BT 客戶端
+TfrmUPNP.Label2=這個小工具將說明您檢查您是否擁有一個 UPnP 裝置
+TfrmUPNP.Label3=這個嚮導分兩步：
+TfrmUPNP.Label4=1．搜尋支持 UPnP 自動連接埠映射的裝置
+TfrmUPNP.Label5=2．在 UPnP 裝置上新增或刪除連接埠映射
+TfrmUPNP.Label6=搜尋 UPnP 裝置：
+TfrmUPNP.lbFound=正在搜尋 ......
+TfrmUPNP.btFindAgain=再次搜尋
+TfrmUPNP.Label8=在裝置上新增或刪除連接埠映射：
+TfrmUPNP.lbLocalPort=本機連接埠：
+TfrmUPNP.lbLocalIP=本機 IP 位址：
+TfrmUPNP.lbWANIP=區域網路地址：
+TfrmUPNP.lbWANPort=區域網路連接埠：
+TfrmUPNP.lbDescription=對該連接埠的描述：
+TfrmUPNP.cbUseDefault=使用預設的區域網路設定
+TfrmUPNP.GroupBox1=動作：
+TfrmUPNP.rbAdd=新增
+TfrmUPNP.rbDel=刪除
+TfrmUPNP.GroupBox2=類型：
+TfrmUPNP.rbTCP=TCP
+TfrmUPNP.rbUDP=UDP
+TfrmUPNP.Label13=正在執行指定的操作：
+TfrmUPNP.lbAction=請稍等 ......
+TfrmUPNP.btPrev=< 上一步(&P)
+TfrmUPNP.btNext=下一步(&N) >
+TfrmUPNP.btHelp=說明(&H)
+TfrmUPNP.btClose=關閉(&C)
+TfrmUPNP.cbSkipICF=忽略 ICF 防火牆 (Internet Connection Firewall)
+AddPortmapOK=區域網路：%s:%d -> 網際網路：%s:%d，成功新增！
+DelPortmapOK=區域網路：%s:%d，成功/刪除！
+AddPortmapER=區域網路：%s:%d -> 網際網路：%s:%d，新增失敗！
+DelPortmapER=區域網路： %s:%d，刪除失敗！
+StandBy=請稍等 ......
+Finding=正在搜尋 ......
+UPNPFound=找到 UPnP 裝置：
+UPNPNotFound=沒有找到 UPnP 裝置！
+InvalidPort=無效的連接埠！連接埠數值必須在 1 到 65535 之間！
