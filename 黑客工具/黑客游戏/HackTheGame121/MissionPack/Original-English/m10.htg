@@ -1,0 +1,93 @@
+m10.htg
+*EMAIL
+黑客的另一个尝试
+scancode@fake-mail-address.com
+{hacker}, 你做了一些优秀的东西！！
+
+现在我有一个更简单的工作。一些小丑攻击我
+的朋友们的网络服务器。我从日志中得到了他
+的IP{attack_ip}。 他没有进行太多的破坏，但
+却成功的下载了目前正在研究的一个密秘项目
+的源代码。
+
+我要你入侵他的计算机并销毁所有你找到的VBP
+文件。 我追踪了他几天终于知道了他的用户名。
+它是 {random_login}.
+
+Get in, do your job, and get out,
+
+<scancode>
+
+*END
+*INFECT_WITH_VIRUS
+ 0 
+*END
+*STEAL_FILE
+*END
+*DESTROY_FILE
+HackTheGame.vbp
+Decrypt.vbp
+Encrypt.vbp
+
+*END
+*FOLDER_STUCTURE
+--autoexec.bat
+--config.sys
+--msdos.sys
+--io.sys
+--command.com
++WINNT
+--Win.com
+--Font.ttf
+--Win.ini
++Website
+--index.htm
+--NASA_logo.jpg
+--frames.htm
+--flash.swf
++Telnet
+--{random_ip}
+--{random_ip}
+--{own_ip}
++Downloads
+--HackTheGame.vbp
+--Decrypt.vbp
+--Encrypt.vbp
++MyPhotos
+--defaced.jpg
+--thisisme.jpg
+--some_girl.gif
+
+*END
+*TELNET_LOGIN_SCREEN
+._________________________________________.
+|              ,!!!!!!!!!,                |
+|           .!!!!!!!!!!!!!!!!!.           |
+|         .!!!!!""       ""!!!!!.         |
+|        !!!!"  ,$$MMM$$,  "!!!!          |
+|       !!"  .$MMMMMMMMMMMMM$.  "!!       |
+|      !!  .MMMMMM"MMMMM"MMMMMM.  !!      |
+|     !! .MMMMMMM! !MMM! !MMMMMMM. !!     |
+|    !! .MMMMMMMM" "MMM" "MMMMMMMM. !!    |
+|   !$ .MMMMMMMM$   $M$   $MMMMMMMM. $!   |
+| .:$M $MMMMMMMM!   !M!   !MMMMMMMM$ M$:. |
+|:!$M!:MMMM"MMMM:   :M:   :MMMM"MMMM:!M$!:|
+|!$$M $MMM" $MMM!   !M!   !MMM$ "MMM$ M$$!|
+|$$M$ MM" "MMMMM$   $M$   $MMMMM" "MM $M$$|
+|$$M$ M$.$ $MMMMM. .MMM. .MMMMM$ $.$M $M$$|
+|!$$M MM$M$ MMMMM! !MMM! !MMMMM $M$M$ M$$!|
+|"!$M!:MMMM "MMMMM.MMMMM.MMMMM" MMMM:!M$!"|
+|!$$M MM$M$ MMMMM! !MMM! !MMMMM $M$M$ M$$!|
+|"!$M!:MMMM "MMMMM.MMMMM.MMMMM" MMMM:!M$!"|
+| "!$M $MMM$ "MMMMMMMMMMMMMMM" $MMM$ M$!" |
+|   "! "MMMM. "MMMMMMMMMMMMM" .MMMM" !"   |
+|       "MMMM$  ""MMMMMMM""  $MMMM"       |
+|        "MMMM$.    """    .$MMMM"        |
+|          "MMMM$,     ,$MMMM"            |
+|            "$MMMMMmmmMMMMM$"            |
+|               ""$$MMM$$""               |
+|-----------------------------------------|
+| PLEASE IDENTIFY YOURSELF TO THIS SYSTEM |
+'-----------------------------------------'
+
+*END

@@ -1,0 +1,95 @@
+m4.htg
+; mission file
+; by rampage
+;
+*EMAIL
+;first the title
+您好,
+;then the sender address
+rampage@fake-mail-address.com
+;
+您好 {hacker},
+
+This is Rampage.
+
+我从我的朋友chaozz那里知到了关于你的事。
+我现在非常需要您的帮助。
+
+几分钟前一群白痴用大量的DRDoS攻击我的服务器。
+幸好我很聪明的重定向到127.0.0.1。我的服务器在
+攻击中幸存了下来，但这事并没有结束。
+
+这是他们的主要IP地址 {attack_ip}.
+
+让我看看你是否能把他们的DRDoS项目(计划)发送
+给我。并在您窃取到它之后摧毁它，这样他们就不
+能再来伤害我们了。
+
+我帮你得到的登录数据:
+用户名是 {random_login}
+密码可能是 {random_password}
+
+现在就象我证明什么是真正的黑客吧！
+
+
+Greetz,
+发怒
+*END EMAIL
+;
+;
+*INFECT_WITH_VIRUS
+0
+;
+*STEAL_FILE
+drdos_zombie_v3.exe
+*END STEAL_FILE
+;
+*DESTROY_FILE
+drdos_zombie_v3.exe
+*END DESTROY_FILE
+;
+;
+*FOLDER_STUCTURE
+;+  = a folder
+;-- = a file in that folder
+;
+--autoexec.bat
+--command.com
+--config.sys
+--io.sys
+--msdos.sys
++WINNT
+--Win.com
+--bgates.txt
++MyDocs
+--drdos_zombie_v3.exe
+--Secret.doc
+--Passwords.doc
+--My Homework.txt
+--Taxes.doc
++Telnet_Logs
+--{random_ip}
+--{random_ip}
+--{own_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++Secret
+--Naked.jpg
+--lol.gif
+--dj_tiesto.png
+*END FOLDER_STRUCTURE
+;
+;now show what the command looks like when you TELNET into it
+*TELNET_LOGIN_SCREEN
+#####\             _             /#####
+#( )# |          _( )__         | #( )#
+##### |         /_    /         | #####
+#" "# |     ___m/I_ //_____     | #" "#
+# O # |____#-x.\ /++m\ /.x-#____| # O #
+#m.m# |   /" \ ///###\\\ / "\   | #m.m#
+#####/    ######/     \######    \#####
+-您好 DJ 黑客,
+*END TELNET_LOGIN_SCREEN

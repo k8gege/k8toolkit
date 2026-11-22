@@ -1,0 +1,102 @@
+m7.htg
+; mission file
+; by chaozz.nl
+;
+*EMAIL
+;first the title
+我们的游戏
+;then the sender address
+xgamer@xgamer.net
+;
+Ej {hacker} 伙计,
+
+你得到了higly的推荐，我迫切的需要一款游戏，
+我需要它来玩一场特定的在线游戏。
+
+我发现了一种方法可以得到它。游戏的创造者
+可能忘记了他们有一个不安全的服务器正在运行。
+IP地址为 {attack_ip}. 
+
+我不是一个伟大的黑客，但是我发现在了那台
+服务器的用户名为{random_login}
+需要窃取的文件名为AllWorkingSerials.txt
+我想让你用自己的方式来窃取到该文件。
+
+
+在此先谢谢你了，伙计！！！
+.     /| ________________
+O|===|* >_____XGAMER_____>
+'     \|
+
+*END EMAIL
+;
+;
+*INFECT_WITH_VIRUS
+0
+;
+*STEAL_FILE
+AllWorkingSerials.txt
+*END STEAL_FILE
+;
+*DESTROY_FILE
+0
+*END DESTROY_FILE
+;
+;
+*FOLDER_STUCTURE
+;+  = a folder
+;-- = a file in that folder
+;
+--autoexec.bat
+--config.sys
+--msdos.sys
+--io.sys
+--command.com
++WINDOWS
+--Win.com
+--Win.ini
+--System.ini
+--Explorer.exe
++LoggedTelnet
+--{random_ip}
+--{random_ip}
+--{own_ip}
++Bin
+--Battlefield1942_v16.exe
+--Command&Conquerer.exe
+--FarCry.zip
+--Doom3.rar
+--Halo2_setup.exe
++Private
+--ReadMe.txt
+--NewReleaseDates.txt
+--AllWorkingSerials.txt
+--ReleaseNotes.txt
+*END FOLDER_STRUCTURE
+;
+;now show what the command looks like when you TELNET into it
+*TELNET_LOGIN_SCREEN
+MMMMSSSSSSSSSSSSSSSSSMSS;.     .dMMMMSSSSSSMMSSSSSSSSS
+MMSSSSSSSMSSSSSMSSSSMMMSS."-.-":MMMMMSSSSMMMMSSMSSSMMS
+MSSSSSSSMSSSSMMMSSMMMPTMM;"-/\":MMM^"     MMMSSMMMSSMM
+SSSSSSSMMSSMMMMMMMMMP-.MMM :  ;.;P       dMMMMMMMMMP' 
+SSMSSSMMMSMMMMMMMMMP   :M;`:  ;.'+"""t+dMMMMMMMMMMP   
+MMMSSMMMMMMMMPTMMMM"""":P `.\// '    ""^^MMMMMMMP'    
+MMMMMMPTMMMMP="TMMMsg.      \/   db`c"  dMMMMMP"      
+MMMMMM  TMMM   d$$$b ^          /T$; ;-/TMMMP         
+MMMMM; .^`M; d$P^T$$b          :  $$ ::  "T(          
+MMMMMM   .-+d$$   $$$;         ; d$$ ;;  __           
+MMMMMMb   _d$$$   $$$$         :$$$; :MmMMMMp.        
+MMMMMM"  " T$$$._.$$$;          T$P.'MMMSSSSSSb.      
+MMM`TMb   -")T$$$$$$P'       `._ ""  :MMSSSMMP'       
+MMM / \    '  "T$$P"           /     :MMMMMMM         
+MMSb`. ;                      "      :MMMMMMM         
+MMSSb_lSSSb.      \ `.   .___.       MMMMMMMM         
+MMMMSSSSSSSSb.                     .MMMMMMMMM         
+MMMMMMMMMMMSSSb                  .dMMMMMMMMM'         
+MMMMMMMMMMMMMSS;               .dMMMMMMMMMMP          
+MMMMMMMMMMMMMb`;"-.          .dMMMMMMMMMMP'           
+MMMMMMMMMMMMMMb    ""--.___.dMMMMMMMMMP^"
+-- 欢迎来到线上多人游戏数据库 --
+----------- 请输入登陆数据 ------------
+*END TELNET_LOGIN_SCREEN

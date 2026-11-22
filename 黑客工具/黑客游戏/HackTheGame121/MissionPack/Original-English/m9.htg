@@ -1,0 +1,141 @@
+m9.htg
+; mission file
+; by chaozz.nl
+;
+*EMAIL
+;first the title
+我有一些工作给你！
+;then the sender address
+darkscribe@fake-mail-address.com
+;
+你做了一些令人印象深刻的工作{hacker},
+
+我们都知道，美国宇航局掩盖存在不明飞行物的和
+外星人已经很长一段时间了。 但有传言说证据就隐
+藏在美国航天局的超级计算机里。
+
+入侵超级计算机并下载这些文件:
+UFO_crash.jpg
+Alien_authopsie.jpg
+Government_reporting.doc
+
+让他们知道市民对此事的态度并让计算机感染上
+一个简单的病毒。
+
+服务器IP地址为{attack_ip}
+用户名为 {random_login}. 
+
+祝您好运！
+   __
+  (`/\
+  `=\/\ __,.--~~~~~-._   _.-~~~~~--,.__
+   `=\/\      A  R     \ /   C  R  I    \\ 
+    `=\/   D        K   V  S         B  E \\
+    //_\___--~~~~~~-._  |  _.-~~~~~~--,.__\\
+   //  ) (,----~~~~._\ | /_.~~~~----,,.__\\
+  ===( INK )==========\\|//==================== 
+ _____\___/___________`---`____________________
+*END EMAIL
+;
+;
+*INFECT_WITH_VIRUS
+1
+;
+*STEAL_FILE
+UFO_crash.jpg
+Alien_authopsie.jpg
+Government_reporting.doc
+*END STEAL_FILE
+;
+*DESTROY_FILE
+0
+*END DESTROY_FILE
+;
+;
+*FOLDER_STUCTURE
+;+  = a folder
+;-- = a file in that folder
+;
+--autoexec.bat
+--config.sys
+--msdos.sys
+--io.sys
+--command.com
++WINNT
+--Win.com
+--Font.ttf
+--Win.ini
++Website
+--index.htm
+--NASA_logo.jpg
+--frames.htm
+--flash.swf
++Logs1
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++Logs2
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++Logs3
+--{random_ip}
+--{random_ip}
+--{own_ip}
++Photos
+--UFO_crash.jpg
+--Alien_authopsie.jpg
++Tutors
+--Howto_fake_a_moonlanding.doc
+--Howto_moon_someone.doc
++Docs
+--Gov.doc
+--Government_reporting.doc
+--Coverup.doc
++Secret
+--empty.mdb
+*END FOLDER_STRUCTURE
+;
+;now show what the command looks like when you TELNET into it
+*TELNET_LOGIN_SCREEN
+.    X%%%%.     X  X%%%%%.        %%%%%%%Xo.                  .X%%%o       %%%%%%%
+.     %%%%X    o%   %%%%%X        X%%%Xo.                   oX%%%%X.       o%%%%%%
+.     o%%%%X   %%o  X%%%%%o        Xo.                     %%%%%%X          %%%%%%
+o      X%%%%   %%%  .%%%%%.                        ,.     %%%%Xo           X%%%%%
+o       %%%%   %%%o  %%%%%                       oXX%%o    %%%X     .       .%%%%%
+o       o%%%   %%%%  .%%%%                       o%%%%%  .o%%o     X.        %%%%%
+o        %%%   %%%%o  %%%X                         X%%%X  XX.    .X%         X%%%%
+o        o%%   %%%%%  .Xo                            .X%o       o%%X         .%%%%
+o         %%   %%%%%o                    .X%X          .o     .X%%%o   .      %%%%
+o  .      .%   %%Xo.                 .oX%%%%%                X%%%%%    Xo     o%%%
+o  X       X   o.                    o%%%%%%%o              .%%%%%%    %%      %%%
+o  XX                                 %%%%%%%%.              X%%%%X    %%.     %%%
+o  X%.                      .oXo      X%%%%%%%%.              %%%%    X%%X     o%%
+o  X%%                                .%%%%%%%%%X.            X%%%    oooo      %%
+o  X%%o             .oX.               %%%%%%%%%%%o            %%X              X%
+o  XXo          .ooX%%%                X%%%%%X%%o              X%o              .%
+o              X%%%%%%X                 %%%%X  .     o%X     o  %                %
+o              %%%%%%%o      X%%%       %%%%X      .X%%X     %  X    %%%%%%.     X
+.               %%%%%%%    X   X%%.      o%%X       oXo      X%o      %%%%%%X      
+.    .oX%o     o%%%%%o    XX   %%.       Xo                o%%%      %%%%%%%      
+.    %%%%%      X%%%.      %o  .o                         X%%%X      %%%%%%       
+.  .o%%%%%X      o%%X.     .X%.                          o%%%%%.      X%%%%X      
+-- [欢迎国家航空航天局超级计算机] --
+*END TELNET_LOGIN_SCREEN

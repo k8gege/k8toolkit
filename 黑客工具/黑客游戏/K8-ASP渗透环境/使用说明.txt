@@ -1,0 +1,9 @@
+
+整型 http://localhost/show.asp?id=5 
+字符型 http://localhost/show2.asp?id=k8team 
+搜索型 http://localhost/show3.asp?id=k8
+
+模拟源码差异
+整型 http://localhost/show4.asp?id=5 出错会返回500
+整型 http://localhost/show5.asp?id=5 出错也不返回500
+

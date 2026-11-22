@@ -1,0 +1,115 @@
+m11.htg
+; mission file
+; by Michello
+;
+*EMAIL
+;first the title
+我找到了！
+;then the sender address
+MichelloZ@hotmail.com
+;
+最近，我们在学校花了很长的时间。
+
+终于我们成功了，我找到了校长办公室电脑的IP: 
+{attack_ip}。他有一些端口打开着。他常在家里
+工作。我曾经看到他使用 {random_login}这个
+用户名登录过，但我没见过密码, :(
+
+既然你是最优秀的黑客之一，你应该攻破他的计算
+机并删除里面所有的考试成绩。然后再上传病毒，
+让他们认为这些文件的丢失是由病毒引起的。也许
+你还可以窃取到下一次的考试题！！！
+
+
+祝您好运{hacker}!
+Michello
+*END EMAIL
+;
+;
+*INFECT_WITH_VIRUS
+1
+;
+*STEAL_FILE
+NextExam.doc
+*END STEAL_FILE
+;
+*DESTROY_FILE
+ExamResults.doc
+*END DESTROY_FILE
+;
+;
+*FOLDER_STUCTURE
+;+  = a folder
+;-- = a file in that folder
+;
+--autoexec.bat
+--config.sys
+--msdos.sys
+--io.sys
+--command.com
++WINNT
+--Win.com
+--Font.ttf
+--Win.ini
++School
+--index.htm
+--ExamResults.doc
+--NextExam.doc
+--frames.htm
+--flash.swf
++Logs1
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++Logs2
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++Logs3
+--{random_ip}
+--{random_ip}
+--{own_ip}
++SchoolPhotos
+--Pictures_grade4.jpg
+--Pictures_grade2.jpg
++Private
+--ToDo.doc
+--how_to_manipulate_students.doc
+--picture_Teacher_Jenny.jpg
+*END FOLDER_STRUCTURE
+;
+;now show what the command looks like when you TELNET into it
+*TELNET_LOGIN_SCREEN
+; ascii-art!!
+|                  .     :     .
+|             '.    ;    :    ;    .`
+|         '-.   '.   ;   :   ;   .`   .-`
+|      "-.   '-.  '.  ;  :  ;  .`  .-`   .-"
+|         "-.   '-. '. ; : ; .` .-`   .-"
+|    '"--.   '"-.  '-.'  '  `.-`  .-"`   .--"`
+|         '"--.  '"-.   ,.   .-"`  .--"`
+|              '"--.  .:::::.  .--"`
+|---------SUNSET------:::::::-------HIGH----------------
+|                      ~~~~~
+|                       ~~~
+|                        ~
+|   
+- [ 欢迎来到Sunset High。请确认您的身份 ] -
+*END TELNET_LOGIN_SCREEN

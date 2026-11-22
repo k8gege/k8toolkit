@@ -1,0 +1,115 @@
+m6.htg
+; mission file
+; by chaozz.nl
+;
+*EMAIL
+;first the title
+严肃的要求
+;then the sender address
+Pro2Call@fake-mail-address.com
+;
+您好 {hacker}!
+
+我确信你的熟练程度足够做一些严肃的事情。
+我听说有一个新的Windows版本，我想在它被
+发布前第一个测试它。
+
+所以，请入侵微软文件服务器并给我下列文件:
+MS_Longhorn_build5010.rar
+MS_Longhorn_serial.txt
+MS_Longhorn_readme.doc
+
+我已经做了一些研究，我发现该用户名的文件
+服务器是 {random_login}
+密码是可破解的，你知道怎么做 ;-)
+他们服务器的IP地址是 {attack_ip}
+
+去吧，一定要小心！
+
+Pro2Call
+*END EMAIL
+;
+;
+*INFECT_WITH_VIRUS
+0
+;
+*STEAL_FILE
+MS_Longhorn_build5010.rar
+MS_Longhorn_serial.txt
+MS_Longhorn_readme.doc
+*END STEAL_FILE
+;
+*DESTROY_FILE
+0
+*END DESTROY_FILE
+;
+;
+*FOLDER_STUCTURE
+;+  = a folder
+;-- = a file in that folder
+;
+--file.bin
+--startup.ts
++Linux
+--Tux.exe
+--Windows_Bug_list.doc
+--Security_linux.doc
++Bin
+--Win.com
++Logs_Telnet
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{own_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++Logs
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++NewServicePacks
+--WinXP_EN_ServicePack_12.exe
++Beta_builds
+--MS_Longhorn_build5010.rar
+--MS_Longhorn_serial.txt
+--MS_Longhorn_readme.doc
+*END FOLDER_STRUCTURE
+;
+;now show what the command looks like when you TELNET into it
+*TELNET_LOGIN_SCREEN
+.________________________________________________________________________________.
+. #####.    #####  ###                                                   @##X    .
+. #####.   X#####  ,                                                    ##%  .##.
+. #####.   #####%                                                       @##   %##.
+,#####.  %#####. ,.    X%%o    ,       @##%     .%###%      %##@.  .X###X.X###X
+.%#####.  ######  ###  #######% ######  #######%  ###XX###o  @####### ############
+.######. o######  ### @##o o### ######@##@.  X##.%##X   %%. @##X  X##Xo###@.o###@.
+.###%%#o ######X  ##@###o   %##o###@  ###o    ######@      o##@    ### ###.  ###,
+o### X#%%#@o###o X##o###        ###   ###     ###.####@o   ###.    ### ###   ### .
+#### o####. ###. ###.##%       o##o  o##@     ##X  #######.###     ### ###   ### .
+###o o###@  ###  ###o##X       %##   o##X    oo      .X###o##%    X##X ##@   ##X .
+###. o###. o### o##X.##%   ###o##@   o##%   o%o.ooo    ###.##@    ###.o##X  .##. .
+###  o##@  %##% %##o ###. o##@ ##o    ###.  ###.###.   ### @##.  %##% %##   X##X .
+###  o##.  ###o ###. %######@ X##.    %#######. @########o  #######X  ###   X###X.
+,.   ,   ,.  ,.   .X%Xo.   ,      .X%@X.    .o@##Xo     o%@Xo    ,.    ,. .
+._________________________________________________________________________________
+|         -欢迎来到微软文件服务器。请确认您的身份-                                                                      |
+'.______________________________________________________________________________.'
+*END TELNET_LOGIN_SCREEN

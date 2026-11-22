@@ -1,0 +1,98 @@
+m5.htg
+*EMAIL
+新的工具 
+chaozz@fake-mail-address.com
+您好 {hacker},
+
+我发现了一个你可以使用的新工具。这是一个暴力
+密码破解工具。这样你就能侵入系统而无须知道密
+码。
+
+想得到它可不那么容易，因为它在一个安全的文件
+服务器上。这是我知道的数据:
+
+IP地址 : {attack_ip}
+用户名 : {random_login}
+密   码 : {random_password}
+
+这个文件叫PasswordHackerW32.exe
+在名为Bin或Bin2的文件夹里应该能找到。
+
+安装它，您就能够做更多复杂的任务。
+祝您好运！
+
+chaozz
+
+*END
+*INFECT_WITH_VIRUS
+0
+*END
+*STEAL_FILE
+PasswordHackerW32.exe
+
+*END
+*DESTROY_FILE
+*END
+*FOLDER_STUCTURE
+--autoexec.bat
+--command.com
+--config.sys
+--io.sys
+--msdos.sys
++Windows
+--Win.com
+--win.ini
+--fonts.ttf
++Bin
+--Hacktool.exe
+--ReverseEngineer.exe
+--BASM.com
+--Util.exe
++Bin2
+--Manual.doc
+--PasswordHackerW32.exe
+--Passwordlist.txt
++Telnet_sessions
+--{random_ip}
+--{random_ip}
+--{own_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++Zip
+--Data.dat
+--Numbers.zip
+--Extractme.rar
+
+*END
+*TELNET_LOGIN_SCREEN
+               ,ggddY"""Ybbgg,
+          .agd888b._ "Y8. ___`""Ybga.
+        .gdP""88888888baa,""8b    "888g.
+      .dP"     ]888888888P'  "Y     `888Yb.
+    .dP"      .88888888P"  db.       "8P""Yb.
+   .8"       .888888888b. d8888a           "8.
+  .8'        d88888888888.88P"' a.          `8.
+ .8'         88888888888888PP"  ""           `8.
+ d'          I88888888888P"                   `b
+ 8           `8"88P""Y8P'                      8
+ 8            Y 8[  _ "                        8
+ 8              "Y8d8b  "Y a                   8
+ 8                 `""8d.   __                 8
+ Y.                    `"8bd888b.             .P
+ `8.                     .d8888888baaa       .8'
+  `8.                    888888888888'      .8'
+   `8a                   "8888888888I      a8'
+    `Yba                  `Y8888888P'    adP'
+      "Yba                 `888888P'   adY"
+        `"Yba.             d8888P" .adP"'
+           `"Y8baa.      .d888P.ad8P"'
+                ``""YYba8888P""''
+,[世界银行HighSecurity文件服务器 v.134.7],
+[Loggin of IP done,.]
+
+请输入您的登录信息,
+
+*END

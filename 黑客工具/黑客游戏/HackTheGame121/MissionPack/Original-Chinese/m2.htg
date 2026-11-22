@@ -1,0 +1,130 @@
+m2.htg
+; mission file
+; by chaozz.nl
+;
+*EMAIL
+;first the title
+干的好！
+;then the sender address
+chaozz@fake-mail-address.com
+;
+干的好 {hacker},
+
+好了，你得到了portscanner。现在您将需要安装它。
+要做到这一点请到您的Downloads文件夹中，所有您
+从远程计算机上下载/窃取到的文件都被储存在那里。
+
+要安装它只需输入: portscannerw32
+这将会安装该程序并将它添加到您黑客工具栏顶部的
+黑客控制台里。
+
+下一个工具您需要的是FileDestroy。 
+
+我知道只有一个地方您可以得到它。abandonned文
+件服务器，那是我曾经工作过的地方。 这是我记得
+的一些数据:
+
+IP地址 : {attack_ip}
+端   口 : 使用您的portscanner，因为它每天都在变化
+用户名 : {random_login}
+密   码 : {random_password}
+
+需要你下载的文件是DestroyFileW32.exe
+但我不知道它在哪个文件夹里了。 你必须找到它。
+但是会有程序追踪你，不要被抓到！
+
+您把它下载下来后就可以像安装portscanner一样来
+安装它了。它会自动添加到您的黑客工具栏中。
+
+不要忘记您的删除日志！！！ 祝您好运。 
+如果您成功了我会再次与您联系。
+
+chaozz
+*END EMAIL
+;
+;
+*INFECT_WITH_VIRUS
+0
+;
+*STEAL_FILE
+DestroyFileW32.exe
+*END STEAL_FILE
+;
+*DESTROY_FILE
+0
+*END DESTROY_FILE
+;
+;
+*FOLDER_STUCTURE
+;+  = a folder
+;-- = a file in that folder
+;
+--autoexec.bat
+--command.com
+--config.sys
+--io.sys
+--msdos.sys
++Windows
+--Win.com
+--win.ini
+--font.ttf
++MyDocuments
+--Assignment120406.doc
+--Schedule.doc
+--NetworkPasswords.doc
+--MonthResults.doc
+--Pricelist.doc
++Applications
+--Timewriter.exe
+--Office_Installation.exe
+--Calculator.exe
+--readme.txt
+--Destroy.com
+--releasenotes.txt
++OldFiles
+--readme.rtf
+--notes.txt
+--DestroyFileW32.exe
+--Destroy.com
++TelnetLogs
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{own_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+*END FOLDER_STRUCTURE
+;
+;now show what the command looks like when you TELNET into it
+*TELNET_LOGIN_SCREEN
+         nHHHHHHnHHHn
+       dHHHHHHHHHHHHHHb
+      dHHHHHHHHHHHHHHHHb
+     dHHHHHH~~  '~~9HHHHb               ,,._________    _____,,,,.__
+     HHHHH~         ~9HHH             .'              :  :                :
+     HHHH:           ~HHH             `.__,--.   :~--'   ~-.       __,,'
+     HHHP:_nnnn   .nn.HHP                     `-. `.         :   .-~
+     `HH|:~~@ >) (- @>|P                        :. `.        :  :
+      |^|:       :    |      %::$$HHHHHnn        `._:      .'  :
+      :`|:       |    :    $$$$H$HH$HH$HHHHn        ,     :  :
+       ~|:.   ((_))  .:  $:$$H:::H:HH:HHHHHHHb     :  `  _:  '
+        ::`.   ~ ~   ': $:$:$H):(::: :  ~HH$HHn     -. ~~  .'
+         ::   -~-~- . 'H$::$H((: : :  '   HH:H$       :   :
+         `::   ~~~  '/ H$$$$H\: )`  `      H$H$      .'  :
+         .|::,__,-~|  HHDrSH:)_,._   .===.H$HH$    .' _ `.
+       _/::::::      HHH$HHH: . _ .:  . _-.:HHH$   .' : `.`.
+    ,::|:::::_    _HHHHHHHH: ` ~ '   ` ~-':H$$$H :  .'  : `.
+ .:::::::|::,/XxxX\.HHHHH^|:              :H::::H .-'    : `.
+:::::::,.|,/\XXXX/\HHHHH\:::      ._)    :HH$$$H :       : `-.
+     :,,,,,|/,\XX/,HHHHHHn::`.          ':HHHHHH ;       :    :
+      ,,,,,,,.|XX|.HHHHHHHH$:     .=-=.   :HH$HH :        `.   :
+      ,,,,,,,.XXXXHHH$HHH$HH::    `,.'  .$HHH$H$'          :   :
+      ,,,,,,,.XXXHHHH$HH:$HH$::.       ,H$HHHH$H          '.    :
+      ,,,,,,,|XXXHHHHHH$$HHH$H:::,   .':HHHHH$H$n--.   .---'     `.__.--.
+      ,,,,,,,|XXXXHHHHHHHHH$HH:::::~~~ :HHHHHHHHHHHn :  :                 :
+      ,,,,,,,|XHHHHHHHHHHHHHHHH:::    :HHHHHHHHHHHHHHn   -.___.-.___,DrS.'
+欢迎您来到MegaXipo公司文件服务器
+--ChaOS v1.98已启动 -- 请确认您的身份--
+*END TELNET_LOGIN_SCREEN

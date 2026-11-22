@@ -1,0 +1,110 @@
+m8.htg
+; mission file
+; by chaozz
+;
+*EMAIL
+;first the title
+病毒上传工具
+;then the sender address
+chaozz@fake-mail-address.com
+;
+您好 {hacker},
+
+有一个工具我想你能用得上。这是工具个用于病
+毒上传。它有一个巨大的病毒数据库并且让你感
+染了的系统可以远程登录。
+
+使用它对你来说就是小菜一碟. 这里有一些数据:
+
+IP地址: {attack_ip}
+用户名: {random_login}
+
+你需要远程下载这个文件VirusUploaderW32.exe
+在名为VirusTools文件夹里你应该能找到它。
+
+得到并安装上它，在下一次任务中会用得到。
+
+chaozz
+*END EMAIL
+;
+;
+*INFECT_WITH_VIRUS
+0
+;
+*STEAL_FILE
+VirusUploaderW32.exe
+*END STEAL_FILE
+;
+*DESTROY_FILE
+0
+*END DESTROY_FILE
+;
+;
+*FOLDER_STUCTURE
+;+  = a folder
+;-- = a file in that folder
+;
+--autoexec.bat
+--command.com
+--config.sys
+--io.sys
+--msdos.sys
++Windows
+--Win.com
+--win.ini
+--fonts.ttf
++Telnet_sessions
+--{random_ip}
+--{random_ip}
+--{own_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++VirusTools
+--VirusDatabase.zip
+--HoaxList.txt
+--VirusUploaderW32.exe
+--SourceCodes.rar
++Downloads
+--SeriousSam1.rar
+--SeriousSam2.rar
+--BF1942.zip
+*END FOLDER_STRUCTURE
+;
+;now show what the command looks like when you TELNET into it
+*TELNET_LOGIN_SCREEN
+                      ,.uod8B8bou,.
+              ,.uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
+         .=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
+         !,.:!TVBBBRPFT||||||||||!!^^""'   ||||
+         !,,,.:!?|||||!!^^""'            ||||
+         !,,,,.||||                     ||||
+         !,,,,.||||      C K            ||||
+         !,,,,.||||  H A      E         ||||
+         !,,,,.||||       T H           ||||
+         !,,,,.||||             M E     ||||
+         !,,,,.||||         G A         ||||
+         `,,,,.||||                    .||||
+          .;,,,.||||               _.-!!|||||
+   ,uodWBBBBb,,.||||       _.-!!|||||||||!:'
+!YBBBBBBBBBBBBBBb,!|||:,-!!|||||||!iof68BBBBBb,,
+!,YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.
+!,,YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.
+!,,,YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.
+!,,,,YBBBBBBBBBBRPFT?!::::::::::^'',.::::::;         iBBbo.
+ `,,,,,YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.
+   `,,,,,:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
+     `,,,,::::::::::::::::;iof688888888888888888888b.     `
+       `,,,:::::::::;iof688888888888888888888888888888b.
+         `,,:::;iof688888888888888888888888888888888899fT!
+           `,::!8888888888888888888888888888888899fT|!^"'
+             `' !!988888888888888888888888899fT|!^"'
+                 `!!8888888888888888899fT|!^"'
+                   `!988888888899fT|!^"'
+                     `!9899fT|!^"'
+                       `!^"'
+
+请输入您的登录信息,
+*END TELNET_LOGIN_SCREEN

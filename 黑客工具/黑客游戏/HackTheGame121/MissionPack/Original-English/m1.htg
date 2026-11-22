@@ -1,0 +1,112 @@
+m1.htg
+; mission file
+; by chaozz.nl
+;
+*EMAIL
+;first the title
+您好
+;then the sender address
+chaozz@fake-mail-address.com
+;
+您好 {hacker},
+
+我对你寄予很高的期望, 您的计算机技能远高于
+正常, 所以我猜你至少可以过2关.
+
+您的第一个目标是获得一个端口扫描工具。我知
+道一台计算机上可以找到这样的工具。您需要入
+侵该系统才能获得这一工具。 
+
+工具的文件名是: PortScannerW32.exe
+它应该在一个名叫HackTools的文件夹中。
+
+以下是这项任务中你所需要的一些数据:
+他的IP地址: {attack_ip}
+开放端口   : {attack_port}
+用户名      : {random_login}
+密   码      : {random_password}
+
+首先Ping他的IP地址看看他是否在线。
+然后用他的IP和端口远程登陆到他的电脑，
+窃取到文件后迅速离开！
+
+!! 注意 !!
+不要忘记删除TelnetLogs文件夹中的日志文件。
+你应该删除的是: {own_ip}
+
+祝您好运。如果你成功了，我将再次向您发送电子邮件。
+
+chaozz
+*END EMAIL
+;
+;
+*INFECT_WITH_VIRUS
+0
+;
+*STEAL_FILE
+PortScannerW32.exe
+*END STEAL_FILE
+;
+*DESTROY_FILE
+0
+*END DESTROY_FILE
+;
+;
+*FOLDER_STUCTURE
+;+  = a folder
+;-- = a file in that folder
+;
+--autoexec.bat
+--command.com
+--config.sys
+--io.sys
+--msdos.sys
++Windows
+--Win.com
+--bgates.txt
++HackingToolz
+--PortScannerW32.exe
++Documents
+--Secret.doc
+--Passwords.doc
+--My Homework.txt
+--Taxes.doc
++TelnetLogs
+--{own_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
+--{random_ip}
++Pictures
+--Naked.jpg
+*END FOLDER_STRUCTURE
+;
+;now show what the command looks like when you TELNET into it
+*TELNET_LOGIN_SCREEN
+$$$$$$$$$$$$$$$$$$$$$$$$$*"           ^""**$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$e$$$$$$$$beee,       "*$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$P""     "*$$$$""$b.       "$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$"            "$F   *$$$c      ^*$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$P              dP     ^$$$$c      ^*$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$"              J$      $$$$$$b       "$$$$$$$$$
+$$$$$$$$$$$$$$$$$P       .eeee.  4$      $$$$$$$$b       ^$$$$$$$$
+$$$$$$$$$$$$$$$$F      .d$$$$$$$b$"     d$$$$$$$$$r       ^$$$$$$$
+$$$$$$$$$$$$$$$P      d$$$$$$$$$$%     J$$$$$$$$$$$        3$$$$$$
+$$$$$$$$$$$$$$$      $$$$$$$$$$$F     4$" "$$$$$$$$         $$$$$$
+$$$$$$$$$$$$$$F     $$$$$$$$$$$P     .$%   ^*$$$$$$         $$$$$$
+$$$$$$$$$$$$$$F    4$$$$$$$$$$$eeeeee$$.     ^$c            $$$$$$
+$$$$$$$$$$$$$$F    $$$$               "$b      "$c         J$$$$$$
+$$$$$$$$$$$$$$$    $$$%                 *$c      *$.     .d$$$$$$$
+$$$$$$$$$$$$$$$b   '$P                   ^$$.     ^$$$$$$$$$$*$$$$
+$$$$$$$$$$$$$$$$$.  *$$$$$$$$"""""""$$$$$$$$$b      "$$$$$$$"4$$$$
+$$$$$$$$$$$$$$$$$$e  $$$$$$$%       $$$$$$$$$$$c      *$$$P" $$$$$
+$$$$$$$$$$$$$$$$$$$$b.*$$$$$        ^$$$$$$$$$$$$$$$$$$$P"  4$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$.         "**$$$$$$$$$$$*""    4$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.                            d$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$c                        .d$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$c.              ,ee$$$$$$$$$$$$$
+-韦尔科姆管理员，很高兴见到了你！
+*END TELNET_LOGIN_SCREEN

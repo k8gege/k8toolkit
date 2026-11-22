@@ -1,0 +1,1 @@
+@cmd /k k8exe2bat.exe
